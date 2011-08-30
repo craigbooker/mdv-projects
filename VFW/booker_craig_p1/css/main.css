@@ -1,0 +1,49 @@
+html {
+    background-color: #CCCCCC;
+}
+body {
+    font-family: "Arial", sans-serif;
+    margin: 10px;
+    padding: 5px;
+    background-color: #E6E6E6;
+    color: #4D4B39;
+    max-width: 416px;
+    border: 1px solid #000000;
+    /* line-height: 1.5em; */
+}
+p {
+    margin: 5px;
+}
+h1 {
+    background-color: #999999;
+    color: #000000;
+    font-size: 20pt;
+    font-style: bold;
+    padding: 0px;
+    margin: 0px, 0px, 0px, 0px;
+
+}
+h2 {
+    color: #000000;
+    font: bold 18pt Arial, san-serif;
+    font-style: bold;
+ }
+ input[type=submit] {
+ -moz-border-radius: 10%;
+ border-radius: 10%;
+ }
+ form 
+ {
+ -webkit-box-shadow:
+inset 1px 1px 84px rgba(0,0,0,0.24),	
+inset -1px -1px 84px rgba(0,0,0,0.24),		 
+-moz-box-shadow:
+inset 1px 1px 84px rgba(0,0,0,0.24),		 
+inset -1px -1px 84px rgba(0,0,0,0.24),		 
+box-shadow:
+inset 1px 1px 84px rgba(0,0,0,0.24),		 
+inset -1px -1px 84px rgba(0,0,0,0.24),		 
+	 
+ }
+
+
