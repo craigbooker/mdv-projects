@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EmbeddedEditorHidden:Craig</key>
+	<false/>
+	<key>ExpandedEditorWidth:Craig:displays([(0, 0), (1680, 1050)]:[(1680, -63), (1920, 1080)])</key>
+	<integer>884</integer>
+	<key>ExpandedItems:Craig</key>
+	<array/>
+	<key>FileFilterID:Craig</key>
+	<string>msng</string>
+	<key>OpenDocuments:Craig</key>
+	<array/>
+	<key>OpenDocumentsExpanded</key>
+	<true/>
+	<key>OpenDocumentsVisible</key>
+	<true/>
+	<key>ProjectViewVisible</key>
+	<true/>
+	<key>RecentItems:Craig</key>
+	<array/>
+	<key>RecentItemsExpanded</key>
+	<true/>
+	<key>RecentItemsVisible</key>
+	<true/>
+	<key>ScratchpadItemsExpanded</key>
+	<true/>
+	<key>ScratchpadItemsVisible</key>
+	<true/>
+	<key>ShowInvisibles:Craig</key>
+	<false/>
+	<key>ShowSCMData:Craig</key>
+	<false/>
+	<key>TextFilesOnly:Craig</key>
+	<true/>
+	<key>ToolbarVisible:Craig</key>
+	<true/>
+	<key>ViewSplitterPosition:Craig</key>
+	<real>0.17690874636173248</real>
+	<key>WindowFrame:Craig:displays([(0, 0), (1680, 1050)]:[(1680, -63), (1920, 1080)])</key>
+	<string>rect(44,265,1050,1339)</string>
+</dict>
+</plist>

@@ -1,0 +1,54 @@
+Instructions
+
+You may notice that this week seems lighter on activities than the previous weeks. 
+This is because you've now learned all of the basic JavaScript that this course will teach you. 
+There's more to JavaScript than what you know this far, but we've crammed your brain with enough for one month. 
+Instead, it's time to build something big with what you've learned.
+
+This project, like the last one, is in 3 parts: JavaScript code, Google Drawing flowchart, and Git repository.
+JavaScript code
+
+This part of the project works the same as the previous three projects, but this time without 
+a story or theme. Instead, you're building a library: a collection of functions that you can 
+reuse for future projects. In the Visual Frameworks course you're going to find yourself doing 
+the same repetitive tasks over and over. The code you write for this project will help to 
+alleviate some of that repetition.
+
+The more time you spend on this project now, the easier time you will have in Visual 
+Frameworks. If there was ever a project in this course that you should dedicate time to,
+ it's this one.
+
+The code next month will involve quite a bit of string, number, and array manipulation. 
+For this project you're going to build some utility functions to solve some common problems:
+String
+
+	1 Does a string follow a 123-456-7890 pattern like a phone number?
+	2 Does a string follow an aaa@bbb.ccc pattern like an email address?
+	3 Is the string a URL? (Does it start with http: or https:?)
+	4 Title-case a string (split into words, then uppercase the first letter of each word)
+	5 Given a string that is a list of things separated by a given string, as well as another 
+	string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
+
+	
+Number
+	1 Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
+    2 Fuzzy-match a number: is the number above or below a number within a certain percent?
+    3 Find the number of hours or days difference between two dates.
+    4 Given a string version of a number such as "42", return the value as an actual Number, such as 42.
+
+	
+Array
+	1 Find the smallest value in an array that is greater than a given number
+	2 Find the total value of just the numbers in an array, even if some of the items are not numbers.
+	3 Given an array of objects and the name of a key, return the array sorted by the value 
+	of that key in each of the objects: "a" + [{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}].
+
+There are twelve functions listed above. Build a library that implements any six of those twelve.
+
+
+
+
+
+
+
+you're probably going to use them both to access/change data on the same object

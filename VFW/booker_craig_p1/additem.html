@@ -16,11 +16,10 @@
 
     </head>
     <body>
-    <p>
 		<div class="title_bar"><h1>Add Task Item</h1></div>
 		<form action="#" method="post" class="form"> 
 		
-	<!-- Drop down menu to select context. -->
+			<!-- Drop down menu to select context. -->
 			<label for="context"><h2>Select Task Context:</h2></label>
 				<select id="context" class="context_drop_down">
 						<optgroup label="Context">
@@ -32,9 +31,9 @@
 							<option value="Waiting">Waiting</option>
 						</optgroup>
 				</select><br />
-	<!-- End of context drop down  -->
+			<!-- End of context drop down  -->
 	
-	<!-- Start of fieldset  -->
+			<!-- Start of fieldset  -->
 			<fieldset>	
 				<legend><strong>Task Information</strong></legend>
 					<label for="title">Task Name:</label><br /><input type="text" id="title" /><br />	<!-- What The Task Is Called -->	
@@ -45,11 +44,11 @@
 					<label for="enddate">End Date:</label><br /><input type="date" id="enddate" name="enddate" ><br /> <!-- Task End Date -->
 					<label for="notes">Notes:</label><br /><textarea id="notes"></textarea><br /> <!-- Allows For Any Notes For Task -->
 				<input type="hidden" value="true" />
-           </fieldset>
-	<!-- End of fieldset  -->
+			</fieldset>
+			<!-- End of fieldset  -->
            <input type="submit" value="Add Task" /> <!-- Some CSS has been applied to submit button - rounded corners, shadow for button -->
 		</form>
-		</p>
+		<!-- Tells the browser to include the javascript file. -->
 		<script src="js/main.js" type="text/javascript"></script>	   
     </body>
 </html>
