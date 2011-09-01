@@ -1,0 +1,133 @@
+/*jslint devel: true, browser: true, sloppy: true, plusplus: true, maxerr: 50, indent: 4
+*/
+
+//****************************************************************************************
+*********************************************** // Author: Craig Booker // Today's Date:
+08/__/2011 // Assignment: Deliverable 3
+//****************************************************************************************
+***********************************************
+
+
+//****************************************************************************************
+*********************************************** // START VAR DECLARATIONS
+//****************************************************************************************
+***********************************************
+
+var readyToGo = true,								/* A boolean var to set game play
+status */ subjectName = "Raj", leadScientist = "Sheldon
+Cooper",							/* A string containing the name of the lead scientist
+*/ findingsAnnounce = "The findings that we established in this experiment are as
+follows.", hasMetCond = true,  /* Sheldon wanted to make sure Raj had not had any liquids
+or food after 11pm and that he slept 8 hours the night before. */ hasHadAdultBev = false,
+hasHadDrink = false, hasHadFood = false, hasHadSleep = true, //inside JSON data file   
+teamMemberNames = ["Howard Wolowitz", "Leonard Hofstadter", "Penny", "Sheldon Cooper"], /*
+Array listing team member names */ //inside JSON data file    leadScientistGroupie = "Amy
+Farrah-fowler", numDrinks = 0, numHoursDrink = 0, rajWeight = 160, /* Raj's weight in
+Pounds */
+
+eventLength = 1, /* Measured in hours */ maxOneHour = 5, participants = [];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//****************************************************************************************
+*********************************************** // START INSTRUCTIONS
+//****************************************************************************************
+*********************************************** // // //  Raj doesn't speak to women
+unless he has had an adult // beverage.  Sheldon and crew are wanting to help Raj overcome
+his social anxiety. // So, Raj can drink and talk to women, but he doesn't know how much
+he can drink without becoming obnoxious. //  Sheldon seeks to find out what BAC blood
+alcohol content level dictates Raj's level of intoxication. //  They decide to run a test
+to see the different levels for Raj. //        Obnoxious //        Questionable -
+Borderline obnoxious //        Great - Everything is good.  Perfect balance. //        Not
+enough - need more to drink, still struggling to speak //        Mute - Can't relax enough
+to talk to women.
+//****************************************************************************************
+***********************************************
+//****************************************************************************************
+*********************************************** / // // // // Assignment: Project 4 (8h)(
+Due: Thu, 25 Aug | Status: Not Completed ) // This week's project is similar to last
+week's, but instead of telling a story you will develop a code library that will help you
+in your projects in the next course: Visual Frameworks. You will also develop a flowchart
+for your code, as well as use Git to track your work. // Level of Effort // // This
+activity should take approximately 8h to complete. It will require: // 6h Research // 1h
+Prep & Delivery // 1h Work // If you find that this activity takes you significantly less
+or more time than this estimate, please contact me for guidance. // Reading & Resources //
+// Web links // // Mozilla Developer Network: Date // The documentation on how dates work
+in JavaScript may be helpful. // Mozilla Developer Network: Array // The documentation on
+arrays may be useful. // Mozilla Developer Network: isNAN // The isNan global function can
+tell you if a value is or is not a number. // Mozilla Developer Network: Regular
+Expressions // Regular expressions are an advanced concept, but can make many of the
+functions here much easier. // Instructions
+
+// You may notice that this week seems lighter on activities than the previous weeks. This
+is because you've now learned all of the basic JavaScript that this course will teach you.
+There's more to JavaScript than what you know this far, but we've crammed your brain with
+enough for one month. Instead, it's time to build something big with what you've learned.
+// This project, like the last one, is in 3 parts: JavaScript code, Google Drawing
+flowchart, and Git repository. // JavaScript code // // This part of the project works the
+same as the previous three projects, but this time without a story or theme. Instead,
+you're building a library: a collection of functions that you can reuse for future
+projects. In the Visual Frameworks course you're going to find yourself doing the same
+repetitive tasks over and over. The code you write for this project will help to alleviate
+some of that repetition. // The more time you spend on this project now, the easier time
+you will have in Visual Frameworks. If there was ever a project in this course that you
+should dedicate time to, it's this one. // // The code next month will involve quite a bit
+of string, number, and array manipulation. For this project you're going to build some
+utility functions to solve some common problems: // String	 Number	 Array // Does a
+string follow a 123-456-7890 pattern like a phone number? // Does a string follow an
+aaa@bbb.ccc pattern like an email address? // Is the string a URL? (Does it start with
+http: or https:?) // Title-case a string (split into words, then uppercase the first
+letter of each word) // Given a string that is a list of things separated by a given
+string, as well as another string separator, return a string with the first separator
+changed to the second: "a,b,c" + "," + "/" → "a/b/c". // Format a number to use a specific
+number of decimal places, as for money: 2.1 → 2.10 // Fuzzy-match a number: is the number
+above or below a number within a certain percent? // Find the number of hours or days
+difference between two dates. // Given a string version of a number such as "42", return
+the value as an actual Number, such as 42. // Find the smallest value in an array that is
+greater than a given number // Find the total value of just the numbers in an array, even
+if some of the items are not numbers. // Given an array of objects and the name of a key,
+return the array sorted by the value of that key in each of the objects: "a" +
+[{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}]. // There are twelve functions listed above.
+Build a library that implements any six of those twelve. // Google Drawing Flowchart // //
+You will use the Google Docs Drawing web app to create flowcharts that represent your
+library. You should have one flowchart per function. Some functions will be simpler than
+others, but each flowchart should explain how the function works to someone who cannot see
+your code. // This part of the project is graded on how well your flowchart matches your
+code, its logic, and its correct use of the flowchart symbols. // You should download a
+PDF copy of your flowchart often as you work on it. If Google Docs goes down or something
+happens you will want at least something to turn in. // // Git Repository // // This
+project will be tracked using Git. You'll need to have the presence of mind to work in
+small chunks, save often, and work with Git each step of the way. //
+//****************************************************************************************
+*********************************************** // END INSTRUCTIONS
+//****************************************************************************************
+***********************************************
