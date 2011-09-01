@@ -15,17 +15,26 @@
         <link rel="stylesheet" type="text/css" href="css/main.css" />
 <script language="javascript">
 
-var localFormDB = getLocStorage();
+var localFormDB = checkLocStorage(); /* This var initializes the checkLocStorage function.  If the checkLocStorage returns false,  then the another function is called.*/
 
-function getLocStorage(){   /* Test to see if local storage object exists within the browser */
+function checkLocStorage() { /*Test to see if local storage object exists within the browser */
 /* If locstorage capability exists for that browser return localstorage boolean value of true.
 else call a function to display an error - local storage not supported.
 
-
+*/
 
 }
 
+function getLocStorage(){  
+ /* Calls function checkLocStorage 
 
+
+*/
+}
+
+function displayOutput {
+
+}
 
 </script>
     </head>
@@ -60,7 +69,7 @@ else call a function to display an error - local storage not supported.
 				<input type="hidden" value="true" />
 			</fieldset>
 			<!-- End of fieldset  -->
-           <input type="submit" id="submitForm" value="Add Task" OnClick="javascript: checkLocStorage();" /> <!-- Calls on Javascript function. Some CSS has been applied to submit button - rounded corners, shadow for button -->
+           <input type="submit" id="submitForm" value="Add Task" OnClick="javascript: createLocStorage();" /> <!-- Calls on Javascript function to obtain values from form. Some CSS has been applied to submit button - rounded corners, shadow for button -->
 			<input type="submit" id="clearData" value="Clear Task" OnClick="javascript: clearLocStorage();" /> <!-- Calls on Javascript function to clear data out of local storage. Some CSS has been applied to submit button - rounded corners, shadow for button -->
 
 		</form>
