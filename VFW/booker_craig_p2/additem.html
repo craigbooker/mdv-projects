@@ -14,7 +14,16 @@
         <meta name="robots" content ="index, follow" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
 <script language="javascript">
+var locStorObj = {
+context: "",
+title: "";
+priority: "";
+duedate: "";
+startdate: "";
+enddate: "";
 
+
+};
 var localFormDB = checkLocStorage(); /* This var initializes the checkLocStorage function.  If the checkLocStorage returns false,  then the another function is called.*/
 
 function checkLocStorage() { /*Test to see if local storage object exists within the browser */
@@ -32,10 +41,14 @@ else {
 }
 
 function getLocStorage(){  
- /* Calls function checkLocStorage 
-
+ /* Calls function checkLocStorage to check if the browser is capable of loc storage.
+If it is then it calls the displayOutput function to output to the browser.
 
 */
+}
+function clearLocStorage() {
+localFormDB.clear();
+
 }
 
 function displayOutput {
