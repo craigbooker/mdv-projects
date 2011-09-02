@@ -14,6 +14,8 @@
         <meta name="robots" content ="index, follow" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
 <script language="javascript">
+var dropDownVals = ["Errands", "Home", "Office", "Phone Calls", "People", "Waiting"];
+var dropDownLabel = "Context";
 var locStorObj = {
 context: "",
 title: "";
@@ -54,7 +56,16 @@ localFormDB.clear();
 function displayOutput {
 
 }
+function loadDropDown(dropDownVals, dropDownLabel) {
+this.dropDownVals = dropDownVals;
+this.dropDownLabel =  dropDownLabel;
+document.write('<optgroup label="' + this.dropDownLabel + '\">');
 
+for(i = 0; i < this.dropDownVals.length; i++) {
+document.write('<option value="' + this.dropDownVals[i] + '\">' + this.dropDownVals[i] + '</option>');
+}
+document.write('</optgroup>');
+}
 </script>
     </head>
     <body>
@@ -64,14 +75,14 @@ function displayOutput {
 			<!-- Drop down menu to select context. -->
 			<label for="context"><h2>Select Task Context:</h2></label>
 				<select id="context" class="context_drop_down">
-						<optgroup label="Context">
-							<option value="Errand">Errand</option>
+						<!--optgroup label="Context">
+							<<option value="Errand">Errand</option>
 							<option value="Home">Home</option>
 							<option value="Office">Office</option>
 							<option value="Phone Calls">Phone Calls</option>
 							<option value="People">People</option>							
 							<option value="Waiting">Waiting</option>
-						</optgroup>
+						</optgroup-->
 				</select><br />
 			<!-- End of context drop down  -->
 	
