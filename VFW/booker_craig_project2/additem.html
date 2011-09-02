@@ -66,6 +66,9 @@ document.write('<option value="' + this.dropDownVals[i] + '\">' + this.dropDownV
 }
 document.write('</optgroup>');
 }
+window.onload = function() {
+	someFunction();
+}
 </script>
     </head>
     <body>
@@ -75,6 +78,7 @@ document.write('</optgroup>');
 			<!-- Drop down menu to select context. -->
 			<label for="context"><h2>Select Task Context:</h2></label>
 				<select id="context" class="context_drop_down">
+						<div id="dropdown">
 						<!--optgroup label="Context">
 							<<option value="Errand">Errand</option>
 							<option value="Home">Home</option>
@@ -83,6 +87,7 @@ document.write('</optgroup>');
 							<option value="People">People</option>							
 							<option value="Waiting">Waiting</option>
 						</optgroup-->
+						</div>
 				</select><br />
 			<!-- End of context drop down  -->
 	
