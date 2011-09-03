@@ -14,61 +14,39 @@
         <meta name="robots" content ="index, follow" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
 <script language="javascript">
-var dropDownVals = ["Errands", "Home", "Office", "Phone Calls", "People", "Waiting"];
-var dropDownLabel = "Context";
-var locStorObj = {
-context: "",
-title: "";
-priority: "";
-duedate: "";
-startdate: "";
-enddate: "";
-
-
-};
-var localFormDB = checkLocStorage(); /* This var initializes the checkLocStorage function.  If the checkLocStorage returns false,  then the another function is called.*/
-
-function checkLocStorage() { /*Test to see if local storage object exists within the browser */
-/* If locstorage capability exists for that browser return localstorage boolean value of true.
-else call a function to display an error - local storage not supported.
-
-*/
-
-if (! window.) {
-	return window.____;
-}
-else {
-	return not defined;
-}
+function getItems() {
+	if(localStorage.getItem('apptaskName')){
+	var taskName 		= localStorage.getItem('apptaskName');
+	var taskPriority 	= localStorage.getItem('apptaskPriority');
+	var favorite 		= localStorage.getItem('appFavorite');
+	var dueDate 		= localStorage.getItem('appdueDate');
+	var startDate 		= localStorage.getItem('appstartDate');
+	var endDate 		= localStorage.getItem('appendDate');
+	var notes 			= localStorage.getItem('appNotes');
+	
+	var viewTask = [taskName, taskPriority, favorite, dueDate, startDate, endDate, notes];
+	alert(viewTask);
+	}
 }
 
-function getLocStorage(){  
- /* Calls function checkLocStorage to check if the browser is capable of loc storage.
-If it is then it calls the displayOutput function to output to the browser.
+function storeItems(id) {
+	var taskName 		= document.getElementById('taskName').value;
+	var taskPriority 	= document.getElementById('taskPriority').value;
+	var favorite 		= document.getElementById('favoriteTask').value;
+	var dueDate 		= document.getElementById('dueDate').value;
+	var startDate 		= document.getElementById('startDate').value;
+	var endDate 		= document.getElementById('endDate').value;
+	var taskNotes 		= document.getElementById('taskNotes').value;
+	localStorage.setItem('apptaskName',taskName);
+	localStorage.setItem('apptaskPriority',taskPriority);
+	localStorage.setItem('appfavoriteTask',favoriteTask);
+	localStorage.setItem('appdueDate',dueDate);
+	localStorage.setItem('appstartDate',startDate);
+	localStorage.setItem('appendDate',endDate);
+	localStorage.setItem('apptaskNotes',taskNotes);	
+}
 
-*/
-}
-function clearLocStorage() {
-localFormDB.clear();
 
-}
-
-function displayOutput {
-
-}
-function loadDropDown(dropDownVals, dropDownLabel) {
-this.dropDownVals = dropDownVals;
-this.dropDownLabel =  dropDownLabel;
-document.write('<optgroup label="' + this.dropDownLabel + '\">');
-
-for(i = 0; i < this.dropDownVals.length; i++) {
-document.write('<option value="' + this.dropDownVals[i] + '\">' + this.dropDownVals[i] + '</option>');
-}
-document.write('</optgroup>');
-}
-window.onload = function() {
-	someFunction();
-}
 </script>
     </head>
     <body>
@@ -79,14 +57,14 @@ window.onload = function() {
 			<label for="context"><h2>Select Task Context:</h2></label>
 				<select id="context" class="context_drop_down">
 						<div id="dropdown">
-						<!--optgroup label="Context">
+						<optgroup label="Context">
 							<<option value="Errand">Errand</option>
 							<option value="Home">Home</option>
 							<option value="Office">Office</option>
 							<option value="Phone Calls">Phone Calls</option>
 							<option value="People">People</option>							
 							<option value="Waiting">Waiting</option>
-						</optgroup-->
+						</optgroup>
 						</div>
 				</select><br />
 			<!-- End of context drop down  -->
@@ -94,21 +72,26 @@ window.onload = function() {
 			<!-- Start of fieldset  -->
 			<fieldset>	
 				<legend><strong>Task Information</strong></legend>
-					<label for="title">Task Name:</label><br /><input type="text" id="title" /><br />	<!-- What The Task Is Called -->	
-					<label for="priority">Priority</label><br /><input type="range" id="priority" name="priority" min="0" max="10" step="1" default="0" /><br /> <!-- Sets Priority Of Task  -->
-					<label for="favorite">Add to Favorites?</label><input type="checkbox" id="favorite" name="favorite" value="boolean"><br /> <!-- Add Task To Favorites  -->
-					<label for="duedate">Due Date:</label><br /><input type="date" id="duedate" name="duedate" ><br /> <!-- Task Due Date  -->
-					<label for="startdate">Start Date:</label><br /><input type="date" id="startdate" name="startdate" ><br /> <!-- Task Start Date -->
-					<label for="enddate">End Date:</label><br /><input type="date" id="enddate" name="enddate" ><br /> <!-- Task End Date -->
-					<label for="notes">Notes:</label><br /><textarea id="notes"></textarea><br /> <!-- Allows For Any Notes For Task -->
+					<label for="title">Task Name:</label><br /><input type="text" id="taskName" /><br />	<!-- What The Task Is Called -->	
+					<label for="priority">Priority</label><br /><input type="range" id="taskPriority" name="priority" min="0" max="10" step="1" default="0" /><br /> <!-- Sets Priority Of Task  -->
+					<label for="favorite">Add to Favorites?</label><input type="checkbox" id="favoriteTask" name="favoritetask" value="boolean"><br /> <!-- Add Task To Favorites  -->
+					<label for="duedate">Due Date:</label><br /><input type="date" id="dueDate" name="duedate" ><br /> <!-- Task Due Date  -->
+					<label for="startdate">Start Date:</label><br /><input type="date" id="startDate" name="startdate" ><br /> <!-- Task Start Date -->
+					<label for="enddate">End Date:</label><br /><input type="date" id="endDate" name="enddate" ><br /> <!-- Task End Date -->
+					<label for="notes">Notes:</label><br /><textarea id="taskNotes"></textarea><br /> <!-- Allows For Any Notes For Task -->
 				<input type="hidden" value="true" />
 			</fieldset>
 			<!-- End of fieldset  -->
-           <input type="submit" id="submitForm" value="Add Task" OnClick="javascript: createLocStorage();" /> <!-- Calls on Javascript function to obtain values from form. Some CSS has been applied to submit button - rounded corners, shadow for button -->
-			<input type="submit" id="clearData" value="Clear Task" OnClick="javascript: clearLocStorage();" /> <!-- Calls on Javascript function to clear data out of local storage. Some CSS has been applied to submit button - rounded corners, shadow for button -->
+           <input type="submit" id="submitForm" value="Add Task" OnClick="storeItems();" /> <!-- Calls on Javascript function to obtain values from form. Some CSS has been applied to submit button - rounded corners, shadow for button -->
+			<input type="submit" id="clearData" value="Clear Task" OnClick="clearLocal(); location.reload();" /> <!-- Calls on Javascript function to clear data out of local storage. Some CSS has been applied to submit button - rounded corners, shadow for button -->
 
 		</form>
+		<div id="toDoList"><p>This list is empty</p>
+		
+		
+		</div>
 		<!-- Tells the browser to include the javascript file. -->
-		<script src="js/main.js" type="text/javascript"></script>	   
+		<!--script src="js/main.js" type="text/javascript"></script-->
+		<script language="javascript">getItems();</script>	   
     </body>
 </html>

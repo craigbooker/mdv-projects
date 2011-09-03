@@ -5,6 +5,8 @@
 	Date: 08/31/2011
 */
 
+
+
 html {
     background-color: #CCCCCC;
 }
@@ -20,9 +22,33 @@ body {
 }
 
 h1 {
+    margin: 10px 20px;
+    border: ;
+    padding: 10px;
+    background: ;
+    width: 50%;
+    height: ;
+    display: ;
+    overflow: ;
+    visibility: ;
+    word-wrap: ;
     color: #4C4C4C;
     font: bold 12pt Arial, san-serif ;
 }
+p{
+	color:;
+	font-style: ;
+	font-family: ;
+	font: italic small-caps bold 12px Arial;
+	line-height: ;
+	
+
+}
+label{
+	display: block;
+
+}
+
 h2 {
     color: #000000;
     font: bold 12pt Arial, san-serif;

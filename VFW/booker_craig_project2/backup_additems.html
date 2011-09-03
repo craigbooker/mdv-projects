@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- 
+	Name: Craig Booker
+	Class: VFW
+	Project: 1
+	Date: 08/31/2011
+ -->
+<html>
+    <head>
+        <meta charset="utf-8" />       
+        <title>VFW :: Project 1 :: Add Task</title>
+        <meta name="keywords" contents="Task, to do, getting things done" />
+        <meta name="description" content="Adds a task to a to do list." />
+        <meta name="robots" content ="index, follow" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+<script language="javascript">
+var dropDownVals = ["Errands", "Home", "Office", "Phone Calls", "People", "Waiting"];
+var dropDownLabel = "Context";
+var locStorObj = {
+context: "",
+title: "";
+priority: "";
+duedate: "";
+startdate: "";
+enddate: "";
+
+
+};
+var localFormDB = checkLocStorage(); /* This var initializes the checkLocStorage function.  If the checkLocStorage returns false,  then the another function is called.*/
+
+function checkLocStorage() { /*Test to see if local storage object exists within the browser */
+/* If locstorage capability exists for that browser return localstorage boolean value of true.
+else call a function to display an error - local storage not supported.
+
+*/
+if () {
+
+}
+else {
+
+}
+/*
+if (! window.) {
+	return window.____;
+}
+else {
+	return not defined;
+}
+}
+*/
+function goLocStorage(){  
+ /* Calls function checkLocStorage to check if the browser is capable of loc storage.
+If it is then it calls the displayOutput function to output to the browser.
+
+*/
+if () {
+
+}
+
+}
+function clearLocStorage() {
+clear: localStorage.clear();
+return false;
+}
+
+function displayOutput() {
+if (anyError === true) {  /* If an error exists */
+element('error_output').innerHTML = someMsgVar;
+}
+element('dropdown').innerHTML = someMsgVar;
+}
+
+function loadDropDown(dropDownVals, dropDownLabel) {
+this.dropDownVals = dropDownVals;
+this.dropDownLabel =  dropDownLabel;
+document.write('<optgroup label="' + this.dropDownLabel + '\">');
+
+for(i = 0; i < this.dropDownVals.length; i++) {
+document.write('<option value="' + this.dropDownVals[i] + '\">' + this.dropDownVals[i] + '</option>');
+}
+document.write('</optgroup>');
+}
+window.onload = function() {
+	someFunction();
+}
+
+/* Examples from video */
+function styleField() {
+var field = document.getElementById("taskName");
+field.style.backgroundColor = "#ffb";
+}
+
+function unstyleField() {
+var fied = document.getElementById("taskName");
+field.style.backgroundColor = "#fff";
+}
+function storeItems(id) {
+var itemName = document.getElementById('taskName').value;
+var itemQty = document.getElementById('taskPriority').value;
+localStorage.setItem('appTaskName' , taskName);
+localStorage.setItem('appTaskPriority', itemPriority);
+}
+
+function getItems() {}
+	if (localStorage.getItem('appTaskName')) {
+	var itemName = localStorage.getItem('appTaskName');
+	var itemQty = localStorage.getItem('appTaskPriority');
+	var glist = document.getElementById("tasklist");
+	while (tasklist.firstChild)
+		glist.removeChild(tasklist.firstChild);
+	var newUl = document.createElement("ul");
+	var newUl = document.createElement("li");
+	newUl.appendChild(newLis);
+	var liTxt = document.createTextNode(taskName + " (" + taskPriority + "qty) added to local storage!");
+	newLis.appendChild(lilTxt);
+	tasklist.appendChild(newUl);
+	} else {
+	var taskName = 'Enter a Task Name';
+	}
+	document.getElementById('taskName').value = taskName;
+	document.getElementById('taskPriority').value = taskPriority;
+}
+</script>
+    </head>
+    <body>
+		<div class="title_bar"><h1>Add Task Item</h1></div>
+		<form action="#" method="post" class="form"> 
+		
+			<!-- Drop down menu to select context. -->
+			<label for="context"><h2>Select Task Context:</h2></label>
+				<select id="context" class="context_drop_down">
+						<div id="dropdown">
+						<!--optgroup label="Context">
+							<<option value="Errand">Errand</option>
+							<option value="Home">Home</option>
+							<option value="Office">Office</option>
+							<option value="Phone Calls">Phone Calls</option>
+							<option value="People">People</option>							
+							<option value="Waiting">Waiting</option>
+						</optgroup-->
+						</div>
+				</select><br />
+			<!-- End of context drop down  -->
+	
+			<!-- Start of fieldset  -->
+			<fieldset>	
+				<legend><strong>Task Information</strong></legend>
+					<label for="title">Task Name:</label><br /><input type="text" id="title" onfocus="styleField();" /><br />	<!-- What The Task Is Called -->	
+					<label for="priority">Priority</label><br /><input type="range" id="priority" name="priority" min="0" max="10" step="1" default="0" onclick="unstyleField"/><br /> <!-- Sets Priority Of Task  -->
+					<label for="favorite">Add to Favorites?</label><input type="checkbox" id="favorite" name="favorite" value="boolean"><br /> <!-- Add Task To Favorites  -->
+					<label for="duedate">Due Date:</label><br /><input type="date" id="duedate" name="duedate" ><br /> <!-- Task Due Date  -->
+					<label for="startdate">Start Date:</label><br /><input type="date" id="startdate" name="startdate" ><br /> <!-- Task Start Date -->
+					<label for="enddate">End Date:</label><br /><input type="date" id="enddate" name="enddate" ><br /> <!-- Task End Date -->
+					<label for="notes">Notes:</label><br /><textarea id="notes"></textarea><br /> <!-- Allows For Any Notes For Task -->
+				<input type="hidden" value="true" />
+			</fieldset>
+			<!-- End of fieldset  -->
+           <input type="submit" id="submitForm" value="Add Task" OnClick="goLocStorage();" /> <!-- Calls on Javascript function to obtain values from form. Some CSS has been applied to submit button - rounded corners, shadow for button -->
+			<input type="submit" id="clearData" value="Clear Task" OnClick="clearLocStorage(); location.reload();" /> <!-- Calls on Javascript function to clear data out of local storage. Some CSS has been applied to submit button - rounded corners, shadow for button -->
+
+		</form>
+		<div id="toDoList"><p>This list is empty</p>
+		
+		
+		</div>
+		<!-- Tells the browser to include the javascript file. -->
+		<script src="js/main.js" type="text/javascript"></script>	   
+    </body>
+</html>
