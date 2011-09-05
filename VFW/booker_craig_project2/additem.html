@@ -16,6 +16,7 @@
 <script language="javascript">
 function getItems() {
 	if(localStorage.getItem('apptaskName')){
+	var taskContext 	= localStorage.getItem('apptaskContext');
 	var taskName 		= localStorage.getItem('apptaskName');
 	var taskPriority 	= localStorage.getItem('apptaskPriority');
 	var favorite 		= localStorage.getItem('appFavorite');
@@ -24,7 +25,7 @@ function getItems() {
 	var endDate 		= localStorage.getItem('appendDate');
 	var notes 			= localStorage.getItem('appNotes');
 	
-	var viewTask = [taskName, taskPriority, favorite, dueDate, startDate, endDate, notes];
+	var viewTask = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, notes];
 	alert(viewTask);
 	document.getElementById('main').style.display = "none";
 	var clearLink = document.getElementById('clear');
@@ -33,6 +34,7 @@ function getItems() {
 }
 
 function storeItems(id) {
+	var taskContext		= document.getElementById('context').value;
 	var taskName 		= document.getElementById('taskName').value;
 	var taskPriority 	= document.getElementById('taskPriority').value;
 	var favorite 		= document.getElementById('favoriteTask').value;
@@ -40,6 +42,7 @@ function storeItems(id) {
 	var startDate 		= document.getElementById('startDate').value;
 	var endDate 		= document.getElementById('endDate').value;
 	var taskNotes 		= document.getElementById('taskNotes').value;
+	localStorage.setItem('apptaskContext',taskContext);
 	localStorage.setItem('apptaskName',taskName);
 	localStorage.setItem('apptaskPriority',taskPriority);
 	localStorage.setItem('appfavoriteTask',favoriteTask);
@@ -50,8 +53,8 @@ function storeItems(id) {
 }
 
 function clearLocal() {
-
-
+	localStorage.clear();
+	return false;
 }
 
 </script>
