@@ -129,5 +129,26 @@ inset -1px -1px 84px rgba(0,0,0,0.24),
 */
  
  }
-
+ 
+ #clear {display: none; margin: 15px;}
+ 	#clear a {color: #900;}
+ #container {
+	border: 1px solid black; width: 80%; margin: 20px, auto 0; 
+}
+#header h1 {
+	margin: 0;
+	padding: 0;
+}
+#header h1 a {
+	background-color: #ccc;
+	border-bottom: 1px solid #666;
+	color: #222;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px, 0;
+	text-align: center;
+	text-decoration: none;
+	
+}
 
