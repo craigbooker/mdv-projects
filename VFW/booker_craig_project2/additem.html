@@ -14,6 +14,25 @@
         <meta name="robots" content ="index, follow" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
 <script language="javascript">
+
+var clearLink = document.getElementById('clear');
+var anchorTags = clearLink.getElementsByTagName("a");
+
+function mouseHover() {
+	for ( var i = 0, n = anchorTags.length; i < n; i++) {
+		anchorTags[i].style.color = "#FF0000";
+	}
+
+}
+
+function mouseOut() {
+	for ( var i = 0, n = anchorTags.length; i < n; i++) {
+		anchorTags[i].style.color = "#990000";
+	}
+
+}
+
+
 function getItems() {
 	if(localStorage.getItem('apptaskName')){
 	var taskContext 	= localStorage.getItem('apptaskContext');
@@ -28,8 +47,23 @@ function getItems() {
 	var viewTask = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, notes];
 	alert(viewTask);
 	document.getElementById('main').style.display = "none";
-	var clearLink = document.getElementById('clear');
+	clearLink = document.getElementById('clear');
 	clearLink.style.display = "block";
+	} else {
+		var taskName 		= 'Enter task name';
+		var taskPriority 	= 'Select task priority';
+		//var favorite	 	= 'Please enter your task name';
+		var dueDate		 	= 'Enter task due date';
+		var startDate	 	= 'Enter task start date';
+		var endDate		 	= 'Enter task end date';
+		var taskNotes	 	= 'Enter notes if desired.';
+		
+		document.getElementById('taskName').value = taskName;
+		document.getElementById('dueDate').value = dueDate;
+		document.getElementById('startDate').value = startDate;
+		document.getElementById('endDate').value = endDate;
+		document.getElementById('taskNotes').value = taskNotes;
+	
 	}
 }
 
@@ -101,7 +135,7 @@ function clearLocal() {
 		
 		<!-- div id="toDoList"><p>This list is empty</p -->
 		</div> <!--  Main -->
-					<p id="clear"><a onmouseover="onmouseHover();" onmouseout="mouseOut();" href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p>
+					<p id="clear"><a onmouseover="mouseHover();" onmouseout="mouseOut();" href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p>
 
 		</div> <!--  Container -->  
 		<!-- Tells the browser to include the javascript file. -->
