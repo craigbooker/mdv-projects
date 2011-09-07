@@ -13,16 +13,44 @@
         <meta name="description" content="Adds a task to a to do list." />
         <meta name="robots" content ="index, follow" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
+        
 <script language="javascript">
 
 var clearLink = document.getElementById('clear');
 var anchorTags = clearLink.getElementsByTagName("a");
 
+
+/* function loadDropdown(dropDownVals) {
+	var selectBox = document.
+	this.dropDownVals = dropDownVals;
+	for ( var i = 0; i < this.dropDownVals.length; i++) {
+	document.write("<option value=\"" + this.dropDownVals[i] + "\">" + this.dropDownVals[i] + "</option>");
+	document.getElementById('dropdown').innerHTML = dropDownValues;
+	
+	
+	}
+
+
+
+}
+*/
+function addOptions(){}
+
+
+function loadDropdown() {
+var dropDownVals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
+for (var i = 0; i < dropDownVals.length; i++) {
+	addOptions(document.context_list.context, dropDownVals[i], dropDownVals[i]);
+
+}
+
+}
+
 function mouseHover() {
 	for ( var i = 0, n = anchorTags.length; i < n; i++) {
 		anchorTags[i].style.color = "#FF0000";
 	}
-
+ 
 }
 
 function mouseOut() {
@@ -54,13 +82,13 @@ function getItems() {
 		var taskPriority 	= 'Select task priority';
 		//var favorite	 	= 'Please enter your task name';
 		var dueDate		 	= 'Enter task due date';
-		var startDate	 	= 'Enter task start date';
+		var startdate	 	= 'Enter task start date';
 		var endDate		 	= 'Enter task end date';
 		var taskNotes	 	= 'Enter notes if desired.';
 		
 		document.getElementById('taskName').value = taskName;
 		document.getElementById('dueDate').value = dueDate;
-		document.getElementById('startDate').value = startDate;
+		document.getElementById('startdate').value = startdate;
 		document.getElementById('endDate').value = endDate;
 		document.getElementById('taskNotes').value = taskNotes;
 	
@@ -73,7 +101,7 @@ function storeItems(id) {
 	var taskPriority 	= document.getElementById('taskPriority').value;
 	var favorite 		= document.getElementById('favoriteTask').value;
 	var dueDate 		= document.getElementById('dueDate').value;
-	var startDate 		= document.getElementById('startDate').value;
+	var startdate 		= document.getElementById('startdate').value;
 	var endDate 		= document.getElementById('endDate').value;
 	var taskNotes 		= document.getElementById('taskNotes').value;
 	localStorage.setItem('apptaskContext',taskContext);
@@ -81,7 +109,7 @@ function storeItems(id) {
 	localStorage.setItem('apptaskPriority',taskPriority);
 	localStorage.setItem('appfavoriteTask',favoriteTask);
 	localStorage.setItem('appdueDate',dueDate);
-	localStorage.setItem('appstartDate',startDate);
+	localStorage.setItem('appstartDate',startdate);
 	localStorage.setItem('appendDate',endDate);
 	localStorage.setItem('apptaskNotes',taskNotes);	
 }
@@ -90,26 +118,28 @@ function clearLocal() {
 	localStorage.clear();
 	return false;
 }
-
+window.onLoad = loadDropDown();
 </script>
     </head>
     <body>
     <div id="container">
-		<div class="title_bar"><h1>Add Task Item</h1></div>
+		
 		<div id="main">
-		<form action="#" method="post" class="form"> 
+		<div class="title_bar"><h1>Add Task Item</h1></div>
+		<form name="context_list" action="#" method="post" class="form"> 
 		
 			<!-- Drop down menu to select context. -->
 			<label for="context"><h2>Select Task Context:</h2></label>
-				<select id="context" class="context_drop_down">
+				<select id="context" name="context" class="context_drop_down">
 						<div id="dropdown">
 						<optgroup label="Context">
-							<<option value="Errand">Errand</option>
+							<!--option value="Errand">Errand</option>
 							<option value="Home">Home</option>
 							<option value="Office">Office</option>
 							<option value="Phone Calls">Phone Calls</option>
 							<option value="People">People</option>							
-							<option value="Waiting">Waiting</option>
+							<option value="Waiting">Waiting</option-->
+							This is populated with an array.
 						</optgroup>
 						</div>
 				</select><br />
@@ -122,13 +152,14 @@ function clearLocal() {
 					<label for="priority">Priority</label><br /><input type="range" id="taskPriority" name="priority" min="0" max="10" step="1" default="0" /><br /> <!-- Sets Priority Of Task  -->
 					<label for="favorite">Add to Favorites?</label><input type="checkbox" id="favoriteTask" name="favoritetask" value="boolean"><br /> <!-- Add Task To Favorites  -->
 					<label for="duedate">Due Date:</label><br /><input type="date" id="dueDate" name="duedate" ><br /> <!-- Task Due Date  -->
-					<label for="startdate">Start Date:</label><br /><input type="date" id="startDate" name="startdate" ><br /> <!-- Task Start Date -->
+					<label for="startdate">Start Date:</label><br /><input type="date" name="startdate" id="startdate"><br /> <!-- Task Start Date -->
 					<label for="enddate">End Date:</label><br /><input type="date" id="endDate" name="enddate" ><br /> <!-- Task End Date -->
 					<label for="notes">Notes:</label><br /><textarea id="taskNotes"></textarea><br /> <!-- Allows For Any Notes For Task -->
+					<input type="submit" id="submitForm" value="Add Task" OnClick="storeItems();" /> 
 				<input type="hidden" value="true" />
 			</fieldset>
 			<!-- End of fieldset  -->
-           <input type="submit" id="submitForm" value="Add Task" OnClick="storeItems();" /> <!-- Calls on Javascript function to obtain values from form. Some CSS has been applied to submit button - rounded corners, shadow for button -->
+           <!-- Calls on Javascript function to obtain values from form. Some CSS has been applied to submit button - rounded corners, shadow for button -->
 			<!--input type="submit" id="clearData" value="Clear Task" OnClick="clearLocal(); location.reload();" / --> <!-- Calls on Javascript function to clear data out of local storage. Some CSS has been applied to submit button - rounded corners, shadow for button -->
 
 		</form>

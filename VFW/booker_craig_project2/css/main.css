@@ -6,41 +6,45 @@
 */
 
 
-
+/*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { */
 html {
     background-color: #CCCCCC;
 }
-body {
+
+#main {
     font-family: "Arial", sans-serif;
     margin: 10px, 0px, 0px, 0px;
     padding: 10px, 0px, 0px, 0px;
     background-color: #E6E6E6;
     vertical-align: 0px;
     color: #4D4B39;
-    max-width: 416px;
+    min-width: 420px;
+    max-width: 480px;
     border: 1px solid #000000;
+    overflow: scroll;
 }
 
-h1 {
-    margin: 10px 20px;
-    border: ;
-    padding: 10px;
-    background: ;
-    width: 50%;
-    height: ;
-    display: ;
-    overflow: ;
-    visibility: ;
-    word-wrap: ;
-    color: #4C4C4C;
-    font: bold 12pt Arial, san-serif ;
+ #header h1 {
+	text-shadow: #FFFFFF 3px 3px;
+	 margin: 10px 20px;
+	 padding: 0;
+	font: bold 12pt Arial, san-serif ;
+	text-shadow: #FFF 3px 3px;
+	/* text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); */
+	color: #4C4C4C;
 }
-p{
-	color:;
-	font-style: ;
-	font-family: ;
-	font: italic small-caps bold 12px Arial;
-	line-height: ;
+#header h1 a {
+	background-color: #ccc;
+	border-bottom: 1px solid #666;
+	color: #222;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px, 0;
+	text-align: center;
+	text-decoration: none;
+	
+}
 	
 
 }
@@ -59,6 +63,8 @@ h2 {
  
  input { /* Added this to provide some margin to the bottom of the input fields. */
 	margin-bottom: 10px;
+	width: 280px;
+	
 	
  
  }
@@ -71,13 +77,14 @@ h2 {
 	 border-radius: 10%;
 	 -o-radius: 10%;         /* Specific to Opera browser. */
 	 border-radius: 10%;
- }
- 
+	 width: 100px;
+	  }
  /* The title bar class adds a gradient for title bar */ 
 .title_bar {
     /* appearance: menu; */
     -webkit-appearance:menu;
     text-align: center;
+    
     padding: 0px, 0px, 0px, 0px;
     margin: 0px, 0px, 0px, 0px;
     background-image: 
@@ -104,7 +111,10 @@ h2 {
     rgba(0,0,0,0.2) 60%,
     rgba(0,0,0,0.35) 92%,
     rgba(0,0,0,0.35) 98%
-    );        
+    );      
+}
+.taskNotes {
+	word-wrap: normal;
 }
 
 /* Added this style in to provide some margin along the bottom of the drop down field. */
@@ -115,17 +125,18 @@ h2 {
  /* Some basic formatting for the form. */
  .form {
  padding: 5px;
- 
+	-webkit-box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),	
+	inset -1px -1px 14px rgba(0,0,0,0.14);		 
+	-moz-box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),		 
+	inset -1px -1px 14px rgba(0,0,0,0.14);		 
+	box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),		 
+	inset -1px -1px 14px rgba(0,0,0,0.14);
+
   /* Something I might add in project 2
--webkit-box-shadow:
-inset 1px 1px 84px rgba(0,0,0,1),	
-inset -1px -1px 84px rgba(0,0,0,0.24),		 
--moz-box-shadow:
-inset 1px 1px 84px rgba(0,0,0,0.24),		 
-inset -1px -1px 84px rgba(0,0,0,0.24),		 
-box-shadow:
-inset 1px 1px 84px rgba(0,0,0,0.24),		 
-inset -1px -1px 84px rgba(0,0,0,0.24),		 
+		 
 */
  
  }
@@ -133,22 +144,7 @@ inset -1px -1px 84px rgba(0,0,0,0.24),
  #clear {display: none; margin: 15px;}
  	#clear a {color: #900;}
  #container {
-	border: 1px solid black; width: 80%; margin: 20px, auto 0; 
+	border: 1px solid black; width: 416px; margin: 20px, auto 0; 
 }
-#header h1 {
-	margin: 0;
-	padding: 0;
-}
-#header h1 a {
-	background-color: #ccc;
-	border-bottom: 1px solid #666;
-	color: #222;
-	display: block;
-	font-size: 20px;
-	font-weight: bold;
-	padding: 10px, 0;
-	text-align: center;
-	text-decoration: none;
-	
-}
+
 
