@@ -12,12 +12,14 @@
         <meta name="keywords" contents="Task, to do, getting things done" />
         <meta name="description" content="Adds a task to a to do list." />
         <meta name="robots" content ="index, follow" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"> 
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         
 <script language="javascript">
 
 var clearLink = document.getElementById('clear');
 var anchorTags = clearLink.getElementsByTagName("a");
+var dropDownvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
 
 
 /* function loadDropdown(dropDownVals) {
@@ -34,13 +36,16 @@ var anchorTags = clearLink.getElementsByTagName("a");
 
 }
 */
-function addOptions(){}
+function addOptions(){
+	var someVarOpt = document.createElement("OPTION");
+
+}
 
 
-function loadDropdown() {
-var dropDownVals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
-for (var i = 0; i < dropDownVals.length; i++) {
-	addOptions(document.context_list.context, dropDownVals[i], dropDownVals[i]);
+function loadDropdown(dropDownvals) {
+this.dropDownvals = dropDownvals;
+for (var i = 0; i < this.dropDownvals.length; i++) {
+	addOptions(document.context_list.context, this.dropDownvals[i], this.dropDownvals[i]);
 
 }
 
@@ -62,15 +67,15 @@ function mouseOut() {
 
 
 function getItems() {
-	if(localStorage.getItem('apptaskName')){
-	var taskContext 	= localStorage.getItem('apptaskContext');
-	var taskName 		= localStorage.getItem('apptaskName');
-	var taskPriority 	= localStorage.getItem('apptaskPriority');
+	if(localStorage.getItem('appTaskName')){
+	var taskContext 	= localStorage.getItem('appTaskContext');
+	var taskName 		= localStorage.getItem('appTaskName');
+	var taskPriority 	= localStorage.getItem('appTaskPriority');
 	var favorite 		= localStorage.getItem('appFavorite');
-	var dueDate 		= localStorage.getItem('appdueDate');
-	var startDate 		= localStorage.getItem('appstartDate');
-	var endDate 		= localStorage.getItem('appendDate');
-	var notes 			= localStorage.getItem('appNotes');
+	var dueDate 		= localStorage.getItem('appDueDate');
+	var startDate 		= localStorage.getItem('appStartDate');
+	var endDate 		= localStorage.getItem('appEndDate');
+	var taskNotes 		= localStorage.getItem('appTaskNotes');
 	
 	var viewTask = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, notes];
 	alert(viewTask);
@@ -80,54 +85,64 @@ function getItems() {
 	} else {
 		var taskName 		= 'Enter task name';
 		var taskPriority 	= 'Select task priority';
-		//var favorite	 	= 'Please enter your task name';
+		var favorite	 	= 'checked';
 		var dueDate		 	= 'Enter task due date';
-		var startdate	 	= 'Enter task start date';
+		var startDate	 	= 'Enter task start date';
 		var endDate		 	= 'Enter task end date';
 		var taskNotes	 	= 'Enter notes if desired.';
 		
-		document.getElementById('taskName').value = taskName;
-		document.getElementById('dueDate').value = dueDate;
-		document.getElementById('startdate').value = startdate;
-		document.getElementById('endDate').value = endDate;
-		document.getElementById('taskNotes').value = taskNotes;
+		document.getElementById('taskname').value = taskName;
+		document.getElementById('duedate').value = dueDate;
+		document.getElementById('startdate').value = startDate;
+		document.getElementById('enddate').value = endDate;
+		document.getElementById('notes').value = taskNotes;
 	
 	}
 }
 
 function storeItems(id) {
 	var taskContext		= document.getElementById('context').value;
-	var taskName 		= document.getElementById('taskName').value;
-	var taskPriority 	= document.getElementById('taskPriority').value;
-	var favorite 		= document.getElementById('favoriteTask').value;
-	var dueDate 		= document.getElementById('dueDate').value;
-	var startdate 		= document.getElementById('startdate').value;
-	var endDate 		= document.getElementById('endDate').value;
+	var taskName 		= document.getElementById('taskname').value;
+	var taskPriority 	= document.getElementById('taskpriority').value;
+	var favorite 		= document.getElementById('favoritetask').value;
+	var dueDate 		= document.getElementById('duedate').value;
+	var startDate 		= document.getElementById('startdate').value;
+	var endDate 		= document.getElementById('enddate').value;
 	var taskNotes 		= document.getElementById('taskNotes').value;
-	localStorage.setItem('apptaskContext',taskContext);
-	localStorage.setItem('apptaskName',taskName);
-	localStorage.setItem('apptaskPriority',taskPriority);
-	localStorage.setItem('appfavoriteTask',favoriteTask);
-	localStorage.setItem('appdueDate',dueDate);
-	localStorage.setItem('appstartDate',startdate);
-	localStorage.setItem('appendDate',endDate);
-	localStorage.setItem('apptaskNotes',taskNotes);	
+	localStorage.setItem('appTaskContext',taskContext);
+	localStorage.setItem('appTaskName',taskName);
+	localStorage.setItem('appTaskPriority',taskPriority);
+	localStorage.setItem('appFavoriteTask',favoriteTask);
+	localStorage.setItem('appDueDate',dueDate);
+	localStorage.setItem('appStartDate',startDate);
+	localStorage.setItem('appEndDate',endDate);
+	localStorage.setItem('appTaskNotes',taskNotes);	
 }
 
 function clearLocal() {
 	localStorage.clear();
 	return false;
 }
-window.onLoad = loadDropDown();
+function chgOrientation() {
+	var displayType = "orient_";
+	switch(window.orientation){
+	
+	
+	}
+}
+
+window.onLoad = loadDropDown(dropDownvals);
+window.onLoad = chgOrientation();
 </script>
     </head>
-    <body>
+    <body onorientchange="chgOrientation();">
     <div id="container">
 		
 		<div id="main">
-		<div class="title_bar"><h1>Add Task Item</h1></div>
+		<div class="titlebar"><h1>Add Task Item</h1></div>
 		<form name="context_list" action="#" method="post" class="form"> 
-		
+			<ul>
+			<li>
 			<!-- Drop down menu to select context. -->
 			<label for="context"><h2>Select Task Context:</h2></label>
 				<select id="context" name="context" class="context_drop_down">
@@ -144,29 +159,30 @@ window.onLoad = loadDropDown();
 						</div>
 				</select><br />
 			<!-- End of context drop down  -->
-	
+			</li>
+			</ul>
 			<!-- Start of fieldset  -->
 			<fieldset>	
 				<legend><strong>Task Information</strong></legend>
-					<label for="title">Task Name:</label><br /><input type="text" id="taskName" /><br />	<!-- What The Task Is Called -->	
-					<label for="priority">Priority</label><br /><input type="range" id="taskPriority" name="priority" min="0" max="10" step="1" default="0" /><br /> <!-- Sets Priority Of Task  -->
-					<label for="favorite">Add to Favorites?</label><input type="checkbox" id="favoriteTask" name="favoritetask" value="boolean"><br /> <!-- Add Task To Favorites  -->
-					<label for="duedate">Due Date:</label><br /><input type="date" id="dueDate" name="duedate" ><br /> <!-- Task Due Date  -->
-					<label for="startdate">Start Date:</label><br /><input type="date" name="startdate" id="startdate"><br /> <!-- Task Start Date -->
-					<label for="enddate">End Date:</label><br /><input type="date" id="endDate" name="enddate" ><br /> <!-- Task End Date -->
-					<label for="notes">Notes:</label><br /><textarea id="taskNotes"></textarea><br /> <!-- Allows For Any Notes For Task -->
+					<label for="taskname">Task Name:</label><br /><input type="text" id="taskname" /><br />	<!-- What The Task Is Called -->	
+					<label for="priority">Priority</label><br /><input type="range" id="priority" min="0" max="10" step="1" default="0" /><br /> <!-- Sets Priority Of Task  -->
+					<label for="favorite">Add to Favorites?</label><input type="checkbox" id="favorite" name="favoritetask" value="boolean"><br /> <!-- Add Task To Favorites  -->
+					<label for="duedate">Due Date:</label><br /><input type="date" id="duedate"><br /> <!-- Task Due Date  -->
+					<label for="startdate">Start Date:</label><br /><input type="date" id="startdate"><br /> <!-- Task Start Date -->
+					<label for="enddate">End Date:</label><br /><input type="date" id="enddate" ><br /> <!-- Task End Date -->
+					<label for="tasknotes">Notes:</label><br /><textarea id="tasknotes"></textarea><br /> <!-- Allows For Any Notes For Task -->
 					<input type="submit" id="submitForm" value="Add Task" OnClick="storeItems();" /> 
 				<input type="hidden" value="true" />
 			</fieldset>
 			<!-- End of fieldset  -->
            <!-- Calls on Javascript function to obtain values from form. Some CSS has been applied to submit button - rounded corners, shadow for button -->
-			<!--input type="submit" id="clearData" value="Clear Task" OnClick="clearLocal(); location.reload();" / --> <!-- Calls on Javascript function to clear data out of local storage. Some CSS has been applied to submit button - rounded corners, shadow for button -->
+			<!--input type="submit" id="clearData" value="Clear Task" OnClick="clearLocal(); location.reload();" / --> 
 
 		</form>
 		
 		<!-- div id="toDoList"><p>This list is empty</p -->
 		</div> <!--  Main -->
-					<p id="clear"><a onmouseover="mouseHover();" onmouseout="mouseOut();" href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p>
+					<p id="clear"><a onmouseover="mouseHover();" onmouseout="mouseOut();" href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p><!-- Calls on Javascript function to clear data out of local storage. Some CSS has been applied to submit button - rounded corners, shadow for button -->
 
 		</div> <!--  Container -->  
 		<!-- Tells the browser to include the javascript file. -->
