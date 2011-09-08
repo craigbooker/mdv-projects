@@ -1,6 +1,24 @@
-// Craig Booker
+<!DOCTYPE html>
+<!-- 
+	Name: Craig Booker
+	Class: VFW
+	Project: 1
+	Date: 08/31/2011
+ -->
+<html>
+    <head>
+        <meta charset="utf-8" />       
+        <title>VFW :: Project 1 :: Add Task</title>
+        <meta name="keywords" contents="Task, to do, getting things done" />
+        <meta name="description" content="Adds a task to a to do list." />
+        <meta name="robots" content ="index, follow" />
+        <!--meta name="viewport" content="width = 'device-width'; initial-scale=1.0; maximum-scale=1.0;"--> 
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        
+<script language="javascript">
 
-
+//var clearLink = document.getElementById('clear');
+//var anchorTags = clearLink.getElementsByTagName("a");
 var dropDownvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
 
 function addOptions(selectbox, optText, optValue) {
@@ -26,8 +44,8 @@ function initialLoad() {
 
 function getItems() {
 	if (localStorage.getItem('appTaskName')) {
-		console.log('Made it');	
-		console.log(appTaskName);
+		alert('Made it');	
+		alert(appTaskName);
 		var taskContext		= localStorage.getItem('appTaskContext');
 		var taskName		= localStorage.getItem('appTaskName');
 		var taskPriority	= localStorage.getItem('appTaskPriority');
@@ -42,7 +60,7 @@ function getItems() {
 		var clearLink = document.getElementById('clear');
 		clearLink.style.display = "block";
 	} else {
-		console.log('Hello');	
+		alert('Hello');	
 
 		var appTaskName			= 'Enter task name';
 		var appTaskPriority		= 'Select task priority';
@@ -78,10 +96,63 @@ function storeItems(id) {
 	localStorage.setItem('appStartDate', startDate);
 	localStorage.setItem('appEndDate', endDate);
 	localStorage.setItem('appTaskNotes', taskNotes);
-	console.log(taskContext);	
+	alert(taskContext);	
 }
 
 function clearLocal() {
 	localStorage.clear();
 	return false;
 }
+/*
+function chgOrientation() {
+	var displayType = "orient_";
+	switch(window.orientation){
+	
+	 onorientchange="chgOrientation(); add to body tag
+	}
+}
+*/
+
+</script>
+    </head>
+    <body onLoad="initialLoad();">
+    <div id="container">
+		
+		<div id="main">
+		<div class="titlebar"><h1>Add Task Item</h1></div>
+		<form name="addTask" action="#" method="post" class="form"> 
+			<ul>
+			<li>
+			<!-- Drop down menu to select context. -->
+			<label for="context"><h2>Select Task Context:</h2></label>
+				<select id="context" name="context_list" class="context_drop_down">
+				<option value="" >Context list</option>
+						
+				</select><br />
+			<!-- End of context drop down  -->
+			</li>
+			</ul>
+			<!-- Start of fieldset  -->
+			<fieldset>	
+				<legend><strong>Task Information</strong></legend>
+					<label for="taskName">Task Name:</label><br /><input type="text" id="taskName" /><br />	
+					<label for="priority">Priority</label><br /><input type="range" id="priority" min="0" max="10" step="1" default="0" /><br /> 						<label for="taskFavorite">Add to Favorites?</label><input type="checkbox" id="taskFavorite" value="boolean"><br />
+					<label for="dueDate">Due Date:</label><br /><input type="date" id="dueDate"><br /> 
+					<label for="startDate">Start Date:</label><br /><input type="date" id="startDate"><br /> 
+					<label for="endDate">End Date:</label><br /><input type="date" id="endDate" ><br /> 
+					<label for="taskNotes">Notes:</label><br /><textarea id="taskNotes"></textarea><br /> 
+					<input type="submit" id="submitForm" value="Add Task" OnClick="storeItems();" /> 
+					<input type="hidden" value="true" />
+			</fieldset>
+			<!-- End of fieldset  -->
+   		</form>
+		
+		<!-- div id="toDoList"><p>This list is empty</p -->
+		</div> <!--  Main -->
+					<p id="clear"><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p>
+		</div> <!--  Container -->  
+		<!-- Tells the browser to include the javascript file. --><!--script src="js/main.js" type="text/javascript"></script-->
+		<script language="javascript">getItems(); </script>
+
+    </body>
+</html>
