@@ -1,85 +1,119 @@
 // Craig Booker
+// VFW Project 2
+// 09/08/2011
 
 
-var dropDownvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
+var clearLink = document.getElementById('clear');
+//var anchorTags = clearLink.getElementsByTagName("a");
+//var dropDownvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
 
 function addOptions(selectbox, optText, optValue) {
 	var optVar = document.createElement("OPTION");
 	optVar.text = optText;
 	optVar.value = optValue;
 	selectbox.options.add(optVar);
+	
 }
-function loadDropdown(selectbox) {
+function loadDropdown() {
 	var i;
-//var dropDownvals = new Array("Errand", "Home", "Office", "Phone Calls", "People", "Waiting");
+	var dropDownvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
 	for (i = 0; i < dropDownvals.length; i++) {
 		addOptions(document.addTask.context_list, dropDownvals[i], dropDownvals[i]);
 	}
-
-}
-function initialLoad() {
-	loadDropdown(dropDownvals);
+	return;
 }
 
 
 
 
-function getItems() {
-	if (localStorage.getItem('appTaskName')) {
-		console.log('Made it');	
-		console.log(appTaskName);
-		var taskContext		= localStorage.getItem('appTaskContext');
-		var taskName		= localStorage.getItem('appTaskName');
-		var taskPriority	= localStorage.getItem('appTaskPriority');
-		var taskFavorite	= localStorage.getItem('appFavorite');
-		var dueDate			= localStorage.getItem('appDueDate');
-		var startDate		= localStorage.getItem('appStartDate');
-		var endDate			= localStorage.getItem('appEndDate');
-		var taskNotes		= localStorage.getItem('appTaskNotes');
-		var viewTask = [taskContext, taskName, taskPriority, taskFavorite, dueDate, startDate, endDate, taskNotes];
-		alert (viewTask);
-		document.getElementById('main').style.display = "none";
+function setDefualtVals() {
+	var taskName		=	'Enter task name';
+	var taskPriority	=	0;
+	//var taskFavorite	=	"checked";
+	var dueDate			=	'Enter task due date';
+	var startDate		=	'Enter task start date';
+	var endDate			=	'Enter task end date';
+	var taskNotes		=	'Enter notes if desired.';
+		
+	document.getElementById('taskName').value = taskName;
+	document.getElementById('taskPriority').value = taskPriority;
+	//document.getElementById('taskFavorite').value = taskFavorite;
+	document.getElementById('dueDate').value = dueDate;
+	document.getElementById('startDate').value = startDate;
+	document.getElementById('endDate').value = endDate;
+	document.getElementById('taskNotes').value = taskNotes;
+	return;
+}
+
+function getData() {
+	if (localStorage.getItem('apptaskName')) {
+		var taskContext		=	localStorage.getItem('apptaskContext');
+		var taskName		=	localStorage.getItem('apptaskName');
+		var taskPriority	=	localStorage.getItem('apptaskPriority');
+		var favorite		=	localStorage.getItem('appFavorite');
+		var dueDate			=	localStorage.getItem('appdueDate');
+		var startDate		=	localStorage.getItem('appstartDate');
+		var endDate			=	localStorage.getItem('appendDate');
+		var notes			=	localStorage.getItem('appNotes');
+	
+		var viewTask = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, notes];
+		document.getElementById('form').style.display = "none";
 		var clearLink = document.getElementById('clear');
 		clearLink.style.display = "block";
+		return viewTask;
 	} else {
-		console.log('Hello');	
-
-		var appTaskName			= 'Enter task name';
-		var appTaskPriority		= 'Select task priority';
-		var appFavorite			= 'checked';
-		var appDueDate			= 'Enter task due date';
-		var appStartDate		= 'Enter task start date';
-		var appEndDate			= 'Enter task end date';
-		var appTaskNotes		= 'Enter notes if desired.';
-		
-		document.getElementById('taskName').value = appTaskName;
-		document.getElementById('dueDate').value = appDueDate;
-		document.getElementById('startDate').value = appStartDate;
-		document.getElementById('endDate').value = appEndDate;
-		document.getElementById('taskNotes').value = appTaskNotes;
-	
+		setDefualtVals();
+		return;
 	}
 }
-
-function storeItems(id) {
-	var taskContext		= document.getElementById('context').value;
-	var taskName		= document.getElementById('taskName').value;
-	var taskPriority	= document.getElementById('taskPriority').value;
-	var favoriteTask	= document.getElementById('favoriteTask').value;
-	var dueDate			= document.getElementById('dueDate').value;
-	var startDate		= document.getElementById('startDate').value;
-	var endDate			= document.getElementById('endDate').value;
-	var taskNotes		= document.getElementById('taskNotes').value;
-	localStorage.setItem('appTaskContext', taskContext);
-	localStorage.setItem('appTaskName', taskName);
-	localStorage.setItem('appTaskPriority', taskPriority);
-	localStorage.setItem('appFavoriteTask', favoriteTask);
-	localStorage.setItem('appDueDate', dueDate);
-	localStorage.setItem('appStartDate', startDate);
-	localStorage.setItem('appEndDate', endDate);
-	localStorage.setItem('appTaskNotes', taskNotes);
-	console.log(taskContext);	
+/* Needs to be passed arguments */
+function storeItems(formData) {
+	var taskContext		=	document.getElementById('context').value;
+	var taskName		=	document.getElementById('taskName').value;
+	var taskPriority	=	document.getElementById('taskPriority').value;
+	var favoriteTask		=	document.getElementById('favoriteTask').value;
+	var dueDate			=	document.getElementById('dueDate').value;
+	var startDate		=	document.getElementById('startDate').value;
+	var endDate			=	document.getElementById('endDate').value;
+	var taskNotes		=	document.getElementById('taskNotes').value;
+	localStorage.setItem('apptaskContext', taskContext);
+	localStorage.setItem('apptaskName', taskName);
+	localStorage.setItem('apptaskPriority', taskPriority);
+	localStorage.setItem('appfavoriteTask', favoriteTask);
+	localStorage.setItem('appdueDate', dueDate);
+	localStorage.setItem('appstartDate', startDate);
+	localStorage.setItem('appendDate', endDate);
+	localStorage.setItem('apptaskNotes', taskNotes);	
 }
+/*
+function checkData(formData) {
+	if (formData === undefined) {
+		//alert('It is empty!');
+		//checkLocStorSup(formData);
+		return;
+	} else { 
+		alert(formData);
+		return;
+	}
+}
+*/
+
+function outPutMsg(outPut){
+		alert(outPut);
+		return;
+}
+
+function checkLocStorSup(formData) {	
+	if (typeof (localStorage) === 'undefined') {
+		outPutMsg('Your browser does not support HTML 5. Please update your browser and try again.');
+		return;
+	} else {
+		//checkData(formData);
+		//alert('We are good to go!');
+		return;
+	} 
+}
+
 
 function clearLocal() {
 	localStorage.clear();
