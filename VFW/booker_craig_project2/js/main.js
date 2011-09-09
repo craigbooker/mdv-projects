@@ -108,7 +108,7 @@ function checkLocStorSup(formData) {
 		outPutMsg('Your browser does not support HTML 5. Please update your browser and try again.');
 		return;
 	} else {
-		//checkData(formData);
+		//checkData(formData);  for debugging
 		//alert('We are good to go!');
 		return;
 	} 
