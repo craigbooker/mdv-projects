@@ -3,9 +3,11 @@
 // 09/08/2011
 
 
+
+
 var clearLink = document.getElementById('clear');
-//var anchorTags = clearLink.getElementsByTagName("a");
-//var dropDownvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
+
+
 
 function addOptions(selectbox, optText, optValue) {
 	var optVar = document.createElement("OPTION");
@@ -22,7 +24,6 @@ function loadDropdown() {
 	}
 	return;
 }
-
 
 
 
@@ -62,7 +63,7 @@ function getData() {
 		clearLink.style.display = "block";
 		return viewTask;
 	} else {
-		setDefualtVals();
+		//setDefualtVals();
 		return;
 	}
 }
@@ -71,7 +72,7 @@ function storeItems(formData) {
 	var taskContext		=	document.getElementById('context').value;
 	var taskName		=	document.getElementById('taskName').value;
 	var taskPriority	=	document.getElementById('taskPriority').value;
-	var favoriteTask		=	document.getElementById('favoriteTask').value;
+	var favoriteTask	=	document.getElementById('favoriteTask').value;
 	var dueDate			=	document.getElementById('dueDate').value;
 	var startDate		=	document.getElementById('startDate').value;
 	var endDate			=	document.getElementById('endDate').value;
@@ -98,9 +99,9 @@ function checkData(formData) {
 }
 */
 
-function outPutMsg(outPut){
-		alert(outPut);
-		return;
+function outPutMsg(outPut) {
+	alert(outPut);
+	return;
 }
 
 function checkLocStorSup(formData) {	

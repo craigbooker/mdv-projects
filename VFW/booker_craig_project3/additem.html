@@ -2,13 +2,13 @@
 <!-- 
 	Name: Craig Booker
 	Class: VFW
-	Project: 1
-	Date: 08/31/2011
+	Project: 3
+	Date: 09/10/2011
  -->
 <html>
     <head>
         <meta charset="utf-8" />       
-        <title>VFW :: Project 1 :: Add Task</title>
+        <title>VFW :: Project 3 :: Add Task</title>
         <meta name="keywords" contents="Task, to do, getting things done" />
         <meta name="description" content="Adds a task to a to do list." />
         <meta name="robots" content ="index, follow" />
@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
-    <body onLoad="var dropDownvals = ['Errand', 'Home', 'Office', 'Phone Calls', 'People', 'Waiting']; loadDropdown (dropDownvals);">
+    <body onLoad="var dropDownvals = ['Errand', 'Home', 'Office', 'Phone Calls', 'People', 'Waiting']; loadDropdown (dropDownvals);"> 
     <div id="container">
 		<div id="main">
 			<div class="titlebar"><h1>Add Task Item</h1></div>
@@ -40,9 +40,9 @@
 						<label for="taskName">Task Name:</label><br /><input type="text" id="taskName" /><br />	<!-- What The Task Is Called -->	
 						<label for="taskPriority">Priority</label><br /><input type="range" id="taskPriority" name="priority" min="0" max="10" step="1" default="0" /><br /> <!-- Sets Priority Of Task  -->
 						<label for="favoriteTask">Add to Favorites?</label><input type="checkbox" id="favoriteTask" name="favoritetask" value="boolean"><br /> <!-- Add Task To Favorites  -->
-						<label for="dueDate">Due Date:</label><input type="date" id="dueDate" name="duedate" ><br /> <!-- Task Due Date  -->
 						<label for="startDate">Start Date:</label><input type="date" id="startDate" name="startdate" ><br /> <!-- Task Start Date -->
 						<label for="endDate">End Date:</label><input type="date" id="endDate" name="enddate" ><br /> <!-- Task End Date -->
+						<label for="dueDate">Due Date:</label><input type="date" id="dueDate" name="duedate" ><br /> <!-- Task Due Date  -->
 						<label for="taskNotes">Notes:</label><br /><textarea id="taskNotes"></textarea><br /> <!-- Allows For Any Notes For Task -->
 					<input type="hidden" value="true" />
 				</fieldset>
@@ -60,7 +60,9 @@
 					<a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p> <!-- Calls on Javascript function to clear data out of local storage. Some CSS has been applied to submit button - rounded corners, shadow for button -->
 		</div> <!--  Container -->  
 		<!-- Tells the browser to include the javascript file. -->
+
 		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/validate_fields.js" type="text/javascript"></script>
 		<script language="javascript">
 		var formData = getData();
 		checkLocStorSup(formData);		

@@ -160,7 +160,7 @@ label{
  
  /* Some basic formatting for the form. */
  .form {
- padding: 5px;
+ 	padding: 5px;
 	-webkit-box-shadow:
 	inset 1px 1px 14px rgba(0,0,0,0.14),	
 	inset -1px -1px 14px rgba(0,0,0,0.14);		 
