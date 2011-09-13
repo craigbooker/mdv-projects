@@ -46,6 +46,19 @@ function setDefualtVals() {
 	return;
 }
 
+function displayTask () {
+		var  formLink = document.getElementById('form');
+		var clearLink = document.getElementById('clear');
+		formLink.style.display = "none";
+		clearLink.style.display = "block";
+		
+		var clearHTML = clearLink.innerHTML = '<a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a>';
+
+
+}
+
+
+
 function getData() {
 	if (localStorage.getItem('apptaskName')) {
 		var taskContext		=	localStorage.getItem('apptaskContext');
@@ -58,9 +71,12 @@ function getData() {
 		var notes			=	localStorage.getItem('appNotes');
 	
 		var viewTask = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, notes];
+		displayTask();
+		/*
 		document.getElementById('form').style.display = "none";
 		var clearLink = document.getElementById('clear');
 		clearLink.style.display = "block";
+		*/
 		return viewTask;
 	} else {
 		//setDefualtVals();

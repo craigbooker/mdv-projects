@@ -24,6 +24,7 @@ function validateForm() {
 	} else {
 		document.getElementById("taskName").style.border = "2px solid #ccc";
 	}
+	/*
 	var getPriority = document.getElementById("taskPriority").value;
 	if (getPriority === "") {
 		document.getElementById("taskPriority").style.border = "2px solid red";
@@ -34,7 +35,7 @@ function validateForm() {
 		return false;
 	} else {
 		document.getElementById("taskPriority").style.border = "2px solid #ccc";
-	}
+	} */
 	var getSdate = document.getElementById("startDate").value;
 	if (getSdate === "") {
 		document.getElementById("startDate").style.border = "2px solid red";
@@ -50,9 +51,9 @@ function validateForm() {
 	if (getEdate === "") {
 		document.getElementById("endDate").style.border = "2px solid red";
 		alert("Please set an End Date.");
-		//if (encourage !== null && encourage !== "") {
-		//	document.getElementById("endDate").value = encourage;
-		//}
+		if (encourage !== null && encourage !== "") {
+			document.getElementById("endDate").value = encourage;
+		}
 		return false;
 	} else {
 		document.getElementById("endDate").style.border = "2px solid #ccc";
@@ -61,9 +62,9 @@ function validateForm() {
 	if (getDdate === "") {
 		document.getElementById("dueDate").style.border = "2px solid red";
 		alert("Please set a Due Date.");
-		//if (encourage !== null && encourage !== "") {
-		//	document.getElementById("dueDate").value = encourage;
-		//}
+		if (encourage !== null && encourage !== "") {
+			document.getElementById("dueDate").value = encourage;
+		}
 		return false;
 	} else {
 		document.getElementById("dueDate").style.border = "2px solid #ccc";
