@@ -6,7 +6,7 @@
 
 
 var clearLink = document.getElementById('clear');
-
+var taskImgs = ["img/errand.png", "img/home.png", "img/office.png", "img/phone_calls.png", "img/people.png"];
 
 
 function addOptions(selectbox, optText, optValue) {
@@ -46,17 +46,40 @@ function setDefualtVals() {
 	return;
 }
 
-function displayTask () {
+function displayTask (viewTask) {
 		var  formLink = document.getElementById('form');
 		var clearLink = document.getElementById('clear');
+		document.getElementById('form').style.display = "none";
+		document.getElementById('form').style.display ="block";
+		var getListdiv = document.getElementById('toDolist');
 		formLink.style.display = "none";
 		clearLink.style.display = "block";
-		
-		var clearHTML = clearLink.innerHTML = '<a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a>';
+		for(var i = 0; i < viewTask.length; i++) {
+			var newParag = document.createElement("p");
+			var taskText = document.createTextNode(viewTask[i]);
+			newParag.appendChild(taskText);
+			getListdiv.appendChild(newParag);
+			if (i === viewTask.length) {
+				var clearHTML = clearLink.innerHTML = '<a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a>';
 
+			
+			}
+		}
+		
+		//var newAnchor = document.createElement("a");
+		//newAnchor.document.createTextNode()
+		
 
 }
-
+/*
+taskName
+taskPriority
+taskStartdate
+taskEnddate
+taskDuedate
+taskNotes
+taskImg
+*/
 
 
 function getData() {
@@ -71,7 +94,9 @@ function getData() {
 		var notes			=	localStorage.getItem('appNotes');
 	
 		var viewTask = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, notes];
-		displayTask();
+		displayTask(viewTask);
+		
+		
 		/*
 		document.getElementById('form').style.display = "none";
 		var clearLink = document.getElementById('clear');
