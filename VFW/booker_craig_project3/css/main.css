@@ -35,6 +35,21 @@ html {
 
 }
 
+#toDolist {
+	margin: 0px;
+	padding: 5px;
+	display: block;
+	-webkit-box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),	
+	inset -1px -1px 14px rgba(0,0,0,0.14);		 
+	-moz-box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),		 
+	inset -1px -1px 14px rgba(0,0,0,0.14);		 
+	box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),		 
+	inset -1px -1px 14px rgba(0,0,0,0.14);
+}
+
 h1 {
 	background-color: #4d4b39;
 	color: #E1DFD3;
@@ -73,70 +88,25 @@ h2 {
     line-height: 1.1em;
     padding: 0px, 0px, 0px, 0px;
     margin: 0px, 0px, 0px, 0px;
-    /*
-    background-image: 
-    -webkit-linear-gradient( /* Specific to webkit browsers such as iOS */
-   /*  270deg, /* Tells the browser to render the gradient from top to bottom */
-   /* rgba(3,5,1,0.05) 0,
-	rgba(25,2,1,0.15) 25%,
-    rgba(3,2,1,0.2)  60%,
-    rgba(3,2,1,0.35) 92%,
-    rgba(3,2,1,0.35) 98%
-    );
-	-moz-linear-gradient(  /* Specific to mozilla browsers such as Firefox */
-  /*  270deg, 
-    rgba(0,0,0,0.05) 0,
-	rgba(0,0,0,0.15) 25%,
-    rgba(0,0,0,0.2) 60%,
-    rgba(0,0,0,0.35) 92%,
-    rgba(0,0,0,0.35) 98%
-    );
-    -o-linear-gradient( /* Specific to Opera browser. */
-   /* 270deg, 
-     rgba(0,0,0,0.05) 0,
-	rgba(0,0,0,0.15) 25%,
-    rgba(0,0,0,0.2) 60%,
-    rgba(0,0,0,0.35) 92%,
-    rgba(0,0,0,0.35) 98%
-    );      */ 
-}
+  }
 
-
- 
+/* ------ Form Styles ------------   */
 fieldset {
 border: none ;
 }
 legend {
-border: 0px solid;
-border-bottom-style:groove;
-border-top-style: groove;
-border-left-style: groove;
-border-right-style: groove;
--webkit-border-radius: 2px;
-
+border: none;
+padding: 0px;
 }
 
-label{
+label {
 	display: block;
 }
-
-
- ul, li, ol, dl, dd, dt {
- 	list-style: none;
- 	padding:0;
- 	margin:0;
- 
- }
  input { /* Added this to provide some margin to the bottom of the input fields. */
 	margin-bottom: 10px;
 	width: 150px; 
 	line-height: 1.7em;
  }
- date {
- 
- 
- }
- 
  input[type=submit] {
 	
 	 -webkit-border-radius: 10%; /* Specific to webkit browsers such as iOS */
@@ -146,7 +116,20 @@ label{
 	 -o-radius: 10%;         /* Specific to Opera browser. */
 	 border-radius: 10%;
 	 width: 100px;
-	  }
+}
+
+
+/* ------------- List Styles ----------- */
+ ul, li, ol, dl, dd, dt {
+ 	list-style: none;
+ 	padding:0px;
+ 	margin:0px;
+ 
+ }
+
+
+ 
+
  /* The title bar class adds a gradient for title bar */ 
 
 .taskNotes {
@@ -156,6 +139,7 @@ label{
 /* Added this style in to provide some margin along the bottom of the drop down field. */
  .context_drop_down { 
  	margin-bottom: 10px; 
+ 	left-margin: 5px;
  }
  
  /* Some basic formatting for the form. */

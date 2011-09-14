@@ -16,49 +16,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
-    <body onLoad="var dropDownvals = ['Errand', 'Home', 'Office', 'Phone Calls', 'People', 'Waiting']; loadDropdown (dropDownvals);"> 
+    <body onLoad="loadDropdown (dropDownvals);"> 
     <div id="container">
-		<div id="main">
+		<div id="main" class="main">
 			<div class="titlebar"><h1>Add Task Item</h1></div>
 			<form name="addTask" id="form" action="#" onsubmit="return validateForm();" method="post" class="form"> 
 				<!-- Drop down menu to select context. -->
 				<ul>
-				<li>
-				<label for="context"><h2>Select Task Context:</h2></label>
-					<select id="context" name="context_list" class="context_drop_down">
-						<option value="">Context list</option>			
-					</select><br />
-				</li>
+					<li>
+					<label for="taskContext"><h2>Select Task Context:</h2></label>
+						<select id="taskContext" name="context_list" class="context_drop_down">
+							<option value="">Context list</option>			
+						</select><br />
+					</li>
 				</ul>
 				<!-- End of context drop down  -->
 		
 				<!-- Start of fieldset  -->
 				<ul>
-				<li>
-				<fieldset>	
-					<legend><strong>Task Details</strong></legend>
-						<label for="taskName">Task Name:</label><br /><input type="text" id="taskName" /><br />	<!-- What The Task Is Called -->	
-						<label for="taskPriority">Priority</label><br /><input type="range" id="taskPriority" name="priority" min="0" max="10" step="1" default="0" /><br /> <!-- Sets Priority Of Task  -->
-						<label for="favoriteTask">Add to Favorites?</label><input type="checkbox" id="favoriteTask" name="favoritetask" value="boolean"><br /> <!-- Add Task To Favorites  -->
-						<label for="startDate">Start Date:</label><input type="date" id="startDate" name="startdate" ><br /> <!-- Task Start Date -->
-						<label for="endDate">End Date:</label><input type="date" id="endDate" name="enddate" ><br /> <!-- Task End Date -->
-						<label for="dueDate">Due Date:</label><input type="date" id="dueDate" name="duedate" ><br /> <!-- Task Due Date  -->
-						<label for="taskNotes">Notes:</label><br /><textarea id="taskNotes"></textarea><br /> <!-- Allows For Any Notes For Task -->
-					<input type="hidden" value="true" />
-				</fieldset>
-				</li>
+					<li>
+					<fieldset>	
+						<legend><strong>Task Details</strong></legend>
+							<label for="taskName">Task Name:</label><br /><input type="text" id="taskName" /><br />	<!-- What The Task Is Called -->	
+							<label for="taskPriority">Priority</label><br /><input type="range" id="taskPriority" name="priority" min="0" max="10" step="1" default="0" /><br /> <!-- Sets Priority Of Task  -->
+							<label for="favoriteTask">Add to Favorites?</label><input type="checkbox" id="favoriteTask" name="favoritetask" value="boolean"><br /> <!-- Add Task To Favorites  -->
+							<label for="startDate">Start Date:</label><input type="date" id="startDate" name="startdate" ><br /> <!-- Task Start Date -->
+							<label for="endDate">End Date:</label><input type="date" id="endDate" name="enddate" ><br /> <!-- Task End Date -->
+							<label for="dueDate">Due Date:</label><input type="date" id="dueDate" name="duedate" ><br /> <!-- Task Due Date  -->
+							<label for="taskNotes">Notes:</label><br /><textarea id="taskNotes"></textarea><br /> <!-- Allows For Any Notes For Task -->
+						<input type="hidden" value="true" />
+					</fieldset>
+					</li>
 				</ul>
 			<!-- End of fieldset  -->
-           <input type="submit" id="submitForm" value="Add Task" OnClick="storeItems();" /> <!-- Calls on Javascript function to obtain values from form. Some CSS has been applied to submit button - rounded corners, shadow for button -->
-			
-
+           <input type="submit" id="submitForm" value="Add Task" onclick="storeItems();" /> 			
 		</form>
 		
-		<div id="toDolist">
-		</div> <!--  Main --> 					
-		<p id="clear">
-					
-					<!--a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p--> <!-- Calls on Javascript function to clear data out of local storage. Some CSS has been applied to submit button - rounded corners, shadow for button -->
+				<div id="toDolist"></div> <!-- todolist -->
+				<p id="clear"><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p> <!-- Calls on Javascript function to clear  local storage. -->
+
+			</div> <!--  Main --> 		
 		</div> <!--  Container -->  
 		<!-- Tells the browser to include the javascript file. -->
 
@@ -67,7 +64,7 @@
 		<script language="javascript">
 		var formData = getData();
 		checkLocStorSup(formData);		
-		</script>	 
+		</script >	 
 
     </body>
 </html>
