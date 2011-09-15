@@ -2,6 +2,7 @@
 // VFW Project 3
 
 function validateForm() {
+	alert("I'm validating the form");
 	var getTcontext = document.getElementById("taskContext").value;  
 	var validStatus = []; 
 	var fieldsChecked = ["taskContext", "taskName", "taskSdate", "taskEdate", "taskDdate"];
@@ -12,80 +13,84 @@ function validateForm() {
 	if (getTcontext === "") {
 		document.getElementById("taskContext").style.border = "2px solid red";
 		alert("Please select a context.");
-		validStatus.push = ["false"];
-		return false;
+		validStatus.push("false");
+		alert(validStatus);
+		//return false;
 	} else {
-		validStatus.push = ["true"];
+		validStatus.push("true");
 		
 		document.getElementById("taskContext").style.border = "2px solid #ccc";
 	} 
 	var getTname = document.getElementById("taskName").value;
-	if (getTname === "" || getTname === defFieldvals[0];) {
+	if ((getTname === "") || (getTname  === defFieldvals[0].value)) {
 		document.getElementById("taskName").style.border = "2px solid red";
 		var encourage = prompt("Please enter a task name.", "");
 		if (encourage !== null && encourage !== "") {
 			document.getElementById("taskName").value = encourage;
 		}
-		validStatus.push = ["false"];
+		validStatus.push("false");
 		return false;
 	} else {
-		validStatus.push = ["true"];
+		validStatus.push("true");
 		document.getElementById("taskName").style.border = "2px solid #ccc";
 	}
 	var getSdate = document.getElementById("startDate").value;
-	if (getSdate === ""|| getSdate === defFieldvals[1];) {
+	if ((getSdate === "") || (getSdate === defFieldvals[1])) {
 		document.getElementById("startDate").style.border = "2px solid red";
-		var encourage = prompt("Please enter a start date.", "");
+		/*var encourage = prompt("Please enter a start date.", "");
 		if (encourage !== null && encourage !== "") {
 			document.getElementById("startDate").value = encourage;
-		}
-		validStatus.push = ["false"];
+		}*/
+		validStatus.push("false");
 		return false;
 	} else {
-		validStatus.push = ["true"];
+		validStatus.push("true");
 		document.getElementById("dueDate").style.border = "2px solid #ccc";
 	}
 	var getEdate = document.getElementById("endDate").value;
-	if (getEdate === ""|| getEdate === defFieldvals[2];) {
-		document.getElementById("endDate").style.border = "2px solid red";
+	if ((getEdate === "") || (getEdate === defFieldvals[2])) {
+		//document.getElementById("endDate").style.border = "2px solid red";
 		alert("Please set an End Date.");
-		if (encourage !== null && encourage !== "") {
+		/*if (encourage !== null && encourage !== "") {
 			document.getElementById("endDate").value = encourage;
-		}
-		validStatus.push = ["false"];
+		}*/
+		validStatus.push("false");
 		return false;
 	} else {
-		validsStatus.push = ["true"];
+		validStatus.push("true");
 		document.getElementById("endDate").style.border = "2px solid #ccc";
 	}
 	var getDdate = document.getElementById("dueDate").value;
-	if (getDdate === ""|| getDdate === defFieldvals[3];) {
-		document.getElementById("dueDate").style.border = "2px solid red";
+	if ((getDdate === "") || (getDdate === defFieldvals[3])) {
+		//document.getElementById("dueDate").style.border = "2px solid red";
 		alert("Please set a Due Date.");
-		if (encourage !== null && encourage !== "") {
+		/*if (encourage !== null && encourage !== "") {
 			document.getElementById("dueDate").value = encourage;
-		}
-		validStatus.push = ["false"];
+		} */
+		validStatus.push("false");
 		return false;
 	} else {
-		validStatus.push = ["true"];
+		validStatus.push("true");
 		document.getElementById("dueDate").style.border = "2px solid #ccc";
 	}
-	if (fieldValidstatus === true) {
-	storeData(formData);
-	} 
-	return;
 	
-	for(i=0; i < validStatus.length; i++) {
-		if (validStatus[i] === "false" ) {
-		errorFields.push = fieldsChecked[i];
+	var i;
+	for (i = 0; i < validStatus.length; i++) {
+		if (validStatus[i] === "false") {
+			errorFields.push(fieldsChecked[i]);
 		}
-		alert(errorFields);
 	}
+	alert(errorFields);
+	
+	
+	if (validStatus === true) {
+		storeData(formData);
+	} 
+	alert("Form Submitted!");
+} 
 /*run through each field to check true/false.  If equal to false print out what field needs correction.
 	When everything checks out, call storeData and alert form submitted. */
-	alert("Form Submitted!");
-} //validateForm	
+//validateForm	
 
 /*
 	for () {
