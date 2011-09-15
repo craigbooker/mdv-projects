@@ -6,6 +6,7 @@ function validateForm() {
 	var validStatus = []; 
 	var fieldsChecked = ["taskContext", "taskName", "taskSdate", "taskEdate", "taskDdate"];
 	var errorFields;
+	var defFieldvals = ["Enter task name", "Enter task start date", "Enter task end date", "Enter task due date"];
 	//var getInvalidfields; 
 	if (getTcontext === "") {
 		document.getElementById("taskContext").style.border = "2px solid red";
@@ -18,7 +19,7 @@ function validateForm() {
 		document.getElementById("taskContext").style.border = "2px solid #ccc";
 	} 
 	var getTname = document.getElementById("taskName").value;
-	if (getTname === "") {
+	if (getTname === "" || getTname === defFieldvals[0];) {
 		document.getElementById("taskName").style.border = "2px solid red";
 		var encourage = prompt("Please enter a task name.", "");
 		if (encourage !== null && encourage !== "") {
@@ -31,7 +32,7 @@ function validateForm() {
 		document.getElementById("taskName").style.border = "2px solid #ccc";
 	}
 	var getSdate = document.getElementById("startDate").value;
-	if (getSdate === "") {
+	if (getSdate === ""|| getSdate === defFieldvals[1];) {
 		document.getElementById("startDate").style.border = "2px solid red";
 		var encourage = prompt("Please enter a start date.", "");
 		if (encourage !== null && encourage !== "") {
@@ -44,7 +45,7 @@ function validateForm() {
 		document.getElementById("dueDate").style.border = "2px solid #ccc";
 	}
 	var getEdate = document.getElementById("endDate").value;
-	if (getEdate === "") {
+	if (getEdate === ""|| getEdate === defFieldvals[2];) {
 		document.getElementById("endDate").style.border = "2px solid red";
 		alert("Please set an End Date.");
 		if (encourage !== null && encourage !== "") {
@@ -57,7 +58,7 @@ function validateForm() {
 		document.getElementById("endDate").style.border = "2px solid #ccc";
 	}
 	var getDdate = document.getElementById("dueDate").value;
-	if (getDdate === "") {
+	if (getDdate === ""|| getDdate === defFieldvals[3];) {
 		document.getElementById("dueDate").style.border = "2px solid red";
 		alert("Please set a Due Date.");
 		if (encourage !== null && encourage !== "") {

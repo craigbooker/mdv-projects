@@ -31,7 +31,7 @@ function setDefualtVals() {
 	var dueDate		=	'Enter task due date';
 	var startDate		=	'Enter task start date';
 	var endDate		=	'Enter task end date';
-	var taskNotes		=	'Enter notes if desired.';
+	var taskNotes		=	'Notes';
 		
 	document.getElementById('taskName').value = taskName;
 	document.getElementById('taskPriority').value = taskPriority;
