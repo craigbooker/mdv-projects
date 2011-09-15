@@ -7,6 +7,7 @@ function validateForm() {
 	var fieldsChecked = ["taskContext", "taskName", "taskSdate", "taskEdate", "taskDdate"];
 	var errorFields;
 	var defFieldvals = ["Enter task name", "Enter task start date", "Enter task end date", "Enter task due date"];
+	
 	//var getInvalidfields; 
 	if (getTcontext === "") {
 		document.getElementById("taskContext").style.border = "2px solid red";
@@ -76,13 +77,13 @@ function validateForm() {
 	return;
 	
 	for(i=0; i < validStatus.length; i++) {
-
-	if (validStatus[i] === "false" ) {
-	errorFields.push = fieldsChecked[i];
+		if (validStatus[i] === "false" ) {
+		errorFields.push = fieldsChecked[i];
+		}
+		alert(errorFields);
 	}
-	}
-run through each field to check true/false.  If equal to false print out what field needs correction.
-	When everything checks out, call storeData and alert form submitted.
+/*run through each field to check true/false.  If equal to false print out what field needs correction.
+	When everything checks out, call storeData and alert form submitted. */
 	alert("Form Submitted!");
 } //validateForm	
 

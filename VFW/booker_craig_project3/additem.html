@@ -20,7 +20,7 @@
     <div id="container">
 		<div id="main" class="main">
 			<div class="titlebar"><h1>Add Task Item</h1></div>
-			<form name="addTask" id="form" action="#" onsubmit="return validateForm();" method="post" class="form"> 
+			<form name="addTask" id="form" action="#" onsubmit="validateForm();" method="post" class="form"> 
 				<!-- Drop down menu to select context. -->
 				<ul>
 					<li>
@@ -49,7 +49,8 @@
 					</li>
 				</ul>
 			<!-- End of fieldset  -->
-           <input type="submit" id="submitForm" value="Add Task" onclick="storeItems();" /> 			
+			<input type="submit" id="submitForm" value="Add Task"  /> 			
+           <!--input type="submit" id="submitForm" value="Add Task" onclick="storeItems();" /--> 			
 		</form>
 		
 				<div id="toDolist"></div> <!-- todolist -->
