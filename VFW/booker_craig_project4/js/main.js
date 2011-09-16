@@ -46,15 +46,18 @@ function getData() {
 		var endDate			=	localStorage.getItem('appEndDate');
 		var taskNotes			=	localStorage.getItem('appNotes');
 	
-		var viewTask = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, taskNotes];
+		var viewTaskItems = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, taskNotes];
 		alert("I'm in getData and here is the info:" + viewTask);
-		//var clearLink = document.getElementById('clear');
-		displayTask(viewTask);
-		
-		
-		/*document.getElementById('form').style.display = "none"; */
 		var clearLink = document.getElementById('clear');
+		//displayTask(viewTask);
 		clearLink.style.display = "block";
+		var getListdiv = document.getElementById('toDolist');
+		var i;
+		var n = viewTaskItems.length;
+		for (i = 0, i < n; i++) {
+			var newParas = document.createElement("p");
+		
+		}
 		
 		return viewTask;
 	} else {
