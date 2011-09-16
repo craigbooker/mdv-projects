@@ -1,16 +1,16 @@
 // Craig Booker
-// VFW Project 2
-// 09/08/2011
+// VFW Project 4
+// 09/16/2011
 
 
 	
 var dropDownvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
 var clearLink = document.getElementById('clear');
 var errorList = document.getElementById('errorList');
+var createPara = document.createElement("p");
+var createSel = document.createElement("select");
 var formDatastorage;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 
 
 =======
@@ -66,6 +66,10 @@ function displayTask(viewTask) {
 	//getListdiv.style.className = "main";
 	alert("I made it into displaytask 2");
 	var img = new Image ();
+	var img1 = document.createElement('img');
+	var idunno = ("img/" +  + "")
+	img1.src =
+
 	//var newParag = document.createElement("p");
 	//var newUl = document.createElement("ul");
 	//getListdiv.appendChild(newParag);
@@ -76,14 +80,12 @@ function displayTask(viewTask) {
 		//var newImg = document.createElement("img");
 		//imgSrc = (document.img.src = taskImgs[i]);
 		var taskText = document.createTextNode(viewTask[i]);
-		var img1 = document.createElement('img');
 		img1.src = taskImgs[i];
 		//var imgHTML = taskImgs[i];
 		newParag.appendChild(taskText);
-		getListdiv.appendChild(img1);
 		getListdiv.appendChild(newParag);
 	}		
-
+		getListdiv.appendChild(img1);
 }
 		
 		/*

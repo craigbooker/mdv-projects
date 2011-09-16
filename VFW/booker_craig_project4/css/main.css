@@ -1,0 +1,180 @@
+/*
+	Name: Craig Booker
+	Class: VFW
+	Project: 1
+	Date: 08/31/2011
+*/
+
+
+/*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { */
+html {
+    color: white;
+    background-color: #E1DFD3;
+    -webkit-text-size-adjust:none; 
+}
+#container {
+	width: 416px; margin: 20px, auto 0; overflow: auto;
+}
+#main {
+    font-family: "Arial", sans-serif;
+    margin: 5px, 5px, 5px, 5px;
+    padding: 5px, 0px, 0px, 0px;
+    background-color: #E6E6E6;
+    vertical-align: top;
+    color: #4D4B39;
+    min-width: 300px;
+    max-width: 416px;
+    border: 3px solid #A6A59C;
+    overflow: scroll;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+
+
+
+}
+
+#toDolist {
+	margin: 0px;
+	padding: 5px;
+	display: block;
+	-webkit-box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),	
+	inset -1px -1px 14px rgba(0,0,0,0.14);		 
+	-moz-box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),		 
+	inset -1px -1px 14px rgba(0,0,0,0.14);		 
+	box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),		 
+	inset -1px -1px 14px rgba(0,0,0,0.14);
+}
+
+h1 {
+	background-color: #4d4b39;
+	color: #E1DFD3;
+	/* text-shadow: #FFFFFF 1px 1px 2px; */
+	font-weight: bold;
+	text-align: center;
+	padding: 2px;
+	margin: 0px;
+	/* border: 1px solid black; */
+	font: bold 14pt Arial, san-serif ;
+	-webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+}
+h2 {
+    color: #000000;
+    font: bold 12pt Arial, san-serif;
+    font-style: bold;
+    padding: 0px;
+    margin: 0px, 0px, 0px, 0px;
+ }
+
+.titlebar {
+    /* appearance: menu; */
+    text-align: center;
+    vertical-align: top;
+    vertical-align: text-top;
+    background-color: #4d4b39;
+    border: 4px solid #FFF;
+    border-radius: 5px;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    line-height: 1.1em;
+    padding: 0px, 0px, 0px, 0px;
+    margin: 0px, 0px, 0px, 0px;
+  }
+
+/* ------ Form Styles ------------   */
+fieldset {
+border: none ;
+}
+legend {
+border: none;
+padding: 0px;
+}
+
+label {
+	display: block;
+}
+ input { /* Added this to provide some margin to the bottom of the input fields. */
+	margin-bottom: 10px;
+	width: 150px; 
+	line-height: 1.7em;
+ }
+ input[type=submit] {
+	
+	 -webkit-border-radius: 10%; /* Specific to webkit browsers such as iOS */
+	 border-radius: 10%;
+	-moz-border-radius: 10%; /* Specific to mozilla browsers such as Firefox */
+	 border-radius: 10%;
+	 -o-radius: 10%;         /* Specific to Opera browser. */
+	 border-radius: 10%;
+	 width: 100px;
+}
+
+
+/* ------------- List Styles ----------- */
+ ul, li, ol, dl, dd, dt {
+ 	list-style: none;
+ 	padding:0px;
+ 	margin:0px;
+ 
+ }
+
+
+ 
+
+ /* The title bar class adds a gradient for title bar */ 
+
+.taskNotes {
+	word-wrap: normal;
+}
+
+/* Added this style in to provide some margin along the bottom of the drop down field. */
+ .context_drop_down { 
+ 	margin-bottom: 10px; 
+ 	left-margin: 5px;
+ }
+ 
+ /* Some basic formatting for the form. */
+ .form {
+ 	padding: 5px;
+	-webkit-box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),	
+	inset -1px -1px 14px rgba(0,0,0,0.14);		 
+	-moz-box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),		 
+	inset -1px -1px 14px rgba(0,0,0,0.14);		 
+	box-shadow:
+	inset 1px 1px 14px rgba(0,0,0,0.14),		 
+	inset -1px -1px 14px rgba(0,0,0,0.14);
+ 
+ }
+ 
+ #clear {display: none; margin: 15px;}
+ 	#clear a { 
+ 	border-style: solid; 
+ 	border-color: white; 
+ 	border-width: 5px; 
+ 	background-color: white; 
+ 	line-width: 1.5em;
+ 	line-height: 1.5em;
+ 	text-decoration: none;
+ 	color: #900;
+ 	-webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-box-shadow: #000 -2px 2px 2px;
+ 	
+ 	
+ 	}
+ 
+
+
