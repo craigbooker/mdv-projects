@@ -6,7 +6,7 @@
 	
 var dropDownvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
 var clearLink = document.getElementById('clear');
-
+var errorList = document.getElementById('errorList');
 
 function addOptions(selectbox, optText, optValue) {
 	var optVar = document.createElement("OPTION");
@@ -94,10 +94,11 @@ function getData() {
 	}
 }
 function storeItems(formData) {
+	alert("I made it in Store items function");
 	var taskContext		=	document.getElementById('taskContext').value;
 	var taskName		=	document.getElementById('taskName').value;
 	var taskPriority	=	document.getElementById('taskPriority').value;
-	var favoriteTask	=	document.getElementById('favoriteTask').value;
+	var favTask	=	document.getElementById('favoriteTask').value;
 	var dueDate			=	document.getElementById('dueDate').value;
 	var startDate		=	document.getElementById('startDate').value;
 	var endDate			=	document.getElementById('endDate').value;
@@ -105,11 +106,12 @@ function storeItems(formData) {
 	localStorage.setItem('apptaskContext', taskContext);
 	localStorage.setItem('apptaskName', taskName);
 	localStorage.setItem('apptaskPriority', taskPriority);
-	localStorage.setItem('appfavoriteTask', favoriteTask);
+	localStorage.setItem('appfavoriteTask', favTask);
 	localStorage.setItem('appdueDate', dueDate);
 	localStorage.setItem('appstartDate', startDate);
 	localStorage.setItem('appendDate', endDate);
 	localStorage.setItem('apptaskNotes', taskNotes);	
+	alert("I made it to the end of the Store items function");
 }
 
 
@@ -132,3 +134,100 @@ function clearLocal() {
 	localStorage.clear();
 	return false;
 }
+// Craig Booker
+// VFW Project 3
+
+function validateForm(formData) {
+	alert("Beginning validation!");
+	var getTcontext = document.getElementById("taskContext").value;  
+	var validStatus = []; 
+	var fieldsChecked = ["taskContext", "taskName", "taskSdate", "taskEdate", "taskDdate"];
+	var defFieldvals = ["Enter task name", "Enter task start date", "Enter task end date", "Enter task due date", "Notes"];
+	var validCount = 0;
+
+	//var getInvalidfields; 
+	if (getTcontext === "") {
+		alert("Please select a context.");
+		validStatus.push("false");
+		//alert(validStatus);
+	} else {
+		validStatus.push("true");
+		validCount += 1;
+
+	} 
+	var getTname = document.getElementById("taskName").value;
+	if ((getTname === "") || (getTname  === defFieldvals[0])) {
+		//alert("Please add a task name.");
+		validStatus.push("false");
+		//alert(validStatus);
+
+	} else {
+		validStatus.push("true");
+		validCount += 1;
+
+	}
+	var getSdate = document.getElementById("startDate").value;
+	if ((getSdate === "") || (getSdate === defFieldvals[1])) {
+		//alert("Please set an Start Date.");
+		validStatus.push("false");
+		//alert(validStatus);
+
+	} else {
+		validStatus.push("true");
+		validCount += 1;
+
+	}
+	var getEdate = document.getElementById("endDate").value;
+	if ((getEdate === "") || (getEdate === defFieldvals[2])) {
+		//alert("Please set an End Date.");
+		validStatus.push("false");
+		//alert(validStatus);
+
+	} else {
+		validStatus.push("true");
+		validCount += 1;
+
+	}
+	var getDdate = document.getElementById("dueDate").value;
+	if ((getDdate === "") || (getDdate === defFieldvals[3])) {
+		//alert("Please set a Due Date.");
+		validStatus.push("false");
+		//alert(validStatus);
+
+	} else {
+		validStatus.push("true");
+		validCount += 1;
+
+	}
+alert(validStatus);
+	var errorFields = [];
+	var iCount;
+	for (iCount = 0; iCount < validStatus.length; iCount++) {
+		//alert("First Stop - round " + iCount);
+		if (validStatus[iCount] === "false") {
+			//alert("Second stop - Round " + iCount);
+			addTo = (fieldsChecked[iCount]);
+			errorFields.push(addTo);
+			//alert("addTo:" + addTo);
+			//alert("Third stop - Round " + iCount);
+			//alert(fieldsChecked);
+			//alert("Error Fields:" + errorFields);
+		} 
+	}
+	alert("Outside forloop - errorFields:" + errorFields);
+	alert("Outside forloop - validCount:" + validCount);
+	
+	
+	if (validCount < fieldsChecked.length) {
+		alert("There are errors with the following fields:" + errorFields);
+		
+	} else {	
+		alert("Form Submitted!");
+		storeData(formData);	
+			
+	}
+} 
+/*run through each field to check true/false.  If equal to false print out what field needs correction.
+	When everything checks out, call storeData and alert form submitted. */
+//validateForm	
+

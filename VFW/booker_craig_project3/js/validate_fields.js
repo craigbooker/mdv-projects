@@ -1,92 +1,91 @@
 // Craig Booker
 // VFW Project 3
 
-function validateForm() {
-	alert("I'm validating the form");
+function validateForm(formData) {
+	alert("Beginning validation!");
 	var getTcontext = document.getElementById("taskContext").value;  
 	var validStatus = []; 
 	var fieldsChecked = ["taskContext", "taskName", "taskSdate", "taskEdate", "taskDdate"];
-	var errorFields;
 	var defFieldvals = ["Enter task name", "Enter task start date", "Enter task end date", "Enter task due date"];
-	
+	var validCount = 0;
+
 	//var getInvalidfields; 
 	if (getTcontext === "") {
-		document.getElementById("taskContext").style.border = "2px solid red";
 		alert("Please select a context.");
 		validStatus.push("false");
-		alert(validStatus);
-		//return false;
+		//alert(validStatus);
 	} else {
 		validStatus.push("true");
-		
-		document.getElementById("taskContext").style.border = "2px solid #ccc";
+		validCount += 1;
+
 	} 
 	var getTname = document.getElementById("taskName").value;
-	if ((getTname === "") || (getTname  === defFieldvals[0].value)) {
-		document.getElementById("taskName").style.border = "2px solid red";
-		var encourage = prompt("Please enter a task name.", "");
-		if (encourage !== null && encourage !== "") {
-			document.getElementById("taskName").value = encourage;
-		}
+	if ((getTname === "") || (getTname  === defFieldvals[0])) {
+		//alert("Please add a task name.");
 		validStatus.push("false");
-		return false;
+		//alert(validStatus);
+
 	} else {
 		validStatus.push("true");
-		document.getElementById("taskName").style.border = "2px solid #ccc";
+		validCount += 1;
+
 	}
 	var getSdate = document.getElementById("startDate").value;
 	if ((getSdate === "") || (getSdate === defFieldvals[1])) {
-		document.getElementById("startDate").style.border = "2px solid red";
-		/*var encourage = prompt("Please enter a start date.", "");
-		if (encourage !== null && encourage !== "") {
-			document.getElementById("startDate").value = encourage;
-		}*/
+		//alert("Please set an Start Date.");
 		validStatus.push("false");
-		return false;
+		//alert(validStatus);
+
 	} else {
 		validStatus.push("true");
-		document.getElementById("dueDate").style.border = "2px solid #ccc";
+		validCount += 1;
+
 	}
 	var getEdate = document.getElementById("endDate").value;
 	if ((getEdate === "") || (getEdate === defFieldvals[2])) {
-		//document.getElementById("endDate").style.border = "2px solid red";
-		alert("Please set an End Date.");
-		/*if (encourage !== null && encourage !== "") {
-			document.getElementById("endDate").value = encourage;
-		}*/
+		//alert("Please set an End Date.");
 		validStatus.push("false");
-		return false;
+		//alert(validStatus);
+
 	} else {
 		validStatus.push("true");
-		document.getElementById("endDate").style.border = "2px solid #ccc";
+		validCount += 1;
+
 	}
 	var getDdate = document.getElementById("dueDate").value;
 	if ((getDdate === "") || (getDdate === defFieldvals[3])) {
-		//document.getElementById("dueDate").style.border = "2px solid red";
-		alert("Please set a Due Date.");
-		/*if (encourage !== null && encourage !== "") {
-			document.getElementById("dueDate").value = encourage;
-		} */
+		//alert("Please set a Due Date.");
 		validStatus.push("false");
-		return false;
+		//alert(validStatus);
+
 	} else {
 		validStatus.push("true");
-		document.getElementById("dueDate").style.border = "2px solid #ccc";
+		validCount += 1;
+
 	}
-	
-	var i;
-	for (i = 0; i < validStatus.length; i++) {
-		if (validStatus[i] === "false") {
-			errorFields.push(fieldsChecked[i]);
-		}
+alert(validStatus);
+	var errorFields = [];
+	var iCount;
+	for (iCount = 0; iCount < validStatus.length; iCount++) {
+		//alert("First Stop - round " + iCount);
+		if (validStatus[iCount] === "false") {
+			//alert("Second stop - Round " + iCount);
+			addTo = (fieldsChecked[iCount]);
+			errorFields.push(addTo);
+			//alert("addTo:" + addTo);
+			//alert("Third stop - Round " + iCount);
+			//alert(fieldsChecked);
+			//alert("Error Fields:" + errorFields);
+		} 
 	}
-	alert(errorFields);
+	alert("Outside forloop - errorFields:" + errorFields);
+	alert("Outside forloop - validCount:" + validCount);
 	
 	
-	if (validStatus === true) {
+	if (validCount === fieldsChecked.length) {
+		alert("Form Submitted!");
 		storeData(formData);
 	} 
-	alert("Form Submitted!");
 } 
 /*run through each field to check true/false.  If equal to false print out what field needs correction.
 	When everything checks out, call storeData and alert form submitted. */
