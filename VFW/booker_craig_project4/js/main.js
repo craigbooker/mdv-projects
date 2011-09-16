@@ -14,8 +14,9 @@ var formDatastorage;
 
 //End - Main Vars
 
+createSel.setAttribute("id", "taskCatvals");
 
-function loadDropdown(taskCatvals) {
+var makeTaskcats = function (name) {
 	var i;
 	var n = taskCatvals.length;
 	for (i = 0; i < n; i++) {
@@ -29,12 +30,40 @@ function loadDropdown(taskCatvals) {
 	createPara.appendChild(createSel);
 	var getUL = formTagname[0].firstChild;
 	var paraSelect = formTagname[0].insertBefore(createPara, getUL);
+};
+
+makeTaskcats();
+
+function getData() {
+	if (localStorage.getItem('apptaskName')) {
+		alert("STEP 1 GET DATA");
+		var taskContext		=	localStorage.getItem('appTaskContext');
+		var taskName		=	localStorage.getItem('appTaskName');
+		var taskPriority	=	localStorage.getItem('appTaskPriority');
+		var favorite		=	localStorage.getItem('appFavorite');
+		var dueDate			=	localStorage.getItem('appDueDate');
+		var startDate		=	localStorage.getItem('appStartDate');
+		var endDate			=	localStorage.getItem('appEndDate');
+		var taskNotes			=	localStorage.getItem('appNotes');
 	
-	
-	return;
+		var viewTask = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, taskNotes];
+		alert("I'm in getData and here is the info:" + viewTask);
+		//var clearLink = document.getElementById('clear');
+		displayTask(viewTask);
+		
+		
+		/*document.getElementById('form').style.display = "none"; */
+		var clearLink = document.getElementById('clear');
+		clearLink.style.display = "block";
+		
+		return viewTask;
+	} else {
+		setDefualtVals();
+		return;
+	}
 }
 
-loadDropdown(dropDownvals);
+
 
 function outPutMsg(outPut) {
 	alert(outPut);
@@ -107,34 +136,6 @@ function displayTask(viewTask) {
 
 
 
-function getData() {
-	if (localStorage.getItem('apptaskName')) {
-		alert("STEP 1 GET DATA");
-		var taskContext		=	localStorage.getItem('apptaskContext');
-		var taskName		=	localStorage.getItem('apptaskName');
-		var taskPriority	=	localStorage.getItem('apptaskPriority');
-		var favorite		=	localStorage.getItem('appFavorite');
-		var dueDate			=	localStorage.getItem('appdueDate');
-		var startDate		=	localStorage.getItem('appstartDate');
-		var endDate			=	localStorage.getItem('appendDate');
-		var taskNotes			=	localStorage.getItem('appNotes');
-	
-		var viewTask = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, taskNotes];
-		alert("I'm in getData and here is the info:" + viewTask);
-		//var clearLink = document.getElementById('clear');
-		displayTask(viewTask);
-		
-		
-		/*document.getElementById('form').style.display = "none"; */
-		var clearLink = document.getElementById('clear');
-		clearLink.style.display = "block";
-		
-		return viewTask;
-	} else {
-		setDefualtVals();
-		return;
-	}
-}
 //var formData = getData();
 //checkLocStorSup(formData);
 function storeItems(formData) {
