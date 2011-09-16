@@ -7,6 +7,7 @@
 var dropDownvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
 var clearLink = document.getElementById('clear');
 var errorList = document.getElementById('errorList');
+var formDatastorage;
 
 function addOptions(selectbox, optText, optValue) {
 	var optVar = document.createElement("OPTION");
@@ -129,13 +130,18 @@ function checkLocStorSup(formData) {
 	} 
 }
 
+function initializeData() {
+	var locFormstor = getData();
+	checkLocStorSup(formData);	
+	validateForm(locFormstor);
+
+}
 
 function clearLocal() {
 	localStorage.clear();
 	return false;
 }
-// Craig Booker
-// VFW Project 3
+// -------   Form Validation --------------------------
 
 function validateForm(formData) {
 	alert("Beginning validation!");
