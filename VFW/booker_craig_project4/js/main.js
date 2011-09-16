@@ -32,6 +32,8 @@ function loadDropdown(dropDownvals) {
 	return;
 }
 
+loadDropdown(dropDownvals);
+
 function outPutMsg(outPut) {
 	alert(outPut);
 	return;
@@ -65,8 +67,9 @@ function displayTask(viewTask) {
 	formCont.style.display = "none";
 	//getListdiv.style.className = "main";
 	alert("I made it into displaytask 2");
-	var img = new Image ();
-	var img1 = document.createElement('img');
+	
+	var createImg = document.createElement('img');
+	var setSrc = createImg.setAttribute("src", "\"img/\"" + task)
 	var idunno = ("img/" +  + "")
 	img1.src =
 
@@ -163,9 +166,14 @@ function checkLocStorSup() {
 	} 
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+function editTask(id) {
+	var value = localStorage.getItem(id);
+	var taskId = id;
+	
+
+
+}
+
 function initialChecks() {
 	checkLocStorSup();	
 	formDatastorage = getData();
