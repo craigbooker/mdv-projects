@@ -3,32 +3,34 @@
 // 09/16/2011
 
 
-	
-var dropDownvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
+// Main Vars	
+var taskCatvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
 var clearLink = document.getElementById('clear');
 var errorList = document.getElementById('errorList');
+var formTagname = document.getElementByTagName("form");
 var createPara = document.createElement("p");
 var createSel = document.createElement("select");
 var formDatastorage;
 
+//End - Main Vars
 
 
-=======
->>>>>>> form-validation
->>>>>>> consolidate-formval
-
-function addOptions(selectbox, optText, optValue) {
-	var optVar = document.createElement("OPTION");
-	optVar.text = optText;
-	optVar.value = optValue;
-	selectbox.options.add(optVar);
-	
-}
-function loadDropdown(dropDownvals) {
+function loadDropdown(taskCatvals) {
 	var i;
-	for (i = 0; i < dropDownvals.length; i++) {
-		addOptions(document.addTask.context_list, dropDownvals[i], dropDownvals[i]);
+	var n = taskCatvals.length;
+	for (i = 0; i < n; i++) {
+		var optVar = document.createElement("option");
+		var optTxt = document.createTextNode(taskCatvals[i]);
+		optVar.setAttribute("value", taskCatvals[i];
+		optVar.appendChild(optTxt);
+		createSel.appendChild(optVar);
+		//addOptions(document.addTask.context_list, dropDownvals[i], dropDownvals[i]);
 	}
+	createPara.appendChild(createSel);
+	var getUL = formTagname[0].firstChild;
+	var paraSelect = formTagname[0].insertBefore(createPara, getUL);
+	
+	
 	return;
 }
 
@@ -174,6 +176,16 @@ function editTask(id) {
 
 }
 
+function deleteTask(id) {
+
+
+}
+
+function clearLocal() {
+	localStorage.clear();
+	return false;
+}
+
 function initialChecks() {
 	checkLocStorSup();	
 	formDatastorage = getData();
@@ -202,10 +214,7 @@ function clearLocal() {
 	localStorage.clear();
 	return false;
 }
-<<<<<<< HEAD
-=======
->>>>>>> form-validation
->>>>>>> consolidate-formval
+
 // -------   Form Validation --------------------------
 
 function validateForm(formData) {
@@ -305,8 +314,4 @@ function validateForm(formData) {
 	When everything checks out, call storeData and alert form submitted. */
 //validateForm	
 
-function clearLocal() {
-	localStorage.clear();
-	return false;
-}
 	
