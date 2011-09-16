@@ -34,6 +34,24 @@ var makeTaskcats = function (name) {
 
 makeTaskcats();
 
+function setDefualtVals() {
+	var taskName		=	'Enter task name';
+	var taskPriority		=	0;
+	var dueDate		=	'Enter task due date';
+	var startDate		=	'Enter task start date';
+	var endDate		=	'Enter task end date';
+	var taskNotes		=	'Notes';
+		
+	document.getElementById('taskName').value = taskName;
+	document.getElementById('taskPriority').value = taskPriority;
+	document.getElementById('startDate').value = startDate;
+	document.getElementById('endDate').value = endDate;
+	document.getElementById('dueDate').value = dueDate;
+	document.getElementById('taskNotes').value = taskNotes;
+	return;
+}
+
+
 function getData() {
 	if (localStorage.getItem('apptaskName')) {
 		alert("STEP 1 GET DATA");
@@ -56,10 +74,15 @@ function getData() {
 		var n = viewTaskItems.length;
 		for (i = 0, i < n; i++) {
 			var newParas = document.createElement("p");
-		
+			var itemTxt = document.createTextNode(viewTaskItems[i])
+			newParas.appendChild(itemTxt);
+			getListdiv.appendChild(newParas);
 		}
 		
-		return viewTask;
+		var newImg = document.createElement("img");
+		var setSrc = newImg.setAttribute("src", "img/" + taskCatvals + ".png");
+		getListdiv.appendChild(newImg);
+		
 	} else {
 		setDefualtVals();
 		return;
@@ -73,22 +96,7 @@ function outPutMsg(outPut) {
 	return;
 }
 
-function setDefualtVals() {
-	var taskName		=	'Enter task name';
-	var taskPriority		=	0;
-	var dueDate		=	'Enter task due date';
-	var startDate		=	'Enter task start date';
-	var endDate		=	'Enter task end date';
-	var taskNotes		=	'Notes';
-		
-	document.getElementById('taskName').value = taskName;
-	document.getElementById('taskPriority').value = taskPriority;
-	document.getElementById('startDate').value = startDate;
-	document.getElementById('endDate').value = endDate;
-	document.getElementById('dueDate').value = dueDate;
-	document.getElementById('taskNotes').value = taskNotes;
-	return;
-}
+
 
 function displayTask(viewTask) {
 	var taskImgs = ["img/errand.png", "img/home.png", "img/office.png", "img/phone_calls.png", "img/people.png"];
