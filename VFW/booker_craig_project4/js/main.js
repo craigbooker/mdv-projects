@@ -53,6 +53,16 @@ function setDefualtVals() {
 
 
 function getData() {
+
+		var getListdiv		=	document.getElementById(toDolist);
+		var i;
+		var len = localStorage.length;
+		for (i = 0; i < len; i++) {
+		
+		
+		
+		}
+
 	if (localStorage.getItem('apptaskName')) {
 		alert("STEP 1 GET DATA");
 		var taskContext		=	localStorage.getItem('appTaskContext');
@@ -78,10 +88,16 @@ function getData() {
 			newParas.appendChild(itemTxt);
 			getListdiv.appendChild(newParas);
 		}
-		
+		// Add image
 		var newImg = document.createElement("img");
 		var setSrc = newImg.setAttribute("src", "img/" + taskCatvals + ".png");
 		getListdiv.appendChild(newImg);
+		//Add or delete link
+		var deleteLink = document.createElement("a");
+		
+		//Add edit single item link
+		
+		
 		
 	} else {
 		setDefualtVals();
@@ -97,7 +113,7 @@ function outPutMsg(outPut) {
 }
 
 
-
+/*
 function displayTask(viewTask) {
 	var taskImgs = ["img/errand.png", "img/home.png", "img/office.png", "img/phone_calls.png", "img/people.png"];
 	var i;
@@ -129,10 +145,17 @@ function displayTask(viewTask) {
 		//var imgHTML = taskImgs[i];
 		newParag.appendChild(taskText);
 		getListdiv.appendChild(newParag);
-	}		
+		}		
 		getListdiv.appendChild(img1);
+} else {
+		var taskName		=	'Enter task name';
+		var taskPriority		=	0;
+		var dueDate			=	'Enter task due date';
+		var startDate			=	'Enter task start date';
+		var endDate			=	'Enter task end date';
+		var taskNotes			=	'Notes';
 }
-		
+	*/	
 		/*
 		var newLi = document.createElement("li");
 		var newImg = document.createElement("img");
