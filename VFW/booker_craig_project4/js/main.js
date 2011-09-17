@@ -76,6 +76,8 @@ function getData() {
 	
 		var viewTaskItems = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, taskNotes];
 		alert("I'm in getData and here is the info:" + viewTask);
+		
+		document.getElementById('main').style.display		=	"none";
 		var clearLink = document.getElementById('clear');
 		//displayTask(viewTask);
 		clearLink.style.display = "block";
@@ -96,11 +98,15 @@ function getData() {
 		var deleteLink = document.createElement("a");
 		
 		//Add edit single item link
-		
-		
-		
+
 	} else {
-		setDefualtVals();
+		//setDefualtVals();
+		var taskName		=	'Enter task name';
+		var taskPriority		=	0;
+		var dueDate			=	'Enter task due date';
+		var startDate			=	'Enter task start date';
+		var endDate			=	'Enter task end date';
+		var taskNotes			=	'Notes';
 		return;
 	}
 }
@@ -113,60 +119,7 @@ function outPutMsg(outPut) {
 }
 
 
-/*
-function displayTask(viewTask) {
-	var taskImgs = ["img/errand.png", "img/home.png", "img/office.png", "img/phone_calls.png", "img/people.png"];
-	var i;
-	alert("I made it into displaytask");
-	document.getElementById('form').style.display = "none";
-	//document.getElementById('form').style.display ="block";
-	var  formCont = document.getElementById('form');
-	var getListdiv = document.getElementById('toDolist');
-	formCont.style.display = "none";
-	//getListdiv.style.className = "main";
-	alert("I made it into displaytask 2");
-	
-	var createImg = document.createElement('img');
-	var setSrc = createImg.setAttribute("src", "\"img/\"" + task)
-	var idunno = ("img/" +  + "")
-	img1.src =
 
-	//var newParag = document.createElement("p");
-	//var newUl = document.createElement("ul");
-	//getListdiv.appendChild(newParag);
-	for (i = 0; i < viewTask.length; i++) {
-		//img.src = taskImgs[i]
-		var newParag = document.createElement("p");
-		alert("i'm here");
-		//var newImg = document.createElement("img");
-		//imgSrc = (document.img.src = taskImgs[i]);
-		var taskText = document.createTextNode(viewTask[i]);
-		img1.src = taskImgs[i];
-		//var imgHTML = taskImgs[i];
-		newParag.appendChild(taskText);
-		getListdiv.appendChild(newParag);
-		}		
-		getListdiv.appendChild(img1);
-} else {
-		var taskName		=	'Enter task name';
-		var taskPriority		=	0;
-		var dueDate			=	'Enter task due date';
-		var startDate			=	'Enter task start date';
-		var endDate			=	'Enter task end date';
-		var taskNotes			=	'Notes';
-}
-	*/	
-		/*
-		var newLi = document.createElement("li");
-		var newImg = document.createElement("img");
-		var taskText = document.createTextNode(viewTask[i]);
-		var labelText = ["Task Name", "Priority", "Favorite Task", "Start Date", "End Date", "Due Date", "Notes" ];
-		getListdiv.appendChild(labelText[i]); */
-		/*
-		newImg.appendChild(taskText);
-		getListdiv.appendChild(labelText[i]);
-		getListdiv.appendChild(newLi);
-		getListdiv.appendChild(newImg);*/
 
 
 
@@ -206,9 +159,26 @@ function checkLocStorSup() {
 function editTask(id) {
 	var value = localStorage.getItem(id);
 	var taskId = id;
+	alert(taskId);
+	value = value.split(;);
+	var taskContext			=	value[0];
+	var taskName			=	value[1];
+	var taskPriority			=	value[2];
+	var taskFavorite			=	value[3];
+	var taskSdate				=	value[4];
+	var taskEdate				=	value[5];
+	var taskDdate				=	value[6];
+	var taskNotes				=	value[7];
 	
-
-
+	// send form vals from local storage vals
+	document.getElementById("taskContext").value	= taskContext;
+	document.getElementById("taskName").value		= taskName;
+	document.getElementById("taskPriority").value		= taskPriority;	
+	document.getElementById("taskFavorite").value	= taskFavorite;
+	document.getElementById("taskSdate").value 		= taskSdate;
+	document.getElementById("taskEdate").value 		= taskEdate;
+	document.getElementById("taskDdate").value 		= taskDdate;
+	document.getElementById("taskNotes").value 		= taskNotes;
 }
 
 function deleteTask(id) {
@@ -235,9 +205,6 @@ initialChecks();
 
 
 
-
-=======
->>>>>>> consolidate-formval
 function initializeData() {
 	var locFormstor = getData();
 	checkLocStorSup(formData);	
@@ -349,4 +316,59 @@ function validateForm(formData) {
 	When everything checks out, call storeData and alert form submitted. */
 //validateForm	
 
+// Old Code
+
+ /*
+function displayTask(viewTask) {
+	var taskImgs = ["img/errand.png", "img/home.png", "img/office.png", "img/phone_calls.png", "img/people.png"];
+	var i;
+	alert("I made it into displaytask");
+	document.getElementById('form').style.display = "none";
+	//document.getElementById('form').style.display ="block";
+	var  formCont = document.getElementById('form');
+	var getListdiv = document.getElementById('toDolist');
+	formCont.style.display = "none";
+	//getListdiv.style.className = "main";
+	alert("I made it into displaytask 2");
 	
+	var createImg = document.createElement('img');
+	var setSrc = createImg.setAttribute("src", "\"img/\"" + task)
+	var idunno = ("img/" +  + "")
+	img1.src =
+
+	//var newParag = document.createElement("p");
+	//var newUl = document.createElement("ul");
+	//getListdiv.appendChild(newParag);
+	for (i = 0; i < viewTask.length; i++) {
+		//img.src = taskImgs[i]
+		var newParag = document.createElement("p");
+		alert("i'm here");
+		//var newImg = document.createElement("img");
+		//imgSrc = (document.img.src = taskImgs[i]);
+		var taskText = document.createTextNode(viewTask[i]);
+		img1.src = taskImgs[i];
+		//var imgHTML = taskImgs[i];
+		newParag.appendChild(taskText);
+		getListdiv.appendChild(newParag);
+		}		
+		getListdiv.appendChild(img1);
+} else {
+		var taskName		=	'Enter task name';
+		var taskPriority		=	0;
+		var dueDate			=	'Enter task due date';
+		var startDate			=	'Enter task start date';
+		var endDate			=	'Enter task end date';
+		var taskNotes			=	'Notes';
+}
+	*/	
+		/*
+		var newLi = document.createElement("li");
+		var newImg = document.createElement("img");
+		var taskText = document.createTextNode(viewTask[i]);
+		var labelText = ["Task Name", "Priority", "Favorite Task", "Start Date", "End Date", "Due Date", "Notes" ];
+		getListdiv.appendChild(labelText[i]); */
+		/*
+		newImg.appendChild(taskText);
+		getListdiv.appendChild(labelText[i]);
+		getListdiv.appendChild(newLi);
+		getListdiv.appendChild(newImg);*/	
