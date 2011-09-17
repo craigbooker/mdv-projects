@@ -47,7 +47,18 @@ function getTaskItems() {
 		var i;
 		var len = localStorage.length;
 		for (i = 0; i < len; i++) {
-		
+		var key	=	localStorage.key(i);
+		var value	=	localStorage.getItem(key);
+		value = value.split(;);
+		var taskContext			=	value[0];
+		var taskName			=	value[1];
+		var taskPriority			=	value[2];
+		var taskFavorite			=	value[3];
+		var taskSdate				=	value[4];
+		var taskEdate				=	value[5];
+		var taskDdate				=	value[6];
+		var taskNotes				=	value[7];	
+		var newDiv		=	document.createElement("div");	
 		}
 
 	if (localStorage.getItem('apptaskName')) {
@@ -90,7 +101,12 @@ function getTaskItems() {
 		newDiv.appendChild(deleteLink);
 		
 		//Add edit single task link
-		
+		var editLink			=	document.createElement("a");
+		var setEditHref		=	editLink.setAttribute("href", "#");
+		var setEditOnclick	=	editLink.setAttribute("onclick", "editTask(" + key + ");");
+		var editText			=	document.createTextNode("edit task");
+		editLink.appendChild(editText);
+		newDiv.appendChild(editLink);
 		
 	} else {
 		//setDefualtVals();
@@ -149,12 +165,18 @@ function editTask(id) {
 	// send form vals from local storage vals
 	document.getElementById("taskContext").value	= taskContext;
 	document.getElementById("taskName").value		= taskName;
-	document.getElementById("taskPriority").value		= taskPriority;	
-	document.getElementById("taskFavorite").value	= taskFavorite;
+	document.getElementById("taskPriority").value		= taskPriority;
+	if (taskFavorite === "on") {
+		document.getElementById("taskFavorite").setAttribute("checked", "checked");
+	}	
+	//document.getElementById("taskFavorite").value	= taskFavorite;
 	document.getElementById("taskSdate").value 		= taskSdate;
 	document.getElementById("taskEdate").value 		= taskEdate;
 	document.getElementById("taskDdate").value 		= taskDdate;
 	document.getElementById("taskNotes").value 		= taskNotes;
+	
+	
+	
 }
 
 function deleteTask(id) {
