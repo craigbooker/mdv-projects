@@ -92,6 +92,7 @@ function getTaskItems() {
 		var newImg = document.createElement("img");
 		var setSrc = newImg.setAttribute("src", "img/" + taskCatvals + ".png");
 		getListdiv.appendChild(newImg);
+		
 		//Add or delete single task link
 		var deleteLink = document.createElement("a");
 		var setHref		=	deleteLink.setAttribute("href", "#");
@@ -175,6 +176,35 @@ function editTask(id) {
 	document.getElementById("taskDdate").value 		= taskDdate;
 	document.getElementById("taskNotes").value 		= taskNotes;
 	
+	//Reveal editItems button, hide submit button
+	var editItem = document.getElementById('editItem');
+	editItem.style.display = "block";
+	var submit = document.getElementById('submit');
+	submit.style.display = "none";
+	
+	// Grab editItem button's click
+	document.getElementbyId('editItem').onclick = function () {
+		//alert(itemId);
+		var taskContext			=	document.getElementById('taskContext').value;
+		var taskName			=	document.getElementById('taskName').value;		
+		var taskPriority			=	document.getElementById('taskPriority').value;	
+		var taskFavorite			=	document.getElementById('taskFavorite').value;
+		var taskSdate				=	document.getElementById('taskSdate').value;		
+		var taskEdate				=	document.getElementById('taskEdate').value;	
+		var taskDdate				=	document.getElementById('taskDdate').value;		
+		var taskNotes				=	document.getElementById('taskNotes').value;
+		var allItems				=	[
+			taskContext,
+			taskName,
+			taskPriority,
+			taskFavority,
+			taskSdate,
+			taskEdate,
+			taskDdate,
+			taskNotes
+		];
+		
+	} 
 	
 	
 }
