@@ -14,48 +14,47 @@
         <meta name="robots" content ="index, follow" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     </head>
     <body> 
     <div id="container">
-		<div id="main" class="main">
-			<div class="titlebar"><h1>Add Task Item</h1></div>
-			<form name="addTask" id="form" action="#" onsubmit="validateForm();" method="post" class="form"> 
+		<div id="header">
+			<h1>Add Task Item</h1>
+		</div> <!-- header -->
+			<div id="main" class="main">
+			<form action="#" onsubmit="storeItems();"> 
+			<!--form action="#" onsubmit="storeItems();" name="form" id="form" class="form"--> 
 				<!-- Drop down menu to select context. -->
 				<ul>
-					<div id="errorList">
+					<!--div id="errorList">
 					<li>
 						
 					</li>
-					</div> <!-- todolist -->
+					</div--> <!-- errorList -->
 					<li>
 					<label for="taskContext"><h2>Select Task Context:</h2></label>
-						<select id="taskContext" name="context_list" class="context_drop_down">
-							<option value="">Context list</option>			
+						<select id="taskContext">
+							<!--option value="">Context list</option-->			
 						</select><br />
 					</li>
 				</ul>
 				<!-- End of context drop down  -->
-		
 				<!-- Start of fieldset  -->
 				<ul>
 					<li>
 					<fieldset>	
 						<legend><strong>Task Details</strong></legend>
-							<label for="taskName">Task Name:</label><br /><input type="text" id="taskName" /><br />	<!-- What The Task Is Called -->	
-							<label for="taskPriority">Priority</label><br /><input type="range" id="taskPriority" name="priority" min="0" max="10" step="1" default="0" /><br /> <!-- Sets Priority Of Task  -->
-							<label for="favoriteTask">Add to Favorites?</label><input type="checkbox" id="favoriteTask" name="favoritetask" value="boolean"><br /> <!-- Add Task To Favorites  -->
+							<label for="taskName">Task Name:</label><br /><input type="text" id="taskName" /><br /><!-- The name of theTask -->	
+							<label for="taskPriority">Priority</label><br /><input type="range" id="taskPriority" name="priority" min="0" max="10" step="1" default="0" /><br /> <!-- Priority Of Task  -->
+							<label for="taskFavorite">Add to Favorites?</label><input type="checkbox" id="taskFavorite" name="taskFavorite" ><br /> <!-- Add Task To Favorites  -->
 							<label for="startDate">Start Date:</label><input type="date" id="startDate" name="startdate" ><br /> <!-- Task Start Date -->
 							<label for="endDate">End Date:</label><input type="date" id="endDate" name="enddate" ><br /> <!-- Task End Date -->
 							<label for="dueDate">Due Date:</label><input type="date" id="dueDate" name="duedate" ><br /> <!-- Task Due Date  -->
 							<label for="taskNotes">Notes:</label><br /><textarea id="taskNotes"></textarea><br /> <!-- Allows For Any Notes For Task -->
-						<input type="hidden" value="true" />
 					</fieldset>
 					</li>
 				</ul>
 			<!-- End of fieldset  -->
 			<input type="submit" id="submitForm" value="Add Task"  /> 			
-           <!--input type="submit" id="submitForm" value="Add Task" onclick="storeItems();" /--> 			
 		</form>
 		
 				<div id="toDolist"></div> <!-- todolist -->

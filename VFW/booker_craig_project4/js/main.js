@@ -2,28 +2,28 @@
 // VFW Project 4
 // 09/16/2011
 
-
-// Main Vars	
-var taskCatvals = ["Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
 var clearLink = document.getElementById('clear');
 var errorList = document.getElementById('errorList');
+
+// create cats, build select list	
+var taskCats = ["", "Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
 var formTagname = document.getElementByTagName("form");
-var newDiv = document.createElement("div");
 var createPara = document.createElement("p");
 var createSel = document.createElement("select");
-var formDatastorage;
+//var formDatastorage;
 
 //End - Main Vars
 
-createSel.setAttribute("id", "taskCatvals");
+createSel.setAttribute("id", "taskCats");
 
-var makeTaskcats = function (name) {
+var makeCats = function (name) {
+	alert("I made it in the makeCats");
 	var i;
-	var n = taskCatvals.length;
+	var n = taskCats.length;
 	for (i = 0; i < n; i++) {
 		var optVar = document.createElement("option");
-		var optTxt = document.createTextNode(taskCatvals[i]);
-		optVar.setAttribute("value", taskCatvals[i];
+		var optTxt = document.createTextNode(taskCats[i]);
+		optVar.setAttribute("value", taskCats[i]);
 		optVar.appendChild(optTxt);
 		createSel.appendChild(optVar);
 		//addOptions(document.addTask.context_list, dropDownvals[i], dropDownvals[i]);
@@ -33,7 +33,7 @@ var makeTaskcats = function (name) {
 	var paraSelect = formTagname[0].insertBefore(createPara, getUL);
 };
 
-makeTaskcats();
+makeCats();
 
 function outPutMsg(outPut) {
 	alert(outPut);
@@ -43,13 +43,13 @@ function outPutMsg(outPut) {
 
 function getTaskItems() {
 
-		var getListdiv		=	document.getElementById(toDolist);
-		var i;
-		var len = localStorage.length;
-		for (i = 0; i < len; i++) {
+	var getListdiv		=	document.getElementById(toDolist);
+	var i;
+	var len = localStorage.length;
+	for (i = 0; i < len; i++) {
 		var key	=	localStorage.key(i);
 		var value	=	localStorage.getItem(key);
-		value = value.split(;);
+		value = value.split(";");
 		var taskContext			=	value[0];
 		var taskName			=	value[1];
 		var taskPriority			=	value[2];
@@ -59,7 +59,7 @@ function getTaskItems() {
 		var taskDdate				=	value[6];
 		var taskNotes				=	value[7];	
 		var newDiv		=	document.createElement("div");	
-		}
+	}
 
 	if (localStorage.getItem('apptaskName')) {
 		alert("STEP 1 GET DATA");
@@ -82,9 +82,9 @@ function getTaskItems() {
 		var getListdiv = document.getElementById('toDolist');
 		var i;
 		var n = viewTaskItems.length;
-		for (i = 0, i < n; i++) {
+		for (i = 0; i < n; i++) {
 			var newParas = document.createElement("p");
-			var itemTxt = document.createTextNode(viewTaskItems[i])
+			var itemTxt = document.createTextNode(viewTaskItems[i]);
 			newParas.appendChild(itemTxt);
 			getListdiv.appendChild(newParas);
 		}
@@ -125,9 +125,8 @@ function getTaskItems() {
 
 
 
-//var formData = getData();
-//checkLocStorSup(formData);
 function storeItems(id) {
+	//validateForm();
 	alert("I made it in Store items function");
 	var taskContext		=	document.getElementById('taskContext').value;
 	var taskName		=	document.getElementById('taskName').value;
@@ -137,6 +136,7 @@ function storeItems(id) {
 	var startDate			=	document.getElementById('startDate').value;
 	var endDate			=	document.getElementById('endDate').value;
 	var taskNotes			=	document.getElementById('taskNotes').value; 
+	alert("I made it to the middle of the Store items function");
 	localStorage.setItem('apptaskContext', taskContext);
 	localStorage.setItem('apptaskName', taskName);
 	localStorage.setItem('apptaskPriority', taskPriority);
@@ -146,14 +146,14 @@ function storeItems(id) {
 	localStorage.setItem('appendDate', endDate);
 	localStorage.setItem('apptaskNotes', taskNotes);	
 	alert("I made it to the end of the Store items function");
-}
+} //storeItems
 
 
 function editTask(id) {
 	var value = localStorage.getItem(id);
 	var taskId = id;
 	alert(taskId);
-	value = value.split(;);
+	value = value.split(";");
 	var taskContext			=	value[0];
 	var taskName			=	value[1];
 	var taskPriority			=	value[2];
@@ -203,21 +203,31 @@ function editTask(id) {
 			taskDdate,
 			taskNotes
 		];
-		
+		if (taskContext != "" && taskName != "" && taskSdate != "") {
+			localStorage.setItem(itemId, allItems.join(';'));
+		} else {
+			alert("all fields required.");
+		}
 	} 
 	
 	
-}
+} //editItem
 
 function deleteTask(id) {
-
-
+	var ask	=	confirm("Are you sure you want to delete this task?");
+	if (ask) {
+		localStorage.removeItem(id);
+		window.location.reload();
+	}	else	{
+		alert("Item not removed!");
+	}
 }
 
+// Deletes all tasks
 function clearLocal() {
 	localStorage.clear();
 	return false;
-}
+} //clearLocal
 
 function checkLocStorSup() {	
 	if (typeof (localStorage) === 'undefined') {
