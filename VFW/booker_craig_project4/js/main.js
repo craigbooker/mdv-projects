@@ -1,81 +1,74 @@
 // Craig Booker
 // VFW Project 4
 // 09/16/2011
+var locFormStor;
+var formDataStorage;
 
-var clearLink = document.getElementById('clear');
-var errorList = document.getElementById('errorList');
+// create cats, build select list
+//alert("I made it to line 8");
+var catNames = ["SELECT", "Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
+var formTag = document.getElementById("form");
+var makePara = document.createElement("p");
+var	makeSelect = document.createElement("select");
 
-// create cats, build select list	
-var taskCats = ["", "Errand", "Home", "Office", "Phone Calls", "People", "Waiting"];
-var formTagname = document.getElementByTagName("form");
-var createPara = document.createElement("p");
-var createSel = document.createElement("select");
 //var formDatastorage;
-
-//End - Main Vars
-
-createSel.setAttribute("id", "taskCats");
-
+//alert("Hey Now");
+makeSelect.setAttribute("id", "catName");
+//alert("Didn't get to makeCats");
 var makeCats = function (name) {
-	alert("I made it in the makeCats");
-	var i;
-	var n = taskCats.length;
-	for (i = 0; i < n; i++) {
-		var optVar = document.createElement("option");
-		var optTxt = document.createTextNode(taskCats[i]);
-		optVar.setAttribute("value", taskCats[i]);
-		optVar.appendChild(optTxt);
-		createSel.appendChild(optVar);
+	//alert("I made it in the makeCats");
+	var i, j;
+	for (i = 0, j = catNames.length; i < j; i++) {
+		var makeOption = document.createElement("option");
+		var optText = document.createTextNode(catNames[i]);
+		makeOption.setAttribute("value", catNames[i]);
+		makeOption.setAttribute("id", "tContext");
+		makeOption.appendChild(optText);
+		makeSelect.appendChild(makeOption);
 		//addOptions(document.addTask.context_list, dropDownvals[i], dropDownvals[i]);
 	}
-	createPara.appendChild(createSel);
-	var getUL = formTagname[0].firstChild;
-	var paraSelect = formTagname[0].insertBefore(createPara, getUL);
+	makePara.appendChild(makeSelect);
+	var getUL = formTag[0].firstChild;
+	var paraSelect = formTag[0].insertBefore(makePara, getUL);
 };
-
+//alert('Almost to make cats');
 makeCats();
-
-function outPutMsg(outPut) {
-	alert(outPut);
-	return;
-}
 
 
 function getTaskItems() {
-
-	var getListdiv		=	document.getElementById(toDolist);
-	var i;
-	var len = localStorage.length;
-	for (i = 0; i < len; i++) {
-		var key	=	localStorage.key(i);
+	//var getListdiv		=	document.getElementById(toDolist);
+	var i, len;
+	// = localStorage.length;
+	for (i = 0, len = localStorage.length; i < len; i++) {
+		var key		=	localStorage.key(i);
 		var value	=	localStorage.getItem(key);
 		value = value.split(";");
-		var taskContext			=	value[0];
-		var taskName			=	value[1];
-		var taskPriority			=	value[2];
-		var taskFavorite			=	value[3];
-		var taskSdate				=	value[4];
-		var taskEdate				=	value[5];
-		var taskDdate				=	value[6];
-		var taskNotes				=	value[7];	
-		var newDiv		=	document.createElement("div");	
+		var tContext			=	value[0];
+		var tName				=	value[1];
+		var tPriority			=	value[2];
+		var tFavorite			=	value[3];
+		var tDate				=	value[4];
+		var eDate				=	value[5];
+		var dDate				=	value[6];
+		var tNotes				=	value[7];
+		var newDiv				=	document.createElement("div");
 	}
 
-	if (localStorage.getItem('apptaskName')) {
+	if (localStorage.getItem('apptName')) {
 		alert("STEP 1 GET DATA");
-		var taskContext		=	localStorage.getItem('appTaskContext');
-		var taskName		=	localStorage.getItem('appTaskName');
-		var taskPriority	=	localStorage.getItem('appTaskPriority');
-		var favorite		=	localStorage.getItem('appFavorite');
-		var dueDate			=	localStorage.getItem('appDueDate');
-		var startDate		=	localStorage.getItem('appStartDate');
-		var endDate			=	localStorage.getItem('appEndDate');
-		var taskNotes			=	localStorage.getItem('appNotes');
+		var tContext		=	localStorage.getItem('apptContext');
+		var tName			=	localStorage.getItem('apptName');
+		var tPriority		=	localStorage.getItem('apptPriority');
+		var tFavorite		=	localStorage.getItem('appFavorite');
+		var dDate			=	localStorage.getItem('appDueDate');
+		var sDate			=	localStorage.getItem('appStartDate');
+		var eDate			=	localStorage.getItem('appEndDate');
+		var tNotes			=	localStorage.getItem('appNotes');
 	
-		var viewTaskItems = [taskContext, taskName, taskPriority, favorite, dueDate, startDate, endDate, taskNotes];
-		alert("I'm in getData and here is the info:" + viewTask);
+		var viewTaskItems = [tContext, tName, tPriority, tFavorite, dDate, sDate, eDate, tNotes];
+		alert("I'm in getData and here is the info:" + viewTaskItems);
 		
-		document.getElementById('main').style.display		=	"none";
+		document.getElementById('main').style.display	=	"none";
 		var clearLink = document.getElementById('clear');
 		//displayTask(viewTask);
 		clearLink.style.display = "block";
@@ -96,7 +89,7 @@ function getTaskItems() {
 		//Add or delete single task link
 		var deleteLink = document.createElement("a");
 		var setHref		=	deleteLink.setAttribute("href", "#");
-		var setOnclick		=	deleteLink.setAttribute("onclick", "deleteTask(" + key + ");");
+		var setOnclick	=	deleteLink.setAttribute("onclick", "deleteTask(" + key + ");");
 		var deleteText	=	document.createTextNode("delete task");
 		deleteLink.appendChild(deleteText);
 		newDiv.appendChild(deleteLink);
@@ -111,12 +104,12 @@ function getTaskItems() {
 		
 	} else {
 		//setDefualtVals();
-		var taskName		=	'Enter task name';
-		var taskPriority		=	0;
-		var dueDate			=	'Enter task due date';
-		var startDate			=	'Enter task start date';
-		var endDate			=	'Enter task end date';
-		var taskNotes			=	'Notes';
+		var tName		=	'Enter task name';
+		var tPriority	=	0;
+		var dDate		=	'Enter task due date';
+		var sDate		=	'Enter start date';
+		var eDate		=	'Enter end date';
+		var tNotes		=	'Notes';
 		return;
 	}
 }
@@ -127,24 +120,24 @@ function getTaskItems() {
 
 function storeItems(id) {
 	//validateForm();
-	alert("I made it in Store items function");
-	var taskContext		=	document.getElementById('taskContext').value;
-	var taskName		=	document.getElementById('taskName').value;
-	var taskPriority		=	document.getElementById('taskPriority').value;
-	var favTask			=	document.getElementById('favoriteTask').value;
-	var dueDate			=	document.getElementById('dueDate').value;
-	var startDate			=	document.getElementById('startDate').value;
-	var endDate			=	document.getElementById('endDate').value;
-	var taskNotes			=	document.getElementById('taskNotes').value; 
-	alert("I made it to the middle of the Store items function");
-	localStorage.setItem('apptaskContext', taskContext);
-	localStorage.setItem('apptaskName', taskName);
-	localStorage.setItem('apptaskPriority', taskPriority);
-	localStorage.setItem('appfavoriteTask', favTask);
-	localStorage.setItem('appdueDate', dueDate);
-	localStorage.setItem('appstartDate', startDate);
-	localStorage.setItem('appendDate', endDate);
-	localStorage.setItem('apptaskNotes', taskNotes);	
+	alert("Inside Store items function");
+	var tContext		=	document.getElementById('tContext').value;
+	var tName			=	document.getElementById('tName').value;
+	var tPriority		=	document.getElementById('tPriority').value;
+	var tFav			=	document.getElementById('tFavorite').value;
+	var dDate			=	document.getElementById('dDate').value;
+	var sDate			=	document.getElementById('sDate').value;
+	var eDate			=	document.getElementById('eDate').value;
+	var tNotes			=	document.getElementById('tNotes').value; 
+	//alert("I made it to the middle of the Store items function");
+	localStorage.setItem('apptContext', tContext);
+	localStorage.setItem('apptName', tName);
+	localStorage.setItem('apptPriority', tPriority);
+	localStorage.setItem('appfTask', tFav);
+	localStorage.setItem('appdDate', dDate);
+	localStorage.setItem('appsDate', sDate);
+	localStorage.setItem('appeDate', eDate);
+	localStorage.setItem('apptNotes', tNotes);	
 	alert("I made it to the end of the Store items function");
 } //storeItems
 
@@ -154,27 +147,27 @@ function editTask(id) {
 	var taskId = id;
 	alert(taskId);
 	value = value.split(";");
-	var taskContext			=	value[0];
-	var taskName			=	value[1];
-	var taskPriority			=	value[2];
-	var taskFavorite			=	value[3];
-	var taskSdate				=	value[4];
-	var taskEdate				=	value[5];
-	var taskDdate				=	value[6];
-	var taskNotes				=	value[7];
+	var tContext			=	value[0];
+	var tName				=	value[1];
+	var tPriority			=	value[2];
+	var tFavorite			=	value[3];
+	var sdate				=	value[4];
+	var edate				=	value[5];
+	var ddate				=	value[6];
+	var taskNotes			=	value[7];
 	
 	// send form vals from local storage vals
-	document.getElementById("taskContext").value	= taskContext;
-	document.getElementById("taskName").value		= taskName;
-	document.getElementById("taskPriority").value		= taskPriority;
+	document.getElementById("tContext").value		= tContext;
+	document.getElementById("tName").value			= tName;
+	document.getElementById("tPriority").value		= tPriority;
 	if (taskFavorite === "on") {
-		document.getElementById("taskFavorite").setAttribute("checked", "checked");
+		document.getElementById("tFavorite").setAttribute("checked", "checked");
 	}	
 	//document.getElementById("taskFavorite").value	= taskFavorite;
-	document.getElementById("taskSdate").value 		= taskSdate;
-	document.getElementById("taskEdate").value 		= taskEdate;
-	document.getElementById("taskDdate").value 		= taskDdate;
-	document.getElementById("taskNotes").value 		= taskNotes;
+	document.getElementById("taskSdate").value 		= sDate;
+	document.getElementById("taskEdate").value 		= eDate;
+	document.getElementById("taskDdate").value 		= dDate;
+	document.getElementById("taskNotes").value 		= tNotes;
 	
 	//Reveal editItems button, hide submit button
 	var editItem = document.getElementById('editItem');
@@ -229,20 +222,27 @@ function clearLocal() {
 	return false;
 } //clearLocal
 
+function outPutMsg(outPut) {
+	alert(outPut);
+	return;
+}
+
+
+
 function checkLocStorSup() {	
 	if (typeof (localStorage) === 'undefined') {
 		outPutMsg('Your browser does not support HTML 5. Please update your browser and try again.');
 		return;
 	} else {
-		alert("I'm in checklocsup");
+		//alert("I'm in checklocsup");
 		return;
 	} 
 }
 
 function initialChecks() {
 	checkLocStorSup();	
-	formDatastorage = getTaskItems();
-	return formDatastorage;
+	formDataStorage = getTaskItems();
+	return formDataStorage;
 }
 
 
@@ -254,9 +254,9 @@ initialChecks();
 
 
 function initializeData() {
-	var locFormstor = getTaskItems();
+	var locFormStor = getTaskItems();
 	checkLocStorSup(formData);	
-	validateForm(locFormstor);
+	validateForm(locFormStor);
 
 }
 
@@ -267,17 +267,19 @@ function clearLocal() {
 
 // -------   Form Validation --------------------------
 
-function validateForm(formData) {
+function validateForm(id) {
 	alert("Beginning validation!");
 	var validStatus		=	[];
-	var fieldsChecked = ["taskContext", "taskName", "taskSdate", "taskEdate", "taskDdate"];
+	var fieldsChecked = ["tContext", "tName", "sdate", "edate", "dDate"];
 	var defFieldvals = ["Enter task name", "Enter task start date", "Enter task end date", "Enter task due date", "Notes"];
 	var validCount = 0;
 	alert("Beginning validation 2!");
 
+	
+
 	//var getInvalidfields; 
-	var getTcontext = document.getElementById("taskContext").value;
-	if (getTcontext === "") {
+	var getTcontext = document.getElementById("tContext").value;
+	if ((getTcontext === "") || (getTcontext === catNames[0])) {
 		alert("Please select a context.");
 		validStatus.push("false");
 		//alert(validStatus);
@@ -286,9 +288,9 @@ function validateForm(formData) {
 		validCount += 1;
 
 	} 
-	var getTname = document.getElementById("taskName").value;
+	var getTname = document.getElementById("tName").value;
 	if ((getTname === "") || (getTname  === defFieldvals[0])) {
-		//alert("Please add a task name.");
+		alert("Please add a task name.");
 		validStatus.push("false");
 		//alert(validStatus);
 
@@ -297,7 +299,7 @@ function validateForm(formData) {
 		validCount += 1;
 
 	}
-	var getSdate = document.getElementById("startDate").value;
+	var getSdate = document.getElementById("sDate").value;
 	if ((getSdate === "") || (getSdate === defFieldvals[1])) {
 		//alert("Please set an Start Date.");
 		validStatus.push("false");
@@ -308,7 +310,7 @@ function validateForm(formData) {
 		validCount += 1;
 
 	}
-	var getEdate = document.getElementById("endDate").value;
+	var getEdate = document.getElementById("eDate").value;
 	if ((getEdate === "") || (getEdate === defFieldvals[2])) {
 		//alert("Please set an End Date.");
 		validStatus.push("false");
@@ -319,7 +321,7 @@ function validateForm(formData) {
 		validCount += 1;
 
 	}
-	var getDdate = document.getElementById("dueDate").value;
+	var getDdate = document.getElementById("dDate").value;
 	if ((getDdate === "") || (getDdate === defFieldvals[3])) {
 		//alert("Please set a Due Date.");
 		validStatus.push("false");
@@ -347,9 +349,12 @@ function validateForm(formData) {
 		alert("There are errors with the following fields:" + errorFields);
 		/* Output box at top of page with list of error fields in red */
 		
+		
+		
+		
 	} else {	
 		alert("Form Submitted!");
-		storeItems(formData);	
+		storeItems(id);	
 			
 	}
 
@@ -358,79 +363,3 @@ function validateForm(formData) {
 	When everything checks out, call storeData and alert form submitted. */
 //validateForm	
 
-// Old Code
-
- /*
-function displayTask(viewTask) {
-	var taskImgs = ["img/errand.png", "img/home.png", "img/office.png", "img/phone_calls.png", "img/people.png"];
-	var i;
-	alert("I made it into displaytask");
-	document.getElementById('form').style.display = "none";
-	//document.getElementById('form').style.display ="block";
-	var  formCont = document.getElementById('form');
-	var getListdiv = document.getElementById('toDolist');
-	formCont.style.display = "none";
-	//getListdiv.style.className = "main";
-	alert("I made it into displaytask 2");
-	
-	var createImg = document.createElement('img');
-	var setSrc = createImg.setAttribute("src", "\"img/\"" + task)
-	var idunno = ("img/" +  + "")
-	img1.src =
-
-	//var newParag = document.createElement("p");
-	//var newUl = document.createElement("ul");
-	//getListdiv.appendChild(newParag);
-	for (i = 0; i < viewTask.length; i++) {
-		//img.src = taskImgs[i]
-		var newParag = document.createElement("p");
-		alert("i'm here");
-		//var newImg = document.createElement("img");
-		//imgSrc = (document.img.src = taskImgs[i]);
-		var taskText = document.createTextNode(viewTask[i]);
-		img1.src = taskImgs[i];
-		//var imgHTML = taskImgs[i];
-		newParag.appendChild(taskText);
-		getListdiv.appendChild(newParag);
-		}		
-		getListdiv.appendChild(img1);
-} else {
-		var taskName		=	'Enter task name';
-		var taskPriority		=	0;
-		var dueDate			=	'Enter task due date';
-		var startDate			=	'Enter task start date';
-		var endDate			=	'Enter task end date';
-		var taskNotes			=	'Notes';
-}
-	*/	
-		/*
-		var newLi = document.createElement("li");
-		var newImg = document.createElement("img");
-		var taskText = document.createTextNode(viewTask[i]);
-		var labelText = ["Task Name", "Priority", "Favorite Task", "Start Date", "End Date", "Due Date", "Notes" ];
-		getListdiv.appendChild(labelText[i]); */
-		/*
-		newImg.appendChild(taskText);
-		getListdiv.appendChild(labelText[i]);
-		getListdiv.appendChild(newLi);
-		getListdiv.appendChild(newImg);*/	
-		
-		
-/*
-function setDefualtVals() {
-	var taskName		=	'Enter task name';
-	var taskPriority		=	0;
-	var dueDate		=	'Enter task due date';
-	var startDate		=	'Enter task start date';
-	var endDate		=	'Enter task end date';
-	var taskNotes		=	'Notes';
-		
-	document.getElementById('taskName').value = taskName;
-	document.getElementById('taskPriority').value = taskPriority;
-	document.getElementById('startDate').value = startDate;
-	document.getElementById('endDate').value = endDate;
-	document.getElementById('dueDate').value = dueDate;
-	document.getElementById('taskNotes').value = taskNotes;
-	return;
-}
-*/
