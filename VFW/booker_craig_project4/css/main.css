@@ -175,6 +175,24 @@ label {
  	
  	
  	}
+ .button {
+ 	margin: 15px;
+  	border-style: solid; 
+ 	border-color: white; 
+ 	border-width: 5px; 
+ 	background-color: white; 
+ 	line-width: 1.5em;
+ 	line-height: 1.5em;
+ 	text-decoration: none;
+ 	color: #900;
+ 	-webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-box-shadow: #000 -2px 2px 2px;
+ 	
+ 	
+ 	}
  
 
 

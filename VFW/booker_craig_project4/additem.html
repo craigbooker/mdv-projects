@@ -2,7 +2,7 @@
 <!-- 
 	Name: Craig Booker
 	Class: VFW
-	Project: 3
+	Project: 4
 	Date: 09/10/2011
  -->
 <html>
@@ -14,41 +14,36 @@
         <meta name="robots" content ="index, follow" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--script src="js/main.js" type="text/javascript"></script--> 
     </head>
     <body> 
     <div id="container">
-		<div id="header">
-			<h1>Add Task Item</h1>
-		</div> <!-- header -->
-			<!--div id="main"-->
-			<form id="form" action="#" onsubmit="validateForm();"> 
-					<fieldset>	
-						<legend><strong>Task Details</strong></legend>
-							<label for="tName">Task Name:</label><br /><input type="text" id="tName" /><br /><!-- Name of Task -->	
-							<label for="tPriority">Priority</label><br />
-							<input type="range" id="tPriority" min="0" max="10" step="1" default="0" /><br /><!--Task Priority -->
-							<label for="tFavorite">Add to Favorites?</label>
-							<input type="checkbox" id="tFavorite"><br /> <!-- Add Task To Favorites  -->
-							<label for="sDate">Start Date:</label>
-							<input type="date" id="sDate"><br /> <!-- Task Start Date -->
-							<label for="eDate">End Date:</label>
-							<input type="date" id="eDate"><br /> <!-- Task End Date -->
-							<label for="dDate">Due Date:</label>
-							<input type="date" id="dDate"><br /> <!-- Task Due Date  -->
-							<label for="tNotes">Notes:</label><br />
-							<textarea id="tNotes"></textarea><br /> <!-- Allows For Any Notes For Task -->
-					</fieldset>
-
-			<!-- End of fieldset  -->
-			<p><input type="submit" id="submitForm" value="submit"  /></p> 			
-		</form>
-		
-				<div id="toDolist"></div> <!-- todolist -->
-				<p id="clear"><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p> <!-- Calls on Javascript function to clear  local storage. -->
-			<!--/div--> <!--  Main --> 		
+		<div id="header"><h1>Add Task Item</h1></div> <!-- header -->
+			<div id="main">
+				<form id="form" action="#" onsubmit="storeItems();" > 
+						<fieldset>	
+							<legend><strong>Task Details</strong></legend>
+								<label for="tName">Task Name:</label><br /><input type="text" id="tName" /><br />
+								<label for="tPriority">Priority</label><br />
+								<input type="range" id="tPriority" min="0" max="10" step="1" default="0" /><br />
+								<label for="tFavorite">Add to Favorites?</label>
+								<input type="checkbox" id="tFavorite"><br /> <!-- Add Task To Favorites  -->
+								<label for="sDate">Start Date:</label>
+								<input type="date" id="sDate"><br /> <!-- Task Start Date -->
+								<label for="eDate">End Date:</label>
+								<input type="date" id="eDate"><br /> <!-- Task End Date -->
+								<label for="dDate">Due Date:</label>
+								<input type="date" id="dDate"><br /> <!-- Task Due Date  -->
+								<label for="tNotes">Notes:</label><br />
+								<textarea id="tNotes"></textarea><br /> <!-- Allows For Any Notes For Task -->
+						</fieldset>
+					<!-- End of fieldset  -->
+				<p><input type="submit" id="submitForm" value="submit" /></p> 			
+				</form>
+				<div id="toDolist"></div> <!-- todolist-->
+				<p id="clear"><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p> 					</div> <!--  Main --> 		
 		</div> <!--  Container -->  
-		<!-- Tells the browser to include the javascript file. -->
-
 		<script src="js/main.js" type="text/javascript"></script> 
+		
     </body>
 </html>
