@@ -38,7 +38,7 @@ html {
 #toDolist {
 	margin: 0px;
 	padding: 5px;
-	display: block;
+	display: inline;
 	-webkit-box-shadow:
 	inset 1px 1px 14px rgba(0,0,0,0.14),	
 	inset -1px -1px 14px rgba(0,0,0,0.14);		 
@@ -48,6 +48,7 @@ html {
 	box-shadow:
 	inset 1px 1px 14px rgba(0,0,0,0.14),		 
 	inset -1px -1px 14px rgba(0,0,0,0.14);
+
 }
 
 h1 {
@@ -194,5 +195,78 @@ label {
  	
  	}
  
+ .stdEdtBtn {
+ 	display: inline;
+ 	margin: 15px; 
+ 	border-style: solid; 
+ 	border-color: white; 
+ 	border-width: 5px; 
+ 	background-color: white; 
+ 	line-width: 1.5em;
+ 	line-height: 1.5em;
+ 	text-decoration: none;
+ 	color: #900;
+ 	-webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-box-shadow: #000 -2px 2px 2px;
 
+}
+ .stdDelBtn {
+ 	display: inline;
+ 	margin: 15px; 
+ 	border-style: solid; 
+ 	border-color: white; 
+ 	border-width: 5px; 
+ 	background-color: white; 
+ 	line-width: 1.5em;
+ 	line-height: 1.5em;
+ 	text-decoration: none;
+ 	color: #900;
+ 	-webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-box-shadow: #000 -2px 2px 2px;
 
+}
+
+.bigBtn {
+ 	display: block;
+ 	margin: 15px; 
+ 	border-style: solid; 
+ 	border-color: white; 
+ 	border-width: 5px; 
+ 	background-color: white; 
+ 	line-width: 2.5em;
+ 	line-height: 2.5em;
+ 	text-decoration: none;
+ 	text-align: center;
+ 	color: #900;
+ 	-webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-box-shadow: #000 -2px 2px 2px;
+
+}
+
+.field {
+	display: block;
+ 	margin: 15px; 
+ 	border-style: solid; 
+ 	border-color: white; 
+ 	border-width: 5px; 
+ 	background-color: white; 
+ 	line-width: 1.5em;
+ 	line-height: 1.5em;
+ 	text-decoration: none;
+ 	color: #900;
+ 	-webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-box-shadow: #000 -2px 2px 2px;
+
+}

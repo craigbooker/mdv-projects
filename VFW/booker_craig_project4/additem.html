@@ -14,15 +14,15 @@
         <meta name="robots" content ="index, follow" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--script src="js/main.js" type="text/javascript"></script--> 
     </head>
     <body> 
     <div id="container">
 		<div id="header"><h1>Add Task Item</h1></div> <!-- header -->
 			<div id="main">
-				<form id="form" action="#" onsubmit="storeItems();" > 
+				<form id="form" action="#" onsubmit="saveItems();" > 
 						<fieldset>	
 							<legend><strong>Task Details</strong></legend>
+								<!--label for="tContext">Task Context:</label><div id="tContextList"></div-->
 								<label for="tName">Task Name:</label><br /><input type="text" id="tName" /><br />
 								<label for="tPriority">Priority</label><br />
 								<input type="range" id="tPriority" min="0" max="10" step="1" default="0" /><br />
