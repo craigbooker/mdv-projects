@@ -12,18 +12,14 @@
         <meta name="keywords" contents="Task, to do, getting things done" />
         <meta name="description" content="Adds a task to a to do list." />
         <meta name="robots" content ="index, follow" />
-        <meta name="viewport" content="width = 480">
-        <meta name="viewport" initial-scale="1.0">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <link rel="stylesheet" type="text/css" href="css/main.css" />
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body> 
     <div id="container">
+		<div id="header"><h1>Add Task Item</h1></div> <!-- header -->
 			<div id="main">
 				<form id="form" action="#" onsubmit="saveItems();" > 
-				<div id="header"><h1>Add Task Item</h1></div> <!-- header -->
 						<fieldset>	
 							<legend><strong>Task Details</strong></legend>
 								<!--label for="tContext">Task Context:</label><div id="tContextList"></div-->
@@ -44,8 +40,8 @@
 					<!-- End of fieldset  -->
 				<p><input type="submit" id="submitForm" value="submit" /></p> 			
 				</form>
-				<p id="clear"><a href="#" onclick="clearLocal(); location.reload();" class="bigBtn" >Clear Local Storage</a></p> 					
-			</div> <!--  Main --> 		
+				<div id="toDolist"></div> <!-- todolist-->
+				<p id="clear"><a href="#" onclick="clearLocal(); location.reload();">Clear Local Storage</a></p> 					</div> <!--  Main --> 		
 		</div> <!--  Container -->  
 		<script src="js/main.js" type="text/javascript"></script> 
 		

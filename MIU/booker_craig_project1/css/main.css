@@ -2,194 +2,13 @@
 	Name: Craig Booker
 	Class: MIU
 	Project: 1
-	Date: 09/28/2011
 */
 
 
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px)  */
-
-html {
-    color: white;
-    background-color: #E1DFD3;
-    -webkit-text-size-adjust:none; 
-}
-#container {
-	width: 320px; margin: 5px, auto 0; overflow: auto;
-}
-#main {
-    font-family: "Arial", sans-serif;
-    margin: 0px, 0px, 0px, 0px;
-    padding: 0px, 0px, 0px, 0px;
-    background-color: #E6E6E6;
-    vertical-align: top;
-    color: #4D4B39;
-    border: 3px solid #A6A59C;
-    overflow: scroll;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+width:100%;
 }
 
-/* ------ Header Styles ------------   */
-
-h1 {
-	background-color: #4d4b39;
-	color: #E1DFD3;
-	/* text-shadow: #FFFFFF 1px 1px 2px; */
-	font-weight: bold;
-	text-align: center;
-	padding: 2px;
-	margin: 0px;
-	/* border: 1px solid black; */
-	font: bold 14pt Arial, san-serif ;
-	-webkit-border-top-left-radius: 2px;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    -webkit-border-bottom-left-radius: 2px;
-}
-h2 {
-    color: #000000;
-    font: bold 12pt Arial, san-serif;
-    font-style: bold;
-    padding: 0px;
-    margin: 0px, 0px, 0px, 0px;
- }
-
-.titlebar {
-    text-align: center;
-    vertical-align: top;
-    vertical-align: text-top;
-    background-color: #4d4b39;
-    border: 4px solid #FFF;
-    border-radius: 5px;
-    -webkit-border-top-left-radius: 2px;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    -webkit-border-bottom-left-radius: 2px;
-    line-height: 1.1em;
-
-  }
-
-/* ------ Form Styles ------------   */
-fieldset {
-border: none ;
-margin: 5px;
-padding:5px;
-}
-legend {
-border: none;
-padding: 0px;
-}
-
-label {
-	display: block;
-}
-input { /* Added this to provide some margin to the bottom of the input fields. */
-	margin-bottom: 10px;
-	width: 150px; 
-	line-height: 1.7em;
-}
- input[type=submit] {
-	margin: 10px;
-	 -webkit-border-radius: 10%; /* Specific to webkit browsers such as iOS */
-	 border-radius: 10%;
-	-moz-border-radius: 10%; /* Specific to mozilla browsers such as Firefox */
-	 border-radius: 10%;
-	 -o-radius: 10%;         /* Specific to Opera browser. */
-	 border-radius: 10%;
-	 width: 100px;
-}
-.tNotes {
-	word-wrap: normal;
-}
-/* Added this style in to provide some margin along the bottom of the drop down field. */
- .context_drop_down { 
- 	margin-bottom: 10px; 
- 	margin-top: 5px;
- 	left-margin: 5px;
- }
-
-/* ------------- List Styles ----------- */
-
- li {
- list-style: none;
- 
- }
-
-
-
-
- 
- /* Some basic formatting for the form. Not BEING USED */
- .form {
- 	padding: 5px;
-	-webkit-box-shadow:
-	inset 1px 1px 14px rgba(0,0,0,0.14),	
-	inset -1px -1px 14px rgba(0,0,0,0.14);		 
-	-moz-box-shadow:
-	inset 1px 1px 14px rgba(0,0,0,0.14),		 
-	inset -1px -1px 14px rgba(0,0,0,0.14);		 
-	box-shadow:
-	inset 1px 1px 14px rgba(0,0,0,0.14),		 
-	inset -1px -1px 14px rgba(0,0,0,0.14);
- 
-.output {
-	display: inline;
-	text-indent: none;
-	text-align: left;
-	text-justify: left;
-	margin: 0px;
-	margin-bottom: 10px;
-	padding: 0px;
-	list-style: none;
-
-	border-style: 2px solid; 
- 	border-color: white; 
- 	border-width: 5px; 
- 	background-color: white; 
- 	line-width: 1.5em;
- 	line-height: 1.5em;
- 	text-decoration: none;
- 	color: #900;
- 	-webkit-border-top-left-radius: 2px;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    -webkit-border-bottom-left-radius: 2px;
-    -webkit-box-shadow: #000 -2px 2px 2px;
- }
- 
- /* ------------- Link Styles ----------- */
-
-#clear {display: none; 
-			padding: 15px;
-			margin: 0px;} 
- 	
- a { 
- 	border-style: solid; 
- 	border-color: #FFFFFF; 
- 	border-width: 5px; 
- 	background-color: white; 
- 	line-width: 1.5em;
- 	line-height: 1.5em;
- 	text-decoration: none;
- 	color: #900;
- 	-webkit-border-top-left-radius: 2px;
-    -webkit-border-top-right-radius: 2px;
-    -webkit-border-bottom-right-radius: 2px;
-    -webkit-border-bottom-left-radius: 2px;
-    -webkit-box-shadow: #000 -2px 2px 2px;
-  	}	
-/*
-	Name: Craig Booker
-	Class: VFW
-	Project: 1
-	Date: 08/31/2011
-*/
-
-
-/*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { */
 html {
     color: white;
     background-color: #E1DFD3;
@@ -200,43 +19,25 @@ html {
 }
 #main {
     font-family: "Arial", sans-serif;
-    margin: 5px, 5px, 5px, 5px;
-    padding: 5px, 0px, 0px, 0px;
+    padding: 5px, 5px, 5px, 5px;
+    margin: 0px, 0px, 0px, 0px;
     background-color: #E6E6E6;
     vertical-align: top;
     color: #4D4B39;
     min-width: 300px;
     max-width: 416px;
-    border: 3px solid #A6A59C;
+    /* border: 5px solid #A6A59C; */
     overflow: scroll;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
     -webkit-border-bottom-right-radius: 5px;
-
-
-
 }
 
-#toDolist {
-	margin: 0px;
-	padding: 5px;
-	display: block;
-	-webkit-box-shadow:
-	inset 1px 1px 14px rgba(0,0,0,0.14),	
-	inset -1px -1px 14px rgba(0,0,0,0.14);		 
-	-moz-box-shadow:
-	inset 1px 1px 14px rgba(0,0,0,0.14),		 
-	inset -1px -1px 14px rgba(0,0,0,0.14);		 
-	box-shadow:
-	inset 1px 1px 14px rgba(0,0,0,0.14),		 
-	inset -1px -1px 14px rgba(0,0,0,0.14);
-}
 
 h1 {
 	background-color: #4d4b39;
 	color: #E1DFD3;
-	/* text-shadow: #FFFFFF 1px 1px 2px; */
 	font-weight: bold;
 	text-align: center;
 	padding: 2px;
@@ -419,25 +220,136 @@ label {
 
 .bigBtn {
  	display: block;
- 	margin: 15px; 
+ 	margin: 5px; 
  	border-style: solid; 
- 	border-color: white; 
- 	border-width: 5px; 
+ 	border-color: #CCC; 
+ 	border-width: 2px; 
  	background-color: white; 
  	line-width: 2.5em;
  	line-height: 2.5em;
+ 	font-size: 10pt;
  	text-decoration: none;
  	text-align: center;
- 	color: #900;
+ 	color: #5d5d5d;
  	-webkit-border-top-left-radius: 4px;
     -webkit-border-top-right-radius: 4px;
     -webkit-border-bottom-right-radius: 4px;
     -webkit-border-bottom-left-radius: 4px;
-    -webkit-box-shadow: #000 -2px 2px 2px;
+    -webkit-box-shadow: #CCC 1px, 1px, 1px;
+
+}
+.navBtm {
+    padding: 5px, 0px, 0px, 0px;
+    margin: 0px, 0px, 0px, 0px;
+
+} 
+
+.catBtn {
+ 	display: block;
+ 	background-color: white; 
+ 	border: 1px solid gray;
+    padding: 25px, 25px, 25px, 25px;
+    margin: 5px, 5px, 0px, 5px;
+ 	line-width: 2.5 em;
+ 	line-height: 2.5 em;
+ 	text-decoration: none;
+ 	/* text-align: left; */
+ 	color: #900;
 
 }
 
+/* NAVIGATOR */
+#navigator {
+    background-color: #F2F2F2;
+    background: -moz-linear-gradient(top, #e6e7ea 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e7ea), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top, #e6e7ea 0%,#ffffff 100%);
+    background: -o-linear-gradient(top, #e6e7ea 0%,#ffffff 100%);
+    background: -ms-linear-gradient(top, #e6e7ea 0%,#ffffff 100%);
+    background: linear-gradient(top, #e6e7ea 0%,#ffffff 100%);
+    box-shadow:0px 1px 10px #C2C2C2;
+   -o-box-shadow:0px 1px 10px #C2C2C2;
+   -webkit-box-shadow:0px 1px 10px #C2C2C2;
+   -moz-box-shadow:0px 1px 10px #C2C2C2;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
 
- 
+#navigator a,
+#navigator a:link,
+#navigator a:active,
+#navigator a:hover,
+#navigator a:visited {
+    color:#585858;
+    text-decoration:none;
+    font-weight:700;
+    text-shadow: #fffefe 0 1px 0;
+}
 
+#navigator .table_view .item {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#navigator .table_view.cells .item.margin {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#navigator .table_view li,
+#navigator .button a,
+#navigator .button div {
+    border: 1px hidden #CCC;
+}
+
+#navigator .table_view .item .item_container {
+    margin: 0;
+    padding-left: 10px;
+}
+
+/* Navigator, grid view */
+#navigator ul {
+    margin: 0;
+}
+
+#navigator .table_view ul li {
+    float: left;
+    width: 50%;
+}
+
+#navigator .table_view ul li.first {
+    width: 50%;
+    border-right: 1px inset rgba(0,0,0,0.1);
+    margin-right: -1px;
+}
+
+#navigator .table_view ul li div {
+    margin-left: 0;
+}
+
+
+
+#navigator .table_view ul li.first div {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#navigator .table_view ul li .item .item_container {
+    background-image: none !important;
+    text-align: center !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+/* Table View */
+.table_view.cells {
+margin 10px 10px 10pc 10px;
+}
+.table_view.cells.item {
+
+}
+/* HEADER */ 
+
+/* FOOTER */ 
 

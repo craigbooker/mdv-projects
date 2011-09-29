@@ -1,0 +1,29 @@
+/*
+	Name: Craig Booker
+	Class: MIU
+	Project: 1
+*/
+
+body {
+	background-color: #ffffff;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+
+/* Headers */
+
+
+/* Paragraphs, lists */
+ul {
+	display:block;
+	list-style:none;
+	list-style-position:inside;
+
+}
+
+/*  Sizes */
+.type_a {
+	font-size:1.4em;
+	line-height:1.5em;
+}
