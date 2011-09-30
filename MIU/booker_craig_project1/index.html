@@ -12,36 +12,98 @@
         <meta name="keywords" contents="Task, to do, getting things done" />
         <meta name="description" content="Adds a task to a to do list." />
         <meta name="robots" content ="index, follow" />
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <link rel="stylesheet" type="text/css" href="css/font_styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/text.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/320_4_0_0.css" />
+		<style type="text/css" media="all">
+		body {
+			background: #efefef;
+			color: #333;
+			font-size: 11px;
+			padding: 20px 0 40px;
+		}
+		a {
+			color: #333;
+			text-decoration: underline;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		.container_4 h1 {
+			font-family: Georgia, serif;
+			font-weight: normal;
+			text-align: center;
+		}
+		.container_4 h2 {
+			padding: 20px 0 0;
+			font-family: Georgia, serif;
+			font-weight: normal;
+			text-align: center;
+		}
+		.container_4 p {
+			border: 1px solid #666;
+			overflow: hidden;
+			padding: 10px 0;
+			text-align: center;
+			font-size: 80%;
+		}
+		.container_4 {
+			background-color:#FFFFFF;
+			background-repeat: repeat-y;
+		}
+		</style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body> 
-    <div id="container">
+    <body>
+    <div class="container_4">
+    <h1><a href="#" alt="logo"></a></h1>
+ 
 		<header>
-			<h1>Task Manager</h1>
+			 <h1 class="page_header">Task Manager</h1>
 		</header> <!-- header -->
-		<div id="main">
-		<p><img src="" border="2" width="250" class="center_stage" > <br />
-		 Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."
 		
-		</p>	
-		<p>
+		<div class="search_box">
+		<form action="#">
+		<label for="search">Search<input type="text" id="search" align="right">
+		</form>
+		</div>
+		<div class="grid_4"><img src="img/goal_setting.jpg" width="240px" height="160px" class="container_3"></div>
+    	<div class="grid_4">
+    	
+    	
+    	</div>
+    	<!-- end .grid_4 -->
+    	<div class="clear">&nbsp;</div>
+    	<div class="description type_b">Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."
+		
+		</div>	
+		<div id="addTask">
 		<a href="additem.html" class="bigBtn">Add Task</a>
-		</p>
+		</div>
 		<div id="navigator">
-		<header><h1 class="type_a ">Categories</h1></header>
+		<header><h1>Categories</h1></header>
 		<ul class="table_view cells">
-		<li class="item"><a href="#" class="type_a item_container">Errand</a></li>
-		<li class="item"><a href="#" class="type_a item_container">Home</a></li>
-		<li class="item"><a href="#" class="type_a item_container">Office</a></li>
-		<li class="item"><a href="#" class="type_a item_container">Calls</a></li>
-		<li class="item"><a href="#" class="type_a item_container">People</a></li>
-		<li class="item"><a href="#" class="type_a item_container">Waiting</a></li>
+		<li class="item"><a href="#" class="type_b item_container">Errand</a></li>
+		<li class="item"><a href="#" class="type_b item_container">Home</a></li>
+		<li class="item"><a href="#" class="type_b item_container">Office</a></li>
+		<li class="item"><a href="#" class="type_b item_container">Calls</a></li>
+		<li class="item"><a href="#" class="type_b item_container">People</a></li>
+		<li class="item"><a href="#" class="type_b item_container">Waiting</a></li>
 		</ul>
 		</div><!-- Navigator -->
-		<div id="footer"></div>
-		</div><!-- main -->
-		</div> <!-- container -->
-    </body>
+    	<div class="container_2" ></div>
+		 <div class="clear">&nbsp;</div>
+    	<div class="grid_4">
+      	<p>Getting Things Done (GTD)and David Allen are not associated with Task Manager.  GTD is a trademark owned by the David Allen Group. </p><p> <a href="http://www.gridsystemgenerator.com">
+      	Framework was created by Grid System Generator</a><br />
+     	 Based on the 960.gs grid system.<br />
+     	 <a href="http://validator.w3.org/check/referer">XHTML</a> - <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></p>
+   		 </div>
+    <!-- end .grid_4 -->
+    <div class="clear">&nbsp;</div>
+</div>
+	<!-- end .container_4 -->
+		
+	</body>
 </html>
