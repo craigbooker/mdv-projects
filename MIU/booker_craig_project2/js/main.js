@@ -35,28 +35,62 @@ function (storage) {
 	var initialData = [
 	{
 		"id": "",
-		"name": "".
-		"cat": ""
+		"tContext": "",
+		"tName": "",
+		"tPriority": "",
+		"tFavorite": "",
+		"sDate": "",
+		"eDate": "",
+		"dDate": "",
+		"tNotes": ""
 	},
 	{
 		"id": "",
-		"name": "".
-		"cat": ""	
+		"tContext": "",
+		"tName": "",
+		"tPriority": "",
+		"tFavorite": "",
+		"sDate": "",
+		"eDate": "",
+		"dDate": "",
+		"tNotes": ""
+	
 	},
 	{
 		"id": "",
-		"name": "".
-		"cat": ""		
+		"tContext": "",
+		"tName": "",
+		"tPriority": "",
+		"tFavorite": "",
+		"sDate": "",
+		"eDate": "",
+		"dDate": "",
+		"tNotes": ""
+	
 	},
 	{
 		"id": "",
-		"name": "".
-		"cat": ""		
+		"tContext": "",
+		"tName": "",
+		"tPriority": "",
+		"tFavorite": "",
+		"sDate": "",
+		"eDate": "",
+		"dDate": "",
+		"tNotes": ""
+		
 	},
 	{
 		"id": "",
-		"name": "".
-		"cat": ""		
+		"tContext": "",
+		"tName": "",
+		"tPriority": "",
+		"tFavorite": "",
+		"sDate": "",
+		"eDate": "",
+		"dDate": "",
+		"tNotes": ""
+	
 	},
 		
 	];
