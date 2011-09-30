@@ -1,4 +1,4 @@
-// Craig Booker  |  VFW Project 4 | 09/16/2011
+// Craig Booker  |  MIU Project 2 | 09/30/2011
 var locFormStor;
 var formDataStorage;
 var editing;
@@ -25,6 +25,57 @@ var makeCats = function (name) {
 	var paraSelect = document.getElementById('form')[0].insertBefore(makePara, getUL);
 };
 makeCats();
+
+// -------  Set Initial Data - using an object --------------------------
+function (storage) {
+	// If this key exists then we can bail out, as we have already initialized
+	if (storage.getItem(key) !== null) { return; }
+
+	// Otherwise, we need to populate localStorage with dummy data
+	var initialData = [
+	{
+		"id": "",
+		"name": "".
+		"cat": ""
+	},
+	{
+		"id": "",
+		"name": "".
+		"cat": ""	
+	},
+	{
+		"id": "",
+		"name": "".
+		"cat": ""		
+	},
+	{
+		"id": "",
+		"name": "".
+		"cat": ""		
+	},
+	{
+		"id": "",
+		"name": "".
+		"cat": ""		
+	},
+		
+	];
+
+	// Simple example of read data
+	var popluate = function(data) {
+		for (var i in data) {
+		var item	= data[i];
+		var key		= item.id;
+		// Hard way
+		var value = [item.id, item.name, item.cat].join(';');
+		// This is the easy way
+		var value = JSON.stringify(item);
+		storage.setItem(key, value);
+		}
+	
+	};
+
+}
 
 // -------  Set Form Default Values --------------------------
 
