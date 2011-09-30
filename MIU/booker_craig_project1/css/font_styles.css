@@ -6,6 +6,7 @@
 
 body {
 	background-color: #ffffff;
+	color:gray;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	font-size: 10px;
 }
@@ -26,4 +27,9 @@ ul {
 .type_a {
 	font-size:1.4em;
 	line-height:1.5em;
+}
+
+.type_body {
+	font-size: 14px;
+
 }

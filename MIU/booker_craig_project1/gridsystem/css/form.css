@@ -5,16 +5,6 @@
 */
 
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-width:100%;
-}
-@media (min-wdith:320px);
-
-html {
-    color: white;
-    background-color: #ffffff;
-    -webkit-text-size-adjust:none; 
-}
 #container {
 	width: 416px; 
 	margin: 0px, auto 0; 
@@ -107,20 +97,7 @@ label {
  	left-margin: 5px;
  }
  
- /* Some basic formatting for the form. */
- .form {
-    padding: 0px, 0px, 0px, 0px;
-	-webkit-box-shadow:
-	inset 1px 1px 14px rgba(0,0,0,0.14),	
-	inset -1px -1px 14px rgba(0,0,0,0.14);		 
-	-moz-box-shadow:
-	inset 1px 1px 14px rgba(0,0,0,0.14),		 
-	inset -1px -1px 14px rgba(0,0,0,0.14);		 
-	box-shadow:
-	inset 1px 1px 14px rgba(0,0,0,0.14),		 
-	inset -1px -1px 14px rgba(0,0,0,0.14);
- 
- }
+
  
  #clear {display: none; margin: 15px;}
  	#clear a { 
@@ -242,104 +219,7 @@ label {
 
 }
 
-/* NAVIGATOR */
-#navigator {
-    background-color: #F2F2F2;
-    background: -moz-linear-gradient(top, #e6e7ea 0%, #ffffff 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e7ea), color-stop(100%,#ffffff));
-    background: -webkit-linear-gradient(top, #e6e7ea 0%,#ffffff 100%);
-    background: -o-linear-gradient(top, #e6e7ea 0%,#ffffff 100%);
-    background: -ms-linear-gradient(top, #e6e7ea 0%,#ffffff 100%);
-    background: linear-gradient(top, #e6e7ea 0%,#ffffff 100%);
-    box-shadow:0px 1px 10px #C2C2C2;
-   -o-box-shadow:0px 1px 10px #C2C2C2;
-   -webkit-box-shadow:0px 1px 10px #C2C2C2;
-   -moz-box-shadow:0px 1px 10px #C2C2C2;
-    margin-bottom: 5px;
-    overflow: hidden;
-}
 
-#navigator a,
-#navigator a:link,
-#navigator a:active,
-#navigator a:hover,
-#navigator a:visited {
-    color:#585858;
-    text-decoration:none;
-    font-weight:700;
-    text-shadow: #fffefe 0 1px 0;
-}
-
-#navigator .table_view .item {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-#navigator .table_view.cells .item.margin {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#navigator .table_view li,
-#navigator .button a,
-#navigator .button div {
-    border: 1px hidden #CCC;
-}
-
-#navigator .table_view .item .item_container {
-    margin: 0px;
-    padding-left: 5px;
-}
-
-/* Navigator, grid view */
-#navigator ul {
-    margin: 0;
-}
-#navigator li {
-    margin: 0;
-}
-#navigator .table_view ul li {
-    float: left;
-    width: 50%;
-}
-
-#navigator .table_view ul li.first {
-    width: 50%;
-    padding-left: 5px;
-    border-top: none;
-    border-right: 1px inset rgba(0,0,0,0.1);
-    margin-right: -1px;
-}
-#navigator header h1 {
-    text-align: left;
-    margin: 0px, 0px, 0px, 0px;
-    padding-left: 5px;
-    background-color: inherit;
-    color: inherit;
-    vertical-align: top;
-    vertical-align: text-top;
-    border: none;
-    line-height: 1.1em;
-  }
-#navigator .table_view ul li div {
-    margin-left: 0;
-}
-
-#navigator .table_view ul li .item .item_container {
-    background-image: none !important;
-    text-align: center !important;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
-.table_view .item .item_container {
-	display:block;
-	background-color: #FFF;
-	decoration:none;
-	background:transparent url('/img/next.png');
-	padding: 5px 15px 5px 10px;
-
-
-}
 
 /* Table View Cells */
 .table_view.cells {
