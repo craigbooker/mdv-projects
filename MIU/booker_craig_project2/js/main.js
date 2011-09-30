@@ -35,61 +35,73 @@ function (storage) {
 	var initialData = [
 	{
 		"id": "",
-		"tContext": "",
-		"tName": "",
-		"tPriority": "",
+		"tContext": "errand",
+		"tName": "Get Office Supplies",
+		"tPriority": "5",
 		"tFavorite": "",
-		"sDate": "",
-		"eDate": "",
-		"dDate": "",
-		"tNotes": ""
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-03",
+		"dDate": "2011-08-04",
+		"tNotes": "Need to pick up some office supplies"
 	},
 	{
 		"id": "",
-		"tContext": "",
-		"tName": "",
-		"tPriority": "",
-		"tFavorite": "",
-		"sDate": "",
-		"eDate": "",
-		"dDate": "",
+		"tContext": "home",
+		"tName": "Do laundry",
+		"tPriority": "4",
+		"tFavorite": "on",
+		"sDate": "2011-08-02",
+		"eDate": "2011-08-04",
+		"dDate": "2011-08-05",
 		"tNotes": ""
 	
 	},
 	{
 		"id": "",
-		"tContext": "",
-		"tName": "",
-		"tPriority": "",
+		"tContext": "office",
+		"tName": "Create Presentation",
+		"tPriority": "7",
 		"tFavorite": "",
-		"sDate": "",
-		"eDate": "",
-		"dDate": "",
-		"tNotes": ""
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-05",
+		"dDate": "2011-08-06",
+		"tNotes": "Need to get keynote presentation made."
 	
 	},
 	{
 		"id": "",
-		"tContext": "",
-		"tName": "",
-		"tPriority": "",
+		"tContext": "calls",
+		"tName": "Call utility company",
+		"tPriority": "3",
 		"tFavorite": "",
-		"sDate": "",
-		"eDate": "",
-		"dDate": "",
-		"tNotes": ""
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-02",
+		"dDate": "2011-08-02",
+		"tNotes": "Call about recent bill"
 		
 	},
 	{
 		"id": "",
-		"tContext": "",
-		"tName": "",
-		"tPriority": "",
+		"tContext": "people",
+		"tName": "Delegate Presentation Segment",
+		"tPriority": "6",
 		"tFavorite": "",
-		"sDate": "",
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-09",
+		"dDate": "2011-08-10",
+		"tNotes": "Need to delegate the production segment of presentation."
+	
+	},
+	{
+		"id": "",
+		"tContext": "waiting",
+		"tName": "Operations Presentation",
+		"tPriority": "5",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
 		"eDate": "",
-		"dDate": "",
-		"tNotes": ""
+		"dDate": "2011-08-05",
+		"tNotes": "Waiting on operations presentation segment from Jane."
 	
 	},
 		
