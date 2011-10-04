@@ -20,13 +20,14 @@
         <meta http-equiv="cleartype" content="on">
         
         <!-- StyleSheets under here -->
-        
-        <link rel="stylesheet" type="text/css" href="css/nav.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
+
+        <!--link rel="stylesheet" type="text/css" href="css/nav.css" />
         <link rel="stylesheet" type="text/css" href="css/font_styles.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/text.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="css/320_4_0_0.css" />
-		<style type="text/css" media="all">
+		<link rel="stylesheet" type="text/css" media="all" href="css/320_4_0_0.css" /-->
+		/<!--<style type="text/css" media="all">
 		body {
 			background: #efefef;
 			color: #333;
@@ -62,22 +63,34 @@
 			background-color:#FFFFFF;
 			background-repeat: repeat-y;
 		}
-		</style>
+		</style> -->
         <!-- JavaScript is normally at the end of the body, except for modernizr -->
         <script src="js/libs/modernizr.custm.min.js"></script>
     </head>
     <body>
+    <div data-role="page" id="home">
+    <div data-role="header" data-position="fixed">
+	     <header>
+		     <h1>Task Manager</h1><!-- header -->
+		     <!--h1 class="page_header">Task Manager</h1><!-- header -->
+	     </header> 
+    </div>
+    <div data-role="content">
     <div class="container_4">
     <h1><a href="#" alt="logo"></a></h1>
  
-		<header>
-			 <h1 class="page_header">Task Manager</h1>
-		</header> <!-- header -->
+		
+			
+		
 		
 		<div class="search_box">
-		<form action="#">
+		<!--form action="#">
 		<label for="search">Search<input type="text" id="search" align="right">
-		</form>
+		</form-->
+		</div>
+		<div data-role="fieldcontain">
+	    	<label for="search">Search Input:</label>
+	    	<input type="search" name="password" id="search" value="" />
 		</div>
 		<div class="grid_4"><img src="img/goal_setting.jpg" width="240px" height="160px" class="container_3"></div>
     	<div class="grid_4">
@@ -92,29 +105,83 @@
 		<div id="addTask">
 		<a href="additem.html" class="bigBtn">Add Task</a>
 		</div>
+		<ul data-role="listview">
+		<li>
+			<a href="gold.html">
+				<!--img src=""-->
+				<h3>Errand</h3>
+				<p>Take a look at your errand type tasks</p>
+			</a>
+		</li>
+		<li>
+		<!--img src=""-->
+		<h3>Home</h3>
+		<p>Take a look at your tasks to do at home</p>
+		</li>
+		<li>
+		<h3>Office</h3>
+		<p>Take a look at your tasks to do at the office</p>
+		</li>
+		<li>
+		<h3>Calls</h3>
+		<p>Take a look at your calls</p>
+		</li>
+		<li>
+		<h3>People</h3>		
+		<p>Take a look at your people tasks</p>
+		</li>
+		<li>
+		<h3>Waiting</h3>
+		<p>Take a look at your tasks that are waiting</p>
+
+		</li>
 		<div id="navigator">
 		<header><h1>Categories</h1></header>
-		<ul class="table_view cells">
-		<li class="item"><a href="#" class="type_b item_container">Errand</a></li>
-		<li class="item"><a href="#" class="type_b item_container">Home</a></li>
-		<li class="item"><a href="#" class="type_b item_container">Office</a></li>
-		<li class="item"><a href="#" class="type_b item_container">Calls</a></li>
-		<li class="item"><a href="#" class="type_b item_container">People</a></li>
-		<li class="item"><a href="#" class="type_b item_container">Waiting</a></li>
+		<div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="true">
+				<li class="item"><a href="#errand" data-role="button" data-icon="arrow-r" data-iconpos="right">Errand Type</a></li>
+				<h3>Grocery Store</h3>
+				<p>A time we all love, grocery shopping.  </p>
+			</div>
+		<a href="#home" data-role="button" data-icon="arrow-r" data-iconpos="right">Home</a></li>
+		<a href="#office" class="type_b item_container">Office</a></li>
+		<a href="#calls" class="type_b item_container">Calls</a></li>
+		<a href="#people" class="type_b item_container">People</a></li>
+		<a href="#waiting" class="type_b item_container">Waiting</a></li>
+		</ul>
 		</ul>
 		</div><!-- Navigator -->
-    	<div class="container_2" ></div>
-		 <div class="clear">&nbsp;</div>
-    	<div class="grid_4">
+		</div> <!-- Collapsible-set -->
+		</div>
       	<p>Getting Things Done (GTD)and David Allen are not associated with Task Manager.  GTD is a trademark owned by the David Allen Group. </p><p> <a href="http://www.gridsystemgenerator.com">
       	Framework was created by Grid System Generator</a><br />
      	 Based on the 960.gs grid system.<br />
      	 <a href="http://validator.w3.org/check/referer">XHTML</a> - <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></p>
    		 </div>
-    <!-- end .grid_4 -->
-    <div class="clear">&nbsp;</div>
 </div>
-	<!-- end .container_4 -->
-		
+	</div>
+	 <div data-role="footer" data-position="fixed">
+     <h4>Footer</h4><!-- Footer -->
+    </div>
+	</div><!-- Index page  -->
+	
+	<div data-role="page" id="additems"  data-add-back-btn="true">
+    <div data-role="header" data-position="fixed">
+	     <header>
+		     <h1>Task Manager</h1><!-- header -->
+		     <!--h1 class="page_header">Task Manager</h1><!-- header -->
+	     </header> 
+    </div>
+    <div data-role="content">
+    
+	</div>
+	 <div data-role="footer" data-position="fixed">
+     <h4>Footer</h4><!--Footer -->
+    </div>
+	</div><!-- Add Items page -->
+	
+	
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
 	</body>
 </html>
