@@ -18,7 +18,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"
         <!-- Mobile IE needs ClearType for smoothing fonts -->
         <meta http-equiv="cleartype" content="on">
-        
+        <style type="text/css" media="all">
+		.center_stage {
+			margin: 0px;
+			padding: 0px;
+			display: block;
+		
+		}
+		
+		</style>
         <!-- StyleSheets under here -->
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
 
@@ -27,143 +35,52 @@
 		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/text.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/320_4_0_0.css" /-->
-		/<!--<style type="text/css" media="all">
-		body {
-			background: #efefef;
-			color: #333;
-			font-size: 11px;
-			padding: 20px 0 40px;
-		}
-		a {
-			color: #333;
-			text-decoration: underline;
-		}
-		a:hover {
-			text-decoration: none;
-		}
-		.container_4 h1 {
-			font-family: Georgia, serif;
-			font-weight: normal;
-			text-align: center;
-		}
-		.container_4 h2 {
-			padding: 20px 0 0;
-			font-family: Georgia, serif;
-			font-weight: normal;
-			text-align: center;
-		}
-		.container_4 p {
-			border: 1px solid #666;
-			overflow: hidden;
-			padding: 10px 0;
-			text-align: center;
-			font-size: 80%;
-		}
-		.container_4 {
-			background-color:#FFFFFF;
-			background-repeat: repeat-y;
-		}
+		<!--<style type="text/css" media="all">
+
 		</style> -->
+		
         <!-- JavaScript is normally at the end of the body, except for modernizr -->
         <script src="js/libs/modernizr.custm.min.js"></script>
     </head>
     <body>
     <div data-role="page" id="home">
     <div data-role="header" data-position="fixed">
-	     <header>
 		     <h1>Task Manager</h1><!-- header -->
-		     <!--h1 class="page_header">Task Manager</h1><!-- header -->
-	     </header> 
     </div>
-    <div data-role="content">
-    <div class="container_4">
-    <h1><a href="#" alt="logo"></a></h1>
- 
-		
-			
-		
-		
-		<div class="search_box">
-		<!--form action="#">
-		<label for="search">Search<input type="text" id="search" align="right">
-		</form-->
+        <div data-role="content">
+	    	<label for="search">Search:</label>
+	    	<input type="search" id="search" value="Search" />		
 		</div>
-		<div data-role="fieldcontain">
-	    	<label for="search">Search Input:</label>
-	    	<input type="search" name="password" id="search" value="" />
-		</div>
-		<div class="grid_4"><img src="img/goal_setting.jpg" width="240px" height="160px" class="container_3"></div>
-    	<div class="grid_4">
-    	
-    	
-    	</div>
-    	<!-- end .grid_4 -->
-    	<div class="clear">&nbsp;</div>
-    	<div class="description type_b">Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."
-		
-		</div>	
-		<div id="addTask">
-		<a href="additem.html" class="bigBtn">Add Task</a>
-		</div>
-		<ul data-role="listview">
-		<li>
-			<a href="gold.html">
-				<!--img src=""-->
-				<h3>Errand</h3>
-				<p>Take a look at your errand type tasks</p>
-			</a>
-		</li>
-		<li>
-		<!--img src=""-->
-		<h3>Home</h3>
-		<p>Take a look at your tasks to do at home</p>
-		</li>
-		<li>
-		<h3>Office</h3>
-		<p>Take a look at your tasks to do at the office</p>
-		</li>
-		<li>
-		<h3>Calls</h3>
-		<p>Take a look at your calls</p>
-		</li>
-		<li>
-		<h3>People</h3>		
-		<p>Take a look at your people tasks</p>
-		</li>
-		<li>
-		<h3>Waiting</h3>
-		<p>Take a look at your tasks that are waiting</p>
+    <div data-role="secondaryheader">
+			<img src="img/goal_setting.jpg" width="500px" height="333px">Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."
+      	
+    </div>
 
-		</li>
-		<div id="navigator">
-		<header><h1>Categories</h1></header>
-		<div data-role="collapsible-set">
-			<div data-role="collapsible" data-collapsed="true">
-				<li class="item"><a href="#errand" data-role="button" data-icon="arrow-r" data-iconpos="right">Errand Type</a></li>
-				<h3>Grocery Store</h3>
-				<p>A time we all love, grocery shopping.  </p>
-			</div>
-		<a href="#home" data-role="button" data-icon="arrow-r" data-iconpos="right">Home</a></li>
-		<a href="#office" class="type_b item_container">Office</a></li>
-		<a href="#calls" class="type_b item_container">Calls</a></li>
-		<a href="#people" class="type_b item_container">People</a></li>
-		<a href="#waiting" class="type_b item_container">Waiting</a></li>
+		
+		<div data-role="secondarycontent">
+		<p>
+		<a href="add_item.html" data-role="button"   data-theme="b">Add Task</a><br />
+		</p>
+		<ul data-role="listview">
+			<li data-role="list-divider">Browse By Category</li>
+			<li><a href="index.html">Errand <span class="ui-li-count">12</span></a></li>
+			<li><a href="index.html">Home <span class="ui-li-count">0</span></a></li>
+			<li><a href="index.html">Office <span class="ui-li-count">4</span></a></li>
+			<li><a href="index.html">Calls<span class="ui-li-count">328</span></a></li>
+			<li><a href="index.html">People <span class="ui-li-count">62</span></a></li>
+			<li><a href="index.html">Waiting <span class="ui-li-count">62</span></a></li>
+
 		</ul>
-		</ul>
-		</div><!-- Navigator -->
-		</div> <!-- Collapsible-set -->
-		</div>
-      	<p>Getting Things Done (GTD)and David Allen are not associated with Task Manager.  GTD is a trademark owned by the David Allen Group. </p><p> <a href="http://www.gridsystemgenerator.com">
-      	Framework was created by Grid System Generator</a><br />
-     	 Based on the 960.gs grid system.<br />
-     	 <a href="http://validator.w3.org/check/referer">XHTML</a> - <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></p>
-   		 </div>
+		</div> <!-- End of Seondary Content
 </div>
-	</div>
 	 <div data-role="footer" data-position="fixed">
      <h4>Footer</h4><!-- Footer -->
     </div>
 	</div><!-- Index page  -->
+		<!--END INDEX PAGE -->
+
+	
+	<!--ADD TASK PAGE -->
 	
 	<div data-role="page" id="additems"  data-add-back-btn="true">
     <div data-role="header" data-position="fixed">
@@ -179,7 +96,7 @@
      <h4>Footer</h4><!--Footer -->
     </div>
 	</div><!-- Add Items page -->
-	
+	<!--END ADD TASK PAGE -->
 	
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>

@@ -27,7 +27,7 @@ var makeCats = function (name) {
 makeCats();
 
 // -------  Set Initial Data - using an object --------------------------
-function (storage) {
+function setDefaultData(storage) {
 	// If this key exists then we can bail out, as we have already initialized
 	if (storage.getItem(key) !== null) { return; }
 
