@@ -1,4 +1,4 @@
-// Craig Booker  |  VFW Project 4 | 09/16/2011
+// Craig Booker  |  MIU Project 2 | 09/30/2011
 var locFormStor;
 var formDataStorage;
 var editing;
@@ -25,6 +25,110 @@ var makeCats = function (name) {
 	var paraSelect = document.getElementById('form')[0].insertBefore(makePara, getUL);
 };
 makeCats();
+
+var contextList = [
+	{
+		"": ""
+	}
+
+];
+
+// -------  Set Initial Data - using an object --------------------------
+	function intializeData() {
+	// If this key exists then we can bail out, as we have already initialized
+	if (storage.getItem(key) !== null) { return; }
+
+	// Otherwise, we need to populate localStorage with dummy data
+	var initialData = [
+	{
+		"id": "",
+		"tContext": "errand",
+		"tName": "Get Office Supplies",
+		"tPriority": "5",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-03",
+		"dDate": "2011-08-04",
+		"tNotes": "Need to pick up some office supplies"
+	},
+	{
+		"id": "",
+		"tContext": "home",
+		"tName": "Do laundry",
+		"tPriority": "4",
+		"tFavorite": "on",
+		"sDate": "2011-08-02",
+		"eDate": "2011-08-04",
+		"dDate": "2011-08-05",
+		"tNotes": ""
+	
+	},
+	{
+		"id": "",
+		"tContext": "office",
+		"tName": "Create Presentation",
+		"tPriority": "7",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-05",
+		"dDate": "2011-08-06",
+		"tNotes": "Need to get keynote presentation made."
+	
+	},
+	{
+		"id": "",
+		"tContext": "calls",
+		"tName": "Call utility company",
+		"tPriority": "3",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-02",
+		"dDate": "2011-08-02",
+		"tNotes": "Call about recent bill"
+		
+	},
+	{
+		"id": "",
+		"tContext": "people",
+		"tName": "Delegate Presentation Segment",
+		"tPriority": "6",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-09",
+		"dDate": "2011-08-10",
+		"tNotes": "Need to delegate the production segment of presentation."
+	
+	},
+	{
+		"id": "",
+		"tContext": "waiting",
+		"tName": "Operations Presentation",
+		"tPriority": "5",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
+		"eDate": "",
+		"dDate": "2011-08-05",
+		"tNotes": "Waiting on operations presentation segment from Jane."
+	
+	},
+		
+	];
+
+	// Simple example of read data
+	var popluate = function(data) {
+		for (var i in data) {
+		var item	= data[i];
+		var key		= item.id;
+		// Hard way
+		var value = [item.id, item.name, item.cat].join(';');
+		// This is the easy way
+		var value = JSON.stringify(item);
+		storage.setItem(key, value);
+		}
+	
+	};
+
+}
 
 // -------  Set Form Default Values --------------------------
 
@@ -101,6 +205,106 @@ function validateForm() {
 		//saveItems(id);
 		}
 	} // validateForm	
+
+
+// -------   Build Browse Tasks by Context --------------------------
+
+
+function bluildIndexPage(id) {
+	var ttlValidKeys = 8;
+	//var contextNames = catNames;
+	var context = ["none", "errand", "home", "office", "phone", "people", "waiting"];
+	var keyCheck = localStorage.key(0);
+	var checkLoc = /^\d+$/.test(keyCheck);
+	if((keyCheck === "") || (checkLoc === false )) {
+		setDefaultData();
+	}
+	var locId = id;
+	var i, len, j;
+	// write the data from local storage to the browser
+	var makeDiv	= document.createElement("div");
+	//makeDiv.setAttribute("class",  "output");
+	var makeList	= document.createElement("ul");
+	makeDiv.appendChild(makeList);
+	document.body.appendChild(makeDiv);
+	for (i = 0, len = localStorage.length; i < len; i++, j++) {
+		var key		=	localStorage.key(i);
+		var isNumber = /^\d+$/.test(key);
+		if (isNumber === true) {
+		var value	=	localStorage.getItem(key);
+		var allLength = value.length;
+		value = value.split(";");
+		//alert(value);
+		/*
+		<ul data-role="listview">
+			<li data-role="list-divider">Browse By Category</li>
+			<li><a href="index.html">Errand <span class="ui-li-count">12</span></a></li>
+			<li><a href="index.html">Home <span class="ui-li-count">0</span></a></li>
+			<li><a href="index.html">Office <span class="ui-li-count">4</span></a></li>
+			<li><a href="index.html">Calls<span class="ui-li-count">328</span></a></li>
+			<li><a href="index.html">People <span class="ui-li-count">62</span></a></li>
+			<li><a href="index.html">Waiting <span class="ui-li-count">62</span></a></li>
+
+		</ul>
+		*/
+		
+		var tContext			=	value[0];
+		var tName				=	value[1];
+		var tPriority				=	value[2];
+		var tFavorite			=	value[3];
+		var sDate					=	value[4];
+		var eDate				=	value[5];
+		var dDate				=	value[6];
+		var tNotes				=	value[7];
+
+		//var newDiv		=	document.createElement("div");
+		var makeLi	= document.createElement("li");
+		var contextLi		=	document.createElement("li");
+		makeList.appendChild(makeLi);
+		//makeList.setAttribute("class", "output");
+		makeLi.style.display = ('block');
+		var makeSubList = document.createElement("ul");
+		//makeSubList.setAttribute("class", "items");
+		makeLi.appendChild(makeSubList);
+		var d; // Field Values Counter
+		for (d = 0; d < ttlValidKeys; d++) {
+			var makeSubLi	= document.createElement("li");
+			makeSubList.appendChild(makeSubLi);
+			var locFVals = (value[d]);
+			var locTNode = document.createTextNode(locFVals);
+			makeSubLi.appendChild(locTNode);
+			makeSubList.appendChild(linksLi);
+			var imgHref = ("img/" + tContext + ".png");
+			var makeImg = document.createElement("img"); // Add image
+			var setSrc = newImg.setAttribute("src", imgHref);
+			makeSubList.appendChild(makeImg);
+			var contextLink	= document.createElement("a");//Add delete single task link
+			var setHref		=	deleteLink.setAttribute("href", "#");
+			deleteLink.setAttribute("class", "stdDelBtn");
+			var setOnclick	=	contextLink.setAttribute("onclick", "showContext(" + context + ");");
+			var showContext	=	document.createTextNode(context);
+			deleteLink.appendChild(deleteText);
+			contextLi.appendChild(deleteLink);
+			}
+			
+			//linksLi.appendChild()
+			makeSubList.appendChild(linksLi);
+			deleteLink.style.display = ('inline');
+
+			
+		}
+			//else {
+		//return;
+		//} 
+	}
+}
+
+
+
+
+
+
+
 
 // -------   Get and display saved form data --------------------------
 
@@ -236,9 +440,9 @@ function saveItems(id) {
 		value = value.split(';');
 		var tContext			=	value[0];
 		var tName				=	value[1];
-		var tPriority				=	value[2];
+		var tPriority			=	value[2];
 		var tFavorite			=	value[3];
-		var sDate					=	value[4];
+		var sDate				=	value[4];
 		var eDate				=	value[5];
 		var dDate				=	value[6];
 		var tNotes				=	value[7];
