@@ -321,8 +321,10 @@ function getItems(id) {
 	var i, len, j;
 	// write the data from local storage to the browser
 	var makeDiv	= document.createElement("div");
-	makeDiv.setAttribute("class",  "output");
+	makeDiv.setAttribute("data-role",  "fieldcontain");
 	var makeList	= document.createElement("ul");
+	var makeLabel = document.createElement("label");
+	
 	makeDiv.appendChild(makeList);
 	document.body.appendChild(makeDiv);
 	//var getListdiv	= document.getElementById('toDolist');
@@ -337,13 +339,24 @@ function getItems(id) {
 		//alert(value);
 		var tContext			=	value[0];
 		var tName				=	value[1];
-		var tPriority			=	value[2];
+		var tPriority				=	value[2];
 		var tFavorite			=	value[3];
-		var sDate				=	value[4];
+		var sDate					=	value[4];
 		var eDate				=	value[5];
 		var dDate				=	value[6];
 		var tNotes				=	value[7];
-
+/*
+<div data-role="fieldcontain">
+				<label for="select-choice-a" class="select">Choose shipping method:</label>
+				<select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+					<option>Custom menu example</option>
+					<option value="standard">Standard: 7 day</option>
+					<option value="rush">Rush: 3 days</option>
+					<option value="express">Express: next day</option>
+					<option value="overnight">Overnight</option>
+				</select>
+			</div>
+*/
 		//var newDiv		=	document.createElement("div");
 		var makeLi	= document.createElement("li");
 		var linksLi		=	document.createElement("li");
@@ -355,7 +368,8 @@ function getItems(id) {
 		makeLi.appendChild(makeSubList);
 		var d; // Field Values Counter
 		for (d = 0; d < ttlValidKeys; d++) {
-			var makeSubLi	= document.createElement("li");
+			//var makeSubLi	= document.createElement("li");
+			var makeOption	= document.createElement("option");
 			makeSubList.appendChild(makeSubLi);
 			var locFVals = (value[d]);
 			var locTNode = document.createTextNode(locFVals);
