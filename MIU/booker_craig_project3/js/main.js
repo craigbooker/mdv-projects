@@ -6,13 +6,19 @@ var editing;
 var catNames = ["CONTEXT", "errand", "home", "office", "calls", "people", "waiting"];
 var formTag = document.getElementById('form');
 var makePara = document.createElement("p");
+var makeDiv = document.createElement("div");
 var makeLabel = document.createElement("label");
 //var getTContext	= document.getElementById('tContextList');
 var	makeSelect = document.createElement("select");
 //var makeLabel = document.createElement("label");
+makeDiv.setAttribute("data-role", "fieldcontain");
 makeSelect.setAttribute("id", "tContext");
 makeSelect.setAttribute("name", "tContext");
 makeSelect.setAttribute("data-native-menu", "false");
+
+
+										
+
 
 var makeCats = function (name) {
 	var i, j;
@@ -24,7 +30,8 @@ var makeCats = function (name) {
 		makeOption.appendChild(optText);
 		makeSelect.appendChild(makeOption);
 	}
-	makePara.appendChild(makeSelect);
+	makeDiv.appendChild(makeSelect);
+	makePara.appendChild(makeDiv);
 	var getUL = document.getElementById('form')[0].firstChild;
 	var paraSelect = document.getElementById('form')[0].insertBefore(makePara, getUL);
 };

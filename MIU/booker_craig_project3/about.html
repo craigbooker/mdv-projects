@@ -46,38 +46,25 @@
     	</div>
 		<div data-role="list-divider" class="ui-bar-a">
 			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
+				<li data-role="list-divider" class="ui-bar ui-bar-a">About</li>
 	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
 			</ul>
 			</div>
 			<div data-role="content" id="nav">
-			<ul data-role="listview">
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#errand_list"> 
-					<img src="img/errand_sml.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#home_list">
-					<img src="img/home_sml.png" class="ui-li-icon" />Home<span class="ui-li-count">5</span></a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#office_list">
-					<img src="img/office_sml.png" class="ui-li-icon" />Office<span class="ui-li-count">10</span></a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#calls_list">
-					<img src="img/calls_sml.png" class="ui-li-icon" />Calls<span class="ui-li-count">20</span></a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#people_list">
-					<img src="img/people_sml.png" class="ui-li-icon" />People<span class="ui-li-count">5</span></a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#waiting_list" data-theme="a">
-					<img src="img/waiting_sml.png" class="ui-li-icon" />Waiting<span class="ui-li-count">0</span></a>
-				</li>
-			
-			</ul>
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>About Task Manager</h3>
+			   <p>Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."
+</p>
+			</div>
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>Contact Us</h3>
+			   <p>Appscient <br />
+			   <a href="mailto:support@appscient.co">support@appscient.co</a></p>
+			</div>
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>Legal Disclosure</h3>
+			   <p>I'm the collapsible content with a themed content block set to "C".</p>
+			</div>
 		</div> <!-- End of Seondary Content -->
 		<div data-role="content" id="one">	
 		<h3>Show internal pages:</h3>
@@ -87,12 +74,13 @@
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Up</a></li>
-				<li><a href="index.html" >Home</a></li>
-				<li><a href="add_item.html">Add Task</a></li>
-				<li><a href="about.html">About</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
+
 </div><!-- /page one -->
 
 <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
