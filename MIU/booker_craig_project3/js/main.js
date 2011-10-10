@@ -405,7 +405,7 @@ function getItems(id) {
 function saveItems(id) {
 	//alert("Inside Save items function");
 	var itemId = id;
-	alert(editing);
+	//alert(editing);
 	validateForm(id);
 	//if (editing === "false") {
 	var itemId				=	Math.floor(Math.random()*100000000001);

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- 
+	Name: Craig Booker
+	Class: MIU
+	Project: 2
+	Date: 09/30/2011
+ -->
+<html>
+    <head>
+        <meta charset="utf-8" />       
+        <title>MIU :: Project 2 :: Task Manager</title>
+        <meta name="keywords" contents="Task, to do, getting things done" />
+        <meta name="description" content="Adds a task to a to do list." />
+        <meta name="robots" content ="index, follow" />
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <!-- Mobile IE needs ClearType for smoothing fonts -->
+        <meta http-equiv="cleartype" content="on">
+        <style type="text/css" media="all">
+		.center_stage {
+			margin: 0px;
+			padding: 0px;
+			display: block;
+		}
+		
+		</style>
+        <!-- StyleSheets under here -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+        <!-- JavaScript is normally at the end of the body, except for modernizr -->
+        <script src="js/libs/modernizr.custom.min.js"></script>
+    </head>
+<body> 
+
+<!-- Start of index page: #index --> 
+<div data-role="page" id="index">
+
+	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+			     <!--h1>Task Manager</h1><!-- header -->
+	    </div><!-- /header -->
+	    <div data-role="secondary header">
+			<img src="img/goal_setting.jpg" width="320px" height="175px">
+    	</div>
+		<div data-role="list-divider" class="ui-bar-a">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
+	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
+			</ul>
+			</div>
+			<div data-role="content" id="nav">
+			<ul data-role="listview">
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#errand_list"> 
+					<img src="img/errand_sml.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#home_list">
+					<img src="img/home_sml.png" class="ui-li-icon" />Home<span class="ui-li-count">5</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#office_list">
+					<img src="img/office_sml.png" class="ui-li-icon" />Office<span class="ui-li-count">10</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#calls_list">
+					<img src="img/calls_sml.png" class="ui-li-icon" />Calls<span class="ui-li-count">20</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#people_list">
+					<img src="img/people_sml.png" class="ui-li-icon" />People<span class="ui-li-count">5</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#waiting_list" data-theme="a">
+					<img src="img/waiting_sml.png" class="ui-li-icon" />Waiting<span class="ui-li-count">0</span></a>
+				</li>
+			
+			</ul>
+		</div> <!-- End of Seondary Content -->
+		<div data-role="content" id="one">	
+		<h3>Show internal pages:</h3>
+		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Up</a></li>
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="add_item.html">Add Task</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
+</body>
+</html>
