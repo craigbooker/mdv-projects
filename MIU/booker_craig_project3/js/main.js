@@ -124,6 +124,26 @@ var contextList = [
 	},
 		
 	];
+	
+	function showCategory( urlObj, options) {
+	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
+		category = categoryData[ categoryName],
+		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
+	
+	if (category) {
+	var $page = $(pageSelector),
+		$header = $page.children( ":jqmData(role=header)"),
+		$content = $page.children(":jqmData(role=content)"),
+		markup = "<p>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
+		
+	
+	
+	}
+	
+	
+	
+	
+	}
 
 	// Simple example of read data
 	var popluate = function(data) {
@@ -221,7 +241,7 @@ function validateForm() {
 // -------   Build Browse Tasks by Context --------------------------
 
 
-function bluildIndexPage(id) {
+function bluildPage(id) {
 	var ttlValidKeys = 8;
 	//var contextNames = catNames;
 	var context = ["none", "errand", "home", "office", "phone", "people", "waiting"];
