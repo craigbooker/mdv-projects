@@ -272,20 +272,17 @@
 		<li>End Date:2011-09-03</li>
 		<li>Due Date:2011-09-03</li>
 		<li>Notes: Get fertilizer</li>
-
 		</ul>
-		</p>	
-		<p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>	
-		
+		</p>			
 	</div><!-- /content -->
 	
 		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
@@ -788,15 +785,12 @@
 	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-	      
-	       
-
-	 		<div data-role="list-divider" class="ui-bar-a">
+	    </div><!-- /header -->	 		
+	    <div data-role="list-divider" class="ui-bar-a">
 			<ul data-role="listview">
 				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
 			</ul>
-			</div>
+		</div>
 			<div data-role="secondary header">
 			<img src="img/goal_setting.jpg" width="320px" height="175px">
     	</div>
@@ -825,17 +819,139 @@
 		<h3>Show internal pages:</h3>
 		<p><a href="#index" data-role="button">Show right page</a></p>	
 	</div><!-- /content -->
-		<div data-role="footer" position="fixed" data-theme="d">
-		<h4></h4>
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Top</a></li>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
 	</div><!-- /footer -->
 </div><!-- /page one -->
 
+<!-- Start of index page: #index --> 
+<div data-role="page" id="aboutapp">
+
+	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+			     <!--h1>Task Manager</h1><!-- header -->
+	    </div><!-- /header -->
+	    <div data-role="secondary header">
+			<img src="img/goal_setting.jpg" width="320px" height="175px">
+    	</div>
+		<div data-role="list-divider" class="ui-bar-a">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-a">About</li>
+	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
+			</ul>
+			</div>
+			<div data-role="content" id="nav">
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>About Task Manager</h3>
+			   <p>Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."
+</p>
+			</div>
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>Contact Us</h3>
+			   <p>Appscient <br />
+			   <a href="mailto:support@appscient.co">support@appscient.co</a></p>
+			</div>
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>Legal Disclosure</h3>
+			   <p>I'm the collapsible content with a themed content block set to "C".</p>
+			</div>
+		</div> <!-- End of Seondary Content -->
+		<div data-role="content" id="one">	
+		<h3>Show internal pages:</h3>
+		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Top</a></li>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page one -->
+
+
+<!-- Start of Add Item page:  --> 
+<div data-role="page" id="additem">
+
+	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+	    </div><!-- /header -->	
+	    <div data-role="content"><a href="#top_page" name="top_page"></a>
+			<div data-role="primary-content">
+						<form id="form" action="#" onsubmit="saveItems();" > 
+								<fieldset data-role="controlgroup">
+									<legend><strong>Enter Task Details</strong></legend>
+										<div data-role="fieldcontain">
+											<label for="tName">Task Name:</label><input type="text" id="tName" />
+										</div><!-- Set Task Name -->
+										<div data-role="fieldcontain">
+											<fieldset data-role="controlgroup">
+												<label for="tPriority">Priority</label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="a" />
+											</fieldset>
+										</div><!-- Set Priority  -->
+										<div data-role="fieldcontain">
+										 	<fieldset data-role="controlgroup">
+												<legend>Add to Favorites:</legend>
+												<input type="checkbox" name="tFavorirte" id="tFavorite" class="custom" />
+												<label for="tFavorite">Yes</label>
+										    </fieldset>
+										</div><!-- Add Task To Favorites  -->
+		
+										<div data-role="fieldcontain">
+											<label for="sDate">Start Date:</label><input type="date" id="sDate" data-theme="a">
+										</div><!-- Task Start Date -->
+											
+										<div data-role="fieldcontain">
+											<label for="eDate">End Date:</label><input type="date" id="eDate" data-theme="a">
+										</div><!-- Task End Date -->
+											
+										<div data-role="fieldcontain">
+											<label for="dDate">Due Date:</label><input type="date" id="dDate" data-theme="a">
+										</div><!-- Task Due Date  -->
+											
+										<div data-role="fieldcontain">
+											<label for="tNotes">Notes:</label><textarea id="tNotes" placeholder="Add some details about your task."></textarea>
+										</div><!-- Allows For Any Notes For Task -->						
+								</fieldset>
+							<!-- End of fieldset  -->
+							<div class="ui-body ui-body-b">
+								<fieldset class="ui-grid-a">
+									<button type="submit" id="submitForm" data-theme="a">Submit</button>
+							    </fieldset>
+							</div>	
+								<div data-role="fieldcontain">
+					<p id="clear"><a href="#" onclick="clearLocal(); location.reload();" class="bigBtn" >Clear Local Storage</a></p>
+				</div> 	<!-- Clear Local Storage -->
+					</form>
+			
+				</div> <!-- Primary Content -->
+	</div><!-- content -->
+	
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<!--li><a href="#additem" data-icon="plus">Add Task</a></li-->
+				<li><a href="#about" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
 
 
 
-
-
-
+<script src="js/main.js" type="text/javascript"></script> 
 <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
 </body>
