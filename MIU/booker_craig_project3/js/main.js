@@ -125,8 +125,8 @@ var contextList = [
 		
 	];
 	
-	var contextData = {
-			errand: [
+	var categoryData = {
+			errand: {
 				name: "Errand",
 				description: "All your errands waiting to be done.",
 				items: [
@@ -148,7 +148,7 @@ var contextList = [
 				
 				]
 			},
-			home: [
+			home: {
 				name: "Home",
 				description: "All your things around the house waiting to be done.",
 				items: [
@@ -170,7 +170,7 @@ var contextList = [
 				
 				]
 			},
-			office: [
+			office: {
 				name: "Office",
 				description: "All your tasks at the office to be done.",
 				items: [
@@ -192,7 +192,7 @@ var contextList = [
 				
 				]
 			},	
-			calls: [
+			calls: {
 				name: "Calls",
 				description: "All your calls waiting to be made.",
 				items: [
@@ -214,7 +214,7 @@ var contextList = [
 				
 				]
 			},	
-			people: [
+			people: {
 				name: "People",
 				description: "All items delegated to people.",
 				items: [
@@ -223,10 +223,10 @@ var contextList = [
 					},
 					{
 						name: "Jane is organizing lunch party"
-					},		
+					},
 					{
 						name: "Joanne is creating spreadsheet for monthly budget"
-					},		
+					},
 					{
 						name: "Joe is revising business plan"
 					},
@@ -236,7 +236,7 @@ var contextList = [
 				
 				]
 			},
-			waiting: [
+			waiting: {
 				name: "Waiting",
 				description: "All items that are on pause.",
 				items: [
@@ -245,10 +245,10 @@ var contextList = [
 					},
 					{
 						name: "Remodel Kitchen"
-					},		
+					},
 					{
 						name: "Buy new car"
-					},		
+					},
 					{
 						name: "Rewire Cat 6 cabling throughout house"
 					},
@@ -287,6 +287,17 @@ var contextList = [
 					$.mobile.changePage($page, options);
 		}
 }
+
+$(document).bind("pagebeforechange", function(e, data) {
+		if (typeof data.toPage === "string") {
+			var u = $.mobile.path.parseUrl(data.toPage),
+						re = /^#category-item/;
+			if(u.hash.search(re) !== -1) {
+					showCategory(u, data.options);
+					e.preventDefault();
+			}
+		}
+});
 
 	// Simple example of read data
 	var popluate = function(data) {
