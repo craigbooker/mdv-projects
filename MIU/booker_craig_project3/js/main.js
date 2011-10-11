@@ -267,20 +267,26 @@ var contextList = [
 		category = categoryData[ categoryName],
 		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
 	
-	if (category) {
-	var $page = $(pageSelector),
-		$header = $page.children( ":jqmData(role=header)"),
-		$content = $page.children(":jqmData(role=content)"),
-		markup = "<p>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
-		cItems = category.items
-	
-	
-	}
-	
-	
-	
-	
-	}
+		if (category) {
+				var $page = $(pageSelector),
+					$header = $page.children( ":jqmData(role=header)"),
+					$content = $page.children(":jqmData(role=content)"),
+					markup = "<p>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
+					cItems = category.items,
+					numItems = cItems.length;
+					// Make a list item for each item in the category and add to markup
+					for (var i = 0; i < numItems; i++ ) {
+							markup += "<li>" + cItems[i].name + "</li>";	
+					}
+					markup += "</ul>";
+					$header.find("h1").html(category.name);
+					$content.html(markup);
+					$page.page();
+					$content.find(":jqmData(role=listview)" ).listview();
+					options.dataUrl = urlObj.href;
+					$.mobile.changePage($page, options);
+		}
+}
 
 	// Simple example of read data
 	var popluate = function(data) {
