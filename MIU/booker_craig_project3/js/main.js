@@ -1,4 +1,4 @@
-// Craig Booker  |  MIU Project 2 | 09/30/2011
+// Craig Booker  |  MIU Project 3 | 10/10/2011
 var locFormStor;
 var formDataStorage;
 var editing;
@@ -125,6 +125,143 @@ var contextList = [
 		
 	];
 	
+	var contextData = {
+			errand: [
+				name: "Errand",
+				description: "All your errands waiting to be done.",
+				items: [
+					{
+						name: "Go Grocery Shopping"
+					},
+					{
+						name: "Go to Hardware Store"
+					},		
+					{
+						name: "Go to Dry Cleaners"
+					},		
+					{
+						name: "Go Get Movie from Redbox"
+					},
+					{
+						name: "Go By Bank"
+					},
+				
+				]
+			},
+			home: [
+				name: "Home",
+				description: "All your things around the house waiting to be done.",
+				items: [
+					{
+						name: "Vacuum House"
+					},
+					{
+						name: "Sweep Garage"
+					},		
+					{
+						name: "Mow Lawn"
+					},		
+					{
+						name: "Plant Flowers"
+					},
+					{
+						name: "Plant Grass Seed"
+					},
+				
+				]
+			},
+			office: [
+				name: "Office",
+				description: "All your tasks at the office to be done.",
+				items: [
+					{
+						name: "Order Office Supplies"
+					},
+					{
+						name: "Clean Desk"
+					},		
+					{
+						name: "Reorganize Filecabinet"
+					},		
+					{
+						name: "Meeting with Mike"
+					},
+					{
+						name: "Prepare Sales Presentation"
+					},
+				
+				]
+			},	
+			calls: [
+				name: "Calls",
+				description: "All your calls waiting to be made.",
+				items: [
+					{
+						name: "Call Joe from Shipping"
+					},
+					{
+						name: "Call Car Dealer About Repair Status"
+					},		
+					{
+						name: "Call AT&T About Texting Plan"
+					},		
+					{
+						name: "Call Client to Setup Meeting"
+					},
+					{
+						name: "Call City About Utility Bill"
+					},
+				
+				]
+			},	
+			people: [
+				name: "People",
+				description: "All items delegated to people.",
+				items: [
+					{
+						name: "Mike is preparing operations presentation"
+					},
+					{
+						name: "Jane is organizing lunch party"
+					},		
+					{
+						name: "Joanne is creating spreadsheet for monthly budget"
+					},		
+					{
+						name: "Joe is revising business plan"
+					},
+					{
+						name: "Judy is revisiting our marketing plan"
+					},
+				
+				]
+			},
+			waiting: [
+				name: "Waiting",
+				description: "All items that are on pause.",
+				items: [
+					{
+						name: "Research into new product line"
+					},
+					{
+						name: "Remodel Kitchen"
+					},		
+					{
+						name: "Buy new car"
+					},		
+					{
+						name: "Rewire Cat 6 cabling throughout house"
+					},
+					{
+						name: "Revamp company web site"
+					},
+				
+				]
+			}
+	}
+	
+	
+		
 	function showCategory( urlObj, options) {
 	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
 		category = categoryData[ categoryName],
@@ -135,7 +272,7 @@ var contextList = [
 		$header = $page.children( ":jqmData(role=header)"),
 		$content = $page.children(":jqmData(role=content)"),
 		markup = "<p>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
-		
+		cItems = category.items
 	
 	
 	}
