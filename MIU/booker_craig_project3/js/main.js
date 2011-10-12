@@ -392,107 +392,12 @@ function validateForm() {
 	} // validateForm	
 
 
-// -------   Build Browse Tasks by Context --------------------------
-
-
-function bluildPage(id) {
-	var ttlValidKeys = 8;
-	//var contextNames = catNames;
-	var context = ["none", "errand", "home", "office", "phone", "people", "waiting"];
-	var keyCheck = localStorage.key(0);
-	var checkLoc = /^\d+$/.test(keyCheck);
-	if((keyCheck === "") || (checkLoc === false )) {
-		setDefaultData();
-	}
-	var locId = id;
-	var i, len, j;
-	// write the data from local storage to the browser
-	var makeDiv	= document.createElement("div");
-	//makeDiv.setAttribute("class",  "output");
-	var makeList	= document.createElement("ul");
-	makeDiv.appendChild(makeList);
-	document.body.appendChild(makeDiv);
-	for (i = 0, len = localStorage.length; i < len; i++, j++) {
-		var key		=	localStorage.key(i);
-		var isNumber = /^\d+$/.test(key);
-		if (isNumber === true) {
-		var value	=	localStorage.getItem(key);
-		var allLength = value.length;
-		value = value.split(";");
-		//alert(value);
-		/*
-		<ul data-role="listview">
-			<li data-role="list-divider">Browse By Category</li>
-			<li><a href="index.html">Errand <span class="ui-li-count">12</span></a></li>
-			<li><a href="index.html">Home <span class="ui-li-count">0</span></a></li>
-			<li><a href="index.html">Office <span class="ui-li-count">4</span></a></li>
-			<li><a href="index.html">Calls<span class="ui-li-count">328</span></a></li>
-			<li><a href="index.html">People <span class="ui-li-count">62</span></a></li>
-			<li><a href="index.html">Waiting <span class="ui-li-count">62</span></a></li>
-
-		</ul>
-		*/
-		
-		var tContext			=	value[0];
-		var tName				=	value[1];
-		var tPriority				=	value[2];
-		var tFavorite			=	value[3];
-		var sDate					=	value[4];
-		var eDate				=	value[5];
-		var dDate				=	value[6];
-		var tNotes				=	value[7];
-
-		//var newDiv		=	document.createElement("div");
-		var makeLi	= document.createElement("li");
-		var contextLi		=	document.createElement("li");
-		makeList.appendChild(makeLi);
-		//makeList.setAttribute("class", "output");
-		makeLi.style.display = ('block');
-		var makeSubList = document.createElement("ul");
-		//makeSubList.setAttribute("class", "items");
-		makeLi.appendChild(makeSubList);
-		var d; // Field Values Counter
-		for (d = 0; d < ttlValidKeys; d++) {
-			var makeSubLi	= document.createElement("li");
-			makeSubList.appendChild(makeSubLi);
-			var locFVals = (value[d]);
-			var locTNode = document.createTextNode(locFVals);
-			makeSubLi.appendChild(locTNode);
-			makeSubList.appendChild(linksLi);
-			var imgHref = ("img/" + tContext + ".png");
-			var makeImg = document.createElement("img"); // Add image
-			var setSrc = newImg.setAttribute("src", imgHref);
-			makeSubList.appendChild(makeImg);
-			var contextLink	= document.createElement("a");//Add delete single task link
-			var setHref		=	deleteLink.setAttribute("href", "#");
-			deleteLink.setAttribute("class", "stdDelBtn");
-			var setOnclick	=	contextLink.setAttribute("onclick", "showContext(" + context + ");");
-			var showContext	=	document.createTextNode(context);
-			deleteLink.appendChild(deleteText);
-			contextLi.appendChild(deleteLink);
-			}
-			
-			//linksLi.appendChild()
-			makeSubList.appendChild(linksLi);
-			deleteLink.style.display = ('inline');
-
-			
-		}
-			//else {
-		//return;
-		//} 
-	}
-}
-
-
-
-
 
 
 
 
 // -------   Get and display saved form data --------------------------
-
+/*
 
 function getItems(id) {
 	var ttlValidKeys = 8;
@@ -563,7 +468,7 @@ function getItems(id) {
 			makeSubList.appendChild(linksLi);
 			deleteLink.style.display = ('inline');
 
-			var editLink 				= document.createElement("a");/* Add edit single task link */
+			var editLink 				= document.createElement("a");  /* Add edit single task link */ /*
 			var setEditHref		=	editLink.setAttribute("href", "#");
 			var setEditId				=	editLink.setAttribute("class", "stdEdtBtn");
 			var setEditOnclick	=	editLink.setAttribute("onclick", "editData(" + key + ");");
@@ -580,7 +485,7 @@ function getItems(id) {
 		//} 
 	}
 }
-
+*/
 // -------   Save Form Data --------------------------
 
 function saveItems(id) {
@@ -715,7 +620,7 @@ function checkLocStorSup() {
 // -------   Do Initial Checks --------------------------
 function initialChecks() {
 	checkLocStorSup();
-	formDataStorage = getItems();
-	return formDataStorage;
+	//formDataStorage = getItems();
+	//return formDataStorage;
 }
 initialChecks();
