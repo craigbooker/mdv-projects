@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-// Craig Booker  |  MIU Project 2 | 09/30/2011
-=======
+
 // Craig Booker  |  MIU Project 3 | 10/10/2011
->>>>>>> dynamic-index
+
 var locFormStor;
 var formDataStorage;
 var editing;
@@ -10,12 +8,7 @@ var editing;
 var catNames = ["CONTEXT", "errand", "home", "office", "calls", "people", "waiting"];
 var formTag = document.getElementById('form');
 var makePara = document.createElement("p");
-<<<<<<< HEAD
-//var getTContext	= document.getElementById('tContextList');
-var	makeSelect = document.createElement("select");
-//var makeLabel = document.createElement("label");
-makeSelect.setAttribute("id", "tContext");
-=======
+
 var makeDiv = document.createElement("div");
 var makeLabel = document.createElement("label");
 //var getTContext	= document.getElementById('tContextList');
@@ -27,10 +20,6 @@ makeSelect.setAttribute("name", "tContext");
 makeSelect.setAttribute("data-native-menu", "false");
 
 
-										
-
-
->>>>>>> dynamic-index
 var makeCats = function (name) {
 	var i, j;
 	for (i = 0, j = catNames.length; i < j; i++) {
@@ -41,12 +30,10 @@ var makeCats = function (name) {
 		makeOption.appendChild(optText);
 		makeSelect.appendChild(makeOption);
 	}
-<<<<<<< HEAD
-	makePara.appendChild(makeSelect);
-=======
+
 	makeDiv.appendChild(makeSelect);
 	makePara.appendChild(makeDiv);
->>>>>>> dynamic-index
+
 	var getUL = document.getElementById('form')[0].firstChild;
 	var paraSelect = document.getElementById('form')[0].insertBefore(makePara, getUL);
 };
