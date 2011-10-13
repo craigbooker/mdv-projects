@@ -4,15 +4,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>changePage JSON Sample</title>
+<title>MIU : Project 3</title>
 <link rel="stylesheet"  href="http://jquerymobile.com/test/themes/default/">
-<!--script src="http://jquerymobile.com/test/js/jquery.js"></script-->
-<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-<script src="js/libs/modernizr.custom.min.js"></script>
 
+<!--script src="http://jquerymobile.com/test/js/jquery.js"></script-->
+<!--script src="http://code.jquery.com/jquery-1.6.4.min.js"></script-->
+<!--script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="js/cat_nav.js" type="text/javascript"></script> 
+<script src="js/custom.js" type="text/javascript"></script-->
+ <link rel="stylesheet"  href="http://jquerymobile.com/test/themes/default/">
+		<script src="http://jquerymobile.com/test/js/jquery.js"></script>
+		<script src="http://jquerymobile.com/test/js/"></script>
 
 
 <script type="text/javascript">
+
+
 var categoryData	=	{
 				errand:	{
 					name: "Errand",
@@ -242,10 +249,11 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 });
 
 
+
 </script>
        <!-- StyleSheets under here -->
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
-		<link rel="stylesheet" href="css/main.css" />
+		<!--link rel="stylesheet" href="css/main.css" /-->
         <!-- JavaScript is normally at the end of the body, except for modernizr -->
         <script src="js/libs/modernizr.custom.min.js"></script>
 
@@ -263,7 +271,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 	 <div>
 		 <h3>Browse By Category</h3>
 	</div>
-				<ul data-role="listview" data-filter="true" data-inline="true" >
+				<ul data-role="listview" data-inline="true" data-filter="true">
 					<li>
 						<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=errand"> 
 						<img src="img/errand_sml.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
@@ -293,7 +301,6 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
-				<!--li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li-->
 				<li><a href="#home" data-icon="home">Home</a></li>
 				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
 				<li><a href="#tools" data-icon="gear" data-role="button" data-inline="false">Settings</a></li>
@@ -309,31 +316,16 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 <div data-role="page" id="about_app">
  	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
 	</div><!-- /header -->
 	<div data-role="secondary header">
 			<img src="img/goal_setting.jpg" width="320px" height="175px">
     </div>
-	<div class="ui-bar ui-bar-c">
-				
-					<a href="#tools" data-icon="gear" data-role="button" data-inline="false" align="right">Tools</a>
-					<a href="#" data-icon="refresh" data-role="button" data-inline="false" align="right">Refresh</a>
-				<!--/div><!-- /controlgroup -->
-	</div>
 	<div data-role="list-divider" ><br />
-	</div>
-	<div data-role="list-divider" class="ui-bar-a">
-			<ul data-role="listview">
-				
-				<!-- /controlgroup ></li-->
-	    		<li><h3>Browse By Category</h3></li> <!--search box-->
-			</ul>
 	</div>
 		 <div data-role="content" id="nav">
 				<div data-role="collapsible" data-content-theme="c">
 			   <h3>About Task Manager</h3>
-			   <p>Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."
-</p>
+			   <p>Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."</p>
 			</div>
 			<div data-role="collapsible" data-content-theme="c">
 			   <h3>Contact Us</h3>
@@ -350,12 +342,12 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
 				
 		</div> <!-- End of Seondary Content -->
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
 				<li><a href="#home" data-icon="home">Home</a></li>
 				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#tools" data-icon="gear" data-role="button" data-inline="false">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -367,15 +359,10 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 <!-- START OF: #add_item --> 
 
 <div data-role="page" id="add_item" >
-	<div class="ui-grid-a">
-		<div class="ui-block-a">Block A</div>
-		<div class="ui-block-b"><img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" /></div>
-		<div class="ui-block-c">Block C</div>
-	</div><!-- /grid-b -->
- 	<!--div data-role="header" data-position="fixed" data-theme="a" align="center">
+
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    <!--/div><!-- /header -->
+	</div><!-- /header -->
   <div data-role="header"><h1></h1></div>
   <div data-role="content">
   <div data-role="fieldcontain">
@@ -387,7 +374,10 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 										</div><!-- Set Task Name -->
 										<div data-role="fieldcontain">
 											<fieldset data-role="controlgroup">
-												<label for="tPriority">Priority</label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="a" />
+												<label for="tPriority">Priority 	</label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="a" />
+												<p>Select a value from 1 - 10.  Low priority = 0-5, High priority = 6-10
+</p>
+
 											</fieldset>
 										</div><!-- Set Priority  -->
 										<div data-role="fieldcontain">
@@ -420,33 +410,30 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 									<button type="submit" id="submitForm" data-theme="a">Submit</button>
 							    </fieldset>
 							</div>	
-								<div data-role="fieldcontain">
+								<!--div data-role="fieldcontain">
 					<p id="clear"><a href="#" onclick="clearLocal(); location.reload();" class="bigBtn" >Clear Local Storage</a></p>
-				</div> 	<!-- Clear Local Storage -->
+				</div--> 	<!-- Clear Local Storage -->
 				</form>	
-  
   </div>
-  <div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
 				<li><a href="#home" data-icon="home">Home</a></li>
 				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#tools" data-icon="gear" data-role="button" data-inline="false">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
 		</div><!-- /navbar -->
-</div><!-- /footer -->
+	</div><!-- /footer -->
 </div>
 
 <!-- END OF: #add_tems --> 
 	
 	
 <!-- START OF: #tools --> 
-	
 <div id="tools" data-role="page">
  	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
 	</div><!-- /header -->
 	<div data-role="secondary header">
 			<img src="img/goal_setting.jpg" width="320px" height="175px">
@@ -461,12 +448,12 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
 				
 		</div> <!-- End of Seondary Content -->
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
 				<li><a href="#home" data-icon="home">Home</a></li>
 				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#tools" data-icon="gear" data-role="button" data-inline="false">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
 		</div><!-- /navbar -->
@@ -482,28 +469,26 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 <div id="category-items" data-role="page">
  	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-  <div data-role="header"><h1></h1></div>
-  <div data-role="content"></div>
-  <div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+	</div><!-- /header -->
+	<div data-role="header"><h1></h1></div>
+	<div data-role="content"></div>
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
 				<li><a href="#home" data-icon="home">Home</a></li>
 				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#tools" data-icon="gear" data-role="button" data-inline="false">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
 		</div><!-- /navbar -->
-</div><!-- /footer -->
+	</div><!-- /footer -->
 </div>
 <!-- END OF: #category-items --> 
 
 
 <script src="js/main.js" type="text/javascript"></script> 
-<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
-<script src="js/cat_nav.js" type="text/javascript"></script> 
+
 
 
 </body>
