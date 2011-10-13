@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Craig Booker  |  MIU Project 2 | 09/30/2011
+=======
+// Craig Booker  |  MIU Project 3 | 10/10/2011
+>>>>>>> dynamic-index
 var locFormStor;
 var formDataStorage;
 var editing;
@@ -6,10 +10,27 @@ var editing;
 var catNames = ["CONTEXT", "errand", "home", "office", "calls", "people", "waiting"];
 var formTag = document.getElementById('form');
 var makePara = document.createElement("p");
+<<<<<<< HEAD
 //var getTContext	= document.getElementById('tContextList');
 var	makeSelect = document.createElement("select");
 //var makeLabel = document.createElement("label");
 makeSelect.setAttribute("id", "tContext");
+=======
+var makeDiv = document.createElement("div");
+var makeLabel = document.createElement("label");
+//var getTContext	= document.getElementById('tContextList');
+var	makeSelect = document.createElement("select");
+//var makeLabel = document.createElement("label");
+makeDiv.setAttribute("data-role", "fieldcontain");
+makeSelect.setAttribute("id", "tContext");
+makeSelect.setAttribute("name", "tContext");
+makeSelect.setAttribute("data-native-menu", "false");
+
+
+										
+
+
+>>>>>>> dynamic-index
 var makeCats = function (name) {
 	var i, j;
 	for (i = 0, j = catNames.length; i < j; i++) {
@@ -20,7 +41,12 @@ var makeCats = function (name) {
 		makeOption.appendChild(optText);
 		makeSelect.appendChild(makeOption);
 	}
+<<<<<<< HEAD
 	makePara.appendChild(makeSelect);
+=======
+	makeDiv.appendChild(makeSelect);
+	makePara.appendChild(makeDiv);
+>>>>>>> dynamic-index
 	var getUL = document.getElementById('form')[0].firstChild;
 	var paraSelect = document.getElementById('form')[0].insertBefore(makePara, getUL);
 };
@@ -113,6 +139,183 @@ var contextList = [
 	},
 		
 	];
+<<<<<<< HEAD
+=======
+	
+	var categoryData = {
+			errand: {
+				name: "Errand",
+				description: "All your errands waiting to be done.",
+				items: [
+					{
+						name: "Go Grocery Shopping"
+					},
+					{
+						name: "Go to Hardware Store"
+					},		
+					{
+						name: "Go to Dry Cleaners"
+					},		
+					{
+						name: "Go Get Movie from Redbox"
+					},
+					{
+						name: "Go By Bank"
+					},
+				
+				]
+			},
+			home: {
+				name: "Home",
+				description: "All your things around the house waiting to be done.",
+				items: [
+					{
+						name: "Vacuum House"
+					},
+					{
+						name: "Sweep Garage"
+					},		
+					{
+						name: "Mow Lawn"
+					},		
+					{
+						name: "Plant Flowers"
+					},
+					{
+						name: "Plant Grass Seed"
+					},
+				
+				]
+			},
+			office: {
+				name: "Office",
+				description: "All your tasks at the office to be done.",
+				items: [
+					{
+						name: "Order Office Supplies"
+					},
+					{
+						name: "Clean Desk"
+					},		
+					{
+						name: "Reorganize Filecabinet"
+					},		
+					{
+						name: "Meeting with Mike"
+					},
+					{
+						name: "Prepare Sales Presentation"
+					},
+				
+				]
+			},	
+			calls: {
+				name: "Calls",
+				description: "All your calls waiting to be made.",
+				items: [
+					{
+						name: "Call Joe from Shipping"
+					},
+					{
+						name: "Call Car Dealer About Repair Status"
+					},		
+					{
+						name: "Call AT&T About Texting Plan"
+					},		
+					{
+						name: "Call Client to Setup Meeting"
+					},
+					{
+						name: "Call City About Utility Bill"
+					},
+				
+				]
+			},	
+			people: {
+				name: "People",
+				description: "All items delegated to people.",
+				items: [
+					{
+						name: "Mike is preparing operations presentation"
+					},
+					{
+						name: "Jane is organizing lunch party"
+					},
+					{
+						name: "Joanne is creating spreadsheet for monthly budget"
+					},
+					{
+						name: "Joe is revising business plan"
+					},
+					{
+						name: "Judy is revisiting our marketing plan"
+					},
+				
+				]
+			},
+			waiting: {
+				name: "Waiting",
+				description: "All items that are on pause.",
+				items: [
+					{
+						name: "Research into new product line"
+					},
+					{
+						name: "Remodel Kitchen"
+					},
+					{
+						name: "Buy new car"
+					},
+					{
+						name: "Rewire Cat 6 cabling throughout house"
+					},
+					{
+						name: "Revamp company web site"
+					},
+				
+				]
+			}
+	}
+	
+	
+		
+	function showCategory( urlObj, options) {
+	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
+		category = categoryData[ categoryName],
+		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
+	
+		if (category) {
+				var $page = $(pageSelector),
+					$header = $page.children( ":jqmData(role=header)"),
+					$content = $page.children(":jqmData(role=content)"),
+					markup = "<p>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
+					cItems = category.items,
+					numItems = cItems.length;
+					// Make a list item for each item in the category and add to markup
+					for (var i = 0; i < numItems; i++ ) {
+							markup += "<li>" + cItems[i].name + "</li>";	
+					}
+					markup += "</ul>";
+					$header.find("h1").html(category.name);
+					$content.html(markup);
+					$page.page();
+					$content.find(":jqmData(role=listview)" ).listview();
+					options.dataUrl = urlObj.href;
+					$.mobile.changePage($page, options);
+		}
+}
+
+$(document).bind("pagebeforechange", function(e, data) {
+		if (typeof data.toPage === "string") {
+			var u = $.mobile.path.parseUrl(data.toPage),
+						re = /^#category-item/;
+			if(u.hash.search(re) !== -1) {
+					showCategory(u, data.options);
+					e.preventDefault();
+			}
+		}
+});
+>>>>>>> dynamic-index
 
 	// Simple example of read data
 	var popluate = function(data) {
@@ -210,7 +413,11 @@ function validateForm() {
 // -------   Build Browse Tasks by Context --------------------------
 
 
+<<<<<<< HEAD
 function bluildIndexPage(id) {
+=======
+function bluildPage(id) {
+>>>>>>> dynamic-index
 	var ttlValidKeys = 8;
 	//var contextNames = catNames;
 	var context = ["none", "errand", "home", "office", "phone", "people", "waiting"];
@@ -401,7 +608,11 @@ function getItems(id) {
 function saveItems(id) {
 	//alert("Inside Save items function");
 	var itemId = id;
+<<<<<<< HEAD
 	alert(editing);
+=======
+	//alert(editing);
+>>>>>>> dynamic-index
 	validateForm(id);
 	//if (editing === "false") {
 	var itemId				=	Math.floor(Math.random()*100000000001);

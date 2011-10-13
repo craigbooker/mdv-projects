@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- 
+	Name: Craig Booker
+	Class: MIU
+	Project: 2
+	Date: 09/30/2011
+ -->
+<html>
+    <head>
+        <meta charset="utf-8" />       
+        <title>MIU :: Project 2 :: Task Manager</title>
+        <meta name="keywords" contents="Task, to do, getting things done" />
+        <meta name="description" content="Adds a task to a to do list." />
+        <meta name="robots" content ="index, follow" />
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <!-- Mobile IE needs ClearType for smoothing fonts -->
+        <meta http-equiv="cleartype" content="on">
+        <style type="text/css" media="all">
+		.center_stage {
+			margin: 0px;
+			padding: 0px;
+			display: block;
+		}
+		
+		</style>
+        <!-- StyleSheets under here -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+        <!-- JavaScript is normally at the end of the body, except for modernizr -->
+        <script src="js/libs/modernizr.custom.min.js"></script>
+    </head>
+<body> 
+
+<!-- Start of index page: #index --> 
+<div data-role="page" id="index">
+
+	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+			     <!--h1>Task Manager</h1><!-- header -->
+	    </div><!-- /header -->
+	    <div data-role="secondary header">
+			<img src="img/goal_setting.jpg" width="320px" height="175px">
+    	</div>
+		<div data-role="list-divider" class="ui-bar-a">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-a">About</li>
+	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
+			</ul>
+			</div>
+			<div data-role="content" id="nav">
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>About Task Manager</h3>
+			   <p>Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."
+</p>
+			</div>
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>Contact Us</h3>
+			   <p>Appscient <br />
+			   <a href="mailto:support@appscient.co">support@appscient.co</a></p>
+			</div>
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>Legal Disclosure</h3>
+			   <p>I'm the collapsible content with a themed content block set to "C".</p>
+			</div>
+		</div> <!-- End of Seondary Content -->
+		<div data-role="content" id="one">	
+		<h3>Show internal pages:</h3>
+		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page one -->
+
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
+</body>
+</html>

@@ -2,8 +2,13 @@
 <!-- 
 	Name: Craig Booker
 	Class: MIU
+<<<<<<< HEAD
 	Project: 2
 	Date: 09/30/2011
+=======
+	Project: 3
+	Date: 10/10/2011
+>>>>>>> dynamic-index
  -->
 <html>
     <head>
@@ -15,7 +20,11 @@
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
+<<<<<<< HEAD
         <meta name="viewport" content="width=device-width, initial-scale=1.0"
+=======
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> dynamic-index
         <!-- Mobile IE needs ClearType for smoothing fonts -->
         <meta http-equiv="cleartype" content="on">
         <style type="text/css" media="all">
@@ -24,6 +33,7 @@
 			padding: 0px;
 			display: block;
 		}
+<<<<<<< HEAD
 		
 		</style>
         <!-- StyleSheets under here -->
@@ -36,6 +46,322 @@
 
 <!-- Start of index page: #index --> 
 <div data-role="page" id="index">
+=======
+		</style>
+		<!--link rel="stylesheet"  href="css/default.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/index.js"></script-->
+        <!-- StyleSheets under here -->
+        <!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+        <!-- JavaScript is normally at the end of the body, except for modernizr -->
+        <!--script src="js/libs/modernizr.custom.min.js"></script-->
+        <link rel="stylesheet"  href="http://jquerymobile.com/test/themes/default/">
+		<script src="http://jquerymobile.com/test/js/jquery.js"></script>
+		<script src="http://jquerymobile.com/test/js/"></script>
+		<script type="text/javascript">
+
+// Some sample categorized data. This data is in-memory
+// for demonstration purposes, but could be loaded dynamically
+// via ajax.
+/*
+var categoryData = {
+	animals: {
+		name: "Animals",
+		description: "All your favorites from aardvarks to zebras.",
+		items: [
+			{
+				name: "Pets",
+			},
+			{
+				name: "Farm Animals",
+			},
+			{
+				name: "Wild Animals",
+			}
+		]
+	},
+	colors: {
+		name: "Colors",
+		description: "Fresh colors from the magic rainbow.",
+		items: [
+			{
+				name: "Blue",
+			},
+			{
+				name: "Green",
+			},
+			{
+				name: "Orange",
+			},
+			{
+				name: "Purple",
+			},
+			{
+				name: "Red",
+			},
+			{
+				name: "Yellow",
+			},
+			{
+				name: "Violet",
+			}
+		]
+	},
+	vehicles: {
+		name: "Vehicles",
+		description: "Everything from cars to planes.",
+		items: [
+			{
+				name: "Cars",
+			},
+			{
+				name: "Planes",
+			},
+			{
+				name: "Construction",
+			}
+		]
+	}
+};
+*/
+
+var categoryData	=	{
+				errand:	{
+					name: "Errand",
+					description: "All your errands waiting to be done.",
+					items: [
+						{
+							name: "Go Grocery Shopping"
+						},
+						{
+							name: "Go to Hardware Store"
+						},
+						{
+							name: "Go to Dry Cleaners"
+						},
+						{
+							name: "Go Get Movie from Redbox"
+						},
+						{
+							name: "Go By Bank"
+						}
+					]
+				},
+				home: {
+					name: "Home",
+					description: "All your things around the house waiting to be done.",
+					items: [
+						{
+							name: "Vacuum House"
+						},
+						{
+							name: "Sweep Garage"
+						},
+						{
+							name: "Mow Lawn"
+						},
+						{
+							name: "Plant Flowers"
+						},
+						{
+							name: "Plant Grass Seed"
+						}
+					]
+				},
+				office: {
+					name: "Office",
+					description: "All your tasks at the office to be done.",
+					items: [
+						{
+							name: "Order Office Supplies"
+						},
+						{
+							name: "Clean Desk"
+						},
+						{
+							name: "Reorganize Filecabinet"
+						},
+						{
+							name: "Meeting with Mike"
+						},
+						{
+							name: "Prepare Sales Presentation"
+						}
+					]
+				},
+				calls: {
+					name: "Calls",
+					description: "All your calls waiting to be made.",
+					items: [
+						{
+							name: "Call Joe from Shipping"
+						},
+						{
+							name: "Call Car Dealer About Repair Status"
+						},
+						{
+							name: "Call AT&T About Texting Plan"
+						},
+						{
+							name: "Call Client to Setup Meeting"
+						},
+						{
+							name: "Call City About Utility Bill"
+						}
+					]
+				},
+				people: {
+					name: "People",
+					description: "All items delegated to people.",
+					items: [
+						{
+							name: "Mike is preparing operations presentation"
+						},
+						{
+							name: "Jane is organizing lunch party"
+						},
+						{
+							name: "Joanne is creating spreadsheet for monthly budget"
+						},
+						{
+							name: "Joe is revising business plan"
+						},
+						{
+							name: "Judy is revisiting our marketing plan"
+						}
+					]
+				},
+				waiting: {
+					name: "Waiting",
+					description: "All items that are on pause.",
+					items: [
+						{
+							name: "Research into new product line"
+						},
+						{
+							name: "Remodel Kitchen"
+						},
+						{
+							name: "Buy new car"
+						},
+						{
+							name: "Rewire Cat 6 cabling throughout house"
+						},
+						{
+							name: "Revamp company web site"
+						}
+					]
+				}
+			};
+
+// Load the data for a specific category, based on
+// the URL passed in. Generate markup for the items in the
+// category, inject it into an embedded page, and then make
+// that page the current active page.
+function showCategory( urlObj, options )
+{
+	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
+
+		// Get the object that represents the category we
+		// are interested in. Note, that at this point we could
+		// instead fire off an ajax request to fetch the data, but
+		// for the purposes of this sample, it's already in memory.
+		category = categoryData[ categoryName ],
+
+		// The pages we use to display our content are already in
+		// the DOM. The id of the page we are going to write our
+		// content into is specified in the hash before the '?'.
+		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
+
+	if ( category ) {
+		// Get the page we are going to dump our content into.
+		var $page = $( pageSelector ),
+
+			// Get the header for the page.
+			$header = $page.children( ":jqmData(role=header)" ),
+
+			// Get the content area element for the page.
+			$content = $page.children( ":jqmData(role=content)" ),
+
+			// The markup we are going to inject into the content
+			// area of the page.
+			markup = "<p>" + category.description + "</p><ul data-role='listview' data-inset='true'>",
+
+			// The array of items for this category.
+			cItems = category.items,
+
+			// The number of items in the category.
+			numItems = cItems.length;
+
+		// Generate a list item for each item in the category
+		// and add it to our markup.
+		for ( var i = 0; i < numItems; i++ ) {
+			markup += "<li>" + cItems[i].name + "</li>";
+		}
+		markup += "</ul>";
+
+		// Find the h1 element in our header and inject the name of
+		// the category into it.
+		$header.find( "h1" ).html( category.name );
+
+		// Inject the category items markup into the content element.
+		$content.html( markup );
+
+		// Pages are lazily enhanced. We call page() on the page
+		// element to make sure it is always enhanced before we
+		// attempt to enhance the listview markup we just injected.
+		// Subsequent calls to page() are ignored since a page/widget
+		// can only be enhanced once.
+		$page.page();
+
+		// Enhance the listview we just injected.
+		$content.find( ":jqmData(role=listview)" ).listview();
+
+		// We don't want the data-url of the page we just modified
+		// to be the url that shows up in the browser's location field,
+		// so set the dataUrl option to the URL for the category
+		// we just loaded.
+		options.dataUrl = urlObj.href;
+
+		// Now call changePage() and tell it to switch to
+		// the page we just modified.
+		$.mobile.changePage( $page, options );
+	}
+}
+
+ 
+// Listen for any attempts to call changePage().
+$(document).bind( "pagebeforechange", function( e, data ) {
+	// We only want to handle changePage() calls where the caller is
+	// asking us to load a page by URL.
+	if ( typeof data.toPage === "string" ) {
+		// We are being asked to load a page by URL, but we only
+		// want to handle URLs that request the data for a specific
+		// category.
+		var u = $.mobile.path.parseUrl( data.toPage ),
+			re = /^#category-item/;
+		if ( u.hash.search(re) !== -1 ) {
+			// We're being asked to display the items for a specific category.
+			// Call our internal method that builds the content for the category
+			// on the fly based on our in-memory category data structure.
+			showCategory( u, data.options );
+
+			// Make sure to tell changePage() we've handled this call so it doesn't
+			// have to do anything.
+			e.preventDefault();
+		}
+	}
+});
+
+
+</script>
+</head>
+<body> 
+
+<!-- Start of index page: #index --> 
+<div data-role="page" id="home">
+>>>>>>> dynamic-index
 
 	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
@@ -49,8 +375,49 @@
 				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
 	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
 			</ul>
+<<<<<<< HEAD
 			</div>
 			<div data-role="content" id="nav">
+=======
+		</div>
+			  <div data-role="content" id="nav">
+			<ul data-role="listview">
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=errand"> 
+					<img src="img/errand_sml.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=home">
+					<img src="img/home_sml.png" class="ui-li-icon" />Home<span class="ui-li-count">5</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=office">
+					<img src="img/office_sml.png" class="ui-li-icon" />Office<span class="ui-li-count">10</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=calls">
+					<img src="img/calls_sml.png" class="ui-li-icon" />Calls<span class="ui-li-count">20</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=people">
+					<img src="img/people_sml.png" class="ui-li-icon" />People<span class="ui-li-count">5</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=waiting" data-theme="a">
+					<img src="img/waiting_sml.png" class="ui-li-icon" />Waiting<span class="ui-li-count">0</span></a>
+				</li>
+			
+			</ul>
+		</div> <!-- End of Seondary Content -->
+			
+			
+			
+			
+			
+			
+			
+			<!--div data-role="content" id="nav">
+>>>>>>> dynamic-index
 			<ul data-role="listview">
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#errand_list"> 
@@ -83,9 +450,23 @@
 		<h3>Show internal pages:</h3>
 		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
 	</div><!-- /content -->
+<<<<<<< HEAD
 		<div data-role="footer" position="fixed" data-theme="d">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
+=======
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="home" data-icon="home">Home</a></li>
+				<li><a href="add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+>>>>>>> dynamic-index
 </div><!-- /page one -->
 
 
@@ -131,9 +512,23 @@
 		<h3>Show internal pages:</h3>
 		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
 	</div><!-- /content -->
+<<<<<<< HEAD
 		<div data-role="footer" position="fixed" data-theme="d">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
+=======
+<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Up</a></li>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+>>>>>>> dynamic-index
 </div><!-- /errand list page one -->
 
 <!-- Start of second page: #two -->
@@ -158,9 +553,24 @@
 		
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
+=======
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+
+>>>>>>> dynamic-index
 </div><!-- /errand page -->
 
 
@@ -186,10 +596,24 @@
 		
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /errand page -->
+=======
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+>>>>>>> dynamic-index
 
 <!-- Start of second page: #two -->
 <div data-role="page" id="getgas" data-add-back-btn="true" data-theme="a">
@@ -212,9 +636,23 @@
 		</p>	
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
+=======
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+>>>>>>> dynamic-index
 </div><!-- /errand page -->
 <!-- Start of second page: #two -->
 <div data-role="page" id="hardwarestore" data-add-back-btn="true" data-theme="a">
@@ -232,6 +670,7 @@
 		<li>End Date:2011-09-03</li>
 		<li>Due Date:2011-09-03</li>
 		<li>Notes: Get fertilizer</li>
+<<<<<<< HEAD
 
 		</ul>
 		</p>	
@@ -241,6 +680,21 @@
 	
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
+=======
+		</ul>
+		</p>			
+	</div><!-- /content -->
+	
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /errand page -->
 
@@ -267,10 +721,23 @@
 		
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /errand page -->
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer --></div><!-- /errand page -->
+>>>>>>> dynamic-index
 
 
 <!-- Start of HOME LIST page:  --> 
@@ -316,8 +783,20 @@
 		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
 		<!--p><a href="#popup"data-role="button" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a></p-->
 	</div><!-- /content -->
+<<<<<<< HEAD
 		<div data-role="footer" position="fixed" data-theme="d">
 		<h4>Page Footer</h4>
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /errand list page one -->
 
@@ -344,9 +823,22 @@
 		</p>			
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->	
+>>>>>>> dynamic-index
 </div><!-- /errand page -->
 
 
@@ -372,8 +864,20 @@
 		
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /errand page -->
 
@@ -399,8 +903,20 @@
 	
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
+=======
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /errand page -->
 <!-- Start of second page: #two -->
@@ -425,8 +941,20 @@
 	
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
+=======
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /errand page -->
 
@@ -452,8 +980,20 @@
 	
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /errand page -->
 
@@ -497,8 +1037,20 @@
 			
 			</ul>
 		</div> <!-- End of Seondary Content -->
+<<<<<<< HEAD
 			<div data-role="footer" position="fixed" data-theme="d">
 		<h4>Page Footer</h4>
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /office list page one -->
 
@@ -520,8 +1072,20 @@
 		</ul>
 		</p>	
 	</div><!-- /content -->
+<<<<<<< HEAD
 		<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /errand page -->
 <!-- Start of second page: #two -->
@@ -544,8 +1108,20 @@
 		
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /errand page -->
 
@@ -570,8 +1146,20 @@
 		</p>	
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /errand page -->
 <!-- Start of second page: #two -->
@@ -596,8 +1184,20 @@
 	
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div><!-- /errand page -->
 
@@ -623,8 +1223,20 @@
 	
 	</div><!-- /content -->
 	
+<<<<<<< HEAD
 	<div data-role="footer" position="fixed">
 		<h4>Page Footer</h4>
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+>>>>>>> dynamic-index
 	</div><!-- /footer -->
 </div>
 <!-- /End of OFFICE page -->
@@ -651,6 +1263,7 @@
 	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 			     <!--h1>Task Manager</h1><!-- header -->
+<<<<<<< HEAD
 	    </div><!-- /header -->
 	      
 	       
@@ -660,6 +1273,14 @@
 				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
 			</ul>
 			</div>
+=======
+	    </div><!-- /header -->	 		
+	    <div data-role="list-divider" class="ui-bar-a">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
+			</ul>
+		</div>
+>>>>>>> dynamic-index
 			<div data-role="secondary header">
 			<img src="img/goal_setting.jpg" width="320px" height="175px">
     	</div>
@@ -688,6 +1309,7 @@
 		<h3>Show internal pages:</h3>
 		<p><a href="#index" data-role="button">Show right page</a></p>	
 	</div><!-- /content -->
+<<<<<<< HEAD
 		<div data-role="footer" position="fixed" data-theme="d">
 		<h4></h4>
 	</div><!-- /footer -->
@@ -699,6 +1321,144 @@
 
 
 
+=======
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Top</a></li>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+<!-- Start of index page: #index --> 
+<div data-role="page" id="aboutapp">
+
+	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+			     <!--h1>Task Manager</h1><!-- header -->
+	    </div><!-- /header -->
+	    <div data-role="secondary header">
+			<img src="img/goal_setting.jpg" width="320px" height="175px">
+    	</div>
+		<div data-role="list-divider" class="ui-bar-a">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-a">About</li>
+	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
+			</ul>
+			</div>
+			<div data-role="content" id="nav">
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>About Task Manager</h3>
+			   <p>Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."
+</p>
+			</div>
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>Contact Us</h3>
+			   <p>Appscient <br />
+			   <a href="mailto:support@appscient.co">support@appscient.co</a></p>
+			</div>
+			<div data-role="collapsible" data-content-theme="c">
+			   <h3>Legal Disclosure</h3>
+			   <p>I'm the collapsible content with a themed content block set to "C".</p>
+			</div>
+		</div> <!-- End of Seondary Content -->
+		<div data-role="content" id="one">	
+		<h3>Show internal pages:</h3>
+		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Top</a></li>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+</div><!-- /page one -->
+
+
+<!-- Start of Add Item page:  --> 
+<div data-role="page" id="additem">
+
+	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+	    </div><!-- /header -->	
+	    <div data-role="content"><a href="#top_page" name="top_page"></a>
+			<div data-role="primary-content">
+						<form id="form" action="#" onsubmit="saveItems();" > 
+								<fieldset data-role="controlgroup">
+									<legend><strong>Enter Task Details</strong></legend>
+										<div data-role="fieldcontain">
+											<label for="tName">Task Name:</label><input type="text" id="tName" />
+										</div><!-- Set Task Name -->
+										<div data-role="fieldcontain">
+											<fieldset data-role="controlgroup">
+												<label for="tPriority">Priority</label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="a" />
+											</fieldset>
+										</div><!-- Set Priority  -->
+										<div data-role="fieldcontain">
+										 	<fieldset data-role="controlgroup">
+												<legend>Add to Favorites:</legend>
+												<input type="checkbox" name="tFavorirte" id="tFavorite" class="custom" />
+												<label for="tFavorite">Yes</label>
+										    </fieldset>
+										</div><!-- Add Task To Favorites  -->
+		
+										<div data-role="fieldcontain">
+											<label for="sDate">Start Date:</label><input type="date" id="sDate" data-theme="a">
+										</div><!-- Task Start Date -->
+											
+										<div data-role="fieldcontain">
+											<label for="eDate">End Date:</label><input type="date" id="eDate" data-theme="a">
+										</div><!-- Task End Date -->
+											
+										<div data-role="fieldcontain">
+											<label for="dDate">Due Date:</label><input type="date" id="dDate" data-theme="a">
+										</div><!-- Task Due Date  -->
+											
+										<div data-role="fieldcontain">
+											<label for="tNotes">Notes:</label><textarea id="tNotes" placeholder="Add some details about your task."></textarea>
+										</div><!-- Allows For Any Notes For Task -->						
+								</fieldset>
+							<!-- End of fieldset  -->
+							<div class="ui-body ui-body-b">
+								<fieldset class="ui-grid-a">
+									<button type="submit" id="submitForm" data-theme="a">Submit</button>
+							    </fieldset>
+							</div>	
+								<div data-role="fieldcontain">
+					<p id="clear"><a href="#" onclick="clearLocal(); location.reload();" class="bigBtn" >Clear Local Storage</a></p>
+				</div> 	<!-- Clear Local Storage -->
+					</form>
+			
+				</div> <!-- Primary Content -->
+	</div><!-- content -->
+	
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="#index" data-icon="home">Home</a></li>
+				<!--li><a href="#additem" data-icon="plus">Add Task</a></li-->
+				<li><a href="#about" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+<div id="category-items" data-role="page">
+  <div data-role="header"><h1></h1></div>
+  <div data-role="content"></div>
+</div>
+
+<script src="js/main.js" type="text/javascript"></script> 
+>>>>>>> dynamic-index
 <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
 </body>

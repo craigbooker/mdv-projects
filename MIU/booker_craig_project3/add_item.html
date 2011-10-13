@@ -8,7 +8,11 @@
 <html>
     <head>
         <meta charset="utf-8" />       
+<<<<<<< HEAD
         <title>MIU :: Project 2 :: Task Manager</title>
+=======
+        <title>MIU :: Project 3 :: Task Manager</title>
+>>>>>>> dynamic-index
         <meta name="keywords" contents="Task, to do, getting things done" />
         <meta name="description" content="Adds a task to a to do list." />
         <meta name="robots" content ="index, follow" />
@@ -25,6 +29,7 @@
          <!-- JavaScript is normally at the end of the body, except for modernizr -->
         <script src="js/libs/modernizr.custom.min.js"></script>
     </head>
+<<<<<<< HEAD
     <body>
     <div data-role="page">
 	    <div data-role="header" data-position="fixed">
@@ -79,6 +84,88 @@
 	</div>
 	</div><!-- content -->
 	<!--END ADD TASK PAGE -->
+=======
+  <body> 
+
+<!-- Start of Add Item page:  --> 
+<div data-role="page" id="index">
+
+	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+	    </div><!-- /header -->	
+	    <div data-role="content"><a href="#top_page" name="top_page"></a>
+			<div data-role="primary-content">
+						<form id="form" action="#" onsubmit="saveItems();" > 
+								<fieldset data-role="controlgroup">
+									<legend><strong>Enter Task Details</strong></legend>
+										<div data-role="fieldcontain">
+											<label for="tName">Task Name:</label><input type="text" id="tName" />
+										</div><!-- Set Task Name -->
+										<div data-role="fieldcontain">
+											<fieldset data-role="controlgroup">
+												<label for="tPriority">Priority</label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="a" />
+											</fieldset>
+										</div><!-- Set Priority  -->
+										<div data-role="fieldcontain">
+										 	<fieldset data-role="controlgroup">
+												<legend>Add to Favorites:</legend>
+												<input type="checkbox" name="tFavorirte" id="tFavorite" class="custom" />
+												<label for="tFavorite">Yes</label>
+										    </fieldset>
+										</div><!-- Add Task To Favorites  -->
+		
+										<div data-role="fieldcontain">
+											<label for="sDate">Start Date:</label><input type="date" id="sDate" data-theme="a">
+										</div><!-- Task Start Date -->
+											
+										<div data-role="fieldcontain">
+											<label for="eDate">End Date:</label><input type="date" id="eDate" data-theme="a">
+										</div><!-- Task End Date -->
+											
+										<div data-role="fieldcontain">
+											<label for="dDate">Due Date:</label><input type="date" id="dDate" data-theme="a">
+										</div><!-- Task Due Date  -->
+											
+										<div data-role="fieldcontain">
+											<label for="tNotes">Notes:</label><textarea id="tNotes" placeholder="Add some details about your task."></textarea>
+										</div><!-- Allows For Any Notes For Task -->						
+								</fieldset>
+							<!-- End of fieldset  -->
+							<div class="ui-body ui-body-b">
+								<fieldset class="ui-grid-a">
+									<button type="submit" id="submitForm" data-theme="a">Submit</button>
+							    </fieldset>
+							</div>	
+								<div data-role="fieldcontain">
+					<p id="clear"><a href="#" onclick="clearLocal(); location.reload();" class="bigBtn" >Clear Local Storage</a></p>
+				</div> 	<!-- Clear Local Storage -->
+					</form>
+			
+				</div> <!-- Primary Content -->
+	</div><!-- content -->
+	
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+				<li><a href="index.html" data-icon="home">Home</a></li>
+				<!--li><a href="add_item.html" data-icon="plus">Add Task</a></li-->
+				<li><a href="about.html" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+	
+	
+	
+
+	
+	</div>
+	<!--END ADD TASK PAGE -->
+	<div id="category-items" data-role="page">
+  <div data-role="header"><h1></h1></div>
+  <div data-role="content"></div>
+</div>
+>>>>>>> dynamic-index
 		<script src="js/main.js" type="text/javascript"></script> 
 
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
