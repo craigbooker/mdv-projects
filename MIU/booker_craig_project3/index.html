@@ -1,359 +1,42 @@
-<!DOCTYPE html>
-<!-- 
-	Name: Craig Booker
-	Class: MIU
-	Project: 3
-	Date: 10/10/2011
- -->
+
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8" />       
-        <title>MIU :: Project 2 :: Task Manager</title>
-        <meta name="keywords" contents="Task, to do, getting things done" />
-        <meta name="description" content="Adds a task to a to do list." />
-        <meta name="robots" content ="index, follow" />
-        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Mobile IE needs ClearType for smoothing fonts -->
-        <meta http-equiv="cleartype" content="on">
-        <style type="text/css" media="all">
-		.center_stage {
-			margin: 0px;
-			padding: 0px;
-			display: block;
-		}
-		</style>
-		<!--link rel="stylesheet"  href="css/default.css">
-		<script src="js/jquery.js"></script>
-		<script src="js/index.js"></script-->
-        <!-- StyleSheets under here -->
-        <!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
-		<link rel="stylesheet" href="css/main.css" />
-        <!-- JavaScript is normally at the end of the body, except for modernizr -->
-        <!--script src="js/libs/modernizr.custom.min.js"></script-->
-        <link rel="stylesheet"  href="http://jquerymobile.com/test/themes/default/">
-		<script src="http://jquerymobile.com/test/js/jquery.js"></script>
-		<script src="http://jquerymobile.com/test/js/"></script>
-		<script type="text/javascript">
-
-// Some sample categorized data. This data is in-memory
-// for demonstration purposes, but could be loaded dynamically
-// via ajax.
-/*
-var categoryData = {
-	animals: {
-		name: "Animals",
-		description: "All your favorites from aardvarks to zebras.",
-		items: [
-			{
-				name: "Pets",
-			},
-			{
-				name: "Farm Animals",
-			},
-			{
-				name: "Wild Animals",
-			}
-		]
-	},
-	colors: {
-		name: "Colors",
-		description: "Fresh colors from the magic rainbow.",
-		items: [
-			{
-				name: "Blue",
-			},
-			{
-				name: "Green",
-			},
-			{
-				name: "Orange",
-			},
-			{
-				name: "Purple",
-			},
-			{
-				name: "Red",
-			},
-			{
-				name: "Yellow",
-			},
-			{
-				name: "Violet",
-			}
-		]
-	},
-	vehicles: {
-		name: "Vehicles",
-		description: "Everything from cars to planes.",
-		items: [
-			{
-				name: "Cars",
-			},
-			{
-				name: "Planes",
-			},
-			{
-				name: "Construction",
-			}
-		]
-	}
-};
-*/
-
-var categoryData	=	{
-				errand:	{
-					name: "Errand",
-					description: "All your errands waiting to be done.",
-					items: [
-						{
-							name: "Go Grocery Shopping"
-						},
-						{
-							name: "Go to Hardware Store"
-						},
-						{
-							name: "Go to Dry Cleaners"
-						},
-						{
-							name: "Go Get Movie from Redbox"
-						},
-						{
-							name: "Go By Bank"
-						}
-					]
-				},
-				home: {
-					name: "Home",
-					description: "All your things around the house waiting to be done.",
-					items: [
-						{
-							name: "Vacuum House"
-						},
-						{
-							name: "Sweep Garage"
-						},
-						{
-							name: "Mow Lawn"
-						},
-						{
-							name: "Plant Flowers"
-						},
-						{
-							name: "Plant Grass Seed"
-						}
-					]
-				},
-				office: {
-					name: "Office",
-					description: "All your tasks at the office to be done.",
-					items: [
-						{
-							name: "Order Office Supplies"
-						},
-						{
-							name: "Clean Desk"
-						},
-						{
-							name: "Reorganize Filecabinet"
-						},
-						{
-							name: "Meeting with Mike"
-						},
-						{
-							name: "Prepare Sales Presentation"
-						}
-					]
-				},
-				calls: {
-					name: "Calls",
-					description: "All your calls waiting to be made.",
-					items: [
-						{
-							name: "Call Joe from Shipping"
-						},
-						{
-							name: "Call Car Dealer About Repair Status"
-						},
-						{
-							name: "Call AT&T About Texting Plan"
-						},
-						{
-							name: "Call Client to Setup Meeting"
-						},
-						{
-							name: "Call City About Utility Bill"
-						}
-					]
-				},
-				people: {
-					name: "People",
-					description: "All items delegated to people.",
-					items: [
-						{
-							name: "Mike is preparing operations presentation"
-						},
-						{
-							name: "Jane is organizing lunch party"
-						},
-						{
-							name: "Joanne is creating spreadsheet for monthly budget"
-						},
-						{
-							name: "Joe is revising business plan"
-						},
-						{
-							name: "Judy is revisiting our marketing plan"
-						}
-					]
-				},
-				waiting: {
-					name: "Waiting",
-					description: "All items that are on pause.",
-					items: [
-						{
-							name: "Research into new product line"
-						},
-						{
-							name: "Remodel Kitchen"
-						},
-						{
-							name: "Buy new car"
-						},
-						{
-							name: "Rewire Cat 6 cabling throughout house"
-						},
-						{
-							name: "Revamp company web site"
-						}
-					]
-				}
-			};
-
-// Load the data for a specific category, based on
-// the URL passed in. Generate markup for the items in the
-// category, inject it into an embedded page, and then make
-// that page the current active page.
-function showCategory( urlObj, options )
-{
-	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
-
-		// Get the object that represents the category we
-		// are interested in. Note, that at this point we could
-		// instead fire off an ajax request to fetch the data, but
-		// for the purposes of this sample, it's already in memory.
-		category = categoryData[ categoryName ],
-
-		// The pages we use to display our content are already in
-		// the DOM. The id of the page we are going to write our
-		// content into is specified in the hash before the '?'.
-		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
-
-	if ( category ) {
-		// Get the page we are going to dump our content into.
-		var $page = $( pageSelector ),
-
-			// Get the header for the page.
-			$header = $page.children( ":jqmData(role=header)" ),
-
-			// Get the content area element for the page.
-			$content = $page.children( ":jqmData(role=content)" ),
-
-			// The markup we are going to inject into the content
-			// area of the page.
-			markup = "<p>" + category.description + "</p><ul data-role='listview' data-inset='true'>",
-
-			// The array of items for this category.
-			cItems = category.items,
-
-			// The number of items in the category.
-			numItems = cItems.length;
-
-		// Generate a list item for each item in the category
-		// and add it to our markup.
-		for ( var i = 0; i < numItems; i++ ) {
-			markup += "<li>" + cItems[i].name + "</li>";
-		}
-		markup += "</ul>";
-
-		// Find the h1 element in our header and inject the name of
-		// the category into it.
-		$header.find( "h1" ).html( category.name );
-
-		// Inject the category items markup into the content element.
-		$content.html( markup );
-
-		// Pages are lazily enhanced. We call page() on the page
-		// element to make sure it is always enhanced before we
-		// attempt to enhance the listview markup we just injected.
-		// Subsequent calls to page() are ignored since a page/widget
-		// can only be enhanced once.
-		$page.page();
-
-		// Enhance the listview we just injected.
-		$content.find( ":jqmData(role=listview)" ).listview();
-
-		// We don't want the data-url of the page we just modified
-		// to be the url that shows up in the browser's location field,
-		// so set the dataUrl option to the URL for the category
-		// we just loaded.
-		options.dataUrl = urlObj.href;
-
-		// Now call changePage() and tell it to switch to
-		// the page we just modified.
-		$.mobile.changePage( $page, options );
-	}
-}
-
- 
-// Listen for any attempts to call changePage().
-$(document).bind( "pagebeforechange", function( e, data ) {
-	// We only want to handle changePage() calls where the caller is
-	// asking us to load a page by URL.
-	if ( typeof data.toPage === "string" ) {
-		// We are being asked to load a page by URL, but we only
-		// want to handle URLs that request the data for a specific
-		// category.
-		var u = $.mobile.path.parseUrl( data.toPage ),
-			re = /^#category-item/;
-		if ( u.hash.search(re) !== -1 ) {
-			// We're being asked to display the items for a specific category.
-			// Call our internal method that builds the content for the category
-			// on the fly based on our in-memory category data structure.
-			showCategory( u, data.options );
-
-			// Make sure to tell changePage() we've handled this call so it doesn't
-			// have to do anything.
-			e.preventDefault();
-		}
-	}
-});
-
-
-</script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>MIU : Project 3</title>
+<link rel="stylesheet"  href="http://jquerymobile.com/test/themes/default/">
+<script src="http://jquerymobile.com/test/js/jquery.js"></script>
+<script src="http://jquerymobile.com/test/js/"></script>
+<script src="js/custom.js"></script>
+<script src="js/libs/modernizr.custom.min.js"></script>
 </head>
-<body> 
 
-<!-- Start of index page: #index --> 
-<div data-role="page" id="home">
+<body>
 
-	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+<!-- START OF: home -->
+
+<div id="home" data-role="page">
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-	    <div data-role="secondary header">
+	</div><!-- /header -->
+	<div data-role="secondary header">
 			<img src="img/goal_setting.jpg" width="320px" height="175px">
-    	</div>
-		<div data-role="list-divider" class="ui-bar-a">
+    </div>
+	<!--div data-role="list-divider" class="ui-bar-a">
 			<ul data-role="listview">
 				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
-	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
+	    		<!--li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
+			<!--/ul>
+	</div-->
+<div data-role="list-divider" class="ui-bar-a">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
 			</ul>
-		</div>
-			  <div data-role="content" id="nav">
-			<ul data-role="listview" data-filter="true">
+	</div>	
+  <!--div data-role="header"><h1>Categories</h1></div-->
+  <div data-role="content" id="nav">
+			<ul data-role="listview" value="" data-filter="true" placeholder="Search">
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=errand"> 
 					<img src="img/errand_sml.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
@@ -381,919 +64,165 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 			
 			</ul>
 		</div> <!-- End of Seondary Content -->
-			
-			
-			
-			
-			
-			
-			
-			<!--div data-role="content" id="nav">
-			<ul data-role="listview">
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#errand_list"> 
-					<img src="img/errand_sml.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#home_list">
-					<img src="img/home_sml.png" class="ui-li-icon" />Home<span class="ui-li-count">5</span></a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#office_list">
-					<img src="img/office_sml.png" class="ui-li-icon" />Office<span class="ui-li-count">10</span></a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#calls_list">
-					<img src="img/calls_sml.png" class="ui-li-icon" />Calls<span class="ui-li-count">20</span></a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#people_list">
-					<img src="img/people_sml.png" class="ui-li-icon" />People<span class="ui-li-count">5</span></a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#waiting_list" data-theme="a">
-					<img src="img/waiting_sml.png" class="ui-li-icon" />Waiting<span class="ui-li-count">0</span></a>
-				</li>
-			
-			</ul>
-		</div> <!-- End of Seondary Content -->
-		<div data-role="content" id="one">	
-		<h3>Show internal pages:</h3>
-		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
-	</div><!-- /content -->
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="home" data-icon="home">Home</a></li>
-				<li><a href="add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-
-</div><!-- /page one -->
-
-
-<!-- Start of second page: #two -->
-<!-- Start of errand list page: --> 
-<div data-role="page" id="errand_list" data-add-back-btn="true" >
-
-	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-	    </div><!-- /header -->
-		<div data-role="list-divider" class="ui-bar-a">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-a">Errands</li>
-	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
-			</ul>
-			</div>
-			<div data-role="content" id="nav">
-			<ul data-role="listview">
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#grocerystore"> 
-					<img src="img/errand_sml.png" class="ui-li-icon"  />Grocery Store</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#postoffice">
-					<img src="img/errand_sml.png" class="ui-li-icon" />Post Office</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#getgas">
-					<img src="img/errand_sml.png" class="ui-li-icon" />Get Gas</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#hardwarestore">
-					<img src="img/errand_sml.png" class="ui-li-icon" />Go to Hardware Store</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#pickupkenley">
-					<img src="img/errand_sml.png" class="ui-li-icon" />Go pick up Kenley</a>
-				</li>
-			
-			</ul>
-		</div> <!-- End of Seondary Content -->
-		<div data-role="content" id="one">	
-		<h3>Show internal pages:</h3>
-		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
-	</div><!-- /content -->
-<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Up</a></li>
-				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#home" data-icon="home">Home</a></li>
 				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-
-</div><!-- /errand list page one -->
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="grocerystore" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Errand</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Grocery Store</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-02</li>
-		<li>Due Date:2011-09-03</li>
-		<li>Notes: Get chicken</li>
-
-		</ul>
-		</p>	
-		
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-
-
-</div><!-- /errand page -->
-
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="postoffice" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Errand</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Post Office</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-01</li>
-		<li>Due Date:2011-09-02</li>
-		<li>Notes: Get chicken</li>
-
-		</ul>
-		</p>	
-		
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="getgas" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Errand</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Get Gas</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-02</li>
-		<li>Due Date:2011-09-02</li>
-		<li>Notes: Filler up!</li>
-
-		</ul>
-		</p>	
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-
-</div><!-- /errand page -->
-<!-- Start of second page: #two -->
-<div data-role="page" id="hardwarestore" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Errand</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Go to Hardware Store</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-03</li>
-		<li>Due Date:2011-09-03</li>
-		<li>Notes: Get fertilizer</li>
-		</ul>
-		</p>			
-	</div><!-- /content -->
-	
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="#index" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /errand page -->
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="pickupkenley" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Errand</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Pickup Kenley</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-02</li>
-		<li>Due Date:2011-09-03</li>
-		<li>Notes: Don't forget her blanket</li>
-
-		</ul>
-		</p>	
-		<p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>	
-		
-	</div><!-- /content -->
-	
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer --></div><!-- /errand page -->
-
-
-<!-- Start of HOME LIST page:  --> 
-<div data-role="page" id="home_list" data-add-back-btn="true" >
-
-	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-		<div data-role="list-divider" class="ui-bar-a">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-a">Home</li>
-	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
-			</ul>
-			</div>
-			<div data-role="content" id="nav">
-			<ul data-role="listview">
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#cleankitchen"> 
-					<img src="img/home_sml.png" class="ui-li-icon"  />Clean Kitchen</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#vacuum">
-					<img src="img/home_sml.png" class="ui-li-icon" />Vacuum</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#fixlight">
-					<img src="img/home_sml.png" class="ui-li-icon" />Fix Light in Garage</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#mow">
-					<img src="img/home_sml.png" class="ui-li-icon" />Mow lawn</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#pickupgarage">
-					<img src="img/home_sml.png" class="ui-li-icon" />Pick up garage</a>
-				</li>
-			
-			</ul>
-		</div> <!-- End of Seondary Content -->
-		<div data-role="content" id="one">	
-		<h3>Show internal pages:</h3>
-		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
-		<!--p><a href="#popup"data-role="button" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a></p-->
-	</div><!-- /content -->
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /errand list page one -->
-
-
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="cleankitchen" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Home</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Clean Kitchen</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-02</li>
-		<li>Due Date:2011-09-03</li>
-		<li>Notes: Get chicken</li>
-
-		</ul>
-		</p>			
-	</div><!-- /content -->
-	
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->	
-</div><!-- /errand page -->
-
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="vacuum" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Home</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Vacuum</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-01</li>
-		<li>Due Date:2011-09-02</li>
-		<li>Notes: </li>
-
-		</ul>
-		</p>	
-		
-	</div><!-- /content -->
-	
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /errand page -->
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="fixlight" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Home</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Fix Light in Garage</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-02</li>
-		<li>Due Date:2011-09-02</li>
-		<li>Notes: It's dark in here.</li>
-
-		</ul>
-		</p>	
-	
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /errand page -->
-<!-- Start of second page: #two -->
-<div data-role="page" id="mow" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Home</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Mow</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-03</li>
-		<li>Due Date:2011-09-03</li>
-		<li>Notes: Grass is getting tall!</li>
-
-		</ul>
-		</p>	
-	
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /errand page -->
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="pickupgarage" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Home</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Pickup Garage</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-02</li>
-		<li>Due Date:2011-09-03</li>
-		<li>Notes:What a mess!</li>
-
-		</ul>
-		</p>	
-	
-	</div><!-- /content -->
-	
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /errand page -->
-
-
-
-
-<!-- Start of OFFICE list page:  -->
-<div data-role="page" id="office_list" data-add-back-btn="true" >
-
-	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-	    </div><!-- /header -->
-		<div data-role="list-divider" class="ui-bar-a">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-a">Office</li>
-	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
-			</ul>
-			</div>
-			<div data-role="content" id="nav">
-			<ul data-role="listview">
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#orderstamps"> 
-					<img src="img/errand_sml.png" class="ui-li-icon"  />Order Stamps</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#makepres">
-					<img src="img/errand_sml.png" class="ui-li-icon" />Make Presentation</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#typememo">
-					<img src="img/errand_sml.png" class="ui-li-icon" />Type Memo</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#cleandesk">
-					<img src="img/errand_sml.png" class="ui-li-icon" />Clean Desk</a>
-				</li>
-				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#meetmike">
-					<img src="img/errand_sml.png" class="ui-li-icon" />Meet with Mike</a>
-				</li>
-			
-			</ul>
-		</div> <!-- End of Seondary Content -->
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /office list page one -->
-
-<!-- Start of office Detail page -->
-<div data-role="page" id="orderstamps" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Office</h1>
-	</div><!-- /header -->
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Order Stamps</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-02</li>
-		<li>Due Date:2011-09-03</li>
-		<li>Notes: </li>
-		</ul>
-		</p>	
-	</div><!-- /content -->
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /errand page -->
-<!-- Start of second page: #two -->
-<div data-role="page" id="makepres" data-add-back-btn="true" data-theme="a">
-	<div data-role="header" position="fixed">
-		<h1>Office</h1>
-	</div><!-- /header -->
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Make Presentation</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-01</li>
-		<li>Due Date:2011-09-02</li>
-		<li>Notes: Don't forget the sales numbers</li>
-
-		</ul>
-		</p>	
-		
-	</div><!-- /content -->
-	
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /errand page -->
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="typememo" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Office</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Type Memo</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-02</li>
-		<li>Due Date:2011-09-02</li>
-		<li>Notes: cc Jane</li>
-
-		</ul>
-		</p>	
-	</div><!-- /content -->
-	
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /errand page -->
-<!-- Start of second page: #two -->
-<div data-role="page" id="cleandesk" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Office</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Clean Desk</li>
-		<li>Favorite: Checked</li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-03</li>
-		<li>Due Date:2011-09-03</li>
-		<li>Notes: Where's my stapler!</li>
-
-		</ul>
-		</p>	
-	
-	</div><!-- /content -->
-	
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-</div><!-- /errand page -->
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="meetmike" data-add-back-btn="true" data-theme="a">
-
-	<div data-role="header" position="fixed">
-		<h1>Office</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<p>
-		<ul>
-		<li>Task Name:Meet with Mike</li>
-		<li>Favorite: </li>
-		<li>Start Date:2011-09-01</li>
-		<li>End Date:2011-09-02</li>
-		<li>Due Date:2011-09-03</li>
-		<li>Notes: Go over presentation</li>
-
-		</ul>
-		</p>	
-	
-	</div><!-- /content -->
-	
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
+		</div><!-- / footer navbar -->
 	</div><!-- /footer -->
 </div>
-<!-- /End of OFFICE page -->
-
-<!-- Start of CALLS page: #four -->
-<!-- /End of CALLS page -->
-
-<!-- Start of PEOPLE page: #five -->
-<!-- /End of PEOPLE page -->
-
-<!-- Start of WAITING page: #six -->
-<!-- /End of WAITING page -->
+<!-- END OF: home -->
 
 
 
 
 
+<!-- START OF: add_item -->
 
-
-
-<!-- Start of WRONG index page: #index --> 
-<div data-role="page" id="wrongpage">
-
-	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+<div data-role="page" id="add_item">
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->	 		
-	    <div data-role="list-divider" class="ui-bar-a">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
-			</ul>
-		</div>
-			<div data-role="secondary header">
+	</div><!-- /header -->
+	<div data-role="secondary header">
 			<img src="img/goal_setting.jpg" width="320px" height="175px">
-    	</div>
-			<div data-role="content" id="nav">
-			
-			
-			<div class="content-primary">	
-			<ol data-role="listview">
-				<li><a href=""><img src="img/errand_sml.png" class="ui-li-icon"  /> Errand</a></li>
-				<li><a href=""><img src="img/home_sml.png" class="ui-li-icon" />Home</a></li>
-				<li><a href=""><img src="img/office_sml.png" class="ui-li-icon" />Office</a></li>
-				<li><a href=""><img src="img/calls_sml.png" class="ui-li-icon" />Calls</a></li>
-				<li><a href=""><img src="img/people_sml.png" class="ui-li-icon" />People</a></li>
-				<li><a href=""><img src="img/waiting_sml.png" class="ui-li-icon" />Waiting</a></li>
-				
-			</ol>
-			</div><!--/content-primary -->	
-			<div data-role="content" class="ui-bar-a">
-	    		<input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/> <!--search box-->
-
-			</div>
-
-		
+    </div>
+	<div data-role="list-divider" class="ui-bar-a">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-a">Task Details</li>
+			</ul>
+	</div>
+		<div data-role="content" id="nav">
+		<form id="form" action="#" onsubmit="saveItems();" > 
+				<!--div data-role="header" id="header" theme="a"><h2>Add Task Item</h2></div> <!-- header -->
+						<fieldset data-role="controlgroup">
+							<legend><strong>Details</strong></legend>
+								<div data-role="fieldcontain">
+									<label for="tName">Task Name:</label><input type="text" id="tName" />
+								</div>
+								
+								<div data-role="fieldcontain">
+									<label for="tPriority">Priority</label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="b" />
+								</div>
+								
+								<div data-role="fieldcontain">
+									<label for="tFavorite">Add to Favorites?</label><input type="checkbox" id="tFavorite">
+								</div> <!-- Add Task To Favorites  -->
+									
+								<div data-role="fieldcontain">
+									<label for="sDate">Start Date:</label><input type="date" id="sDate">
+								</div><!-- Task Start Date -->
+									
+								<div data-role="fieldcontain">
+									<label for="eDate">End Date:</label><input type="date" id="eDate">
+								</div><!-- Task End Date -->
+									
+								<div data-role="fieldcontain">
+									<label for="dDate">Due Date:</label><input type="date" id="dDate">
+								</div><!-- Task Due Date  -->
+									
+								<div data-role="fieldcontain">
+									<label for="tNotes">Notes:</label><textarea id="tNotes"></textarea>
+								</div><!-- Allows For Any Notes For Task -->
+						</fieldset>
+					<!-- End of fieldset  -->
+					<div class="ui-body ui-body-b">
+						<fieldset class="ui-grid-a">
+							<button type="submit" id="submitForm" data-theme="a">Submit</button>
+					    </fieldset>
+					</div>	
+			</form>			
 		</div> <!-- End of Seondary Content -->
-		<div data-role="content" id="one">	
-		<h3>Show internal pages:</h3>
-		<p><a href="#index" data-role="button">Show right page</a></p>	
-	</div><!-- /content -->
 		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Top</a></li>
-				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#home" data-icon="home">Home</a></li>
 				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
-		</div><!-- /navbar -->
+		</div><!-- / footer navbar -->
 	</div><!-- /footer -->
-</div><!-- /page one -->
+</div>
+<!-- END OF: add_items -->
 
-<!-- Start of index page: #index --> 
-<div data-role="page" id="aboutapp">
 
-	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+
+
+
+
+
+
+
+
+
+	
+<!-- START OF: about_app -->
+
+<div id="about_app" data-role="page">
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 			     <!--h1>Task Manager</h1><!-- header -->
 	    </div><!-- /header -->
-	    <div data-role="secondary header">
-			<img src="img/goal_setting.jpg" width="320px" height="175px">
-    	</div>
-		<div data-role="list-divider" class="ui-bar-a">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-a">About</li>
-	    		<li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
-			</ul>
+	<div data-role="list-divider" class="ui-bar-c" data-position="inset"><h4>About Task Manager App</h4>
+	
+	</div>
+
+  <div data-role="content">
+	  <div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>About App</h3>
+					<p>Inspired by the book by David Allen, "Get Things Done."</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Contact</h3>
+					<p>Appscient <br /> <a href="mailto:support@appscient.co">support@appscient.co</a>
+					</p>
+	
+				</div>
 			</div>
-			<div data-role="content" id="nav">
-			<div data-role="collapsible" data-content-theme="c">
-			   <h3>About Task Manager</h3>
-			   <p>Inspired by the work of David Allen.  David is a well known author and productivity coach.  He has written several books, including "Getting Things Done."
-</p>
-			</div>
-			<div data-role="collapsible" data-content-theme="c">
-			   <h3>Contact Us</h3>
-			   <p>Appscient <br />
-			   <a href="mailto:support@appscient.co">support@appscient.co</a></p>
-			</div>
-			<div data-role="collapsible" data-content-theme="c">
-			   <h3>Legal Disclosure</h3>
-			   <p>I'm the collapsible content with a themed content block set to "C".</p>
-			</div>
-		</div> <!-- End of Seondary Content -->
-		<div data-role="content" id="one">	
-		<h3>Show internal pages:</h3>
-		<p><a href="#wrongpage" data-role="button">Show wrong page</a></p>	
-	</div><!-- /content -->
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+	</div>
+  <div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u" class="ui-btn-active ui-state-persist">Top</a></li>
-				<li><a href="#index" data-icon="home">Home</a></li>
+				<li><a href="#home" data-icon="home">Home</a></li>
 				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
-		</div><!-- /navbar -->
+		</div><!-- / footer navbar -->
 	</div><!-- /footer -->
+</div>
+<!-- END OF: about_app -->
 
-</div><!-- /page one -->
-
-
-<!-- Start of Add Item page:  --> 
-<div data-role="page" id="additem">
-
-	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-	    </div><!-- /header -->	
-	    <div data-role="content"><a href="#top_page" name="top_page"></a>
-			<div data-role="primary-content">
-						<form id="form" action="#" onsubmit="saveItems();" > 
-								<fieldset data-role="controlgroup">
-									<legend><strong>Enter Task Details</strong></legend>
-										<div data-role="fieldcontain">
-											<label for="tName">Task Name:</label><input type="text" id="tName" />
-										</div><!-- Set Task Name -->
-										<div data-role="fieldcontain">
-											<fieldset data-role="controlgroup">
-												<label for="tPriority">Priority</label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="a" />
-											</fieldset>
-										</div><!-- Set Priority  -->
-										<div data-role="fieldcontain">
-										 	<fieldset data-role="controlgroup">
-												<legend>Add to Favorites:</legend>
-												<input type="checkbox" name="tFavorirte" id="tFavorite" class="custom" />
-												<label for="tFavorite">Yes</label>
-										    </fieldset>
-										</div><!-- Add Task To Favorites  -->
-		
-										<div data-role="fieldcontain">
-											<label for="sDate">Start Date:</label><input type="date" id="sDate" data-theme="a">
-										</div><!-- Task Start Date -->
-											
-										<div data-role="fieldcontain">
-											<label for="eDate">End Date:</label><input type="date" id="eDate" data-theme="a">
-										</div><!-- Task End Date -->
-											
-										<div data-role="fieldcontain">
-											<label for="dDate">Due Date:</label><input type="date" id="dDate" data-theme="a">
-										</div><!-- Task Due Date  -->
-											
-										<div data-role="fieldcontain">
-											<label for="tNotes">Notes:</label><textarea id="tNotes" placeholder="Add some details about your task."></textarea>
-										</div><!-- Allows For Any Notes For Task -->						
-								</fieldset>
-							<!-- End of fieldset  -->
-							<div class="ui-body ui-body-b">
-								<fieldset class="ui-grid-a">
-									<button type="submit" id="submitForm" data-theme="a">Submit</button>
-							    </fieldset>
-							</div>	
-								<div data-role="fieldcontain">
-					<p id="clear"><a href="#" onclick="clearLocal(); location.reload();" class="bigBtn" >Clear Local Storage</a></p>
-				</div> 	<!-- Clear Local Storage -->
-					</form>
-			
-				</div> <!-- Primary Content -->
-	</div><!-- content -->
-	
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="#index" data-icon="home">Home</a></li>
-				<!--li><a href="#additem" data-icon="plus">Add Task</a></li-->
-				<li><a href="#about" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
+<!-- START OF: category-items -->
 
 <div id="category-items" data-role="page">
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+			     <!--h1>Task Manager</h1><!-- header -->
+	    </div><!-- /header -->
   <div data-role="header"><h1></h1></div>
   <div data-role="content"></div>
+  <div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- / footer navbar -->
+	</div><!-- /footer -->
 </div>
+<!-- END OF: category-items -->
 
-<script src="js/main.js" type="text/javascript"></script> 
-<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
+
+
+
+
 </body>
 </html>
