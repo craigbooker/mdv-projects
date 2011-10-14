@@ -131,19 +131,28 @@ var contextList = [
 				description: "All your errands waiting to be done.",
 				items: [
 					{
-						name: "Go Grocery Shopping"
+						name: "Go Grocery Shopping",
+						tPriority: "5"
 					},
 					{
-						name: "Go to Hardware Store"
+						name: "Go to Hardware Store",
+						tPriority: "5"
+
 					},		
 					{
-						name: "Go to Dry Cleaners"
+						name: "Go to Dry Cleaners",
+						tPriority: "5"
+
 					},		
 					{
-						name: "Go Get Movie from Redbox"
+						name: "Go Get Movie from Redbox",
+						tPriority: "5"
+
 					},
 					{
-						name: "Go By Bank"
+						name: "Go By Bank",
+						tPriority: "5"
+
 					},
 				
 				]
@@ -151,12 +160,15 @@ var contextList = [
 			home: {
 				name: "Home",
 				description: "All your things around the house waiting to be done.",
-				items: [
+				tName: [
 					{
-						name: "Vacuum House"
+						name: "Vacuum House",
+						tPriority: "5"
 					},
 					{
-						name: "Sweep Garage"
+						name: "Sweep Garage",
+						tPriority: "5"
+
 					},		
 					{
 						name: "Mow Lawn"
@@ -169,25 +181,45 @@ var contextList = [
 					},
 				
 				]
+				priority: [
+					{
+						tPriority: "5"
+
+					},
+				
+				
+				
+				
+				]
 			},
 			office: {
 				name: "Office",
 				description: "All your tasks at the office to be done.",
 				items: [
 					{
-						name: "Order Office Supplies"
+						name: "Order Office Supplies",
+						tPriority: "5"
+
 					},
 					{
-						name: "Clean Desk"
+						name: "Clean Desk",
+						tPriority: "5"
+
 					},		
 					{
-						name: "Reorganize Filecabinet"
+						name: "Reorganize Filecabinet",
+						tPriority: "5"
+
 					},		
 					{
-						name: "Meeting with Mike"
+						name: "Meeting with Mike",
+						tPriority: "5"
+
 					},
 					{
-						name: "Prepare Sales Presentation"
+						name: "Prepare Sales Presentation",
+						tPriority: "5"
+
 					},
 				
 				]
@@ -197,19 +229,29 @@ var contextList = [
 				description: "All your calls waiting to be made.",
 				items: [
 					{
-						name: "Call Joe from Shipping"
+						name: "Call Joe from Shipping",
+						tPriority: "5"
+
 					},
 					{
-						name: "Call Car Dealer About Repair Status"
+						name: "Call Car Dealer About Repair Status",
+						tPriority: "5"
+
 					},		
 					{
-						name: "Call AT&T About Texting Plan"
+						name: "Call AT&T About Texting Plan",
+						tPriority: "5"
+
 					},		
 					{
-						name: "Call Client to Setup Meeting"
+						name: "Call Client to Setup Meeting",
+						tPriority: "5"
+
 					},
 					{
-						name: "Call City About Utility Bill"
+						name: "Call City About Utility Bill",
+						tPriority: "5"
+
 					},
 				
 				]
@@ -219,19 +261,29 @@ var contextList = [
 				description: "All items delegated to people.",
 				items: [
 					{
-						name: "Mike is preparing operations presentation"
+						name: "Mike is preparing operations presentation",
+						tPriority: "5"
+
 					},
 					{
-						name: "Jane is organizing lunch party"
+						name: "Jane is organizing lunch party",
+						tPriority: "5"
+
 					},
 					{
-						name: "Joanne is creating spreadsheet for monthly budget"
+						name: "Joanne is creating spreadsheet for monthly budget",
+						tPriority: "5"
+
 					},
 					{
-						name: "Joe is revising business plan"
+						name: "Joe is revising business plan",
+						tPriority: "5"
+
 					},
 					{
-						name: "Judy is revisiting our marketing plan"
+						name: "Judy is revisiting our marketing plan",
+						tPriority: "5"
+
 					},
 				
 				]
@@ -241,19 +293,29 @@ var contextList = [
 				description: "All items that are on pause.",
 				items: [
 					{
-						name: "Research into new product line"
+						name: "Research into new product line",
+						tPriority: "5"
+
 					},
 					{
-						name: "Remodel Kitchen"
+						name: "Remodel Kitchen",
+						tPriority: "5"
+
 					},
 					{
-						name: "Buy new car"
+						name: "Buy new car",
+						tPriority: "5"
+
 					},
 					{
-						name: "Rewire Cat 6 cabling throughout house"
+						name: "Rewire Cat 6 cabling throughout house",
+						tPriority: "5"
+
 					},
 					{
-						name: "Revamp company web site"
+						name: "Revamp company web site",
+						tPriority: "5"
+
 					},
 				
 				]
@@ -261,22 +323,31 @@ var contextList = [
 	}
 	
 	
+	
+	
 		
 	function showCategory( urlObj, options) {
 	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
 		category = categoryData[ categoryName],
 		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
-	
+/*	<li><a href="index.html">
+				<h3>jQuery Team</h3>
+				<p><strong>Boston Conference Planning</strong></p>
+				<p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+				<p class="ui-li-aside"><strong>9:18</strong>AM</p>
+			</a></li> */
 		if (category) {
 				var $page = $(pageSelector),
 					$header = $page.children( ":jqmData(role=header)"),
 					$content = $page.children(":jqmData(role=content)"),
-					markup = "<p>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
+					markup = "<p><img src=\"" + category  + "/>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
 					cItems = category.items,
 					numItems = cItems.length;
 					// Make a list item for each item in the category and add to markup
 					for (var i = 0; i < numItems; i++ ) {
-							markup += "<li>" + cItems[i].name + "</li>";	
+							//markup += "<li><h3>" + cItems[i].name + "<p><strong>" + + "</strong></p>";
+							//markup += "<p>" + tNotes + "</p>"
+							markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].tPriority +"</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";	
 					}
 					markup += "</ul>";
 					$header.find("h1").html(category.name);
@@ -287,6 +358,132 @@ var contextList = [
 					$.mobile.changePage($page, options);
 		}
 }
+
+
+
+
+
+// Data Object for testing purposes
+	var initialData = [
+	{
+		"id": "100000",
+		"tContext": "errand",
+		"tName": "Get Office Supplies",
+		"tPriority": "5",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-03",
+		"dDate": "2011-08-04",
+		"tNotes": "Need to pick up some office supplies"
+	},
+	{
+		"id": "100001",
+		"tContext": "home",
+		"tName": "Do laundry",
+		"tPriority": "4",
+		"tFavorite": "on",
+		"sDate": "2011-08-02",
+		"eDate": "2011-08-04",
+		"dDate": "2011-08-05",
+		"tNotes": ""
+	
+	},
+	{
+		"id": "100002",
+		"tContext": "office",
+		"tName": "Create Presentation",
+		"tPriority": "7",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-05",
+		"dDate": "2011-08-06",
+		"tNotes": "Need to get keynote presentation made."
+	
+	},
+	{
+		"id": "100003",
+		"tContext": "calls",
+		"tName": "Call utility company",
+		"tPriority": "3",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-02",
+		"dDate": "2011-08-02",
+		"tNotes": "Call about recent bill"
+		
+	},
+	{
+		"id": "100004",
+		"tContext": "people",
+		"tName": "Delegate Presentation Segment",
+		"tPriority": "6",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
+		"eDate": "2011-08-09",
+		"dDate": "2011-08-10",
+		"tNotes": "Need to delegate the production segment of presentation."
+	
+	},
+	{
+		"id": "100005",
+		"tContext": "waiting",
+		"tName": "Operations Presentation",
+		"tPriority": "5",
+		"tFavorite": "",
+		"sDate": "2011-08-01",
+		"eDate": "",
+		"dDate": "2011-08-05",
+		"tNotes": "Waiting on operations presentation segment from Jane."
+	
+	},
+		
+	];
+	
+	
+	// END OF : Data Object
+
+
+
+// Altering function to print out table of data
+function showCategory( urlObj, options) {
+	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
+		tContextName = urlObj.hash.replace( /.*category=/, "" ),
+		category = categoryData[ categoryName],
+		context = initialData [categoryName],
+		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
+/*	<li><a href="index.html">
+				<h3>jQuery Team</h3>
+				<p><strong>Boston Conference Planning</strong></p>
+				<p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+				<p class="ui-li-aside"><strong>9:18</strong>AM</p>
+			</a></li> */
+		if (category) {
+				var $page = $(pageSelector),
+					$header = $page.children( ":jqmData(role=header)"),
+					$content = $page.children(":jqmData(role=content)"),
+					markup = "<p><img src=\"" + category  + "/>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
+					cItems = category.items,
+					numItems = cItems.length;
+					// Make a list item for each item in the category and add to markup
+					for (var i = 0; i < numItems; i++ ) {
+							//markup += "<li><h3>" + cItems[i].name + "<p><strong>" + + "</strong></p>";
+							//markup += "<p>" + tNotes + "</p>"
+							markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].tPriority +"</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";	
+					}
+					markup += "</ul>";
+					$header.find("h1").html(category.name);
+					$content.html(markup);
+					$page.page();
+					$content.find(":jqmData(role=listview)" ).listview();
+					options.dataUrl = urlObj.href;
+					$.mobile.changePage($page, options);
+		}
+}
+
+
+
+// END OF: Altering function to print out table of data
+
 
 $(document).bind("pagebeforechange", function(e, data) {
 		if (typeof data.toPage === "string") {
