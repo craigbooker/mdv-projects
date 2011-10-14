@@ -10,6 +10,16 @@
 <script src="http://jquerymobile.com/test/js/"></script>
 <script src="js/custom.js"></script>
 <script src="js/libs/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+   <script>
+
+    $(document).ready(function() {
+    var today = new Date();
+    var todayStr = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
+    $('#mydate').trigger('datebox', {'method':'set', 'value':todayStr});
+     });
+
+</script>
 </head>
 
 <body>
@@ -68,7 +78,7 @@
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
 				<li><a href="#settings" data-icon="gear">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
@@ -113,25 +123,35 @@
 								</div> <!-- Add Task To Favorites  -->
 									
 								<div data-role="fieldcontain">
-									<label for="sDate">Start Date:</label><input type="date" id="sDate">
+								<fieldset data-role="controlgroup">
+									<a href="#" data-role="button" data-icon="grid" data-iconpos="right"><label for="sDate" data-position="left">Start Date:</label><input type="date" id="sDate"></a>
+								</fieldset>
 								</div><!-- Task Start Date -->
 									
 								<div data-role="fieldcontain">
-									<label for="eDate">End Date:</label><input type="date" id="eDate">
+								<fieldset data-role="controlgroup">
+									<a href="#" data-role="button" data-icon="grid" data-iconpos="right">
+									<label for="eDate">End Date:</label><input type="date" id="eDate"></a>
+								</fieldset>
+
 								</div><!-- Task End Date -->
 									
 								<div data-role="fieldcontain">
-									<label for="dDate">Due Date:</label><input type="date" id="dDate">
+								<fieldset data-role="controlgroup">
+									<a href="#" data-role="button" data-icon="grid" data-iconpos="right">
+									<label for="dDate">Due Date:</label><input type="date" id="dDate"></a>
+								</fieldset>
+
 								</div><!-- Task Due Date  -->
 									
 								<div data-role="fieldcontain">
-									<label for="tNotes">Notes:</label><textarea id="tNotes"></textarea>
+									<label for="tNotes">Notes:</label><textarea id="tNotes" placeholder="Add details to help you recall the task details."></textarea>
 								</div><!-- Allows For Any Notes For Task -->
 						</fieldset>
 					<!-- End of fieldset  -->
 					<div class="ui-body ui-body-b">
 						<fieldset class="ui-grid-a">
-							<button type="submit" id="submitForm" data-theme="a">Submit</button>
+							<button type="submit" id="submitForm" data-theme="b">Submit</button>
 					    </fieldset>
 					</div>	
 			</form>			
@@ -140,7 +160,7 @@
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
 				<li><a href="#settings" data-icon="gear">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
@@ -189,7 +209,7 @@
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
 				<li><a href="#settings" data-icon="gear">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
@@ -211,7 +231,7 @@
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
 				<li><a href="#settings" data-icon="gear">Settings</a></li>
 				<li><a href="#about_app" data-icon="info">About</a></li>
 			</ul>
@@ -222,6 +242,7 @@
 
 
 
+<script src="js/main.js"></script>
 
 
 </body>

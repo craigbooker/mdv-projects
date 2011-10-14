@@ -37,12 +37,44 @@ var makeCats = function (name) {
 };
 makeCats();
 
-var contextList = [
-	{
-		"": ""
-	}
+// ----- Make Cats New Function
 
-];
+	var makeCategory = function( urlObj, options) {
+	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
+		category = categoryData[ categoryName],
+		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
+/*	<li><a href="index.html">
+				<h3>jQuery Team</h3>
+				<p><strong>Boston Conference Planning</strong></p>
+				<p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+				<p class="ui-li-aside"><strong>9:18</strong>AM</p>
+			</a></li> */
+		if (category) {
+				var $page = $(pageSelector),
+					$header = $page.children( ":jqmData(role=header)"),
+					$content = $page.children(":jqmData(role=content)"),
+					markup = "<p><img src=\"" + category  + "/>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
+					cItems = category.items,
+					numItems = cItems.length;
+					// Make a list item for each item in the category and add to markup
+					for (var i = 0; i < numItems; i++ ) {
+							//markup += "<li><h3>" + cItems[i].name + "<p><strong>" + + "</strong></p>";
+							//markup += "<p>" + tNotes + "</p>"
+							markup += "<option>" + catNames[i] + "</option>"
+							markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].tPriority +"</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";	
+					}
+					markup += "</ul>";
+					$header.find("h1").html(category.name);
+					$content.html(markup);
+					$page.page();
+					$content.find(":jqmData(role=listview)" ).listview();
+					options.dataUrl = urlObj.href;
+					$.mobile.changePage($page, options);
+		}
+}
+
+
+// ---- End of Cats New Function
 
 // -------  Set Initial Data - using an object --------------------------
 	function intializeData() {
@@ -180,7 +212,7 @@ var contextList = [
 						name: "Plant Grass Seed"
 					},
 				
-				]
+				],
 				priority: [
 					{
 						tPriority: "5"
