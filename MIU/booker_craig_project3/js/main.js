@@ -1,4 +1,6 @@
+
 // Craig Booker  |  MIU Project 3 | 10/10/2011
+
 var locFormStor;
 var formDataStorage;
 var editing;
@@ -6,6 +8,7 @@ var editing;
 var catNames = ["CONTEXT", "errand", "home", "office", "calls", "people", "waiting"];
 var formTag = document.getElementById('form');
 var makePara = document.createElement("p");
+
 var makeDiv = document.createElement("div");
 var makeLabel = document.createElement("label");
 //var getTContext	= document.getElementById('tContextList');
@@ -15,9 +18,6 @@ makeDiv.setAttribute("data-role", "fieldcontain");
 makeSelect.setAttribute("id", "tContext");
 makeSelect.setAttribute("name", "tContext");
 makeSelect.setAttribute("data-native-menu", "false");
-
-
-										
 
 
 var makeCats = function (name) {
@@ -30,8 +30,10 @@ var makeCats = function (name) {
 		makeOption.appendChild(optText);
 		makeSelect.appendChild(makeOption);
 	}
+
 	makeDiv.appendChild(makeSelect);
 	makePara.appendChild(makeDiv);
+
 	var getUL = document.getElementById('form')[0].firstChild;
 	var paraSelect = document.getElementById('form')[0].insertBefore(makePara, getUL);
 };
@@ -156,6 +158,8 @@ makeCats();
 	},
 		
 	];
+<<<<<<< HEAD
+=======
 	
 	var categoryData = {
 			errand: {
@@ -527,6 +531,7 @@ $(document).bind("pagebeforechange", function(e, data) {
 			}
 		}
 });
+>>>>>>> dynamic-index
 
 	// Simple example of read data
 	var popluate = function(data) {
@@ -624,7 +629,11 @@ function validateForm() {
 // -------   Build Browse Tasks by Context --------------------------
 
 
+<<<<<<< HEAD
+function bluildIndexPage(id) {
+=======
 function bluildPage(id) {
+>>>>>>> dynamic-index
 	var ttlValidKeys = 8;
 	//var contextNames = catNames;
 	var context = ["none", "errand", "home", "office", "phone", "people", "waiting"];
@@ -815,7 +824,11 @@ function getItems(id) {
 function saveItems(id) {
 	//alert("Inside Save items function");
 	var itemId = id;
+<<<<<<< HEAD
+	alert(editing);
+=======
 	//alert(editing);
+>>>>>>> dynamic-index
 	validateForm(id);
 	//if (editing === "false") {
 	var itemId				=	Math.floor(Math.random()*100000000001);
