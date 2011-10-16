@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- 
+	Name: Craig Booker
+	Class: MIU
+	Project: 3
+	Date: 10/10/2011
+ -->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>MIU : Project 3</title>
+<link rel="stylesheet"  href="http://jquerymobile.com/test/themes/default/">
+<script src="http://jquerymobile.com/test/js/jquery.js"></script>
+<script src="http://jquerymobile.com/test/js/"></script>
+<script src="js/custom.js"></script>
+<script src="js/libs/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+   <script>
+
+    $(document).ready(function() {
+    var today = new Date();
+    var todayStr = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
+    $('#mydate').trigger('datebox', {'method':'set', 'value':todayStr});
+     });
+
+</script>
+</head>
+
+<body>
+
+<!-- START OF: home -->
+<div id="home" data-role="page">
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+	</div><!-- /header -->
+	<div data-role="secondary header">
+			<img src="img/goal_setting.jpg" width="320px" height="175px">
+    </div>
+	<!--div data-role="list-divider" class="ui-bar-a">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
+	    		<!--li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
+			<!--/ul>
+	</div-->
+<div data-role="list-divider" class="ui-bar-a">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
+			</ul>
+	</div>	
+  <!--div data-role="header"><h1>Categories</h1></div-->
+  <div data-role="content" id="nav">
+			<ul data-role="listview" value="" data-filter="true" placeholder="Search">
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=errand"> 
+					<img src="img/errand_sml.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=home">
+					<img src="img/home_sml.png" class="ui-li-icon" />Home<span class="ui-li-count">5</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=office">
+					<img src="img/office_sml.png" class="ui-li-icon" />Office<span class="ui-li-count">10</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=calls">
+					<img src="img/calls_sml.png" class="ui-li-icon" />Calls<span class="ui-li-count">20</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=people">
+					<img src="img/people_sml.png" class="ui-li-icon" />People<span class="ui-li-count">5</span></a>
+				</li>
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=waiting" data-theme="a">
+					<img src="img/waiting_sml.png" class="ui-li-icon" />Waiting<span class="ui-li-count">0</span></a>
+				</li>
+			
+			</ul>
+		</div> <!-- End of Seondary Content -->
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- / footer navbar -->
+	</div><!-- /footer -->
+</div>
+<!-- END OF: home -->
+
+
+<!-- START OF: add_item -->
+
+<div data-role="page" id="add_item">
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+	</div><!-- /header -->
+	<div data-role="secondary header">
+			<img src="img/goal_setting.jpg" width="320px" height="175px">
+    </div>
+	<div data-role="list-divider" class="ui-bar-a">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-a">Task Details</li>
+			</ul>
+	</div>
+		<div data-role="content" id="nav">
+		<form id="form" action="#" onsubmit="saveItems();" > 
+				<!--div data-role="header" id="header" theme="a"><h2>Add Task Item</h2></div> <!-- header -->
+						<fieldset data-role="controlgroup">
+							<legend><strong>Details</strong></legend>
+								<div data-role="fieldcontain">
+									<label for="tName">Task Name:</label><input type="text" id="tName" />
+								</div>
+								
+								<div data-role="fieldcontain">
+									<label for="tPriority">Priority</label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="b" />
+								</div>
+								
+								<div data-role="fieldcontain">
+									<label for="tFavorite">Add to Favorites?</label><input type="checkbox" id="tFavorite">
+								</div> <!-- Add Task To Favorites  -->
+									
+								<div data-role="fieldcontain">
+								<fieldset data-role="controlgroup">
+									<a href="#" data-role="button" data-icon="grid" data-iconpos="right"><label for="sDate" data-position="left">Start Date:</label><input type="date" id="sDate"></a>
+								</fieldset>
+								</div><!-- Task Start Date -->
+									
+								<div data-role="fieldcontain">
+								<fieldset data-role="controlgroup">
+									<a href="#" data-role="button" data-icon="grid" data-iconpos="right">
+									<label for="eDate">End Date:</label><input type="date" id="eDate"></a>
+								</fieldset>
+
+								</div><!-- Task End Date -->
+									
+								<div data-role="fieldcontain">
+								<fieldset data-role="controlgroup">
+									<a href="#" data-role="button" data-icon="grid" data-iconpos="right">
+									<label for="dDate">Due Date:</label><input type="date" id="dDate"></a>
+								</fieldset>
+
+								</div><!-- Task Due Date  -->
+									
+								<div data-role="fieldcontain">
+									<label for="tNotes">Notes:</label><textarea id="tNotes" placeholder="Add details to help you recall the task details."></textarea>
+								</div><!-- Allows For Any Notes For Task -->
+						</fieldset>
+					<!-- End of fieldset  -->
+					<div class="ui-body ui-body-b">
+						<fieldset class="ui-grid-a">
+							<button type="submit" id="submitForm" data-theme="b">Submit</button>
+					    </fieldset>
+					</div>	
+			</form>			
+		</div> <!-- End of Seondary Content -->
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- / footer navbar -->
+	</div><!-- /footer -->
+</div>
+<!-- END OF: add_items -->
+	
+<!-- START OF: about_app -->
+
+<div id="about_app" data-role="page">
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+			     <!--h1>Task Manager</h1><!-- header -->
+	    </div><!-- /header -->
+	<div data-role="list-divider" class="ui-bar-c" data-position="inset"><h4>About Task Manager App</h4>
+	
+	</div>
+
+  <div data-role="content">
+	  <div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>About App</h3>
+					<p>Inspired by the book by David Allen, "Get Things Done."</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Contact</h3>
+					<p>Appscient <br /> <a href="mailto:support@appscient.co">support@appscient.co</a>
+					</p>
+	
+				</div>
+			</div>
+	</div>
+  <div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- / footer navbar -->
+	</div><!-- /footer -->
+</div>
+<!-- END OF: about_app -->
+
+<!-- START OF: category-items -->
+<div id="category-items" data-role="page">
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+			     <!--h1>Task Manager</h1><!-- header -->
+	    </div><!-- /header -->
+  <div data-role="header"><h1></h1></div>
+  <div data-role="content"></div>
+  <div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- / footer navbar -->
+	</div><!-- /footer -->
+</div>
+<!-- END OF: category-items -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
