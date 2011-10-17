@@ -1,23 +1,27 @@
 
 // Craig Booker  |  MIU Project 4 | 10/16/2011
+window.addEventListener("DomContentLoaded", function() {
 
-var locFormStor;
-var formDataStorage;
-var editing;
-
-var catNames = ["CONTEXT", "errand", "home", "office", "calls", "people", "waiting"];
-var formTag = document.getElementById('form');
-var makePara = document.createElement("p");
-
-var makeDiv = document.createElement("div");
-var makeLabel = document.createElement("label");
-//var getTContext	= document.getElementById('tContextList');
-var	makeSelect = document.createElement("select");
-//var makeLabel = document.createElement("label");
-makeDiv.setAttribute("data-role", "fieldcontain");
-makeSelect.setAttribute("id", "tContext");
-makeSelect.setAttribute("name", "tContext");
-makeSelect.setAttribute("data-native-menu", "false");
+	// getElementById Function
+	function $(x) {
+		var theElement = document.getElementById(x);
+		return theElement;
+	}
+	var catNames = ["CONTEXT", "errand", "home", "office", "calls", "people", "waiting"];
+	var formTag = document.getElementById('form');
+	var makePara = document.createElement("p");
+	var locFormStor;
+	var formDataStorage;
+	var editing;
+	var makeDiv = document.createElement("div");
+	var makeLabel = document.createElement("label");
+	//var getTContext	= document.getElementById('tContextList');
+	var	makeSelect = document.createElement("select");
+	//var makeLabel = document.createElement("label");
+	makeDiv.setAttribute("data-role", "fieldcontain");
+	makeSelect.setAttribute("id", "tContext");
+	makeSelect.setAttribute("name", "tContext");
+	makeSelect.setAttribute("data-native-menu", "false");
 
 
 var makeCats = function (name) {
@@ -616,7 +620,7 @@ function validate(e) {
 
 // -------   Start of NEW VERSION : Variable Defaults --------------------------
 
-	var context = ["---Choose a Context", "errand", "home", "office", "calls", "people", "waiting"],
+	var context = ["---Choose a Context---", "errand", "home", "office", "calls", "people", "waiting"],
 			favoriteValue = "No",
 			errMsg = $('errors');
 	;
@@ -875,8 +879,8 @@ function saveItems(id) {
 
 // -------   Start of: Rebuilt Find value of the check box. --------------------------
 	function getCheckboxValue() {
-			if ($('fav').checked) {
-				favoriteValue = $('fav').value;
+			if ($('favorite').checked) {
+				favoriteValue = $('favorite').value;
 			} else {
 				favoriteValue = "No"
 			}
@@ -1036,3 +1040,6 @@ function initialChecks() {
 	return formDataStorage;
 }
 initialChecks();
+
+
+ });
