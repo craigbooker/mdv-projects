@@ -1,5 +1,5 @@
 
-// Craig Booker  |  MIU Project 3 | 10/10/2011
+// Craig Booker  |  MIU Project 4 | 10/16/2011
 
 var locFormStor;
 var formDataStorage;
@@ -399,84 +399,6 @@ makeCats();
 
 
 
-// Data Object for testing purposes
-	var initialData = [
-	{
-		"id": "100000",
-		"tContext": "errand",
-		"tName": "Get Office Supplies",
-		"tPriority": "5",
-		"tFavorite": "",
-		"sDate": "2011-08-01",
-		"eDate": "2011-08-03",
-		"dDate": "2011-08-04",
-		"tNotes": "Need to pick up some office supplies"
-	},
-	{
-		"id": "100001",
-		"tContext": "home",
-		"tName": "Do laundry",
-		"tPriority": "4",
-		"tFavorite": "on",
-		"sDate": "2011-08-02",
-		"eDate": "2011-08-04",
-		"dDate": "2011-08-05",
-		"tNotes": ""
-	
-	},
-	{
-		"id": "100002",
-		"tContext": "office",
-		"tName": "Create Presentation",
-		"tPriority": "7",
-		"tFavorite": "",
-		"sDate": "2011-08-01",
-		"eDate": "2011-08-05",
-		"dDate": "2011-08-06",
-		"tNotes": "Need to get keynote presentation made."
-	
-	},
-	{
-		"id": "100003",
-		"tContext": "calls",
-		"tName": "Call utility company",
-		"tPriority": "3",
-		"tFavorite": "",
-		"sDate": "2011-08-01",
-		"eDate": "2011-08-02",
-		"dDate": "2011-08-02",
-		"tNotes": "Call about recent bill"
-		
-	},
-	{
-		"id": "100004",
-		"tContext": "people",
-		"tName": "Delegate Presentation Segment",
-		"tPriority": "6",
-		"tFavorite": "",
-		"sDate": "2011-08-01",
-		"eDate": "2011-08-09",
-		"dDate": "2011-08-10",
-		"tNotes": "Need to delegate the production segment of presentation."
-	
-	},
-	{
-		"id": "100005",
-		"tContext": "waiting",
-		"tName": "Operations Presentation",
-		"tPriority": "5",
-		"tFavorite": "",
-		"sDate": "2011-08-01",
-		"eDate": "",
-		"dDate": "2011-08-05",
-		"tNotes": "Waiting on operations presentation segment from Jane."
-	
-	},
-		
-	];
-	
-	
-	// END OF : Data Object
 
 
 

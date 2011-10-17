@@ -2,13 +2,13 @@
 <!-- 
 	Name: Craig Booker
 	Class: MIU
-	Project: 3
-	Date: 10/14/2011
+	Project: 4
+	Date: 10/16/2011
  -->
 <html>
     <head>
         <meta charset="utf-8" />       
-        <title>MIU :: Project 3 :: Task Manager</title>
+        <title>MIU :: Project 4 :: Task Manager</title>
 
         <meta name="keywords" contents="Task, to do, getting things done" />
         <meta name="description" content="Adds a task to a to do list." />
@@ -21,11 +21,11 @@
         <meta http-equiv="cleartype" content="on">
 
         <!-- StyleSheets under here -->
-
-         <!-- JavaScript is normally at the end of the body, except for modernizr -->
-         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
-	<link type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" rel="stylesheet" /> 
+		<link type="text/css" rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
+		<link type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" rel="stylesheet" /> 
 	<link type="text/css" href="http://dev.jtsage.com/jQM-DateBox/css/demos.css" rel="stylesheet" /> 
+         <!-- JavaScript is normally at the end of the body, except for modernizr -->
+         
 	
 	<!-- NOTE: Script load order is significant! -->
 	
@@ -47,48 +47,46 @@
   <body> 
 
 <!-- Start of Add Item page:  --> 
-<div data-role="page" id="index">
+<div data-role="page" id="add_item">
 
 	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 	    </div><!-- /header -->	
 	    <div data-role="content"><a href="#top_page" name="top_page"></a>
 			<div data-role="primary-content">
-						<form id="form" action="#" onsubmit="saveItems();" > 
+						<form id="form" action="#" onsubmit="saveItems();"> 
 								<fieldset data-role="controlgroup">
 									<legend><strong>Enter Task Details</strong></legend>
 										<div data-role="fieldcontain">
-											<label for="tName">Task Name:</label><input type="text" id="tName" />
+											<label for="tName">Task Name:</label><input type="text" id="tName" placeholder="Enter Task Title" />
 										</div><!-- Set Task Name -->
 										<div data-role="fieldcontain">
 											<fieldset data-role="controlgroup">
 												<ul data-role="controlgroup">
-												<li><label for="tPriority">Priority </label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="a" /><h5>Low Priority = 0-4 High Priority = 5-10  </h5></li>
+												<li><label for="tPriority">Priority </label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="a" /><h5>Priority (Low  = 0-2 Medium = 3-5 High = 6-10)  </h5></li>
 												</ul>
 											</fieldset>
 										</div><!-- Set Priority  -->
-										<div data-role="fieldcontain" data-type="horizontal">
+										<div data-role="fieldcontain">
 										 	<fieldset data-role="controlgroup">
-										 
-												<legend>Add to Favorites: </legend>
+												<legend>Add to Favorites: </legend><h6>(Common Task)</h6>
 												<input type="checkbox" name="tFavorirte" id="tFavorite" class="custom" />
-												<label for="tFavorite">Yes </label><h6>(Common Task)</h6>
-												
+												<label for="tFavorite">Yes </label>
 										    </fieldset>
 										</div><!-- Add Task To Favorites  -->
 		
 										<div data-role="fieldcontain" >
-											<label for="sDate">Start Date:</label><input id="sDate" name="sDate" type="date" data-role="datebox"
-   data-options='{"mode": "calbox", "disableManualInput": true}'></div><!-- Task Start Date -->
+											<p><h2>Timeline</h2><h6>Choose date by clicking on grid icon to the right side of the field.</h6></p>
+											<label for="sDate">Start Date:</label><input id="sDate" name="sDate" type="date" data-role="datebox" data-options='{"mode": "calbox", "disableManualInput": true}' data-iconpos="right" placeholder="Choose start date.">
+										</div><!-- Task Start Date -->
 											
 										<div data-role="fieldcontain">
-											<label for="eDate">End Date:</label><input type="date" id="eDate" type="date" data-role="datebox"
-   data-options='{"mode": "calbox", "disableManualInput": true}'>
+											<label for="eDate">End Date:</label><input type="date" id="eDate" type="date" data-role="datebox" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose end date.">
 										</div><!-- Task End Date -->
 											
 										<div data-role="fieldcontain">
 											<label for="dDate">Due Date:</label><input type="date" id="dDate" type="date" data-role="datebox"
-   data-options='{"mode": "calbox", "disableManualInput": true}'>
+   data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose due date.">
 										</div><!-- Task Due Date  -->
 											
 										<div data-role="fieldcontain">
@@ -107,20 +105,15 @@
 	</div><!-- content -->
 	
 		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-				<li><a href="index.html" data-icon="home">Home</a></li>
-				<!--li><a href="add_item.html" data-icon="plus">Add Task</a></li-->
-				<li><a href="about.html" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /footer -->
-	
-	
-	
-
-	
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+					<li><a href="index.html" data-icon="home">Home</a></li>
+					<!--li><a href="add_item.html" data-icon="plus">Add Task</a></li-->
+					<li><a href="about.html" data-icon="info">About</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
 	</div>
 	<!--END ADD TASK PAGE -->
 
