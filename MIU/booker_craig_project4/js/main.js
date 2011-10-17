@@ -861,6 +861,28 @@ function saveItems(id) {
 		localStorage.setItem(itemId, allItems.join(';'));
 		location.reload();
 } //saveItems
+
+// -------   Start of: Rebuilt Find value of selected radio button. --------------------------
+	function getSelectedRadio() {
+		var radios = document.forms[0].sex;
+		for(var i=0; i < radios.length; i++) {
+			if(radios[i].checked) {
+				sexValue = radios[i].value;
+			}
+		}
+	}
+// -------   End of: Rebuilt Find value of selected radio button. --------------------------
+
+// -------   Start of: Rebuilt Find value of the check box. --------------------------
+	function getCheckboxValue() {
+			if ($('fav').checked) {
+				favoriteValue = $('fav').value;
+			} else {
+				favoriteValue = "No"
+			}
+	}
+// -------   End of: Rebuilt Find value of the check box. --------------------------
+
 // -------   Start of: Rebuilt Toggle Controls--------------------------
 
 function toggleControls(n) {
