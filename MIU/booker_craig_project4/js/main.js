@@ -861,6 +861,29 @@ function saveItems(id) {
 		localStorage.setItem(itemId, allItems.join(';'));
 		location.reload();
 } //saveItems
+// -------   Start of: Rebuilt Toggle Controls--------------------------
+
+function toggleControls(n) {
+	switch(n) {
+		case "on":
+				$('addTaskForm').style.display = "none";
+				$('clear').style.display = "inline";
+				$('displayLink').style.display = "none";
+				$('addNew').style.display = "inline";
+				break;
+		case "off":
+				$('addTaskForm').style.display = "block";
+				$('clear').style.display = "inline";
+				$('displayLink').style.display = "inline";
+				$('addNew').style.display = "none";
+				$('items').style.display = "none";
+				break;
+		default:
+			return false;
+	}
+}
+// -------   End of: Rebuilt Toggle Controls--------------------------
+
 
 // -------   Start of: Rebuilt Save Form Data --------------------------
 	function storeData(key) {
