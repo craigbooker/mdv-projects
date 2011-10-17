@@ -1,4 +1,4 @@
-	var categoryData = {
+	var json = {
 	//end of ERRAND tasks
 			errand: {
 				description: "All your errands waiting to be done.",
