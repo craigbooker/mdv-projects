@@ -389,12 +389,6 @@ console.log(receivedjson);
 	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
 		category = categoryData[ categoryName],
 		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
-/*	<li><a href="index.html">
-				<h3>jQuery Team</h3>
-				<p><strong>Boston Conference Planning</strong></p>
-				<p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
-				<p class="ui-li-aside"><strong>9:18</strong>AM</p>
-			</a></li> */
 		if (category) {
 				var $page = $(pageSelector),
 					$header = $page.children( ":jqmData(role=header)"),
@@ -570,6 +564,64 @@ function validateForm() {
 		}
 	} // validateForm	
 
+
+// -------   NEW VERSION : Form Validation --------------------------
+function validate(e) {
+	var getContext = $('context');
+	var getTname = $('tName');
+	var getPriority = $('priority');
+	var getSdate = $('sDate');
+	var getEdate = $('eDate');
+	var getDdate = $('dDate');
+
+	// Get Error Mesages
+	var messageAry = [];
+	//Context Validation
+	if (getContext.value === "---Choose Context ---") {
+		var contextError = "Please choose a context.";
+		getContext.style.border = "1px solid red";
+		messageAry.push(contextError);
+	}
+	//Task Name Validation
+	if (getTname.value === "") {
+		var tNameError = "Please enter a task name.";
+		getTname.style.border = "1px solid red";
+		messageAry.push(tNameError);	
+	}
+	
+	// If there are any errors, display them on the screen.
+	if(messageAry.length > 1) {
+		for (var i=0, j=messageAry.length; i < j; i++) {
+			var txt = document.createElement('li');
+			txt.innnerHTML = messageAry[i];
+			errMsg.appendChild(txt);
+		}
+	
+	}
+	
+}
+
+// -------   End of NEW VERSION : Form Validation --------------------------
+
+
+// -------   Start of NEW VERSION : Variable Defaults --------------------------
+
+// Variable Defaults
+	var context = ["---Choose a Context", "errand", "home", "office", "calls", "people", "waiting"],
+			favoriteValue = "No",
+			errMsg = $('errors');
+	;
+	makeCats();
+// -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
+	var displayLink = $('displayLink');
+	displayLink.addEventListener("click", getData);
+	var clearLink = $('clear');
+	clearLink.addEventListener("click", clearLocal);
+	var save = $('submit');
+	save.addEventListener("click", validate);	
+	
+// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
+	
 
 // -------   Build Browse Tasks by Context --------------------------
 
