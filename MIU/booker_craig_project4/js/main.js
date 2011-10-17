@@ -574,6 +574,11 @@ function validate(e) {
 	var getEdate = $('eDate');
 	var getDdate = $('dDate');
 
+	//Reset Error Messages
+	errMsg.innerHTML = "";
+	getContext.style.border = "1px solid black";
+	getTname.style.border = "1px solid black";
+
 	// Get Error Mesages
 	var messageAry = [];
 	//Context Validation
@@ -590,7 +595,7 @@ function validate(e) {
 	}
 	
 	// If there are any errors, display them on the screen.
-	if(messageAry.length > 1) {
+	if(messageAry.length >= 1) {
 		for (var i=0, j=messageAry.length; i < j; i++) {
 			var txt = document.createElement('li');
 			txt.innnerHTML = messageAry[i];
@@ -598,7 +603,12 @@ function validate(e) {
 		}
 	
 	}
-	
+	e.preventDefault();
+	return false;
+	} else {
+			// If all is okay, save out data!
+			storeData();
+	}
 }
 
 // -------   End of NEW VERSION : Form Validation --------------------------
@@ -606,12 +616,12 @@ function validate(e) {
 
 // -------   Start of NEW VERSION : Variable Defaults --------------------------
 
-// Variable Defaults
 	var context = ["---Choose a Context", "errand", "home", "office", "calls", "people", "waiting"],
 			favoriteValue = "No",
 			errMsg = $('errors');
 	;
 	makeCats();
+	
 // -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 	var displayLink = $('displayLink');
 	displayLink.addEventListener("click", getData);
@@ -816,7 +826,7 @@ function getItems(id) {
 	}
 }
 
-// -------   Save Form Data --------------------------
+// -------   Start of: Save Form Data --------------------------
 
 function saveItems(id) {
 	//alert("Inside Save items function");
@@ -851,6 +861,29 @@ function saveItems(id) {
 		localStorage.setItem(itemId, allItems.join(';'));
 		location.reload();
 } //saveItems
+
+// -------   Start of: Rebuilt Save Form Data --------------------------
+	function storeData(key) {
+		var Id				=	Math.floor(Math.random()*100000000001);
+		//getSelectedRadio();
+		getCheckboxValue();
+		var item			=	[];
+				item.context	=	["Context: ", $('contexts').value];
+				item.tName		=	["Task Name: ", $('tName').value];
+				item.priority		=	["Priority: ", $('priority').value];
+				item.favorite	=	["Favorite: ", $('favorite').value];
+				item.sDate		=	["Start Date: ", $('sDate').value];
+				item.eDate		=	["End Date: ", $('eDate').value];
+				item.dDate		=	["Due Date: ", $('dDate').value];
+				item.notes		=	["Notes: ", $('notes').value];
+		// Save data into local storage: use stringify to convert our object to a string
+		localStorage.setItem(id, JSON.stringify(item));
+		alert("Task Saved!");
+
+	}
+// -------   End of:Rebuilt Save Form Data --------------------------
+
+
 
 
 // -------   Edit Task Data --------------------------
@@ -924,7 +957,7 @@ function saveItems(id) {
 		window.location.reload();
 } // editItem
 	
-// -------   Delete Task Data --------------------------
+// ------- Start of:  Delete Task Data --------------------------
 function deleteTask(id) {
 	var ask	=	confirm("Are you sure you want to delete this task?");
 	if (ask) {
@@ -935,7 +968,7 @@ function deleteTask(id) {
 	}
 }
 
-// -------   Delete All Stored Tasks --------------------------
+// -------   Start of: Delete All Stored Tasks --------------------------
 function clearLocal() {
 	localStorage.clear();
 	return false;
