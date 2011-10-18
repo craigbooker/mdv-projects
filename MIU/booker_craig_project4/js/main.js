@@ -7,6 +7,20 @@ window.addEventListener("DomContentLoaded", function() {
 		var theElement = document.getElementById(x);
 		return theElement;
 	}
+	function makeCats () {
+			var formTag = document.getElementsByTagName("form"),
+					selectLi = $('select'),
+					makeSelect = document.createElement('select');
+					makeSelect.setAttribute("id", "context");
+			for(var i = 0, j = contextNames.length; i<j; i++) {
+				var makeOption = document.createElement('option');
+				var optText = contextNames[i];
+				makeOption.setAttribute("value", optText);
+				makeOption.innerHTML = optText;
+				makeSelect.appendChild(makeOption);
+			}
+			select.Li.appendChild(makeSelect);
+	}
 	var catNames = ["CONTEXT", "errand", "home", "office", "calls", "people", "waiting"];
 	var formTag = document.getElementById('form');
 	var makePara = document.createElement("p");
@@ -59,7 +73,7 @@ var jsonstring = JSON.stringify(json);
 //console.log(jsonstring);
 
 var receivedjson = JSON.parse(jsonstring);
-console.log(receivedjson);
+//console.log(receivedjson);
 
 // END OF: json_data function
 
@@ -620,19 +634,19 @@ function validate(e) {
 
 // -------   Start of NEW VERSION : Variable Defaults --------------------------
 
-	var context = ["---Choose a Context---", "errand", "home", "office", "calls", "people", "waiting"],
+	var contextNames = ["---Choose a Context---", "errand", "home", "office", "calls", "people", "waiting"],
 			favoriteValue = "No",
 			errMsg = $('errors');
 	;
 	makeCats();
 	
 // -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
-	var displayLink = $('displayLink');
+	/*var displayLink = $('displayLink');
 	displayLink.addEventListener("click", getData);
 	var clearLink = $('clear');
 	clearLink.addEventListener("click", clearLocal);
 	var save = $('submit');
-	save.addEventListener("click", validate);	
+	save.addEventListener("click", validate);	*/
 	
 // -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 	
@@ -1040,6 +1054,11 @@ function initialChecks() {
 	return formDataStorage;
 }
 initialChecks();
+
+// -------   Start of: Create Footer --------------------------
+
+
+// -------   End of: Create Footer --------------------------
 
 
  });
