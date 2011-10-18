@@ -199,8 +199,6 @@ var receivedjson = JSON.parse(jsonstring);
 	},
 		
 	];
-<<<<<<< HEAD
-=======
 	
 	var categoryData = {
 			errand: {
@@ -262,11 +260,7 @@ var receivedjson = JSON.parse(jsonstring);
 					{
 						tPriority: "5"
 
-					},
-				
-				
-				
-				
+					},			
 				]
 			},
 			office: {
@@ -397,11 +391,8 @@ var receivedjson = JSON.parse(jsonstring);
 				
 				]
 			}
-	}
-	
-	
-	
-	
+	}	
+// -------   Start of : Show Category List --------------------------
 		
 	function showCategory( urlObj, options) {
 	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
@@ -429,6 +420,7 @@ var receivedjson = JSON.parse(jsonstring);
 					$.mobile.changePage($page, options);
 		}
 }
+// -------   End of : Show Category List --------------------------
 
 
 
@@ -449,7 +441,21 @@ function showCategory( urlObj, options) {
 				<p><strong>Boston Conference Planning</strong></p>
 				<p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
 				<p class="ui-li-aside"><strong>9:18</strong>AM</p>
-			</a></li> */
+			</a></li>
+				  <div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>About App</h3>
+					<p>Inspired by the book by David Allen, "Get Things Done."</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Contact</h3>
+					<p>Appscient <br /> <a href="mailto:support@appscient.co">support@appscient.co</a>
+					</p>
+				</div>
+			</div>
+			
+			
+			 */
 		if (category) {
 				var $page = $(pageSelector),
 					$header = $page.children( ":jqmData(role=header)"),
