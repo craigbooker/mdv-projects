@@ -494,7 +494,6 @@ $(document).bind("pagebeforechange", function(e, data) {
 			}
 		}
 });
->>>>>>> dynamic-index
 
 	// Simple example of read data
 	var popluate = function(data) {
@@ -624,16 +623,13 @@ function validate(e) {
 			var txt = document.createElement('li');
 			txt.innnerHTML = messageAry[i];
 			errMsg.appendChild(txt);
-		}
 	
-	}
 	e.preventDefault();
 	return false;
 	} else {
 			// If all is okay, save out data!
 			storeData();
 	}
-}
 
 // -------   End of NEW VERSION : Form Validation --------------------------
 
@@ -643,7 +639,6 @@ function validate(e) {
 	var contextNames = ["---Choose a Context---", "errand", "home", "office", "calls", "people", "waiting"],
 			favoriteValue = "No",
 			errMsg = $('errors');
-	;
 	makeCats();
 	
 // -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
@@ -659,12 +654,7 @@ function validate(e) {
 
 // -------   Build Browse Tasks by Context --------------------------
 
-
-<<<<<<< HEAD
-function bluildIndexPage(id) {
-=======
 function bluildPage(id) {
->>>>>>> dynamic-index
 	var ttlValidKeys = 8;
 	//var contextNames = catNames;
 	var context = ["none", "errand", "home", "office", "phone", "people", "waiting"];
