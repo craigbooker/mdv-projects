@@ -801,16 +801,6 @@ function bluildPage(id) {
 
 
 
-// -------   Start of: Rebuilt Find value of selected radio button. --------------------------
-	function getSelectedRadio() {
-		var radios = document.forms[0].sex;
-		for(var i=0; i < radios.length; i++) {
-			if(radios[i].checked) {
-				sexValue = radios[i].value;
-			}
-		}
-	}
-// -------   End of: Rebuilt Find value of selected radio button. --------------------------
 
 // -------   Start of: Rebuilt Find value of the check box. --------------------------
 	function getCheckboxValue() {
@@ -954,8 +944,14 @@ function deleteTask(id) {
 
 // -------   Start of: Delete All Stored Tasks --------------------------
 function clearLocal() {
-	localStorage.clear();
-	return false;
+	if(localStorage.length === 0) {
+		alert("There is no data to clear");
+	} else {
+		localStorage.clear();
+		alert("All tasks are deleted!");
+		window.location.reload();
+		return false;
+	}
 } //clearLocal
 
 // -------  Check for Local Storage Support --------------------------
