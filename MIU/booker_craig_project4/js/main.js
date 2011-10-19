@@ -778,6 +778,7 @@ function bluildPage(id) {
 			var obj 		=	JSON.parse(value);
 			var makeSubList	=	document.createElement('ul');
 			makeLi.appendChild(makeSubList);
+			getImage(obj.group[1], makeSubList);
 			for(var n in obj) {
 				var makeSubLi	=	document.createElement('li');
 				makeSubList.appendChild(makeSubLi);
@@ -792,7 +793,15 @@ function bluildPage(id) {
 
 // -------   End of: Get Data NEW --------------------------
 
+// -------   Start of: Get Img NEW --------------------------
 
+	function getImage(catName, makeSubList) {
+		var imageLi	=	document.createElement('li');
+		makeSubList.appendChild('imageLi');
+		var newImage	=	document.createElement('img');
+		var setSrc	=	newImg.setAttribute("src", "images/"+ catName + ".png");
+		imageLi.appendChild(newImg);
+	}
 
 
 

@@ -1,52 +1,57 @@
 	var json = {
 	//end of ERRAND tasks
 			errand: {
-				description: "All your errands waiting to be done.",
+				//description: "All your errands waiting to be done.",
 				tasks: [
 					{
-						name: "Get Vacuum Bags",
-						priority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-12",
-						dDate: "2011-05-12",
-						notes: "Don't forget to get the model fj2 bags."
+						"context": ["Context:", "Errand" ],
+						"name": ["Task Name:", "Get Vacuum Bags" ],
+						"priority": ["Priority:", "5" ],
+						"favorite": ["Favorite:", ["Favorite:", "checked" ],
+						"sDate": ["Start Date", "2011-05-11" ],
+						"eDate": ["End Date:", "2011-05-12" ],
+						"dDate": ["Due Date:", "2011-05-12" ],
+						"notes": ["Notes:", "Don't forget to get the model fj2 bags." ]
 					},
 					{
-						name: "Buy Broom",
-						tPriority: "5",
-						favorite: "unchecked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-11",
-						dDate: "2011-05-11",
-						notes: "Large broom for garage."
+						"context": ["Context:", "Errand" ],
+						"name": ["Task Name:","Buy Broom"],
+						"priority": ["Priority:","5"],
+						"favorite": ["Favorite:", ["Favorite:", "unchecked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-11"],
+						"dDate": ["Due Date:", "2011-05-11"],
+						"notes": ["Notes:", "Large broom for garage."]
 					},		
 					{
-						name: "Buy blades for mower",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: "Honda SRT Model 5"
+						"context": ["Context:", "Errand" ],
+						"name": ["Task Name:", "Buy blades for mower"],
+						"priority": ["Priority:","5"],
+						"favorite": ["Favorite:",  "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", "Honda SRT Model 5"]
 					},		
 					{
-						name: "Buy pansies",
-						tPriority: "5",
-						favorite: "unchecked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: "For front flowerbed, purple and red."
+						"context": ["Context:", "Errand" ],
+						"name": ["Task Name:", "Buy pansies"],
+						"priority": ["Priority:","5"],
+						"favorite": ["Favorite:", ["Favorite:", "unchecked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", "For front flowerbed, purple and red."]
 					},
 					{
-						name: "Buy Grass Seed",
-						tPriority: "3",
-						favorite: "unchecked",			
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: "Get fescue for backyard."
+						"context": ["Context:", "Errand" ],
+						"name": ["Task Name:","Buy Grass Seed"],
+						"priority": ["Priority:","3"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", "Get fescue for backyard."]
 					}
 				],
 			}, //end of ERRAND tasks
@@ -55,265 +60,256 @@
 				description: "All your things around the house waiting to be done.",
 				tasks: [
 					{
-						name: "Vacuum House",
-						priority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Home" ],
+						"name": ["Task Name:", "Vacuum House"],
+						"priority": ["Priority:","5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Sweep Garage",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Home" ],
+						"name": ["Task Name:","Sweep Garage"],
+						"priority": ["Priority:","5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},		
 					{
-						name: "Mow Lawn",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Home" ],
+						"name": ["Task Name:", "Mow Lawn"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},		
 					{
-						name: "Plant Flowers",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Home" ],
+						"name": ["Task Name:", "Plant Flowers"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Plant Grass Seed",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
-					}
-				],
-			}, //end of HOME tasks	
-//Start of OFFICE tasks
-			office: {
-				name: "Office",
-				description: "All your tasks at the office to be done.",
-				tasks: [
-					{
-						name: "Order Office Supplies",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Home" ],
+						"name": ["Task Name:", "Plant Grass Seed"],
+						"priority": ["Priority:", "5"],
+						"favorite": "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Clean Desk",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Office" ],
+						"name": ["Task Name:", "Order Office Supplies"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
+					},
+					{
+						"context": ["Context:", "Office" ],
+						"name": ["Task Name:", "Clean Desk"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},		
 					{
-						name: "Reorganize Filecabinet",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
-
-					},		
-					{
-						name: "Meeting with Mike",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
-
-					},
-					{
-						name: "Prepare Sales Presentation",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
-					}
-				]
-			},	//end of OFFICE tasks
-//Start of CALL tasks
-			calls: {
-				name: "Calls",
-				description: "All your calls waiting to be made.",
-				tasks: [
-					{
-						name: "Call Joe from Shipping",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
-
-					},
-					{
-						name: "Call Car Dealer About Repair Status",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Office" ],
+						"name": ["Task Name:", "Reorganize Filecabinet"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 
 					},		
 					{
-						name: "Call AT&T About Texting Plan",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Office" ],
+						"name": ["Task Name:", "Meeting with Mike"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 
+					},
+					{
+						"context": ["Context:", "Office" ],
+						"name": ["Task Name:", "Prepare Sales Presentation"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
+					},
+					{
+						"context": ["Context:", "Calls" ],
+						"name": ["Task Name:","Call Joe from Shipping"],
+						"priority": ["Priority:","5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
+					},
+					{
+						"context": ["Context:", "Calls" ],
+						"name": ["Task Name:", "Call Car Dealer About Repair Status"],
+						"priority": ["Priority:","5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},		
 					{
-						name: "Call Client to Setup Meeting",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
-
+						"context": ["Context:", "Calls" ],
+						"name": ["Task Name:", "Call AT&T About Texting Plan"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
+					},		
+					{
+						"context": ["Context:", "Calls" ],
+						"name": ["Task Name:", "Call Client to Setup Meeting"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Call City About Utility Bill",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
-
-					},
-				
-				]
-			},	//end of CALLS tasks
-//Start of PEOPLE tasks
-			people: {
-				name: "People",
-				description: "All items delegated to people.",
-				tasks: [
-					{
-						name: "Mike is preparing operations presentation",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Calls" ],
+						"name": ["Task Name:", "Call City About Utility Bill"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Jane is organizing lunch party",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "People" ],
+						"name": ["Task Name:", "Mike is preparing operations presentation"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Joanne is creating spreadsheet for monthly budget",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "People" ],
+						"name": ["Task Name:", "Jane is organizing lunch party"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Joe is revising business plan",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "People" ],
+						"name": ["Task Name:", "Joanne is creating spreadsheet for monthly budget"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Judy is revisiting our marketing plan",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
-					},
-				]
-			},//end of PEOPLE tasks
-//Start of WAITING tasks
- 			waiting: {
-				name: "Waiting",
-				description: "All items that are on pause.",
-				tasks: [
-					{
-						name: "Research into new product line",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "People" ],
+						"name": ["Task Name:", "Joe is revising business plan"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Remodel Kitchen",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "People" ],
+						"name": ["Task Name:", "Judy is revisiting our marketing plan"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Buy new car",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Waiting" ],
+						"name": ["Task Name:", "Research into new product line"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Rewire Cat 6 cabling throughout house",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Waiting" ],
+						"name": ["Task Name:", "Remodel Kitchen"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					},
 					{
-						name: "Revamp company web site",
-						tPriority: "5",
-						favorite: "checked",
-						sDate: "2011-05-11",
-						eDate: "2011-05-14",
-						dDate: "2011-05-16",
-						notes: ""
+						"context": ["Context:", "Waiting" ],
+						"name": ["Task Name:", "Buy new car"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
+					},
+					{
+						"context": ["Context:", "Waiting" ],
+						"name": ["Task Name:", "Rewire Cat 6 cabling throughout house"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
+					},
+					{
+						"context": ["Context:", "Waiting" ],
+						"name": ["Task Name:", "Revamp company web site"],
+						"priority": ["Priority:", "5"],
+						"favorite": ["Favorite:", "checked"],
+						"sDate": ["Start Date", "2011-05-11"],
+						"eDate": ["End Date:", "2011-05-14"],
+						"dDate": ["Due Date:", "2011-05-16"],
+						"notes": ["Notes:", ""]
 					}
 				]
 			}//end of WAITING tasks
