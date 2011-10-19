@@ -102,7 +102,7 @@
 	    </div><!-- /header -->	
 	    <div data-role="content"><a href="#top_page" name="top_page"></a>
 			<div data-role="primary-content">
-						<form id="addTaskForm" action="#" onsubmit="saveItems();"> 
+						<form id="addTaskForm" method="post" action="#"> 
 								<div id="errors"></div>
 								<fieldset data-role="controlgroup">
 									<legend><strong>Enter Task Details</strong></legend>
@@ -145,7 +145,8 @@
 							<!-- End of fieldset  -->
 							<div class="ui-body ui-body-b">
 								<fieldset class="ui-grid-a">
-									<button type="submit" id="submitForm" data-theme="b">Submit</button>
+									<!--button type="submit" id="submit" data-theme="b">Submit</button-->
+									<input type="submit" id="submit" value="Save Task">
 							    </fieldset>
 							</div>
 					</form>

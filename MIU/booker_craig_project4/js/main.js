@@ -1,26 +1,36 @@
-
 // Craig Booker  |  MIU Project 4 | 10/16/2011
-window.addEventListener("DomContentLoaded", function() {
+window.addEventListener("DomContentLoaded", function () {
 
 	// getElementById Function
 	function $(x) {
 		var theElement = document.getElementById(x);
 		return theElement;
 	}
-	function makeCats () {
-			var formTag = document.getElementsByTagName("form"),
-					selectLi = $('select'),
-					makeSelect = document.createElement('select');
-					makeSelect.setAttribute("id", "context");
-			for(var i = 0, j = contextNames.length; i<j; i++) {
-				var makeOption = document.createElement('option');
-				var optText = contextNames[i];
-				makeOption.setAttribute("value", optText);
-				makeOption.innerHTML = optText;
-				makeSelect.appendChild(makeOption);
-			}
-			select.Li.appendChild(makeSelect);
+	function makeCats() {
+		var formTag = document.getElementsByTagName("form"),
+			i,
+			j,
+			selectLi = $('select');
+		var makeSelect = document.createElement('select');
+		makeSelect.setAttribute("id", "context");
+		for (i = 0, j = contextNames.length; i < j; i++) {
+		//for (var i = 0, j = contextNames.length; i < j; i++) {
+
+			var makeOption = document.createElement('option');
+			var optText = contextNames[i];
+			makeOption.setAttribute("value", optText);
+			makeOption.innerHTML = optText;
+			makeSelect.appendChild(makeOption);
+		}
+		select.Li.appendChild(makeSelect);
 	}
+	// -------   Start of NEW VERSION : Variable Defaults --------------------------
+
+	var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"],
+			favoriteValue = "No",
+			errMsg = $('errors');
+	makeCats();
+	
 	var catNames = ["CONTEXT", "errand", "home", "office", "calls", "people", "waiting"];
 	var formTag = document.getElementById('form');
 	var makePara = document.createElement("p");
@@ -525,7 +535,7 @@ function setDefaultData() {
 }
 
 // -------   Form Validation --------------------------
-
+/*
 function validateForm() {
 	//alert("Beginning validation!");
 	var validStatus		=	[];
@@ -586,7 +596,7 @@ function validateForm() {
 		//saveItems(id);
 		}
 	} // validateForm	
-
+*/
 
 // -------   NEW VERSION : Form Validation --------------------------
 function validate(e) {
@@ -623,7 +633,7 @@ function validate(e) {
 			var txt = document.createElement('li');
 			txt.innnerHTML = messageAry[i];
 			errMsg.appendChild(txt);
-	
+		}
 	e.preventDefault();
 	return false;
 	} else {
@@ -634,12 +644,7 @@ function validate(e) {
 // -------   End of NEW VERSION : Form Validation --------------------------
 
 
-// -------   Start of NEW VERSION : Variable Defaults --------------------------
 
-	var contextNames = ["---Choose a Context---", "errand", "home", "office", "calls", "people", "waiting"],
-			favoriteValue = "No",
-			errMsg = $('errors');
-	makeCats();
 	
 // -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 	/*var displayLink = $('displayLink');
@@ -890,11 +895,7 @@ function getItems(id) {
 function saveItems(id) {
 	//alert("Inside Save items function");
 	var itemId = id;
-<<<<<<< HEAD
-	alert(editing);
-=======
 	//alert(editing);
->>>>>>> dynamic-index
 	validateForm(id);
 	//if (editing === "false") {
 	var itemId				=	Math.floor(Math.random()*100000000001);
@@ -1001,9 +1002,9 @@ function toggleControls(n) {
 		value = value.split(';');
 		var tContext			=	value[0];
 		var tName				=	value[1];
-		var tPriority			=	value[2];
+		var tPriority				=	value[2];
 		var tFavorite			=	value[3];
-		var sDate				=	value[4];
+		var sDate					=	value[4];
 		var eDate				=	value[5];
 		var dDate				=	value[6];
 		var tNotes				=	value[7];
