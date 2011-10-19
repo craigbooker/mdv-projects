@@ -942,7 +942,7 @@ function deleteTask(id) {
 	}
 }
 
-// -------   Start of: Delete All Stored Tasks --------------------------
+// -------   Start of: Rebuilt  Delete All Stored Tasks --------------------------
 function clearLocal() {
 	if(localStorage.length === 0) {
 		alert("There is no data to clear");
@@ -953,16 +953,8 @@ function clearLocal() {
 		return false;
 	}
 } //clearLocal
+// -------   End of: Rebuilt  Delete All Stored Tasks --------------------------
 
-// -------  Check for Local Storage Support --------------------------
-function checkLocStorSup() {
-	if (('localStorage' in  window) && window['localStorage'] !== null) {
-		return;
-	} else {
-		outPutMsg('Your browser does not support HTML 5. Please update your browser and try again.');
-		return;
-	}
-}
 
 // -------   Do Initial Checks --------------------------
 function initialChecks() {
