@@ -1,7 +1,23 @@
 // Craig Booker  |  MIU Project 4 | 10/16/2011
-window.addEventListener("DomContentLoaded", function () {
 
-	// getElementById Function
+$(document).bind("pagebeforechange", function(e, data) {
+		if (typeof data.toPage === "string") {
+			var u = $.mobile.path.parseUrl(data.toPage),
+						re = /^#category-item/;
+			if(u.hash.search(re) !== -1) {
+					showCategory(u, data.options);
+					e.preventDefault();
+			}
+		}
+});
+
+window.addEventListener("DOMContentLoaded", function() {
+	// -------   Start of NEW VERSION : Variable Defaults --------------------------
+
+	var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"],
+		favoriteValue = "No";
+
+// getElementById Function
 	function $(x) {
 		var theElement = document.getElementById(x);
 		return theElement;
@@ -22,16 +38,11 @@ window.addEventListener("DomContentLoaded", function () {
 			makeOption.innerHTML = optText;
 			makeSelect.appendChild(makeOption);
 		}
-		select.Li.appendChild(makeSelect);
+		selectLi.appendChild(makeSelect);
 	}
-	// -------   Start of NEW VERSION : Variable Defaults --------------------------
-
-	var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"],
-			favoriteValue = "No",
-			errMsg = $('errors');
 	makeCats();
-	
-	var catNames = ["CONTEXT", "errand", "home", "office", "calls", "people", "waiting"];
+	//var catNames  = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
+	var errMsg = $('errors');
 	var formTag = document.getElementById('form');
 	var makePara = document.createElement("p");
 	var locFormStor;
@@ -43,203 +54,356 @@ window.addEventListener("DomContentLoaded", function () {
 	var	makeSelect = document.createElement("select");
 	//var makeLabel = document.createElement("label");
 	makeDiv.setAttribute("data-role", "fieldcontain");
-	makeSelect.setAttribute("id", "tContext");
-	makeSelect.setAttribute("name", "tContext");
+	makeSelect.setAttribute("id", "context");
+	makeSelect.setAttribute("name", "context");
 	makeSelect.setAttribute("data-native-menu", "false");
 
 
-var makeCats = function (name) {
-	var i, j;
-	for (i = 0, j = catNames.length; i < j; i++) {
-		var makeOption = document.createElement("option");
-		var optText = document.createTextNode(catNames[i]);
-		makeOption.setAttribute("value", catNames[i]);
-		makeOption.setAttribute("id", "tContext");
-		makeOption.appendChild(optText);
-		makeSelect.appendChild(makeOption);
-	}
+// JSON Data Object
 
-	makeDiv.appendChild(makeSelect);
-	makePara.appendChild(makeDiv);
+	var json = {
+			"task1": {
+				"context": ["Context:", "Errand" ],
+				"name": ["Task Name:", "Get Vacuum Bags" ],
+				"priority": ["Priority:", "5" ],
+				"favorite": ["Favorite:",  "checked" ],
+				"sDate": ["Start Date", "2011-05-11" ],
+				"eDate": ["End Date:", "2011-05-12" ],
+				"dDate": ["Due Date:", "2011-05-12" ],
+				"notes": ["Notes:", "Don't forget to get the model fj2 bags." ]
+			},
+			"task2": {
+				"context": ["Context:", "Errand" ],
+				"name": ["Task Name:", "Buy Broom"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "unchecked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-11"],
+				"dDate": ["Due Date:", "2011-05-11"],
+				"notes": ["Notes:", "Large broom for garage."]
+			},
+			"task3": {
+				"context": ["Context:", "Errand" ],
+				"name": ["Task Name:", "Buy blades for mower"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:",  "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", "Honda SRT Model 5"]
+			},
+			"task4": {
+				"context": ["Context:", "Errand" ],
+				"name": ["Task Name:", "Buy pansies"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "unchecked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", "For front flowerbed, purple and red."]
+			},
+			"task5": {
+				"context": ["Context:", "Errand" ],
+				"name": ["Task Name:", "Buy Grass Seed"],
+				"priority": ["Priority:", "3"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", "Get fescue for backyard."]
+			},
+			"task6": {
+				"context": ["Context:", "Home" ],
+				"name": ["Task Name:", "Vacuum House"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task7": {
+				"context": ["Context:", "Home" ],
+				"name": ["Task Name:", "Sweep Garage"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task8": {
+				"context": ["Context:", "Home" ],
+				"name": ["Task Name:", "Mow Lawn"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task9": {
+				"context": ["Context:", "Home" ],
+				"name": ["Task Name:", "Plant Flowers"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task10": {
+				"context": ["Context:", "Home" ],
+				"name": ["Task Name:", "Plant Grass Seed"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task11": {
+				"context": ["Context:", "Office" ],
+				"name": ["Task Name:", "Order Office Supplies"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:",  "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task12": {
+				"context": ["Context:", "Office" ],
+				"name": ["Task Name:", "Clean Desk"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task13": {
+				"context": ["Context:", "Office" ],
+				"name": ["Task Name:", "Reorganize Filecabinet"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task14": {
+				"context": ["Context:", "Office" ],
+				"name": ["Task Name:", "Meeting with Mike"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task15": {
+				"context": ["Context:", "Office" ],
+				"name": ["Task Name:", "Prepare Sales Presentation"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task16": {
+				"context": ["Context:", "Calls" ],
+				"name": ["Task Name:", "Call Joe from Shipping"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task17": {
+				"context": ["Context:", "Calls" ],
+				"name": ["Task Name:", "Call Car Dealer About Repair Status"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task18": {
+				"context": ["Context:", "Calls" ],
+				"name": ["Task Name:", "Call AT&T About Texting Plan"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task19": {
+				"context": ["Context:", "Calls" ],
+				"name": ["Task Name:", "Call Client to Setup Meeting"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task20": {
+				"context": ["Context:", "Calls" ],
+				"name": ["Task Name:", "Call City About Utility Bill"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task21": {
+				"context": ["Context:", "People" ],
+				"name": ["Task Name:", "Mike is preparing operations presentation"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task22": {
+				"context": ["Context:", "People" ],
+				"name": ["Task Name:", "Jane is organizing lunch party"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task23": {
+				"context": ["Context:", "People" ],
+				"name": ["Task Name:", "Joanne is creating spreadsheet for monthly budget"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task24": {
+				"context": ["Context:", "People" ],
+				"name": ["Task Name:", "Joe is revising business plan"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task25": {
+				"context": ["Context:", "People" ],
+				"name": ["Task Name:", "Judy is revisiting our marketing plan"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task26": {
+				"context": ["Context:", "Waiting" ],
+				"name": ["Task Name:", "Research into new product line"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task27": {
+				"context": ["Context:", "Waiting" ],
+				"name": ["Task Name:", "Remodel Kitchen"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task28": {
+				"context": ["Context:", "Waiting" ],
+				"name": ["Task Name:", "Buy new car"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task29": {
+				"context": ["Context:", "Waiting" ],
+				"name": ["Task Name:", "Rewire Cat 6 cabling throughout house"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			},
+			"task30": {
+				"context": ["Context:", "Waiting" ],
+				"name": ["Task Name:", "Revamp company web site"],
+				"priority": ["Priority:", "5"],
+				"favorite": ["Favorite:", "checked"],
+				"sDate": ["Start Date", "2011-05-11"],
+				"eDate": ["End Date:", "2011-05-14"],
+				"dDate": ["Due Date:", "2011-05-16"],
+				"notes": ["Notes:", ""]
+			}
+		};
 
-	var getUL = document.getElementById('form')[0].firstChild;
-	var paraSelect = document.getElementById('form')[0].insertBefore(makePara, getUL);
-};
-makeCats();
-
-
-// Load JSON data for index page
-var handleData = function (json) {
-	for (var i = 0; i < json.participants.length; i++) {
-		var participant = json.participants[i];
-		console.log("User ID: " + participant.uuid + ", Name: " + participant.name + ", Age: " + participant.age + ", Weight:" + participant.weight + ", Title:" + participant.title + ", Classification:" + participant.classification + ", Mood Descriptions:" + participant.moodDesc);
-	};
-};
+// END OF: JSON Data Object
 
 //handleData(json);
-
-//
-var jsonstring = JSON.stringify(json);
+	var jsonstring = JSON.stringify(json);
 //console.log(jsonstring);
 
-var receivedjson = JSON.parse(jsonstring);
+	var receivedjson = JSON.parse(jsonstring);
 //console.log(receivedjson);
 
 // END OF: json_data function
 
-
-
-
-// ----- Make Cats New Function
-
-	var makeCategory = function( urlObj, options) {
-	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
-		category = categoryData[ categoryName],
-		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
-/*	<li><a href="index.html">
-				<h3>jQuery Team</h3>
-				<p><strong>Boston Conference Planning</strong></p>
-				<p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
-				<p class="ui-li-aside"><strong>9:18</strong>AM</p>
-			</a></li> */
-		if (category) {
-				var $page = $(pageSelector),
-					$header = $page.children( ":jqmData(role=header)"),
-					$content = $page.children(":jqmData(role=content)"),
-					markup = "<p><img src=\"" + category  + "/>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
-					cItems = category.items,
-					numItems = cItems.length;
-					// Make a list item for each item in the category and add to markup
-					for (var i = 0; i < numItems; i++ ) {
-							//markup += "<li><h3>" + cItems[i].name + "<p><strong>" + + "</strong></p>";
-							//markup += "<p>" + tNotes + "</p>"
-							markup += "<option>" + catNames[i] + "</option>"
-							markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].tPriority +"</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";	
-					}
-					markup += "</ul>";
-					$header.find("h1").html(category.name);
-					$content.html(markup);
-					$page.page();
-					$content.find(":jqmData(role=listview)" ).listview();
-					options.dataUrl = urlObj.href;
-					$.mobile.changePage($page, options);
-		}
-}
-
-
-// ---- End of Cats New Function
-
 // -------  Set Initial Data - using an object --------------------------
 	function intializeData() {
 	// If this key exists then we can bail out, as we have already initialized
-	if (storage.getItem(key) !== null) { return; }
-
-	// Otherwise, we need to populate localStorage with dummy data
-	var initialData = [
-	{
-		"id": "",
-		"tContext": "errand",
-		"tName": "Get Office Supplies",
-		"tPriority": "5",
-		"tFavorite": "",
-		"sDate": "2011-08-01",
-		"eDate": "2011-08-03",
-		"dDate": "2011-08-04",
-		"tNotes": "Need to pick up some office supplies"
-	},
-	{
-		"id": "",
-		"tContext": "home",
-		"tName": "Do laundry",
-		"tPriority": "4",
-		"tFavorite": "on",
-		"sDate": "2011-08-02",
-		"eDate": "2011-08-04",
-		"dDate": "2011-08-05",
-		"tNotes": ""
-	
-	},
-	{
-		"id": "",
-		"tContext": "office",
-		"tName": "Create Presentation",
-		"tPriority": "7",
-		"tFavorite": "",
-		"sDate": "2011-08-01",
-		"eDate": "2011-08-05",
-		"dDate": "2011-08-06",
-		"tNotes": "Need to get keynote presentation made."
-	
-	},
-	{
-		"id": "",
-		"tContext": "calls",
-		"tName": "Call utility company",
-		"tPriority": "3",
-		"tFavorite": "",
-		"sDate": "2011-08-01",
-		"eDate": "2011-08-02",
-		"dDate": "2011-08-02",
-		"tNotes": "Call about recent bill"
-		
-	},
-	{
-		"id": "",
-		"tContext": "people",
-		"tName": "Delegate Presentation Segment",
-		"tPriority": "6",
-		"tFavorite": "",
-		"sDate": "2011-08-01",
-		"eDate": "2011-08-09",
-		"dDate": "2011-08-10",
-		"tNotes": "Need to delegate the production segment of presentation."
-	
-	},
-	{
-		"id": "",
-		"tContext": "waiting",
-		"tName": "Operations Presentation",
-		"tPriority": "5",
-		"tFavorite": "",
-		"sDate": "2011-08-01",
-		"eDate": "",
-		"dDate": "2011-08-05",
-		"tNotes": "Waiting on operations presentation segment from Jane."
-	
-	},
-		
-	];
-	
-	var categoryData = {
+		if (storage.getItem(key) !== null) { return; }
+		var categoryData = {
 			errand: {
 				name: "Errand",
 				description: "All your errands waiting to be done.",
 				items: [
 					{
 						name: "Go Grocery Shopping",
-						tPriority: "5"
+						priority: "5"
 					},
 					{
 						name: "Go to Hardware Store",
-						tPriority: "5"
-
-					},		
+						priority: "5"
+					},
 					{
 						name: "Go to Dry Cleaners",
-						tPriority: "5"
-
-					},		
+						priority: "5"
+					},
 					{
 						name: "Go Get Movie from Redbox",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Go By Bank",
-						tPriority: "5"
-
-					},
-				
+						priority: "5"
+					}
 				]
 			},
 			home: {
@@ -248,29 +412,21 @@ var receivedjson = JSON.parse(jsonstring);
 				tName: [
 					{
 						name: "Vacuum House",
-						tPriority: "5"
+						priority: "5"
 					},
 					{
 						name: "Sweep Garage",
-						tPriority: "5"
-
-					},		
+						priority: "5"
+					},
 					{
 						name: "Mow Lawn"
-					},		
+					},
 					{
 						name: "Plant Flowers"
 					},
 					{
 						name: "Plant Grass Seed"
-					},
-				
-				],
-				priority: [
-					{
-						tPriority: "5"
-
-					},			
+					}
 				]
 			},
 			office: {
@@ -279,94 +435,76 @@ var receivedjson = JSON.parse(jsonstring);
 				items: [
 					{
 						name: "Order Office Supplies",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Clean Desk",
-						tPriority: "5"
-
-					},		
+						priority: "5"
+					},
 					{
 						name: "Reorganize Filecabinet",
-						tPriority: "5"
-
-					},		
+						priority: "5"
+					},
 					{
 						name: "Meeting with Mike",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Prepare Sales Presentation",
-						tPriority: "5"
-
-					},
-				
+						priority: "5"
+					}
 				]
-			},	
+			},
 			calls: {
 				name: "Calls",
 				description: "All your calls waiting to be made.",
 				items: [
 					{
 						name: "Call Joe from Shipping",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Call Car Dealer About Repair Status",
-						tPriority: "5"
-
-					},		
+						priority: "5"
+					},
 					{
 						name: "Call AT&T About Texting Plan",
-						tPriority: "5"
-
-					},		
+						priority: "5"
+					},
 					{
 						name: "Call Client to Setup Meeting",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Call City About Utility Bill",
-						tPriority: "5"
-
-					},
-				
+						priority: "5"
+					}
 				]
-			},	
+			},
 			people: {
 				name: "People",
 				description: "All items delegated to people.",
 				items: [
 					{
 						name: "Mike is preparing operations presentation",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Jane is organizing lunch party",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Joanne is creating spreadsheet for monthly budget",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Joe is revising business plan",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Judy is revisiting our marketing plan",
-						tPriority: "5"
-
-					},
-				
+						priority: "5"
+					}
 				]
 			},
 			waiting: {
@@ -375,234 +513,102 @@ var receivedjson = JSON.parse(jsonstring);
 				items: [
 					{
 						name: "Research into new product line",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Remodel Kitchen",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Buy new car",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Rewire Cat 6 cabling throughout house",
-						tPriority: "5"
-
+						priority: "5"
 					},
 					{
 						name: "Revamp company web site",
-						tPriority: "5"
-
-					},
-				
+						priority: "5"
+					}
 				]
 			}
-	}	
-// -------   Start of : Show Category List --------------------------
-		
-	function showCategory( urlObj, options) {
-	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
-		category = categoryData[ categoryName],
-		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
-		if (category) {
-				var $page = $(pageSelector),
-					$header = $page.children( ":jqmData(role=header)"),
-					$content = $page.children(":jqmData(role=content)"),
-					markup = "<p><img src=\"" + category  + "/>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
-					cItems = category.items,
-					numItems = cItems.length;
-					// Make a list item for each item in the category and add to markup
-					for (var i = 0; i < numItems; i++ ) {
-							//markup += "<li><h3>" + cItems[i].name + "<p><strong>" + + "</strong></p>";
-							//markup += "<p>" + tNotes + "</p>"
-							markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].tPriority +"</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";	
-					}
-					markup += "</ul>";
-					$header.find("h1").html(category.name);
-					$content.html(markup);
-					$page.page();
-					$content.find(":jqmData(role=listview)" ).listview();
-					options.dataUrl = urlObj.href;
-					$.mobile.changePage($page, options);
-		}
-}
-// -------   End of : Show Category List --------------------------
+		};
+// ----- Make Cats New Function
 
-
-
-
-
-
-
-
-// Altering function to print out table of data
-function showCategory( urlObj, options) {
-	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
-		tContextName = urlObj.hash.replace( /.*category=/, "" ),
-		category = categoryData[ categoryName],
-		context = initialData [categoryName],
-		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
+		var makeCategory = function (urlObj, options) {
+			var categoryName = urlObj.hash.replace(/.*category=/, ""),
+				category = categoryData[categoryName],
+				pageSelector = urlObj.hash.replace(/\?.*$/, "");
 /*	<li><a href="index.html">
 				<h3>jQuery Team</h3>
 				<p><strong>Boston Conference Planning</strong></p>
 				<p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
 				<p class="ui-li-aside"><strong>9:18</strong>AM</p>
-			</a></li>
-				  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>About App</h3>
-					<p>Inspired by the book by David Allen, "Get Things Done."</p>
-				</div>
-				<div data-role="collapsible">
-					<h3>Contact</h3>
-					<p>Appscient <br /> <a href="mailto:support@appscient.co">support@appscient.co</a>
-					</p>
-				</div>
-			</div>
-			
-			
-			 */
-		if (category) {
+			</a></li> */
+			if (category) {
 				var $page = $(pageSelector),
-					$header = $page.children( ":jqmData(role=header)"),
+					$header = $page.children(":jqmData(role=header)"),
+					$content = $page.children(":jqmData(role=content)"),
+					markup = "<p><img src=\"" + category  + "/>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
+					i,
+					cItems = category.items,
+					numItems = cItems.length;
+					// Make a list item for each item in the category and add to markup
+				for (i = 0; i < numItems; i++) {
+							//markup += "<li><h3>" + cItems[i].name + "<p><strong>" + + "</strong></p>";
+							//markup += "<p>" + notes + "</p>"
+					markup += "<option>" + contextNames[i] + "</option>";
+					markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].priority + "</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";
+				}
+				markup += "</ul>";
+				$header.find("h1").html(category.name);
+				$content.html(markup);
+				$page.page();
+				$content.find(":jqmData(role=listview)").listview();
+				options.dataUrl = urlObj.href;
+				$.mobile.changePage($page, options);
+			}
+		};
+// ---- End of: Cats New Function --------------------------------
+
+// -------   Start of : Show Category List --------------------------
+		function showCategory(urlObj, options) {
+			var categoryName = urlObj.hash.replace(/.*category=/, ""),
+				category = categoryData[categoryName],
+				pageSelector = urlObj.hash.replace(/\?.*$/, "");
+			if (category) {
+				var $page = $(pageSelector),
+					$header = $page.children(":jqmData(role=header)"),
 					$content = $page.children(":jqmData(role=content)"),
 					markup = "<p><img src=\"" + category  + "/>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
 					cItems = category.items,
 					numItems = cItems.length;
-					// Make a list item for each item in the category and add to markup
-					for (var i = 0; i < numItems; i++ ) {
-							//markup += "<li><h3>" + cItems[i].name + "<p><strong>" + + "</strong></p>";
-							//markup += "<p>" + tNotes + "</p>"
-							markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].tPriority +"</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";	
-					}
-					markup += "</ul>";
-					$header.find("h1").html(category.name);
-					$content.html(markup);
-					$page.page();
-					$content.find(":jqmData(role=listview)" ).listview();
-					options.dataUrl = urlObj.href;
-					$.mobile.changePage($page, options);
-		}
-}
-
-
-
-// END OF: Altering function to print out table of data
-
-
-$(document).bind("pagebeforechange", function(e, data) {
-		if (typeof data.toPage === "string") {
-			var u = $.mobile.path.parseUrl(data.toPage),
-						re = /^#category-item/;
-			if(u.hash.search(re) !== -1) {
-					showCategory(u, data.options);
-					e.preventDefault();
+						// Make a list item for each item in the category and add to markup
+				for (var i = 0; i < numItems; i++ ) {
+								//markup += "<li><h3>" + cItems[i].name + "<p><strong>" + + "</strong></p>";
+								//markup += "<p>" + notes + "</p>"
+						markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].priority +"</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";	
+						}
+						markup += "</ul>";
+						$header.find("h1").html(category.name);
+						$content.html(markup);
+						$page.page();
+						$content.find(":jqmData(role=listview)" ).listview();
+						options.dataUrl = urlObj.href;
+						$.mobile.changePage($page, options);
 			}
 		}
-});
-
-	// Simple example of read data
-	var popluate = function(data) {
-		for (var i in data) {
-		var item	= data[i];
-		var key		= item.id;
-		// Hard way
-		var value = [item.id, item.name, item.cat].join(';');
-		// This is the easy way
-		var value = JSON.stringify(item);
-		storage.setItem(key, value);
-		}
-	
-	};
-
-}
-
-// -------  Set Form Default Values --------------------------
+// -------   End of : Show Category List --------------------------
 
 
-function setDefaultData() {
-			document.getElementById('tName').value = 'Enter task name';
-			document.getElementById('tPriority').value =	0;
-			document.getElementById('dDate').value =	'Enter task due date';
-			document.getElementById('sDate').value =	'Enter start date';
-			document.getElementById('eDate').value =	'Enter end date';
-			document.getElementById('tNotes').value =	'Notes';
-		return;
-}
 
-// -------   Form Validation --------------------------
-/*
-function validateForm() {
-	//alert("Beginning validation!");
-	var validStatus		=	[];
-	var fieldsChecked = ["Context", "Task Name", "Start Date", "End Date", "Due Date"];
-	var defFieldvals = ["SELECT", "Enter task name", "Enter task start date", "Enter task end date", "Enter task due date", "Notes"];
-	var validCount = 0;
-
-	//var getInvalidfields; 
-	var getTcontext = document.getElementById('tContext').value;
-	if ((getTcontext === "") || (getTcontext === defFieldvals[0])) {
-		validStatus.push("false");
-	} else {
-		validStatus.push("true");
-		validCount += 1;
-	}
-	var getTname = document.getElementById("tName").value;
-	if ((getTname === "") || (getTname  === defFieldvals[1])) {
-		validStatus.push("false");
-	} else {
-		validStatus.push("true");
-		validCount += 1;
-	}
-	var getSdate = document.getElementById("sDate").value;
-	if ((getSdate === "") || (getSdate === defFieldvals[2])) {
-		validStatus.push("false");
-	} else {
-		validStatus.push("true");
-		validCount += 1;
-	}
-	var getEdate = document.getElementById("eDate").value;
-	if ((getEdate === "") || (getEdate === defFieldvals[3])) {
-		validStatus.push("false");
-	} else {
-		validStatus.push("true");
-		validCount += 1;
-	}
-	var getDdate = document.getElementById("dDate").value;
-	if ((getDdate === "") || (getDdate === defFieldvals[4])) {
-		validStatus.push("false");
-	} else {
-		validStatus.push("true");
-		validCount += 1;
-	}
-	//alert(validStatus);
-	var errorFields = [];
-	var iCount;
-	for (iCount = 0; iCount < validStatus.length; iCount++) {
-		if (validStatus[iCount] === "false") {
-			var addTo = (fieldsChecked[iCount]);
-			errorFields.push(addTo); //This keeps a running list of the fields with errors.
-		}
-	}
-	if (validCount < fieldsChecked.length) {
-		alert("There are errors with the following fields:" + errorFields);
-	} else {
-		alert("Form Submitted!");
-		//if (editing === "false"){
-		//saveItems(id);
-		}
-	} // validateForm	
-*/
 
 // -------   NEW VERSION : Form Validation --------------------------
 function validate(e) {
-	var getContext = $('context');
-	var getTname = $('tName');
-	var getPriority = $('priority');
+	var getcontext = $('context');
+	var getName = $('name');
+	var getpriority = $('priority');
 	var getSdate = $('sDate');
 	var getEdate = $('eDate');
 	var getDdate = $('dDate');
@@ -610,7 +616,8 @@ function validate(e) {
 	//Reset Error Messages
 	errMsg.innerHTML = "";
 	getContext.style.border = "1px solid black";
-	getTname.style.border = "1px solid black";
+	getName.style.border = "1px solid black";
+	getPriority.style.border = "1px solid black";
 
 	// Get Error Mesages
 	var messageAry = [];
@@ -621,10 +628,16 @@ function validate(e) {
 		messageAry.push(contextError);
 	}
 	//Task Name Validation
-	if (getTname.value === "") {
-		var tNameError = "Please enter a task name.";
-		getTname.style.border = "1px solid red";
-		messageAry.push(tNameError);	
+	if (getName.value === "") {
+		var nameError = "Please enter a task name.";
+		getName.style.border = "1px solid red";
+		messageAry.push(nameError);	
+	}
+	//Priority Validation
+	if (getPriority.value === "") {
+		var priorityError = "Please set a priority.";
+		getPriority.style.border = "1px solid red";
+		messageAry.push(priorityError);	
 	}
 	
 	// If there are any errors, display them on the screen.
@@ -643,111 +656,15 @@ function validate(e) {
 
 // -------   End of NEW VERSION : Form Validation --------------------------
 
-
-
-	
 // -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
-	/*var displayLink = $('displayLink');
+	var displayLink = $('displayLink');
 	displayLink.addEventListener("click", getData);
 	var clearLink = $('clear');
 	clearLink.addEventListener("click", clearLocal);
 	var save = $('submit');
-	save.addEventListener("click", validate);	*/
+	save.addEventListener("click", validate);	
 	
 // -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
-	
-
-// -------   Build Browse Tasks by Context --------------------------
-
-function bluildPage(id) {
-	var ttlValidKeys = 8;
-	//var contextNames = catNames;
-	var context = ["none", "errand", "home", "office", "phone", "people", "waiting"];
-	var keyCheck = localStorage.key(0);
-	var checkLoc = /^\d+$/.test(keyCheck);
-	if((keyCheck === "") || (checkLoc === false )) {
-		setDefaultData();
-	}
-	var locId = id;
-	var i, len, j;
-	// write the data from local storage to the browser
-	var makeDiv	= document.createElement("div");
-	//makeDiv.setAttribute("class",  "output");
-	var makeList	= document.createElement("ul");
-	makeDiv.appendChild(makeList);
-	document.body.appendChild(makeDiv);
-	for (i = 0, len = localStorage.length; i < len; i++, j++) {
-		var key		=	localStorage.key(i);
-		var isNumber = /^\d+$/.test(key);
-		if (isNumber === true) {
-		var value	=	localStorage.getItem(key);
-		var allLength = value.length;
-		value = value.split(";");
-		//alert(value);
-		/*
-		<ul data-role="listview">
-			<li data-role="list-divider">Browse By Category</li>
-			<li><a href="index.html">Errand <span class="ui-li-count">12</span></a></li>
-			<li><a href="index.html">Home <span class="ui-li-count">0</span></a></li>
-			<li><a href="index.html">Office <span class="ui-li-count">4</span></a></li>
-			<li><a href="index.html">Calls<span class="ui-li-count">328</span></a></li>
-			<li><a href="index.html">People <span class="ui-li-count">62</span></a></li>
-			<li><a href="index.html">Waiting <span class="ui-li-count">62</span></a></li>
-
-		</ul>
-		*/
-		
-		var tContext			=	value[0];
-		var tName				=	value[1];
-		var tPriority				=	value[2];
-		var tFavorite			=	value[3];
-		var sDate					=	value[4];
-		var eDate				=	value[5];
-		var dDate				=	value[6];
-		var tNotes				=	value[7];
-
-		//var newDiv		=	document.createElement("div");
-		var makeLi	= document.createElement("li");
-		var contextLi		=	document.createElement("li");
-		makeList.appendChild(makeLi);
-		//makeList.setAttribute("class", "output");
-		makeLi.style.display = ('block');
-		var makeSubList = document.createElement("ul");
-		//makeSubList.setAttribute("class", "items");
-		makeLi.appendChild(makeSubList);
-		var d; // Field Values Counter
-		for (d = 0; d < ttlValidKeys; d++) {
-			var makeSubLi	= document.createElement("li");
-			makeSubList.appendChild(makeSubLi);
-			var locFVals = (value[d]);
-			var locTNode = document.createTextNode(locFVals);
-			makeSubLi.appendChild(locTNode);
-			makeSubList.appendChild(linksLi);
-			var imgHref = ("img/" + tContext + ".png");
-			var makeImg = document.createElement("img"); // Add image
-			var setSrc = newImg.setAttribute("src", imgHref);
-			makeSubList.appendChild(makeImg);
-			var contextLink	= document.createElement("a");//Add delete single task link
-			var setHref		=	deleteLink.setAttribute("href", "#");
-			deleteLink.setAttribute("class", "stdDelBtn");
-			var setOnclick	=	contextLink.setAttribute("onclick", "showContext(" + context + ");");
-			var showContext	=	document.createTextNode(context);
-			deleteLink.appendChild(deleteText);
-			contextLi.appendChild(deleteLink);
-			}
-			
-			//linksLi.appendChild()
-			makeSubList.appendChild(linksLi);
-			deleteLink.style.display = ('inline');
-
-			
-		}
-			//else {
-		//return;
-		//} 
-	}
-}
-
 
 // -------   Start of: Get Data NEW --------------------------
 	function getData() {
@@ -784,9 +701,32 @@ function bluildPage(id) {
 			makeItemLinks(localStorage.key(i), linksLi);
 		}
 	}
-
-
 // -------   End of: Get Data NEW --------------------------
+
+// -------   Start of: Make Item Links --------------------------
+	function makeItemLinks(key, linksLi) {
+	var editLink	=	document.createElement('a');
+	editLink.href	=	"#";
+	editLink.key	=	key;	
+	var editText	=	"Edit Task";
+	editLink.addEventListener("click", editItem);
+	editLink.innerHTML	=	editText;
+	linksLi.appendChild(editLink);
+	
+	// Add Line Break
+	var breakTag = document.createElement('br');
+	linksLi.appendChild(breakTag);
+	
+	var deleteLink	=	document.createElement('a');
+	deleteLink.href = "#";
+	deleteLink.key	=	key;
+	var deleteText = "Delete Task";
+	deleteLink.addEventListener("click", deleteItem);
+	deleteLink.innerHTML = deleteText;
+	linksLi.appendChild(deleteLink);
+	
+	}
+// -------   End of: Make Item Links --------------------------
 
 // -------   Start of: Get Img NEW --------------------------
 
@@ -797,10 +737,7 @@ function bluildPage(id) {
 		var setSrc	=	newImg.setAttribute("src", "images/"+ catName + ".png");
 		imageLi.appendChild(newImg);
 	}
-
-
-
-
+// -------   End of: Get Img NEW --------------------------
 
 // -------   Start of: Rebuilt Find value of the check box. --------------------------
 	function getCheckboxValue() {
@@ -830,11 +767,10 @@ function toggleControls(n) {
 				$('items').style.display = "none";
 				break;
 		default:
-			return false;
+		return false;
 	}
 }
 // -------   End of: Rebuilt Toggle Controls--------------------------
-
 
 // -------   Start of: Rebuilt Save Form Data --------------------------
 	function storeData(key) {
@@ -853,84 +789,41 @@ function toggleControls(n) {
 		// Save data into local storage: use stringify to convert our object to a string
 		localStorage.setItem(id, JSON.stringify(item));
 		alert("Task Saved!");
-
 	}
 // -------   End of:Rebuilt Save Form Data --------------------------
 
-
-
-
 // -------   Edit Task Data --------------------------
-
-	function editData(id) {
-		var itemsLink = document.getElementById('items');
-		itemsLink.style.display = "none";
-		var value = localStorage.getItem(id);
-		var itemId = id;
-		alert(itemId);
-		value = value.split(';');
-		var tContext			=	value[0];
-		var tName				=	value[1];
-		var tPriority				=	value[2];
-		var tFavorite			=	value[3];
-		var sDate					=	value[4];
-		var eDate				=	value[5];
-		var dDate				=	value[6];
-		var tNotes				=	value[7];
-		editing = "true";
-		//validateForm(itemId);
-
-		//populates form fields with current localStorage values
-		document.getElementById('tContext').value = tContext;
-		document.getElementById('tName').value = tName;
-		document.getElementById('tPriority').value = tPriority;
-		if (tFavorite === "on") {
-			document.getElementById('tFavorite').setAttribute("checked", "checked");
-		}
-		document.getElementById('sDate').value = sDate;
-		document.getElementById('eDate').value = eDate;
-		document.getElementById('dDate').value = dDate;
-		document.getElementById('tNotes').value = tNotes;
-
+	function editItem(id) {
+		//Grab Data from Local Storage
+		var value = localStorage.getItem(this.key);
+		var item = JSON.parse(value);
+		//Show the form
+		toggleControls("off");
 		
-		// reveal editItem button
-		var editItem = document.getElementById('editItem');
-		editItem.style.display = "block";
-		var submit = document.getElementById('submit');
-		editItem.style.display = "none";		
-		document.getElementById('editItem').onclick = function () {
-		//alert (itemId);
-		var tContext			=	document.getElementById('tContext').value;
-		var tName				=	document.getElementById('tName').value;
-		var tPriority			=	document.getElementById('tPriority').value;
-		var tFavorite			=	document.getElementById('tFavorite').value;
-		var sDate				=	document.getElementById('sDate').value;
-		var eDate				=	document.getElementById('eDate').value;
-		var dDate				=	document.getElementById('dDate').value;
-		var tNotes				=	document.getElementById('tNotes').value;
-		var allItems			=	[
-								tContext,
-								tName,
-								tPriority,
-								tFavorite,
-								sDate,
-								eDate,
-								dDate,
-								tNotes
-		];
-		if (tContext !== "" && tName !== "" && sDate !== "") {
-			localStorage.setItem(itemId, allItems.join(';'));
-		} else {
-			alert("All fields required.");
+		//Populate form fields with current localStorage values
+		$('context').value = item.context[1];
+		$('name').value = item.name[1];
+		$('priority').value = item.priority[1];
+		if (item.favorite[1] == "Yes") {
+			$('favorite').setAttribute("checked", "checked");
 		}
-		
-	};
-		//validateForm(itemId);
-		editing = "false";
-		setDefaultData();
-		window.location.reload();
-} // editItem
-	
+		$('sDate').value = item.sDate[1];
+		$('eDate').value = item.eDate[1];
+		$('dDate').value = item.dDate[1];
+		$('notes').value = item.notes[1];
+
+// Remove the initial listener from the input 'save task' button.
+		save.removeEventListner("click", storeData);
+		// Change the submit value to say Edit button
+		$('submit').value = "Edit Contact";
+		var editSubmit = $('submit');
+		//Save the key value established in this function as a property of the editSubmit event
+		// so we can use that value when we save the data we edited.
+		editSubmit.addEventListener("click", validate);
+		editSubmit.key = this.key;
+	}
+// ------- End of:  Edit Task Data --------------------------
+
 // ------- Start of:  Delete Task Data --------------------------
 function deleteTask(id) {
 	var ask	=	confirm("Are you sure you want to delete this task?");
@@ -941,8 +834,9 @@ function deleteTask(id) {
 		alert("Item not removed!");
 	}
 }
+// ------- End of:  Delete Task Data --------------------------
 
-// -------   Start of: Rebuilt  Delete All Stored Tasks --------------------------
+// -------   Start of: Delete All Stored Tasks --------------------------
 function clearLocal() {
 	if(localStorage.length === 0) {
 		alert("There is no data to clear");
@@ -952,22 +846,6 @@ function clearLocal() {
 		window.location.reload();
 		return false;
 	}
-} //clearLocal
-// -------   End of: Rebuilt  Delete All Stored Tasks --------------------------
 
-
-// -------   Do Initial Checks --------------------------
-function initialChecks() {
-	checkLocStorSup();
-	formDataStorage = getItems();
-	return formDataStorage;
-}
-initialChecks();
-
-// -------   Start of: Create Footer --------------------------
-
-
-// -------   End of: Create Footer --------------------------
-
-
+// -------   End of: Delete All Stored Tasks --------------------------
  });
