@@ -1,105 +1,93 @@
 <!DOCTYPE html>
-<!-- 
-	Name: Craig Booker
-	Class: MIU
-	Project: 4
-	Date: 10/16/2011
- -->
+<!-- Name: Craig Booker | Class: MIU | Project: 4 | Date: 10/16/2011 -->
 <html>
-    <head>
-        <meta charset="utf-8" />       
-        <title>MIU :: Project 4 :: Task Manager</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>MIU : Project 4</title>
+<link  type="text/css" rel="stylesheet" src="css/iphone.css"/>
+<!--link rel="stylesheet"  href="http://jquerymobile.com/test/themes/default/"-->
+<link type="text/css" rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
+<link type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" rel="stylesheet" /> 
+<link type="text/css" href="http://dev.jtsage.com/jQM-DateBox/css/demos.css" rel="stylesheet" /> 
+<script src="http://jquerymobile.com/test/js/jquery.js"></script>
+<script src="http://jquerymobile.com/test/js/"></script>
+<!--script src="js/json.js" type="text/javascript"></script--> 
+<!--script src="js/custom.js"></script-->
+<script src="js/main.js" type="text/javascript"></script> 
+<script src="js/libs/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+   <script type="text/javascript">
 
-        <meta name="keywords" contents="Task, to do, getting things done" />
-        <meta name="description" content="Adds a task to a to do list." />
-        <meta name="robots" content ="index, follow" />
-        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
-        <!-- Mobile IE needs ClearType for smoothing fonts -->
-        <meta http-equiv="cleartype" content="on">
-
-        <!-- StyleSheets under here -->
-		<link type="text/css" rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
-		<link type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" rel="stylesheet" /> 
-	<link type="text/css" href="http://dev.jtsage.com/jQM-DateBox/css/demos.css" rel="stylesheet" /> 
-         <!-- JavaScript is normally at the end of the body, except for modernizr -->
-         
-	
-	<!-- NOTE: Script load order is significant! -->
-	
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script> 
-	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
-	<script type="text/javascript" src="http://dev.jtsage.com/jquery.mousewheel.min.js"></script>
-	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
-	<script type="text/javascript" src="http://dev.jtsage.com/gpretty/prettify.js"></script>
-	<link type="text/css" href="http://dev.jtsage.com/gpretty/prettify.css" rel="stylesheet" />
-	<script type="text/javascript">
-		$('div').live('pagecreate', function() {
-			prettyPrint()
-		});
-	</script>
-        <script src="js/libs/modernizr.custom.min.js"></script>
-
-    </head>
+    $(document).ready(function() {
+    var today = new Date();
+    var todayStr = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
+    $('#mydate').trigger('datebox', {'method':'set', 'value':todayStr});
+     });
+/*
+$(document).bind("pagebeforechange", function (e, data) {
+	if (typeof data.toPage === "string") {
+		var u = $.mobile.path.parseUrl(data.toPage),
+			re = /^#category-item/;
+		if (u.hash.search(re) !== -1) {
+			showCategory(u, data.options);
+			e.preventDefault();
+		}
+	}
+}); 
+*/
+</script>
+</head>
 
   <body> 
 
-<!-- Start of Add Item page:  --> 
-<div data-role="page" id="add_item">
+<!-- START OF PAGE: add_item  ++++++++++++++++++++++++++++++++++++++++++   -->
+<!--div data-role="page" id="add_item"-->
 
 	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 	    </div><!-- /header -->	
 	    <div data-role="content"><a href="#top_page" name="top_page"></a>
 			<div data-role="primary-content">
-						<form id="addTaskForm" action="#" onsubmit="saveItems();"> 
-								<div id="errors"></div>
-								<fieldset data-role="controlgroup">
+						<a href="#" id="clear">Clear Stored Data</a>
+						<a href="#" id="displayLink">Display Data</a>
+						<a href="add_item.html" id="addNew" style="display:none;">Add New Item</a>
+						<fieldset data-role="controlgroup">
+						<form id="addTaskForm" name="addTaskForm" method="post" action="#" onsubmit=""> 
+								
 									<legend><strong>Enter Task Details</strong></legend>
-										<div data-role="fieldcontain">
-											<label for="tName">Task Name:</label><input type="text" id="tName" placeholder="Enter Task Title" />
-										</div><!-- Set Task Name -->
-										<div data-role="fieldcontain">
-											<fieldset data-role="controlgroup">
-												<ul data-role="controlgroup">
-												<li><label for="tPriority">Priority </label><input type="range" id="tPriority" min="0" max="5" step="1" default="0"  data-theme="a" /><h5>Priority (Low  = 0-2 Medium = 3-5 High = 6-10)  </h5></li>
-												</ul>
-											</fieldset>
-										</div><!-- Set Priority  -->
-										<div data-role="fieldcontain">
+										<div data-role="fieldcontain" id="selectPlaceholder">
+											<ul id="errors"></ul>
+											<ul id="questions">
+												<li id="select"><label for="context">*Select Context:</label><br /></li>
+												<li><label for="name">*Task Name:</label><input type="text" id="name" placeholder="Enter Task Title" /></li>
+												<li><label for="priority">*Priority </label><input type="range" id="priority" min="0" max="5"default="3"   step="1" data-theme="a" /><h5>Priority Levels: (Low = 0 - 1 | Mid = 2 - 3 | High  = 4 - 5)  </h5></li>
 										 	<fieldset data-role="controlgroup">
-												<legend>Add to Favorites: </legend><h6>(Common Task)</h6>
-												<input type="checkbox" name="tFavorirte" id="tFavorite" class="custom" />
-												<label for="tFavorite">Yes </label>
+												<li><legend>Add to Favorites: </legend><h6>(Common Task)</h6>
+												<input type="checkbox" name="favorite" id="favorite" class="custom" />
+												<label for="favorite">Yes </label></li>
 										    </fieldset>
-										</div><!-- Add Task To Favorites  -->
-		
-										<div data-role="fieldcontain" >
 											<p><h2>Timeline</h2><h6>Choose date by clicking on grid icon to the right side of the field.</h6></p>
-											<label for="sDate">Start Date:</label><input id="sDate" name="sDate" type="date" data-role="datebox" data-options='{"mode": "calbox", "disableManualInput": true}' data-iconpos="right" placeholder="Choose start date.">
-										</div><!-- Task Start Date -->
+											<li><label for="sDate">Start Date:</label><input id="sDate" name="sDate" type="date" data-role="datebox" data-options='{"mode": "calbox", "disableManualInput": true}' data-iconpos="right" placeholder="Choose start date.">
+										</li><!-- Task Start Date -->
 											
-										<div data-role="fieldcontain">
-											<label for="eDate">End Date:</label><input type="date" id="eDate" type="date" data-role="datebox" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose end date.">
-										</div><!-- Task End Date -->
-											
-										<div data-role="fieldcontain">
+										<li><label for="eDate">End Date:</label><input type="date" id="eDate" data-role="datebox" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose end date.">
+										</li><!-- Task End Date -->
+										<li>
 											<label for="dDate">Due Date:</label><input type="date" id="dDate" type="date" data-role="datebox"
    data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose due date.">
-										</div><!-- Task Due Date  -->
-											
-										<div data-role="fieldcontain">
-											<label for="tNotes">Notes:</label><textarea id="tNotes" placeholder="Add some details about your task."></textarea>
-										</div><!-- Allows For Any Notes For Task -->						
+										</li><!-- Task Due Date  -->
+										<li>
+											<label for="notes">Notes:</label><textarea id="notes" placeholder="Add some details about your task."></textarea>
+										</li><!-- Allows For Any Notes For Task -->	
+										<li data-role=""><!--input type="submit" id="submit" value="Save Task"-->
+										<div class="ui-block-b"><button type="submit" id="submit" data-theme="a">Save Task</button></div>
+										<div class="ui-block-a"><button type="submit" id="cancel" data-theme="d">Cancel</button></div>
+				
+										</li>		
+										</ul>			
 								</fieldset>
 							<!-- End of fieldset  -->
-							<div class="ui-body ui-body-b">
-								<fieldset class="ui-grid-a">
-									<button type="submit" id="submitForm" data-theme="b">Submit</button>
-							    </fieldset>
-							</div>
 					</form>
 			
 				</div> <!-- Primary Content -->
@@ -110,15 +98,15 @@
 				<ul>
 					<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
 					<li><a href="index.html" data-icon="home">Home</a></li>
-					<!--li><a href="add_item.html" data-icon="plus">Add Task</a></li-->
 					<li><a href="about.html" data-icon="info">About</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
-	</div>
-	<!--END ADD TASK PAGE -->
+	<!--/div-->
+
+<!-- END OF PAGE: add_item   ++++++++++++++++++++++++++++++++++++++++++   -->
 		<script src="js/json.js" type="text/javascript"></script> 
-		<script src="js/main.js" type="text/javascript"></script> 
+		<!--script src="js/main.js" type="text/javascript"></script--> 
 
 		<!--script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script-->

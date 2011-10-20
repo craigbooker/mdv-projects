@@ -1,37 +1,29 @@
 // Craig Booker  |  MIU Project 4 | 10/16/2011
 
-$(document).bind("pagebeforechange", function(e, data) {
-		if (typeof data.toPage === "string") {
-			var u = $.mobile.path.parseUrl(data.toPage),
-						re = /^#category-item/;
-			if(u.hash.search(re) !== -1) {
-					showCategory(u, data.options);
-					e.preventDefault();
-			}
-		}
-});
-
-window.addEventListener("DOMContentLoaded", function() {
-	// -------   Start of NEW VERSION : Variable Defaults --------------------------
-
-	var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"],
-		favoriteValue = "No";
-
+window.addEventListener("DOMContentLoaded", function () {
 // getElementById Function
 	function $(x) {
 		var theElement = document.getElementById(x);
 		return theElement;
 	}
+		// -------   Start of : Variable Defaults --------------------------
+	var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
+	var errMsg = $('errors');
+		// Create select field element and populate with options.
 	function makeCats() {
-		var formTag = document.getElementsByTagName("form"),
+		alert("i'm in!");
+		var formTag = document.getElementsByName("addTaskForm"), //formTag is an array of all the form tags.
 			i,
 			j,
 			selectLi = $('select');
+		alert(formTag);
+		var makeDiv = document.createElement("div");
 		var makeSelect = document.createElement('select');
+		makeDiv.setAttribute("data-role", "fieldcontain");
 		makeSelect.setAttribute("id", "context");
+		makeSelect.setAttribute("name", "context");
+		makeSelect.setAttribute("data-native-menu", "false");
 		for (i = 0, j = contextNames.length; i < j; i++) {
-		//for (var i = 0, j = contextNames.length; i < j; i++) {
-
 			var makeOption = document.createElement('option');
 			var optText = contextNames[i];
 			makeOption.setAttribute("value", optText);
@@ -41,27 +33,82 @@ window.addEventListener("DOMContentLoaded", function() {
 		selectLi.appendChild(makeSelect);
 	}
 	makeCats();
-	//var catNames  = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
-	var errMsg = $('errors');
-	var formTag = document.getElementById('form');
-	var makePara = document.createElement("p");
-	var locFormStor;
-	var formDataStorage;
-	var editing;
-	var makeDiv = document.createElement("div");
-	var makeLabel = document.createElement("label");
-	//var getTContext	= document.getElementById('tContextList');
-	var	makeSelect = document.createElement("select");
-	//var makeLabel = document.createElement("label");
-	makeDiv.setAttribute("data-role", "fieldcontain");
-	makeSelect.setAttribute("id", "context");
-	makeSelect.setAttribute("name", "context");
-	makeSelect.setAttribute("data-native-menu", "false");
+// -------   Start of : Show Category List -------------------------- 
+/*
+function showCategory(urlObj, options) {
+	var categoryName = urlObj.hash.replace(/.*category=/, ""),
+		actionName = urlObj.hash.replace(/.*show=/, ""),
+		category = json.[categoryName],
+		pageSelector = urlObj.hash.replace(/\?.*$/, ""),
+		//alert(pageSelector);
+		i;
+	if (category) {
+		var $page = $(pageSelector),
+			$header = $page.children(":jqmData(role=header)"),
+			$content = $page.children(":jqmData(role=content)"),
+			markup = "<p><img src=\"img" + category  + "/></p><ul data-role='listview' data-inset='true'>",
+			cItems = category.tasks,
+			numItems = cItems.length;
+// Make a list item for each item in the category and add to markup
+		for (i = 0; i < numItems; i++) {
+			markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].priority + "</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";
+		}
+		markup += "</ul>";
+		$header.find("h1").html(category.name);
+		$content.html(markup);
+		$page.page();
+		$content.find(":jqmData(role=listview)").listview();
+		options.dataUrl = urlObj.href;
+		$.mobile.changePage($page, options);
+	}
+}
+// -------   End of : Show Category List -------------------------- */
 
+// -------   Start of: Rebuilt Toggle Controls--------------------------
 
-// JSON Data Object
-
-	var json = {
+function toggleControls(n) {
+	switch (n) {
+	case "on":
+		$('addTaskForm').style.display = "none";
+		$('clear').style.display = "inline";
+		$('displayLink').style.display = "none";
+		$('addNew').style.display = "inline";
+		break;
+	case "off":
+		$('addTaskForm').style.display = "block";
+		$('clear').style.display = "inline";
+		$('displayLink').style.display = "inline";
+		$('addNew').style.display = "none";
+		$('items').style.display = "none";
+		break;
+	default:
+		return false;
+	}
+}
+// -------   End of: Rebuilt Toggle Controls--------------------------
+// -------   Start of: Delete All Stored Tasks --------------------------
+function clearLocal() {
+	if(localStorage.length === 0) {
+		alert("There is no data to clear");
+	} else {
+		localStorage.clear();
+		alert("All tasks are deleted!");
+		window.location.reload();
+		return false;
+	}
+}
+// -------   End of: Delete All Stored Tasks --------------------------
+// -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
+	var displayLink = $('displayLink');
+	displayLink.addEventListener("click", getData);
+	var clearLink = $('clear');
+	clearLink.addEventListener("click", clearLocal);
+	var save = $('submit');
+	save.addEventListener("click", validate);	
+// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
+// -------   Start of: Get Data NEW --------------------------
+	function autoFillData() {
+			var json = {
 			"task1": {
 				"context": ["Context:", "Errand" ],
 				"name": ["Task Name:", "Get Vacuum Bags" ],
@@ -362,253 +409,56 @@ window.addEventListener("DOMContentLoaded", function() {
 				"dDate": ["Due Date:", "2011-05-16"],
 				"notes": ["Notes:", ""]
 			}
-		};
-
-// END OF: JSON Data Object
-
-//handleData(json);
-	var jsonstring = JSON.stringify(json);
-//console.log(jsonstring);
-
-	var receivedjson = JSON.parse(jsonstring);
-//console.log(receivedjson);
-
-// END OF: json_data function
-
-// -------  Set Initial Data - using an object --------------------------
-	function intializeData() {
-	// If this key exists then we can bail out, as we have already initialized
-		if (storage.getItem(key) !== null) { return; }
-		var categoryData = {
-			errand: {
-				name: "Errand",
-				description: "All your errands waiting to be done.",
-				items: [
-					{
-						name: "Go Grocery Shopping",
-						priority: "5"
-					},
-					{
-						name: "Go to Hardware Store",
-						priority: "5"
-					},
-					{
-						name: "Go to Dry Cleaners",
-						priority: "5"
-					},
-					{
-						name: "Go Get Movie from Redbox",
-						priority: "5"
-					},
-					{
-						name: "Go By Bank",
-						priority: "5"
-					}
-				]
-			},
-			home: {
-				name: "Home",
-				description: "All your things around the house waiting to be done.",
-				tName: [
-					{
-						name: "Vacuum House",
-						priority: "5"
-					},
-					{
-						name: "Sweep Garage",
-						priority: "5"
-					},
-					{
-						name: "Mow Lawn"
-					},
-					{
-						name: "Plant Flowers"
-					},
-					{
-						name: "Plant Grass Seed"
-					}
-				]
-			},
-			office: {
-				name: "Office",
-				description: "All your tasks at the office to be done.",
-				items: [
-					{
-						name: "Order Office Supplies",
-						priority: "5"
-					},
-					{
-						name: "Clean Desk",
-						priority: "5"
-					},
-					{
-						name: "Reorganize Filecabinet",
-						priority: "5"
-					},
-					{
-						name: "Meeting with Mike",
-						priority: "5"
-					},
-					{
-						name: "Prepare Sales Presentation",
-						priority: "5"
-					}
-				]
-			},
-			calls: {
-				name: "Calls",
-				description: "All your calls waiting to be made.",
-				items: [
-					{
-						name: "Call Joe from Shipping",
-						priority: "5"
-					},
-					{
-						name: "Call Car Dealer About Repair Status",
-						priority: "5"
-					},
-					{
-						name: "Call AT&T About Texting Plan",
-						priority: "5"
-					},
-					{
-						name: "Call Client to Setup Meeting",
-						priority: "5"
-					},
-					{
-						name: "Call City About Utility Bill",
-						priority: "5"
-					}
-				]
-			},
-			people: {
-				name: "People",
-				description: "All items delegated to people.",
-				items: [
-					{
-						name: "Mike is preparing operations presentation",
-						priority: "5"
-					},
-					{
-						name: "Jane is organizing lunch party",
-						priority: "5"
-					},
-					{
-						name: "Joanne is creating spreadsheet for monthly budget",
-						priority: "5"
-					},
-					{
-						name: "Joe is revising business plan",
-						priority: "5"
-					},
-					{
-						name: "Judy is revisiting our marketing plan",
-						priority: "5"
-					}
-				]
-			},
-			waiting: {
-				name: "Waiting",
-				description: "All items that are on pause.",
-				items: [
-					{
-						name: "Research into new product line",
-						priority: "5"
-					},
-					{
-						name: "Remodel Kitchen",
-						priority: "5"
-					},
-					{
-						name: "Buy new car",
-						priority: "5"
-					},
-					{
-						name: "Rewire Cat 6 cabling throughout house",
-						priority: "5"
-					},
-					{
-						name: "Revamp company web site",
-						priority: "5"
-					}
-				]
-			}
-		};
-// ----- Make Cats New Function
-
-		var makeCategory = function (urlObj, options) {
-			var categoryName = urlObj.hash.replace(/.*category=/, ""),
-				category = categoryData[categoryName],
-				pageSelector = urlObj.hash.replace(/\?.*$/, "");
-/*	<li><a href="index.html">
-				<h3>jQuery Team</h3>
-				<p><strong>Boston Conference Planning</strong></p>
-				<p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
-				<p class="ui-li-aside"><strong>9:18</strong>AM</p>
-			</a></li> */
-			if (category) {
-				var $page = $(pageSelector),
-					$header = $page.children(":jqmData(role=header)"),
-					$content = $page.children(":jqmData(role=content)"),
-					markup = "<p><img src=\"" + category  + "/>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
-					i,
-					cItems = category.items,
-					numItems = cItems.length;
-					// Make a list item for each item in the category and add to markup
-				for (i = 0; i < numItems; i++) {
-							//markup += "<li><h3>" + cItems[i].name + "<p><strong>" + + "</strong></p>";
-							//markup += "<p>" + notes + "</p>"
-					markup += "<option>" + contextNames[i] + "</option>";
-					markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].priority + "</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";
-				}
-				markup += "</ul>";
-				$header.find("h1").html(category.name);
-				$content.html(markup);
-				$page.page();
-				$content.find(":jqmData(role=listview)").listview();
-				options.dataUrl = urlObj.href;
-				$.mobile.changePage($page, options);
-			}
-		};
-// ---- End of: Cats New Function --------------------------------
-
-// -------   Start of : Show Category List --------------------------
-		function showCategory(urlObj, options) {
-			var categoryName = urlObj.hash.replace(/.*category=/, ""),
-				category = categoryData[categoryName],
-				pageSelector = urlObj.hash.replace(/\?.*$/, "");
-			if (category) {
-				var $page = $(pageSelector),
-					$header = $page.children(":jqmData(role=header)"),
-					$content = $page.children(":jqmData(role=content)"),
-					markup = "<p><img src=\"" + category  + "/>" + category.description + "</p> <ul dara-role='listview' data-inset='true'>",
-					cItems = category.items,
-					numItems = cItems.length;
-						// Make a list item for each item in the category and add to markup
-				for (var i = 0; i < numItems; i++ ) {
-								//markup += "<li><h3>" + cItems[i].name + "<p><strong>" + + "</strong></p>";
-								//markup += "<p>" + notes + "</p>"
-						markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].priority +"</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";	
-						}
-						markup += "</ul>";
-						$header.find("h1").html(category.name);
-						$content.html(markup);
-						$page.page();
-						$content.find(":jqmData(role=listview)" ).listview();
-						options.dataUrl = urlObj.href;
-						$.mobile.changePage($page, options);
-			}
+	};
+	for(var n in json) {	
+		var id =	Math.floor(Math.random()*100000000001);
+		localStorage.setItem(id, JSON.stringify(json[n]));
 		}
-// -------   End of : Show Category List --------------------------
+}	
+// -------   End of: autoFillData --------------------------
 
+// -------   Start of: Get Data NEW --------------------------
+function getData() {
+	toggleControls("on");
+	if (localStorage.length === 0) {
+		autoFillData();
+		alert("There is no data in local Storage so default was added.");
+	}
+	// Write data from local storage to the browser
+	var makeDiv = document.createElement('div');
+	makeDiv.setAttribute("id", "items");
+	var makeList = document.createElement('ul');
+	makeDiv.appendChild(makeList);
+	document.body.appendChild(makeDiv);
+	$('items').style.display = "block";
+	for (var i=0, len = localStorage.length; i < len; i++) {
+		var makeLi	= document.createElement("li");
+		var linksLi		=	document.createElement("li");
+		makeList.appendChild(makeLi);
+		var key		= localStorage.key[i];
+		var value		=	localStorage.getItem[key];
+		// Convert the string from local storage value back to an object by using JSON.parse
+		var obj 		=	JSON.parse(value);
+		var makeSubList	=	document.createElement('ul');
+		makeLi.appendChild(makeSubList);
+		getImage(obj.group[1], makeSubList);
+		for(var n in obj) {
+			var makeSubLi	=	document.createElement('li');
+			makeSubList.appendChild(makeSubLi);
+			var optSubText	=	obj[n][0]+" "+obj[n][1];
+			makeSubLi.innerHTML	=	optSubText;
+			makeSubList.appendChild(linksLi);
+		}
+		makeItemLinks(localStorage.key(i), linksLi);
+	}
+}
+// -------   End of: Get Data NEW --------------------------
 
-
-
-// -------   NEW VERSION : Form Validation --------------------------
+// -------   Start of : Form Validation --------------------------
 function validate(e) {
-	var getcontext = $('context');
+	var getContext = $('context');
 	var getName = $('name');
-	var getpriority = $('priority');
+	var getPriority = $('priority');
 	var getSdate = $('sDate');
 	var getEdate = $('eDate');
 	var getDdate = $('dDate');
@@ -651,58 +501,10 @@ function validate(e) {
 	return false;
 	} else {
 			// If all is okay, save out data!
-			storeData();
+			storeData(e);
 	}
 
-// -------   End of NEW VERSION : Form Validation --------------------------
-
-// -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
-	var displayLink = $('displayLink');
-	displayLink.addEventListener("click", getData);
-	var clearLink = $('clear');
-	clearLink.addEventListener("click", clearLocal);
-	var save = $('submit');
-	save.addEventListener("click", validate);	
-	
-// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
-
-// -------   Start of: Get Data NEW --------------------------
-	function getData() {
-		toggleControls("on");
-		if(localStorage.length === 0) {
-			autoFillData();
-			alert("There is no data in local Storage so default was added.");
-		}
-		// Write data from local storage to the browser
-		var makeDiv = document.createElement('div');
-		makeDiv.setAttribute("id", "items");
-		var makeList = document.createElement('ul');
-		makeDiv.appendChild(makeList);
-		document.body.appendChild(makeDiv);
-		$('items').style.display = "block";
-		for(var i=0, len = localStorage.length; i < len; i++) {
-			var makeLi	= document.createElement("li");
-			var linksLi		=	document.createElement("li");
-			makeList.appendChild(makeLi);
-			var key		= localStorage.key[i];
-			var value		=	localStorage.getItem[key];
-			// Convert the string from local storage value back to an object by using JSON.parse
-			var obj 		=	JSON.parse(value);
-			var makeSubList	=	document.createElement('ul');
-			makeLi.appendChild(makeSubList);
-			getImage(obj.group[1], makeSubList);
-			for(var n in obj) {
-				var makeSubLi	=	document.createElement('li');
-				makeSubList.appendChild(makeSubLi);
-				var optSubText	=	obj[n][0]+" "+obj[n][1];
-				makeSubLi.innerHTML	=	optSubText;
-				makeSubList.appendChild(linksLi);
-			}
-			makeItemLinks(localStorage.key(i), linksLi);
-		}
-	}
-// -------   End of: Get Data NEW --------------------------
-
+// -------   End of : Form Validation --------------------------
 // -------   Start of: Make Item Links --------------------------
 	function makeItemLinks(key, linksLi) {
 	var editLink	=	document.createElement('a');
@@ -724,62 +526,16 @@ function validate(e) {
 	deleteLink.addEventListener("click", deleteItem);
 	deleteLink.innerHTML = deleteText;
 	linksLi.appendChild(deleteLink);
-	
 	}
 // -------   End of: Make Item Links --------------------------
-
-// -------   Start of: Get Img NEW --------------------------
-
-	function getImage(catName, makeSubList) {
-		var imageLi	=	document.createElement('li');
-		makeSubList.appendChild('imageLi');
-		var newImage	=	document.createElement('img');
-		var setSrc	=	newImg.setAttribute("src", "images/"+ catName + ".png");
-		imageLi.appendChild(newImg);
-	}
-// -------   End of: Get Img NEW --------------------------
-
-// -------   Start of: Rebuilt Find value of the check box. --------------------------
-	function getCheckboxValue() {
-			if ($('favorite').checked) {
-				favoriteValue = $('favorite').value;
-			} else {
-				favoriteValue = "No"
-			}
-	}
-// -------   End of: Rebuilt Find value of the check box. --------------------------
-
-// -------   Start of: Rebuilt Toggle Controls--------------------------
-
-function toggleControls(n) {
-	switch(n) {
-		case "on":
-				$('addTaskForm').style.display = "none";
-				$('clear').style.display = "inline";
-				$('displayLink').style.display = "none";
-				$('addNew').style.display = "inline";
-				break;
-		case "off":
-				$('addTaskForm').style.display = "block";
-				$('clear').style.display = "inline";
-				$('displayLink').style.display = "inline";
-				$('addNew').style.display = "none";
-				$('items').style.display = "none";
-				break;
-		default:
-		return false;
-	}
-}
-// -------   End of: Rebuilt Toggle Controls--------------------------
-
 // -------   Start of: Rebuilt Save Form Data --------------------------
 	function storeData(key) {
-		var Id				=	Math.floor(Math.random()*100000000001);
+		var id				=	Math.floor(Math.random()*100000000001);
 		//getSelectedRadio();
 		getCheckboxValue();
-		var item			=	[];
-				item.context	=	["Context: ", $('contexts').value];
-				item.tName		=	["Task Name: ", $('tName').value];
+		var 	item					=	{};
+				item.context	=	["Context: ", $('context').value];
+				item.name		=	["Task Name: ", $('name').value];
 				item.priority		=	["Priority: ", $('priority').value];
 				item.favorite	=	["Favorite: ", $('favorite').value];
 				item.sDate		=	["Start Date: ", $('sDate').value];
@@ -791,7 +547,6 @@ function toggleControls(n) {
 		alert("Task Saved!");
 	}
 // -------   End of:Rebuilt Save Form Data --------------------------
-
 // -------   Edit Task Data --------------------------
 	function editItem(id) {
 		//Grab Data from Local Storage
@@ -815,7 +570,7 @@ function toggleControls(n) {
 // Remove the initial listener from the input 'save task' button.
 		save.removeEventListner("click", storeData);
 		// Change the submit value to say Edit button
-		$('submit').value = "Edit Contact";
+		$('submit').value = ("Edit Contact");
 		var editSubmit = $('submit');
 		//Save the key value established in this function as a property of the editSubmit event
 		// so we can use that value when we save the data we edited.
@@ -823,7 +578,6 @@ function toggleControls(n) {
 		editSubmit.key = this.key;
 	}
 // ------- End of:  Edit Task Data --------------------------
-
 // ------- Start of:  Delete Task Data --------------------------
 function deleteTask(id) {
 	var ask	=	confirm("Are you sure you want to delete this task?");
@@ -836,16 +590,25 @@ function deleteTask(id) {
 }
 // ------- End of:  Delete Task Data --------------------------
 
-// -------   Start of: Delete All Stored Tasks --------------------------
-function clearLocal() {
-	if(localStorage.length === 0) {
-		alert("There is no data to clear");
-	} else {
-		localStorage.clear();
-		alert("All tasks are deleted!");
-		window.location.reload();
-		return false;
-	}
+// -------   Start of: Get Img NEW --------------------------
 
-// -------   End of: Delete All Stored Tasks --------------------------
- });
+	function getImage(catName, makeSubList) {
+		var imageLi	=	document.createElement('li');
+		makeSubList.appendChild('imageLi');
+		var newImage	=	document.createElement('img');
+		var setSrc	=	newImg.setAttribute("src", "images/"+ catName + ".png");
+		imageLi.appendChild(newImg);
+	}
+// -------   End of: Get Img NEW --------------------------
+
+// -------   Start of: Rebuilt Find value of the check box. --------------------------
+	function getCheckboxValue() {
+			if ($('favorite').checked) {
+				favoriteValue = $('favorite').value;
+			} else {
+				favoriteValue = ("No");
+			}
+	}
+}
+// -------   End of: Rebuilt Find value of the check box. --------------------------
+});
