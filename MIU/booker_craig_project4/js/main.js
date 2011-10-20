@@ -416,6 +416,29 @@ function clearLocal() {
 		}
 }	
 // -------   End of: autoFillData --------------------------
+// -------   Start of: Make Item Links --------------------------
+	function makeItemLinks(key, linksLi) {
+	var editLink	=	document.createElement('a');
+	editLink.href	=	"#";
+	editLink.key	=	key;	
+	var editText	=	"Edit Task";
+	editLink.addEventListener("click", editItem);
+	editLink.innerHTML	=	editText;
+	linksLi.appendChild(editLink);
+	
+	// Add Line Break
+	var breakTag = document.createElement('br');
+	linksLi.appendChild(breakTag);
+	
+	var deleteLink	=	document.createElement('a');
+	deleteLink.href = "#";
+	deleteLink.key	=	key;
+	var deleteText = "Delete Task";
+	deleteLink.addEventListener("click", deleteItem);
+	deleteLink.innerHTML = deleteText;
+	linksLi.appendChild(deleteLink);
+	}
+// -------   End of: Make Item Links --------------------------
 
 // -------   Start of: Get Data NEW --------------------------
 function getData() {
@@ -430,7 +453,7 @@ function getData() {
 	var makeList = document.createElement('ul');
 	makeDiv.appendChild(makeList);
 	document.body.appendChild(makeDiv);
-	$('items').style.display = "block";
+	$('items').style.display = "display";
 	for (var i=0, len = localStorage.length; i < len; i++) {
 		var makeLi	= document.createElement("li");
 		var linksLi		=	document.createElement("li");
@@ -474,19 +497,19 @@ function validate(e) {
 	//Context Validation
 	if (getContext.value === "---Choose Context ---") {
 		var contextError = "Please choose a context.";
-		getContext.style.border = "1px solid red";
+		getContext.style.border = "2px solid yellow";
 		messageAry.push(contextError);
 	}
 	//Task Name Validation
 	if (getName.value === "") {
 		var nameError = "Please enter a task name.";
-		getName.style.border = "1px solid red";
+		getName.style.border = "2px solid yellow";
 		messageAry.push(nameError);	
 	}
 	//Priority Validation
 	if (getPriority.value === "") {
 		var priorityError = "Please set a priority.";
-		getPriority.style.border = "1px solid red";
+		getPriority.style.border = "2px solid yellow";
 		messageAry.push(priorityError);	
 	}
 	
@@ -505,29 +528,6 @@ function validate(e) {
 	}
 
 // -------   End of : Form Validation --------------------------
-// -------   Start of: Make Item Links --------------------------
-	function makeItemLinks(key, linksLi) {
-	var editLink	=	document.createElement('a');
-	editLink.href	=	"#";
-	editLink.key	=	key;	
-	var editText	=	"Edit Task";
-	editLink.addEventListener("click", editItem);
-	editLink.innerHTML	=	editText;
-	linksLi.appendChild(editLink);
-	
-	// Add Line Break
-	var breakTag = document.createElement('br');
-	linksLi.appendChild(breakTag);
-	
-	var deleteLink	=	document.createElement('a');
-	deleteLink.href = "#";
-	deleteLink.key	=	key;
-	var deleteText = "Delete Task";
-	deleteLink.addEventListener("click", deleteItem);
-	deleteLink.innerHTML = deleteText;
-	linksLi.appendChild(deleteLink);
-	}
-// -------   End of: Make Item Links --------------------------
 // -------   Start of: Rebuilt Save Form Data --------------------------
 	function storeData(key) {
 		var id				=	Math.floor(Math.random()*100000000001);
