@@ -5,10 +5,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>MIU : Project 4</title>
-<link  type="text/css" rel="stylesheet" src="css/iphone.css"/>
 <!--link rel="stylesheet"  href="http://jquerymobile.com/test/themes/default/"-->
 <link type="text/css" rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
 <link type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" rel="stylesheet" /> 
+<link  type="text/css" rel="stylesheet" src="css/iphone.css"/>
 <link type="text/css" href="http://dev.jtsage.com/jQM-DateBox/css/demos.css" rel="stylesheet" /> 
 <script src="http://jquerymobile.com/test/js/jquery.js"></script>
 <script src="http://jquerymobile.com/test/js/"></script>
@@ -42,20 +42,14 @@ $(document).bind("pagebeforechange", function (e, data) {
 <body>
 
 <!-- START OF PAGE: home  ++++++++++++++++++++++++++++++++++++++++++   -->
-<div id="home" data-role="page">
+<div data-role="page" id="home">
  	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 	</div><!-- /header -->
 	<div data-role="secondary header">
 			<img src="img/goal_setting.jpg" width="320px" height="175px">
     </div>
-	<!--div data-role="list-divider" class="ui-bar-a">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
-	    		<!--li><input type="search" name="search" id="search" value="" placeholder="search context" data-theme="c"/></li> <!--search box-->
-			<!--/ul>
-	</div-->
-<div data-role="list-divider" class="ui-bar-a">
+	<div data-role="list-divider" class="ui-bar-a">
 			<ul data-role="listview">
 				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
 			</ul>
@@ -87,7 +81,6 @@ $(document).bind("pagebeforechange", function (e, data) {
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=waiting" data-theme="a">
 					<img src="img/Waiting.png" class="ui-li-icon" />Waiting<span class="ui-li-count">5</span></a>
 				</li>
-			
 			</ul>
 		</div> <!-- End of Seondary Content -->
 		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
@@ -106,7 +99,6 @@ $(document).bind("pagebeforechange", function (e, data) {
 
 <!-- START OF PAGE: add_item  ++++++++++++++++++++++++++++++++++++++++++   -->
 <div data-role="page" id="add_item">
-
 	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 	    </div><!-- /header -->	
@@ -260,6 +252,111 @@ $(document).bind("pagebeforechange", function (e, data) {
 	</div><!-- /footer -->
 </div>
 <!-- END OF PAGE: category-items   ++++++++++++++++++++++++++++++++++++++++++   -->
+
+
+
+
+
+
+
+<!-- START OF PAGE: add_items   ++++++++++++++++++++++++++++++++++++++++++   -->
+<div data-role="page" id="add_items">
+
+	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+	    </div><!-- /header -->	
+	    
+<div data-role="content" class="ui-content" role="main">
+ 	<div class="content-primary">
+		<form action="#" method="get">
+
+					<h2>Task Details</h2>
+					<p>This page contains various progressive-enhancement driven form controls. Native elements are sometimes hidden from view, but their values are maintained so the form can be submitted normally. </p>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+					<label for="name" class="ui-input-text">Task Name:</label>
+					<input type="text" name="name" id="name" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+					</div>
+					
+ 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+					<label for="search" class="ui-input-text">Search Input:</label>
+					<div class="ui-input-search ui-shadow-inset ui-btn-corner-all ui-btn-shadow ui-icon-searchfield ui-body-c"><input type="text" data-type="search" name="password" id="search" value="" class="ui-input-text ui-body-c"><a href="#" class="ui-input-clear ui-btn ui-btn-up-c ui-btn-icon-notext ui-btn-corner-all ui-shadow ui-input-clear-hidden" title="clear text" data-theme="c"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">clear text</span><span class="ui-icon ui-icon-delete ui-icon-shadow"></span></span></a></div>
+					</div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+						<label for="slider2" id="slider2-label" class="ui-slider">Flip switch:</label>
+  						<select name="slider2" id="slider2" data-role="slider" class="ui-slider-switch">
+ 							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select><div class="ui-slider ui-slider-switch ui-btn-down-c ui-btn-corner-all ui-slider-switch-a" role="application"><div class="ui-slider-labelbg ui-slider-labelbg-a ui-btn-active ui-btn-corner-left"></div><div class="ui-slider-labelbg ui-slider-labelbg-b ui-btn-down-c ui-btn-corner-right"></div><div class="ui-slider-inneroffset"><a href="#" class="ui-slider-handle ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" role="slider" aria-valuemin="0" aria-valuemax="1" aria-valuenow="off" aria-valuetext="Off" title="0" aria-labelledby="slider2-label" style="left: 0%; "><span class="ui-slider-label ui-slider-label-a ui-btn-active ui-btn-corner-left" role="img">On</span><span class="ui-slider-label ui-slider-label-b ui-btn-down-c ui-btn-corner-right" role="img">Off</span><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text"></span></span></a></div></div>
+					</div>
+ 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+						<label for="slider" id="slider-label" class="ui-slider ui-input-text">Slider:</label>
+							<input type="number" data-type="range" name="slider" id="slider" value="0" min="0" max="100" class="ui-slider-input ui-input-text ui-body-c ui-corner-all ui-shadow-inset"><div class="ui-slider  ui-btn-down-c ui-btn-corner-all" role="application"><a href="#" class="ui-slider-handle ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="0" title="0" aria-labelledby="slider-label" style="left: 0%; "><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text"></span></span></a></div>
+					</div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+					<fieldset data-role="controlgroup" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical"><div role="heading" class="ui-controlgroup-label">Choose as many snacks as you'd like:</div><div class="ui-controlgroup-controls">
+						<div class="ui-checkbox"><input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom"><label for="checkbox-1a" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-left ui-checkbox-off ui-corner-top"><span class="ui-btn-inner ui-corner-top" aria-hidden="true"><span class="ui-btn-text">Cheetos</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow"></span></span></label></div>
+						<div class="ui-checkbox"><input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom"><label for="checkbox-2a" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-left ui-checkbox-off"><span class="ui-btn-inner" aria-hidden="true"><span class="ui-btn-text">Doritos</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow"></span></span></label></div>
+						<div class="ui-checkbox"><input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom"><label for="checkbox-3a" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-left ui-checkbox-off"><span class="ui-btn-inner" aria-hidden="true"><span class="ui-btn-text">Fritos</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow"></span></span></label></div>
+						<div class="ui-checkbox"><input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom"><label for="checkbox-4a" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-left ui-checkbox-off ui-corner-bottom ui-controlgroup-last"><span class="ui-btn-inner ui-corner-bottom ui-controlgroup-last" aria-hidden="true"><span class="ui-btn-text">Sun Chips</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow"></span></span></label></div>
+					</div></fieldset>
+					</div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+					<fieldset data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal"><div role="heading" class="ui-controlgroup-label">Font styling:</div><div class="ui-controlgroup-controls">
+					
+					</div></fieldset>
+					</div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+							<fieldset data-role="controlgroup" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical"></fieldset>
+						</div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+							
+					</div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+ 						<label for="select-choice-1" class="select ui-select">Choose shipping method:</label>
+						<div class="ui-select"><div data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-btn-corner-all ui-shadow"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Standard: 7 day</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow"></span></span>
+						<select name="select-choice-1" id="select-choice-1">
+							<option value="standard">Standard: 7 day</option>
+							<option value="rush">Rush: 3 days</option>
+							<option value="express">Express: next day</option>
+							<option value="overnight">Overnight</option>
+						</select>
+						</div>
+						</div>
+					</div>
+					
+							<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+	 							<label for="select-choice-a" class="select ui-select">Choose shipping method:</label>
+								<div class="ui-select"><a href="#" role="button" id="select-choice-a-button" aria-haspopup="true" aria-owns="select-choice-a-menu" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-btn-corner-all ui-shadow"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Custom menu example</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow"></span></span></a><select name="select-choice-a" id="select-choice-a" data-native-menu="false" tabindex="-1">
+								<option>Custom menu example</option>
+	 							<option value="standard">Standard: 7 day</option>
+								<option value="rush">Rush: 3 days</option>
+								<option value="express">Express: next day</option>
+								<option value="overnight">Overnight</option>
+								</select>
+							</div>
+				</div>
+				<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+  					<label for="textarea" class="ui-input-text">Textarea:</label>
+					<textarea cols="40" rows="8" name="textarea" id="textarea" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></textarea>
+  					</div>
+				<div class="ui-body ui-body-b">
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a"><div data-theme="d" class="ui-btn ui-btn-up-d ui-btn-corner-all ui-shadow" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Cancel</span></span><button type="submit" data-theme="d" class="ui-btn-hidden" aria-disabled="false">Cancel</button></div></div>
+							<div class="ui-block-b"><div data-theme="a" class="ui-btn ui-btn-up-a ui-btn-corner-all ui-shadow" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Submit</span></span><button type="submit" data-theme="a" class="ui-btn-hidden" aria-disabled="false">Submit</button></div></div>
+					</fieldset>
+				</div>
+			</form>
+			</div><!--/content-primary -->		
+			</li>
+</div>
+</div>
+</div>		
+</div><!-- /content -->
+<div data-role="footer" class="footer-docs ui-footer ui-bar-c" data-theme="c">
+	<p>© 2011 The jQuery Project</p>
+ </div>
+</div>
+<!-- END OF PAGE: add_item   ++++++++++++++++++++++++++++++++++++++++++   -->
 
 </body>
 </html>
