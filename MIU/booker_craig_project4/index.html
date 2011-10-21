@@ -51,7 +51,7 @@ $(document).bind("pagebeforechange", function (e, data) {
     </div>
 	<div data-role="list-divider" class="ui-bar-a">
 			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-a">Browse By Category</li>
+				<li data-role="list-divider" class="ui-bar ui-bar-c">Browse By Category</li>
 			</ul>
 	</div>	
   <!--div data-role="header"><h1>Categories</h1></div-->
@@ -277,28 +277,16 @@ $(document).bind("pagebeforechange", function (e, data) {
 					<input type="text" name="name" id="name" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
 					</div>
 					
- 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+ 					<!--div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
 					<label for="search" class="ui-input-text">Search Input:</label>
 					<div class="ui-input-search ui-shadow-inset ui-btn-corner-all ui-btn-shadow ui-icon-searchfield ui-body-c"><input type="text" data-type="search" name="password" id="search" value="" class="ui-input-text ui-body-c"><a href="#" class="ui-input-clear ui-btn ui-btn-up-c ui-btn-icon-notext ui-btn-corner-all ui-shadow ui-input-clear-hidden" title="clear text" data-theme="c"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">clear text</span><span class="ui-icon ui-icon-delete ui-icon-shadow"></span></span></a></div>
-					</div>
-					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-						<label for="slider2" id="slider2-label" class="ui-slider">Flip switch:</label>
-  						<select name="slider2" id="slider2" data-role="slider" class="ui-slider-switch">
- 							<option value="off">Off</option>
-							<option value="on">On</option>
-						</select><div class="ui-slider ui-slider-switch ui-btn-down-c ui-btn-corner-all ui-slider-switch-a" role="application"><div class="ui-slider-labelbg ui-slider-labelbg-a ui-btn-active ui-btn-corner-left"></div><div class="ui-slider-labelbg ui-slider-labelbg-b ui-btn-down-c ui-btn-corner-right"></div><div class="ui-slider-inneroffset"><a href="#" class="ui-slider-handle ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" role="slider" aria-valuemin="0" aria-valuemax="1" aria-valuenow="off" aria-valuetext="Off" title="0" aria-labelledby="slider2-label" style="left: 0%; "><span class="ui-slider-label ui-slider-label-a ui-btn-active ui-btn-corner-left" role="img">On</span><span class="ui-slider-label ui-slider-label-b ui-btn-down-c ui-btn-corner-right" role="img">Off</span><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text"></span></span></a></div></div>
-					</div>
+					</div-->
  					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-						<label for="slider" id="slider-label" class="ui-slider ui-input-text">Slider:</label>
-							<input type="number" data-type="range" name="slider" id="slider" value="0" min="0" max="100" class="ui-slider-input ui-input-text ui-body-c ui-corner-all ui-shadow-inset"><div class="ui-slider  ui-btn-down-c ui-btn-corner-all" role="application"><a href="#" class="ui-slider-handle ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="0" title="0" aria-labelledby="slider-label" style="left: 0%; "><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text"></span></span></a></div>
+						<label for="slider" id="slider-label" class="ui-slider ui-input-text">Priority:</label>
+							<input type="number" data-type="range" name="slider" id="slider" value="0" min="0" max="5" class="ui-slider-input ui-input-text ui-body-c ui-corner-all ui-shadow-inset"><div class="ui-slider  ui-btn-down-c ui-btn-corner-all" role="application"><a href="#" class="ui-slider-handle ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" role="slider" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" aria-valuetext="0" title="0" aria-labelledby="slider-label" style="left: 0%; "><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text"></span></span></a></div>
 					</div>
 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-					<fieldset data-role="controlgroup" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical"><div role="heading" class="ui-controlgroup-label">Choose as many snacks as you'd like:</div><div class="ui-controlgroup-controls">
-						<div class="ui-checkbox"><input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom"><label for="checkbox-1a" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-left ui-checkbox-off ui-corner-top"><span class="ui-btn-inner ui-corner-top" aria-hidden="true"><span class="ui-btn-text">Cheetos</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow"></span></span></label></div>
-						<div class="ui-checkbox"><input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom"><label for="checkbox-2a" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-left ui-checkbox-off"><span class="ui-btn-inner" aria-hidden="true"><span class="ui-btn-text">Doritos</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow"></span></span></label></div>
-						<div class="ui-checkbox"><input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom"><label for="checkbox-3a" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-left ui-checkbox-off"><span class="ui-btn-inner" aria-hidden="true"><span class="ui-btn-text">Fritos</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow"></span></span></label></div>
-						<div class="ui-checkbox"><input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom"><label for="checkbox-4a" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-left ui-checkbox-off ui-corner-bottom ui-controlgroup-last"><span class="ui-btn-inner ui-corner-bottom ui-controlgroup-last" aria-hidden="true"><span class="ui-btn-text">Sun Chips</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow"></span></span></label></div>
-					</div></fieldset>
+					<fieldset data-role="controlgroup" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical"></fieldset>
 					</div>
 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
 					<fieldset data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal"><div role="heading" class="ui-controlgroup-label">Font styling:</div><div class="ui-controlgroup-controls">
@@ -312,16 +300,6 @@ $(document).bind("pagebeforechange", function (e, data) {
 							
 					</div>
 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
- 						<label for="select-choice-1" class="select ui-select">Choose shipping method:</label>
-						<div class="ui-select"><div data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-btn-corner-all ui-shadow"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Standard: 7 day</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow"></span></span>
-						<select name="select-choice-1" id="select-choice-1">
-							<option value="standard">Standard: 7 day</option>
-							<option value="rush">Rush: 3 days</option>
-							<option value="express">Express: next day</option>
-							<option value="overnight">Overnight</option>
-						</select>
-						</div>
-						</div>
 					</div>
 					
 							<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
