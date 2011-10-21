@@ -98,14 +98,6 @@ function clearLocal() {
 	}
 }
 // -------   End of: Delete All Stored Tasks --------------------------
-// -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
-	var displayLink = $('displayLink');
-	displayLink.addEventListener("click", getData);
-	var clearLink = $('clear');
-	clearLink.addEventListener("click", clearLocal);
-	var save = $('submit');
-	save.addEventListener("click", validate);	
-// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 // -------   Start of: Get Data NEW --------------------------
 	function autoFillData() {
 			var json = {
@@ -416,6 +408,37 @@ function clearLocal() {
 		}
 }	
 // -------   End of: autoFillData --------------------------
+// -------   Edit Task Data --------------------------
+	function editItem(id) {
+		//Grab Data from Local Storage
+		var value = localStorage.getItem(this.key);
+		var item = JSON.parse(value);
+		//Show the form
+		toggleControls("off");
+		
+		//Populate form fields with current localStorage values
+		$('context').value = item.context[1];
+		$('name').value = item.name[1];
+		$('priority').value = item.priority[1];
+		if (item.favorite[1] == "Yes") {
+			$('favorite').setAttribute("checked", "checked");
+		}
+		$('sDate').value = item.sDate[1];
+		$('eDate').value = item.eDate[1];
+		$('dDate').value = item.dDate[1];
+		$('notes').value = item.notes[1];
+
+// Remove the initial listener from the input 'save task' button.
+		save.removeEventListner("click", storeData);
+		// Change the submit value to say Edit button
+		$('submit').value = ("Edit Contact");
+		var editSubmit = $('submit');
+		//Save the key value established in this function as a property of the editSubmit event
+		// so we can use that value when we save the data we edited.
+		editSubmit.addEventListener("click", validate);
+		editSubmit.key = this.key;
+	}
+// ------- End of:  Edit Task Data --------------------------
 // -------   Start of: Make Item Links --------------------------
 	function makeItemLinks(key, linksLi) {
 	var editLink	=	document.createElement('a');
@@ -476,7 +499,14 @@ function getData() {
 	}
 }
 // -------   End of: Get Data NEW --------------------------
-
+// -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
+	var displayLink = $('displayLink');
+	displayLink.addEventListener("click", getData);
+	var clearLink = $('clear');
+	clearLink.addEventListener("click", clearLocal);
+	var save = $('submit');
+	save.addEventListener("click", validate);	
+// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 // -------   Start of : Form Validation --------------------------
 function validate(e) {
 	var getContext = $('context');
@@ -528,6 +558,17 @@ function validate(e) {
 	}
 
 // -------   End of : Form Validation --------------------------
+// -------   Start of: Rebuilt Find value of the check box. --------------------------
+	function getCheckboxValue() {
+			var favoriteValue;
+			if ($('favorite').checked) {
+				favoriteValue = $('favorite').value;
+			} else {
+				favoriteValue = ("No");
+			}
+	}
+}
+// -------   End of: Rebuilt Find value of the check box. --------------------------
 // -------   Start of: Rebuilt Save Form Data --------------------------
 	function storeData(key) {
 		var id				=	Math.floor(Math.random()*100000000001);
@@ -547,37 +588,6 @@ function validate(e) {
 		alert("Task Saved!");
 	}
 // -------   End of:Rebuilt Save Form Data --------------------------
-// -------   Edit Task Data --------------------------
-	function editItem(id) {
-		//Grab Data from Local Storage
-		var value = localStorage.getItem(this.key);
-		var item = JSON.parse(value);
-		//Show the form
-		toggleControls("off");
-		
-		//Populate form fields with current localStorage values
-		$('context').value = item.context[1];
-		$('name').value = item.name[1];
-		$('priority').value = item.priority[1];
-		if (item.favorite[1] == "Yes") {
-			$('favorite').setAttribute("checked", "checked");
-		}
-		$('sDate').value = item.sDate[1];
-		$('eDate').value = item.eDate[1];
-		$('dDate').value = item.dDate[1];
-		$('notes').value = item.notes[1];
-
-// Remove the initial listener from the input 'save task' button.
-		save.removeEventListner("click", storeData);
-		// Change the submit value to say Edit button
-		$('submit').value = ("Edit Contact");
-		var editSubmit = $('submit');
-		//Save the key value established in this function as a property of the editSubmit event
-		// so we can use that value when we save the data we edited.
-		editSubmit.addEventListener("click", validate);
-		editSubmit.key = this.key;
-	}
-// ------- End of:  Edit Task Data --------------------------
 // ------- Start of:  Delete Task Data --------------------------
 function deleteTask(id) {
 	var ask	=	confirm("Are you sure you want to delete this task?");
@@ -596,19 +606,9 @@ function deleteTask(id) {
 		var imageLi	=	document.createElement('li');
 		makeSubList.appendChild('imageLi');
 		var newImage	=	document.createElement('img');
-		var setSrc	=	newImg.setAttribute("src", "images/"+ catName + ".png");
-		imageLi.appendChild(newImg);
+		var setSrc	=	newImage.setAttribute("src", "images/"+ catName + ".png");
+		imageLi.appendChild(newImage);
 	}
 // -------   End of: Get Img NEW --------------------------
 
-// -------   Start of: Rebuilt Find value of the check box. --------------------------
-	function getCheckboxValue() {
-			if ($('favorite').checked) {
-				favoriteValue = $('favorite').value;
-			} else {
-				favoriteValue = ("No");
-			}
-	}
-}
-// -------   End of: Rebuilt Find value of the check box. --------------------------
 });
