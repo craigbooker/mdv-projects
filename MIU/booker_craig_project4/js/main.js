@@ -34,7 +34,6 @@ window.addEventListener("DOMContentLoaded", function () {
 	}
 	makeCats();
 // -------   Start of : Show Category List -------------------------- 
-/*
 function showCategory(urlObj, options) {
 	var categoryName = urlObj.hash.replace(/.*category=/, ""),
 		actionName = urlObj.hash.replace(/.*show=/, ""),
@@ -62,7 +61,7 @@ function showCategory(urlObj, options) {
 		$.mobile.changePage($page, options);
 	}
 }
-// -------   End of : Show Category List -------------------------- */
+// -------   End of : Show Category List -------------------------- 
 
 // -------   Start of: Rebuilt Toggle Controls--------------------------
 

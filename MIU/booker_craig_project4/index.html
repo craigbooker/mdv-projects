@@ -58,7 +58,7 @@ $(document).bind("pagebeforechange", function (e, data) {
   <div data-role="content" id="nav">
 			<ul data-role="listview" value="" data-filter="true" placeholder="Search">
 				<li>
-					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?show=tasks&category=errands"> 
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=errands"> 
 					<img src="img/Errands.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
@@ -314,9 +314,15 @@ $(document).bind("pagebeforechange", function (e, data) {
 				<div class="ui-body ui-body-b">
 					<fieldset class="ui-grid-a">
 							<div class="ui-block-a"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><button type="submit" data-theme="e" class="ui-btn-hidden" aria-disabled="false">Submit</button></div>
-							<div class="ui-block-b"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><button type="submit" data-theme="d" class="ui-btn-hidden" aria-disabled="false">Clear</button></div>
+							<div class="ui-block-b"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><button type="clear" data-theme="d" class="ui-btn-hidden" aria-disabled="false">Clear</button></div>
 					</fieldset>
 				</div>
+				<!--div class="ui-body ui-body-b">
+  261		<fieldset class="ui-grid-a">
+  262				<div class="ui-block-a"><div data-theme="d" class="ui-btn ui-btn-up-d ui-btn-corner-all ui-shadow" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Cancel</span></span><button type="submit" data-theme="d" class="ui-btn-hidden" aria-disabled="false">Cancel</button></div></div>
+  263				<div class="ui-block-b"><div data-theme="e" class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-e" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Submit</span></span><button type="submit" data-theme="e" class="ui-btn-hidden" aria-disabled="false">Submit</button></div></div>
+  264	    </fieldset>
+  265		</div-->
 			</form>
 			</div><!--/content-primary -->		
 			</li>
