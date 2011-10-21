@@ -4,4 +4,9 @@
 background-image: img/wrong_bg2.gif;
 
 
+},
+#priority_text .h5 {
+text-align: center;
+padding: 0px 0px 0px 0px;
+margin: 0px;
 }

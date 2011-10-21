@@ -11,12 +11,12 @@ window.addEventListener("DOMContentLoaded", function () {
 	var errMsg = $('errors');
 		// Create select field element and populate with options.
 	function makeCats() {
-		alert("i'm in!");
+		//alert("i'm in!");
 		var formTag = document.getElementsByName("addTaskForm"), //formTag is an array of all the form tags.
 			i,
 			j,
 			selectLi = $('select');
-		alert(formTag);
+		//alert(formTag);
 		var makeDiv = document.createElement("div");
 		var makeSelect = document.createElement('select');
 		makeDiv.setAttribute("data-role", "fieldcontain");
@@ -105,6 +105,8 @@ function clearLocal() {
 	clearLink.addEventListener("click", clearLocal);
 	var save = $('submit');
 	save.addEventListener("click", validate);	
+	var clearForm = $('clearForm');
+	clearForm.addEventListener("click", clearForm);    // NEED TO WRITE FUNCTION
 // -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 // -------   Start of: Get Data NEW --------------------------
 	function autoFillData() {
@@ -497,19 +499,19 @@ function validate(e) {
 	//Context Validation
 	if (getContext.value === "---Choose Context ---") {
 		var contextError = "Please choose a context.";
-		getContext.style.border = "2px solid yellow";
+		getContext.style.border = "3px solid yellow";
 		messageAry.push(contextError);
 	}
 	//Task Name Validation
 	if (getName.value === "") {
 		var nameError = "Please enter a task name.";
-		getName.style.border = "2px solid yellow";
+		getName.style.border = "3px solid yellow";
 		messageAry.push(nameError);	
 	}
 	//Priority Validation
 	if (getPriority.value === "") {
 		var priorityError = "Please set a priority.";
-		getPriority.style.border = "2px solid yellow";
+		getPriority.style.border = "3px solid yellow";
 		messageAry.push(priorityError);	
 	}
 	

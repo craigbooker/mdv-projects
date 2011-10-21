@@ -24,7 +24,7 @@
     var todayStr = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
     $('#mydate').trigger('datebox', {'method':'set', 'value':todayStr});
      });
-/*
+
 $(document).bind("pagebeforechange", function (e, data) {
 	if (typeof data.toPage === "string") {
 		var u = $.mobile.path.parseUrl(data.toPage),
@@ -35,7 +35,7 @@ $(document).bind("pagebeforechange", function (e, data) {
 		}
 	}
 }); 
-*/
+
 </script>
 </head>
 
@@ -51,7 +51,7 @@ $(document).bind("pagebeforechange", function (e, data) {
     </div>
 	<div data-role="list-divider" class="ui-bar-a">
 			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-c">Browse By Category</li>
+				<li data-role="list-divider" class="ui-bar ui-bar-d">Browse By Category</li>
 			</ul>
 	</div>	
   <!--div data-role="header"><h1>Categories</h1></div-->
@@ -97,8 +97,8 @@ $(document).bind("pagebeforechange", function (e, data) {
 <!-- END OF PAGE: home  ++++++++++++++++++++++++++++++++++++++++++   -->
 
 
-<!-- START OF PAGE: add_item  ++++++++++++++++++++++++++++++++++++++++++   -->
-<div data-role="page" id="add_item">
+<!-- START OF PAGE: add_item_old  ++++++++++++++++++++++++++++++++++++++++++   -->
+<div data-role="page" id="add_item_old">
 	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 	    </div><!-- /header -->	
@@ -167,16 +167,18 @@ $(document).bind("pagebeforechange", function (e, data) {
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 			     <!--h1>Task Manager</h1><!-- header -->
 	    </div><!-- /header -->
-	<div data-role="list-divider" class="ui-bar-c" data-position="inset"><h4>About Task Manager App</h4>
-	
-	</div>
-
+		<div data-role="list-divider" class="ui-bar-d">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-d">About Task Manager App</li>
+			</ul>
+	</div>	
   <div data-role="content">
 	  <div data-role="collapsible-set">
 				<div data-role="collapsible" data-collapsed="true">
 					<h3>Local Storage</h3>
 					<p><div data-role="fieldcontain">
-					<p id="clear"><a href="#" onclick="clearLocal(); location.reload();" class="bigBtn" >Clear Local Storage</a></p>
+					<p id="clear"><a href="#" onclick="clearLocal(); location.reload();" class="bigBtn" >Clear Local Storage</a>					<a href="#" id="clear">Clear Stored Data</a>
+</p>
 				</div> 	<!-- Clear Local Storage --></p>
 				</div>
 			</div>
@@ -202,8 +204,8 @@ $(document).bind("pagebeforechange", function (e, data) {
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 			     <!--h1>Task Manager</h1><!-- header -->
 	    </div><!-- /header -->
-	<div data-role="list-divider" class="ui-bar-c" data-position="inset"><h4>About Task Manager App</h4>
-	
+	<div data-role="list-divider" class="ui-bar-d" data-position="inset">
+		<h4>About Task Manager App</h4>
 	</div>
 
   <div data-role="content">
@@ -214,7 +216,7 @@ $(document).bind("pagebeforechange", function (e, data) {
 				</div>
 				<div data-role="collapsible">
 					<h3>Contact</h3>
-					<p>Appscient <br /> <a href="mailto:support@appscient.co">support@appscient.co</a>
+					<p>Appscient, LLC <br /> <a href="mailto:support@appscient.co">support@appscient.co</a>
 					</p>
 				</div>
 			</div>
@@ -259,8 +261,8 @@ $(document).bind("pagebeforechange", function (e, data) {
 
 
 
-<!-- START OF PAGE: add_items   ++++++++++++++++++++++++++++++++++++++++++   -->
-<div data-role="page" id="add_items">
+<!-- START OF PAGE: add_item   ++++++++++++++++++++++++++++++++++++++++++   -->
+<div data-role="page" id="add_item">
 
 	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
@@ -268,13 +270,18 @@ $(document).bind("pagebeforechange", function (e, data) {
 	    
 <div data-role="content" class="ui-content" role="main">
  	<div class="content-primary">
-		<form action="#" method="get">
-
-					<h2>Task Details</h2>
-					<p>This page contains various progressive-enhancement driven form controls. Native elements are sometimes hidden from view, but their values are maintained so the form can be submitted normally. </p>
+						<a href="#" id="clear" style="display:none;">Clear Stored Data</a>
+						<a href="#" id="displayLink" style="display:none;">Display Data</a>
+						<a href="#" id="index.html" id="addNew" style="display:none;">Add New Item</a>
+						<fieldset data-role="controlgroup">
+						<form id="addTaskForm" name="addTaskForm" method="post" action="#" onsubmit=""> 
+								<h2>Task Details</h2>
+					<!--p>This page contains various progressive-enhancement driven form controls. Native elements are sometimes hidden from view, but their values are maintained so the form can be submitted normally. </p-->
+					<ul><li id="select"><label for="context">*Select Context:</label><br /></li></ul>
+					<ul id="errors"></ul>
 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
 					<label for="name" class="ui-input-text">Task Name:</label>
-					<input type="text" name="name" id="name" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+					<input type="text" name="name" id="name" value="" placeholder="Task Name" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
 					</div>
 					
  					<!--div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
@@ -282,57 +289,52 @@ $(document).bind("pagebeforechange", function (e, data) {
 					<div class="ui-input-search ui-shadow-inset ui-btn-corner-all ui-btn-shadow ui-icon-searchfield ui-body-c"><input type="text" data-type="search" name="password" id="search" value="" class="ui-input-text ui-body-c"><a href="#" class="ui-input-clear ui-btn ui-btn-up-c ui-btn-icon-notext ui-btn-corner-all ui-shadow ui-input-clear-hidden" title="clear text" data-theme="c"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">clear text</span><span class="ui-icon ui-icon-delete ui-icon-shadow"></span></span></a></div>
 					</div-->
  					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+						<p id="priority_text"><h5>Priority Levels:<br /> (Low = 0 - 1 | Mid = 2 - 3 | High  = 4 - 5) </h5></p>
 						<label for="slider" id="slider-label" class="ui-slider ui-input-text">Priority:</label>
-							<input type="number" data-type="range" name="slider" id="slider" value="0" min="0" max="5" class="ui-slider-input ui-input-text ui-body-c ui-corner-all ui-shadow-inset"><div class="ui-slider  ui-btn-down-c ui-btn-corner-all" role="application"><a href="#" class="ui-slider-handle ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" role="slider" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" aria-valuetext="0" title="0" aria-labelledby="slider-label" style="left: 0%; "><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text"></span></span></a></div>
+							<input type="number" data-type="range" name="slider" id="slider" value="0" min="0" max="5" class="ui-slider-input ui-input-text ui-body-c ui-corner-all ui-shadow-inset"><p></p>
 					</div>
 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-					<fieldset data-role="controlgroup" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical"></fieldset>
+					<h3>Timeline</h3><h5>Choose date by clicking on grid icon to the right side of the field.</h5>
+					<ul data-role="controlgroup">
+					<li><label for="sDate">Start Date:</label><input id="sDate" name="sDate" type="date" data-role="datebox" data-options='{"mode": "calbox", "disableManualInput": true}' data-iconpos="right" placeholder="Choose start date.">
+										</li><!-- Task Start Date -->
+											
+										<li><label for="eDate">End Date:</label><input type="date" id="eDate" data-role="datebox" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose end date.">
+										</li><!-- Task End Date -->
+										<li>
+											<label for="dDate">Due Date:</label><input type="date" id="dDate" type="date" data-role="datebox"
+   data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose due date.">
+										</li><!-- Task Due Date  -->		
+						</ul>
 					</div>
-					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-					<fieldset data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal"><div role="heading" class="ui-controlgroup-label">Font styling:</div><div class="ui-controlgroup-controls">
-					
-					</div></fieldset>
-					</div>
-					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-							<fieldset data-role="controlgroup" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical"></fieldset>
-						</div>
-					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-							
-					</div>
-					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-					</div>
-					
-							<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-	 							<label for="select-choice-a" class="select ui-select">Choose shipping method:</label>
-								<div class="ui-select"><a href="#" role="button" id="select-choice-a-button" aria-haspopup="true" aria-owns="select-choice-a-menu" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-btn-corner-all ui-shadow"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Custom menu example</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow"></span></span></a><select name="select-choice-a" id="select-choice-a" data-native-menu="false" tabindex="-1">
-								<option>Custom menu example</option>
-	 							<option value="standard">Standard: 7 day</option>
-								<option value="rush">Rush: 3 days</option>
-								<option value="express">Express: next day</option>
-								<option value="overnight">Overnight</option>
-								</select>
-							</div>
-				</div>
 				<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-  					<label for="textarea" class="ui-input-text">Textarea:</label>
-					<textarea cols="40" rows="8" name="textarea" id="textarea" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></textarea>
-  					</div>
+  					<label for="notes" class="ui-input-text">Notes:</label>
+					<textarea cols="40" rows="8" name="notes" id="notes" placeholder="Enter notes that will help you remember details about the task." class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></textarea>
+  				</div>
 				<div class="ui-body ui-body-b">
 					<fieldset class="ui-grid-a">
-						<div class="ui-block-a"><div data-theme="d" class="ui-btn ui-btn-up-d ui-btn-corner-all ui-shadow" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Cancel</span></span><button type="submit" data-theme="d" class="ui-btn-hidden" aria-disabled="false">Cancel</button></div></div>
-							<div class="ui-block-b"><div data-theme="a" class="ui-btn ui-btn-up-a ui-btn-corner-all ui-shadow" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">Submit</span></span><button type="submit" data-theme="a" class="ui-btn-hidden" aria-disabled="false">Submit</button></div></div>
+							<div class="ui-block-a"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><button type="submit" data-theme="e" class="ui-btn-hidden" aria-disabled="false">Submit</button></div>
+							<div class="ui-block-b"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><button type="submit" data-theme="d" class="ui-btn-hidden" aria-disabled="false">Clear</button></div>
 					</fieldset>
 				</div>
 			</form>
 			</div><!--/content-primary -->		
 			</li>
-</div>
-</div>
+		</div>
+	</div>
 </div>		
 </div><!-- /content -->
-<div data-role="footer" class="footer-docs ui-footer ui-bar-c" data-theme="c">
-	<p>© 2011 The jQuery Project</p>
- </div>
+<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
+					<li><a href="index.html" data-icon="home">Home</a></li>
+					<li><a href="about.html" data-icon="info">About</a></li>
+				</ul>
+			</div><!-- /navbar -->
+			
+		</div><!-- /footer -->
+
 </div>
 <!-- END OF PAGE: add_item   ++++++++++++++++++++++++++++++++++++++++++   -->
 

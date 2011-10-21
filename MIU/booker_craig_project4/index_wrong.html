@@ -49,30 +49,30 @@
 	</div>	
   <!--div data-role="header"><h1>Categories</h1></div-->
   <div data-role="content" id="nav">
-			<ul data-role="listview" value="" data-filter="true" placeholder="Search">
+			<ul data-role="listview" value="">
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=errand"> 
-					<img src="img/errand_sml.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
+					<img src="img/Errands.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=home">
-					<img src="img/home_sml.png" class="ui-li-icon" />Home<span class="ui-li-count">5</span></a>
+					<img src="img/Home.png" class="ui-li-icon" />Home<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=office">
-					<img src="img/office_sml.png" class="ui-li-icon" />Office<span class="ui-li-count">5</span></a>
+					<img src="img/Office.png" class="ui-li-icon" />Office<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=calls">
-					<img src="img/calls_sml.png" class="ui-li-icon" />Calls<span class="ui-li-count">5</span></a>
+					<img src="img/Calls.png" class="ui-li-icon" />Calls<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=people">
-					<img src="img/people_sml.png" class="ui-li-icon" />People<span class="ui-li-count">5</span></a>
+					<img src="img/People.png" class="ui-li-icon" />People<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=waiting" data-theme="a">
-					<img src="img/waiting_sml.png" class="ui-li-icon" />Waiting<span class="ui-li-count">5</span></a>
+					<img src="img/Waiting.png" class="ui-li-icon" />Waiting<span class="ui-li-count">5</span></a>
 				</li>
 			
 			</ul>
@@ -80,10 +80,10 @@
 		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#about_app" data-icon="gear">About</a></li>
+				<li><a href="#add_item" data-icon="gear">Add Task</a></li>
 				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
+				<li><a href="#home" data-icon="gear">Home</a></li>
 			</ul>
 		</div><!-- / footer navbar -->
 	</div><!-- /footer -->
@@ -100,7 +100,7 @@
 	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 	    </div><!-- /header -->	
-	    <div data-role="content"><a href="#top_page" name="top_page"></a>
+	    <div data-role="content" background="img/wrong_bg1.jpg"><a href="#top_page" name="top_page"></a>
 			<div data-role="primary-content">
 						<form id="addTaskForm" action="#" onsubmit="saveItems();"> 
 								<div id="errors"></div>
@@ -155,11 +155,12 @@
 	
 		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 			<div data-role="navbar">
-				<ul>
-					<li><a href="#top_page" data-role="button" data-icon="arrow-u">Up</a></li>
-					<li><a href="index.html" data-icon="home">Home</a></li>
-					<li><a href="about.html" data-icon="info">About</a></li>
-				</ul>
+			<ul>
+				<li><a href="#about_app" data-icon="gear">About</a></li>
+				<li><a href="#add_item" data-icon="gear">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
+				<li><a href="#home" data-icon="gear">Home</a></li>
+			</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
 	</div>
@@ -233,11 +234,11 @@
 		</div> <!-- End of Seondary Content -->
 		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="add_item.html" data-icon="plus">Add Task</a></li>
+						<ul>
+				<li><a href="#about_app" data-icon="gear">About</a></li>
+				<li><a href="#add_item" data-icon="gear">Add Task</a></li>
 				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
+				<li><a href="#home" data-icon="gear">Home</a></li>
 			</ul>
 		</div><!-- / footer navbar -->
 	</div><!-- /footer -->
