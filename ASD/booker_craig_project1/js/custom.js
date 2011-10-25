@@ -7,6 +7,23 @@ window.addEventListener("DOMContentLoaded", function () {
         return theElement;
     }
 
+    $(document).ready(function() {
+    var today = new Date();
+    var todayStr = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
+    $('#mydate').trigger('datebox', {'method':'set', 'value':todayStr});
+     });
+
+    $(document).bind("pagebeforechange", function (e, data) {
+        if (typeof data.toPage === "string") {
+            var u = $.mobile.path.parseUrl(data.toPage),
+                re = /^#category-item/;
+            if (u.hash.search(re) !== -1) {
+                showCategory(u, data.options);
+                e.preventDefault();
+            }
+        }
+});
+
 // -------   Start of: JSON Data --------------------------
 
     var json = {

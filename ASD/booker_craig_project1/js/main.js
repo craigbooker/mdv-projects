@@ -350,7 +350,7 @@ function showCategory(urlObj, options) {
 		pageSelector = urlObj.hash.replace(/\?.*$/, ""),
 		i;
 		//alert(pageSelector);
-		buildCatPage(category); */
+		buildCatPage(category);
 	if (category) {
 	
 		var $page = $(pageSelector),
@@ -548,7 +548,7 @@ function validate(e) {
 		var 	item					=	{};
 				item.context	=	["Context: ", $('context').value];
 				item.name		=	["Task Name: ", $('name').value];
-				item.priority		=	["Priority: ", $('priority').value];
+				item.priority	=	["Priority: ", $('priority').value];
 				item.favorite	=	["Favorite: ", $('favorite').value];
 				item.sDate		=	["Start Date: ", $('sDate').value];
 				item.eDate		=	["End Date: ", $('eDate').value];
