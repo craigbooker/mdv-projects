@@ -1,4 +1,7 @@
 // Craig Booker  |  MIU Project 4 | 10/16/2011
+$(function()){
+
+
 
 window.addEventListener("DOMContentLoaded", function () {
 // getElementById Function
@@ -613,4 +616,5 @@ function validate(e) {
     clearForm.addEventListener("click", clearForm);    // NEED TO WRITE FUNCTION
 // -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 
+});
 });
