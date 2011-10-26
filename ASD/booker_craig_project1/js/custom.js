@@ -22,7 +22,7 @@
 
 	// End of: Variable Defaults
 	// -------   Start of: Rebuilt Toggle Controls--------------------------
-	function toggleControls(n) {
+	function toggleControls(n) { /*  MIGHT NEED TO BE CHANGED */
 	    switch (n) {
 	    case "on":
 	        $('addTaskForm').style.display = "none";
@@ -58,6 +58,7 @@
             makeOption.setAttribute("value", optText);
             makeOption.innerHTML = optText; /*  NEEDS CHANGED */
             makeSelect.appendChild(makeOption); /*  NEEDS CHANGED */
+            $('select: #context').append(optText); /*  RECENTLY CHANGED */
         }
         selectLi.appendChild(makeSelect); /*  NEEDS CHANGED */
 	}
