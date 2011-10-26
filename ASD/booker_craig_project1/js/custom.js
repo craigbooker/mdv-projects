@@ -1,20 +1,15 @@
 // Craig Booker  |  MIU Project 4 | 10/16/2011
-$(function()){
-
-
-
-window.addEventListener("DOMContentLoaded", function () {
+	$(document).ready(function() {
+    var today = new Date();
+    var todayStr = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
+    $('#mydate').trigger('datebox', {'method':'set', 'value':todayStr});
+	 });
+//window.addEventListener("DOMContentLoaded", function () {
 // getElementById Function
     function $(x) {
         var theElement = document.getElementById(x);
         return theElement;
     }
-
-    $(document).ready(function() {
-    var today = new Date();
-    var todayStr = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
-    $('#mydate').trigger('datebox', {'method':'set', 'value':todayStr});
-     });
 
     $(document).bind("pagebeforechange", function (e, data) {
         if (typeof data.toPage === "string") {
@@ -598,13 +593,6 @@ function validate(e) {
     }
 }
 // -------   End of: Delete All Stored Tasks --------------------------
-
-
-
-
-
-
-
 // -------   Start of: SET LINK & SUBMIT CLICK EVENTS --------------------------
     var displayLink = $('displayLink');
     displayLink.addEventListener("click", getData(json));
@@ -615,6 +603,4 @@ function validate(e) {
     var clearForm = $('clearForm');
     clearForm.addEventListener("click", clearForm);    // NEED TO WRITE FUNCTION
 // -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
-
-});
-});
+//});
