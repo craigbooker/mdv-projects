@@ -1,6 +1,30 @@
 // Craig Booker  |  ASD Project 1 | 10/27/2011
 
 $(function() {
+
+// -------   Start of: SET LINK & SUBMIT CLICK EVENTS ---------------- LOOK AT NEW WAY OF HANDLING EVENTS IN JQUERY
+// STATUS : 
+// LAST UPDATED: 2011-10-28
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------	
+	 $("form").submit(validate()); 
+    var displayLink = $('displayLink');
+    //displayLink.addEventListener("click", getData(json));
+    $("#displayLink").bind("click", getData(e, data)); 
+    var clearLink = $('clear');
+   // clearLink.addEventListener("click", clearLocal);
+    $("#clearLink").bind("click", clearLocal());     
+    var save = $('submit');
+    //save.addEventListener("click", validate);    
+    $("#submit").bind('click', validate()); 
+    //var clearForm = $('clearForm');
+    //clearForm.addEventListener("click", clearForm);    // NEED TO WRITE FUNCTION
+    $("#clearForm").bind('click', clearForm());
+// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
+
 	
 // -------   Start of: JSON Data --------------------------
 
@@ -722,6 +746,18 @@ $(document).bind( "pagebeforechange", function( e, data ) {
         alert("Task Saved!");
     }
 // -------   End of:Rebuilt Save Form Data --------------------------
+// -------   Start of : Clear Form --------------------------
+// STATUS : Needs to be created
+// LAST UPDATED: 2011-10-28 06:46pm
+// PURPOSE: 
+// NOTES :  
+// TODO: 1. Need to create function to clear out all form elements.
+// QUESTIONS: 
+//----------------------------------------------------------
+		function clearForm() {
+		
+		};
+// -------   End of : Clear Form --------------------------
 }); // END OF THE ROAD --------
 
 // -------  ^CHECKED THESE ALREADY ^ -------------	
@@ -776,41 +812,9 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 
 
 
-// -------   Start of : Clear Form --------------------------
-// STATUS : Needs to be created
-// LAST UPDATED: 2011-10-28
-// PURPOSE: 
-// NOTES :  
-// TODO: 
-// QUESTIONS: 
-//----------------------------------------------------------
-		function clearForm() {
-		
-		};
-// -------   End of : Clear Form --------------------------
+
 	
-// -------   Start of: SET LINK & SUBMIT CLICK EVENTS ---------------- LOOK AT NEW WAY OF HANDLING EVENTS IN JQUERY
-// STATUS : 
-// LAST UPDATED: 2011-10-28
-// PURPOSE: 
-// NOTES :  
-// TODO: 
-// QUESTIONS: 
-//----------------------------------------------------------	
-	 $("form").submit(validate()); 
-    var displayLink = $('displayLink');
-    //displayLink.addEventListener("click", getData(json));
-    $("#displayLink").bind("click", getData(e, data)); 
-    var clearLink = $('clear');
-   // clearLink.addEventListener("click", clearLocal);
-    $("#clearLink").bind("click", clearLocal());     
-    var save = $('submit');
-    //save.addEventListener("click", validate);    
-    $("#submit").bind('click', validate()); 
-    //var clearForm = $('clearForm');
-    //clearForm.addEventListener("click", clearForm);    // NEED TO WRITE FUNCTION
-    $("#clearForm").bind('click', clearForm());
-	// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
+
 
 
 // ------------- OLD CODE SNIPPETS --------------------------------------------
