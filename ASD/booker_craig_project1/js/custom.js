@@ -311,6 +311,7 @@ $(function() {
 // -------    End of: JSON Data --------------------------	
 // -------   Start of: showCategories function ------------
 // STATUS : Not fully working ----- 2011.10.28
+// LAST UPDATED: 2011-10-28
 // PURPOSE: Load the data for a specific category, based on
 // the URL passed in. Generate markup for the items in the
 // category, inject it into an embedded page, and then make
@@ -384,6 +385,7 @@ function showCategory(urlObj, options)
 }
 // -------   Start of: binding function for main page ------------
 // STATUS : SEMI WORKING ----- 2011.10.28
+// LAST UPDATED: 2011-10-28
 // PURPOSE: Listen for any attempts to call changePage().
 // NOTES : Bind needs to be fixed 
 // TODO:
@@ -414,6 +416,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 });
 // -------   Start of: Autofill Data  --------------------------
 // STATUS : NOT WORKING ----- 2011.10.28
+// LAST UPDATED: 2011-10-28
 // PURPOSE: grab JSON data and put in local storage
 // NOTES : Not sure what is causing this not to work. I think it has to do with other areas of my app. 
 // TODO: None
@@ -434,6 +437,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 
 // -------   Start of: Make Categories --------------------------
 // STATUS : WORKING ----- 2011.10.27
+// LAST UPDATED: 2011-10-28
 // PURPOSE: Create select field element and populate with options.
 // NOTES : None at this time 
 // TODO: None
@@ -457,6 +461,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // -------   End of:Make Categories --------------------------
 // -------   Edit Task Data ------------------------------------------
 // STATUS : Not being used ----- 2011.10.27
+// LAST UPDATED: 2011-10-28
 // NOTES : Event Listeners need to be fixed, updated for jquery
 // PURPOSE: Not really using this right now, not sure if all is working.
 // TODO: Not sure…ask?
@@ -498,6 +503,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // ------- End of:  Edit Task Data --------------------------
 // ------- Start of:  Delete Task Data --------------------------
 // STATUS : Not being used ----- 2011.10.27
+// LAST UPDATED: 2011-10-28
 // NOTES : Could be used in category specific pages
 // PURPOSE: Delete an individual task from localStorage
 // TODO: None
@@ -516,6 +522,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // ------- End of:  Delete Task Data --------------------------	
 // -------   Start of: Get Data NEW --------------------------
 // STATUS : Not being used ----- 2011.10.27
+// LAST UPDATED: 2011-10-28
 // NOTES :  Still working on this.  NOT DONE    ****** STOPPED HERE 1am 2011/10/28
 // PURPOSE: To retrieve data from localStorage
 // QUESTIONS: None
@@ -555,117 +562,15 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 	        makeItemLinks(localStorage.key(i), linksLi);
 	    }
 	}
-	// -------   End of: Get Data NEW --------------------------
-
-}); // END OF THE ROAD --------
-
-// -------  ^CHECKED THESE ALREADY ^ -------------	
-	
-
-
- 
-
-	
-
-
-
-
-	
-
-
-
-	// -------   Start of: Rebuilt Toggle Controls--------------------------
-	function toggleControls(n) { /*  MIGHT NEED TO BE CHANGED */
-	    switch (n) {
-	    case "on":
-	        $('addTaskForm').style.display = "none";
-	        $('clear').style.display = "inline";
-	        $('displayLink').style.display = "none";
-	        $('addNew').style.display = "inline";
-	        break;
-	    case "off":
-	        $('addTaskForm').style.display = "block";
-	        $('clear').style.display = "inline";
-	        $('displayLink').style.display = "inline";
-	        $('addNew').style.display = "none";
-	        $('items').style.display = "none";
-	        break;
-	    default:
-	        return false;
-	    }
-	}
-	// -------   End of: Rebuilt Toggle Controls--------------------------
-
-
-	
-
-	
-
-	// -------   Start of: Make Item Links --------------------------
-	    function makeItemLinks(key, linksLi) {
-	    var editLink    =    document.createElement('a');
-	    editLink.href    =    "#";
-	    editLink.key    =    key;
-	    var editText    =    "Edit Task";
-	    editLink.addEventListener("click", editItem);
-	    editLink.innerHTML    =    editText;   /*  NEEDS CHANGED */
-	    linksLi.appendChild(editLink);
-	
-	    // Add Line Break
-	    var breakTag = document.createElement('br'); 
-	    linksLi.appendChild(breakTag);
-	
-	    var deleteLink    =    document.createElement('a');
-	    deleteLink.href = "#";
-	    deleteLink.key    =    key;
-	    var deleteText = "Delete Task";
-	    deleteLink.addEventListener("click", deleteTask);
-	    deleteLink.innerHTML = deleteText; /*  NEEDS CHANGED */
-	    linksLi.appendChild(deleteLink);
-	    }
-	// -------   End of: Make Item Links --------------------------
-
-	// -------   Start of: Rebuilt Find value of the check box. --------------------------
-	    function getCheckboxValue() {
-	            if ($('#favorite').checked) {
-	                favoriteValue = $('#favorite').value;
-	            } else {
-	                favoriteValue = ("No");
-	            }
-	    }
-	// -------   End of: Rebuilt Find value of the check box. --------------------------	
-	// -------   Start of: Delete All Stored Tasks --------------------------
-    function clearLocal() {
-        if(localStorage.length === 0) {
-            alert("There is no data to clear");
-        } else {
-            localStorage.clear();
-            alert("All tasks are deleted!");
-            window.location.reload();
-            return false;
-    	}
-	}
-	// -------   End of: Delete All Stored Tasks --------------------------
-	// -------   Start of: Rebuilt Save Form Data --------------------------
-    function storeData(key) {
-        var id                =    Math.floor(Math.random()*100000000001);
-        //getSelectedRadio();
-        getCheckboxValue();
-        var     item                    =    {};
-                item.context    =    ["Context: ", $('#context').value];
-                item.name        =    ["Task Name: ", $('#name').value];
-                item.priority        =    ["Priority: ", $('#priority').value];
-                item.favorite    =    ["Favorite: ", $('#favorite').value];
-                item.sDate        =    ["Start Date: ", $('#sDate').value];
-                item.eDate        =    ["End Date: ", $('#eDate').value];
-                item.dDate        =    ["Due Date: ", $('#dDate').value];
-                item.notes        =    ["Notes: ", $('#notes').value];
-        // Save data into local storage: use stringify to convert our object to a string
-        localStorage.setItem(id, JSON.stringify(item));
-        alert("Task Saved!");
-    }
-// -------   End of:Rebuilt Save Form Data --------------------------
+// -------   End of: Get Data NEW --------------------------
 // -------   Start of : Form Validation --------------------------
+// STATUS : 
+// LAST UPDATED: 2011-10-28
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------
 	function validate(e) {
 //function validate(e) {
     var getContext = $('#context');
@@ -724,13 +629,172 @@ $(document).bind( "pagebeforechange", function( e, data ) {
     }
 	};
 // -------   End of : Form Validation --------------------------
-	// -------   Start of : Clear Form --------------------------
+// -------   Start of: Make Item Links --------------------------
+// STATUS : 
+// LAST UPDATED: 2011-10-28
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------
+	    function makeItemLinks(key, linksLi) {
+	    var editLink    =    document.createElement('a');
+	    editLink.href    =    "#";
+	    editLink.key    =    key;
+	    var editText    =    "Edit Task";
+	    editLink.addEventListener("click", editItem);
+	    editLink.innerHTML    =    editText;   /*  NEEDS CHANGED */
+	    linksLi.appendChild(editLink);
+	
+	    // Add Line Break
+	    var breakTag = document.createElement('br'); 
+	    linksLi.appendChild(breakTag);
+	
+	    var deleteLink    =    document.createElement('a');
+	    deleteLink.href = "#";
+	    deleteLink.key    =    key;
+	    var deleteText = "Delete Task";
+	    deleteLink.addEventListener("click", deleteTask);
+	    deleteLink.innerHTML = deleteText; /*  NEEDS CHANGED */
+	    linksLi.appendChild(deleteLink);
+	    }
+// -------   End of: Make Item Links --------------------------
+
+// -------   Start of: Rebuilt Find value of the check box. --------------------------
+// STATUS : 
+// LAST UPDATED: 2011-10-28
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------
+	    function getCheckboxValue() {
+	            if ($('#favorite').checked) {
+	                favoriteValue = $('#favorite').value;
+	            } else {
+	                favoriteValue = ("No");
+	            }
+	    }
+	// -------   End of: Rebuilt Find value of the check box. --------------------------	
+// -------   Start of: Delete All Stored Tasks --------------------------
+// STATUS : 
+// LAST UPDATED: 2011-10-28
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------
+    function clearLocal() {
+        if(localStorage.length === 0) {
+            alert("There is no data to clear");
+        } else {
+            localStorage.clear();
+            alert("All tasks are deleted!");
+            window.location.reload();
+            return false;
+    	}
+	}
+// -------   End of: Delete All Stored Tasks --------------------------
+}); // END OF THE ROAD --------
+
+// -------  ^CHECKED THESE ALREADY ^ -------------	
+	
+
+
+ 
+
+	
+
+
+
+
+	
+
+
+
+// -------   Start of: Rebuilt Toggle Controls--------------------------
+// STATUS : 
+// LAST UPDATED: 2011-10-28
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------
+	function toggleControls(n) { /*  MIGHT NEED TO BE CHANGED */
+	    switch (n) {
+	    case "on":
+	        $('addTaskForm').style.display = "none";
+	        $('clear').style.display = "inline";
+	        $('displayLink').style.display = "none";
+	        $('addNew').style.display = "inline";
+	        break;
+	    case "off":
+	        $('addTaskForm').style.display = "block";
+	        $('clear').style.display = "inline";
+	        $('displayLink').style.display = "inline";
+	        $('addNew').style.display = "none";
+	        $('items').style.display = "none";
+	        break;
+	    default:
+	        return false;
+	    }
+	}
+	// -------   End of: Rebuilt Toggle Controls--------------------------
+
+
+	
+
+	
+
+
+// -------   Start of: Rebuilt Save Form Data --------------------------
+// STATUS : 
+// LAST UPDATED: 2011-10-28
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------
+    function storeData(key) {
+        var id                =    Math.floor(Math.random()*100000000001);
+        //getSelectedRadio();
+        getCheckboxValue();
+        var     item                    =    {};
+                item.context    =    ["Context: ", $('#context').value];
+                item.name        =    ["Task Name: ", $('#name').value];
+                item.priority        =    ["Priority: ", $('#priority').value];
+                item.favorite    =    ["Favorite: ", $('#favorite').value];
+                item.sDate        =    ["Start Date: ", $('#sDate').value];
+                item.eDate        =    ["End Date: ", $('#eDate').value];
+                item.dDate        =    ["Due Date: ", $('#dDate').value];
+                item.notes        =    ["Notes: ", $('#notes').value];
+        // Save data into local storage: use stringify to convert our object to a string
+        localStorage.setItem(id, JSON.stringify(item));
+        alert("Task Saved!");
+    }
+// -------   End of:Rebuilt Save Form Data --------------------------
+
+// -------   Start of : Clear Form --------------------------
+// STATUS : Needs to be created
+// LAST UPDATED: 2011-10-28
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------
 		function clearForm() {
 		
 		};
-	// -------   End of : Clear Form --------------------------
+// -------   End of : Clear Form --------------------------
 	
-	// -------   Start of: SET LINK & SUBMIT CLICK EVENTS ---------------- LOOK AT NEW WAY OF HANDLING EVENTS IN JQUERY
+// -------   Start of: SET LINK & SUBMIT CLICK EVENTS ---------------- LOOK AT NEW WAY OF HANDLING EVENTS IN JQUERY
+// STATUS : 
+// LAST UPDATED: 2011-10-28
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------	
 	 $("form").submit(validate()); 
     var displayLink = $('displayLink');
     //displayLink.addEventListener("click", getData(json));
@@ -750,6 +814,12 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // ------------- OLD CODE SNIPPETS --------------------------------------------
 // -- NOT SURE IF THESE NEED TO BE USED JUST YET
 // -------   Start of: Get Img NEW --------------------------
+// STATUS : 
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------
 	/*
     function getImage(catName, makeSubList) {
         var imageLi    =    document.createElement('li');
@@ -777,7 +847,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
         }
 		});
 		*/	
-		// -------   Start of : Show Category List -------------------------- 
+// -------   Start of : Show Category List -------------------------- 
 /*
 function showCategory(urlObj, options) {
 	var categoryName = urlObj.hash.replace(/.*category=/, ""),
