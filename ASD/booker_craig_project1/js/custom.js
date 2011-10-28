@@ -312,8 +312,11 @@ $(function() {
 // -------    End of: JSON Data --------------------------	
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> gh-pages
+=======
 >>>>>>> gh-pages
 // Load the data for a specific category, based on
 // the URL passed in. Generate markup for the items in the
@@ -760,10 +763,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
     $("#clearForm").bind('click', clearForm());
 	// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 
-<<<<<<< HEAD
-=======
 
->>>>>>> gh-pages
 // ------------- OLD CODE SNIPPETS --------------------------------------------
 // -- NOT SURE IF THESE NEED TO BE USED JUST YET
 // -------   Start of: Get Img NEW --------------------------
@@ -827,9 +827,4 @@ function showCategory(urlObj, options) {
 }
 
 */
-<<<<<<< HEAD
 // -------   End of : Show Category List -------------------------- 
-=======
-// -------   End of : Show Category List -------------------------- 
-
->>>>>>> gh-pages
