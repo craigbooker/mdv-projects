@@ -819,4 +819,8 @@ function showCategory(urlObj, options) {
 }
 
 */
+<<<<<<< HEAD
 // -------   End of : Show Category List -------------------------- 
+=======
+// -------   End of : Show Category List -------------------------- 
+>>>>>>> future-proof-jquery
