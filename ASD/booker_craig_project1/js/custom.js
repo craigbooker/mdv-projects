@@ -311,7 +311,6 @@ $(function() {
 
 // -------    End of: JSON Data --------------------------	
 
-
 // Load the data for a specific category, based on
 // the URL passed in. Generate markup for the items in the
 // category, inject it into an embedded page, and then make
@@ -757,7 +756,6 @@ $(document).bind( "pagebeforechange", function( e, data ) {
     $("#clearForm").bind('click', clearForm());
 	// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 
-
 // ------------- OLD CODE SNIPPETS --------------------------------------------
 // -- NOT SURE IF THESE NEED TO BE USED JUST YET
 // -------   Start of: Get Img NEW --------------------------
@@ -822,4 +820,3 @@ function showCategory(urlObj, options) {
 
 */
 // -------   End of : Show Category List -------------------------- 
-
