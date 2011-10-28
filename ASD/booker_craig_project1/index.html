@@ -95,20 +95,20 @@
 	    </div><!-- /header -->	
 	    <div data-role="content" class="ui-content" role="main">
 	 		<div class="content-primary">
-	 		<div class="ui-body ui-body-b">
-							<a href="#" id="clear">Clear Stored Data</a>
-							<a href="#" id="displayLink">Display Data</a>
+	 		<div class="ui-body ui-body-b" style="display:none;">
+							<a href="#" id="clear" style="display:none;">Clear Stored Data</a>
+							<a href="#" id="displayLink" style="display:none;">Display Data</a>
 							<a href="#" id="index.html" id="addNew" style="display:none;">Add New Item</a>
 			</div>
 			<form action="#" method="post" id="addTaskForm" name="addTaskForm" onsubmit=""> 
 				<fieldset id="taskFieldset">
-					<div id-"context"></div>
 					<div data-role="fieldcontain">
 									<h2>Task Details</h2>
-						<ul id="errors"></ul>
-						<ul id="questions"  data-role="fieldcontain">
-							<li id="selectLi"><label for="context3">*Select Context:</label></li>
-						</ul>
+					</div>					
+					<div id="errors" data-role="fieldcontain">
+
+					<div id="context" data-role="fieldcontain">					
+							<label for="context">*Select Context:</label>
 					</div>	
 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
 						<label for="name" class="ui-input-text">Task Name:</label>
@@ -228,42 +228,7 @@
 	</div><!-- /footer -->
 </div>
 <!-- END OF PAGE: about_app   ++++++++++++++++++++++++++++++++++++++++++   -->
-<!-- START OF PAGE: about_app_old   ++++++++++++++++++++++++++++++++++++++++++   -->
 
-<div id="about_app_old" data-role="page">
- 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-	<div data-role="list-divider" class="ui-bar-d" data-position="inset">
-		<h4>About Task Manager App</h4>
-	</div>
-
-  <div data-role="content">
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>About App</h3>
-					<p>Inspired by the book by David Allen, "Get Things Done."</p>
-				</div>
-				<div data-role="collapsible">
-					<h3>Contact</h3>
-					<p>Appscient, LLC <br /> <a href="mailto:support@appscient.co">support@appscient.co</a>
-					</p>
-				</div>
-			</div>
-	</div>
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- / footer navbar -->
-	</div><!-- /footer -->
-</div>
-<!-- END OF PAGE: about_app  ++++++++++++++++++++++++++++++++++++++++++   -->
 <!-- START OF PAGE: category-items  ++++++++++++++++++++++++++++++++++++++++++   -->
 <div id="category-items" data-role="page">
  	<div data-role="header" data-position="fixed" data-theme="a" align="center">

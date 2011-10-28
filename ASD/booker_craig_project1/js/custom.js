@@ -1,8 +1,8 @@
 // Craig Booker  |  MIU Project 4 | 10/16/2011
 	//$(document).ready(function() {
-window.addEventListener("DOMContentLoaded", function () {
+//window.addEventListener("DOMContentLoaded", function () {
 
-	$(function() {
+$(function() {
 	
 // -------   Start of: JSON Data --------------------------
 
@@ -311,7 +311,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 // -------    End of: JSON Data --------------------------	
-	
+
 	
 	// Load the data for a specific category, based on
 // the URL passed in. Generate markup for the items in the
@@ -589,16 +589,16 @@ function showCategory(urlObj, options) {
         toggleControls("off");
 
         //Populate form fields with current localStorage values
-        $('context').value = item.context[1];
-        $('name').value = item.name[1];
-        $('priority').value = item.priority[1];
+        $('#context').value = item.context[1];
+        $('#name').value = item.name[1];
+        $('#priority').value = item.priority[1];
         if (item.favorite[1] == "Yes") {
-            $('favorite').setAttribute("checked", "checked");
+            $('#favorite').Attr("checked", "checked");
         }
-        $('sDate').value = item.sDate[1];
-        $('eDate').value = item.eDate[1];
-        $('dDate').value = item.dDate[1];
-        $('notes').value = item.notes[1];
+        $('#sDate').value = item.sDate[1];
+        $('#eDate').value = item.eDate[1];
+        $('#dDate').value = item.dDate[1];
+        $('#notes').value = item.notes[1];
 
 // Remove the initial listener from the input 'save task' button.
         //$('Add Task').value = ("Add Task");
@@ -799,5 +799,4 @@ var validate = function(e) {
     //clearForm.addEventListener("click", clearForm);    // NEED TO WRITE FUNCTION
     $("#clearForm").bind('click', clearForm());
 	// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
-	}); // End of Container for DOM objects
-	});
+});
