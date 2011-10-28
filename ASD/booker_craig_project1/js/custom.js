@@ -1,5 +1,4 @@
 // Craig Booker  |  ASD Project 1 | 10/27/2011
-	//$(document).ready(function() {
 
 $(function() {
 	
@@ -310,11 +309,15 @@ $(function() {
 
 
 // -------    End of: JSON Data --------------------------	
-// Load the data for a specific category, based on
+// -------   Start of: showCategories function ------------
+// STATUS : Not fully working ----- 2011.10.28
+// PURPOSE: Load the data for a specific category, based on
 // the URL passed in. Generate markup for the items in the
 // category, inject it into an embedded page, and then make
 // that page the current active page.
-
+// TODO: None
+// QUESTIONS: 
+//----------------------------------------------------------
 function showCategory(urlObj, options)
 {
 	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
@@ -379,10 +382,15 @@ function showCategory(urlObj, options)
 		$.mobile.changePage( $page, options );
 	}
 }
+// -------   Start of: binding function for main page ------------
 // STATUS : SEMI WORKING ----- 2011.10.28
+// PURPOSE: Listen for any attempts to call changePage().
 // NOTES : Bind needs to be fixed 
+// TODO:
 // QUESTIONS: 1. Is this the correct way to bind this function to the document?
-// Listen for any attempts to call changePage().
+//----------------------------------------------------------
+
+
 $(document).bind( "pagebeforechange", function( e, data ) {
 	// We only want to handle changePage() calls where the caller is
 	// asking us to load a page by URL.
@@ -406,9 +414,11 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 });
 // -------   Start of: Autofill Data  --------------------------
 // STATUS : NOT WORKING ----- 2011.10.28
-// NOTES : Not sure what is causing this not to work. I think it has to do with other areas of my app. 
-// QUESTIONS: 1. Do you see anything wrong with this?
 // PURPOSE: grab JSON data and put in local storage
+// NOTES : Not sure what is causing this not to work. I think it has to do with other areas of my app. 
+// TODO: None
+// QUESTIONS: 1. Do you see anything wrong with this?
+//----------------------------------------------------------
 	function autoFillData() {
 	for(var n in json) {	
 		var id =	Math.floor(Math.random()*100000000001);
@@ -424,8 +434,11 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 
 // -------   Start of: Make Categories --------------------------
 // STATUS : WORKING ----- 2011.10.27
-// NOTES : None at this time 
 // PURPOSE: Create select field element and populate with options.
+// NOTES : None at this time 
+// TODO: None
+// QUESTIONS: 
+//----------------------------------------------------------
     function makeCats(contextNames) {
         alert("Am I in?");
         //alert(contextNames);
@@ -446,7 +459,9 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // STATUS : Not being used ----- 2011.10.27
 // NOTES : Event Listeners need to be fixed, updated for jquery
 // PURPOSE: Not really using this right now, not sure if all is working.
+// TODO: Not sure…ask?
 // QUESTIONS: 1. I am not sure about my replacements for my event listeners.  Do I need them like I did before?
+//----------------------------------------------------------
     function editItem(id) {
         //Grab Data from Local Storage
         var value = localStorage.getItem(this.key);
@@ -485,7 +500,10 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // STATUS : Not being used ----- 2011.10.27
 // NOTES : Could be used in category specific pages
 // PURPOSE: Delete an individual task from localStorage
+// TODO: None
 // QUESTIONS: None
+//----------------------------------------------------------
+
 	    function deleteTask(id) {
 	        var ask    =    confirm("Are you sure you want to delete this task?");
 	        if (ask) {
@@ -502,6 +520,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // PURPOSE: To retrieve data from localStorage
 // QUESTIONS: None
 // TODO: 1. Need to finish replacing references with jquery references
+//----------------------------------------------------------
     function getData(json) {
 	    //toggleControls("on");
 	    if (localStorage.length === 0) {
