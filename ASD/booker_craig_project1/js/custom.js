@@ -310,7 +310,6 @@ $(function() {
 
 
 // -------    End of: JSON Data --------------------------	
-
 // Load the data for a specific category, based on
 // the URL passed in. Generate markup for the items in the
 // category, inject it into an embedded page, and then make
@@ -819,8 +818,5 @@ function showCategory(urlObj, options) {
 }
 
 */
-<<<<<<< HEAD
 // -------   End of : Show Category List -------------------------- 
-=======
-// -------   End of : Show Category List -------------------------- 
->>>>>>> future-proof-jquery
+
