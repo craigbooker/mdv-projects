@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+    <item>
+        <title>Undead Monkey</title>
+        <species>Capuchin</species>
+        <name>Jack</name>
+        <price currency="USD">19.95</price>
+    </item>
+</items>
