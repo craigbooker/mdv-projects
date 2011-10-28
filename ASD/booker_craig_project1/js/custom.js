@@ -1,5 +1,4 @@
 // Craig Booker  |  ASD Project 1 | 10/27/2011
-	//$(document).ready(function() {
 
 $(function() {
 	
@@ -310,11 +309,15 @@ $(function() {
 
 
 // -------    End of: JSON Data --------------------------	
-// Load the data for a specific category, based on
+// -------   Start of: showCategories function ------------
+// STATUS : Not fully working ----- 2011.10.28
+// PURPOSE: Load the data for a specific category, based on
 // the URL passed in. Generate markup for the items in the
 // category, inject it into an embedded page, and then make
 // that page the current active page.
-
+// TODO: None
+// QUESTIONS: 
+//----------------------------------------------------------
 function showCategory(urlObj, options)
 {
 	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
@@ -332,24 +335,18 @@ function showCategory(urlObj, options)
 
 	if ( category ) {
 		// Get the page we are going to dump our content into.
-		var $page = $( pageSelector ),
-
+		var $page = $(pageSelector),
 			// Get the header for the page.
 			$header = $page.children( ":jqmData(role=header)" ),
-
 			// Get the content area element for the page.
 			$content = $page.children( ":jqmData(role=content)" ),
-
 			// The markup we are going to inject into the content
 			// area of the page.
 			markup = "<p>" + category.description + "</p><ul data-role='listview' data-inset='true'>",
-
 			// The array of items for this category.
 			cItems = category.items,
-
 			// The number of items in the category.
 			numItems = cItems.length;
-
 		// Generate a list item for each item in the category
 		// and add it to our markup.
 		for ( var i = 0; i < numItems; i++ ) {
@@ -385,7 +382,15 @@ function showCategory(urlObj, options)
 		$.mobile.changePage( $page, options );
 	}
 }
-// Listen for any attempts to call changePage().
+// -------   Start of: binding function for main page ------------
+// STATUS : SEMI WORKING ----- 2011.10.28
+// PURPOSE: Listen for any attempts to call changePage().
+// NOTES : Bind needs to be fixed 
+// TODO:
+// QUESTIONS: 1. Is this the correct way to bind this function to the document?
+//----------------------------------------------------------
+
+
 $(document).bind( "pagebeforechange", function( e, data ) {
 	// We only want to handle changePage() calls where the caller is
 	// asking us to load a page by URL.
@@ -407,7 +412,13 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 		}
 	}
 });
-// -------   Start of: Get Data NEW --------------------------
+// -------   Start of: Autofill Data  --------------------------
+// STATUS : NOT WORKING ----- 2011.10.28
+// PURPOSE: grab JSON data and put in local storage
+// NOTES : Not sure what is causing this not to work. I think it has to do with other areas of my app. 
+// TODO: None
+// QUESTIONS: 1. Do you see anything wrong with this?
+//----------------------------------------------------------
 	function autoFillData() {
 	for(var n in json) {	
 		var id =	Math.floor(Math.random()*100000000001);
@@ -418,13 +429,16 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // -------   Start of : Variable Defaults -------------------------------
     var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
     var errMsg = $('#errors');	
-    //console.log(errMsg);
     var favoriteValue;
 // -------   End of: Variable Defaults ----------------------------------
 
 // -------   Start of: Make Categories --------------------------
 // STATUS : WORKING ----- 2011.10.27
-// Create select field element and populate with options.
+// PURPOSE: Create select field element and populate with options.
+// NOTES : None at this time 
+// TODO: None
+// QUESTIONS: 
+//----------------------------------------------------------
     function makeCats(contextNames) {
         alert("Am I in?");
         //alert(contextNames);
@@ -444,6 +458,10 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // -------   Edit Task Data ------------------------------------------
 // STATUS : Not being used ----- 2011.10.27
 // NOTES : Event Listeners need to be fixed, updated for jquery
+// PURPOSE: Not really using this right now, not sure if all is working.
+// TODO: Not sure…ask?
+// QUESTIONS: 1. I am not sure about my replacements for my event listeners.  Do I need them like I did before?
+//----------------------------------------------------------
     function editItem(id) {
         //Grab Data from Local Storage
         var value = localStorage.getItem(this.key);
@@ -481,6 +499,10 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // ------- Start of:  Delete Task Data --------------------------
 // STATUS : Not being used ----- 2011.10.27
 // NOTES : Could be used in category specific pages
+// PURPOSE: Delete an individual task from localStorage
+// TODO: None
+// QUESTIONS: None
+//----------------------------------------------------------
 
 	    function deleteTask(id) {
 	        var ask    =    confirm("Are you sure you want to delete this task?");
@@ -495,6 +517,10 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // -------   Start of: Get Data NEW --------------------------
 // STATUS : Not being used ----- 2011.10.27
 // NOTES :  Still working on this.  NOT DONE    ****** STOPPED HERE 1am 2011/10/28
+// PURPOSE: To retrieve data from localStorage
+// QUESTIONS: None
+// TODO: 1. Need to finish replacing references with jquery references
+//----------------------------------------------------------
     function getData(json) {
 	    //toggleControls("on");
 	    if (localStorage.length === 0) {
@@ -598,42 +624,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 	    linksLi.appendChild(deleteLink);
 	    }
 	// -------   End of: Make Item Links --------------------------
-	// -------   Start of: Get Data NEW --------------------------
-    function getData(json) {
-	    toggleControls("on");
-	    if (localStorage.length === 0) {
-	        autoFillData(json);
-	        alert("There is no data in local Storage so default was added.");
-	    }
-	    // Write data from local storage to the browser
-	    var makeDiv = document.createElement('div');
-	    makeDiv.setAttribute("id", "items");
-	    var makeList = document.createElement('ul');
-	    makeDiv.appendChild(makeList);
-	    document.body.appendChild(makeDiv);
-	    $('items').style.display = "display";
-	    for (var i=0, len = localStorage.length; i < len; i++) {
-	        var makeLi    = document.createElement("li");
-	        var linksLi        =    document.createElement("li");
-	        makeList.appendChild(makeLi);
-	        var key        = localStorage.key[i];
-	        var value        =    localStorage.getItem[key];
-	        // Convert the string from local storage value back to an object by using JSON.parse
-	        var obj         =    JSON.parse(value);
-	        var makeSubList    =    document.createElement('ul');
-	        makeLi.appendChild(makeSubList);
-	        getImage(obj.group[1], makeSubList);
-	        for(var n in obj) {
-	            var makeSubLi    =    document.createElement('li');
-	            makeSubList.appendChild(makeSubLi);
-	            var optSubText    =    obj[n][0]+" "+obj[n][1];
-	            makeSubLi.innerHTML    =    optSubText; /*  NEEDS CHANGED */
-	            makeSubList.appendChild(linksLi);
-	        }
-	        makeItemLinks(localStorage.key(i), linksLi);
-	    }
-	}
-	// -------   End of: Get Data NEW --------------------------
+
 	// -------   Start of: Rebuilt Find value of the check box. --------------------------
 	    function getCheckboxValue() {
 	            if ($('#favorite').checked) {
