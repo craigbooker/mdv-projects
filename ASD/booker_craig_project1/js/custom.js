@@ -696,6 +696,32 @@ $(document).bind( "pagebeforechange", function( e, data ) {
     	}
 	}
 // -------   End of: Delete All Stored Tasks --------------------------
+// -------   Start of: Rebuilt Save Form Data --------------------------
+// STATUS : 
+// LAST UPDATED: 2011-10-28
+// PURPOSE: Save data to local storage
+// NOTES :  
+// TODO: 1. Need to update value statements
+// QUESTIONS: 
+//----------------------------------------------------------
+    function storeData(key) {
+        var id                =    Math.floor(Math.random()*100000000001);
+        //getSelectedRadio();
+        getCheckboxValue();
+        var     item                    =    {};
+                item.context    =    ["Context: ", $('#context').val()];
+                item.name        =    ["Task Name: ", $('#name').val()];
+                item.priority        =    ["Priority: ", $('#priority').val()];
+                item.favorite    =    ["Favorite: ", $('#favorite').val()];
+                item.sDate        =    ["Start Date: ", $('#sDate').val()];
+                item.eDate        =    ["End Date: ", $('#eDate').val()];
+                item.dDate        =    ["Due Date: ", $('#dDate').val()];
+                item.notes        =    ["Notes: ", $('#notes').val()];
+        // Save data into local storage: use stringify to convert our object to a string
+        localStorage.setItem(id, JSON.stringify(item));
+        alert("Task Saved!");
+    }
+// -------   End of:Rebuilt Save Form Data --------------------------
 }); // END OF THE ROAD --------
 
 // -------  ^CHECKED THESE ALREADY ^ -------------	
@@ -748,32 +774,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 	
 
 
-// -------   Start of: Rebuilt Save Form Data --------------------------
-// STATUS : 
-// LAST UPDATED: 2011-10-28
-// PURPOSE: 
-// NOTES :  
-// TODO: 
-// QUESTIONS: 
-//----------------------------------------------------------
-    function storeData(key) {
-        var id                =    Math.floor(Math.random()*100000000001);
-        //getSelectedRadio();
-        getCheckboxValue();
-        var     item                    =    {};
-                item.context    =    ["Context: ", $('#context').value];
-                item.name        =    ["Task Name: ", $('#name').value];
-                item.priority        =    ["Priority: ", $('#priority').value];
-                item.favorite    =    ["Favorite: ", $('#favorite').value];
-                item.sDate        =    ["Start Date: ", $('#sDate').value];
-                item.eDate        =    ["End Date: ", $('#eDate').value];
-                item.dDate        =    ["Due Date: ", $('#dDate').value];
-                item.notes        =    ["Notes: ", $('#notes').value];
-        // Save data into local storage: use stringify to convert our object to a string
-        localStorage.setItem(id, JSON.stringify(item));
-        alert("Task Saved!");
-    }
-// -------   End of:Rebuilt Save Form Data --------------------------
+
 
 // -------   Start of : Clear Form --------------------------
 // STATUS : Needs to be created
