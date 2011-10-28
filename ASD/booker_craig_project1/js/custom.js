@@ -1,7 +1,7 @@
 // Craig Booker  |  ASD Project 1 | 10/27/2011
 	//$(document).ready(function() {
 
-	$(function() {
+$(function() {
 	
 // -------   Start of: JSON Data --------------------------
 
@@ -311,6 +311,10 @@
 
 // -------    End of: JSON Data --------------------------	
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> gh-pages
 // Load the data for a specific category, based on
 // the URL passed in. Generate markup for the items in the
 // category, inject it into an embedded page, and then make
@@ -756,6 +760,10 @@ $(document).bind( "pagebeforechange", function( e, data ) {
     $("#clearForm").bind('click', clearForm());
 	// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> gh-pages
 // ------------- OLD CODE SNIPPETS --------------------------------------------
 // -- NOT SURE IF THESE NEED TO BE USED JUST YET
 // -------   Start of: Get Img NEW --------------------------
@@ -819,4 +827,9 @@ function showCategory(urlObj, options) {
 }
 
 */
+<<<<<<< HEAD
 // -------   End of : Show Category List -------------------------- 
+=======
+// -------   End of : Show Category List -------------------------- 
+
+>>>>>>> gh-pages
