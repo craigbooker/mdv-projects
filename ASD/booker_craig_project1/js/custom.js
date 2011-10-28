@@ -1,6 +1,5 @@
-// Craig Booker  |  MIU Project 4 | 10/16/2011
+// Craig Booker  |  ASD Project 1 | 10/27/2011
 	//$(document).ready(function() {
-window.addEventListener("DOMContentLoaded", function () {
 
 	$(function() {
 	
@@ -525,7 +524,7 @@ function showCategory(urlObj, options) {
         	$('#context').append(createSel);
 
 	}
-    var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
+   // var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
     makeCats(contextNames);
 	// -------   End of:Rebuilt Make Categories --------------------------
 	// -------   Start of: Make Categories --------------------------
@@ -574,6 +573,7 @@ function showCategory(urlObj, options) {
 	
     function getImage(catName, makeSubList) {
         var imageLi    =    document.createElement('li');
+
         makeSubList.appendChild('imageLi');
         var newImage    =    document.createElement('img');
         var setSrc    =    newImage.setAttribute("src", "images/"+ catName + ".png");
@@ -589,27 +589,29 @@ function showCategory(urlObj, options) {
         toggleControls("off");
 
         //Populate form fields with current localStorage values
-        $('context').value = item.context[1];
-        $('name').value = item.name[1];
-        $('priority').value = item.priority[1];
+        $('#context').value = item.context[1];
+        $('#name').value = item.name[1];
+        $('#priority').value = item.priority[1];
         if (item.favorite[1] == "Yes") {
-            $('favorite').setAttribute("checked", "checked");
+            $('#favorite').Attr("checked", "checked");
         }
-        $('sDate').value = item.sDate[1];
-        $('eDate').value = item.eDate[1];
-        $('dDate').value = item.dDate[1];
-        $('notes').value = item.notes[1];
+        $('#sDate').value = item.sDate[1];
+        $('#eDate').value = item.eDate[1];
+        $('#dDate').value = item.dDate[1];
+        $('#notes').value = item.notes[1];
 
 // Remove the initial listener from the input 'save task' button.
-        //$('Add Task').value = ("Add Task");
+        $('#Add Task').value = ("Add Task");
         var editSave = $('Add Task');
-        editSave.removeEventListner("click", storeData);
+        editSave.unbind();
+        //editSave.removeEventListner("click", storeData);
         // Change the submit value to say Edit button
-        $('submit').value = ("Edit Contact");
+        $('#submit').value = ("Edit Contact");
         var editSubmit = $('submit');
+        $('#submit').bind();
         //Save the key value established in this function as a property of the editSubmit event
         // so we can use that value when we save the data we edited.
-        editSubmit.addEventListener("click", validate);
+        //editSubmit.addEventListener("click", validate);
         editSubmit.key = this.key;
     }
 	// ------- End of:  Edit Task Data --------------------------
@@ -725,7 +727,7 @@ function showCategory(urlObj, options) {
     }
 // -------   End of:Rebuilt Save Form Data --------------------------
 // -------   Start of : Form Validation --------------------------
-var validate = function(e) {
+	function validate(e) {
 //function validate(e) {
     var getContext = $('#context');
     var getName = $('#name');
@@ -770,6 +772,7 @@ var validate = function(e) {
         var that = $(this);
         for (var i=0, j=messageAry.length; i < j; i++) {
             var txt = document.createElement('li');
+            //$()
             txt.innnerHTML = messageAry[i];
             that.html =  messageAry[i];
             errMsg.appendChild(txt);
@@ -780,15 +783,19 @@ var validate = function(e) {
             // If all is okay, save out data!
             storeData(e);
     }
-}
+	};
 // -------   End of : Form Validation --------------------------
-
+	// -------   Start of : Clear Form --------------------------
+		function clearForm() {
+		
+		};
+	// -------   End of : Clear Form --------------------------
 	
-	// -------   Start of: SET LINK & SUBMIT CLICK EVENTS -------------------------- LOOK AT NEW WAY OF HANDLING EVENTS IN JQUERY
+	// -------   Start of: SET LINK & SUBMIT CLICK EVENTS ---------------- LOOK AT NEW WAY OF HANDLING EVENTS IN JQUERY
 	 $("form").submit(validate()); 
     var displayLink = $('displayLink');
     //displayLink.addEventListener("click", getData(json));
-    $("#displayLink").bind("click", getData(e, data)); //STOPPED HERE AT 11:45am 10/27
+    $("#displayLink").bind("click", getData(e, data)); 
     var clearLink = $('clear');
    // clearLink.addEventListener("click", clearLocal);
     $("#clearLink").bind("click", clearLocal());     
@@ -799,5 +806,5 @@ var validate = function(e) {
     //clearForm.addEventListener("click", clearForm);    // NEED TO WRITE FUNCTION
     $("#clearForm").bind('click', clearForm());
 	// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
-	}); // End of Container for DOM objects
+ // End of Container for DOM objects
 	});
