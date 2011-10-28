@@ -394,6 +394,7 @@ function showCategory(urlObj, options)
 
 
 $(document).bind( "pagebeforechange", function( e, data ) {
+	console.log('In bind');
 	// We only want to handle changePage() calls where the caller is
 	// asking us to load a page by URL.
 	if ( typeof data.toPage === "string" ) {
