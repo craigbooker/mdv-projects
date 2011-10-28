@@ -310,14 +310,13 @@
 
 
 // -------    End of: JSON Data --------------------------	
-	
-	
-	// Load the data for a specific category, based on
+
+// Load the data for a specific category, based on
 // the URL passed in. Generate markup for the items in the
 // category, inject it into an embedded page, and then make
 // that page the current active page.
 
-function showCategory( urlObj, options )
+function showCategory(urlObj, options)
 {
 	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
 
@@ -387,10 +386,8 @@ function showCategory( urlObj, options )
 		$.mobile.changePage( $page, options );
 	}
 }
-
- 
 // Listen for any attempts to call changePage().
-$('index.html').bind( "pagebeforechange", function( e, data ) {
+$(document).bind( "pagebeforechange", function( e, data ) {
 	// We only want to handle changePage() calls where the caller is
 	// asking us to load a page by URL.
 	if ( typeof data.toPage === "string" ) {
@@ -411,30 +408,6 @@ $('index.html').bind( "pagebeforechange", function( e, data ) {
 		}
 	}
 });
-	
-	/*
-			$.mobile.bind.pageInit("pagebeforechange", function (e, data) {	
-		//$(document).bind("pagebeforechange", function (e, data) {
-        if (typeof data.toPage === "string") {
-            var u = $.mobile.path.parseUrl(data.toPage),
-                re = /^#category-item/;
-            if (u.hash.search(re) !== -1) {
-                showCategory(u, data.options);
-                e.preventDefault();
-            }
-        }
-		});
-		*/
-	
-	
-	/*
-
-		var today = new Date();
-    	var todayStr = today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
-    	$('#mydate').trigger('datebox', {'method':'set', 'value':todayStr});
-
-*/
-
 // -------   Start of: Get Data NEW --------------------------
 	function autoFillData() {
 	for(var n in json) {	
@@ -442,151 +415,42 @@ $('index.html').bind( "pagebeforechange", function( e, data ) {
 		localStorage.setItem(id, JSON.stringify(json[n]));
 		}
 	}	
-// -------   End of: autoFillData --------------------------
-
-	
-		// -------   Start of : Show Category List -------------------------- 
-/*
-function showCategory(urlObj, options) {
-	var categoryName = urlObj.hash.replace(/.*category=/, ""),
-		//actionName = urlObj.hash.replace(/.*show=/, ""),
-		category = json.categoryName,
-		pageSelector = urlObj.hash.replace(/\?.*$/, ""),
-		i;
-		//alert(pageSelector);
-		//buildCatPage(category);
-	if (category) {
-	
-		var $page = $(pageSelector),
-			$header = $page.children(":jqmData(role=header)"),
-			$content = $page.children(":jqmData(role=content)"),
-			markup = "<p><img src=\"img" + category  + "/></p><ul data-role='listview' data-inset='true'>",
-			cItems = category.tasks,
-			numItems = cItems.length;
-// Make a list item for each item in the category and add to markup
-		for (i = 0; i < numItems; i++) {
-			markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].priority + "</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";
-		}
-		markup += "</ul>";
-		$header.find("h1").html(category.name);
-		$content.html(markup);
-		$page.page();
-		$content.find(":jqmData(role=listview)").listview();
-		options.dataUrl = urlObj.href;
-		$.mobile.changePage($page, options);
-	}
-}
-
-*/
-// -------   End of : Show Category List -------------------------- 
-	// -------   Start of : Variable Defaults --------------------------
-    //var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
-    var errMsg = $('errors');	
+// -------   End of: autoFillData --------------------------------------
+// -------   Start of : Variable Defaults -------------------------------
+    var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
+    var errMsg = $('#errors');	
+    //console.log(errMsg);
     var favoriteValue;
+// -------   End of: Variable Defaults ----------------------------------
 
-	// End of: Variable Defaults
-	// -------   Start of: Rebuilt Toggle Controls--------------------------
-	function toggleControls(n) { /*  MIGHT NEED TO BE CHANGED */
-	    switch (n) {
-	    case "on":
-	        $('addTaskForm').style.display = "none";
-	        $('clear').style.display = "inline";
-	        $('displayLink').style.display = "none";
-	        $('addNew').style.display = "inline";
-	        break;
-	    case "off":
-	        $('addTaskForm').style.display = "block";
-	        $('clear').style.display = "inline";
-	        $('displayLink').style.display = "inline";
-	        $('addNew').style.display = "none";
-	        $('items').style.display = "none";
-	        break;
-	    default:
-	        return false;
-	    }
-	}
-	// -------   End of: Rebuilt Toggle Controls--------------------------
-// -------   Start of: Rebuilt Make Categories --------------------------
-	// Create select field element and populate with options.
-
+// -------   Start of: Make Categories --------------------------
+// STATUS : WORKING ----- 2011.10.27
+// Create select field element and populate with options.
     function makeCats(contextNames) {
-        //var formTag = document.getElementsByTagName("form"); //formTag is an array of all the form tags.
-        //var formTag = document.getElementsByName("addTaskForm"); //formTag is an array of all the form tags.
+        alert("Am I in?");
+        //alert(contextNames);
         var    i;
         var     j;
-        for (i = 0, j = contextNames.length; i < j; i++) {
-            var optText = contextNames[i];
-        	var createSel = '<select id="">';
+       // for (i = 0, j = contextNames.length; i < j; i++) {
+        var createSel = '<select id="">';
         	for(i = 0, j = contextNames.length; i < j; i++) {
+	            var optText = contextNames[i];
         		createSel += '<option value="' + optText + '">' + optText + '</option>';
         	}
         	createSel += '</select>';
         	$('#context').append(createSel);
-
 	}
-   // var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
     makeCats(contextNames);
-	// -------   End of:Rebuilt Make Categories --------------------------
-	// -------   Start of: Make Categories --------------------------
-	// Create select field element and populate with options.
-/*
-    function makeCats(contextNames) {
-        //var formTag = document.getElementsByTagName("form"); //formTag is an array of all the form tags.
-        var formTag = document.getElementsByName("addTaskForm"); //formTag is an array of all the form tags.
-        var    i;
-        var     j;
-        var    selectLi = $('#selectLi');
-        console.log(selectLi);
-        var    selectLi1 = $('#selectLi1');
-        console.log(selectLi1);
-        var	selectBox = $('#selectBox');
-        console.log(selectBox);
-        selectBox.Attr("id", "context");
-        for (i = 0, j = contextNames.length; i < j; i++) {
-            var makeOption = document.createElement('option');
-            var optText = contextNames[i];
-            makeOption.setAttribute("value", optText);
-            // $(
-            makeOption.innerHTML = optText; 
-            //.html = optText;
-            makeSelect.appendChild(makeOption);
-            $(makeOption).append(makeSelect);
-            
-            //$('select: #context').append(optText); 
-            
-        }
-                //selectLi.appendChild(makeSelect); 
-        //$(makeSelect).append('#selectLi')
-        var createSel = '<select id="">';
-        for(i = 0, j = contextNames.length; i < j; i++) {
-        	createSel += '<option value="' + optText + '">' + optText + '</option>';
-        }
-        createSel += '</select>';
-        $(#_____).append(createSel);
-
-	}
-    var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
-    makeCats(contextNames); 
-    */
-	// -------   End of:Make Categories --------------------------
-	// -------   Start of: Get Img NEW --------------------------
-	
-    function getImage(catName, makeSubList) {
-        var imageLi    =    document.createElement('li');
-
-        makeSubList.appendChild('imageLi');
-        var newImage    =    document.createElement('img');
-        var setSrc    =    newImage.setAttribute("src", "images/"+ catName + ".png");
-        imageLi.appendChild(newImage);
-    }
-	// -------   End of: Get Img NEW --------------------------
-	// -------   Edit Task Data --------------------------
+// -------   End of:Make Categories --------------------------
+// -------   Edit Task Data ------------------------------------------
+// STATUS : Not being used ----- 2011.10.27
+// NOTES : Event Listeners need to be fixed, updated for jquery
     function editItem(id) {
         //Grab Data from Local Storage
         var value = localStorage.getItem(this.key);
         var item = JSON.parse(value);
         //Show the form
-        toggleControls("off");
+        //toggleControls("off");
 
         //Populate form fields with current localStorage values
         $('#context').value = item.context[1];
@@ -614,9 +478,11 @@ function showCategory(urlObj, options) {
         //editSubmit.addEventListener("click", validate);
         editSubmit.key = this.key;
     }
-	// ------- End of:  Edit Task Data --------------------------
-	
-	// ------- Start of:  Delete Task Data --------------------------
+// ------- End of:  Edit Task Data --------------------------
+// ------- Start of:  Delete Task Data --------------------------
+// STATUS : Not being used ----- 2011.10.27
+// NOTES : Could be used in category specific pages
+
 	    function deleteTask(id) {
 	        var ask    =    confirm("Are you sure you want to delete this task?");
 	        if (ask) {
@@ -626,7 +492,90 @@ function showCategory(urlObj, options) {
 	            alert("Item not removed!");
 	        }
 	    }
-	// ------- End of:  Delete Task Data --------------------------
+// ------- End of:  Delete Task Data --------------------------	
+// -------   Start of: Get Data NEW --------------------------
+// STATUS : Not being used ----- 2011.10.27
+// NOTES :  Still working on this.  NOT DONE    ****** STOPPED HERE 1am 2011/10/28
+    function getData(json) {
+	    //toggleControls("on");
+	    if (localStorage.length === 0) {
+	        autoFillData(json);
+	        alert("There is no data in local Storage so default was added.");
+	    }
+	    // Write data from local storage to the browser
+	    var makeDiv = $('div');
+	    makeDiv.Attr("id", "items");
+	    var makeList = document.createElement('ul');
+	    makeDiv.appendChild(makeList);
+	    document.body.appendChild(makeDiv);
+	    $('items').style.display = "display";
+	    for (var i=0, len = localStorage.length; i < len; i++) {
+	        var makeLi    = document.createElement("li");
+	        var linksLi        =    document.createElement("li");
+	        makeList.appendChild(makeLi);
+	        var key        = localStorage.key[i];
+	        var value        =    localStorage.getItem[key];
+	        // Convert the string from local storage value back to an object by using JSON.parse
+	        var obj         =    JSON.parse(value);
+	        var makeSubList    =    document.createElement('ul');
+	        makeLi.appendChild(makeSubList);
+	        getImage(obj.group[1], makeSubList);
+	        for(var n in obj) {
+	            var makeSubLi    =    document.createElement('li');
+	            makeSubList.appendChild(makeSubLi);
+	            var optSubText    =    obj[n][0]+" "+obj[n][1];
+	            makeSubLi.innerHTML    =    optSubText; /*  NEEDS CHANGED */
+	            makeSubList.appendChild(linksLi);
+	        }
+	        makeItemLinks(localStorage.key(i), linksLi);
+	    }
+	}
+	// -------   End of: Get Data NEW --------------------------
+
+}); // END OF THE ROAD --------
+
+// -------  ^CHECKED THESE ALREADY ^ -------------	
+	
+
+
+ 
+
+	
+
+
+
+
+	
+
+
+
+	// -------   Start of: Rebuilt Toggle Controls--------------------------
+	function toggleControls(n) { /*  MIGHT NEED TO BE CHANGED */
+	    switch (n) {
+	    case "on":
+	        $('addTaskForm').style.display = "none";
+	        $('clear').style.display = "inline";
+	        $('displayLink').style.display = "none";
+	        $('addNew').style.display = "inline";
+	        break;
+	    case "off":
+	        $('addTaskForm').style.display = "block";
+	        $('clear').style.display = "inline";
+	        $('displayLink').style.display = "inline";
+	        $('addNew').style.display = "none";
+	        $('items').style.display = "none";
+	        break;
+	    default:
+	        return false;
+	    }
+	}
+	// -------   End of: Rebuilt Toggle Controls--------------------------
+
+
+	
+
+	
+
 	// -------   Start of: Make Item Links --------------------------
 	    function makeItemLinks(key, linksLi) {
 	    var editLink    =    document.createElement('a');
@@ -806,5 +755,68 @@ function showCategory(urlObj, options) {
     //clearForm.addEventListener("click", clearForm);    // NEED TO WRITE FUNCTION
     $("#clearForm").bind('click', clearForm());
 	// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
- // End of Container for DOM objects
-	});
+
+// ------------- OLD CODE SNIPPETS --------------------------------------------
+// -- NOT SURE IF THESE NEED TO BE USED JUST YET
+// -------   Start of: Get Img NEW --------------------------
+	/*
+    function getImage(catName, makeSubList) {
+        var imageLi    =    document.createElement('li');
+
+        makeSubList.appendChild('imageLi');
+        var newImage    =    document.createElement('img');
+        var setSrc    =    newImage.setAttribute("src", "images/"+ catName + ".png");
+        imageLi.appendChild(newImage);
+    }
+    */
+// -------   End of: Get Img NEW --------------------------
+// -- NOT SURE IF THESE NEED TO BE USED JUST YET
+
+
+	/*
+			$.mobile.bind.pageInit("pagebeforechange", function (e, data) {	
+		//$(document).bind("pagebeforechange", function (e, data) {
+        if (typeof data.toPage === "string") {
+            var u = $.mobile.path.parseUrl(data.toPage),
+                re = /^#category-item/;
+            if (u.hash.search(re) !== -1) {
+                showCategory(u, data.options);
+                e.preventDefault();
+            }
+        }
+		});
+		*/	
+		// -------   Start of : Show Category List -------------------------- 
+/*
+function showCategory(urlObj, options) {
+	var categoryName = urlObj.hash.replace(/.*category=/, ""),
+		//actionName = urlObj.hash.replace(/.*show=/, ""),
+		category = json.categoryName,
+		pageSelector = urlObj.hash.replace(/\?.*$/, ""),
+		i;
+		//alert(pageSelector);
+		//buildCatPage(category);
+	if (category) {
+	
+		var $page = $(pageSelector),
+			$header = $page.children(":jqmData(role=header)"),
+			$content = $page.children(":jqmData(role=content)"),
+			markup = "<p><img src=\"img" + category  + "/></p><ul data-role='listview' data-inset='true'>",
+			cItems = category.tasks,
+			numItems = cItems.length;
+// Make a list item for each item in the category and add to markup
+		for (i = 0; i < numItems; i++) {
+			markup += "<li><h3>" + cItems[i].name  + "</h3><p>" + cItems[i].priority + "</p><p class=\"ui-li-aside\"><strong>" + "</strong></p></li>";
+		}
+		markup += "</ul>";
+		$header.find("h1").html(category.name);
+		$content.html(markup);
+		$page.page();
+		$content.find(":jqmData(role=listview)").listview();
+		options.dataUrl = urlObj.href;
+		$.mobile.changePage($page, options);
+	}
+}
+
+*/
+// -------   End of : Show Category List -------------------------- 
