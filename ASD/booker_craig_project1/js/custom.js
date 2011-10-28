@@ -755,6 +755,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
     $("#clearForm").bind('click', clearForm());
 	// -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 
+
 // ------------- OLD CODE SNIPPETS --------------------------------------------
 // -- NOT SURE IF THESE NEED TO BE USED JUST YET
 // -------   Start of: Get Img NEW --------------------------
@@ -819,4 +820,3 @@ function showCategory(urlObj, options) {
 
 */
 // -------   End of : Show Category List -------------------------- 
-
