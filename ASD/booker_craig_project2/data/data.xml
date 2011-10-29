@@ -3,47 +3,47 @@
     <item>
         <context>Errands</context>
         <name>Get Vacuum Bags</name>
-        <priority>3</priority>
+        <priority>1</priority>
         <favorite>checked</favorite>
-		<sDate>2011-05-11</sDate>
-		<eDate>2011-07-11</eDate>
-		<dDate>2011-08-11</dDate>
+		<sDate>2011-11-11</sDate>
+		<eDate>2011-11-11</eDate>
+		<dDate>2011-11-11</dDate>
 		<notes>Don't forget to get the model fj2 bags.</notes>
     </item>
     <item>
         <context>Errands</context>
         <name>Buy Broom</name>
-        <priority>3</priority>
+        <priority>2</priority>
         <favorite>unchecked</favorite>
-		<sDate>2011-05-11</sDate>
-		<eDate>2011-06-11</eDate>
-		<dDate>2011-07-11</dDate>
+		<sDate>2011-11-11</sDate>
+		<eDate>2011-11-11</eDate>
+		<dDate>2011-11-11</dDate>
 		<notes>Large broom for garage.</notes>
 	</item>
 	<item>
         <context>Errands</context>
         <name>Buy blades for mower</name>
-        <priority>4</priority>
+        <priority>3</priority>
         <favorite>checked</favorite>
-		<sDate>2011-05-11</sDate>
-		<eDate>2011-06-11</eDate>
-		<dDate>2011-07-11</dDate>
+		<sDate>2011-11-11</sDate>
+		<eDate>2011-11-11</eDate>
+		<dDate>2011-11-11</dDate>
 		<notes>Honda SRT Model 5</notes>
     </item>
     <item>
         <context>Errands</context>
         <name>Buy pansies</name>
-        <priority>3</priority>
+        <priority>4</priority>
         <favorite>unchecked</favorite>
-		<sDate>2011-05-11</sDate>
-		<eDate>2011-07-11</eDate>
-		<dDate>2011-08-11</dDate>
+		<sDate>2011-11-11</sDate>
+		<eDate>2011-11-11</eDate>
+		<dDate>2011-11-11</dDate>
 		<notes>For front flowerbed, purple and red.</notes>
 	</item>
     <item>
         <context>Errands</context>
         <name>Buy Grass Seed</name>
-        <priority>4</priority>
+        <priority>5</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-05</sDate>
 		<eDate>2011-11-07</eDate>
@@ -53,7 +53,7 @@
     <item>
         <context>Home</context>
         <name>Vacuum House</name>
-        <priority>5</priority>
+        <priority>1</priority>
         <favorite>checked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -63,7 +63,7 @@
 	<item>
         <context>Home</context>
         <name>Sweep Garage</name>
-        <priority>3</priority>
+        <priority>2</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -73,7 +73,7 @@
     <item>
         <context>Home</context>
         <name>Mow Lawn</name>
-        <priority>4</priority>
+        <priority>3</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -83,7 +83,7 @@
     <item>
         <context>Home</context>
         <name>Plant Flowers</name>
-        <priority>3</priority>
+        <priority>4</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -103,7 +103,7 @@
 	<item>
         <context>Office</context>
         <name>Order Office Supplies</name>
-        <priority>5</priority>
+        <priority>1</priority>
         <favorite>checked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -112,8 +112,8 @@
     </item>
     <item>
         <context>Office</context>
-        <name></name>
-        <priority></priority>
+        <name>Clean Desk</name>
+        <priority>2</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -122,8 +122,8 @@
 	</item>
     <item>
         <context>Office</context>
-        <name></name>
-        <priority></priority>
+        <name>Reorganize Filecabinet</name>
+        <priority>3</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -132,8 +132,8 @@
     </item>
     <item>
         <context>Office</context>
-        <name></name>
-        <priority></priority>
+        <name>Meeting with Mike</name>
+        <priority>4</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -142,8 +142,8 @@
 	</item>
 	<item>
         <context>Office</context>
-        <name></name>
-        <priority></priority>
+        <name>Prepare Sales Presentation</name>
+        <priority>5</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -152,8 +152,8 @@
     </item>
     <item>
         <context>Calls</context>
-        <name></name>
-        <priority></priority>
+        <name>Call Joe from Shipping</name>
+        <priority>1</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -162,18 +162,59 @@
 	</item>
     <item>
         <context>Calls</context>
-        <name></name>
-        <priority></priority>
+        <name>Call Car Dealer About Repair Status</name>
+        <priority>2</priority>
         <favorite>unchecked</favorite>
-		<sDate></sDate>
-		<eDate></eDate>
-		<dDate></dDate>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+
+    </item>
+    <item>
+        <context>Calls</context>
+        <name>Call AT&T About Texting Plan</name>
+        <priority>3</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+	</item>
+	<item>
+        <context>Calls</context>
+        <name>Call Client to Setup Meeting</name>
+        <priority>4</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
 		<notes></notes>
     </item>
     <item>
         <context>Calls</context>
-        <name></name>
-        <priority></priority>
+        <name>Call City About Utility Bill</name>
+        <priority>5</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+	</item>
+    <item>
+        <context>People</context>
+        <name>Mike is preparing operations presentation</name>
+        <priority>1</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+    </item>
+    <item>
+        <context>People</context>
+        <name>Jane is organizing lunch party</name>
+        <priority>2</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -181,9 +222,9 @@
 		<notes></notes>
 	</item>
 	<item>
-        <context>Calls</context>
-        <name></name>
-        <priority></priority>
+        <context>People</context>
+        <name>Joanne is creating spreadsheet for monthly budget</name>
+        <priority>3</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
@@ -191,53 +232,73 @@
 		<notes></notes>
     </item>
     <item>
-        <context>Calls</context>
-        <name></name>
-        <priority></priority>
+        <context>People</context>
+        <name>Joe is revising business plan</name>
+        <priority>4</priority>
         <favorite>unchecked</favorite>
 		<sDate>2011-11-08</sDate>
 		<eDate>2011-11-09</eDate>
 		<dDate>2011-11-10</dDate>
-		<notes></notes>
-	</item>
-    <item>
-        <context></context>
-        <name></name>
-        <priority></priority>
-        <favorite></favorite>
-		<sDate></sDate>
-		<eDate></eDate>
-		<dDate></dDate>
-		<notes></notes>
-    </item>
-    <item>
-        <context></context>
-        <name></name>
-        <priority></priority>
-        <favorite></favorite>
-		<sDate></sDate>
-		<eDate></eDate>
-		<dDate></dDate>
 		<notes></notes>
 	</item>
 	<item>
-        <context></context>
-        <name></name>
-        <priority></priority>
-        <favorite></favorite>
-		<sDate></sDate>
-		<eDate></eDate>
-		<dDate></dDate>
+        <context>People</context>
+        <name>Judy is revisiting our marketing plan</name>
+        <priority>5</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
 		<notes></notes>
     </item>
     <item>
-        <context></context>
-        <name></name>
-        <priority></priority>
-        <favorite></favorite>
-		<sDate></sDate>
-		<eDate></eDate>
-		<dDate></dDate>
+        <context>Waiting</context>
+        <name>Research into new product line</name>
+        <priority>1</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+	</item>
+	<item>
+        <context>Waiting</context>
+        <name>Remodel Kitchen</name>
+        <priority>2</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+    </item>
+    <item>
+        <context>Waiting</context>
+        <name>Buy new car</name>
+        <priority>3</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+	</item>
+	<item>
+        <context>Waiting</context>
+        <name>Rewire Cat 6 cabling throughout house</name>
+        <priority>4</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+    </item>
+    <item>
+        <context>Waiting</context>
+        <name>Revamp company web site</name>
+        <priority>5</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
 		<notes></notes>
 	</item>
 </items>
