@@ -1,9 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <items>
     <item>
-        <title>Undead Monkey</title>
-        <species>Capuchin</species>
-        <name>Jack</name>
-        <price currency="USD">19.95</price>
+        <context>Errands</context>
+        <name>Get Vacuum Bags</name>
+        <priority>3</priority>
+        <favorite>checked</favorite>
+		<sDate>2011-05-11</sDate>
+		<eDate>2011-07-11</eDate>
+		<dDate>2011-08-11</dDate>
+		<notes>Don't forget to get the model fj2 bags.</notes>
     </item>
+    <item>
+        <context>Errands</context>
+        <name>Buy Broom</name>
+        <priority>3</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-05-11</sDate>
+		<eDate>2011-06-11</eDate>
+		<dDate>2011-07-11</dDate>
+		<notes>Large broom for garage.</notes>
+	</item>
+	<item>
+        <context>Errands</context>
+        <name>Buy blades for mower</name>
+        <priority>4</priority>
+        <favorite>checked</favorite>
+		<sDate>2011-05-11</sDate>
+		<eDate>2011-06-11</eDate>
+		<dDate>2011-07-11</dDate>
+		<notes>Honda SRT Model 5</notes>
+    </item>
+    <item>
+        <context>Errands</context>
+        <name>Buy pansies</name>
+        <priority>3</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-05-11</sDate>
+		<eDate>2011-07-11</eDate>
+		<dDate>2011-08-11</dDate>
+		<notes>For front flowerbed, purple and red.</notes>
+	</item>
+    <item>
+        <context>Errands</context>
+        <name>Buy Grass Seed</name>
+        <priority>4</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-05</sDate>
+		<eDate>2011-11-07</eDate>
+		<dDate>2011-11-08</dDate>
+		<notes>Get fescue for backyard.</notes>
+    </item>
+    <item>
+        <context>Home</context>
+        <name>Vacuum House</name>
+        <priority>5</priority>
+        <favorite>checked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes>Better get this done before my wife gets home.</notes>
+	</item>
+	<item>
+        <context>Home</context>
+        <name>Sweep Garage</name>
+        <priority>3</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes>What a mess!</notes>
+    </item>
+    <item>
+        <context>Home</context>
+        <name>Mow Lawn</name>
+        <priority>4</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes>It's getting tall!!</notes>
+	</item>
+    <item>
+        <context>Home</context>
+        <name>Plant Flowers</name>
+        <priority>3</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes>It's only getting closer to winter.</notes>
+    </item>
+    <item>
+        <context>Home</context>
+        <name>Plant Grass Seed</name>
+        <priority>5</priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes>Gotta get that rooted before winter.</notes>
+	</item>
+	<item>
+        <context>Office</context>
+        <name>Order Office Supplies</name>
+        <priority>5</priority>
+        <favorite>checked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+    </item>
+    <item>
+        <context>Office</context>
+        <name></name>
+        <priority></priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+	</item>
+    <item>
+        <context>Office</context>
+        <name></name>
+        <priority></priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+    </item>
+    <item>
+        <context>Office</context>
+        <name></name>
+        <priority></priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+	</item>
+	<item>
+        <context>Office</context>
+        <name></name>
+        <priority></priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+    </item>
+    <item>
+        <context>Calls</context>
+        <name></name>
+        <priority></priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+	</item>
+    <item>
+        <context>Calls</context>
+        <name></name>
+        <priority></priority>
+        <favorite>unchecked</favorite>
+		<sDate></sDate>
+		<eDate></eDate>
+		<dDate></dDate>
+		<notes></notes>
+    </item>
+    <item>
+        <context>Calls</context>
+        <name></name>
+        <priority></priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+	</item>
+	<item>
+        <context>Calls</context>
+        <name></name>
+        <priority></priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+    </item>
+    <item>
+        <context>Calls</context>
+        <name></name>
+        <priority></priority>
+        <favorite>unchecked</favorite>
+		<sDate>2011-11-08</sDate>
+		<eDate>2011-11-09</eDate>
+		<dDate>2011-11-10</dDate>
+		<notes></notes>
+	</item>
+    <item>
+        <context></context>
+        <name></name>
+        <priority></priority>
+        <favorite></favorite>
+		<sDate></sDate>
+		<eDate></eDate>
+		<dDate></dDate>
+		<notes></notes>
+    </item>
+    <item>
+        <context></context>
+        <name></name>
+        <priority></priority>
+        <favorite></favorite>
+		<sDate></sDate>
+		<eDate></eDate>
+		<dDate></dDate>
+		<notes></notes>
+	</item>
+	<item>
+        <context></context>
+        <name></name>
+        <priority></priority>
+        <favorite></favorite>
+		<sDate></sDate>
+		<eDate></eDate>
+		<dDate></dDate>
+		<notes></notes>
+    </item>
+    <item>
+        <context></context>
+        <name></name>
+        <priority></priority>
+        <favorite></favorite>
+		<sDate></sDate>
+		<eDate></eDate>
+		<dDate></dDate>
+		<notes></notes>
+	</item>
 </items>
