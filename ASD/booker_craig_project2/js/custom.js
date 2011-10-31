@@ -10,28 +10,39 @@ $(function() {
 // TODO: 
 // QUESTIONS: 
 //----------------------------------------------------------	
-	 $("form").submit(validate()); 
-    var displayLink = $('displayLink');
+	 //$("form").submit(validate()); 
+    //var displayLink = $('#displayLink');
     //displayLink.addEventListener("click", getData(json));
-    $("#displayLink").bind("click", getData(e, data)); 
-    var clearLink = $('clear');
+    //$("#displayLink").bind("click", getData(e, data)); 
+    //var clearLink = $('#clear');
    // clearLink.addEventListener("click", clearLocal);
-    $("#clearLink").bind("click", clearLocal());     
-    var save = $('submit');
+    //$("#clear").bind("click", clearLocal());     
+    //var save = $('#submit');
     //save.addEventListener("click", validate);    
-    $("#submit").bind('click', validate()); 
+    //$("#submit").bind('click', validate()); 
     //var clearForm = $('clearForm');
     //clearForm.addEventListener("click", clearForm);    // NEED TO WRITE FUNCTION
     $("#clearForm").bind('click', clearForm());
+    //$("#json").bind("click", loadData(json));
+    //$("#xml").bind("click", loadData(xml));
+    //$("#yml").bind("click", loadData(yml));
+
+	$.ajax({
+			url: 'xhr/data.json',
+			type: 'GET',
+			dataType: 'json',
+			success: function(data, status){
+				console.log(status, data);
+			}			
+		});
+
+
 // -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 
-	
-// -------   Start of: JSON Data --------------------------
-
- 
 
 
-// -------    End of: JSON Data --------------------------	
+
+
 // -------   Start of: showCategories function ------------
 // STATUS : Not fully working ----- 2011.10.28
 // LAST UPDATED: 2011-10-28
@@ -42,6 +53,7 @@ $(function() {
 // TODO: None
 // QUESTIONS: 
 //----------------------------------------------------------
+/*
 function showCategory(urlObj, options)
 {
 	var categoryName = urlObj.hash.replace( /.*category=/, "" ),
@@ -105,7 +117,7 @@ function showCategory(urlObj, options)
 		// the page we just modified.
 		$.mobile.changePage( $page, options );
 	}
-}
+} */
 // -------   Start of: binding function for main page ------------
 // STATUS : SEMI WORKING ----- 2011.10.28
 // LAST UPDATED: 2011-10-28
@@ -115,7 +127,7 @@ function showCategory(urlObj, options)
 // QUESTIONS: 1. Is this the correct way to bind this function to the document?
 //----------------------------------------------------------
 
-
+/*
 $(document).bind( "pagebeforechange", function( e, data ) {
 	console.log('In bind');
 	// We only want to handle changePage() calls where the caller is
@@ -137,7 +149,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 			e.preventDefault();
 		}
 	}
-});
+}); */
 // -------   Start of: Autofill Data  --------------------------
 // STATUS : NOT WORKING ----- 2011.10.28
 // LAST UPDATED: 2011-10-28
@@ -168,7 +180,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 // QUESTIONS: 
 //----------------------------------------------------------
     function makeCats(contextNames) {
-        alert("Am I in?");
+        //alert("Am I in?");
         //alert(contextNames);
         var    i;
         var     j;
@@ -212,13 +224,13 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 
 // Remove the initial listener from the input 'save task' button.
         $('#Add Task').value = ("Add Task");
-        var editSave = $('Add Task');
-        editSave.unbind();
+        //var editSave = $('Add Task');
+        //editSave.unbind();
         //editSave.removeEventListner("click", storeData);
         // Change the submit value to say Edit button
         $('#submit').value = ("Edit Contact");
-        var editSubmit = $('submit');
-        $('#submit').bind();
+        //var editSubmit = $('submit');
+        //$('#submit').bind();
         //Save the key value established in this function as a property of the editSubmit event
         // so we can use that value when we save the data we edited.
         //editSubmit.addEventListener("click", validate);
@@ -264,7 +276,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 	    var makeList = document.createElement('ul');
 	    makeDiv.appendChild(makeList);
 	    document.body.appendChild(makeDiv);
-	    $('items').style.display = "display";
+	    $('#items').css("display", "display");
 	    for (var i=0, len = localStorage.length; i < len; i++) {
 	        var makeLi    = document.createElement("li");
 	        var linksLi        =    document.createElement("li");
@@ -297,19 +309,20 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 //----------------------------------------------------------
 	function validate(e) {
 //function validate(e) {
-    var getContext = $('#context');
-    var getName = $('#name');
-    var getPriority = $('#priority');
-    var getSdate = $('#sDate');
-    var getEdate = $('#eDate');
-    var getDdate = $('#dDate');
+    //var getContext = $('#context');
+   // var getName = $('#name');
+    //var getPriority = $('#priority');
+    //var getSdate = $('#sDate');
+    //var getEdate = $('#eDate');
+    //var getDdate = $('#dDate');
 
     //Reset Error Messages
-    errMsg.innerHTML = "";
+   // errMsg.innerHTML = "";
+    //errMsg.html = ("");
     //getContext.style.border = "1px solid black";
     $('#context').css('border', '1px solid black');
-    getName.style.border = "1px solid black";
-    getPriority.style.border = "1px solid black";
+    $('#name').css('border', '1px solid black');
+    $('#priority').css('border', '1px solid black');
 
     // Get Error Mesages
     var messageAry = [];
@@ -474,34 +487,7 @@ $(document).bind( "pagebeforechange", function( e, data ) {
 
 
 
-// -------   Start of: Rebuilt Toggle Controls--------------------------
-// STATUS : 
-// LAST UPDATED: 2011-10-28
-// PURPOSE: 
-// NOTES :  
-// TODO: 
-// QUESTIONS: 
-//----------------------------------------------------------
-	function toggleControls(n) { /*  MIGHT NEED TO BE CHANGED */
-	    switch (n) {
-	    case "on":
-	        $('addTaskForm').style.display = "none";
-	        $('clear').style.display = "inline";
-	        $('displayLink').style.display = "none";
-	        $('addNew').style.display = "inline";
-	        break;
-	    case "off":
-	        $('addTaskForm').style.display = "block";
-	        $('clear').style.display = "inline";
-	        $('displayLink').style.display = "inline";
-	        $('addNew').style.display = "none";
-	        $('items').style.display = "none";
-	        break;
-	    default:
-	        return false;
-	    }
-	}
-	// -------   End of: Rebuilt Toggle Controls--------------------------
+
 
 
 	
