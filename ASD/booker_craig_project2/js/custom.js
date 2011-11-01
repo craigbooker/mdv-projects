@@ -219,6 +219,7 @@ $(function() {
 //----------------------------------------------------------
     function getImage(catName, makeSubList) {
         var imageLi    =    document.createElement('li');
+        var imageLi
 
         makeSubList.appendChild('imageLi');
         var newImage    =    document.createElement('img');
@@ -391,32 +392,37 @@ $(function() {
 // -------   End of: Delete All Stored Tasks --------------------------
 // -------   Start of: Make Item Links --------------------------
 // STATUS : 
-// LAST UPDATED: 2011-10-28
+// LAST UPDATED: 2011-11-01
 // PURPOSE: 
 // NOTES :  
 // TODO: 
 // QUESTIONS: 
 //----------------------------------------------------------
 	    function makeItemLinks(key, linksLi) {
-		    var editLink    =    document.createElement('a');
-		    editLink.href    =    "#";
+		    var editLink    =    $("a");
+			$(editLink).attr("id", "editLink");
+		    $("#editLink").attr("href",  "#");
 		    editLink.key    =    key;
 		    var editText    =    "Edit Task";
-		    editLink.addEventListener("click", editItem);
-		    editLink.innerHTML    =    editText;   /*  NEEDS CHANGED */
-		    linksLi.appendChild(editLink);
+		    $("#editLink").bind("click", editItem);
+		    $("#editLink").html(editText);
+		    $("#linksLi").append("#editLink");
 		
 		    // Add Line Break
-		    var breakTag = document.createElement('br'); 
-		    linksLi.appendChild(breakTag);
+		    var breakTag = $('br'); 
+		    $("#linksLi").append(breakTag);
 		
-		    var deleteLink    =    document.createElement('a');
-		    deleteLink.href = "#";
+		    //var deleteLink    =    document.createElement('a');
+		    var deleteLink = $('a');
+		    $(deleteLink).attr("href", "#");
+		    $(deleteLink).attr("id", "deleteLink");
 		    deleteLink.key    =    key;
 		    var deleteText = "Delete Task";
-		    deleteLink.addEventListener("click", deleteTask);
-		    deleteLink.innerHTML = deleteText; /*  NEEDS CHANGED */
-		    linksLi.appendChild(deleteLink);
+		    //deleteLink.addEventListener("click", deleteTask);
+		    $("#deleteLink").bind("click", deleteTask);
+		    $("#deleteLink").html(deleteText);		    
+		   // deleteLink.innerHTML = deleteText; /*  NEEDS CHANGED */
+		    $(linksLi).append("#deleteLink");
 	    }
 // -------   End of: Make Item Links --------------------------
 // -------   Start of: Rebuilt Save Form Data --------------------------
