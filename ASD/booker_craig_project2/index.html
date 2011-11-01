@@ -15,7 +15,7 @@
 		<!-- Javascript files  -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
-		<script type="text/javascript" src="js/yaml.js"></script>
+		<!--script type="text/javascript" src="js/yaml.js"></script-->
 		<script type="text/javascript" src="js/custom.js"></script>
 		<!-- Optional Mousewheel support: http://brandonaaron.net/code/mousewheel/docs -->
 		<script type="text/javascript" src="js/libs/jquery.mousewheel.min.js"></script> <!-- Local Copy --> 
@@ -36,7 +36,6 @@
     </div><!-- / secondary header -->
 	<div data-role="list-divider" class="ui-bar-a">
 			<ul data-role="listview">
-				<pre id="out"></pre>
 				<li data-role="list-divider" class="ui-bar ui-bar-d">Browse By Category</li>
 			</ul>
 	</div>	<!-- /list divider: Browse Category -->
@@ -44,36 +43,31 @@
 			<ul data-role="listview" value="" data-filter="true" placeholder="Search">
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=errand"> 
-					<!--a data-iconpos="right" data-icon="r-arrow" href="#errands"--> 
+					 All<span class="ui-li-count">30</span></a>
+				</li>
+
+				<li>
+					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=errand"> 
 					<img src="img/Errands.png" class="ui-li-icon"  /> Errand<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=home">
-					<!--a data-iconpos="right" data-icon="r-arrow" href="#home_list"-->
-
 					<img src="img/Home.png" class="ui-li-icon" />Home<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=office">
-					<!--a data-iconpos="right" data-icon="r-arrow" href="#office"-->
-
 					<img src="img/Office.png" class="ui-li-icon" />Office<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=calls">
-					<!--a data-iconpos="right" data-icon="r-arrow" href="#calls"-->
-
 					<img src="img/Calls.png" class="ui-li-icon" />Calls<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=people">
-					<!--a data-iconpos="right" data-icon="r-arrow" href="#people"-->
-
 					<img src="img/People.png" class="ui-li-icon" />People<span class="ui-li-count">5</span></a>
 				</li>
 				<li>
 					<a data-iconpos="right" data-icon="r-arrow" href="#category-items?category=waiting" data-theme="a">
-					<!--a data-iconpos="right" data-icon="r-arrow" href="#waiting" data-theme="a"-->
 					<img src="img/Waiting.png" class="ui-li-icon" />Waiting<span class="ui-li-count">5</span></a>
 				</li>
 			</ul><!-- / listview -->
@@ -97,11 +91,10 @@
 	    </div><!-- /header -->	
 	    <div data-role="content" class="ui-content" role="main">
 	 		<div class="content-primary">
-	 		<div class="ui-body ui-body-b" style="display:none;">
-							<a href="#" id="clear" style="display:none;">Clear Stored Data</a>
-							<a href="#" id="displayLink" style="display:none;">Display Data</a>
-							<a href="#" id="index.html" id="addNew" style="display:none;">Add New Item</a>
-			</div>
+	 		<div data-role="controlgroup"  data-type="horizontal">
+							<a href="#" id="clear" data-role="button" data-theme="a" data-inline="true">Clear Stored Data</a>
+							<a href="#" id="displayLink" data-role="button" data-theme="a" data-inline="true">Display Data</a>
+			</div>			
 			<form action="#" method="post" id="addTaskForm" name="addTaskForm"> 
 				<fieldset id="taskFieldset">
 					<div data-role="fieldcontain">
@@ -111,10 +104,6 @@
 					<div id="context" data-role="fieldcontain">					
 							<label for="context">*Select Context:</label>
 					</div>									
-					<div id="errors"  style="display:none;"></div>
-					<div id="context">
-							<label for="context">*Select Context:</label>
-					</div>	
 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
 						<label for="name" class="ui-input-text">Task Name:</label>
 						<input type="text" name="name" id="name" value="" placeholder="Task Name" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
@@ -143,7 +132,7 @@
 	  				</div><!--/Notes Field -->	
 					<div class="ui-body ui-body-b">
 						<fieldset class="ui-grid-a">
-							<div class="ui-block-a"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><input type="submit" data-theme="e" class="ui-btn-hidden" aria-disabled="false" value="Save Task"></div>
+							<div class="ui-block-a"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><button id="addTask" type="submit" data-theme="e" class="ui-btn-hidden" aria-disabled="false" value="Save Task"></div>
 							<div class="ui-block-b"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><button type="clear" data-theme="d" class="ui-btn-hidden" aria-disabled="false">Clear</button></div>
 						</fieldset>
 					</div><!--/Submit Buttons -->	
@@ -287,12 +276,8 @@
 						</div>  <!-- task 1 -->
 				</div>
 
-			</div>	
-	  <div data-role="collapsible-set">
-		
 			</div>							
 	</div>
-
 	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
@@ -350,48 +335,6 @@
 						</ul>
 					</div> 	<!-- task 2 -->
 				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Buy blades for mower</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Honda SRT Model 5</li>
-						</ul>
-					</div> 	<!-- task 3 -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Buy pansies</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Purple and yellow would be nice.</li>
-						</ul>
-					</div> 	<!-- Task 4 -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Buy Grass Seed</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Get fescue for backyard.</li>
-						</ul>
-				</div> 	<!-- Task 5 -->
-				</div>
-			</div>	
-	  <div data-role="collapsible-set">
-		
 			</div>							
 	</div>
 
@@ -410,624 +353,7 @@
 
 
 
-<!-- START OF PAGE: categories:errands   ++++++++++++++++++++++++++++++++++++++++++   -->
-<div id="errands_static" data-role="page">
- 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-		<div data-role="list-divider" class="ui-bar-d">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-d">Errands</li>
-			</ul>
-	</div>	
-  <div data-role="content">
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Get Vacuum Bags</h3>
-						<div data-role="fieldcontain">
-							<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Don't forget to get the model fj2 bags.</li>
-							</ul>
-					
-						</div> 	<!-- Clear Local Storage -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Buy Broom</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: unchecked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Large broom for garage.</li>
-						</ul>
-					</div> 	<!-- task 2 -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Buy blades for mower</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Honda SRT Model 5</li>
-						</ul>
-					</div> 	<!-- task 3 -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Buy pansies</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Purple and yellow would be nice.</li>
-						</ul>
-					</div> 	<!-- Task 4 -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Buy Grass Seed</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Get fescue for backyard.</li>
-						</ul>
-				</div> 	<!-- Task 5 -->
-				</div>
-			</div>	
-	  <div data-role="collapsible-set">
-		
-			</div>							
-	</div>
 
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- / footer navbar -->
-	</div><!-- /footer -->
-</div>
-<!-- END OF PAGE: categories:errands   ++++++++++++++++++++++++++++++++++++++++++   -->
-<!-- START OF PAGE: categories:errands   ++++++++++++++++++++++++++++++++++++++++++   -->
-<div id="home_list_static" data-role="page">
- 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-		<div data-role="list-divider" class="ui-bar-d">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-d">Home</li>
-			</ul>
-	</div>	
-  <div data-role="content">
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Sweep Garage</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-						<li>Priority: 3</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Move back those shelves</li>
-						</ul>
-					</p>
-				</div> 	<!-- Task -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Mow Lawn</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 7</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Getting really tall in backyard.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Task -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Plant Flowers</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Plant pansies in front flowerbed.</li>
-						</ul>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Plant Grass Seed</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes: Plant fescue in backyard, better hurry!</li>
-						</ul>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Vacuum House</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Don't forget to get the laundry room.</li>
-						</ul>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>							
-	</div>
-
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- / footer navbar -->
-	</div><!-- /footer -->
-</div>
-<!-- END OF PAGE: categories:home   ++++++++++++++++++++++++++++++++++++++++++   -->
-<!-- START OF PAGE: categories:office   ++++++++++++++++++++++++++++++++++++++++++   -->
-<div id="office_static" data-role="page">
- 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-		<div data-role="list-divider" class="ui-bar-d">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-d"><h2><img src="img/Office_med.png" /> Office Tasks</h2></li>
-			</ul>
-	</div>	
-  <div data-role="content">
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Order Office Supplies</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Clean Desk</h3>
-						<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-				</div> 	<!-- Task -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Reorganize Filecabinet</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-				</div> 	<!-- Task -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Meeting with Mike</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-				</div> 	<!-- Task -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Prepare Sales Presentation</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">						
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>							
-	</div>
-
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- / footer navbar -->
-	</div><!-- /footer -->
-</div>
-<!-- END OF PAGE: categories:office   ++++++++++++++++++++++++++++++++++++++++++   -->
-<!-- START OF PAGE: categories:calls   ++++++++++++++++++++++++++++++++++++++++++   -->
-<div id="calls_static" data-role="page">
- 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-		<div data-role="list-divider" class="ui-bar-d">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-d">Calls</li>
-			</ul>
-	</div>	
-  <div data-role="content">
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul data-role="listview">
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul data-role="listview">
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>	
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>							
-	</div>
-
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- / footer navbar -->
-	</div><!-- /footer -->
-</div>
-<!-- END OF PAGE: categories:calls   ++++++++++++++++++++++++++++++++++++++++++   -->
-<!-- START OF PAGE: categories:people   ++++++++++++++++++++++++++++++++++++++++++   -->
-<div id="people_static" data-role="page">
- 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-		<div data-role="list-divider" class="ui-bar-d">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-d">People</li>
-			</ul>
-	</div>	
-  <div data-role="content">
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>	
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>							
-	</div>
-
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- / footer navbar -->
-	</div><!-- /footer -->
-</div>
-<!-- END OF PAGE: categories:people   ++++++++++++++++++++++++++++++++++++++++++   -->
-<!-- START OF PAGE: categories:waiting  ++++++++++++++++++++++++++++++++++++++++++   -->
-<div id="waiting_static" data-role="page">
- 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-		<div data-role="list-divider" class="ui-bar-d">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-d">Waiting</li>
-			</ul>
-	</div>	
-  <div data-role="content">
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>	
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name:", "Get Vacuum Bags</h3>
-					<p><div data-role="fieldcontain">
-					<p>
-						<ul>
-						<li>Priority: 5</li>
-						<li>Favorite: checked</li>
-						<li>Start Date: 2011-05-11</li>
-						<li>End Date: 2011-05-12</li>
-						<li>Due Date: 2011-05-12</li>
-						<li>Notes:Don't forget to get the model fj2 bags.</li>
-						</ul>
-					</p>
-				</div> 	<!-- Clear Local Storage -->
-				</div>
-			</div>							
-	</div>
-
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- / footer navbar -->
-	</div><!-- /footer -->
-</div>
-<!-- END OF PAGE: categories:errands   ++++++++++++++++++++++++++++++++++++++++++   -->
 <!-- End of: Data Placeholders  ++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 
