@@ -11,7 +11,7 @@ $(function() {
 				var fileType = "json";
 				var jsonData = data;
 				var serializedItem = JSON.stringify(jsonData);
-				console.log(serializedItem);
+				//console.log(serializedItem);
 				//parseData(data, fileType);
 			}			
 		});
@@ -47,6 +47,14 @@ $(function() {
 				//parseData(data, fileType);
 			}			
 		}); */
+	$("#footernav").load(footerHtml);
+	var footerHtml = "	
+			<ul>
+				<li><a href=\"#home\" data-icon=\"home\">Home</a></li>
+				<li><a href=\"#add_item\" data-icon=\"plus\">Add Task</a></li>
+				<li><a href=\"#settings\" data-icon=\"gear\">Settings</a></li>
+				<li><a href=\"#about_app\" data-icon=\"info\">About</a></li>
+			</ul>		");
 // -------   Start of: Parse Data-------------------------
 // STATUS :  
 // LAST UPDATED: 2011-10-30
@@ -86,10 +94,18 @@ $(function() {
 	    }
 	}
 // -------    End of: Parse Data --------------------------	
-function parseXml(xml) {  
+// -------   Start of: Parse XML --------------------------
+// STATUS : Not fully working 
+// LAST UPDATED: 2011-10-29
+// PURPOSE: Load the data from the json file
+// TODO: None
+// QUESTIONS: 
+//----------------------------------------------------------
+function parseXml_orig(xml) {  
+	//console.log(xml);
 	$(xml).find("items").each(function() {  
 	//find each instance of loc in xml file and wrap it in a link  
-	$("ul#site_list").append('<li>Context: ' + $(this).find("context").text() + '</li>');  
+	$("ul#site_list").append('<li>Context: ' + $(this).context.text() + '</li>');  
 	$("ul#site_list").append('<li>Task Name: ' + $(this).find("name").text() + '</li>');  
 	$("ul#site_list").append('<li>Priority: ' + $(this).find("priority").text() + '</li>');  
 	$("ul#site_list").append('<li>Favorite: ' + $(this).find("favorite").text() + '</li>');  
@@ -100,6 +116,33 @@ function parseXml(xml) {
 	$("#loading").hide();  
  	});  
 }  
+// -------   End of: Parse XML -------------------------------
+// -------   Start of: Parse XML --------------------------
+// STATUS : Not fully working 
+// LAST UPDATED: 2011-10-29
+// PURPOSE: Load the data from the json file
+// TODO: None Change to for loop.
+// QUESTIONS: 
+//----------------------------------------------------------
+function parseXml(xml) {  
+	//$(xml).find("items").each(function() {  
+	var item = $(xml);
+	console.log(item);
+	for(var i = 0, j = xml.length; i < j; i++) {
+	//find each instance of loc in xml file and wrap it in a link  
+	$("ul#site_list").append('<li>Context: ' + item[i].context.text() + '</li>');  
+	$("ul#site_list").append('<li>Task Name: ' + item[i].name.text() + '</li>');  
+	$("ul#site_list").append('<li>Priority: ' + item[i].priority.text() + '</li>');  
+	$("ul#site_list").append('<li>Favorite: ' + item[i].favorite.text() + '</li>');  
+	$("ul#site_list").append('<li>Start Date: ' + item[i].sDate.text() + '</li>');  
+	$("ul#site_list").append('<li>End Date: ' + item[i].eDate.text() + '</li>');  
+	$("ul#site_list").append('<li>Due Date: ' + item[i].dDate.text() + '</li>');  
+	$("ul#site_list").append('<li>Notes: ' + item[i].Notes.text() + '</li>');  
+	$("#loading").hide();
+	}  
+ 	//});  
+}  
+// -------   End of: Parse XML -------------------------------
 // -------   Start of: XML AJAX Call--------------------------
 // STATUS : Not fully working 
 // LAST UPDATED: 2011-10-29
