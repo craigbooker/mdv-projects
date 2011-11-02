@@ -10,23 +10,32 @@ $(function() {
 				console.log(data, status);
 				var fileType = "json";
 				var jsonData = data;
-				var serializedItem = JSON.stringify(data);
+				var serializedItem = JSON.stringify(jsonData);
 				console.log(serializedItem);
 				//parseData(data, fileType);
 			}			
 		});
-	$.ajax({
+		 $("#loading").show();  
+		  $.ajax({  
+		    type: "GET",  
+		    url: "xhr/data.xml",  
+		    dataType: "xml",  
+		    success: parseXml  
+		});  
+	/*$.ajax({
 			url: 'xhr/data.xml',
 			type: 'GET',
 			dataType: 'xml',
 			success: function(data, status){
-				//console.log(status, data);
-				var fileType = "xml";
-				var rawData = $.parseXML(data);
+				console.log(data, status);
+				var xml = data;
+				var xmlDoc = $.parseXML(xml);
+				$xml = $(xmlDoc);
+				console.log($xml);
 				var items = rawData;
 				items.find("item").each(function(){
-				    var item = $(this);
-				    console.log("Context: ", item.context);
+				    //var item = $(this);
+				    console.log("Context: ", item.find("context"));
 				    console.log("Name: ", item.find("name"));
 				    console.log("Priority: ", item.find("priority"));
 				    console.log("Favorite: ", item.find("favorite"));
@@ -37,7 +46,7 @@ $(function() {
 				});
 				//parseData(data, fileType);
 			}			
-		});
+		}); */
 // -------   Start of: Parse Data-------------------------
 // STATUS :  
 // LAST UPDATED: 2011-10-30
@@ -77,7 +86,20 @@ $(function() {
 	    }
 	}
 // -------    End of: Parse Data --------------------------	
-
+function parseXml(xml) {  
+	$(xml).find("items").each(function() {  
+	//find each instance of loc in xml file and wrap it in a link  
+	$("ul#site_list").append('<li>Context: ' + $(this).find("context").text() + '</li>');  
+	$("ul#site_list").append('<li>Task Name: ' + $(this).find("name").text() + '</li>');  
+	$("ul#site_list").append('<li>Priority: ' + $(this).find("priority").text() + '</li>');  
+	$("ul#site_list").append('<li>Favorite: ' + $(this).find("favorite").text() + '</li>');  
+	$("ul#site_list").append('<li>Start Date: ' + $(this).find("sDate").text() + '</li>');  
+	$("ul#site_list").append('<li>End Date: ' + $(this).find("eDate").text() + '</li>');  
+	$("ul#site_list").append('<li>Due Date: ' + $(this).find("dDate").text() + '</li>');  
+	$("ul#site_list").append('<li>Notes: ' + $(this).find("Notes").text() + '</li>');  
+	$("#loading").hide();  
+ 	});  
+}  
 // -------   Start of: XML AJAX Call--------------------------
 // STATUS : Not fully working 
 // LAST UPDATED: 2011-10-29
@@ -115,9 +137,9 @@ $(function() {
 // QUESTIONS: 1. Do you see anything wrong with this?
 //----------------------------------------------------------
 	function autoFillData() {
-		for(var n in json) {	
+		for(var n in items) {	
 			var id =	Math.floor(Math.random()*100000000001);
-			localStorage.setItem(id, JSON.stringify(json[n]));
+			localStorage.setItem(id, JSON.stringify(items[n]));
 			}
 	}
 // -------   End of: autoFillData --------------------------------------

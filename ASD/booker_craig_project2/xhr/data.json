@@ -1,9 +1,10 @@
-   var items = {
+{
+	"items" : [
             {
-                "context:" "Errand" ,
-                "name": "Get Vacuum Bags" ,
-                "priority": "5" ,
-                "favorite": "checked" ,
+                "context": "Errand" ,
+                "name": "Get Vacuum Bags",
+                "priority": "5",
+                "favorite": "checked",
                 "sDate": "2011-10-11" ,
                 "eDate": "2011-10-12" ,
                 "dDate": "2011-10-12" ,
@@ -20,7 +21,7 @@
                 "notes": "Large broom for garage."
             },
             {
-                "context": "Errand" ,
+                "context": "Errand",
                 "name": "Buy blades for mower",
                 "priority": "5",
                 "favorite":  "checked",
@@ -299,4 +300,5 @@
                 "dDate": "2011-10-16",
                 "notes": ""
             }
-    };
+    ]
+}

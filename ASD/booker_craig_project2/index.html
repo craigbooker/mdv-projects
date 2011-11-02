@@ -257,12 +257,19 @@
 				<li data-role="list-divider" class="ui-bar ui-bar-d">Errands</li>
 			</ul>
 	</div>
-	<div class="ui-body ui-body-b">
-							<a href="#" id="json">Load JSON Data</a>
-							<a href="#" id="xml">Load XML Data</a>
-							<a href="#" id="yml">Load YAML Data</a>
-	</div>	
-  <div data-role="content">
+	<div data-role="controlgroup"  data-type="horizontal">
+							<a href="#" id="json" data-role="button" data-theme="a" data-inline="true">Load JSON Data</a>
+							<a href="#" id="xml" data-role="button" data-theme="a" data-inline="true">Load XML Data</a>
+							<a href="#" id="yml" data-role="button" data-theme="a" data-inline="true">Load YAML Data</a>
+	</div>
+		
+	<div id="wrap">  
+							<ul id="site_list">  
+								<li id="loading"><img src="img/ajax-loader.gif" alt="loading" /> Loading Data..</li>  
+							</ul>  
+	</div>  
+
+  <!--div data-role="content">
 	  <div data-role="collapsible-set">
 				<div data-role="collapsible" data-collapsed="true">
 					<h3>Task Name: Get Vacuum Bags</h3>
@@ -274,10 +281,11 @@
 							<div data-role="fieldcontain">Due Date: 2011-05-12</div>
 							<div data-role="fieldcontain">Notes:Don't forget to get the model fj2 bags.</div>
 						</div>  <!-- task 1 -->
+						
 				</div>
 
 			</div>							
-	</div>
+	</div-->
 	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
 			<ul>
