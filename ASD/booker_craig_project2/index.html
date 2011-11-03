@@ -14,9 +14,10 @@
 		
 		<!-- Javascript files  -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
 		<!--script type="text/javascript" src="js/yaml.js"></script-->
-		<script type="text/javascript" src="js/custom.js"></script>
+
 		<!-- Optional Mousewheel support: http://brandonaaron.net/code/mousewheel/docs -->
 		<script type="text/javascript" src="js/libs/jquery.mousewheel.min.js"></script> <!-- Local Copy --> 
 		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
@@ -255,32 +256,16 @@
 	<div data-role="controlgroup"  data-type="horizontal">
 							<a href="#" id="json" data-role="button" data-theme="a" data-inline="true">Load JSON Data</a>
 							<a href="#" id="xml" data-role="button" data-theme="a" data-inline="true">Load XML Data</a>
-							<a href="#" id="yml" data-role="button" data-theme="a" data-inline="true">Load YAML Data</a>
+							<a href="#" id="csv" data-role="button" data-theme="a" data-inline="true">Load CSV Data</a>
 	</div>
 		
 	<div id="wrap">  
-							<ul id="site_list">  
-								<li id="loading"><img src="img/ajax-loader.gif" alt="loading" /> Loading Data..</li>  
-							</ul>  
+
+								<div id="loadingXml"><img src="img/ajax-loader.gif" alt="loading XML Data" /> Loading XML Data..</div>
+								<div id="xml_list"></div>  
+								<div id="loadingJson"><img src="img/ajax-loader.gif" alt="loading JSON Data" /> Loading JSON Data..</div>
+								<div id="json_list"></div>  								
 	</div>  
-
-  <!--div data-role="content">
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Get Vacuum Bags</h3>
-						<div data-role="fieldcontain">
-							<div data-role="fieldcontain">Priority: 5</div>
-							<div data-role="fieldcontain">Favorite: checked</div>
-							<div data-role="fieldcontain">Start Date: 2011-05-11</div>
-							<div data-role="fieldcontain">End Date: 2011-05-12</div>
-							<div data-role="fieldcontain">Due Date: 2011-05-12</div>
-							<div data-role="fieldcontain">Notes:Don't forget to get the model fj2 bags.</div>
-						</div>  <!-- task 1 -->
-						
-				</div>
-
-			</div>							
-	</div-->
 	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar" id="footernav">
 			<ul>

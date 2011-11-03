@@ -1,5 +1,5 @@
 {
-	"items" : [
+	"item" : [ 
             {
                 "context": "Errand" ,
                 "name": "Get Vacuum Bags",
@@ -300,5 +300,5 @@
                 "dDate": "2011-10-16",
                 "notes": ""
             }
-    ]
+   	]
 }
