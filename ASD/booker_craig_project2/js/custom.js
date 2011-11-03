@@ -1,133 +1,64 @@
 // Craig Booker  |  ASD Project 2 | 10/28/2011
 
 $(function() {
-	$.ajax({
-			url: 'xhr/data.json',
-			type: 'GET',
-			cache: false,
-			dataType: 'json',
-			success: function(data){
-				console.log(data, status);
-				var fileType = "json";
-				var jsonData = data;
-				var serializedItem = JSON.stringify(jsonData);
-				console.log(serializedItem);
-				//parseData(data, fileType);
-			}			
-		});
-		 $("#loading").show();  
-		  $.ajax({  
-		    type: "GET",  
-		    url: "xhr/data.xml",  
-		    dataType: "xml",  
-		    success: parseXml  
-		});  
-	/*$.ajax({
-			url: 'xhr/data.xml',
-			type: 'GET',
-			dataType: 'xml',
-			success: function(data, status){
-				console.log(data, status);
-				var xml = data;
-				var xmlDoc = $.parseXML(xml);
-				$xml = $(xmlDoc);
-				console.log($xml);
-				var items = rawData;
-				items.find("item").each(function(){
-				    //var item = $(this);
-				    console.log("Context: ", item.find("context"));
-				    console.log("Name: ", item.find("name"));
-				    console.log("Priority: ", item.find("priority"));
-				    console.log("Favorite: ", item.find("favorite"));
-				    console.log("Start Date: ", item.find("sDate"));
-				    console.log("End Date: ", item.find("eDate"));
-				    console.log("Due Date: ", item.find("dDate"));
-				    console.log("Notes: ", item.find("notes"));
-				});
-				//parseData(data, fileType);
-			}			
-		}); */
-// -------   Start of: Parse Data-------------------------
-// STATUS :  
-// LAST UPDATED: 2011-10-30
-// PURPOSE: Load the data from the json file
-// TODO: None
-// QUESTIONS: 
-//----------------------------------------------------------
-	function parseData (data, fileType) {
-		    console.log(fileType);
-		    console.log(data);
-		    switch (fileType) {
-	    	case "json":
-	    		var serializedItem = JSON.stringify(data);
-				//console.log(serializedItem);
-	    	case "xml" :
-	   		 // assume that the XML above is in a string named "xml"
-	   		 	console.log(data); /* debug */
+var xmlTasks, jsonTasks;
 
-				var rawData = $.parseXML(data);
-				// wrap the XML in a jQuery object to make it easier to work with
-				var items = $(rawData);
-				console.log(items);
-				items.find("item").each(function(){
-				    var item = $(this);
-				    console.log("Context: ", item.context);
-				    console.log("Name: ", item.find("name"));
-				    console.log("Priority: ", item.find("priority"));
-				    console.log("Favorite: ", item.find("favorite"));
-				    console.log("Start Date: ", item.find("sDate"));
-				    console.log("End Date: ", item.find("eDate"));
-				    console.log("Due Date: ", item.find("dDate"));
-				    console.log("Notes: ", item.find("notes"));
-				});
-			break;
-	    default:
-	        return false;
-	    }
-	}
-// -------    End of: Parse Data --------------------------	
-function parseXml(xml) {  
-	$(xml).find("items").each(function() {  
-	//find each instance of loc in xml file and wrap it in a link  
-	$("ul#site_list").append('<li>Context: ' + $(this).find("context").text() + '</li>');  
-	$("ul#site_list").append('<li>Task Name: ' + $(this).find("name").text() + '</li>');  
-	$("ul#site_list").append('<li>Priority: ' + $(this).find("priority").text() + '</li>');  
-	$("ul#site_list").append('<li>Favorite: ' + $(this).find("favorite").text() + '</li>');  
-	$("ul#site_list").append('<li>Start Date: ' + $(this).find("sDate").text() + '</li>');  
-	$("ul#site_list").append('<li>End Date: ' + $(this).find("eDate").text() + '</li>');  
-	$("ul#site_list").append('<li>Due Date: ' + $(this).find("dDate").text() + '</li>');  
-	$("ul#site_list").append('<li>Notes: ' + $(this).find("Notes").text() + '</li>');  
-	$("#loading").hide();  
- 	});  
-}  
-// -------   Start of: XML AJAX Call--------------------------
+
+
+
+// -------   Start of: Parse XML --------------------------
 // STATUS : Not fully working 
 // LAST UPDATED: 2011-10-29
 // PURPOSE: Load the data from the json file
 // TODO: None
 // QUESTIONS: 
 //----------------------------------------------------------
-	//$.ajax({
-	/*
-	// assume that the XML above is in a string named "xml"
-	var data = $.parseXML(xml);
-	// wrap the XML in a jQuery object to make it easier to work with
-	var items = $( data );
-	items.find("item").each(function(){
-    var item = $(this);
-    console.log("Context: ", item.find("context"));
-    console.log("Name: ", item.find("name"));
-    console.log("Priority: ", item.find("priority"));
-    console.log("Favorite: ", item.find("favorite"));
-    console.log("Start Date: ", item.find("sDate"));
-    console.log("End Date: ", item.find("eDate"));
-    console.log("Due Date: ", item.find("dDate"));
-    console.log("Notes: ", item.find("notes"));
+	function showXml () {  
 	
-	});
-*/
+		$.ajax({  
+		    url: 'data.xml',
+		    type: 'GET',
+		    dataType: 'xml',  
+		    error: 'Did Not Load XML',
+		    success: function(data, response){
+			console.log(response);
+			var xmlTasks;
+			$(xmlTasks).val(data);
+			alert('XML Loaded');
+		    return xmlTasks;
+		    } 
+		});
+		console.log('Im in tasks');
+		$(xmlTasks).find('item').each(function(){
+		var id = $(this).attr('id');
+		var context = $(this).find('context').text();
+		$('<div class="items" id="item_'+id+'"></div>').html('Context: ' + context).appendTo('#xml_list');
+		$(this).find('details').each(function(){
+			//var context = $(this).find('context').text();
+			var name = $(this).find('name').text();
+			var priority = $(this).find("priority").text();  
+			var favorite = $(this).find("favorite").text();  
+			var sDate = $(this).find("sDate").text();  
+			var eDate = $(this).find("eDate").text();  
+			var dDate = $(this).find("dDate").text();  
+			var ntoes = $(this).find("Notes").text();
+			//$('<div class="context"></div>').html(context).appendTo('#item_'+id);
+			$('<div class="name"></div>').html("Name: " + name).appendTo('#item_'+ id);
+			$('<div class="priority"></div>').html("Priority: " + priority).appendTo('#item_'+ id);
+			$('<div class="favorite"></div>').html("Favorite: " + favorite).appendTo('#item_'+ id);
+			$('<div class="sDate"></div>').html("Start Date: " + sDate).appendTo('#item_'+ id);
+			$('<div class="eDate"></div>').html("End Date: " + eDate).appendTo('#item_'+ id);
+			$('<div class="dDate"></div>').html("Due Date: " + dDate).appendTo('#item_'+ id);
+			$('<div class="notes"></div>').html("Notes : " + notes).appendTo('#item_'+ id);						
+			});
+		$("#loadingXml").hide();  
+		});
 
-// -------    End of:  XML AJAX Call --------------------------	
+	}
+// -------   End of: Parse XML -------------------------------
+	
+
+
 // -------   Start of: Autofill Data  --------------------------
 // STATUS : NOT WORKING ----- 2011.10.28
 // LAST UPDATED: 2011-10-28
@@ -230,8 +161,57 @@ function parseXml(xml) {
         }    else    {
             alert("Item not removed!");
         }
+	$('html, body').animate({ scrollTop: 0 }, 0);        
     }
 // ------- End of:  Delete Task Data --------------------------	
+// -------   Start of: Show JSON Data-------------------------
+// STATUS :  
+// LAST UPDATED: 2011-10-30
+// PURPOSE: Load the data from the json file
+// TODO: None
+// QUESTIONS: 
+//----------------------------------------------------------
+	function showJSON() {
+			$.ajax({  
+						    url: 'data.json',
+						    type: 'GET',
+						    dataType: 'json',  
+						    error: 'Did Not Load JSON',
+						    success: function(data, response){
+							console.log(response);
+			var jsonTasks;
+			$(jsonTasks).val(data);
+			alert('JSON Loaded');
+		    return jsonTasks;
+		    } 
+			}	*/
+			var item, i, j, id;
+			for (i = 0, j=jsonTasks.item.length; i < j; i++) {
+				id = i + 1;
+				//console.log(jasonTasks);
+				item = jsonTasks.item[i];
+				/* console.log("Context: " + item.context);
+				console.log("Name: " + item.name);
+				console.log("Priority: " + item.priority);
+				console.log("Favorite: " + item.favorite);
+				console.log("Start Date: " + item.sDate);
+				console.log("End Date: " + item.eDate);
+				console.log("Due Date: " + item.DDate);
+				console.log("Notes: " + item.notes); */
+				var contextTxt = ('Context: ' + item.context);				
+				$('<div class="items" id="jsonitem_'+id+'"></div>').html(contextTxt).appendTo('#json_list');			
+				//console.log("Context: " + item.context).appendTo('#item_'+ id);
+				$('<div class="name"></div>').html("Name: " + item.name).appendTo('#jsonitem_'+ id);
+				$('<div class="priority"></div>').html("Priority: " + item.priority).appendTo('#jsonitem_'+ id);
+				$('<div class="name"></div>').html("Favorite: " + item.favorite).appendTo('#jsonitem_'+ id);
+				$('<div class="sDate"></div>').html("Start Date: " + item.sDate).appendTo('#jsonitem_'+ id);
+				$('<div class="eDate"></div>').html("End Date: " + item.eDate).appendTo('#jsonitem_'+ id);
+				$('<div class="dDate"></div>').html("Due Date: " + item.DDate).appendTo('#jsonitem_'+ id);
+				$('<div class="notes"></div>').html("Notes: " + item.notes).appendTo('#jsonitem_'+ id);
+			$("#loadingJson").hide();  
+			}
+	}
+// -------    End of: Show JSON Data --------------------------	
 // -------   Start of: Get Img NEW --------------------------
 // STATUS : 
 // PURPOSE: 
@@ -506,15 +486,23 @@ function parseXml(xml) {
     var clearForm = $('#clearForm');
     //clearForm.addEventListener("click", clearForm);    // NEED TO WRITE FUNCTION
    $("#clearForm").bind('click', clearForm);
-    $("#json").bind("click", parseData);
-    $("#xml").bind("click", parseData);
-    $("#yml").bind("click", parseData);
+    $("#json").bind("click", showJson);
+    $("#xml").bind("click", showXml);
+    //$("#yml").bind("click", parseData);
 
 
 
-
+	var footernav = 	"<ul>";
+				footernav += "<li><a href=\"#home\" data-icon=\"home\">Home</a></li>";
+				footernav += "<li><a href=\"#add_item\" data-icon=\"plus\">Add Task</a></li>";
+				footernav += "<li><a href=\"#settings\" data-icon=\"gear\">Settings</a></li>";
+				footernav += "<li><a href=\"#about_app\" data-icon=\"info\">About</a></li>";
+				footernav += "</ul>	";
+	$("#footernav").html(footernav);
+	//$("#footernav").html(inc/footernav.html);
 
 
 // -------   End of: SET LINK & SUBMIT CLICK EVENTS --------------------------
 }); 
+
 // -------   END OF THE ROAD --------------------------	
