@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+    <item id="1">
+        <context>Errands</context>
+        <details>
+        	<name>Get Vacuum Bags</name>
+	        <priority>1</priority>
+	        <favorite>checked</favorite>
+			<sDate>2011-11-11</sDate>
+			<eDate>2011-11-11</eDate>
+			<dDate>2011-11-11</dDate>
+			<notes>Don't forget to get the model fj2 bags.</notes>
+		</details>
+    </item>
+    <item id="2">
+        <context>Errands</context>
+        <details>
+        	<name>Buy Broom</name>
+	        <priority>2</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-11</sDate>
+			<eDate>2011-11-11</eDate>
+			<dDate>2011-11-11</dDate>
+			<notes>Large broom for garage.</notes>
+		</details>
+    </item>
+	<item id="3">
+        <context>Errands</context>
+        <details>
+        	<name>Buy blades for mower</name>
+	        <priority>3</priority>
+	        <favorite>checked</favorite>
+			<sDate>2011-11-11</sDate>
+			<eDate>2011-11-11</eDate>
+			<dDate>2011-11-11</dDate>
+			<notes>Honda SRT Model 5</notes>
+		</details>
+    </item>
+    <item id="4">
+        <context>Errands</context>
+        <details>
+        	<name>Buy pansies</name>
+	        <priority>4</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-11</sDate>
+			<eDate>2011-11-11</eDate>
+			<dDate>2011-11-11</dDate>
+			<notes>For front flowerbed, purple and red.</notes>
+		</details>
+    </item>
+    <item id="5">
+        <context>Errands</context>
+        <details>
+        	<name>Buy Grass Seed</name>
+	        <priority>5</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-05</sDate>
+			<eDate>2011-11-07</eDate>
+			<dDate>2011-11-08</dDate>
+			<notes>Get fescue for backyard.</notes>
+		</details>
+    </item>
+    <item id="6">
+        <context>Home</context>
+        <details>
+        	<name>Vacuum House</name>
+	        <priority>1</priority>
+	        <favorite>checked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Better get this done before my wife gets home.</notes>
+		</details>
+    </item>
+	<item id="7">
+        <context>Home</context>
+        <details>
+        	<name>Sweep Garage</name>
+	        <priority>2</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>What a mess!</notes>
+		</details>
+    </item>
+    <item id="8">
+        <context>Home</context>
+        <details>
+        	<name>Mow Lawn</name>
+	        <priority>3</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>It's getting tall!!</notes>
+		</details>
+    </item>
+    <item id="9">
+        <context>Home</context>
+        <details>
+        	<name>Plant Flowers</name>
+	        <priority>4</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>It's only getting closer to winter.</notes>
+		</details>
+    </item>
+    <item id="10">
+        <context>Home</context>
+        <details>
+        	<name>Plant Grass Seed</name>
+	        <priority>5</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Gotta get that rooted before winter.</notes>
+		</details>
+    </item>
+	<item id="11">
+        <context>Office</context>
+        <details>
+        	<name>Order Office Supplies</name>
+	        <priority>1</priority>
+	        <favorite>checked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="12">
+        <context>Office</context>
+        <details>
+        	<name>Clean Desk</name>
+	        <priority>2</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="13">
+        <context>Office</context>
+        <details>
+        	<name>Reorganize Filecabinet</name>
+	        <priority>3</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>	
+		</details>
+    </item>
+    <item id="14">
+        <context>Office</context>
+        <details>
+        	<name>Meeting with Mike</name>
+	        <priority>4</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>	
+		</details>
+    </item>
+	<item id="15">
+        <context>Office</context>
+        <details>
+        	<name>Prepare Sales Presentation</name>
+	        <priority>5</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="16">
+        <context>Calls</context>
+        <details>
+        	<name>Call Joe from Shipping</name>
+	        <priority>1</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="17">
+        <context>Calls</context>
+        <details>
+        	<name>Call Car Dealer About Repair Status</name>
+	        <priority>2</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="18">
+        <context>Calls</context>
+        <details>
+        	<name>Call ATT About Texting Plan</name>
+	        <priority>3</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+	<item id="19">
+        <context>Calls</context>
+        <details>
+        	<name>Call Client to Setup Meeting</name>
+	        <priority>4</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="20">
+        <context>Calls</context>
+        <details>
+        	<name>Call City About Utility Bill</name>
+	        <priority>5</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="21">
+        <context>People</context>
+        <details>
+        	<name>Mike is preparing operations presentation</name>
+	        <priority>1</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="22">
+        <context>People</context>
+        <details>
+        	<name>Jane is organizing lunch party</name>
+	        <priority>2</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+	<item id="23">
+        <context>People</context>
+        <details>
+        	<name>Joanne is creating spreadsheet for monthly budget</name>
+	        <priority>3</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="24">
+        <context>People</context>
+        <details>
+        	<name>Joe is revising business plan</name>
+	        <priority>4</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+	<item id="25">
+        <context>People</context>
+        <details>
+	        <name>Judy is revisiting our marketing plan</name>
+	        <priority>5</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="26">
+        <context>Waiting</context>
+        <details>
+        	<name>Research into new product line</name>
+	        <priority>1</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+	<item id="27">
+        <context>Waiting</context>
+        <details>
+        	<name>Remodel Kitchen</name>
+	        <priority>2</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+    </item>
+    <item id="28">
+        <context>Waiting</context>
+        <details>
+        	<name>Buy new car</name>
+	        <priority>3</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+	<item id="29">
+        <context>Waiting</context>
+        <details>
+        	<name>Rewire Cat 6 cabling throughout house</name>
+	        <priority>4</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+    <item id="30">
+        <context>Waiting</context>
+        <details>
+        	<name>Revamp company web site</name>
+	        <priority>5</priority>
+	        <favorite>unchecked</favorite>
+			<sDate>2011-11-08</sDate>
+			<eDate>2011-11-09</eDate>
+			<dDate>2011-11-10</dDate>
+			<notes>Some notes should go here.</notes>
+		</details>
+    </item>
+</items>
