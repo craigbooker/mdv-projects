@@ -980,3 +980,207 @@ function showCategory(urlObj, options)
 	</div><!-- /footer -->
 </div>
 <!-- END OF PAGE: categories:errands   ++++++++++++++++++++++++++++++++++++++++++   -->
+// -------   Start of: Get Data NEW --------------------------
+// STATUS : Not being used ----- 2011.10.27
+// LAST UPDATED: 2011-10-28
+// NOTES :  Still working on this.  NOT DONE    ****** STOPPED HERE 1am 2011/10/28
+// PURPOSE: To retrieve data from localStorage
+// QUESTIONS: None
+// TODO: 1. Need to finish replacing references with jquery references
+//----------------------------------------------------------
+    function getData(data) {
+	    //toggleControls("on");
+	    
+	   //var key		=	localStorage.key(i);
+		//var isNumber = /^\d+$/.test(key);
+		//if (isNumber === true) {
+	    var keyCheck = localStorage.key(0);
+		console.log(keyCheck);
+		var checkLoc = /^\d+$/.test(keyCheck);
+		if((keyCheck === "") || (keyCheck === "undefined") || (checkLoc === false )) {	    
+			//console.log("I'm in the gate!");
+	        autoFillData(data);
+	        alert("There is no data in local Storage so default was added.");
+	    }
+	    // Write data from local storage to the browser
+	    var makeDiv = $('div');
+	    makeDiv.attr("id", "items");
+	    //var makeList = document.createElement('ul');
+		var makeList = $('ul');
+		makeList.attr("id", "makeList");
+	    //makeDiv.appendChild(makeList);
+	    $('#items').append('#makeList');
+	   // document.body.appendChild(makeDiv);
+	    //document.body.append('#items');
+	    $('#items').css("display", "display");
+	    for (var i = 0, len = localStorage.length; i < len; i++) {
+	        //var makeLi    = document.createElement("li");
+	        //console.log(localStorage);
+	        var makeLi    = $("li");
+	        makeLi.attr("id", "makeLi"); 
+	       // var linksLi        =    document.createElement("li");
+	        var linksLi        =   $("li");
+	        makeList.append('#makeLi');
+	        var key        = localStorage.key[i];
+	       console.log(key);
+	        var value     = localStorage.getItem[key];
+	        console.log(value);
+	        // Convert the string from local storage value back to an object by using JSON.parse
+	        var objHolder = JSON.parse(value);
+	        //var obj
+	        //var makeSubList    =    document.createElement('ul');
+	        var makeSubList    =    $('ul');
+			makeSubList.attr("id", "makeSubList");
+	        //makeLi.appendChild(makeSubList);
+	        makeLi.append('#makeSubList');
+
+	        getImage(obj.context[1], makeSubList);
+	        for(var n in obj) {
+	            //var makeSubLi    =    document.createElement('li');
+	            var makeSubLi    =    $('li');
+	            makeSubLi.attr("id", "makeSubLi");
+	            //makeSubList.appendChild(makeSubLi);
+	            makeSubList.append('#makeSubLi');
+	            var optSubText    =    obj[n][0]+" "+obj[n][1];
+	            makeSubLi.html(optSubText); 
+	            //makeSubList.append(linksLi);
+	            makeSubList.append("#linksLi");
+
+	        }
+	       // makeItemLinks(localStorage.key(i), linksLi);
+	    }
+	}
+// -------   End of: Get Data NEW --------------------------
+// -------   Start of: Autofill Data  --------------------------
+// STATUS : NOT WORKING ----- 2011.10.28
+// LAST UPDATED: 2011-10-28
+// PURPOSE: grab JSON data and put in local storage
+// NOTES : Not sure what is causing this not to work. I think it has to do with other areas of my app. 
+// TODO: None
+// QUESTIONS: 1. Do you see anything wrong with this?
+//----------------------------------------------------------
+	function autoFillData() {
+		for(var n in items) {	
+			var id =	Math.floor(Math.random()*100000000001);
+			localStorage.setItem(id, JSON.stringify(items[n]));
+			}
+	}
+// -------   End of: autoFillData --------------------------------------
+$(data).find('items').each(function()
+	var id = "xml" + xmlCounter;
+					$(this).attr('id', id);
+					var context = $(this).find('context').text();
+							$('<div class="xml_item'+id+'"" id="xml_item_'+id+'"></div>').html('Context: ' + context).appendTo('.data_load');
+									$(this).find('details').each(function(){
+												//var context = $(this).find('context').text();
+												var name = $(this).find("name").text();
+												var priority = $(this).find("priority").text();  
+												var favorite = $(this).find("favorite").text();  
+												var sDate = $(this).find("sDate").text();  
+												var eDate = $(this).find("eDate").text();  
+												var dDate = $(this).find("dDate").text();  
+												var ntoes = $(this).find("Notes").text();
+												//$('<div class="context"></div>').html(context).appendTo('#item_'+id);
+												$('<div class=".xml_item_name'+id+'"></div>').html("Name: " + name).appendTo('.data_load');
+												$('<div class=".xml_item_priority'+id+'"></div>').html("Priority: " + priority).appendTo('.data_load');
+												$('<div class=".xml_item_favorite'+id+'"></div>').html("Favorite: " + favorite).appendTo('.data_load');
+												$('<div class=".xml_item_sdate'+id+'"></div>').html("Start Date: " + sDate).appendTo('.data_load');
+												$('<div class=".xml_item_edate'+id+'"></div>').html("End Date: " + eDate).appendTo('.data_load');
+												$('<div class=".xml_item_ddate'+id+'"></div>').html("Due Date: " + dDate).appendTo('.data_load');
+												$('<div class=".xml_item_notes'+id+'"></div>').html("Notes : " + notes).appendTo('.data_load');				
+									}); //Third Function
+		//$("#loadingXml").hide();  
+		}); // Second Function
+		
+		
+		// -------   Start of: Make Item Links --------------------------
+// STATUS : 
+// LAST UPDATED: 2011-11-01
+// PURPOSE: 
+// NOTES :  
+// TODO: 
+// QUESTIONS: 
+//----------------------------------------------------------
+	    function makeItemLinks(key, linksLi) {
+		    var editLink    =    $("a");
+			$(editLink).attr("id", "editLink");
+		    $("#editLink").attr("href",  "#");
+		    editLink.key    =    key;
+		    var editText    =    "Edit Task";
+		    $("#editLink").bind("click", editItem);
+		    $("#editLink").html(editText);
+		    $("#linksLi").append("#editLink");
+		
+		    // Add Line Break
+		    var breakTag = $('br'); 
+		    $("#linksLi").append(breakTag);
+		
+		    //var deleteLink    =    document.createElement('a');
+		    var deleteLink = $('a');
+		    $(deleteLink).attr("href", "#");
+		    $(deleteLink).attr("id", "deleteLink");
+		    deleteLink.key    =    key;
+		    var deleteText = "Delete Task";
+		    //deleteLink.addEventListener("click", deleteTask);
+		    $("#deleteLink").bind("click", deleteTask);
+		    $("#deleteLink").html(deleteText);		    
+		   // deleteLink.innerHTML = deleteText; /*  NEEDS CHANGED */
+		    $(linksLi).append("#deleteLink");
+	    }
+// -------   End of: Make Item Links --------------------------
+
+<!-- START OF PAGE: categories:template   ++++++++++++++++++++++++++++++++++++++++++   -->
+<div id="template" data-role="page">
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+			     <!--h1>Task Manager</h1><!-- header -->
+	    </div><!-- /header -->
+		<div data-role="list-divider" class="ui-bar-d">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-d">Errands</li>
+			</ul>
+	</div>	
+  <div data-role="content">
+	  <div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Task Name: Get Vacuum Bags</h3>
+						<div data-role="fieldcontain">
+							<ul data-role="listview">
+							<li>Priority: 5</li>
+							<li>Favorite: checked</li>
+							<li>Start Date: 2011-05-11</li>
+							<li>End Date: 2011-05-12</li>
+							<li>Due Date: 2011-05-12</li>
+							<li>Notes:Don't forget to get the model fj2 bags.</li>
+							</ul>
+					
+						</div> 	<!-- Clear Local Storage -->
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Task Name: Buy Broom</h3>
+					<div data-role="fieldcontain">
+						<ul data-role="listview">
+							<li>Priority: 5</li>
+							<li>Favorite: unchecked</li>
+							<li>Start Date: 2011-05-11</li>
+							<li>End Date: 2011-05-12</li>
+							<li>Due Date: 2011-05-12</li>
+							<li>Notes:Large broom for garage.</li>
+						</ul>
+					</div> 	<!-- task 2 -->
+				</div>
+			</div>							
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- / footer navbar -->
+	</div><!-- /footer -->
+</div>
+<!-- END OF PAGE: categories:template   ++++++++++++++++++++++++++++++++++++++++++   -->
