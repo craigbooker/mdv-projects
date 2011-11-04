@@ -5,32 +5,9 @@
 	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
 	<script type="text/javascript" src="jquery.js"></script>
 	<title>Reading XML with jQuery</title>
-     <!--script>
+      <script type="text/javascript">
      	$(document).ready(function(){
-			$.ajax({
-				type: "GET",
-				url: "sites.xml",
-				dataType: "xml",
-				success: function(xml, response) {
-				alert(response);
-					$(xml).find('item').each(function(){
-						var id = $(this).attr('id');
-						var title = $(this).find('title').text();
-						var url = $(this).find('url').text();
-						$('<div class="items" id="link_'+id+'"></div>').html('<a href="'+url+'">'+title+'</a>').appendTo('#page-wrap');
-						$(this).find('desc').each(function(){
-							var brief = $(this).find('brief').text();
-							var long = $(this).find('long').text();
-							$('<div class="brief"></div>').html(brief).appendTo('#link_'+id);
-							$('<div class="long"></div>').html(long).appendTo('#link_'+id);
-						});
-					});
-				}
-			});
-		});
-     </script-->
-          <script>
-     	$(document).ready(function(){
+	  function showXML(){
 			$.ajax({
 				type: "GET",
 				url: "data.xml",
@@ -41,18 +18,14 @@
 						var id = $(this).attr('id');
 						var context = $(this).find('context').text();
 						var url = $(this).find('url').text();
-						$('<div class="items" id="link_'+id+'"></div>').html('<a href="'+url+'">'+context+'</a>').appendTo('#page-wrap');
+						$('<div class="items" id="link_'+id+'"></div>').html('Context: '+context).appendTo('#page-wrap');
 						$(this).find('detail').each(function(){
-							//var brief = $(this).find('brief').text();
-							//var long = $(this).find('long').text();
 							var priority = $(this).find('priority').text();
 							var sDate = $(this).find('sDate').text();
 							var eDate = $(this).find('dDate').text();
 							var dDate = $(this).find('eDate').text();
 							var notes = $(this).find('notes').text();
 
-							//$('<div class="brief"></div>').html(brief).appendTo('#link_'+id);
-							//$('<div class="long"></div>').html(long).appendTo('#link_'+id);
 							$('<div class="name"></div>').html("Name: " +name).appendTo('#link_'+id);
 							$('<div class="priority"></div>').html("Priority: " +priority).appendTo('#link_'+id);
 							$('<div class="sDate"></div>').html("Start Date: " +sDate).appendTo('#link_'+id);
@@ -64,12 +37,25 @@
 					});
 				}
 			});
+			}
+		    $('.xml').bind('click', showXML);
+
 		});
+		
+
      </script>
 </head>
 <body>
+	<div data-role="controlgroup"  data-type="horizontal" id="data_calls">
+
+							<a href="#" id="xml" class="xml" data-role="button" data-theme="a" data-inline="true">Load XML Data</a>
+	</div>
 	<div id="page-wrap">
      	<h1>Reading XML with jQuery</h1>
      </div>
+     <script type="text/javascript">
+
+     </script>
 </body>
 </html>
+
