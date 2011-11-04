@@ -1184,3 +1184,10 @@ $(data).find('items').each(function()
 	</div><!-- /footer -->
 </div>
 <!-- END OF PAGE: categories:template   ++++++++++++++++++++++++++++++++++++++++++   -->
+$(xml).find("item").each(function() { 
+			//var xmlCounter = 1;
+ 			//find each instance of loc in xml file and wrap it in a link  
+			$("div#data_load").append('<div class="" >Context' + $(this).find("context").text() + '"</div>');  
+			//$("#loading").hide();  
+			 });  
+	}  
