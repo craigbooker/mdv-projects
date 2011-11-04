@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <!-- Name: Craig Booker | Class: ASD | Project: 2 | Date: 10/28/2011 -->
+	
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	    <title>Task Manager</title>
+	    
+		<!-- CSS Files -->    
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" /> 
+		<!--link rel="stylesheet" type="text/css" href="css/jquery.mobile.datebox.min.css" /-->  <!-- Local Copy -->
+		
+		<!-- Javascript files  -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<!--script type="text/javascript" src="js/custom.js"></script-->
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+		<!--script type="text/javascript" src="js/yaml.js"></script-->
+
+		<!-- Optional Mousewheel support: http://brandonaaron.net/code/mousewheel/docs -->
+		<script type="text/javascript" src="js/libs/modernizr.custom.min.js"></script><!-- Local Copy --> 
+		<script type="text/javascript">
+		function showXML () {
+		$(document).ready(function(){
+			$.ajax({
+				type: "GET",
+				url: "inc/data.xml",
+				dataType: "xml",
+				success: function(xml) {
+			var data = xml; 
+			console.log(data);
+			//$("#data_load").html("");
+			alert('I made it to XML');
+			
+
+	$(data).find('items').each(function() {
+	var id = "xml" + xmlCounter;
+					$(this).attr('id', id);
+					var context = $(this).find('context').text();
+							$('<div class="xml_item'+id+'"" id="xml_item_'+id+'"></div>').html('Context: ' + context).appendTo('.xml_list');
+									$(this).find('details').each(function(){
+												//var context = $(this).find('context').text();
+												var name = $(this).find("name").text();
+												var priority = $(this).find("priority").text();  
+												var favorite = $(this).find("favorite").text();  
+												var sDate = $(this).find("sDate").text();  
+												var eDate = $(this).find("eDate").text();  
+												var dDate = $(this).find("dDate").text();  
+												var ntoes = $(this).find("Notes").text();
+												//$('<div class="context"></div>').html(context).appendTo('#item_'+id);
+												console.log(name);
+												$('<div class=".xml_item_name'+id+'"></div>').html("Name: " + name).appendTo('.xml_list');
+												$('<div class=".xml_item_priority'+id+'"></div>').html("Priority: " + priority).appendTo('.data_load');
+												$('<div class=".xml_item_favorite'+id+'"></div>').html("Favorite: " + favorite).appendTo('.data_load');
+												$('<div class=".xml_item_sdate'+id+'"></div>').html("Start Date: " + sDate).appendTo('.data_load');
+												$('<div class=".xml_item_edate'+id+'"></div>').html("End Date: " + eDate).appendTo('.data_load');
+												$('<div class=".xml_item_ddate'+id+'"></div>').html("Due Date: " + dDate).appendTo('.data_load');
+												$('<div class=".xml_item_notes'+id+'"></div>').html("Notes : " + notes).appendTo('.data_load');				
+									}); //Third Function
+		$("#loadingXml").hide();  
+		}); // Second Function
+		}	
+});
+});		
+}
+
+</script>
+			
+	
+	</head>
+<body>
+<!-- START OF PAGE: categories:template   ++++++++++++++++++++++++++++++++++++++++++   -->
+<div id="dyn_template" data-role="page">
+ 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+			     <!--h1>Task Manager</h1><!-- header -->
+	    </div><!-- /header -->
+		<div data-role="list-divider" class="ui-bar-d">
+			<ul data-role="listview">
+				<li data-role="list-divider" class="ui-bar ui-bar-d">Errands</li>
+			</ul>
+	</div>
+	<div data-role="controlgroup"  data-type="horizontal" id="data_calls">
+							<a href="#" id="xml" class="xml" data-role="button" data-theme="a" data-inline="true">Load XML Data</a>
+	
+
+	
+	<script type="text/javascript">
+		$( '#json' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			showJSON();
+		  	
+			}
+		
+		);
+		
+		$( '#xml' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			showXML();
+		  	
+			}
+		
+		);
+		
+		$( '#csv' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			$(showCSV());
+		  	
+			}
+		
+		);
+		</script>
+	</div>
+	<div id="page-wrap">
+     	<h1>Reading XML with jQuery</h1>
+     </div>	
+	<div class="data_load" id="data_load">  
+	
+								<div id="loadingXml"><img src="img/ajax-loader.gif" alt="loading XML Data" /> Loading XML Data..</div>
+								<div id="xml_list"></div>  
+								<!--div id="loadingJson"><img src="img/ajax-loader.gif" alt="loading JSON Data" /> Loading JSON Data..</div>
+								<div id="json_list"></div-->  								
+	</div>  
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar" id="footernav">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- / footer navbar -->
+	</div><!-- /footer -->
+	
+</div>
+<!-- END OF PAGE: categories:template   ++++++++++++++++++++++++++++++++++++++++++   -->
+<!-- END OF PAGE: Dynamic Data Pages   ++++++++++++++++++++++++++++++++++++++++++   -->
