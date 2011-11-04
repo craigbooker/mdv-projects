@@ -11,7 +11,7 @@
        <notes>this is the brief description.</notes>
      </detail>
    </item>
-   <item id="2">
+   <item id="1">
      <context>Errands</context>
      <detail>
        <name>Testing</name>
@@ -22,7 +22,7 @@
        <notes>this is the brief description.</notes>
      </detail>
    </item>
-   <item id="3">
+   <item id="2">
      <context>Errands</context>
      <detail>
        <name>Testing</name>
