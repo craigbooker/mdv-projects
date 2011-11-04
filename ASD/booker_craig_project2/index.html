@@ -73,11 +73,21 @@
 				</li>
 			</ul><!-- / listview -->
 	</div> <!-- / Content -->
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- / footer navbar -->
+	</div><!-- /footer -->
+	<!--div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar" id="footernav">
 
 		</div><!-- / footer: navbar -->
-	</div><!-- /footer -->
+	<!--/div><!-- /footer -->
 </div><!-- / home page --> 
 <!-- END OF PAGE: home  ++++++++++++++++++++++++++++++++++++++++++   -->
 <!-- START OF PAGE: add_item   ++++++++++++++++++++++++++++++++++++++++++   -->
@@ -180,6 +190,7 @@
 			</ul>
 		</div><!-- / footer navbar -->
 	</div><!-- /footer -->
+
 </div>
 <!-- END OF PAGE: settings   ++++++++++++++++++++++++++++++++++++++++++   -->
 <!-- START OF PAGE: about_app settings   ++++++++++++++++++++++++++++++++++++++++++   -->
@@ -216,6 +227,11 @@
 			</ul>
 		</div><!-- / footer navbar -->
 	</div><!-- /footer -->
+	<!--div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar" id="footernav">
+
+		</div><!-- / footer: navbar -->
+	<!--/div><!-- /footer -->
 </div>
 <!-- END OF PAGE: about_app   ++++++++++++++++++++++++++++++++++++++++++   -->
 
@@ -236,6 +252,11 @@
 			</ul>
 		</div><!-- / footer navbar -->
 	</div><!-- /footer -->
+	<!--div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar" id="footernav">
+
+		</div><!-- / footer: navbar -->
+	<!--/div><!-- /footer -->
 </div>
 <!-- END OF PAGE: category-items   ++++++++++++++++++++++++++++++++++++++++++   -->
 
@@ -243,7 +264,7 @@
 
 
 <!-- START OF PAGE: categories:template   ++++++++++++++++++++++++++++++++++++++++++   -->
-<div id="template_dyn" data-role="page">
+<div id="dyn_template" data-role="page">
  	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 			     <!--h1>Task Manager</h1><!-- header -->
@@ -253,18 +274,55 @@
 				<li data-role="list-divider" class="ui-bar ui-bar-d">Errands</li>
 			</ul>
 	</div>
-	<div data-role="controlgroup"  data-type="horizontal">
-							<a href="#" id="json" data-role="button" data-theme="a" data-inline="true">Load JSON Data</a>
-							<a href="#" id="xml" data-role="button" data-theme="a" data-inline="true">Load XML Data</a>
-							<a href="#" id="csv" data-role="button" data-theme="a" data-inline="true">Load CSV Data</a>
+	<div data-role="controlgroup"  data-type="horizontal" id="data_calls">
+							<a href="#" id="json" class="json" data-role="button" data-theme="a" data-inline="true">Load JSON Data</a>
+							<a href="#" id="xml" class="xml" data-role="button" data-theme="a" data-inline="true">Load XML Data</a>
+							<a href="#" id="csv" class="csv" data-role="button" data-theme="a" data-inline="true">Load CSV Data</a>
+	<!--script type="text/javascript">
+		/* $( '#sub' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			$(storeData(num));
+		  	
+			}
+		
+		);
+		*/
+		$( '#json' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			$(showJSON());
+		  	
+			}
+		
+		);
+		
+		$( '#xml' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			$(showXML());
+		  	
+			}
+		
+		);
+		
+		$( '#csv' ).live( 'click',
+			function(event){
+			//This is how you call a function in jquery.
+			$(showCSV());
+		  	
+			}
+		
+		);
+		</script-->
 	</div>
 		
-	<div id="wrap">  
+	<div class="data_load" id="data_load">  
 
-								<div id="loadingXml"><img src="img/ajax-loader.gif" alt="loading XML Data" /> Loading XML Data..</div>
+								<!--div id="loadingXml"><img src="img/ajax-loader.gif" alt="loading XML Data" /> Loading XML Data..</div>
 								<div id="xml_list"></div>  
 								<div id="loadingJson"><img src="img/ajax-loader.gif" alt="loading JSON Data" /> Loading JSON Data..</div>
-								<div id="json_list"></div>  								
+								<div id="json_list"></div-->  								
 	</div>  
 	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar" id="footernav">
@@ -276,6 +334,7 @@
 			</ul>
 		</div><!-- / footer navbar -->
 	</div><!-- /footer -->
+	
 </div>
 <!-- END OF PAGE: categories:template   ++++++++++++++++++++++++++++++++++++++++++   -->
 <!-- END OF PAGE: Dynamic Data Pages   ++++++++++++++++++++++++++++++++++++++++++   -->
@@ -283,61 +342,7 @@
 
 <!-- Start of: Data Placeholders  ++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-<!-- START OF PAGE: categories:template   ++++++++++++++++++++++++++++++++++++++++++   -->
-<div id="template" data-role="page">
- 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-			     <!--h1>Task Manager</h1><!-- header -->
-	    </div><!-- /header -->
-		<div data-role="list-divider" class="ui-bar-d">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-d">Errands</li>
-			</ul>
-	</div>	
-  <div data-role="content">
-	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Get Vacuum Bags</h3>
-						<div data-role="fieldcontain">
-							<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: checked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Don't forget to get the model fj2 bags.</li>
-							</ul>
-					
-						</div> 	<!-- Clear Local Storage -->
-				</div>
-				<div data-role="collapsible" data-collapsed="true">
-					<h3>Task Name: Buy Broom</h3>
-					<div data-role="fieldcontain">
-						<ul data-role="listview">
-							<li>Priority: 5</li>
-							<li>Favorite: unchecked</li>
-							<li>Start Date: 2011-05-11</li>
-							<li>End Date: 2011-05-12</li>
-							<li>Due Date: 2011-05-12</li>
-							<li>Notes:Large broom for garage.</li>
-						</ul>
-					</div> 	<!-- task 2 -->
-				</div>
-			</div>							
-	</div>
 
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- / footer navbar -->
-	</div><!-- /footer -->
-</div>
-<!-- END OF PAGE: categories:template   ++++++++++++++++++++++++++++++++++++++++++   -->
 
 
 
