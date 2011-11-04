@@ -6,7 +6,41 @@ var xmlTasks, jsonTasks, editStatus;
 $.ajaxSetup ({  
         cache: false  
     }); 
-
+// -------   Start of: Show JSON Data-------------------------
+// STATUS :  
+// LAST UPDATED: 2011-10-30
+// PURPOSE: Load the data from the json file
+// TODO: None
+// QUESTIONS: 
+//----------------------------------------------------------
+	function showJSON() {
+			$.ajax({  
+						    url: 'data.json',
+						    type: 'GET',
+						    dataType: 'json',  
+						    error: 'Did Not Load JSON',
+						    success: function(data, response){
+							console.log(response);
+							var item, i, j, id;
+								for (i = 0, j=data.item.length; i < j; i++) {
+										id = i + 1;
+										//console.log(jasonTasks);
+										item = data.item[i];
+										var contextTxt = ('Context: ' + item.context);				
+										$('<div class="items" id="jsonitem_'+id+'"></div>').html(contextTxt).appendTo('.data_load');			
+										//console.log("Context: " + item.context).appendTo('#item_'+ id);
+										$('<div class="name"></div>').html("Name: " + item.name).appendTo('.data_load');
+										$('<div class="priority"></div>').html("Priority: " + item.priority).appendTo('.data_load');
+										$('<div class="name"></div>').html("Favorite: " + item.favorite).appendTo('.data_load');
+										$('<div class="sDate"></div>').html("Start Date: " + item.sDate).appendTo('.data_load');
+										$('<div class="eDate"></div>').html("End Date: " + item.eDate).appendTo('.data_load');
+										$('<div class="dDate"></div>').html("Due Date: " + item.DDate).appendTo('.data_load');
+										$('<div class="notes"></div>').html("Notes: " + item.notes).appendTo('.data_load');
+								} // End of for loop
+		   					 } //end  of success function
+	});
+	}
+// -------    End of: Show JSON Data --------------------------
 // -------   Start of: Show XML --------------------------
 // STATUS : Not fully working 
 // LAST UPDATED: 2011-10-29
@@ -14,13 +48,16 @@ $.ajaxSetup ({
 // TODO: None
 // QUESTIONS: 
 //----------------------------------------------------------
-	function showXML() {  
+	function showXML(xml) {  
 			$("#data_load").html("");
 			alert('I made it to XML');
+			$(xml).find("item").each(function() { 
 			//var xmlCounter = 1;
-
-		
-	}
+ 			//find each instance of loc in xml file and wrap it in a link  
+			$("div#xml_list").append('<div class="" >Context' + $(this).find("context").text() + '"</div>');  
+			//$("#loading").hide();  
+			 });  
+	}  
 // -------   End of: Show XML -------------------------------
 // -------   Start of: Show CSV --------------------------
 // STATUS : Not fully working 
@@ -317,41 +354,7 @@ $.ajaxSetup ({
 	//$("#footernav").html("footernav");
 	$("#footernav").html("inc/footernav.html");
 
-// -------   Start of: Show JSON Data-------------------------
-// STATUS :  
-// LAST UPDATED: 2011-10-30
-// PURPOSE: Load the data from the json file
-// TODO: None
-// QUESTIONS: 
-//----------------------------------------------------------
-	function showJSON() {
-			$.ajax({  
-						    url: 'data.json',
-						    type: 'GET',
-						    dataType: 'json',  
-						    error: 'Did Not Load JSON',
-						    success: function(data, response){
-							console.log(response);
-							var item, i, j, id;
-								for (i = 0, j=data.item.length; i < j; i++) {
-										id = i + 1;
-										//console.log(jasonTasks);
-										item = data.item[i];
-										var contextTxt = ('Context: ' + item.context);				
-										$('<div class="items" id="jsonitem_'+id+'"></div>').html(contextTxt).appendTo('.data_load');			
-										//console.log("Context: " + item.context).appendTo('#item_'+ id);
-										$('<div class="name"></div>').html("Name: " + item.name).appendTo('.data_load');
-										$('<div class="priority"></div>').html("Priority: " + item.priority).appendTo('.data_load');
-										$('<div class="name"></div>').html("Favorite: " + item.favorite).appendTo('.data_load');
-										$('<div class="sDate"></div>').html("Start Date: " + item.sDate).appendTo('.data_load');
-										$('<div class="eDate"></div>').html("End Date: " + item.eDate).appendTo('.data_load');
-										$('<div class="dDate"></div>').html("Due Date: " + item.DDate).appendTo('.data_load');
-										$('<div class="notes"></div>').html("Notes: " + item.notes).appendTo('.data_load');
-								} // End of for loop
-		   					 } //end  of success function
-	});
-	}
-// -------    End of: Show JSON Data --------------------------	
+	
 // -------   Start of: Show CSV --------------------------
 // STATUS : Not fully working 
 // LAST UPDATED: 2011-10-29
