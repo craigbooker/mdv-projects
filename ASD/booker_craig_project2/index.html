@@ -14,6 +14,8 @@
 		
 		<!-- Javascript files  -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.csv2table-0.02-b-2.8.js"></script>
+
 		<script type="text/javascript" src="js/custom.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
 		<!--script type="text/javascript" src="js/yaml.js"></script-->
@@ -316,7 +318,13 @@
 		);
 		</script-->
 	</div>
-		
+	== Mini sample 1 ==
+	<div id="view1"></div>
+	<script type="text/javascript">
+	$(function(){
+    $('#view1').csv2table('data.csv');
+	});
+	</script>	
 	<div class="data_load" id="data_load">  
 
 								<!--div id="loadingXml"><img src="img/ajax-loader.gif" alt="loading XML Data" /> Loading XML Data..</div>
