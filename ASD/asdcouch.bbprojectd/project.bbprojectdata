@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>2C830A4A-0F8E-463E-8358-BBFECDA627AF</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>2C830A4A-0F8E-463E-8358-BBFECDA627AF</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>AliasData</key>
+				<data>
+				AAAAAAGEAAIAAQxNYWNpbnRvc2ggSEQAAAAAAAAAAAAA
+				AAAAAADJeUHISCsAAAFGYU8IYXNkY291Y2gAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAbNC+MrbjFQAAAAAAAAAAP//
+				//8AAAkgAAAAAAAAAAAAAAAAAAAAA0FTRAAAEAAIAADJ
+				eZYoAAAAEQAIAADK29KkAAAAAQAUAUZhTwCIiHYAbA84
+				AAh8+AAAl+0AAgA+TWFjaW50b3NoIEhEOlVzZXJzOgBD
+				cmFpZzoAZ2l0aHViOgBtZHYtcHJvamVjdHM6AEFTRDoA
+				YXNkY291Y2gADgASAAgAYQBzAGQAYwBvAHUAYwBoAA8A
+				GgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIALFVz
+				ZXJzL0NyYWlnL2dpdGh1Yi9tZHYtcHJvamVjdHMvQVNE
+				L2FzZGNvdWNoABMAAS8AABUAAgAM//8AAA==
+				</data>
+				<key>FileURL</key>
+				<string>file://localhost/Users/Craig/github/mdv-projects/ASD/asdcouch/</string>
+				<key>RelativePath</key>
+				<string>./asdcouch</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>project3</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>
