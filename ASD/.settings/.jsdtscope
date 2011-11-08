@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="views/tasks/|views/contexts/" kind="src" path="asdcouch/app"/>
+	<classpathentry kind="src" path="asdcouch/app/views/contexts"/>
+	<classpathentry kind="src" path="asdcouch/app/views/tasks"/>
+	<classpathentry excluding="libs/" kind="src" path="booker_craig_project1/js"/>
+	<classpathentry kind="src" path="booker_craig_project1/js/libs"/>
+	<classpathentry excluding="js/javascript-yaml-parser-0.4/src/|js/libs/|js/" kind="src" path="booker_craig_project2"/>
+	<classpathentry excluding="javascript-yaml-parser-0.4/src/|libs/" kind="src" path="booker_craig_project2/js"/>
+	<classpathentry kind="src" path="booker_craig_project2/js/javascript-yaml-parser-0.4/src"/>
+	<classpathentry kind="src" path="booker_craig_project2/js/libs"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
