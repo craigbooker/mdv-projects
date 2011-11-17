@@ -1,0 +1,7 @@
+INDEX VERSION 1.122+/Users/Craig/github/mdv-projects/ASD/asdcouch/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+178111357.index
+4114501090.index
+268762387.index
+3203137979.index
+196210558.index
+129622310.index

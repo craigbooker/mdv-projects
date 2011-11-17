@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,perspective,org.eclipse.wst.jsdt.ui,,"org.eclipse.wst.jsdt.ui.JavaPerspective",1321383267405
+started,bundle,org.eclipse.osgi,3.6.0.v20100517,"org.eclipse.osgi",1321383267406
+started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.200.v20100503,"org.eclipse.equinox.simpleconfigurator",1321383267406
+started,bundle,com.ibm.icu,4.2.1.v20100412,"com.ibm.icu",1321383267407
+started,bundle,org.eclipse.core.contenttype,3.4.100.v20100505-1235,"org.eclipse.core.contenttype",1321383267407
+started,bundle,org.eclipse.core.databinding.observable,1.3.0.I20100601-0800,"org.eclipse.core.databinding.observable",1321383267407
+started,bundle,org.eclipse.core.expressions,3.4.200.v20100505,"org.eclipse.core.expressions",1321383267407
+started,bundle,org.eclipse.core.filebuffers,3.5.100.v20100520-0800,"org.eclipse.core.filebuffers",1321383267407
+started,bundle,org.eclipse.core.filesystem,1.3.0.v20100526-0737,"org.eclipse.core.filesystem",1321383267407
+started,bundle,org.eclipse.core.jobs,3.5.0.v20100515,"org.eclipse.core.jobs",1321383267408
+started,bundle,org.eclipse.core.net,1.2.100.I20100511-0800,"org.eclipse.core.net",1321383267408
+started,bundle,org.eclipse.core.resources,3.6.0.v20100526-0737,"org.eclipse.core.resources",1321383267408
+started,bundle,org.eclipse.core.runtime,3.6.0.v20100505,"org.eclipse.core.runtime",1321383267408
+started,bundle,org.eclipse.core.runtime.compatibility,3.2.100.v20100505,"org.eclipse.core.runtime.compatibility",1321383267408
+started,bundle,org.eclipse.core.runtime.compatibility.auth,3.2.200.v20100517,"org.eclipse.core.runtime.compatibility.auth",1321383267408
+started,bundle,org.eclipse.equinox.app,1.3.0.v20100512,"org.eclipse.equinox.app",1321383267408
+started,bundle,org.eclipse.equinox.common,3.6.0.v20100503,"org.eclipse.equinox.common",1321383267409
+started,bundle,org.eclipse.equinox.ds,1.2.0.v20100507,"org.eclipse.equinox.ds",1321383267409
+started,bundle,org.eclipse.equinox.event,1.2.0.v20100503,"org.eclipse.equinox.event",1321383267409
+started,bundle,org.eclipse.equinox.p2.artifact.repository,1.1.0.v20100513,"org.eclipse.equinox.p2.artifact.repository",1321383267410
+started,bundle,org.eclipse.equinox.p2.core,2.0.0.v20100510,"org.eclipse.equinox.p2.core",1321383267410
+started,bundle,org.eclipse.equinox.p2.director,2.0.0.v20100525,"org.eclipse.equinox.p2.director",1321383267410
+started,bundle,org.eclipse.equinox.p2.directorywatcher,1.0.200.v20100601,"org.eclipse.equinox.p2.directorywatcher",1321383267411
+started,bundle,org.eclipse.equinox.p2.engine,2.0.0.v20100606,"org.eclipse.equinox.p2.engine",1321383267411
+started,bundle,org.eclipse.equinox.p2.extensionlocation,1.2.0.v20100518,"org.eclipse.equinox.p2.extensionlocation",1321383267411
+started,bundle,org.eclipse.equinox.p2.metadata,2.0.0.v20100601,"org.eclipse.equinox.p2.metadata",1321383267411
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.1.0.v20100513,"org.eclipse.equinox.p2.metadata.repository",1321383267412
+started,bundle,org.eclipse.equinox.p2.operations,2.0.0.v20100510,"org.eclipse.equinox.p2.operations",1321383267412
+started,bundle,org.eclipse.equinox.p2.publisher,1.1.0.v20100513,"org.eclipse.equinox.p2.publisher",1321383267412
+started,bundle,org.eclipse.equinox.p2.reconciler.dropins,1.1.0.v20100525,"org.eclipse.equinox.p2.reconciler.dropins",1321383267412
+started,bundle,org.eclipse.equinox.p2.repository,2.0.0.v20100519,"org.eclipse.equinox.p2.repository",1321383267412
+started,bundle,org.eclipse.equinox.p2.touchpoint.eclipse,2.0.0.v20100513,"org.eclipse.equinox.p2.touchpoint.eclipse",1321383267412
+started,bundle,org.eclipse.equinox.p2.ui.sdk.scheduler,1.0.0.v20100507-1815,"org.eclipse.equinox.p2.ui.sdk.scheduler",1321383267413
+started,bundle,org.eclipse.equinox.p2.updatechecker,1.1.100.v20100503a,"org.eclipse.equinox.p2.updatechecker",1321383267413
+started,bundle,org.eclipse.equinox.preferences,3.3.0.v20100503,"org.eclipse.equinox.preferences",1321383267413
+started,bundle,org.eclipse.equinox.registry,3.5.0.v20100503,"org.eclipse.equinox.registry",1321383267413
+started,bundle,org.eclipse.equinox.security,1.0.200.v20100503,"org.eclipse.equinox.security",1321383267413
+started,bundle,org.eclipse.equinox.util,1.0.200.v20100503,"org.eclipse.equinox.util",1321383267413
+started,bundle,org.eclipse.help,3.5.0.v20100524,"org.eclipse.help",1321383267413
+started,bundle,org.eclipse.jdt.core.manipulation,1.3.0.v20100520-0800,"org.eclipse.jdt.core.manipulation",1321383267413
+started,bundle,org.eclipse.jface,3.6.0.I20100601-0800,"org.eclipse.jface",1321383267414
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.100.v20100526-0800,"org.eclipse.ltk.core.refactoring",1321383267414
+started,bundle,org.eclipse.ltk.ui.refactoring,3.5.0.v20100526-0800,"org.eclipse.ltk.ui.refactoring",1321383267414
+started,bundle,org.eclipse.team.core,3.5.100.I20100527-0800,"org.eclipse.team.core",1321383267414
+started,bundle,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui",1321383267414
+started,bundle,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console",1321383267414
+started,bundle,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.editors",1321383267414
+started,bundle,org.eclipse.ui.ide,3.6.0.I20100601-0800,"org.eclipse.ui.ide",1321383267414
+started,bundle,org.eclipse.ui.navigator,3.5.0.I20100601-0800,"org.eclipse.ui.navigator",1321383267414
+started,bundle,org.eclipse.ui.navigator.resources,3.4.200.I20100601-0800,"org.eclipse.ui.navigator.resources",1321383267414
+started,bundle,org.eclipse.ui.net,1.2.100.I20100505-1245,"org.eclipse.ui.net",1321383267414
+started,bundle,org.eclipse.ui.views,3.5.0.I20100527-0800,"org.eclipse.ui.views",1321383267414
+started,bundle,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"org.eclipse.ui.workbench",1321383267414
+started,bundle,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.workbench.texteditor",1321383267414
+started,bundle,org.eclipse.update.configurator,3.3.100.v20100512,"org.eclipse.update.configurator",1321383267415
+started,bundle,org.eclipse.update.core,3.2.400.v20100512,"org.eclipse.update.core",1321383267415
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1321383267415
+started,bundle,com.android.ide.eclipse.adt,15.0.0.v201110251216-213216,"com.android.ide.eclipse.adt",1321383267415
+started,bundle,com.android.ide.eclipse.ddms,15.0.0.v201110251216-213216,"com.android.ide.eclipse.ddms",1321383267415
+started,bundle,com.android.ide.eclipse.traceview,15.0.0.v201110251216-213216,"com.android.ide.eclipse.traceview",1321383267415
+started,bundle,org.eclipse.epp.usagedata.gathering,1.3.1.R201102081640,"org.eclipse.epp.usagedata.gathering",1321383267415
+started,bundle,org.eclipse.epp.usagedata.recording,1.3.1.R201102081640,"org.eclipse.epp.usagedata.recording",1321383267415
+started,bundle,org.eclipse.jdt.core,3.6.2.v_A76_R36x,"org.eclipse.jdt.core",1321383267415
+started,bundle,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui",1321383267415
+started,bundle,org.eclipse.wst.sse.core,1.1.506.v201110201853,"org.eclipse.wst.sse.core",1321383267415
+os,sysinfo,,,"macosx",1321383267417
+arch,sysinfo,,,"x86_64",1321383267417
+ws,sysinfo,,,"cocoa",1321383267417
+locale,sysinfo,,,"en_US",1321383267417
+processors,sysinfo,,,"4",1321383267417
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1321383267417
+java.runtime.version,sysinfo,,,"1.6.0_29-b11-402-11M3527",1321383267417
+java.specification.name,sysinfo,,,"Java Platform API Specification",1321383267417
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1321383267417
+java.specification.version,sysinfo,,,"1.6",1321383267417
+java.vendor,sysinfo,,,"Apple Inc.",1321383267417
+java.version,sysinfo,,,"1.6.0_29",1321383267417
+java.vm.info,sysinfo,,,"mixed mode",1321383267417
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1321383267417
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1321383267417
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1321383267417
+java.vm.specification.version,sysinfo,,,"1.0",1321383267417
+java.vm.vendor,sysinfo,,,"Apple Inc.",1321383267417
+java.vm.version,sysinfo,,,"20.4-b02-402",1321383267417
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383288217
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383291939
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383322777
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383345204
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383349395
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.help.aboutAction",1321383349416
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383356292
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383369202
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.help.aboutAction",1321383369222
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383374256
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383377748
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383384117
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383654443
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383656091
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383658740
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383662775
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383749971
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383758924
+started,bundle,org.eclipse.wst.xml.core,1.1.505.v201109271810,"org.eclipse.wst.xml.core",1321383965562
+started,bundle,org.eclipse.wst.common.uriresolver,1.1.401.v201004280700,"org.eclipse.wst.common.uriresolver",1321383965645
+error,log,,,"Failed to load properties file for project 'HelloAndroid'",1321383965773
+started,bundle,org.eclipse.debug.core,3.6.0.v20100519,"org.eclipse.debug.core",1321383965892
+started,bundle,org.eclipse.jdt.launching,3.5.200.v20110105_r362,"org.eclipse.jdt.launching",1321383965904
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383966388
+started,bundle,org.eclipse.team.ui,3.5.100.I20100527-0800,"org.eclipse.team.ui",1321383967156
+opened,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321383967190
+activated,perspective,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.JavaPerspective",1321383967216
+activated,view,org.eclipse.ui.ide,3.6.0.I20100601-0800,"org.eclipse.ui.views.ProblemView",1321383967249
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383967253
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321383971676
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383975256
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321383995906
+started,bundle,org.eclipse.compare,3.5.100.I20100526-0800,"org.eclipse.compare",1321384015393
+started,bundle,org.eclipse.debug.ui,3.6.0.v20100601-1530,"org.eclipse.debug.ui",1321384020834
+started,bundle,org.eclipse.jdt.junit.core,3.6.1.r361_v20100825-0800,"org.eclipse.jdt.junit.core",1321384020864
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384022382
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384041631
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.properties",1321384041662
+started,bundle,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search",1321384054981
+opened,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1321384055078
+started,bundle,org.eclipse.ui.forms,3.5.0.v20100427,"org.eclipse.ui.forms",1321384055107
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1321384055111
+executed,command,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.edit.text.java.search.references.in.project",1321384055191
+started,bundle,org.eclipse.jdt.debug,3.6.1.v20100715_r361,"org.eclipse.jdt.debug",1321384055246
+started,bundle,org.eclipse.jdt.debug.ui,3.5.2.v20100928a_r362,"org.eclipse.jdt.debug.ui",1321384055461
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321384058711
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384064581
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384064703
+started,bundle,org.eclipse.compare.core,3.5.100.I20100526-0800,"org.eclipse.compare.core",1321384083798
+started,bundle,org.eclipse.wst.jsdt.manipulation,1.0.200.v201004150600,"org.eclipse.wst.jsdt.manipulation",1321384097339
+started,bundle,org.eclipse.wst.jsdt.core,1.1.8.v201109150205,"org.eclipse.wst.jsdt.core",1321384097525
+started,bundle,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui",1321384097608
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384098399
+executed,command,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.edit.text.java.rename.element",1321384098429
+error,log,,,"Parser exception for /Users/Craig/github/mdv-projects/HelloAndroid/AndroidManifest.xml: Attribute name ""a.helloandroid.HelloAndroidActivitydroidActivity"" associated with an element type ""activity"" must be followed by the ' = ' character.",1321384098611
+opened,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1321384098742
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384106550
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384117597
+opened,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1321384118543
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1321384118668
+started,bundle,org.eclipse.core.variables,3.2.400.v20100505,"org.eclipse.core.variables",1321384119109
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384129057
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384165124
+error,log,,,"Parser exception for /Users/Craig/github/mdv-projects/HelloAndroid/AndroidManifest.xml: Attribute name ""a.helloandroid.HelloAndroidActivitydroidActivity"" associated with an element type ""activity"" must be followed by the ' = ' character.",1321384178619
+started,bundle,org.eclipse.jdt.junit,3.6.1.r361_v20100825-0800,"org.eclipse.jdt.junit",1321384181192
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384293940
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384295236
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384296199
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384434691
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1321384436423
+error,log,,,"Parser exception for /Users/Craig/github/mdv-projects/HelloAndroid/AndroidManifest.xml: Attribute name ""a.helloandroid.HelloAndroidActivitydroidActivity"" associated with an element type ""activity"" must be followed by the ' = ' character.",1321384436527
+started,bundle,org.eclipse.wst.server.core,1.1.208.v20111005_1734,"org.eclipse.wst.server.core",1321384475899
+started,bundle,org.eclipse.wst.server.ui,1.1.209.v20111005_1716,"org.eclipse.wst.server.ui",1321384475912
+started,bundle,org.eclipse.wst.web,1.1.403.v201103081400,"org.eclipse.wst.web",1321384480853
+started,bundle,org.eclipse.emf.common,2.6.0.v20100914-1218,"org.eclipse.emf.common",1321384480892
+started,bundle,org.eclipse.emf.ecore,2.6.1.v20100914-1218,"org.eclipse.emf.ecore",1321384480912
+started,bundle,org.eclipse.jem.util,2.1.3.v201012070000,"org.eclipse.jem.util",1321384480912
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.102.v201008170019,"org.eclipse.wst.common.project.facet.core",1321384480924
+executed,command,org.eclipse.debug.ui,3.6.0.v20100601-1530,"org.eclipse.debug.ui.commands.RunLast",1321384480969
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384481016
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384490932
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321384494797
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384498456
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384506545
+executed,command,org.eclipse.debug.ui,3.6.0.v20100601-1530,"org.eclipse.debug.ui.commands.RunLast",1321384506620
+error,log,,,"Failed to add marker 'com.android.ide.eclipse.common.xmlProblem' to '/HelloAndroid/AndroidManifest.xml'",1321384506699
+error,log,,,"Parser exception for /Users/Craig/github/mdv-projects/HelloAndroid/AndroidManifest.xml: Attribute name ""a.helloandroid.HelloAndroidActivitydroidActivity"" associated with an element type ""activity"" must be followed by the ' = ' character.",1321384506711
+error,log,,,"Parser exception for /Users/Craig/github/mdv-projects/HelloAndroid/AndroidManifest.xml: Attribute name ""a.helloandroid.HelloAndroidActivitydroidActivity"" associated with an element type ""activity"" must be followed by the ' = ' character.",1321384506727
+started,bundle,org.eclipse.wst.common.frameworks,1.2.1.v201107271600,"org.eclipse.wst.common.frameworks",1321384506781
+started,bundle,org.eclipse.wst.common.emf,1.2.3.v201012100400,"org.eclipse.wst.common.emf",1321384506799
+started,bundle,org.eclipse.emf.ecore.xmi,2.5.0.v20100521-1846,"org.eclipse.emf.ecore.xmi",1321384506814
+started,bundle,org.eclipse.wst.common.emfworkbench.integration,1.2.4.v201106210700,"org.eclipse.wst.common.emfworkbench.integration",1321384506815
+started,bundle,org.eclipse.wst.common.core,1.2.0.v200908252030,"org.eclipse.wst.common.core",1321384506932
+started,bundle,org.eclipse.wst.common.modulecore,1.2.7.v201110060300,"org.eclipse.wst.common.modulecore",1321384506933
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384506958
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384510427
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384525216
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384529980
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384535049
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384535874
+executed,command,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.edit.text.java.organize.imports",1321384535877
+error,log,,,"Parser exception for /Users/Craig/github/mdv-projects/HelloAndroid/AndroidManifest.xml: Attribute name ""a.helloandroid.HelloAndroidActivitydroidActivity"" associated with an element type ""activity"" must be followed by the ' = ' character.",1321384535884
+error,log,,,"Parser exception for /Users/Craig/github/mdv-projects/HelloAndroid/AndroidManifest.xml: Attribute name ""a.helloandroid.HelloAndroidActivitydroidActivity"" associated with an element type ""activity"" must be followed by the ' = ' character.",1321384544900
+activated,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1321384544905
+error,log,,,"Unhandled event loop exception",1321384544909
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321384549688
+error,log,,,"Parser exception for /Users/Craig/github/mdv-projects/HelloAndroid/AndroidManifest.xml: Attribute name ""a.helloandroid.HelloAndroidActivitydroidActivity"" associated with an element type ""activity"" must be followed by the ' = ' character.",1321384552827
+activated,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1321384552831
+error,log,,,"Unhandled event loop exception",1321384552834
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384567138
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321384592927
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384593055
+activated,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1321384593059
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321384594784
+error,log,,,"Parser exception for /Users/Craig/github/mdv-projects/HelloAndroid/AndroidManifest.xml: Attribute name ""a.helloandroid.HelloAndroidActivitydroidActivity"" associated with an element type ""activity"" must be followed by the ' = ' character.",1321384598379
+activated,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1321384598383
+error,log,,,"Unhandled event loop exception",1321384598404
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321384628978
+started,bundle,org.eclipse.wst.sse.ui,1.2.5.v201108191505,"org.eclipse.wst.sse.ui",1321384629582
+started,bundle,org.eclipse.wst.xml.ui,1.1.105.v201106142156,"org.eclipse.wst.xml.ui",1321384629672
+started,bundle,org.eclipse.wst.xsl.core,1.1.0.v201004290328,"org.eclipse.wst.xsl.core",1321384629736
+started,bundle,org.eclipse.wst.xsl.exslt.core,1.0.0.v201005240426,"org.eclipse.wst.xsl.exslt.core",1321384629750
+started,bundle,org.eclipse.wst.validation,1.2.204.v201109220700,"org.eclipse.wst.validation",1321384629822
+started,bundle,org.eclipse.wst.dtd.ui,1.0.500.v201004290328,"org.eclipse.wst.dtd.ui",1321384629887
+started,bundle,org.eclipse.wst.xsl.ui,1.1.0.v201004290328,"org.eclipse.wst.xsl.ui",1321384629938
+opened,editor,com.android.ide.eclipse.adt,15.0.0.v201110251216-213216,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1321384630367
+activated,editor,com.android.ide.eclipse.adt,15.0.0.v201110251216-213216,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1321384630412
+started,bundle,org.eclipse.wst.internet.cache,1.0.400.v201004280700,"org.eclipse.wst.internet.cache",1321384630909
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1321384649346
+closed,editor,com.android.ide.eclipse.adt,15.0.0.v201110251216-213216,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1321384649346
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321384650785
+opened,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1321384660579
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1321384660655
+error,log,,,"Parser exception for /Users/Craig/github/mdv-projects/HelloAndroid/AndroidManifest.xml: Attribute name ""a.helloandroid.HelloAndroidActivitydroidActivity"" associated with an element type ""activity"" must be followed by the ' = ' character.",1321384736617
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1321384775957
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384776129
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384780273
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321384783243
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384791076
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384793570
+executed,command,org.eclipse.debug.ui,3.6.0.v20100601-1530,"org.eclipse.debug.ui.commands.RunLast",1321384793596
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384793644
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384795866
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384859975
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384904322
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1321384905237
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1321384909601
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1321384914138
+closed,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1321384914138
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321384916148
+executed,command,org.eclipse.debug.ui,3.6.0.v20100601-1530,"org.eclipse.debug.ui.commands.RunLast",1321384922780
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384922801
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321384925304
+opened,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PropertiesFileEditor",1321385034529
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PropertiesFileEditor",1321385034556
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321385037475
+opened,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1321385044304
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1321385044321
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321385046241
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321385076377
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321385090964
+opened,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1321385109169
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1321385109245
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1321385115446
+closed,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1321385115446
+activated,view,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.PackageExplorer",1321385120567

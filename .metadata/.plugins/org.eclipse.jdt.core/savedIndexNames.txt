@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+/Users/Craig/github/mdv-projects/.metadata/.plugins/org.eclipse.jdt.core
+3701908332.index
+884758432.index

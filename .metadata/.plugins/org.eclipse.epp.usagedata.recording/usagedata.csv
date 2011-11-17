@@ -1,0 +1,12 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321423098562
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321423156295
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.newWizard",1321423156324
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321423192718
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321423207117
+closed,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321423207206
+stopped,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20100513,"org.eclipse.equinox.p2.ui.sdk",1321423208022
+stopped,bundle,org.eclipse.wst.dtd.ui,1.0.500.v201004290328,"org.eclipse.wst.dtd.ui",1321423208022
+stopped,bundle,org.eclipse.wst.xsl.exslt.ui,1.0.0.v201006012005,"org.eclipse.wst.xsl.exslt.ui",1321423208043
+stopped,bundle,org.eclipse.wst.xsl.jaxp.debug.ui,1.0.100.v201004290328,"org.eclipse.wst.xsl.jaxp.debug.ui",1321423208068
+stopped,bundle,org.eclipse.wst.xsl.ui,1.1.0.v201004290328,"org.eclipse.wst.xsl.ui",1321423208068
