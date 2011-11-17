@@ -1,0 +1,176 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Unexpected runtime error while computing a text hover",1321478106992
+error,log,,,"Unexpected runtime error while computing a text hover",1321478158872
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1321478186305
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1321478189522
+error,log,,,"Unexpected runtime error while computing a text hover",1321478192056
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1321478197886
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321478251884
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321478252089
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321478252225
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321478253422
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321478256695
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321478269380
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321478273585
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321485746184
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321485747678
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321486013552
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321486037379
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321486041770
+executed,command,org.eclipse.ui.ide,3.6.0.I20100601-0800,"org.eclipse.ui.edit.text.openLocalFile",1321486041809
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321486046488
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503543635
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503547890
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503562049
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503565933
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503579888
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503597787
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503608853
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503610035
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503620999
+activated,editor,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1321503621590
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503632609
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503634285
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503634998
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503640318
+activated,editor,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1321503640741
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503642673
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503644674
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503645142
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503649412
+activated,editor,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1321503650125
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503651695
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503656299
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503656763
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503661576
+activated,editor,org.eclipse.wst.html.ui,1.0.505.v201106160200,"org.eclipse.wst.html.core.htmlsource.source",1321503663550
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503664795
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503668191
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503668647
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503673894
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1321503674069
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503675432
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503677731
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503678193
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503683367
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1321503683474
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503684583
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503686529
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503686982
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503691034
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1321503691101
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503692204
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503693775
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503694232
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503698801
+activated,editor,org.eclipse.wst.html.ui,1.0.505.v201106160200,"org.eclipse.wst.html.core.htmlsource.source",1321503698976
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503699818
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503701064
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503701540
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503705094
+activated,editor,org.eclipse.wst.html.ui,1.0.505.v201106160200,"org.eclipse.wst.html.core.htmlsource.source",1321503705251
+activated,editor,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1321503706608
+activated,editor,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.CompilationUnitEditor",1321503712416
+activated,view,org.eclipse.ui.navigator.resources,3.4.200.I20100601-0800,"org.eclipse.ui.navigator.ProjectExplorer",1321503714770
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503719556
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321503719781
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728598
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728599
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728612
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728613
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728614
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728615
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728616
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/.project.",1321503728618
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/.settings.",1321503728618
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728620
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728620
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728622
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728623
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728624
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728625
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728626
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/.project.",1321503728627
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/.settings.",1321503728628
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728630
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728631
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728632
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728634
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728635
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728670
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728672
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.project.",1321503728673
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.settings.",1321503728674
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728675
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728676
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728678
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728679
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728680
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728683
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728686
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.project.",1321503728687
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.settings.",1321503728688
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728719
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728720
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728722
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728723
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728724
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728725
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728727
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.project.",1321503728728
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.settings.",1321503728729
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728730
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728731
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728733
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728734
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728735
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728736
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728737
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.project.",1321503728738
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.settings.",1321503728739
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728741
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728742
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728743
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728744
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728747
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728748
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728749
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.project.",1321503728750
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.settings.",1321503728751
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728752
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728754
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728755
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728757
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728758
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728759
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728760
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.project.",1321503728761
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.settings.",1321503728927
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728928
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728929
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728931
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728932
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728933
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728935
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728936
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.project.",1321503728937
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.settings.",1321503728938
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728939
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728940
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728942
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728943
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728944
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728945
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728947
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.project.",1321503728948
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.settings.",1321503728949
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728950
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.log.",1321503728951
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.resources/.root.",1321503728952
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.core.runtime.",1321503728953
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.epp.usagedata.recording.",1321503728954
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.plugins/org.eclipse.ui.workbench.",1321503728955
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/version.ini.",1321503728957
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.project.",1321503728958
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.settings.",1321503728959
+error,log,,,"Could not move: /Users/Craig/github/mdv-projects/ASD/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/asdcouch/.metadata/.lock.",1321503728960
