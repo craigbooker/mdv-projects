@@ -110,30 +110,35 @@ function storeCouchData() {
 	//Create CouchDB Document
 	
 	var doc = {
-	context: contextVal,
-	name: nameVal,
-	priority: priorityVal,
-	favorite: favoriteVal,
-	sDate: sDateVal,
-	eDate: eDateVal,
-	dDate: dDateVal,
-	notes: notesVal
-};
-
+		context: contextVal,
+		name: nameVal,
+		priority: priorityVal,
+		favorite: favoriteVal,
+		sDate: sDateVal,
+		eDate: eDateVal,
+		dDate: dDateVal,
+		notes: notesVal
+	};
+	$.couch.db('taskmgr').saveDoc(doc, {
+		success: function(data) {
+			console.log(data);
+		}
+	
+	});
 
 
 }
 function editCouchData(id) {
 	$.couch.db('taskmgr').openDoc(id, {
 			success: function(data) {
-				$('#context').val(data.);
-				$('#name').val(data.);
-				$('#priority').val(data.);
-				$('#favorite').val(data.);
-				$('#sDate').val(data.);
-				$('#eDate').val(data.);
-				$('#dDate').val(data.);
-				$('notes').val(data.);
+				$('#context').val(data.context);
+				$('#name').val(data.name);
+				$('#priority').val(data.priority);
+				$('#favorite').val(data.favorite);
+				$('#sDate').val(data.sDate);
+				$('#eDate').val(data.eDate);
+				$('#dDate').val(data.dDate);
+				$('notes').val(data.notes);
 			}
 	});
 	
