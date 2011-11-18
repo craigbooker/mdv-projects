@@ -1,0 +1,70 @@
+!SESSION 2011-11-17 20:20:53.118 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/Craig/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/Craig/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-11-17 20:21:44.975
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-11-17 20:21:44.975
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet/org.eclipse.wst.jsdt.ui.actions.OpenProjectWizard':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet/org.eclipse.wst.jsdt.ui.actions.OpenProjectWizard,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.wst.jsdt.internal.ui.wizards.OpenJavaScriptFileWizardToolbarAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet,org.eclipse.ui.internal.WorkbenchWindow@4cb0f24a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@4cb0f24a)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet/org.eclipse.wst.jsdt.ui.actions.OpenProjectWizard,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.wst.jsdt.internal.ui.wizards.OpenJavaScriptProjectWizardToolbarAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet,org.eclipse.ui.internal.WorkbenchWindow@4cb0f24a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@4cb0f24a)),sourcePriority=16640)
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-17 20:21:45.189
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-11-17 20:24:17.319 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/Craig/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/Craig/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-11-17 20:24:24.663
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-11-17 20:24:24.663
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet/org.eclipse.wst.jsdt.ui.actions.OpenProjectWizard':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet/org.eclipse.wst.jsdt.ui.actions.OpenProjectWizard,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.wst.jsdt.internal.ui.wizards.OpenJavaScriptProjectWizardToolbarAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet,org.eclipse.ui.internal.WorkbenchWindow@2e5facbd),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2e5facbd)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet/org.eclipse.wst.jsdt.ui.actions.OpenProjectWizard,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.wst.jsdt.internal.ui.wizards.OpenJavaScriptFileWizardToolbarAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet,org.eclipse.ui.internal.WorkbenchWindow@2e5facbd),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2e5facbd)),sourcePriority=16640)
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-17 20:24:24.850
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-11-17 20:27:34.722 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/Craig/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/Craig/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-17 20:27:44.432
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-11-17 20:29:19.669
+!MESSAGE Failed to load properties file for project 'HelloAndroid'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-11-17 20:29:19.687
+!MESSAGE Failed to load properties file for project 'HelloAndroid'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-11-17 20:29:20.107
+!MESSAGE fileChanged: failed to find manifest package for project HelloAndroid
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-11-17 20:29:20.243
+!MESSAGE Failed to load properties file for project 'HelloAndroid'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-11-17 20:29:20.251
+!MESSAGE Failed to load properties file for project 'HelloAndroid'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-11-17 20:29:20.268
+!MESSAGE Failed to load properties file for project 'HelloAndroid'
