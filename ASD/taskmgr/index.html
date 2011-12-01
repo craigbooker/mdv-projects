@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery Mobile Skeleton</title>
-    
-<!-- CSS Files -->    
+  <title>Task Manager</title>
+
+<!-- CSS Files -->
+	<link rel="stylesheet" href="style.css" />
 	<link href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
 
@@ -22,15 +23,26 @@
 	 	<img src="taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
 	</div><!-- /header -->
 	<div data-role="secondary header">
-			<img src="goal_setting.jpg" width="320px" height="175px">
+			<!--img src="goal_setting.jpg" width="320px" height="175px"-->
     </div><!-- / secondary header -->
-	<div data-role="list-divider" class="ui-bar-a">
-			<ul data-role="listview">
-				<li data-role="list-divider" class="ui-bar ui-bar-d">Browse By Category</li>
+	<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider" class="ui-bar ui-bar-d">Lists</li>
 			</ul>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">Inbox</a></li>
+				<li><a href="">Projects</a></li>
+
+			</ul>
+			<!--ul data-role="listview" data-inset="true">
+				<li data-role="list-divider" class="ui-bar ui-bar-d">Browse By Category</li>
+			</ul-->
 	</div>	<!-- /list divider: Browse Category -->
   <div data-role="content" id="nav">
-			<ul id="contextList" data-role="listview" value="" data-filter="true" placeholder="Search">
+			<!--ul id="contextList" data-role="listview" value="" data-filter="true" placeholder="Search">
+			</ul-->
+			<ul id="contextList" data-role="listview" data-inset="true">
+
 			</ul><!-- / listview -->
 	</div> <!-- / Content -->
 		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
@@ -43,13 +55,13 @@
 			</ul>
 		</div><!-- / footer: navbar -->
 	</div><!-- /footer -->
-</div><!-- / home page --> 
+</div><!-- / home page -->
 <!-- END OF PAGE: home  ++++++++++++++++++++++++++++++++++++++++++   -->
 <!-- START OF PAGE: add_item   ++++++++++++++++++++++++++++++++++++++++++   -->
 <div data-role="page" id="add_item">
 	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
 	 		<img src="taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-	    </div><!-- /header -->	
+	    </div><!-- /header -->
 	    <div data-role="content" class="ui-content" role="main">
 	 		<div class="content-primary">
 	 		<div class="ui-body ui-body-b" style="display:none;">
@@ -57,19 +69,15 @@
 							<a href="#" id="displayLink" style="display:none;">Display Data</a>
 							<a href="#" id="index.html" id="addNew" style="display:none;">Add New Item</a>
 			</div>
-			<form action="#" method="post" id="addTaskForm" name="addTaskForm"> 
+			<form action="#" method="post" id="addTaskForm" name="addTaskForm">
 				<fieldset id="taskFieldset">
 					<div data-role="fieldcontain">
 									<h2>Task Details</h2>
-					</div>					
+					</div>
 					<div id="errors"  style="display:none;"></div>
-					<div id="context" data-role="fieldcontain">					
+					<div id="context" data-role="fieldcontain">
 							<label for="context">*Select Context:</label>
-					</div>									
-					<div id="errors"  style="display:none;"></div>
-					<div id="context">
-							<label for="context">*Select Context:</label>
-					</div>	
+					</div>
 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
 						<label for="name" class="ui-input-text">Task Name:</label>
 						<input type="text" name="name" id="name" value="" placeholder="Task Name" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
@@ -89,21 +97,21 @@
 								</div>
 								<div data-role="fieldcontain">
 									<label for="dDate">Due Date:</label><input name="dDate" type="date" data-role="datebox" id="dDate" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose due date.">
-								<!-- Task Due Date  -->	
-								</div>	
+								<!-- Task Due Date  -->
+								</div>
 					</div>
 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
 	  					<label for="notes" class="ui-input-text">Notes:</label>
 						<textarea cols="40" rows="8" name="notes" id="notes" placeholder="Enter notes that will help you remember details about the task." class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></textarea>
-	  				</div><!--/Notes Field -->	
+	  				</div><!--/Notes Field -->
 					<div class="ui-body ui-body-b">
 						<fieldset class="ui-grid-a">
 							<div class="ui-block-a"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><input type="submit" data-theme="e" class="ui-btn-hidden" aria-disabled="false" value="Save Task"></div>
 							<div class="ui-block-b"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><button type="clear" data-theme="d" class="ui-btn-hidden" aria-disabled="false">Clear</button></div>
 						</fieldset>
-					</div><!--/Submit Buttons -->	
+					</div><!--/Submit Buttons -->
 				</form>
-			</div><!--/content-primary -->		
+			</div><!--/content-primary -->
 	</div><!-- /content -->
 	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
@@ -128,17 +136,25 @@
 			<ul data-role="listview">
 				<li data-role="list-divider" class="ui-bar ui-bar-d">Task Manager App Settings</li>
 			</ul>
-	</div>	
+	</div>
   <div data-role="content">
+    <div data-role="controlgroup" data-inset="true">
+				<!--ul data-role="listview"-->
+					<a id="couchdb" href="#" data-role="button">CouchDB</a>
+					<a id="json" href="#" data-role="button">JSON</a>
+					<a id="xml" href="#" data-role="button">XML</a>
+					<a id="csv" href="#" data-role="button">CSV</a>
+				<!-- / listview -->
+	</div> <!-- / Content -->
 	  <div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true">
+			<div data-role="collapsible" data-collapsed="true">
 					<h3>Local Storage</h3>
 					<p><div data-role="fieldcontain">
-					<p id="clear"><a href="#" onclick="clearCouch(); location.reload();" class="bigBtn" >Clear Local Storage</a>					<a href="#" id="clear">Clear Stored Data</a>
+					<p id="clear"><a href="#" onclick="clearCouch(); location.reload();" class="bigBtn" >Clear Couch Storage</a><a href="#" id="clear">Clear Stored Data</a>
 </p>
-				</div> 	<!-- Clear Local Storage --></p>
-				</div>
-			</div>
+			</div> 	<!-- Clear Local Storage -->
+		</div>
+	</div>
 	</div>
 	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
 		<div data-role="navbar">
@@ -161,7 +177,7 @@
 			<ul data-role="listview">
 				<li data-role="list-divider" class="ui-bar ui-bar-d">About Task Manager App</li>
 			</ul>
-	</div>	
+	</div>
   <div data-role="content">
 	  <div data-role="collapsible-set">
 				<div data-role="collapsible" data-collapsed="true">
@@ -170,7 +186,7 @@
 				</div>
 				<div data-role="collapsible">
 					<h3>Contact</h3>
-					<p>Appscient, LLC <br /> 
+					<p><img src="200_appscient.png" width="80" height="80" /><br /> Appscient, LLC <br />
 						<a href="mailto:support@appscient.co">support@appscient.co</a>
 					</p>
 				</div>
@@ -188,28 +204,6 @@
 	</div><!-- /footer -->
 </div>
 <!-- END OF PAGE: about_app   ++++++++++++++++++++++++++++++++++++++++++   -->
-
-<!-- START OF PAGE: category-items  ++++++++++++++++++++++++++++++++++++++++++   -->
-<div id="category-items" data-role="page">
- 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
-	 	<img src="taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-	</div><!-- /header -->
-	<div data-role="header"><h1></h1></div>
-	<div data-role="content"></div>
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#add_item" data-icon="plus">Add Task</a></li>
-				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- / footer navbar -->
-	</div><!-- /footer -->
-</div>
-<!-- END OF PAGE: category-items   ++++++++++++++++++++++++++++++++++++++++++   -->
-
-
 <script src="main.js" type="text/javascript"></script>
 </body>
 </html>

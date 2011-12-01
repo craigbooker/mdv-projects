@@ -17,7 +17,7 @@
 					$(xml).find('item').each(function(){
 						var id = $(this).attr('id');
 						var context = $(this).find('context').text();
-						var url = $(this).find('url').text();
+						//var url = $(this).find('url').text();
 						$('<div class="items" id="link_'+id+'"></div>').html('Context: '+context).appendTo('#page-wrap');
 						$(this).find('detail').each(function(){
 							var priority = $(this).find('priority').text();

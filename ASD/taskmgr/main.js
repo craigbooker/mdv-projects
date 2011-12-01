@@ -3,8 +3,13 @@ $('#home').live("pageshow", function() {
 		success: function(data) {
 			//console.log(data);
 			$("#contextList").empty();
+			$("#contextList").append(
+
+			//<li data-role="list-divider" class="ui-bar ui-bar-d">Browse By Category</li>
 			$.each(data.rows, function(index, value) {
 				var item = (value.value || value.doc);
+
+
 				$("#contextList").append(
 					$('<li>').append(
 						$('<a>')
@@ -15,7 +20,7 @@ $('#home').live("pageshow", function() {
 			});
 			$('#contextList').listview('refresh');
 		}
-	});	
+	});
 });
 $('#context').live("pageshow", function() {
 	$.couch.db("taskmgr").view("taskmgr/contexts", {
@@ -34,7 +39,13 @@ $('#context').live("pageshow", function() {
 			});
 			$('#contextList').listview('refresh');
 		}
-	});	
+	});
+});
+$('#subCouchDB').live('click', function() {
+	$(storeCouchData());
+});
+$('#subCouchDB').live('click', function() {
+	$(storeCouchData());
 });
 $('#contextItemsPage').live("pageshow", function() {
 	var urlData = $(this).data("url");
@@ -53,7 +64,7 @@ $('#contextItemsPage').live("pageshow", function() {
 	//if (ctxt === "cls") {
 	var context = urlValues;
 	switch (context) {
-	case "ers":	
+	case "ers":
 		$("#contextItems").empty();
 		$.each(data.rows, function(index, value) {
 			var item = (value.value || value.doc);
@@ -67,17 +78,17 @@ $('#contextItemsPage').live("pageshow", function() {
 		});
 		$('#contextItems').listview('refresh');
 		break;
-	case "ofe":	
+	case "ofe":
 		break;
-	case "cls":	
+	case "cls":
 		break;
-	case "ppl":	
+	case "ppl":
 		break;
-	case "wtg":	
+	case "wtg":
 	//window.
 		break;
 	default:
-		return false;	
+		return false;
 	}
 });
 $('#task').live("pageshow", function() {
@@ -95,6 +106,33 @@ $('#task').live("pageshow", function() {
 	}
 	console.log(urlValues);
 });
+// -------   Start of : Variable Defaults -------------------------------
+   var contextNames = ["---Choose a Context---", "Errand", "Home", "Office", "Calls", "People", "Waiting"];
+    var errMsg = $('#errors');
+    var favoriteValue;
+// -------   End of: Variable Defaults ----------------------------------
+// -------   Start of: Make Categories --------------------------
+// STATUS : WORKING ----- 2011.10.27
+// LAST UPDATED: 2011-10-28
+// PURPOSE: Create select field element and populate with options.
+// NOTES : None at this time
+// TODO: None
+// QUESTIONS:
+//----------------------------------------------------------
+    function makeCats(contextNames) {
+        //alert("Am I in?");
+        var    i;
+        var     j;
+        var createSel = '<select id="">';
+        	for(i = 0, j = contextNames.length; i < j; i++) {
+	            var optText = contextNames[i];
+        		createSel += '<option value="' + optText + '">' + optText + '</option>';
+        	}
+        	createSel += '</select>';
+        	$('#context').append(createSel);
+	}
+    makeCats(contextNames);
+// -------   End of:Make Categories --------------------------
 function storeCouchData() {
 
 	var contextVal = $('#context').val();
@@ -105,10 +143,10 @@ function storeCouchData() {
 	var eDateVal = $('#eDate').val();
 	var dDateVal = $('#dDate').val();
 	var notesVal = $('#notes').val();
-	
-	
+
+
 	//Create CouchDB Document
-	
+
 	var doc = {
 		context: contextVal,
 		name: nameVal,
@@ -123,7 +161,7 @@ function storeCouchData() {
 		success: function(data) {
 			console.log(data);
 		}
-	
+
 	});
 
 
@@ -141,7 +179,10 @@ function editCouchData(id) {
 				$('notes').val(data.notes);
 			}
 	});
-	
+
 };
 function deleteCouchData(){
+}
+function clearLocal() {
+
 }
