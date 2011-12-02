@@ -1,4 +1,5 @@
 $('#home').live("pageshow", function() {
+<<<<<<< HEAD
 	$.couch.db("taskmgr").view("taskmgr/contexts", {
 		success: function(data) {
 			//console.log(data);
@@ -80,6 +81,26 @@ $('#contextItemsPage').live("pageshow", function() {
 		return false;	
 	}
 });
+=======
+	$.couch.db("taskmgr").view("taskmgr/tasks", {
+		success: function(data) {
+			//console.log(data);
+			$("#taskList").empty();
+			$.each(data.rows, function(index, value) {
+				var item = (value.value || value.doc);
+				$("#taskList").append(
+					$('<li>').append(
+						$('<a>')
+							.attr("href", "task.html?task=" + item.Name)
+							.text(item.Name)
+					)
+				);
+			});
+			$('#taskList').listview('refresh');
+		}
+	});	
+});
+>>>>>>> origin/gh-pages
 $('#task').live("pageshow", function() {
 	var urlData = $(this).data("url");
 	//console.log(urlData)

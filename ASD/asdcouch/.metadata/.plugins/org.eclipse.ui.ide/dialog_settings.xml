@@ -22,6 +22,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 	</section>
+<<<<<<< HEAD
 	<section name="SaveAsDialogSettings">
 		<item value="759" key="DIALOG_WIDTH"/>
 		<item value="22" key="DIALOG_Y_ORIGIN"/>
@@ -29,4 +30,6 @@
 		<item value="521" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 	</section>
+=======
+>>>>>>> origin/gh-pages
 </section>

@@ -1,4 +1,5 @@
 what,kind,bundleId,bundleVersion,description,time
+<<<<<<< HEAD
 activated,perspective,org.eclipse.wst.jsdt.ui,,"org.eclipse.wst.jsdt.ui.JavaPerspective",1321583474810
 started,bundle,org.eclipse.osgi,3.6.0.v20100517,"org.eclipse.osgi",1321583474811
 started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.200.v20100503,"org.eclipse.equinox.simpleconfigurator",1321583474812
@@ -185,3 +186,16 @@ stopped,bundle,org.eclipse.debug.ui,3.6.0.v20100601-1530,"org.eclipse.debug.ui",
 stopped,bundle,com.android.ide.eclipse.ddms,15.0.1.v201111031820-219398,"com.android.ide.eclipse.ddms",1321644041565
 stopped,bundle,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console",1321644041567
 stopped,bundle,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.editors",1321644041568
+=======
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321423098562
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321423156295
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.newWizard",1321423156324
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321423192718
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321423207117
+closed,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1321423207206
+stopped,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20100513,"org.eclipse.equinox.p2.ui.sdk",1321423208022
+stopped,bundle,org.eclipse.wst.dtd.ui,1.0.500.v201004290328,"org.eclipse.wst.dtd.ui",1321423208022
+stopped,bundle,org.eclipse.wst.xsl.exslt.ui,1.0.0.v201006012005,"org.eclipse.wst.xsl.exslt.ui",1321423208043
+stopped,bundle,org.eclipse.wst.xsl.jaxp.debug.ui,1.0.100.v201004290328,"org.eclipse.wst.xsl.jaxp.debug.ui",1321423208068
+stopped,bundle,org.eclipse.wst.xsl.ui,1.1.0.v201004290328,"org.eclipse.wst.xsl.ui",1321423208068
+>>>>>>> origin/gh-pages

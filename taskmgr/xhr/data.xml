@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <items>
+   <item id="0">
+     <context>Errands</context>
+     <detail>
+       <name>Testing</name>
+       <priority>5</priority>
+       <sDate>2011-11-11</sDate>
+       <eDate>2011-11-11</eDate>
+       <dDate>2011-11-11</dDate>
+       <notes>this is the brief description.</notes>
+     </detail>
+   </item>
+   <item id="1">
+     <context>Errands</context>
+     <detail>
+       <name>Testing</name>
+       <priority>5</priority>
+       <sDate>2011-11-11</sDate>
+       <eDate>2011-11-11</eDate>
+       <dDate>2011-11-11</dDate>
+       <notes>this is the brief description.</notes>
+     </detail>
+   </item>
+   <item id="2">
+     <context>Errands</context>
+     <detail>
+       <name>Testing</name>
+       <priority>5</priority>
+       <sDate>2011-11-11</sDate>
+       <eDate>2011-11-11</eDate>
+       <dDate>2011-11-11</dDate>
+       <notes>this is the brief description.</notes>
+     </detail>
+   </item>
+ </items>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<section name="completion_proposal_size">
 	</section>
+=======
+	<item value="/Users/Craig/github/mdv-projects/ASD/asdcouch/taskmgr" key="org.eclipse.wst.jsdt.ui.last.external.project"/>
+>>>>>>> origin/gh-pages
 </section>
