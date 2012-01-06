@@ -4,12 +4,9 @@ $('#home').live("pageshow", function() {
 			//console.log(data);
 			$("#contextList").empty();
 			$("#contextList").append(
-
 			//<li data-role="list-divider" class="ui-bar ui-bar-d">Browse By Category</li>
 			$.each(data.rows, function(index, value) {
 				var item = (value.value || value.doc);
-
-
 				$("#contextList").append(
 					$('<li>').append(
 						$('<a>')
