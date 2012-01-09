@@ -1,21 +1,4 @@
-<<<<<<< HEAD
-#Fri Nov 18 13:20:41 CST 2011
-useQuickDiffPrefPage=true
-proposalOrderMigrated=true
-tabWidthPropagated=true
-content_assist_proposals_background=255,255,255
-org.eclipse.jdt.ui.javadoclocations.migrated=true
-useAnnotationsPrefPage=true
-org.eclipse.jface.textfont=1|Monaco|11.0|0|COCOA|1|;
-org.eclipse.jdt.internal.ui.navigator.layout=2
-org.eclipse.jdt.ui.editor.tab.width=
-org.eclipse.jdt.ui.formatterprofiles.version=11
-spelling_locale_initialized=true
-eclipse.preferences.version=1
-content_assist_proposals_foreground=0,0,0
-fontPropagated=true
-=======
-#Tue Nov 15 14:07:53 CST 2011
+#Sat Jan 07 20:30:33 CST 2012
 content_assist_proposals_foreground=0,0,0
 spelling_locale_initialized=true
 org.eclipse.jdt.ui.text.templates_migrated=true
@@ -24,14 +7,16 @@ eclipse.preferences.version=1
 org.eclipse.jface.textfont=1|Monaco|11.0|0|COCOA|1|;
 tabWidthPropagated=true
 org.eclipse.jdt.ui.editor.tab.width=
+>>>>>>>=origin/gh-pages
 fontPropagated=true
 org.eclipse.jdt.ui.javadoclocations.migrated=true
 proposalOrderMigrated=true
-org.eclipse.jdt.ui.formatterprofiles.version=11
-org.eclipse.jdt.internal.ui.navigator.layout=2
+<<<<<<<=HEAD
 content_assist_proposals_background=255,255,255
-content_assist_number_of_computers=12
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.internal.ui.navigator.layout=2
+content_assist_number_of_computers=13
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
->>>>>>> origin/gh-pages
+=\=\=\=\=\=\=

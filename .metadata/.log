@@ -1473,3 +1473,64 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
 !SUBENTRY 1 org.eclipse.core.resources 4 274 2011-12-08 00:53:49.284
 !MESSAGE Resource is out of sync with the file system: '/ASD/asdcouch/taskmgr/main.css'.
+!SESSION 2012-01-07 19:11:18.993 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/craig/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/craig/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 2 2 2012-01-07 19:13:16.617
+!MESSAGE Perspective JavaScript has been made into a local copy
+
+!ENTRY org.eclipse.core.net 1 0 2012-01-07 19:13:17.234
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-01-07 19:17:17.893 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/craig/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/craig/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-01-07 19:17:27.590
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.ddms 4 0 2012-01-07 19:17:28.063
+!MESSAGE DDMS files not found: /Applications/android-sdk-macosx/platform-tools/adb /Applications/android-sdk-macosx/tools/hprof-conv /Applications/android-sdk-macosx/tools/traceview 
+
+!ENTRY org.eclipse.ui 4 4 2012-01-07 19:18:15.646
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2012-01-07 19:18:37.205 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/craig/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/craig/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-01-07 19:18:42.891
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.ddms 4 0 2012-01-07 19:18:43.211
+!MESSAGE DDMS files not found: /Applications/android-sdk-macosx/platform-tools/adb 
+
+!ENTRY org.eclipse.ui 4 4 2012-01-07 19:29:35.238
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2012-01-07 19:30:21.274 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/craig/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/craig/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-01-07 19:30:31.031
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-01-07 19:41:37.772
+!MESSAGE Failed to load properties file for project 'TaskManager'
+
+!ENTRY org.eclipse.ui 4 4 2012-01-07 20:26:50.237
+!MESSAGE Invalid preference page path: XML Syntax

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="417" localization="OSGI-INF/l10n/bundle" name="taskmgr" project="ASD"/>
+</map>
