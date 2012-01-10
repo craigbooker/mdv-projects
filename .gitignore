@@ -1,6 +1,6 @@
 */.idea/*,
-*.metadata/*,
-*.metadata/*,
+*.metadata/,
+*/.metadata/*,
 */org.eclipse.*,
 *.settings/*,
 *.plugins/*,
