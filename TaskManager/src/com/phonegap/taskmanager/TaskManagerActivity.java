@@ -9,6 +9,6 @@ public class TaskManagerActivity extends DroidGap {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.loadUrl("file://assets/www/index.html");
+        super.loadUrl("/assets/www/index.html");
     }
 }
