@@ -35,6 +35,11 @@
 		var map; // for the google map object
 		var mapMarker; // for the google map marker object
 
+		//options
+		var MAXIMUM_AGE = 200; // in milliseconds
+		var TIMEOUT = 300000;
+		var HIGHACCURACY = true;
+
         function getGeoLocation() {
             try {
                 if( !! navigator.geolocation ) return navigator.geolocation;
