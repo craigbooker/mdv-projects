@@ -239,14 +239,14 @@ p.message, p.error {
 }
 
 p.message {
-    border: 1px solid #995522;
-    background-color: #e1d8b9;
+    border: 1px solid #CC0000;
+    background-color: #FFFFFF;
     color: black;
 }
 
 p.error {
-    border: 1px solid #193742;
-    background-color: #cb202a;
+    border: 1px solid #FF0000;
+    background-color: #CCCCCC;
     color: white;
 }
 
@@ -273,6 +273,36 @@ p.error {
 
 #content h2.error {
     color: #cb7d20;
+}
+
+/* bwTable */
+
+.bwTable {
+    background: #CCCCCC;
+    margin-bottom: .5em;
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+}
+
+.bwTable tr, .bwTable td, .bwTable th {
+    font: normal 1em Helvetica, Arial, sans-serif;
+    text-align: left;
+    border: solid 1px #666666;
+    padding: 1px 3px;
+}
+
+.bwTable tr:nth-child(odd) {
+    background: #666666;
+}
+
+.bwTable th {
+    background: #666666;
+    color: #CCCCCC;
+    border: solid 1px #666666;
+}
+
+.bwTable td {
+    min-width: 100px;
 }
 
 /* Media Queries */
