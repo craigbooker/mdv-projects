@@ -102,6 +102,24 @@ a:hover { color: rgb(113, 112, 111); }
 	top: 100px; }
 
 #masthead #nav a:hover, #masthead ul.main-navigation a:hover { color: rgb(236, 236, 236); }
+#primaryContent {
+	padding: 52px 0;
+}
+
+#primaryContent #info {
+	float: left;
+	margin: 0 45px 0 0;
+	width: 355px;
+}
+
+#primaryContent #info p {
+	font-size: 18px;
+	font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2", georgia, times, serif;
+	line-height: 26px;
+	margin: 0 0 26px;
+	font-weight: 400;
+	color: #767678;
+}
 
 /* Screencasts and Videos */
 #screencasts {
