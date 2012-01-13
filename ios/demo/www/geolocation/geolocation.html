@@ -3,7 +3,7 @@
   <head>
     <title>Geolocation Example</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--link rel="stylesheet" type="text/css" href="css/main.css" /-->
     <script type="text/javascript" charset="utf-8" src="js/phonegap-1.3.0.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/bwH5.js"></script>
 
@@ -11,11 +11,14 @@
 		var geo;
 
 		function getGeoLocation(){
-		if( !! navigator.geolocation) return navigator.geolocation;
-		else return undefined;
-
-
+			try {
+				if(!! navigator.geolocation) return navigator.geolocation;
+				else return undefined;
+			} catch(e) {
+				return undefined;
+			}
 		}
+
 		function initialize() {
 			if((geo = getGeoLocation())) {
 				statusMessage('Geolocation is supported.');

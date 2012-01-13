@@ -83,51 +83,6 @@ p.error {
     color: #cb7d20;
 }
 
-/* bwTable */
 
-.bwTable {
-    background: #c3cebc;
-    margin-bottom: .5em;
-    border: 1px solid #995522;
-    border-collapse: collapse;
-}
 
-.bwTable tr, .bwTable td, .bwTable th {
-    font: normal 1em Helvetica, Arial, sans-serif;
-    text-align: left;
-    border: solid 1px #995522;
-    padding: 1px 3px;
-}
 
-.bwTable tr:nth-child(odd) {
-    background: #e1d8b9;
-}
-
-.bwTable th {
-    background: #193742;
-    color: #c3cebc;
-    border: solid 1px #51341a;
-}
-
-.bwTable td {
-    min-width: 100px;
-}
-
-/* form */
-
-#form {
-    margin-bottom: 10px;
-    border-bottom: 2px solid #3c6b92;
-}
-
-#form input[type=text] {
-    width: 300px;
-}
-
-#form td.button, #form td.label {
-    text-align: right;
-}
-
-#form td.label {
-    padding-right: 3px;
-}
