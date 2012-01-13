@@ -18,6 +18,10 @@
 				return undefined;
 			}
 		}
+		function dispResults() {
+			element('').innerHTML = ;
+		}
+
 
 		function initialize() {
 			if((geo = getGeoLocation())) {
@@ -38,7 +42,7 @@
     <h1>HTML5 Geolocation</h1>
     <p class="message" id="statusMessage"></p>
     </div>
-
+	<div id="results"></div>
     <div id="map_canvas"></div>
 </body>
 </html>
