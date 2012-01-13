@@ -1,0 +1,195 @@
+<!doctype html>
+
+<!-- Quick Launch Page -->
+
+<html>
+    <head>
+	<meta charset="utf-8">
+
+	<title>Task Manager</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
+	<link rel="stylesheet" href="JQMobile_template/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script type="text/javascript" src="js/libs/jquery.mobile.datebox.min.js"></script>
+	<script src="JQMobile_Template/js/libs/modernizr.custom.min.js"></script>
+
+    </head>
+        <body class=site-appscient>
+            <div class="main-block main-block-masterHeader">
+
+            <div data-role="page" id="home">
+		<div>
+		</div>
+		<div data-role="header" data-position="inline" align="center">
+	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+
+		</div>
+		<div data-role="content">
+			<p><a href="#addTask" data-role="button" data-theme="b">Add a Task</a></p>
+			<div data-role="content">
+				<ul data-role="listview" data-inset="true">
+					<li data-role="list-divider" class="ui-bar ui-bar-d">Lists</li>
+					<li><a href="">Inbox</a></li>
+					<li><a href="">Projects</a></li>
+					<li><a href="">Contexts</a></li>
+					<li><a href="">Search</a></li>
+				</ul>
+			</div>	<!-- /list divider: Browse Category -->
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+					<li><a href="#addTask" data-icon="plus">Add Task</a></li>
+					<li><a href="#settings" data-icon="gear">Settings</a></li>
+					<li><a href="#about_app" data-icon="info">About</a></li>
+				</ul>
+			</nav><!-- / footer: navbar -->
+		</div><!-- /footer -->
+	    </div>
+<!-- START OF PAGE: addTask   ++++++++++++++++++++++++++++++++++++++++++   -->
+<div data-role="page" id="addTask">
+	 	<div data-role="header" data-position="fixed" data-theme="a" align="center">
+	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
+	    </div><!-- /header -->
+	    <div data-role="content" class="ui-content" role="main">
+			<form action="#" method="post" id="addTaskForm" name="addTaskForm">
+				<fieldset id="taskFieldset">
+					<div data-role="fieldcontain">
+						<h2>Task Details</h2>
+					</div>
+					<div id="errors"  style="display:none;"></div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+						<label for="inbox" class="ui-input-text">Inbox:</label>
+						<input type="text" name="inbox" id="name" value="" placeholder="Place in your Inbox" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+					</div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+						<label for="project" class="ui-input-text">Project:</label>
+						<input type="text" name="project" id="project" value="" placeholder="Project Name" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+					</div>
+					<div id="context" data-role="fieldcontain">
+							<label for="context">*Select Context:</label>
+					</div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+						<label for="name" class="ui-input-text">Task Name:</label>
+						<input type="text" name="name" id="name" value="" placeholder="Task Name" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+					</div>
+ 					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+						<p id="priority_text"><h5>Priority Levels:<br /> (Low = 0 - 1 | Mid = 2 - 3 | High  = 4 - 5) </h5></p>
+						<label for="slider" id="slider-label" class="ui-slider ui-input-text">Priority:</label>
+						<input type="number" data-type="range" name="slider" id="slider" value="0" min="0" max="5" class="ui-slider-input ui-input-text ui-body-c ui-corner-all ui-shadow-inset"><p></p>
+					</div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+						<h3>Timeline</h3><h5>Choose date by clicking on grid icon to the right side of the field.</h5>
+								<div data-role="fieldcontain">
+									<label for="sDate">Start Date:</label><input name="sDate" type="date" data-role="datebox" id="sDate" data-options='{"mode": "calbox", "disableManualInput": true}'placeholder="Choose start date." ><!-- Task Start Date -->
+								</div>
+								<div data-role="fieldcontain">
+									<label for="eDate">End Date:</label><input name="eDate" type="date" data-role="datebox" id="eDate" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose end date."><!-- Task End Date -->
+								</div>
+								<div data-role="fieldcontain">
+									<label for="dDate">Due Date:</label><input name="dDate" type="date" data-role="datebox" id="dDate" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose due date.">
+								<!-- Task Due Date  -->
+								</div>
+					</div>
+					<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+	  					<label for="notes" class="ui-input-text">Notes:</label>
+						<textarea cols="40" rows="8" name="notes" id="notes" placeholder="Enter notes that will help you remember details about the task." class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></textarea>
+	  				</div><!--/Notes Field -->
+					<div class="ui-body ui-body-b">
+						<fieldset class="ui-grid-a">
+							<div class="ui-block-a"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><input type="submit" data-theme="e" id="add" class="ui-btn-hidden" aria-disabled="false" value="Save Task"></div>
+							<div class="ui-block-b"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"></span><button type="clear" data-theme="d" class="ui-btn-hidden" aria-disabled="false">Clear</button></div>
+						</fieldset>
+					</div><!--/Submit Buttons -->
+			<br /><a href="#recordErrors" id="errorsLink" data-rel="dialog" data-transition="pop">Errors</a>
+		    </form>
+			</div><!--/content-primary -->
+	</div><!-- /content -->
+		    <!--Buttons for data types-->
+
+	     <div data-role="content">
+	     <div data-role="controlgroup" data-type="horizontal">
+	     			<a href="#" class="jsonBut" id="jsonB" data-role="button" data-theme="a">Load JSON Data</a>
+			<a href="#" class="xmlBut" id="xmlB" data-role="button" data-theme="a">Load XML Data</a>
+			<a href="#" class="couchBut" id="couchB" data-role="button" data-theme="a">Load mySQL</a>
+			</ul>
+			</div>
+			<!--p><a href="#" class="jsonBut" id="jsonB" data-role="button" data-theme="a">Load JSON Data</a></p-->
+		<div id="json" style="color: #FFF;">
+		    <div class="jsonD" >
+			<h2></h2>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		    </div>
+		</div>
+	     </div>
+	     <div data-role="content">
+
+		<div id="xml" style="color: #FFF;">
+		    <div class="xmlD">
+
+		    </div>
+		</div>
+	     </div>
+	     <div data-role="content">
+			<p><!--a href="#" class="couchBut" id="couchB" data-role="button" data-theme="a">Load Futon Data</a></p-->
+		<div id="couches">
+		    <div class="couchD">
+		    <ul id="couch" data-role="listview" style="color: #FFF">
+		    </ul>
+
+		    </div>
+    		</div>
+	    </div>
+	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home">Home</a></li>
+				<li><a href="#addTask" data-icon="plus" class="ui-btn-active ui-state-persist">Add Task</a></li>
+				<li><a href="#settings" data-icon="gear">Settings</a></li>
+				<li><a href="#about_app" data-icon="info">About</a></li>
+			</ul>
+		</div><!-- / footer navbar -->
+	</div><!-- /footer -->
+
+</div>
+<!-- END OF PAGE: addTask   ++++++++++++++++++++++++++++++++++++++++++   -->
+
+
+	    <!--errors pop up box-->
+	    <div data-role="dialog" id="recordErrors">
+	        <div data-role="header">
+	            <h1>Missing Fields</h1>
+		</div>
+		<div data-role="content">
+		    <ul>
+			<li>Test</li>
+		    </ul>
+		</div>
+		</div>
+	    <!-- JavaScript under here -->
+	    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	    <script src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
+	    <script type="text/javascript" src="JQMobile_template/js/libs/jquery.validate.min.js"></script>
+	    <script type="text/javascript" src="JQMobile_template/js/main1.js"></script>
+	    <script type="text/javascript" src="js/site.js"></script>
+        </body>
+</html>

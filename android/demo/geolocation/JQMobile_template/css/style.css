@@ -1,0 +1,26 @@
+/* write your CSS in here*/
+
+label.error{
+    display:block;
+    margin: 10px 0px;
+    color:red;
+}
+
+#errorsLink {display:none;}
+
+#mainimg {
+    padding-top:0px;
+    width:100%;
+}
+
+#mainmenu {
+    text-align:center;
+}
+
+.footer h4{
+    font-size:10px;
+}
+
+.backb {
+    
+}
