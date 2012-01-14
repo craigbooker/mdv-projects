@@ -86,7 +86,14 @@
 			if(watchID) geo.clearWatch(watchID);
 			watchID = null;
 		}
-function startWatching() {}
+		function startWatching() {
+			watchID = geo.watchPosition(showMap, geoError, {
+				enableHighAccuracy: HIGHACCURACY,
+				maximumAge: MAXIMUM_AGE,
+				timeout: TIMEOUT
+			});
+		}
+		/*
         function init() {
             if((geo = getGeoLocation())) {
                 statusMessage('HTML5 Geolocation')
@@ -97,9 +104,13 @@ function startWatching() {}
             }
             geo.getCurrentPosition(show_coords);
         }
-
+*/
         window.onload = function() {
-            init();
+			if((geo = getGeoLocation())) {
+				startWatching();
+			} else {
+				alert('Geolocation not supported.')
+			}
         }
     </script>
 </head>
