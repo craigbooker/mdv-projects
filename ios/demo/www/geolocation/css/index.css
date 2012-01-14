@@ -182,7 +182,8 @@ list-style: none;
 #bottombar #contact { float: left; width: 380px; }
 
 
-#cta { padding: 57px 0pt 39px;
+#cta {
+	padding: 57px 0pt 39px;
 	background: none repeat scroll 0% 0% rgb(246, 246, 248);
 	border-bottom: 1px solid rgb(230, 230, 232); }
 
@@ -251,8 +252,8 @@ p.error {
 }
 
 #content {
-    width: 85%;
-    margin: 20px auto;
+    width: 47%;
+    margin: 5px auto;
     padding: 5px;
     background-color: white;
     min-height: 300px;
@@ -297,12 +298,13 @@ p.error {
 
 .bwTable th {
     background: #666666;
-    color: #CCCCCC;
+    color: #FFFFFF;
+    font-weight: bold;
     border: solid 1px #666666;
 }
 
 .bwTable td {
-    min-width: 100px;
+    min-width: 75px;
 }
 
 /* Media Queries */
@@ -319,7 +321,24 @@ p.error {
 
   #cta #ci-slideshow div { width: 440px ! important; height: 164px ! important; border: 0pt none; }
   #cta #ci-slideshow img { width: 440px ! important; height: 164px ! important; margin: 0pt; border: 0pt none; }
+#primaryContent {
+	padding: 52px 0;
+}
 
+#primaryContent #info {
+	float: left;
+	margin: 0 45px 0 0;
+	width: 355px;
+}
+
+#primaryContent #info p {
+	font-size: 18px;
+	font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2", georgia, times, serif;
+	line-height: 26px;
+	margin: 0 0 26px;
+	font-weight: 400;
+	color: #767678;
+}
  /* Screencasts and Videos - 960 */
 
   #screencasts #slideshow { display: none; }
@@ -335,6 +354,7 @@ p.error {
   #sections #section-1, #sections #section-2, #sections #section-3, #sections #section-4, { border: 0pt none; margin-bottom: 22px; padding-bottom: 22px; }
   #sections h3 { margin-top: 24px; padding-top: 46px; border-top: 2px solid rgb(230, 230, 232); }
   #about #info h3 { width: 720px; }
+
 
  /* bottombar - 960 */
 
