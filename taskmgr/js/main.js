@@ -1,4 +1,4 @@
-// Craig Booker  |  MIU Project 4 | 10/16/2011
+// Craig Booker  |  Task Manager | 10/16/2011
 
 window.addEventListener("DOMContentLoaded", function () {
 // getElementById Function

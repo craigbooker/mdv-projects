@@ -9,6 +9,9 @@
 	<title>Task Manager</title>
 
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="description" content= "" />
+	<meta name="keywords" content= "" />
+	<meta name="robots" content="" />
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,52 +29,36 @@
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script type="text/javascript" src="js/libs/jquery.mobile.datebox.min.js"></script>
 	<script src="JQMobile_Template/js/libs/modernizr.custom.min.js"></script>
-
-	<!--<meta charset="utf-8"/>
-        <title>Drumset Practice List</title>
-	<meta name="description" content= "" />
-	<meta name="keywords" content= "" />
-	<meta name="robots" content="" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css" />
-	-->
-	<!--added BG image -->
-	<!--style type="text/css">
-	    .ui-page {
-					<img src=""/ >
-	    }
-	</style-->
     </head>
         <body>
             <div data-role="page" id="home">
-		<div>
-		</div>
-		<div data-role="header" data-position="inline" align="center">
-	 		<img src="img/taskmgr_logo1_wht.png" alt="taskmgr_logo1" width="221" height="44" align="center" />
-
-		</div>
-		<div data-role="content">
-			<p><a href="#addTask" data-role="button" data-theme="b">Add a Task</a></p>
+				<div>
+				</div>
+				<div data-role="header" data-position="inline" align="center">
+					<img src="img/taskmgr_logo1_wht.png" alt="Task Manager Logo" width="221" height="44" align="center" />
+				</div>
 			<div data-role="content">
-				<ul data-role="listview" data-inset="true">
-					<li data-role="list-divider" class="ui-bar ui-bar-d">Lists</li>
-					<li><a href="">Inbox</a></li>
-					<li><a href="">Projects</a></li>
-					<li><a href="">Contexts</a></li>
-					<li><a href="">Search</a></li>
-				</ul>
-			</div>	<!-- /list divider: Browse Category -->
-		</div>
-		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-			<nav data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
-					<li><a href="#addTask" data-icon="plus">Add Task</a></li>
-					<li><a href="#settings" data-icon="gear">Settings</a></li>
-					<li><a href="#about_app" data-icon="info">About</a></li>
-				</ul>
-			</nav><!-- / footer: navbar -->
-		</div><!-- /footer -->
+				<p><a href="#addTask" data-role="button" data-theme="b">Add a Task</a></p>
+				<div data-role="content">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider" class="ui-bar ui-bar-d">Lists</li>
+						<li><a href="">Inbox</a></li>
+						<li><a href="">Projects</a></li>
+						<li><a href="">Contexts</a></li>
+						<li><a href="">Search</a></li>
+					</ul>
+				</div>	<!-- /list divider: Browse Category -->
+			</div>
+			<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+						<li><a href="#addTask" data-icon="plus">Add Task</a></li>
+						<li><a href="#settings" data-icon="gear">Settings</a></li>
+						<li><a href="#about_app" data-icon="info">About</a></li>
+					</ul>
+				</nav><!-- / footer: navbar -->
+			</div><!-- /footer -->
 	    </div>
 <!-- START OF PAGE: addTask   ++++++++++++++++++++++++++++++++++++++++++   -->
 <div data-role="page" id="addTask">
@@ -136,53 +123,26 @@
 
 	     <div data-role="content">
 	     <div data-role="controlgroup" data-type="horizontal">
-	     			<a href="#" class="jsonBut" id="jsonB" data-role="button" data-theme="a">Load JSON Data</a>
+	     	<a href="#" class="jsonBut" id="jsonB" data-role="button" data-theme="a">Load JSON Data</a>
 			<a href="#" class="xmlBut" id="xmlB" data-role="button" data-theme="a">Load XML Data</a>
 			<a href="#" class="couchBut" id="couchB" data-role="button" data-theme="a">Load mySQL</a>
-			</ul>
-			</div>
-			<!--p><a href="#" class="jsonBut" id="jsonB" data-role="button" data-theme="a">Load JSON Data</a></p-->
+		</div>
 		<div id="json" style="color: #FFF;">
 		    <div class="jsonD" >
-			<h2></h2>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
-			<p></p>
 		    </div>
 		</div>
 	     </div>
 	     <div data-role="content">
-
-		<div id="xml" style="color: #FFF;">
-		    <div class="xmlD">
-
-		    </div>
-		</div>
-	     </div>
-	     <div data-role="content">
-			<p><!--a href="#" class="couchBut" id="couchB" data-role="button" data-theme="a">Load Futon Data</a></p-->
-		<div id="couches">
-		    <div class="couchD">
-		    <ul id="couch" data-role="listview" style="color: #FFF">
-		    </ul>
-
-		    </div>
-    		</div>
-	    </div>
-	<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#home" data-icon="home">Home</a></li>
-				<li><a href="#addTask" data-icon="plus" class="ui-btn-active ui-state-persist">Add Task</a></li>
-				<li><a href="#settings" data-icon="gear">Settings</a></li>
-				<li><a href="#about_app" data-icon="info">About</a></li>
-			</ul>
-		</div><!-- / footer navbar -->
-	</div><!-- /footer -->
-
+		<div data-role="footer" data-position="fixed" data-id="myfooter" data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#addTask" data-icon="plus" class="ui-btn-active ui-state-persist">Add Task</a></li>
+					<li><a href="#settings" data-icon="gear">Settings</a></li>
+					<li><a href="#about_app" data-icon="info">About</a></li>
+				</ul>
+			</div><!-- / footer navbar -->
+		</div><!-- /footer -->
 </div>
 <!-- END OF PAGE: addTask   ++++++++++++++++++++++++++++++++++++++++++   -->
 
