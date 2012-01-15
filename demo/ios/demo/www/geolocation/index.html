@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Craig Booker</title>
+	<script type="text/javascript" charset="utf-8" src="js/phonegap-1.3.0.js"></script>
+    <script type="text/javascript" src="js/bwH5.js"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery.scrollto-1.4.2-min.js" type="text/javascript"></script>
+    <script src="js/jquery.localscroll.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+
+    <!--script src="js/jquery.appscient.js" type="text/javascript"></script-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <!--link rel="shortcut icon" href="favicon.ico" type="image/x-icon"-->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript">
+        var t = new bwTable();
+        var geo;
+
+        function getGeoLocation() {
+            try {
+                if( !! navigator.geolocation ) return navigator.geolocation;
+                else return undefined;
+            } catch(e) {
+                return undefined;
+            }
+        }
+
+        function showCoords(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            t.updateRow(0, [ lat.toString(), lon.toString() ] );
+            dispResults();
+        }
+
+        function geoError(error) {
+            switch(error.code) {
+                case error.TIMEOUT:
+                    alert('Geolocation Timeout');
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert('Geolocation Position unavailable');
+                    break;
+                case error.PERMISSION_DENIED:
+                    alert('Geolocation Permission denied');
+                    break;
+                default:
+                    alert('Geolocation returned an unknown error code: ' + error.code);
+            }
+        }
+
+        function dispResults() {
+            element('results').innerHTML = t.getTableHTML();
+        }
+
+        function init() {
+            if((geo = getGeoLocation())) {
+                statusMessage('Using HTML5 Geolocation')
+                t.setHeader( [ 'Latitude', 'Longitude' ] );
+                t.addRow( [ '&nbsp;', '&nbsp;' ] );
+            } else {
+                statusMessage('HTML5 Geolocation is not supported.')
+            }
+            geo.watchPosition(showCoords, geoError, {
+                maximumAge: 1000,   // 1 sec
+                timeout: 300000,    // 5 min
+                enableHighAccuracy: true
+            });
+        }
+
+        window.onload = function() {
+            init();
+        }
+    </script>
+</head>
+<body class="site-appscient">
+
+<div class="main-block main-block-masterHeader">
+	<div id="masthead">
+		<div class="container">
+			<h2>FSO Projects</h2>
+			<div class="main-navigation-primary">
+				<ul class="main-navigation">
+					<li>
+					<a indepth="true" href="index.html#projects">Projects</a> |
+					</li>
+					<li>
+					<a indepth="true" href="index.html#screencasts">Screencasts</a> |
+					</li>
+					<li>
+					<a indepth="true" href="index.html#research">Research</a>
+					</li>
+				</ul>
+			</div>
+		</div> <!-- .container -->
+	</div> <!-- .masthead -->
+
+</div>
+<div class="main-block main-block-element main-block-html">
+	<div id="cta">
+		<div class="container">
+			<div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="ci-slideshow">
+				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="slideshow-1">
+					<img src="img/8f4-01.jpg" alt="">
+				</div>
+				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="slideshow-2">
+					<img src="img/8f4-02.jpg" alt="">
+				</div>
+				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="slideshow-3">
+					<img src="img/8f4-03.jpg" alt="">
+				</div>
+				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="slideshow-4">
+					<img src="img/8f4-04.jpg" alt="">
+				</div>
+				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="slideshow-5">
+					<img src="img/8f4-05.jpg" alt="">
+				</div>
+				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="slideshow-6">
+					<img src="img/8f4-06.jpg" alt="">
+				</div>
+				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="slideshow-7">
+					<img src="img/8f4-07.jpg" alt="">
+				</div>
+				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="slideshow-8">
+					<img src="img/8f4-08.jpg" alt="">
+				</div>
+				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="slideshow-9">
+					<img src="img/8f4-09.jpg" alt="">
+				</div>
+				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="slideshow-10">
+					<img src="img/8f4-10.jpg" alt="">
+				</div>
+
+				<small>More images:</small>
+
+				<ul class="slideshow-controls ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+					<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#slideshow-1">1</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#slideshow-2">2</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#slideshow-3">3</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#slideshow-4">4</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#slideshow-5">5</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#slideshow-6">6</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#slideshow-7">7</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#slideshow-8">8</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#slideshow-9">9</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#slideshow-10">10</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div> <!-- CTA - Container -->
+	</div><!-- CTA -->
+</div><!-- Main block -->
+<div class="main-block main-block-backsections">
+	<div id="primaryContent">
+		<div class="container">
+			<div id="leftCol">
+<!-- Geolocation Demo -->
+				<h3>Geolocation</h3>
+				<div id="content">
+					<p class="message" id="statusMessage"></p>
+						<div id="results">
+							<!-- Geolocation results show here -->
+						</div>
+						<!--div id="map_canvas">Used for google maps </div-->
+				</div>
+			</div>
+			<div id="sections">
+<!-- About -->
+				<h3>ABOUT</h3>
+				<div class="section" id="about">
+					<div class="section-details">
+						<p><img src="img/craigbooker032011.jpg" width="120" height="120" alt="IMG_2416">
+						<strong>Craig Booker <br/><a href="http://www.twitter.com/craigbooker" target="new">@craigbooker</a><br/></strong>
+						Course: AVF1201<br/>
+						<!--GitHub Repo: -->
+						<a href="https://github.com/craigbooker/mdv-projects/" target="new"><img src="img/github72x72.png" width="72" height="72" alt="Github Icon"></a>
+						  </p>
+					</div>
+					<div class="clear"></div>
+				</div>
+<!-- Crud App -->
+				<h3>CRUD APP</h3>
+				<div class="section" id="crudapp">
+					<div class="section-details">
+					<a href="http://appscient.net/fsoprojects/app/taskmgr/" target="new"><img src="img/appiconblkplstc.png" width="72" height="72" alt="appiconblkplstc"></a><br /><br />
+<a href="http://craigbooker.github.com/mdv-projects/taskmgr/index.html">GitHub Repo</a>
+						<p><strong>App Details</strong> Inspired by the work of David Allen. David is a well known author and productivity coach. He has written several books, including "Getting Things Done." Getting Things Done (GTD) and David Allen are not associated with Task Manager. GTD is a trademark owned by the David Allen Group.</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+<!-- Projects -->
+				<h3>Projects</h3>
+				<div class="section" id="projects">
+					<div class="section-details">
+						<p><strong>Adv Visual Frameworks</strong>
+							<p><strong>Week 1 Demo - Setup this site</strong>
+						</p>
+						<p><strong>Week 2 Demo - Native Features</strong>
+							<ul>
+								<li><!--a href="accelerometer/accelerometer.html">Accelerometer</a--></li>
+								<li><a href="#">Geolocation</a></li>
+								<li><a href="notification/index.html">Notification</a></li>
+							</ul>
+						</p>
+						<p><strong>Week 3 Demo - </strong>
+							<ul>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+							</ul>
+						</p>
+						<p><strong>Week 4 Demo - </strong>
+							<ul>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+<!-- Screencasts and Videos -->
+				<h3>Screencasts and Videos</h3>
+				<div class="section" id="screencasts">
+					<div class="section-details">
+						<p><strong>Adv Visual Frameworks</strong>
+						<ul>
+							<li><a href="">AVF Week 1</a></li>
+							<li><a href="">AVF Week 2</a></li>
+							<li><a href="">AVF Week 3</a></li>
+							<li><a href="">AVF Week 4</a></li>
+						</ul></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+<!-- Research -->
+				<h3>RESEARCH</h3>
+				<div class="section" id="research">
+					<div class="section-details">
+						<p><strong>Adv Visual Frameworks</strong>
+						<ul>
+							<li><a href="research/wk1.html">AVF Week 1</a></li>
+							<li><a href="research/wk2.html">AVF Week 2</a></li>
+							<li><a href="research/wk3.html">AVF Week 3</a></li>
+							<li><a href="research/wk4.html">AVF Week 4</a></li>
+						</ul></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div><!-- Sections -->
+		</div><!-- ABOUT - Container -->
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="main-block main-block-element main-block-html">
+<div id="footer">
+    <div class="container">
+		<div id="footer-details">
+			<p><em>Appscient, LLC</em> © 2012 <a href="http://www.appscient.net">Appscient, LLC</a></p>
+		</div>
+		<div class="toggle-clear"></div>
+	</div><!-- footer - Container -->
+</div>
+</div>
+<div id="bottombar">
+    <div class="container">
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>
