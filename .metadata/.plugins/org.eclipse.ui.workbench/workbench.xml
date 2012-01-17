@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="14" version="2.0">
 <workbenchAdvisor/>
-<window height="1132" width="2026" x="244" y="214">
+<window height="1132" width="2026" x="387" y="29">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -298,14 +298,14 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TaskManagerActivity.java" tooltip="TaskManager/src/com/phonegap/taskmanager/TaskManagerActivity.java">
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="index.html" tooltip="TaskManager/assets/www/index.html">
+<persistable path="/TaskManager/assets/www/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="TaskManagerActivity.java" tooltip="TaskManager/src/com/phonegap/taskmanager/TaskManagerActivity.java">
 <persistable path="/TaskManager/src/com/phonegap/taskmanager/TaskManagerActivity.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="AndroidManifest.xml" tooltip="TaskManager/AndroidManifest.xml">
 <persistable path="/TaskManager/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="index.html" tooltip="TaskManager/assets/www/index.html">
-<persistable path="/TaskManager/assets/www/index.html"/>
 </file>
 </mruList>
 </workbench>

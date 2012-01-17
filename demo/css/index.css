@@ -263,6 +263,7 @@ li.ui-tabs-selected a { color: rgb(153, 153, 154); }
 #masthead h2 {
 position: absolute;
 top: 40px;
+left: 25px;
 
 }
  /* Masthead - 480 */
