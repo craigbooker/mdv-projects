@@ -262,19 +262,21 @@ li.ui-tabs-selected a { color: rgb(153, 153, 154); }
 	  line-height: 16px; }
 #masthead h2 {
 position: absolute;
-top: 40px;
+top: 10px;
 left: 25px;
 
 }
  /* Masthead - 480 */
 #masthead #nav, #masthead ul.main-navigation {
 	position: absolute;
-	top: 10px;
+	top: 50px;
 	left: 20px;
 	width: 400px;
 	list-style: none outside none;
 	margin: 0pt;
-	padding: 0pt; }
+	padding: 0pt;
+	wrap-option: true;
+	 }
 
   #masthead #nav, #masthead ul.main-navigation {
 	right: auto;
