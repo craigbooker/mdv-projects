@@ -1,17 +1,3 @@
-/*
-    bwH5.js by Bill Weinman
-    <http://bw.org/contact/>
-    created 2011-04-16
-    updated 2011-07-07
-
-    Copyright (c) 2011 The BearHeart Group, LLC
-    This file may be used for personal educational purposes as needed.
-    Use for other purposes is granted provided that this notice is
-    retained and any changes made are clearly indicated as such.
-*/
-
-var _bwH5_version = "1.1.3";
-
 // useful for finding elements
 var element = function(id) { return document.getElementById(id); }
 var errorMessage = undefined;
@@ -120,4 +106,3 @@ function bwTable( wrap ) {
     }
 
 }
-
