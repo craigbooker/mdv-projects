@@ -3,29 +3,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Craig Booker</title>
-    <script type="text/javascript">
-        document.documentElement.className = "jsenabled";
-    </script>
-    <!--script src="js/swfobject.js" type="text/javascript"></script-->
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/jquery.scrollto-1.4.2-min.js" type="text/javascript"></script>
-    <script src="js/jquery.localscroll.js" type="text/javascript"></script>
-    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="js/flexslider/flexslider.css" type="text/css">
+	<script src="js/flexslider/jquery.flexslider.js"></script>
     <script type="text/javascript" src="http://cdn.sublimevideo.net/js/vcigk9we.js"></script>
     <!-- vcigk9we -->
-    <!--script src="js/jquery.appscient.js" type="text/javascript"></script-->
-    <!--script type="text/javascript">try{Typekit.load();}catch(e){}</script-->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <!--link rel="shortcut icon" href="favicon.ico" type="image/x-icon"-->
 
-<link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+	<!-- Hook up the FlexSlider -->
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider();
+		});
+	</script>
+
+
 </head>
 <body class="site-appscient">
 
 <div class="main-block main-block-masterHeader">
 	<div id="masthead">
 		<div class="container">
-			<h2>FSO Projects</h2>
+			<h2>Craig Booker</h2>
 			<div class="main-navigation-primary">
 				<ul class="main-navigation">
 					<li>
@@ -44,7 +44,10 @@
 					<a indepth="true" href="index.html#research">Research</a>
 					</li>
 					<li>
-					<a indepth="true" href="index.html#research">Contact</a>
+					<a indepth="true" href="index.html#about">About</a>
+					</li>
+					<li>
+					<a indepth="true" href="index.html#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -53,33 +56,37 @@
 
 </div>
 <div class="main-block main-block-element main-block-html">
+
 	<div id="cta">
 		<div class="container">
-			<div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="ci-slideshow">
-				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="slideshow-1">
-					<img src="img/8f4-01.jpg" alt="">
-				</div>
-				<small>More images:</small>
+		<!--=============================
+		Markup for FADE animation
+		=================================-->
 
-				<ul class="slideshow-controls ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
-					<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#slideshow-1">1</a></li>
-					<li class="ui-state-default ui-corner-top"><a href="#slideshow-2">2</a></li>
-					<li class="ui-state-default ui-corner-top"><a href="#slideshow-3">3</a></li>
-					<li class="ui-state-default ui-corner-top"><a href="#slideshow-4">4</a></li>
-					<li class="ui-state-default ui-corner-top"><a href="#slideshow-5">5</a></li>
-					<li class="ui-state-default ui-corner-top"><a href="#slideshow-6">6</a></li>
-					<li class="ui-state-default ui-corner-top"><a href="#slideshow-7">7</a></li>
-					<li class="ui-state-default ui-corner-top"><a href="#slideshow-8">8</a></li>
-					<li class="ui-state-default ui-corner-top"><a href="#slideshow-9">9</a></li>
-					<li class="ui-state-default ui-corner-top"><a href="#slideshow-10">10</a></li>
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="js/flexslider/demo-stuff/inacup_samoa.jpg" />
+						<p class="flex-caption">Captions and cupcakes. Winning combination.</p>
+					</li>
+					<li>
+						<a href="http://flex.madebymufffin.com"><img src="js/flexslider/demo-stuff/inacup_pumpkin.jpg" /></a>
+						<p class="flex-caption">This image is wrapped in a link!</p>
+					</li>
+					<li>
+						<img src="js/flexslider/demo-stuff/inacup_donut.jpg" />
+					</li>
+					<li>
+						<img src="js/flexslider/demo-stuff/inacup_vanilla.jpg" />
+					</li>
 				</ul>
-			</div>
+		  </div><!-- Flexslider -->
 			<div class="clear"></div>
 		</div> <!-- CTA - Container -->
 	</div><!-- CTA -->
 </div><!-- Main block -->
 <div class="main-block main-block-backsections">
-	<div id="about">
+	<div id="info">
 		<div class="container">
 			<div id="sections">
 				<h3>ABOUT</h3>
@@ -94,37 +101,30 @@
 					<div class="clear"></div>
 
 				</div>
-				<h3>CRUD APP</h3>
-				<div class="section" id="section-4">
-					<div class="issue-details">
-					<a href="http://appscient.net/fsoprojects/app/taskmgr/" target="new"><img src="img/appiconblkplstc.png" width="72" height="72" alt="appiconblkplstc"></a>
-
-						<p><strong>App Details</strong> Inspired by the work of David Allen. David is a well known author and productivity coach. He has written several books, including "Getting Things Done." Getting Things Done (GTD) and David Allen are not associated with Task Manager. GTD is a trademark owned by the David Allen Group.</p>
-					</div>
-					<div class="clear"></div>
-				</div>
 				<h3>Portfolio</h3>
 				<div class="section" id="section-4">
 					<div class="issue-details">
+										<a href="http://appscient.net/fsoprojects/app/taskmgr/" target="new"><img src="img/appiconblkplstc.png" width="72" height="72" alt="appiconblkplstc"></a>
+
+						<p><strong>App Details</strong> Inspired by the work of David Allen. David is a well known author and productivity coach. He has written several books, including "Getting Things Done." Getting Things Done (GTD) and David Allen are not associated with Task Manager. GTD is a trademark owned by the David Allen Group.</p>
 						<p><strong>Adv Visual Frameworks</strong>
-							<p><strong>Week 1 - Setup this site</strong>
-						</p>
-						<p><strong>Week 2 - Native Features</strong>
-							<ul class="about">
+							<strong>Week 1 - Setup this site</strong>
+						<strong>Week 2 - Native Features</strong>
+							<ul>
 								<li><a href=""><img src="img/accelerometer80x80.gif" width="25" height="25" alt="Accelerometer Example">Accelerometer</a></li>
 								<li><a href=""><img src="img/geolocation80x80.gif" width="25" height="25" alt="Geolocation Example">Geolocation</a></li>
 								<li><a href=""><img src="img/notifications80x80.gif" width="25" height="25" alt="Notifications Example"> Notification</a></li>
 							</ul>
 						</p>
-						<p><strong>Week 3 - </strong>
-							<ul class="about">
+						<p><strong>Week 3 - Native Features</strong>
+							<ul>
 								<li><a href=""></a></li>
 								<li><a href=""></a></li>
 								<li><a href=""></a></li>
 							</ul>
 						</p>
 						<p><strong>Week 4 - </strong>
-							<ul class="about">
+							<ul>
 								<li><a href=""></a></li>
 								<li><a href=""></a></li>
 								<li><a href=""></a></li>
