@@ -105,6 +105,23 @@ a:hover { color: rgb(113, 112, 111); }
 
 #masthead #nav a:hover, #masthead ul.main-navigation a:hover { color: rgb(236, 236, 236); }
 
+/* FlexSlider */
+
+.flexslider-container { background: url('images/sliderBkg.png') no-repeat; background-size: 100%; clear: both; height: 100%; margin: 0 auto; height: 328px; max-width: 1099px; width: 100%; }
+.flexslider { background: rgba(229,118,61,.2); border: 1px solid rgba(183,91,43,.2); float: left; height: 60.670732%; margin: 6% 0 0 6.1%; max-height: 199px; max-width: 960px; overflow: hidden; width: 87.591241%; }
+.flexslider ul, .flex-direction-nav ul { margin: 0; padding: 0; }
+.flexslider li { height: 181px; }
+.flexslider li, .flex-direction-nav li { list-style: none; }
+.flexslider a { background: #fff; border: 1px solid rgba(183,91,43,.2); float: left; height: 98%; margin: 1%; max-height: 199px; overflow: hidden; text-align: center; width: 98%; }
+.flexslider .slides img {max-width: 100%; }
+.flexslider {position: relative; }
+.flexslider .slides li { display:  none; position: relative;}
+.flexslider-container {position: relative;}
+.flex-direction-nav li a { border: none; width: 50px; height: 50px; margin: -20px 0 0; display: block; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;} /* set negative margin-top equal to half the height on the directional-nav for perfect vertical centering */
+.flex-direction-nav li a.next {background: url(images/slideRight.png) no-repeat 0 0; right: 10px}
+.flex-direction-nav li a.prev {background: url(images/slideLeft.png) no-repeat 0 0; left: 10px;}
+
+
 #about { padding: 52px 0pt; }
 
 #sections {
@@ -207,6 +224,9 @@ li.ui-tabs-selected a { color: rgb(153, 153, 154); }
   /*#cta #ci-slideshow div { width: 440px ! important; height: 164px ! important; border: 0pt none; }
   #cta #ci-slideshow img { width: 440px ! important; height: 164px ! important; margin: 0pt; border: 0pt none; }
 */
+  #slider { height: 34.70732%; }
+    .flexslider li { height: 185px; }
+
 
 
   #about #info, #about #sections { width: 100%; float: left; clear: both; }
@@ -241,6 +261,7 @@ top: 10px;
 left: 25px;
 
 }
+
  /* Masthead - 480 */
 #masthead #nav, #masthead ul.main-navigation {
 	position: absolute;
@@ -263,7 +284,7 @@ left: 25px;
   font-size: 16px;
   line-height:18px;
   }
-
+   .flexslider li { height: 195px; }
   p { max-width: 98%; font-size: 11px; line-height: 17px; }
   #bottombar #contact dt {
   font-weight: normal; font-family: helvetica,sans-serif; font-style: normal; color: rgb(204, 204, 202); }
@@ -318,6 +339,21 @@ left: 25px;
 
   .site-appscient #masthead { height: 100px; }
   .site-appscient #masthead #callout { top: 150px; display: block; }
+  #cta .container { max-width: 80%; }
+.flexslider-container { background: url('images/sliderBkg.png') no-repeat; background-size: 100%; clear: both; height: 100%; margin: 0 auto; height: 328px; max-width: 1099px; width: 100%; }
+.flexslider { background: rgba(229,118,61,.2); border: 1px solid rgba(183,91,43,.2); float: left; height: 60.670732%; margin: 6% 0 0 6.1%; max-height: 199px; max-width: 960px; overflow: hidden; width: 87.591241%; }
+.flexslider ul, .flex-direction-nav ul { margin: 0; padding: 0; }
+.flexslider li { height: 181px; }
+.flexslider li, .flex-direction-nav li { list-style: none; }
+.flexslider a { background: #fff; border: 1px solid rgba(183,91,43,.2); float: left; height: 98%; margin: 1%; max-height: 199px; overflow: hidden; text-align: center; width: 98%; }
+.flexslider .slides img {max-width: 100%; }
+.flexslider {position: relative; }
+.flexslider .slides li { display:  none; position: relative;}
+.flexslider-container {position: relative;}
+.flex-direction-nav li a { border: none; width: 50px; height: 50px; margin: -20px 0 0; display: block; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;} /* set negative margin-top equal to half the height on the directional-nav for perfect vertical centering */
+.flex-direction-nav li a.next {background: url(images/slideRight.png) no-repeat 0 0; right: 10px}
+.flex-direction-nav li a.prev {background: url(images/slideLeft.png) no-repeat 0 0; left: 10px;}
+
 /*
   #cta h3, #cta small { display: none; }
   #cta { padding-top: 20px; }
