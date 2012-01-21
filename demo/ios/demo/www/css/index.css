@@ -117,9 +117,10 @@ a:hover { color: rgb(113, 112, 111); }
 .flexslider {position: relative; }
 .flexslider .slides li { display:  none; position: relative;}
 .flexslider-container {position: relative;}
-.flex-direction-nav li a { border: none; width: 50px; height: 50px; margin: -20px 0 0; display: block; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;} /* set negative margin-top equal to half the height on the directional-nav for perfect vertical centering */
-.flex-direction-nav li a.next {background: url(images/slideRight.png) no-repeat 0 0; right: 10px}
-.flex-direction-nav li a.prev {background: url(images/slideLeft.png) no-repeat 0 0; left: 10px;}
+.flex-direction-nav li a { border: none; width: 50px; height: 50px; margin: -20px 0 0; display: block; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;}
+/* set negative margin-top equal to half the height on the directional-nav for perfect vertical centering */
+.flex-direction-nav li a.next {background: none; no-repeat 0 0; right: 10px}
+.flex-direction-nav li a.prev {background: none; no-repeat 0 0; left: 10px;}
 
 
 #about { padding: 52px 0pt; }
