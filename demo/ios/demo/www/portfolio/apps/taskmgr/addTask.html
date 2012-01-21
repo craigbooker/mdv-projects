@@ -35,17 +35,13 @@ function loaded(){
 <header>
 	<nav>
 		<div id="head">
-		<div class="gnb"><a href="index.html"><img src="img/tskmgrlogo1_1.png" alt="Task Manager Logo" /></a>
-		<div id="subNav">
-			<a href="index.html">Home</a><a href=""></a><a href=""></a>
-		</div>
-		</div>
-	</nav>
-</header>
-<div class="subNav">
-
-</div>
-
+			<div class="gnb"><a href="index.html"><img src="img/tskmgrlogo1_1.png" alt="Task Manager Logo" /></a>
+			<div id="subNav">
+				<a href="index.html" class="button">Home</a><a href=""></a><a href=""></a>
+			</div><!-- ::::: End - subNav :::::  -->
+		</div><!-- ::::: End - head :::::  -->
+	</nav><!-- ::::: End - nav :::::  -->
+</header><!-- ::::: End - header :::::  -->
 <div id="body">
 			<form action="#" method="post" id="addTaskForm" name="addTaskForm">
 				<fieldset id="taskFieldset">
@@ -54,41 +50,41 @@ function loaded(){
 					</div>
 					<div id="errors"  style="display:none;"></div>
 					<div class="ui-field-contain ui-body ui-br">
-						<label for="inbox" class="ui-input-text">Inbox:</label>
+						<label for="inbox" class="ui-input-text">Inbox:</label><br/>
 						<input type="text" name="inbox" id="name" class="input" value="" placeholder="Place in your Inbox">
 					</div>
 					<div class="ui-field-contain ui-body ui-br">
-						<label for="project" class="ui-input-text">Project:</label>
+						<label for="project" class="ui-input-text">Project:</label><br/>
 						<input type="text" name="project" id="project" class="input" value="" placeholder="Project Name">
 					</div>
 					<div id="context">
 							<label for="context">*Select Context:</label>
 					</div>
 					<div class="ui-field-contain ui-body ui-br">
-						<label for="name" class="ui-input-text">Task Name:</label>
+						<label for="name" class="ui-input-text">Task Name:</label><br/>
 						<input type="text" name="name" id="name" value="" placeholder="Task Name" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
 					</div>
  					<div class="ui-field-contain ui-body ui-br">
-						<p id="priority_text"><h5>Priority Levels:<br /> (Low = 0 - 1 | Mid = 2 - 3 | High  = 4 - 5) </h5></p>
-						<label for="slider" id="slider-label" class="ui-slider ui-input-text">Priority:</label>
+
+						<label for="slider" id="slider-label" class="ui-slider ui-input-text">Priority: <small> (Low = 0 - 1 | Mid = 2 - 3 | High  = 4 - 5)</small></label><br/>
 						<input type="number" data-type="range" name="slider" id="slider" value="0" min="0" max="5" class="ui-slider-input ui-input-text ui-body-c ui-corner-all ui-shadow-inset"><p></p>
 					</div>
 					<div class="ui-field-contain ui-body ui-br">
 						<h3>Timeline</h3><h5>Choose date by clicking on grid icon to the right side of the field.</h5>
 								<div data-role="fieldcontain">
-									<label for="sDate">Start Date:</label><input name="sDate" type="date" data-role="datebox" id="sDate" data-options='{"mode": "calbox", "disableManualInput": true}'placeholder="Choose start date." ><!-- Task Start Date -->
+									<label for="sDate">Start Date:</label><br/><input name="sDate" type="date" data-role="datebox" id="sDate" data-options='{"mode": "calbox", "disableManualInput": true}'placeholder="Choose start date." ><!-- Task Start Date -->
 
 								</div>
 								<div data-role="fieldcontain">
-									<label for="eDate">End Date:</label><input name="eDate" type="date" data-role="datebox" id="eDate" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose end date."><!-- Task End Date -->
+									<label for="eDate">End Date:</label><br/><input name="eDate" type="date" data-role="datebox" id="eDate" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose end date."><!-- Task End Date -->
 								</div>
 								<div data-role="fieldcontain">
-									<label for="dDate">Due Date:</label><input name="dDate" type="date" data-role="datebox" id="dDate" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose due date.">
+									<label for="dDate">Due Date:</label><br/><input name="dDate" type="date" data-role="datebox" id="dDate" data-options='{"mode": "calbox", "disableManualInput": true}' placeholder="Choose due date.">
 								<!-- Task Due Date  -->
 								</div>
 					</div>
 					<div class="ui-field-contain ui-body ui-br">
-	  					<label for="notes" class="ui-input-text">Notes:</label>
+	  					<label for="notes" class="ui-input-text">Notes:</label><br/>
 						<textarea cols="40" rows="8" name="notes" id="notes" placeholder="Enter notes that will help you remember details about the task." class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></textarea>
 	  				</div><!--/Notes Field -->
 					<div class="ui-body ui-body-b">
