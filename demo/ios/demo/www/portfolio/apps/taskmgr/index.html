@@ -34,16 +34,17 @@ function loaded(){
 <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
 </head>
 <body onorientationchange="updateOrientation();">
+<div id="wrapper-body"><!-- ::::: wrapper-body :::::  -->
 <header>
 	<nav>
 		<div id="head">
-		<div class="gnb"><a href="index.html"><img src="img/tskmgrlogo1_1.png" alt="Task Manager Logo" /></a>
+		<div id="gnb"><a href="index.html" alt="Task Manager Logo" id="logo"></a>
 		<div id="subNav">
 			<a href="addTask.html" class="button">Add Task</a><a href=""></a><a href=""></a>
-		</div>
-		</div>
-	</nav>
-</header>
+			</div><!-- ::::: End - subNav :::::  -->
+		</div><!-- ::::: End - head :::::  -->
+	</nav><!-- ::::: End - nav :::::  -->
+</header><!-- ::::: End - header :::::  -->
 
 <div id="body">
 
@@ -69,6 +70,6 @@ function loaded(){
 	<br>All rights reserved.
 	</div>
 </footer>
-
+</div><!-- ::::: End - wrapper-body :::::  -->
 </body>
 </html>

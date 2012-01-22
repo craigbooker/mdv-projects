@@ -1,0 +1,143 @@
+/* ::::: 960 MEDIA QUERY ::::: */
+
+	@media screen and (max-width: 960px) {
+	#wrapper-body { width: 960px;}
+
+	#subNav {
+		margin: 0px 0px 0px 0px;
+		padding: 2px 5px 5px 5px;
+
+	}
+	#subNav img {
+		width: 100%;
+		height: auto; }
+
+	#subNav a {color: rgb(0,0,0);}
+
+	.title01 {
+		color: rgb(241, 85, 0);
+		font: bold 56px/48px "Helvetica Neue",Arial,Helvetica;
+		margin: 0px 0px 0px 32px;
+		padding: 0px 0px 0px 12px;
+		text-transform: uppercase;
+		letter-spacing: -2px; }
+
+	.title02 {
+		margin: 10px 0pt 15px;
+		padding: 0pt 12px 0pt 77px;
+		font-weight: bold; font-size: 18px; }
+
+	.title03 {
+		margin: 10px 0pt 15px;
+		padding: 0pt 12px 0pt 77px;
+		font-weight: bold;
+		font-size: 18px; }
+
+/* :::::        Lists						::::: */
+	.listtype {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.listtype li {
+		height: 94px;
+		margin: 0pt;
+		padding: 0pt;
+		list-style: none outside none;
+		background: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+	}
+	.listtype a {
+		position: relative;
+		display: block;
+		height: 80px;
+		padding: 0pt 25px 0pt 25px;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+		font-size: 14px;
+		font-weight: bold;
+		color: rgb(0,0,0);
+		margin: 25px 0px 18px 0px;
+		}
+
+	.listtype img {
+		position: absolute;
+		left: 12px;
+		top: 12px;
+	}
+	.listtype strong {
+		margin: 12px 0pt 1px;
+		text-shadow: 0px 1px 0px rgb(25, 25, 25);
+		display: inline-block;
+		font: bold 18px Arial;
+		color: rgb(153, 153, 153);
+	}
+
+	.listtype em {
+		display: block;
+		font: 12px Arial;
+		color: rgb(131, 131, 131);
+	}
+
+	.listtype .light a {
+		background: rgb(204, 204, 204);
+		height: 15px;
+		width: 100%;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+		font-size: 14px;
+		font-weight: bold;
+		color: rgb(255, 255, 255);
+		margin: 0px 0px 0px 0px;
+		padding: 25px 0px 18px 0px;
+		display: inline-block;
+
+	}
+
+	div#contentNav .listtype .ui-bar-divider {
+		background: rgb(204, 204, 204);
+		height: 15px;
+		width: 100%;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+		font-size: 12px;
+		font-weight: bold;
+		color: rgb(255, 255, 255);
+		margin: 0px 0px 0px 0px;
+		padding: 10px 0px 18px 0px;
+		display: inline-block;
+		border-top: 1px solid rgb(0, 0, 0);
+		border-bottom: 1px solid rgb(0, 0, 0);
+
+	}
+/* :::::        End - Lists               ::::: */
+
+/* :::::        Buttons                   ::::: */
+
+	.button {
+		background: none repeat scroll 0% 0% rgb(252, 133, 12);
+		color: rgb(255, 255, 255);
+		height: 15px;
+		width: 150px;
+		text-transform: uppercase;
+		text-align: center;
+		vertical-align: middle;
+		letter-spacing: 2px;
+		font-size: 9px;
+		font-weight: bold;
+		padding: 10px 12px 18px 22px;
+		display: inline-block;
+		border-radius: 4px 4px 4px 4px;
+		font-family: 'Lucida Grande','Lucida Sans Unicode','Verdana','sans-serif';
+	}
+
+	.button:hover { color: rgb(255, 255, 255); background: none repeat scroll 0% 0% rgb(178, 61, 116); }
+
+	/* ::::: End - Buttons ::::: */
+
+
+}
+/* ::::: End - 960 MEDIA QUERY ::::: */
