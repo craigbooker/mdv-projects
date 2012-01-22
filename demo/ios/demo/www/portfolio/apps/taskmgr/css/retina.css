@@ -1,8 +1,13 @@
 /* ::::: 480 MEDIA QUERY ::::: */
 
 	@media screen and (max-width: 480px) {
-	  * { max-width: 100%; }
-#wrapper-body { width: 480px;}
+     * { max-width: 100%; } */
+#wrapper-site { width: 480px;}
+
+#wrapper-body {
+width: 480px;
+border-right: 1 px solid rgb(0,0,0);
+}
 
 	  .title01 {
 		  color: rgb(241, 85, 0);
@@ -123,7 +128,7 @@
 		font-weight: bold;
 		color: rgb(255, 255, 255);
 		margin: 0px 0px 0px 0px;
-		padding: 10px 12px 18px 22px;
+		padding: 10px 0px 18px 0px;
 		display: inline-block;
 
 	}

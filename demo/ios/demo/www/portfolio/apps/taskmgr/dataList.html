@@ -32,20 +32,17 @@ function loaded(){
 <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
 </head>
 <body onorientationchange="updateOrientation();">
+<div id="wrapper-body"><!-- ::::: wrapper-body :::::  -->
 <header>
 	<nav>
 		<div id="head">
-		<div class="logo"><a href="index.html"><img src="img/tskmgrlogo1_0.png" alt="Task Manager Logo" /></a></div>
-		<div class="gnb"><a href="portfolio.html"><img src="img/portfolio1_0.png" alt="Portfolio" height="80" width="80"></div>
-		<div class="gnb"><a href="about.html"><img src="img/about1_0.png"" alt="About" height="80" width="80"></a></div>
-		<div class="gnb"><a href="contact.html"><img src="img/contact1_0.png" alt="Contact" height="80" width="80"></a></div>
-		</div>
-	</nav>
-</header>
-
-<div class="subNav">
-
-</div>
+		<div id="gnb"><a href="index.html" alt="Task Manager Logo" id="logo"></a>
+		<div id="subNav">
+			<a href="addTask.html" class="button">Add Task</a><a href=""></a><a href=""></a>
+			</div><!-- ::::: End - subNav :::::  -->
+		</div><!-- ::::: End - head :::::  -->
+	</nav><!-- ::::: End - nav :::::  -->
+</header><!-- ::::: End - header :::::  -->
 
 <div id="body">
 <ul class="listtype">
@@ -68,7 +65,6 @@ function loaded(){
 		</a>
 	</li>
 
-	<!--2010-->
 
 	<li class="light">
 		<a href="">
@@ -106,11 +102,14 @@ function loaded(){
 
 	</ul>
 </div>
-<div id="foot">
-<a href="#">Vimeo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Youtube</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.twitter.com/appscient" target="_top">Twitter</a><br><br>
-© 2011-2012 Appscient, LLC.
-<br>All rights reserved.
-</div>
+<footer>
+	<div id="foot">
+	<a href="http://www.twitter.com/appsceint" target="_top">About</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#"></a><br><br>
+	© 2011-2012 Appscient, LLC.
+	<br>All rights reserved.
+	</div>
+</footer>
+</div><!-- ::::: End - wrapper-body :::::  -->
 
 </body>
 </html>
