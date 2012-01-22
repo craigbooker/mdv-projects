@@ -1,0 +1,38 @@
+
+!ENTRY org.eclipse.ui.ide 4 4 2012-01-21 22:46:11.408
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2012-01-21 22:46:11.408
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2012-01-21 22:46:11.408
+!MESSAGE Could not write workspace metadata '/Users/Craig/github/mdv-projects/demo/android/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree'.
+!STACK 0
+java.io.FileNotFoundException: /Users/Craig/github/mdv-projects/demo/android/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1349)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1133)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.ui 4 4 2012-01-21 22:46:11.445
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2012-01-21 22:46:14.025 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/craig/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/craig/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-01-21 22:46:33.090
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-01-21 22:47:08.853
+!MESSAGE Failed to load properties file for project 'demo'
+
+!ENTRY org.eclipse.ui 4 4 2012-01-21 22:52:44.366
+!MESSAGE Invalid preference page path: XML Syntax
