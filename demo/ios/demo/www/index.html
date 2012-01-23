@@ -1,122 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" class="jsenabled">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Craig Booker</title>
- 	<script charset="utf-8" src="js/phonegap-1.3.0.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
-	<script src="js/jquery.min.js"></script>
-	<link rel="stylesheet" href="js/flexslider/flexslider.css" type="text/css">
-	<script src="js/flexslider/jquery.flexslider.js"></script>
-	<script src="js/aslib.js"></script>
-    <!--script type="text/javascript" src="http://cdn.sublimevideo.net/js/vcigk9we.js"></script-->
-    <!-- vcigk9we -->
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-	<!-- Hook up the FlexSlider -->
-	<script type="text/javascript">
-		$(window).load(function() {
-			$('.flexslider').flexslider();
-		});
-	</script>
+<title>Appscient, LLC</title>
+
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no">
 
 
+<script type="text/javascript" language="javascript">
+
+/*
+addEventListener('load', function() {
+	setTimeout(hideAddressBar, 0);
+}, false);
+
+function hideAddressBar() {
+	window.scrollTo(0, 1);
+}
+*/
+
+window.addEventListener("load", function(){
+    setTimeout(loaded, 100);
+}, false);
+function loaded(){
+    window.scrollTo(0, 1);
+}
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="css/index.css" media="all">
 </head>
-<body class="site-appscient">
+<body onorientationchange="updateOrientation();">
+<div id="wrapper-site"><!-- ::::: wrapper-site :::::  -->
 
-<div class="main-block main-block-masterHeader">
-	<div id="masthead">
-		<div class="container">
-			<h2>Craig Booker</h2>
-			<div class="main-navigation-primary">
-				<ul class="main-navigation">
-					<li>
-					<a indepth="true" href="index.html#research">Home</a>
-					</li>
-					<li>
-					<a indepth="true" href="portfolio/index.html">Portfolio</a>
-					</li>
-					<li>
-					<a indepth="true" href="#" alt="Will add link soon!">Blog</a>
-					</li>
-					<li>
-					<a indepth="true" href="video.html">Videos</a>
-					</li>
-					<li>
-					<a indepth="true" href="index.html#research">Research</a>
-					</li>
-					<li>
-					<a indepth="true" href="about.html">About</a>
-					</li>
-					<li>
-					<a indepth="true" href="contact.html">Contact</a>
-					</li>
-				</ul>
+<header>
+	<nav>
+		<div id="head">
+		<div class="logo"><a href="index.html"><img src="" alt="Site Logo" /></a></div>
+		<div class="gnb"><a href="portfolio.html"><img src="img/portfolio1_0.png" alt="Portfolio" height="80" width="80"></div>
+		<div class="gnb"><a href="about.html"><img src="img/about1_0.png"" alt="About" height="80" width="80"></a></div>
+		<div class="gnb"><a href="contact.html"><img src="img/contact1_0.png" alt="Contact" height="80" width="80"></a></div>
+		</div>
+	</nav>
+</header>
+<div id="wrapper-body"><!-- ::::: wrapper-body :::::  -->
+
+<div id="body">
+
+			<div>
+				<div data-role="content">
+								<br/><br/><br/><br/>
+
+					<ul data-role="listview" data-inset="true">
+						<li class="ui-bar ui-bar-d">Lists</li>
+						<li><a href="">Inbox</a></li>
+						<li><a href="">Projects</a></li>
+						<li><a href="">Contexts</a></li>
+						<li><a href="">Search</a></li>
+					</ul>
+				</div>	<!-- /list divider: Browse Category -->
 			</div>
-		</div> <!-- .container -->
-	</div> <!-- .masthead -->
-
 </div>
-<div class="main-block main-block-element main-block-html">
+</div><!-- ::::: End - wrapper-body :::::  -->
 
-	<div id="cta">
-		<div class="container">
-		<!--=============================
-		Markup for FADE animation
-		=================================-->
-
-			<div class="flexslider">
-				<ul class="slides">
-					<li>
-						<img src="img/slides/pslide1.jpg" />
-						<p class="flex-caption">Some example projects</p>
-					</li>
-					<li>
-						<a href="http://flex.madebymufffin.com"><img src="img/slides/pslide2.jpg" /></a>
-						<p class="flex-caption">Some example projects</p>
-					</li>
-					<li>
-						<img src="img/slides/pslide3.jpg" />
-					</li>
-					<li>
-						<img src="img/slides/pslide4.jpg" />
-					</li>
-				</ul>
-		  </div><!-- Flexslider -->
-			<div class="clear"></div>
-		</div> <!-- CTA - Container -->
-	</div><!-- CTA -->
-</div><!-- Main block -->
-<div class="main-block main-block-backsections">
-	<div id="info">
-		<div class="container">
-			<div id="sections">
-				<h3></h3>
-
-			</div><!-- Sections -->
-		</div><!-- ABOUT - Container -->
-		<div class="clear"></div>
+<footer>
+	<div id="foot">
+	<a href="http://www.twitter.com/appsceint" target="_top">About</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#"></a><br><br>
+	© 2011-2012 Appscient, LLC.
+	<br>All rights reserved.
 	</div>
-</div>
-<div class="main-block main-block-element main-block-html">
-	<div id="footer">
-		<div class="container">
-			<div id="footer-details">
-				<p></p>
-	<p>  <a href="http://www.appscient.net"><em>Appscient, LLC © 2012</em></a> </p>
-			</div>
-			<div class="toggle-clear"></div>
-		</div><!-- screencasts - Container -->
-	</div>
-</div>
+</footer>
+</div><!-- ::::: End - wrapper-site :::::  -->
 
-
-
-<div id="bottombar">
-    <div class="container">
-
-        <div class="clear"></div>
-    </div>
-</div>
 </body>
 </html>
