@@ -114,66 +114,92 @@ body.sect-home #page {
 	opacity: 1.0;
 }
 li#nav-home a {
-	background-image: url("../../img/nav-home.png");
-}
-li#nav-about a {
-	background-image: url("../../img/nav-about.png");
+	background-image: url("../img/nav-home.png");
 }
 li#nav-journal a {
-	background-image: url("../../img/nav-journal.png");
+	background-image: url("../img/nav-portfolio.png");
 }
-li#nav-respect a {
-	background-image: url("../../img/nav-respect.png");
+li#nav-about a {
+	background-image: url("../img/nav-about.png");
 }
+
 li#nav-contact a {
-	background-image: url("../../img/nav-contact.png");
+	background-image: url("../img/nav-contact.png");
 }
+body.sect-home li#nav-home,
+body.sect-portfolio li#nav-portfolio,
+body.sect-about li#nav-about,
+body.sect-contact li#nav-contact {
+	background: url("../img/nav-active.png") no-repeat 50% 60px;
+	left: 41.143%;		/* 288px / 700px = 0.41143 */
+	position: absolute;
+	top: 0;
+}
+
+body.sect-home li#nav-home a,
+body.sect-about li#nav-about a,
+body.sect-portfolio li#nav-portfolio a,
+body.sect-contact li#nav-contact a {
+	background-position: 50% -104px;
+	cursor: default;
+	opacity: 1.0;
+}
+body.sect-home li#nav-portfolio,
+body.sect-about li#nav-portfolio,
+body.sect-contact li#nav-about {
+	margin-right: 23.429%;		/* 164px / 700px = 0.23429 */
+}
+
 /* ::::: END - Navigation ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-		footer {
-			width: 100%;
-		}
-		img { border: 0 none; }
-		a {
-			text-decoration: none;
-			color: rgb(255, 255, 255);
-		}
+/* ::::: Content ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.mod {
+	background: url("../img/fade.png") no-repeat 50% 100%;
+	padding-bottom: 3em;	/* 48px / 16px = 3em */
+	margin-bottom: 4em;	/* 60px / 16px = 3.75em */
+}
+.last-mod {
+	background: none;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+}
+.mod .main {
+	float: right;
+	width: 85.339%;	/* 844px / 989px = 0.85339 */
+}
+/* ::::: END - Content :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::: Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#footer {
+	background: url("../img/footer.png") no-repeat 50% 160px;
+	font-size: 0.625em;	/* 10px / 16px = 0.625 */
+	min-height: 279px;
+	padding-top: 160px;
+	text-align: center;
+	position: relative;
+}
+#footer p,
+#footer ul {
+	font-size: 1.2em;	/* 12px / 10px = 1.2 */
+	opacity: 0.5;
+}
+#footer h1 {
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	margin-bottom: 0.25em;
+	padding: 1.6em 0 0.5em;
+}
+#footer h1 a {
+	display: block;
+	margin: 1em auto 0;
+}
+#footer h2 {
+	font-size: 1.1em;	/* 11px / 10px = 1.1 */
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+/* ::::: End - Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-		td, p, div, span, input, textarea {
-			font-family: Arial,Helveltica,sans-serif;
-			font-size: 12px;
-			color: rgb(0, 0, 0);
-			line-height: 130;
-			text-align: left;
-		}
-	/* ::::: Header ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-		header {
-			width: 100%;
-		}
-		.head {
-			background: url('img/head_bg.jpg');
-			background-color: rgb(0, 0, 0);
-			margin: 0 0 0 0;
-			padding: 0 0 0 0;
-			position: absolute;
-			left: 0;
-			top: 0;
-
-		}
-	.topNav {
-			margin: 0 0 0 0;
-			padding: 0 0 0 0;
-
-	}
-	.logo {
-		margin: 0 0 0 0;
-		background: rgb(0,0,0);
-		position: absolute;
-		left: 0;
-		width: 80px;
-		height: 80px;
-	}
-	/* ::::: End - Header ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 	/* ::::: Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
