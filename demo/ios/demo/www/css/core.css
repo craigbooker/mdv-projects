@@ -1,39 +1,26 @@
-
-
-/* :::::   SELF-CLEARING FLOATS ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 .mod:after,
-.entry:after,
-li.comment:after,
-li.day:after,
-ul.thumbs:after,
 #toc:after,
-#epilogue:after {
+#footer:after {
 	content: ".";
 	display: block;
 	height: 0;
 	clear: both;
 	visibility: hidden;
 }
-
-/* :::::   END - SELF-CLEARING FLOATS ::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
 /* ::::: Main Layout :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 /* ::::: BASE STYLES :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 body {
 	background-color: #FFFFFF;
-	background-repeat: no-repeat;
-	background-position: 50% 0;
 	color: #000000;
 	font: normal 1em/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 a {
-	color: #5DDAFF;
+	color: #000000;
 	text-decoration: underline;
 }
 a:hover,
@@ -55,32 +42,23 @@ a.sub:focus {
 }
 
 
-/* ::::: Change log ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-		body {
-
-			list-style: none; /*  Did not add this in. */
-		}
-
-
-
 /* ::::: Layout ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 #page {
-	background: url("../img/bg.jpg") no-repeat 50% 126px;
+	background-color: #FFFFFF;
 	margin: 0 auto;
-	max-width: 75em;
+	/*max-width: 75em; */
 	position: relative;
 }
 
-body.sect-home #page {
-	background-position: 50% 156px;
-}
+
 #logo,
 #toc,
 #content,
-#epilogue {
+#footer {
 	clear: both;
 	margin: 0 auto;
-	width: 95%;
+	padding: 0 auto;
+	width: 100%;
 }
 /* ::::: Title ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -91,32 +69,81 @@ body.sect-home #page {
 
 /* ::::: END - Title ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* ::::: Logo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#logo,
+
+#logo a {
+	display: block;
+	background: url('../img/aslogo.jpg');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	max-width: 743px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+#logo a:hover,
+#logo a:active,
+#logo a:focus {
+	background-color: inherit;
+	opacity: 0.9;
+}
+#logo a img {
+	display: block;
+	margin: 0 auto;
+}
 
 /* ::::: END - Logo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* ::::: Navigation ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 #toc {
 	margin-bottom: 2em;
+	background: url('../img/head_bg.jpg');
+	background-repeat: repeat;
+	background-color: #000000;
 }
 #toc a {
-	background-position: 50% 0;
+	background-position: 50% 0pt;
+	background-color: #000000;
 	background-repeat: no-repeat;
 	display: block;
-	height: 104px;
+	height: 80px;
 	overflow: hidden;
-	opacity: 0.6;
-	text-align: center;
+	text-align: left;
 	text-indent: -1000em;
+}
+
+#toc h2 {
+	position: absolute;
+	left: -1000em;
+}
+#toc ul {
+	margin: 0 auto;
+	padding:  0 auto;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+#toc li {
+	float: left;
+	margin-right: 0;
+	width: 80px;
+}
+#toc li#nav-contact {
+	margin-right: 0pt;
 }
 #toc a:hover,
 #toc a:active,
 #toc a:focus {
-	background-color: inherit;
+	background-color: #000000;
 	opacity: 1.0;
+}
+
+li#nav-logo a {
+	background-image: url("../img/aslogo.png");
 }
 li#nav-home a {
 	background-image: url("../img/nav-home.png");
 }
-li#nav-journal a {
+li#nav-portfolio a {
 	background-image: url("../img/nav-portfolio.png");
 }
 li#nav-about a {
@@ -126,55 +153,35 @@ li#nav-about a {
 li#nav-contact a {
 	background-image: url("../img/nav-contact.png");
 }
-body.sect-home li#nav-home,
-body.sect-portfolio li#nav-portfolio,
-body.sect-about li#nav-about,
-body.sect-contact li#nav-contact {
-	background: url("../img/nav-active.png") no-repeat 50% 60px;
-	left: 41.143%;		/* 288px / 700px = 0.41143 */
-	position: absolute;
-	top: 0;
-}
-
-body.sect-home li#nav-home a,
-body.sect-about li#nav-about a,
-body.sect-portfolio li#nav-portfolio a,
-body.sect-contact li#nav-contact a {
-	background-position: 50% -104px;
-	cursor: default;
-	opacity: 1.0;
-}
-body.sect-home li#nav-portfolio,
-body.sect-about li#nav-portfolio,
-body.sect-contact li#nav-about {
-	margin-right: 23.429%;		/* 164px / 700px = 0.23429 */
-}
 
 /* ::::: END - Navigation ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* ::::: Content ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 .mod {
-	background: url("../img/fade.png") no-repeat 50% 100%;
+	background-color: #FFFFFF;
 	padding-bottom: 3em;	/* 48px / 16px = 3em */
 	margin-bottom: 4em;	/* 60px / 16px = 3.75em */
 }
-.last-mod {
-	background: none;
-	margin-bottom: 2em;
-	padding-bottom: 1em;
-}
+
 .mod .main {
-	float: right;
-	width: 85.339%;	/* 844px / 989px = 0.85339 */
+	float: left;
+	width: 100%;
+	padding: 5px;
 }
+
 /* ::::: END - Content :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
 /* ::::: Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 #footer {
-	background: url("../img/footer.png") no-repeat 50% 160px;
-	font-size: 0.625em;	/* 10px / 16px = 0.625 */
-	min-height: 279px;
-	padding-top: 160px;
+	background-color: #CCCCCC;
+	font-size: 0.725em;	/* 10px / 16px = 0.625 */
+	max-height: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	text-align: center;
 	position: relative;
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+
 }
 #footer p,
 #footer ul {
@@ -201,25 +208,7 @@ body.sect-contact li#nav-about {
 /* ::::: End - Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 
-	/* ::::: Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-		.foot {
-			background: rgb(204, 204, 204);
-			position: relative;
-			text-align: center;
-			font: 11px Arial;
-			color: rgb(0, 0, 0);
-			margin: 5px 0 0 0;
-			padding: 15px 0 15px 0;
-			border-bottom: 1px solid rgb(0, 0, 0);
-			border-top: 1px solid rgb(0, 0, 0);
-		}
-		.foot a {
-			font-weight: bold;
-			font-size: 14px;
-			color: rgb(0, 0, 0); }
-
-	/* ::::: End - Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 	/* ::::: subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -260,7 +249,7 @@ body.sect-contact li#nav-about {
 
 
 /* ::::: Titles ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
+/*
 	h1 {
 		color: rgb(241, 85, 0);
 		font: bold 56px "Helvetica Neue",Arial,Helvetica;
@@ -290,7 +279,7 @@ body.sect-contact li#nav-about {
 	.subtitle01 { float: left; margin-left: 12px; margin-top: 18px; }
 	.subtitle02 { margin-top: 18px; float: right; width: 80; text-align: center; font-weight: bold; color: rgb(241, 85, 0); font-size: 14px; }
 
-
+*/
 
 /* ::::: End - Titles ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -317,83 +306,8 @@ body.sect-contact li#nav-about {
 
 
 /* ::::: Lists :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-	.listtype { margin: 0; padding: 0; }
 
-	.listtype li {
-		margin: 0 0 0 0;
-		padding: 0 0 0 0;
-		list-style: none outside none;
-		background: rgb(255, 255, 255);
-		color: rgb(0, 0, 0);
 
-	}
-
-	.listtype a {
-		background: rgb(255, 255, 255);
-		position: relative;
-		display: block;
-		padding: 5px 0 0 0;
-		text-transform: uppercase;
-		text-align: center;
-		letter-spacing: 2px;
-		font-size: 14px;
-		font-weight: bold;
-		color: rgb(0,0,0);
-	}
-	.nf-demo {
-		background: rgb(255, 255, 255);
-		position: absolute;
-		left: 15px;
-		display: block;
-		padding: 5px 0 0 0;
-		text-transform: uppercase;
-		text-align: left;
-		letter-spacing: 2px;
-		font-size: 14px;
-		font-weight: bold;
-		color: rgb(0,0,0);
-		list-style: none;
-	}
-	.listtype img {
-		position: absolute;
-		left: 12px;
-		top: 12px;
-	}
-
-	.listtype em {
-		display: block;
-		font: 12px Arial;
-		color: rgb(131, 131, 131);
-	}
-	.listtype .light, .listtype .light a {
-		background: rgb(204, 204, 204);
-		text-transform: uppercase;
-		text-align: center;
-		letter-spacing: 2px;
-		font-size: 14px;
-		font-weight: bold;
-		color: rgb(255, 255, 255);
-		margin: 0 0 0 0;
-		padding: 0 0 0 0;
-		display: inline-block;
-		border-bottom: 1px solid rgb(0, 0, 0);
-	}
-	.listtype .ui-bar-divider {
-		background: rgb(204, 204, 204);
-		text-transform: uppercase;
-		text-shadow: 0 1px 0 rgb(25, 25, 25);
-		text-align: center;
-		vertical-align: middle;
-		letter-spacing: 2px;
-		font-size: 14px;
-		font-weight: bold;
-		color: rgb(255, 255, 255);
-		margin: 0 0 0 0;
-		padding: 0 0 0 0;
-		display: inline-block;
-		border-bottom: 1px solid rgb(0, 0, 0);
-		border-top: 1px solid rgb(0, 0, 0);
-	}
 /* ::::: End - Lists :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 
