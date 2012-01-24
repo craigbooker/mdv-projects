@@ -29,40 +29,43 @@ function loaded(){
 
 <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
 </head>
-<body onorientationchange="updateOrientation();" class="about">
+<body onorientationchange="updateOrientation();">
 <div id="wrapper-site"><!-- ::::: wrapper-site :::::  -->
-
-<header>
-	<nav>
-		<div id="head">
-		<div class="logo"><a href="index.html"><img src="" alt="Site Logo" /></a></div>
-		<div class="gnb"><a href="portfolio.html"><img src="img/portfolio1_0.png" alt="Portfolio" height="80" width="80"></div>
-		<div class="gnb"><a href="about.html"><img src="img/about1_0.png"" alt="About" height="80" width="80"></a></div>
-		<div class="gnb"><a href="contact.html"><img src="img/contact1_0.png" alt="Contact" height="80" width="80"></a></div>
+	<header><!-- ::::: header :::::  -->
+		<nav>
+			<div id="head">
+				<div class="logo"><a href="index.html"><img src="" alt="Site Logo" height="80" width="80"/></a></div>
+				<div class="topNav"><a href="portfolio.html"><img src="img/portfolio1_0.png" alt="Portfolio" height="80" width="80">
+					<a href="about.html"><img src="img/about1_0.png" alt="About" height="80" width="80"></a>
+					<a href="contact.html"><img src="img/contact1_0.png" alt="Contact" height="80" width="80"></a>
+				</div>
+			</div><!-- ::::: End - head :::::  -->
+		</nav>
+	</header><!-- ::::: End - header :::::  -->
+	<div id="wrapper-body"><!-- ::::: wrapper-body :::::  -->
+		<div id="body">
+		<h1>Portfolio</h1>
+		<h2>Mobile applications on iOS, Android, web applications.</h2>
+		<div class="contents">
+			<a href="apps/taskmgr/index.html" target="new"><img src="img/appiconblkplstc.png" width="72" height="72" alt="CRUD app icon"></a>
+			<h3>App Details</h3>
+			<div> Inspired by the work of David Allen. David is a well known author and productivity coach. He has written several books, including "Getting Things Done." Getting Things Done (GTD) and David Allen are not associated with Task Manager. GTD is a trademark owned by the David Allen Group.</div>
+			<h2><strong>Adv Visual Frameworks</strong></h2>
+			<strong>Native Features Demo</strong>
+			<ul class="nf-demo">
+				<li><a href="apps/accelerometer/index.html" alt=""><img src="img/accelerometer80x80.gif" width="25" height="25" alt="Accelerometer Example">Accelerometer</a></li>
+				<li><a href="apps/geolocation/index.html" alt=""><img src="img/geolocation80x80.gif" width="25" height="25" alt="Geolocation Example">Geolocation</a></li>
+				<li><a href="apps/notification/index.html" alt=""><img src="img/notifications80x80.gif" width="25" height="25" alt="Notifications Example"> Notification</a></li>
+				<li><a href="apps/camera/index.html" alt="">Camera</a></li>
+				<li><a href="apps/contacts/index.html" alt="">Contacts</a></li>
+			</ul>
+		</div><!-- ::::: End - contents :::::  -->
+	</div><!-- ::::: End - wrapper-body :::::  -->
+	<footer>
+		<div id="foot">
+			© 2011-2012 Appscient, LLC.<br>All rights reserved.
 		</div>
-	</nav>
-</header>
-
-</div>
-<div id="wrapper-body"><!-- ::::: wrapper-body :::::  -->
-	<div id="body">
-
-		<div class="division01">
-		<div class="line01"></div>
-
-	</div>
-
-	<div class="title01">Mobile Application Development</div>
-	<div class="title02">Mobile applications on iOS, Android, web applications.</div>
-	<div class="contents">
-	</div>
-		<div class="division03"></div>
-	</div>
-</div><!-- ::::: End - wrapper-body :::::  -->
-
-<div id="foot">
-	<a href="#">Vimeo</a>&nbsp;&nbsp;| &nbsp;&nbsp;<a href="#">Youtube</a>&nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.twitter.com/appscient" target="_top">Twitter</a><br><br> © 2011-2012 Appscient, LLC.<br>All rights reserved.
-</div>
+	</footer>
 </div><!-- ::::: End - wrapper-site :::::  -->
 
 </body>
