@@ -1,0 +1,11 @@
+/* For older, not so hot browsers */
+
+body {
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: top left;
+	margin: 0;
+	padding: 5%;
+	font-family: sans-serif;
+	color: #333;
+}

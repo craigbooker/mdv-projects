@@ -1,0 +1,102 @@
+/*-  SELF-CLEARING FLOATS
+----------------------------------------------------------------------*/
+.mod,
+.entry,
+li.comment,
+li.day,
+#toc,
+#epilogue {
+	zoom: 1;
+}
+
+
+/*-  ROUNDING ERRORS
+----------------------------------------------------------------------*/
+#toc li {
+	margin-right: 2.71429%;	/* 19ox / 700px = 2.71429e-02 */
+}
+
+.sub-first {
+	margin-right: 16.498%;	/* 163px / 988px = 0.16498 */
+}
+
+#about p.pic {
+	margin: 0;
+}
+
+#peeps li {
+	margin-right: 2.25118%;	/* 19px / 844px = 2.25118e-02 */
+}
+
+
+/*-  LOGO
+----------------------------------------------------------------------*/
+#logo a {
+	z-index: 50;
+}
+
+#logo a:hover,
+#logo a:active,
+#logo a:focus {
+	background-color: transparent;
+}
+
+#logo a img {
+	position: relative;
+}
+
+#logo cite img {
+	position: relative;
+	z-index: 100;
+}
+
+
+/*-  NAVIGATION
+----------------------------------------------------------------------*/
+#toc a {
+	filter: alpha(opacity = 60);
+}
+
+#toc a:hover,
+#toc a:active,
+#toc a:focus {
+	background-color: transparent;
+	filter: alpha(opacity = 100);
+}
+
+body.sect-home li#nav-home a,
+body.sect-about li#nav-about a,
+body.sect-journal li#nav-journal a,
+body.sect-respect li#nav-respect a,
+body.sect-contact li#nav-contact a {
+	filter: alpha(opacity = 100);
+}
+
+
+/*-  CONTENT
+----------------------------------------------------------------------*/
+blockquote {
+	background: #292929;
+}
+
+form th {
+	text-align: left;
+	vertical-align: top;
+	width: 24%;
+}
+
+form th label {
+	display: block;
+	padding-right: 1em;
+}
+
+form td {
+	text-align: left;
+}
+
+
+/*-  FOOTER
+----------------------------------------------------------------------*/
+#epilogue p.pic {
+	left: 0;
+}

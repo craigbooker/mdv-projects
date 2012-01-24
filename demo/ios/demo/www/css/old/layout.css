@@ -10,7 +10,7 @@
 			color: rgb(0, 0, 0);
 			list-style: none;
 		}
-		#wrapper-body {
+		.wrapper-body {
 			width: 960;
 			height: 100;
 			position: absolute;
@@ -18,7 +18,7 @@
 		}
 
 		footer {
-			width: 100;
+			width: 100%;
 		}
 		img { border: 0 none; }
 		a {
@@ -36,7 +36,7 @@
 	/* ::::: Header ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 		header {
-			width: 100;
+			width: 100%;
 		}
 		.head {
 			background: url('img/head_bg.jpg');
@@ -58,8 +58,8 @@
 		background: rgb(0,0,0);
 		position: absolute;
 		left: 0;
-		width: 80;
-		height: 80;
+		width: 80px;
+		height: 80px;
 	}
 	/* ::::: End - Header ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
