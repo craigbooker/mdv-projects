@@ -176,7 +176,7 @@ li#nav-contact a {
 
 #nf-demo ul {
 	margin: 0 auto;
-	padding:  0 auto;
+	padding: 0 0 0 20px;
 	position: relative;
 	text-align: left;
 	width: 100%;
