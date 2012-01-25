@@ -156,7 +156,52 @@ li#nav-about a {
 li#nav-contact a {
 	background-image: url("../img/nav-contact.png");
 }
+/* Native features */
+#nf-demo {
+	margin-bottom: 2em;
+	background-color: #FFFFFF;
+}
+#nf-demo a {
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	display: block;
+	height: 80px;
+	overflow: hidden;
+	position: relative;
+	float: center;
+	text-align: center;
+	text-indent: -100em;
+}
 
+
+#nf-demo ul {
+	margin: 0 auto;
+	padding:  0 auto;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+#nf-demo li {
+	float: left;
+	width: 80px;
+}
+
+li#nat-accel a {
+	background-image: url("../img/icons/accelerometer.gif");
+}
+li#nat-geo a {
+	background-image: url("../img/icons/geolocation.gif");
+}
+li#nat-notif a {
+	background-image: url("../img/icons/notifications.gif");
+}
+li#nat-camera a {
+	background-image: url("../img/icons/camera.gif");
+}
+
+li#nat-contacts a {
+	background-image: url("../img/icons/contacts.gif");
+}
 /* ::::: END - Navigation ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* ::::: Content ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 .mod {
@@ -176,6 +221,40 @@ width: 85%;
 text-align: left;
 
 }
+.page-title {
+	font-size:2.95em;
+	margin: 20px 0px 0px 10px;
+	padding: 2px 4px 5px 4px;
+}
+#crudApp-icon {
+	background-image: url("../img/icons/appiconblkplstc.png");
+	background-repeat: no-repeat;
+	text-align: center;
+	text-indent: -1000em;
+	height: 80px;
+	margin: 0px 0px 20px 20px;
+	padding: 20px 4px 2px 4px;
+}
+
+.sub-title {
+font-size: 1.75em;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 7px 20px;
+}
+.info-title {
+font-size:1.35em;
+margin: 0px 0px 0px 20px;
+padding: 5px 2px 2px 2px;
+}
+
+.info-desc {
+font-size:0.725em;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 15px 2px;
+
+
+}
+
 
 /* ::::: END - Content :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
