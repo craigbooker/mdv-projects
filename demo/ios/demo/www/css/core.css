@@ -101,13 +101,14 @@ a.sub:focus {
 	background-color: #000000;
 }
 #toc a {
-	background-position: 50% 0pt;
 	background-color: #000000;
 	background-repeat: no-repeat;
 	display: block;
 	height: 80px;
 	overflow: hidden;
-	text-align: left;
+	position: relative;
+	float: center;
+	text-align: center;
 	text-indent: -1000em;
 }
 
@@ -127,9 +128,9 @@ a.sub:focus {
 	margin-right: 0;
 	width: 80px;
 }
-#toc li#nav-contact {
+/*#toc li#nav-contact {
 	margin-right: 0pt;
-}
+} */
 #toc a:hover,
 #toc a:active,
 #toc a:focus {
@@ -139,9 +140,11 @@ a.sub:focus {
 
 li#nav-logo a {
 	background-image: url("../img/aslogo.png");
+
 }
 li#nav-home a {
 	background-image: url("../img/nav-home.png");
+	margin-left: 5%;
 }
 li#nav-portfolio a {
 	background-image: url("../img/nav-portfolio.png");
@@ -166,6 +169,12 @@ li#nav-contact a {
 	float: left;
 	width: 100%;
 	padding: 5px;
+}
+
+#contactInfo {
+width: 85%;
+text-align: left;
+
 }
 
 /* ::::: END - Content :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */

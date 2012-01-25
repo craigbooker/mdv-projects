@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <title>Appscient, LLC - Portfolio</title>
 
 <meta name="robots" content="index, follow">
@@ -9,13 +11,16 @@
 
 
 <script type="text/javascript" language="javascript">
-/*function hideAddressBar() {
-	window.scrollTo(0, 1);
-}
 
+/*
 addEventListener('load', function() {
 	setTimeout(hideAddressBar, 0);
-}, false);*/
+}, false);
+
+function hideAddressBar() {
+	window.scrollTo(0, 1);
+}
+*/
 
 window.addEventListener("load", function(){
     setTimeout(loaded, 100);
@@ -26,22 +31,45 @@ function loaded(){
 
 </script>
 
-
+<!-- ::::: CSS ::::: -->
 <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+
+	<!--[if IE]>
+	<link rel="stylesheet" href="css/patches/win-ie-all.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="/css/patches/win-ie7.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" href="/css/patches/win-ie-old.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+
+	<!-- to help IE recognise the new HTML tags -->
+	<!--[if lte IE 8]>
+		<script src="/js/html5.js"></script>
+		<script src="/js/css3-mediaqueries.js"></script>
+	<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px) and (resolution: 163dpi)" href="mobile480.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 320px)" href="mobile320.css" />
+<link rel="stylesheet" type="text/css" href="/css/print.css" media="print"  />
+<!-- ::::: sorcery ::::: -->
+
 </head>
-<body onorientationchange="updateOrientation();">
-<div id="wrapper-site" class="wrapper-site"><!-- ::::: wrapper-site :::::  -->
-	<header><!-- ::::: header :::::  -->
-		<nav>
-			<div id="head" class="head">
-				<div class="logo"><a href="index.html"><img src="" alt="Site Logo" height="80" width="80"/></a></div>
-				<div class="topNav"><a href="portfolio.html"><img src="img/portfolio1_0.png" alt="Portfolio" height="80" width="80">
-					<a href="about.html"><img src="img/about1_0.png" alt="About" height="80" width="80"></a>
-					<a href="contact.html"><img src="img/contact1_0.png" alt="Contact" height="80" width="80"></a>
-				</div>
-			</div><!-- ::::: End - head :::::  -->
-		</nav>
-	</header><!-- ::::: End - header :::::  -->
+<body onorientationchange="updateOrientation();" class="sect-home">
+<div id="page">
+		<div id="toc">
+			<ul>
+				<li id="nav-logo"><a href="index.html">Logo</a></li>
+				<li id="nav-home"><a href="index.html">Home</a></li>
+				<li id="nav-portfolio"><a href="portfolio.html">Portfolio</a></li>
+				<li id="nav-about"><a href="about.html">About</a></li>
+				<li id="nav-contact"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div><!-- ::::: End - #toc :::::  -->
+<div id="content">
+
+	<div class="mod">
+		<div class="main">
 	<div id="wrapper-body" class="wrapper-body"><!-- ::::: wrapper-body :::::  -->
 		<div id="body" class="body">
 		<h1>Portfolio</h1>
@@ -53,19 +81,27 @@ function loaded(){
 			<h2><strong>Adv Visual Frameworks</strong></h2>
 			<strong>Native Features Demo</strong>
 			<ul class="nf-demo">
-				<li><a href="apps/accelerometer/index.html" alt=""><img src="img/accelerometer80x80.gif" width="25" height="25" alt="Accelerometer Example">Accelerometer</a></li>
-				<li><a href="apps/geolocation/index.html" alt=""><img src="img/geolocation80x80.gif" width="25" height="25" alt="Geolocation Example">Geolocation</a></li>
-				<li><a href="apps/notification/index.html" alt=""><img src="img/notifications80x80.gif" width="25" height="25" alt="Notifications Example"> Notification</a></li>
-				<li><a href="apps/camera/index.html" alt="">Camera</a></li>
-				<li><a href="apps/contacts/index.html" alt="">Contacts</a></li>
+				<li><a href="apps/accelerometer/index.html" alt=""><img src="img/icons/accelerometer80x80.gif" width="25" height="25" alt="Accelerometer Example">Accelerometer</a></li>
+				<li><a href="apps/geolocation/index.html" alt=""><img src="img/icons/geolocation80x80.gif" width="25" height="25" alt="Geolocation Example">Geolocation</a></li>
+				<li><a href="apps/notification/index.html" alt=""><img src="img/icons/notifications80x80.gif" width="25" height="25" alt="Notifications Example"> Notification</a></li>
+				<li><a href="apps/camera/index.html" alt=""><img src="img/icons/camera80x80.gif" width="25" height="25" alt="Camera Example">Camera</a></li>
+				<li><a href="apps/contacts/index.html" alt=""><img src="img/icons/contacts80x80.gif" width="25" height="25" alt="Contacts Example">Contacts</a></li>
 			</ul>
 		</div><!-- ::::: End - contents :::::  -->
 	</div><!-- ::::: End - wrapper-body :::::  -->
-	<footer>
-		<div id="foot" class="foot">
-			© 2011-2012 Appscient, LLC.<br>All rights reserved.
-		</div>
-	</footer>
+
+		</div><!-- ::::: End - .main :::::  -->
+	</div><!-- ::::: End - .mod :::::  -->
+</div><!-- ::::: End - .content :::::  -->
+</div><!-- ::::: End - #page :::::  -->
+
+<footer>
+	<div id="footer">
+	<a href="index.html" target="_top">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="about.html">About</a><a href="#"></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact</a><br><br>
+	© 2011-2012 Appscient, LLC.
+	<br>All rights reserved.
+	</div>
+</footer>
 </div><!-- ::::: End - wrapper-site :::::  -->
 
 </body>
