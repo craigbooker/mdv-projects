@@ -69,39 +69,40 @@ function loaded(){
 
 	<div class="mod">
 		<div class="main">
+		<h1 class="page-title">Contact</h1>
+			<div class="item">
+				<ul>
+					<li class="info-text">Our website: <a href="http://www.appscient.net/">www.appscient.net</a></li>
+					<li class="info-text">Twitter: <a href="http://www.twitter.com/appscient" target="_top">@appscient</a></li>
+				</ul>
+			</div><!-- ::::: End - .item :::::  -->
+		<h2 class="sub-title">Need to get a hold of us?  Fill out the form below.</h2>
+		<div class="mod-form">
 
-		<!-- +++++++++++++++   Need to replace this table  +++++++++++++++    -->
-	<div id="contactInfo">
-	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-	<tbody><tr>
-	<td class="fild01" valign="top">address.</td>
-	<td class="fild02" valign="top">
+			<form action="#" method="post" id="addTaskForm" name="addTaskForm">
+				<fieldset id="taskFieldset">
+					<div id="errors"  style="display:none;"></div>
+					<div class="ui-field-contain ui-body ui-br">
+						<label for="inbox" class="form-label">Name:</label><br/>
+						<input type="text" name="inbox" id="name" class="input" value="" placeholder="Your Name">
+					</div>
+					<div class="form-tbox">
+						<label for="project" class="form-label">Company: (If applicable)</label><br/>
+						<input type="text" name="project" id="project" class="input" value="" placeholder="Company Name">
+					</div>
 
-	<a href="http://maps.google.co.kr/maps?q=fxnine&amp;hl=ko&amp;cd=1&amp;ei=O7fpS5LUFIqwsAP1xrjyCg&amp;sll=36.430122,128.056641&amp;sspn=4.127358,7.141113&amp;ie=UTF8&amp;view=map&amp;cid=7134150877157033096&amp;ved=0CBYQpQY&amp;hq=fxnine&amp;hnear=&amp;ll=37.522814,127.029462&amp;spn=0.007948,0.013947&amp;z=16&amp;iwloc=A"><br><br></a></td>
-	</tr>
-	<tr>
-	<td class="fild01" valign="top">telephone.</td>
-	<td class="fild02" valign="top"><a href="tel:024494122">()</a></td>
-	</tr>
-	<tr>
-	<td class="fild01" valign="top">fax.</td>
-	<td class="fild02" valign="top"><a href="tel:024094122">()</a></td>
-	</tr>
-	<tr>
-	<td class="fild01" valign="top">e-mail.</td>
-	<td class="fild02" valign="top"><a href="mailto:info@appscient.net">info@appscient.net</a></td>
-	</tr>
-	<tr>
-	<td class="fild01" valign="top">website.</td>
-	<td class="fild02" valign="top"><a href="http://www.appscient.net/">www.appscient.net</a></td>
-	</tr>
-	<tr>
-	<td class="fild01" valign="top">twitter.</td>
-	<td class="fild02" valign="top"><a href="http://www.twitter.com/appscient" target="_top">@appscient</a></td>
-	</tr>
-	</tbody></table>
-<!-- +++++++++++++++  End - Need to replace this table  +++++++++++++++    -->
-</div><!-- ::::: End - table :::::  -->
+					<div class="form-tbox">
+						<label for="name" class="form-label">Subject:</label><br/>
+						<input type="text" name="name" id="name" value="" placeholder="Reason for Contacting Us">
+					</div>
+					<div class="form-tbox">
+	  					<label for="notes" class="form-textbox">Notes:</label><br/>
+						<textarea cols="40" rows="8" name="notes" id="notes" placeholder=""></textarea>
+	  				</div><!--/Notes Field -->
+					<input type="submit" aria-disabled="false" value="Save Task"><span aria-hidden="true"></span><button type="clear" aria-disabled="false">Clear</button><!--/Submit Buttons -->
+		    </form>
+		    </div><!-- ::::: End - form :::::  -->
+
 		</div><!-- ::::: End - .main :::::  -->
 	</div><!-- ::::: End - .mod :::::  -->
 </div><!-- ::::: End - .content :::::  -->

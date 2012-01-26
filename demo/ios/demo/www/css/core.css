@@ -239,23 +239,47 @@ text-align: left;
 .sub-title {
 font-size: 1.75em;
 margin: 0px 0px 0px 20px;
-padding: 2px 2px 7px 20px;
+padding: 2px 2px 7px 10px;
 }
+
 .info-title {
 font-size:1.35em;
 margin: 0px 0px 0px 20px;
 padding: 5px 2px 2px 2px;
 }
-
+.info-subtitle {
+font-size: 1.25em;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 7px 0px;
+}
+.info-text {
+font-size: 1.25em;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 7px 0px;
+}
 .info-desc {
 font-size:0.725em;
 margin: 0px 0px 0px 20px;
 padding: 2px 2px 15px 2px;
-
-
 }
 
+.info-link {
+font-size: 1.25em;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 7px 0px;
+text-decoration: underline;
+}
+.info-img {
+font-size:0.725em;
+border: 0;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 15px 2px;
+}
+.mod-form {
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 15px 2px;
 
+}
 /* ::::: END - Content :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 /* ::::: Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -409,7 +433,39 @@ padding: 2px 2px 15px 2px;
 
 }
 
+.form-title {
+font-size:1.35em;
+margin: 0px 0px 0px 20px;
+padding: 5px 2px 2px 2px;
+}
+.form-subtitle {
+font-size: 1.25em;
+margin: 0px 0px 0px 0px;
+padding: 2px 2px 7px 0px;
+}
+.form-tbox {
+font-size: 1.25em;
+margin: 0px 0px 0px 0px;
+padding: 5px 0px 5px 0px;
+}
+.form-desc {
+font-size:0.725em;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 15px 2px;
+}
 
+.form-link {
+font-size: 1.25em;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 7px 0px;
+text-decoration: underline;
+}
+.form-img {
+font-size:0.725em;
+border: 0;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 15px 2px;
+}
 /* ::::: End - Form Elements :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 
