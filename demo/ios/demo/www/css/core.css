@@ -57,7 +57,7 @@ a.sub:focus {
 }
 
 
-#logo,
+
 #toc,
 #content,
 #footer {
@@ -208,6 +208,21 @@ li#nat-camera a {
 li#nat-contacts a {
 	background-image: url("../img/icons/contacts.gif");
 }
+	/* ::::: subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+		.subNav {
+			margin: 0 0 0 0;
+			padding: 2px 5px 5px 5px;
+			color: rgb(0,0,0);
+
+		}
+		.subNav img {
+			width: 100;
+			height: auto;
+		}
+
+
+	/* ::::: End - subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* ::::: END - Navigation ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* ::::: Content ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 .mod {
@@ -219,13 +234,20 @@ li#nat-contacts a {
 .mod .main {
 	float: left;
 	width: 100%;
-	margin: 0px 0px 0px 20px;
+	margin: 0px 0px 0px 15px;
 	padding: 5px 5px 5px 5px;
 }
 
+.sub-mod {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
 #contactInfo {
-width: 85%;
-text-align: left;
+	width: 85%;
+	text-align: left;
 
 }
 .page-title {
@@ -233,20 +255,29 @@ text-align: left;
 	margin: 20px 0px 0px 0px;
 	padding: 2px 4px 5px 4px;
 }
+.page-subtitle {
+	font-size: 1.75em;
+	margin: 0;
+	padding: 2px 2px 20px 0px;
+}
 #crudApp-icon {
 	background-image: url("../img/icons/appiconblkplstc.png");
 	background-repeat: no-repeat;
 	text-align: center;
 	text-indent: -1000em;
 	height: 80px;
-	margin: 0px 0px 20px 0px;
-	padding: 20px 0px 2px 0px;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 0px 0px;
 }
-
+#crudApp-title {
+	font-size: 1.75em;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+}
 .sub-title {
 	font-size: 1.75em;
 	margin: 0;
-	padding: 2px 2px 7px 5px;
+	padding: 5px 2px 5px 5px;
 }
 
 .mod-title {
@@ -257,7 +288,7 @@ text-align: left;
 .mod-subtitle {
 	font-size: 1.25em;
 	margin: 0;
-	padding: 2px 2px 7px 0px;
+	padding: 2px 2px 5px 0px;
 }
 .mod-text {
 	font-size: 1.25em;
@@ -329,21 +360,7 @@ text-align: left;
 
 
 
-	/* ::::: subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-		.subNav {
-			margin: 0 0 0 0;
-			padding: 2px 5px 5px 5px;
-			color: rgb(0,0,0);
-
-		}
-		.subNav img {
-			width: 100;
-			height: auto;
-		}
-
-
-	/* ::::: End - subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 	/* ::::: Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -401,33 +418,6 @@ text-align: left;
 */
 
 /* ::::: End - Titles ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
-/* ::::: Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-    .button {
-        background: none repeat scroll 0 0 rgb(153, 0, 0);
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 9px;
-        font-weight: normal;
-        margin: 5px 5px 5px 5px;
-        padding: 8px 12px;
-        display: inline-block;
-        border-radius: 4px 4px 4px 4px;
-        cursor: pointer;
-        font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif; }
-
-
-
-/* ::::: End - Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
-/* ::::: Lists :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
-/* ::::: End - Lists :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 
 /* ::::: Form Elements :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */

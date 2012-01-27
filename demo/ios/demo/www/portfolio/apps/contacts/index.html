@@ -3,37 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<title>Appscient, LLC - Projects - Apps - Contacts</title>
+<title>Appscient, LLC - Portfolio - Apps - Contacts</title>
 
 <meta name="robots" content="index, follow">
 <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no">
 
 <script charset="utf-8" src="../../../js/phonegap-1.3.0.js"></script>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<script src="../../../js/aslib.js"></script>
 	<script src="../../../js/jquery.min.js"></script>
 	<link rel="stylesheet" href="../../../js/flexslider/flexslider.css" type="text/css">
 	<script src="../../../js/flexslider/jquery.flexslider.js"></script>
+    <!-- script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script -->
+
 <script type="text/javascript" language="javascript">
 
-/*
-addEventListener('load', function() {
-	setTimeout(hideAddressBar, 0);
-}, false);
-
-function hideAddressBar() {
-	window.scrollTo(0, 1);
-}
-*/
-
-window.addEventListener("load", function(){
-    setTimeout(loaded, 100);
-}, false);
-function loaded(){
-    window.scrollTo(0, 1);
-}
-
-</script>
+    </script>
 
 <!-- ::::: CSS ::::: -->
 <link rel="stylesheet" type="text/css" href="../../../css/index.css" media="all">
@@ -53,9 +37,9 @@ function loaded(){
 		<script src="/js/html5.js"></script>
 		<script src="/js/css3-mediaqueries.js"></script>
 	<![endif]-->
-<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px) and (resolution: 163dpi)" href="mobile480.css" />
-<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 320px)" href="mobile320.css" />
-<link rel="stylesheet" type="text/css" href="/css/print.css" media="print"  />
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px) and (resolution: 163dpi)" href="css/mobile480.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 320px)" href="xss/mobile320.css" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print"  />
 <!-- ::::: sorcery ::::: -->
 
 </head>
@@ -63,11 +47,11 @@ function loaded(){
 <div id="page">
 		<div id="toc">
 			<ul>
-				<li id="nav-logo"><a href="index.html">Logo</a></li>
-				<li id="nav-home"><a href="index.html">Home</a></li>
-				<li id="nav-portfolio"><a href="portfolio.html">Portfolio</a></li>
-				<li id="nav-about"><a href="about.html">About</a></li>
-				<li id="nav-contact"><a href="contact.html">Contact</a></li>
+				<li id="nav-logo"><a href="../../../index.html">Logo</a></li>
+				<li id="nav-home"><a href="../../../index.html">Home</a></li>
+				<li id="nav-portfolio"><a href="../../../portfolio.html">Portfolio</a></li>
+				<li id="nav-about"><a href="../../../about.html">About</a></li>
+				<li id="nav-contact"><a href="../../../contact.html">Contact</a></li>
 			</ul>
 		</div><!-- ::::: End - #toc :::::  -->
 <div id="content">
@@ -76,8 +60,14 @@ function loaded(){
 		<div class="main">
 		<h1 class="page-title">Contacts</h1>
 			<h3 class="mod-title"></h3>
+			<div class="mod-text"></div>
+<!-- Geolocation Demo -->
+					<p class="message" id="statusMessage"></p>
 			<div class="mod-text">Nothing to show just yet.  I will update once I have something.</div>
 
+						</div>
+						<!--div id="map_canvas">Used for google maps </div-->
+				</div>
 
 		</div><!-- ::::: End - .main :::::  -->
 	</div><!-- ::::: End - .mod :::::  -->
