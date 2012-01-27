@@ -3,6 +3,7 @@ var element = function(id) { return document.getElementById(id); }
 var errorMessage = undefined;
 var elStatus;
 
+/*
 function getOpenDatabase() {
     try {
         if( !! window.openDatabase ) return window.openDatabase;
@@ -29,6 +30,7 @@ function getSessionStorage() {
         return undefined;
     }
 }
+*/
 
 function dispError( message ) {
     errorMessage = '<p class="error">' + message + '</p>';
@@ -43,8 +45,7 @@ function statusMessage(s) {
     else elStatus.innerHTML = '&nbsp;';
 }
 
-
-function bwTable( wrap ) {
+function createTable( wrap ) {
     this.wrap = ( wrap == undefined ) ? true : wrap;    // default to true
     this.rows = new Array();
     this.header = [];
@@ -69,9 +70,11 @@ function bwTable( wrap ) {
         return this.rows.length;
     }
 
+
+
     this.getTableHTML = function () {
         var a = '';
-        if(this.wrap) a += '<table class="bwTable">\n';
+        if(this.wrap) a += '<table class="table">\n';
         a += this.getHeaderHTML();
         for(var row in this.rows) {
             a += this.getRowHTML(this.rows[row]);

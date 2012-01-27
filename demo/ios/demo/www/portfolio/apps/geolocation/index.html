@@ -2,21 +2,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>Craig Booker</title>
-	<script charset="utf-8" src="../../../js/phonegap-1.3.0.js"></script>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>Appscient, LLC - Projects - Apps - Geolocation</title>
+
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no">
+
+<script charset="utf-8" src="../../../js/phonegap-1.3.0.js"></script>
 	<script src="../../../js/aslib.js"></script>
 	<script src="../../../js/jquery.min.js"></script>
 	<link rel="stylesheet" href="../../../js/flexslider/flexslider.css" type="text/css">
 	<script src="../../../js/flexslider/jquery.flexslider.js"></script>
-	<script src="../../../js/aslib.js"></script>
-    <!--script type="text/javascript" src="http://cdn.sublimevideo.net/js/vcigk9we.js"></script-->
+    <!-- script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script -->
 
-	<link rel="stylesheet" type="text/css" href="../../../css/index.css" media="all">
-    <!--script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script-->
-    <script type="text/javascript">
-        var t = new bwTable();
+<script type="text/javascript" language="javascript">
+        var t = new createTable();
+       /* var ul = new createUL(); */
         var geo;
+
+
 
         function getGeoLocation() {
             try {
@@ -27,13 +31,22 @@
             }
         }
 
-        function showCoords(position) {
+        function showCoordsOld(position) {
             var lat = position.coords.latitude;
             var lon = position.coords.longitude;
             t.updateRow(0, [ lat.toString(), lon.toString() ] );
+			ul.updateLi(0, [ lat.toString(), lon.toString() ] );
             dispResults();
         }
+         function showCoords(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            lat = ['Latitude: ' + (lat.toString())];
+            lon = ['Longitude: ' + (lon.toString())];
 
+            element('latitude').innerHTML = lat;
+			element('longitude').innerHTML = lon;
+        }
         function geoError(error) {
             switch(error.code) {
                 case error.TIMEOUT:
@@ -50,15 +63,10 @@
             }
         }
 
-        function dispResults() {
-            element('results').innerHTML = t.getTableHTML();
-        }
-
         function init() {
             if((geo = getGeoLocation())) {
                 statusMessage('Using HTML5 Geolocation')
-                t.setHeader( [ 'Latitude', 'Longitude' ] );
-                t.addRow( [ '&nbsp;', '&nbsp;' ] );
+
             } else {
                 statusMessage('HTML5 Geolocation is not supported.')
             }
@@ -73,86 +81,75 @@
             init();
         }
     </script>
+
+<!-- ::::: CSS ::::: -->
+<link rel="stylesheet" type="text/css" href="../../../css/index.css" media="all">
+
+	<!--[if IE]>
+	<link rel="stylesheet" href="css/patches/win-ie-all.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="/css/patches/win-ie7.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" href="/css/patches/win-ie-old.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+
+	<!-- to help IE recognise the new HTML tags -->
+	<!--[if lte IE 8]>
+		<script src="/js/html5.js"></script>
+		<script src="/js/css3-mediaqueries.js"></script>
+	<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px) and (resolution: 163dpi)" href="css/mobile480.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 320px)" href="xss/mobile320.css" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print"  />
+<!-- ::::: sorcery ::::: -->
+
 </head>
-<body class="site-appscient">
-<div class="main-block main-block-masterHeader">
-	<div id="masthead">
-		<div class="container">
-			<h2>Craig Booker</h2>
-			<div class="main-navigation-primary">
-				<ul class="main-navigation">
-					<li>
-					<a indepth="true" href="../../../index.html">Home</a>
-					</li>
-					<li>
-					<a indepth="true" href="../../index.html">Portfolio</a>
-					</li>
-					<li>
-					<a indepth="true" href="#" alt="Will add link soon!">Blog</a>
-					</li>
-					<li>
-					<a indepth="true" href="../index.html#screencasts">Screencasts</a>
-					</li>
-					<li>
-					<a indepth="true" href="../index.html#research">Research</a>
-					</li>
-					<li>
-					<a indepth="true" href="../index.html#about">About</a>
-					</li>
-					<li>
-					<a indepth="true" href="../index.html#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div> <!-- .container -->
-	</div> <!-- .masthead -->
+<body onorientationchange="updateOrientation();" class="sect-home">
+<div id="page">
+		<div id="toc">
+			<ul>
+				<li id="nav-logo"><a href="index.html">Logo</a></li>
+				<li id="nav-home"><a href="index.html">Home</a></li>
+				<li id="nav-portfolio"><a href="portfolio.html">Portfolio</a></li>
+				<li id="nav-about"><a href="about.html">About</a></li>
+				<li id="nav-contact"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div><!-- ::::: End - #toc :::::  -->
+<div id="content">
 
-</div>
-<div class="main-block main-block-element main-block-html">
-	<div id="cta">
-		<div class="container">
-			<div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="ci-slideshow">
-
-
-			</div>
-			<div class="clear"></div>
-		</div> <!-- CTA - Container -->
-	</div><!-- CTA -->
-</div><!-- Main block -->
-<div class="main-block main-block-backsections">
-	<div id="primaryContent">
-		<div class="container">
-			<div id="leftCol">
+	<div class="mod">
+		<div class="main">
+		<h1 class="page-title">Geolocation</h1>
+			<h3 class="mod-title"></h3>
+			<div class="mod-text"></div>
 <!-- Geolocation Demo -->
-				<h3>Geolocation</h3>
-				<a href="../../../index.html">Back to Main</a>
-
-				<div id="content">
 					<p class="message" id="statusMessage"></p>
 						<div id="results">
 							<!-- Geolocation results show here -->
+						<ul>
+							<li id="latitude"></li>
+							<li id="longitude"></li>
+
+						</ul>
 						</div>
 						<!--div id="map_canvas">Used for google maps </div-->
 				</div>
-			</div><!-- leftCol - Container -->
-		</div><!-- primaryContent - Container -->
-		<div class="clear"></div>
+
+		</div><!-- ::::: End - .main :::::  -->
+	</div><!-- ::::: End - .mod :::::  -->
+</div><!-- ::::: End - .content :::::  -->
+</div><!-- ::::: End - #page :::::  -->
+
+<footer>
+	<div id="footer">
+	<a href="index.html" target="_top">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="about.html">About</a><a href="#"></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact</a><br><br>
+	© 2011-2012 Appscient, LLC.
+	<br>All rights reserved.
 	</div>
-</div>
-<div class="main-block main-block-element main-block-html">
-<div id="footer">
-    <div class="container">
-		<div id="footer-details">
-			<p><em>Appscient, LLC</em> © 2012 <a href="http://www.appscient.net">Appscient, LLC</a></p>
-		</div>
-		<div class="toggle-clear"></div>
-	</div><!-- footer - Container -->
-</div>
-</div>
-<div id="bottombar">
-    <div class="container">
-        <div class="clear"></div>
-    </div>
-</div>
+</footer>
+</div><!-- ::::: End - wrapper-site :::::  -->
+
 </body>
 </html>

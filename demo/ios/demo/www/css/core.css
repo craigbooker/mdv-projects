@@ -40,6 +40,12 @@ a.sub:hover,
 a.sub:focus {
 	color: #3C9;
 }
+.mod-table {
+	font-family: Arial,Helveltica,sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	color: rgb(0, 0, 0);
+}
 
 
 /* ::::: Layout ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -213,7 +219,8 @@ li#nat-contacts a {
 .mod .main {
 	float: left;
 	width: 100%;
-	padding: 5px;
+	margin: 0px 0px 0px 20px;
+	padding: 5px 5px 5px 5px;
 }
 
 #contactInfo {
@@ -223,7 +230,7 @@ text-align: left;
 }
 .page-title {
 	font-size:2.95em;
-	margin: 20px 0px 0px 10px;
+	margin: 20px 0px 0px 0px;
 	padding: 2px 4px 5px 4px;
 }
 #crudApp-icon {
@@ -232,52 +239,52 @@ text-align: left;
 	text-align: center;
 	text-indent: -1000em;
 	height: 80px;
-	margin: 0px 0px 20px 20px;
-	padding: 20px 4px 2px 4px;
+	margin: 0px 0px 20px 0px;
+	padding: 20px 0px 2px 0px;
 }
 
 .sub-title {
-font-size: 1.75em;
-margin: 0px 0px 0px 20px;
-padding: 2px 2px 7px 10px;
+	font-size: 1.75em;
+	margin: 0;
+	padding: 2px 2px 7px 5px;
 }
 
-.info-title {
-font-size:1.35em;
-margin: 0px 0px 0px 20px;
-padding: 5px 2px 2px 2px;
+.mod-title {
+	font-size:1.35em;
+	margin: 0;
+	padding: 5px 2px 2px 2px;
 }
-.info-subtitle {
-font-size: 1.25em;
-margin: 0px 0px 0px 20px;
-padding: 2px 2px 7px 0px;
+.mod-subtitle {
+	font-size: 1.25em;
+	margin: 0;
+	padding: 2px 2px 7px 0px;
 }
-.info-text {
-font-size: 1.25em;
-margin: 0px 0px 0px 20px;
-padding: 2px 2px 7px 0px;
+.mod-text {
+	font-size: 1.25em;
+	margin: 0;
+	padding: 2px 2px 7px 0px;
 }
-.info-desc {
-font-size:0.725em;
-margin: 0px 0px 0px 20px;
-padding: 2px 2px 15px 2px;
+.mod-desc {
+	font-size:0.725em;
+	margin: 0;
+	padding: 2px 2px 15px 2px;
 }
 
-.info-link {
-font-size: 1.25em;
-margin: 0px 0px 0px 20px;
-padding: 2px 2px 7px 0px;
-text-decoration: underline;
+.mod-link {
+	font-size: 1.25em;
+	margin: 0;
+	padding: 2px 2px 7px 0px;
+	text-decoration: underline;
 }
-.info-img {
-font-size:0.725em;
-border: 0;
-margin: 0px 0px 0px 20px;
-padding: 2px 2px 15px 2px;
+.mod-img {
+	font-size:0.725em;
+	border: 0;
+	margin: 0;
+	padding: 2px 2px 15px 2px;
 }
 .mod-form {
-margin: 0px 0px 0px 20px;
-padding: 2px 2px 15px 2px;
+	margin: 0;
+	padding: 2px 2px 15px 2px;
 
 }
 /* ::::: END - Content :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */

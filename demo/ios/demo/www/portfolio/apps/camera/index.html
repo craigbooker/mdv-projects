@@ -2,18 +2,36 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Craig Booker</title>
-	<script charset="utf-8" src="../../../js/phonegap-1.3.0.js"></script>
+
+<title>Appscient, LLC - Projects - Apps - Accelerometer</title>
+
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no">
+
+<script charset="utf-8" src="../../../js/phonegap-1.3.0.js"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<script src="../../../js/aslib.js"></script>
 	<script src="../../../js/jquery.min.js"></script>
 	<link rel="stylesheet" href="../../../js/flexslider/flexslider.css" type="text/css">
 	<script src="../../../js/flexslider/jquery.flexslider.js"></script>
-	<script src="../../../js/aslib.js"></script>
-    <!--script type="text/javascript" src="http://cdn.sublimevideo.net/js/vcigk9we.js"></script-->
+<script type="text/javascript" language="javascript">
 
-	<link rel="stylesheet" type="text/css" href="../../../css/index.css" media="all">
-  <script type="text/javascript" charset="utf-8">
+/*
+addEventListener('load', function() {
+	setTimeout(hideAddressBar, 0);
+}, false);
+
+function hideAddressBar() {
+	window.scrollTo(0, 1);
+}
+*/
+
+window.addEventListener("load", function(){
+    setTimeout(loaded, 100);
+}, false);
+function loaded(){
+    window.scrollTo(0, 1);
+}
 
     var pictureSource;   // picture source
     var destinationType; // sets the format of returned value
@@ -99,97 +117,71 @@
     }
 
     </script>
+
+<!-- ::::: CSS ::::: -->
+<link rel="stylesheet" type="text/css" href="../../../css/index.css" media="all">
+
+	<!--[if IE]>
+	<link rel="stylesheet" href="css/patches/win-ie-all.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="/css/patches/win-ie7.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" href="/css/patches/win-ie-old.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+
+	<!-- to help IE recognise the new HTML tags -->
+	<!--[if lte IE 8]>
+		<script src="/js/html5.js"></script>
+		<script src="/js/css3-mediaqueries.js"></script>
+	<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px) and (resolution: 163dpi)" href="mobile480.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 320px)" href="mobile320.css" />
+<link rel="stylesheet" type="text/css" href="/css/print.css" media="print"  />
+<!-- ::::: sorcery ::::: -->
+
 </head>
-<body class="site-appscient">
-<div class="main-block main-block-masterHeader">
-	<div id="masthead">
-		<div class="container">
-			<h2>Craig Booker</h2>
-			<div class="main-navigation-primary">
-				<ul class="main-navigation">
-					<li>
-					<a indepth="true" href="../../../index.html">Home</a>
-					</li>
-					<li>
-					<a indepth="true" href="../../index.html">Portfolio</a>
-					</li>
-					<li>
-					<a indepth="true" href="#" alt="Will add link soon!">Blog</a>
-					</li>
-					<li>
-					<a indepth="true" href="../index.html#screencasts">Screencasts</a>
-					</li>
-					<li>
-					<a indepth="true" href="../index.html#research">Research</a>
-					</li>
-					<li>
-					<a indepth="true" href="../index.html#about">About</a>
-					</li>
-					<li>
-					<a indepth="true" href="../index.html#contact">Contact</a>
-					</li>
-				</ul>
+<body onorientationchange="updateOrientation();" class="sect-home">
+<div id="page">
+		<div id="toc">
+			<ul>
+				<li id="nav-logo"><a href="index.html">Logo</a></li>
+				<li id="nav-home"><a href="index.html">Home</a></li>
+				<li id="nav-portfolio"><a href="portfolio.html">Portfolio</a></li>
+				<li id="nav-about"><a href="about.html">About</a></li>
+				<li id="nav-contact"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div><!-- ::::: End - #toc :::::  -->
+<div id="content">
+
+	<div class="mod">
+		<div class="main">
+		<h1 class="page-title">Camera</h1>
+			<p class="message" id="statusMessage"></p>
+			<div>
+			  <button onclick="capturePhoto();">Capture Photo</button> <br>
+<button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
+<button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+<button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+<img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+<img style="display:none;" id="largeImage" src="" />
+
 			</div>
-		</div> <!-- .container -->
-	</div> <!-- .masthead -->
-</div>
-<div class="main-block main-block-element main-block-html">
-	<div id="cta">
-		<div class="container">
-			<div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="ci-slideshow">
-				<div style="" class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="slideshow-1">
-				</div>
-								<a href="../../index.html">Back to Main</a>
-			</div>
-			<div class="clear"></div>
-		</div> <!-- CTA - Container -->
-	</div><!-- CTA -->
-</div><!-- Main block -->
-<div class="main-block main-block-backsections">
-	<div id="primaryContent">
-		<div class="container">
-			<div id="info">
-				<h3>Camera</h3>
-				<div id="content">
-					<p class="message" id="statusMessage"></p>
-					<div>
-					  <button onclick="capturePhoto();">Capture Photo</button> <br>
-    <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
-    <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
-    <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
-    <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
-    <img style="display:none;" id="largeImage" src="" />
-						<p><a href="#" id="btnAlert">Show Alert</a></p>
-						<p><a href="#" id="btnBeep">Play Beep</a></p>
-						<p><a href="#" id="btnVibrate">Vibrate</a></p>
-					</div>
-				</div>
-			</div>
-			<div id="sections">
-			</div><!-- Sections -->
-		</div><!-- ABOUT - Container -->
-		<div class="clear"></div>
+
+		</div><!-- ::::: End - .main :::::  -->
+	</div><!-- ::::: End - .mod :::::  -->
+</div><!-- ::::: End - .content :::::  -->
+</div><!-- ::::: End - #page :::::  -->
+
+<footer>
+	<div id="footer">
+	<a href="index.html" target="_top">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="about.html">About</a><a href="#"></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact</a><br><br>
+	© 2011-2012 Appscient, LLC.
+	<br>All rights reserved.
 	</div>
-</div>
-<div class="main-block main-block-element main-block-html">
-<div id="footer">
-    <div class="container">
-		<div id="footer-details">
-			<p></p>
-<p>  <a href="http://www.appscient.net"><em>Appscient, LLC © 2012</em></a> </p>
-		</div>
-		<div class="toggle-clear"></div>
-	</div><!-- screencasts - Container -->
-</div>
-</div>
+</footer>
+</div><!-- ::::: End - wrapper-site :::::  -->
 
-
-
-<div id="bottombar">
-    <div class="container">
-
-        <div class="clear"></div>
-    </div>
-</div>
 </body>
 </html>
