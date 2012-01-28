@@ -322,7 +322,7 @@ li#nat-contacts a {
 
 /* ::::: Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 #footer {
-	background-color: #CCCCCC;
+	background-color: #FFFFFF;
 	font-size: 0.725em;	/* 10px / 16px = 0.625 */
 	max-height: 100px;
 	padding-top: 20px;
@@ -354,6 +354,13 @@ li#nat-contacts a {
 	letter-spacing: 0.1em;
 	margin-bottom: 1em;
 	text-transform: uppercase;
+}
+/* PIPED LINKS */
+.piped { display: block; zoom: 1; }
+.piped:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.piped li { float: center; display: inline; }
+.piped a { border-left: 1px solid #797c80; padding: 0 0 0 0.75em; margin-left: 0.75em; }
+.piped a.first { border-left: 0 !important; padding-left: 0; margin-left: 0 !important; }
 }
 /* ::::: End - Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
