@@ -1,36 +1,9 @@
-#table-wrap		                    { width: 600px; margin: 0px auto; }
+#table-wrap		                    { width: 600px; position: relative; float: left; margin: 0px auto; }
 
 table                               { width: 100%; border-color: #ccc; }
-td, th                              { padding: 5px; text-align: center; }
+td, th                              { padding: 0px; text-align: center; }
 th                                  { border-bottom: 1px solid white; }
 .compare-col                        { width: 90px; }
 .info-cell                          { text-align: left; }
 
 /*tr.hover td                         { background: red; } */
-
-
-
-
-
-	#x {
-		position: absolute;
-		top: 30px;
-		left: 10%;
-		margin-left: -41px;
-	}
-	#x img {
-		border:0;
-	}
-
-	.str{color:#61ff74}
-	.kwd{color:white}
-	.com{color:white}
-	.typ{color:#f1915d}
-	.lit{color:white}
-	.pun{color:white}
-	.pln{color:#ffef97}
-	.tag{color:#ffab58}
-	.atn{color:#fabb4e}
-	.atv{color:#ffd996}
-	.dec{color:red}
-
