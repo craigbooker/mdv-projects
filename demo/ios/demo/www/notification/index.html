@@ -31,11 +31,23 @@
         
         function showAlert() {
             alert(
-                'Thank you for pressing alert!'
+                'Thank you for pressing alert!',
                   alertDismissed,
                   'Done'
                   );
         }
+        function onConfirm(button) {
+            alert('You clicked the button ' + button);
+        }
+        function showConfirm() {
+            alert(
+                  'Thank you for pressing confirm!',
+                  onConfirm,
+                  'Confirm Demo',
+                  'Restart, Exit'
+                  );
+        }
+        
     </script>
 
 <!-- ::::: CSS ::::: -->
