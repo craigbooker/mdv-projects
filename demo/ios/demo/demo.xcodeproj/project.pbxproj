@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442C463414D51568008C2372 /* LocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 442C463314D51568008C2372 /* LocalNotification.m */; };
 		446F67AC14C76BA2000F64EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446F67AB14C76BA2000F64EF /* Foundation.framework */; };
 		446F67AE14C76BA2000F64EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446F67AD14C76BA2000F64EF /* UIKit.framework */; };
 		446F67B014C76BA2000F64EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446F67AF14C76BA2000F64EF /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		442C463214D51568008C2372 /* LocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotification.h; sourceTree = "<group>"; };
+		442C463314D51568008C2372 /* LocalNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotification.m; sourceTree = "<group>"; };
 		446F67A714C76BA2000F64EF /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		446F67AB14C76BA2000F64EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		446F67AD14C76BA2000F64EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -224,6 +227,8 @@
 		446F67ED14C76BA3000F64EF /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				442C463214D51568008C2372 /* LocalNotification.h */,
+				442C463314D51568008C2372 /* LocalNotification.m */,
 				446F67EE14C76BA3000F64EF /* README */,
 			);
 			name = Plugins;
@@ -322,6 +327,7 @@
 			files = (
 				446F67CC14C76BA2000F64EF /* main.m in Sources */,
 				446F67EC14C76BA3000F64EF /* AppDelegate.m in Sources */,
+				442C463414D51568008C2372 /* LocalNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +422,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "demo/demo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "demo/demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
@@ -445,7 +451,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "demo/demo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "demo/demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (

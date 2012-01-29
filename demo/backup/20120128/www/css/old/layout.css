@@ -1,0 +1,275 @@
+/* ::::: Main Layout :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+	/* ::::: Core Page Layout ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+		body {
+			background-color: rgb(255, 255, 255);
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+			font-size: 76.1%;
+			font-family: Helveltica,Arial;
+			color: rgb(0, 0, 0);
+			list-style: none;
+		}
+		.wrapper-body {
+			width: 960;
+			height: 100;
+			position: absolute;
+			top: 81px;
+		}
+
+		footer {
+			width: 100%;
+		}
+		img { border: 0 none; }
+		a {
+			text-decoration: none;
+			color: rgb(255, 255, 255);
+		}
+
+		td, p, div, span, input, textarea {
+			font-family: Arial,Helveltica,sans-serif;
+			font-size: 12px;
+			color: rgb(0, 0, 0);
+			line-height: 130;
+			text-align: left;
+		}
+	/* ::::: Header ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+		header {
+			width: 100%;
+		}
+		.head {
+			background: url('img/head_bg.jpg');
+			background-color: rgb(0, 0, 0);
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+			position: absolute;
+			left: 0;
+			top: 0;
+
+		}
+	.topNav {
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+
+	}
+	.logo {
+		margin: 0 0 0 0;
+		background: rgb(0,0,0);
+		position: absolute;
+		left: 0;
+		width: 80px;
+		height: 80px;
+	}
+	/* ::::: End - Header ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+	/* ::::: Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+		.foot {
+			background: rgb(204, 204, 204);
+			position: relative;
+			text-align: center;
+			font: 11px Arial;
+			color: rgb(0, 0, 0);
+			margin: 5px 0 0 0;
+			padding: 15px 0 15px 0;
+			border-bottom: 1px solid rgb(0, 0, 0);
+			border-top: 1px solid rgb(0, 0, 0);
+		}
+		.foot a {
+			font-weight: bold;
+			font-size: 14px;
+			color: rgb(0, 0, 0); }
+
+	/* ::::: End - Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+	/* ::::: subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+		.subNav {
+			margin: 0 0 0 0;
+			padding: 2px 5px 5px 5px;
+			color: rgb(0,0,0);
+
+		}
+		.subNav img {
+			width: 100;
+			height: auto;
+		}
+
+
+	/* ::::: End - subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+	/* ::::: Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+		.button {
+				background: none repeat scroll 0 0 rgb(252, 133, 12);
+				color: rgb(255, 255, 255);
+				text-transform: uppercase;
+				text-align: center;
+				vertical-align: middle;
+				letter-spacing: 2px;
+				font-size: 9px;
+				font-weight: bold;
+				padding: 8px 12px 8px 12px;
+				display: inline-block;
+				border-radius: 4px 4px 4px 4px;
+				cursor: pointer;
+				font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+		}
+	/* ::::: End - Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::: End - Core Page Layout ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+/* ::::: Titles ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+	h1 {
+		color: rgb(241, 85, 0);
+		font: bold 56px "Helvetica Neue",Arial,Helvetica;
+		margin: 10 0 32px 0;
+		padding: 0 0 0 12px; text-transform: uppercase; letter-spacing: -2px; }
+	h2 {
+		margin: 10 0 15px 0;
+		padding: 0 12px 0 20;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	h3 {
+		margin: 10 0 15px 0;
+		padding: 0 0 0 20;
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	.contents {
+		padding-left: 40;
+		margin-bottom: 30;
+		font-size: 14px;
+		padding-right: 12px;
+	}
+	.contents span { color: rgb(241, 85, 0); }
+
+	.subtitle01 { float: left; margin-left: 12px; margin-top: 18px; }
+	.subtitle02 { margin-top: 18px; float: right; width: 80; text-align: center; font-weight: bold; color: rgb(241, 85, 0); font-size: 14px; }
+
+
+
+/* ::::: End - Titles ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+/* ::::: Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    .button {
+        background: none repeat scroll 0 0 rgb(153, 0, 0);
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 9px;
+        font-weight: normal;
+        margin: 5px 5px 5px 5px;
+        padding: 8px 12px;
+        display: inline-block;
+        border-radius: 4px 4px 4px 4px;
+        cursor: pointer;
+        font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif; }
+
+
+
+/* ::::: End - Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+/* ::::: Lists :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+	.listtype { margin: 0; padding: 0; }
+
+	.listtype li {
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		list-style: none outside none;
+		background: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+
+	}
+
+	.listtype a {
+		background: rgb(255, 255, 255);
+		position: relative;
+		display: block;
+		padding: 5px 0 0 0;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+		font-size: 14px;
+		font-weight: bold;
+		color: rgb(0,0,0);
+	}
+	.nf-demo {
+		background: rgb(255, 255, 255);
+		position: absolute;
+		left: 15px;
+		display: block;
+		padding: 5px 0 0 0;
+		text-transform: uppercase;
+		text-align: left;
+		letter-spacing: 2px;
+		font-size: 14px;
+		font-weight: bold;
+		color: rgb(0,0,0);
+		list-style: none;
+	}
+	.listtype img {
+		position: absolute;
+		left: 12px;
+		top: 12px;
+	}
+
+	.listtype em {
+		display: block;
+		font: 12px Arial;
+		color: rgb(131, 131, 131);
+	}
+	.listtype .light, .listtype .light a {
+		background: rgb(204, 204, 204);
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+		font-size: 14px;
+		font-weight: bold;
+		color: rgb(255, 255, 255);
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		display: inline-block;
+		border-bottom: 1px solid rgb(0, 0, 0);
+	}
+	.listtype .ui-bar-divider {
+		background: rgb(204, 204, 204);
+		text-transform: uppercase;
+		text-shadow: 0 1px 0 rgb(25, 25, 25);
+		text-align: center;
+		vertical-align: middle;
+		letter-spacing: 2px;
+		font-size: 14px;
+		font-weight: bold;
+		color: rgb(255, 255, 255);
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		display: inline-block;
+		border-bottom: 1px solid rgb(0, 0, 0);
+		border-top: 1px solid rgb(0, 0, 0);
+	}
+/* ::::: End - Lists :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+/* ::::: Form Elements :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* #addTaskForm  */
+
+.textbox {
+	margin: 0 0 0 30;
+	padding: 0 0 0 40;
+
+}
+
+
+/* ::::: End - Form Elements :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+

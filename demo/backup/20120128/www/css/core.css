@@ -1,0 +1,475 @@
+.mod:after,
+#toc:after,
+#footer:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* ::::: Main Layout :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::: BASE STYLES :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+body {
+	background-color: #FFFFFF;
+	color: #000000;
+	font: normal 1em/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	color: #000000;
+	text-decoration: underline;
+}
+a:hover,
+a:focus {
+	color: #39C;
+	text-decoration: none;
+}
+a:active,
+a:focus {
+	background-color: #000;
+}
+a.sub {
+	color: #8DFCC7;
+	font-weight: bold;
+}
+a.sub:hover,
+a.sub:focus {
+	color: #3C9;
+}
+.mod-table {
+	font-family: Arial,Helveltica,sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	color: rgb(0, 0, 0);
+}
+
+
+/* ::::: Layout ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#page {
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	/*max-width: 75em; */
+	position: relative;
+}
+
+
+
+#toc,
+#content,
+#footer {
+	clear: both;
+	margin: 0 auto;
+	padding: 0 auto;
+	width: 100%;
+}
+/* ::::: Title ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#title {
+	position: absolute;
+	left: -1000em;
+}
+
+/* ::::: END - Title ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::: Logo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#logo,
+
+#logo a {
+	display: block;
+	background: url('../img/aslogo.jpg');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	max-width: 743px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+#logo a:hover,
+#logo a:active,
+#logo a:focus {
+	background-color: inherit;
+	opacity: 0.9;
+}
+#logo a img {
+	display: block;
+	margin: 0 auto;
+}
+
+/* ::::: END - Logo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::: Navigation ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#toc {
+	margin-bottom: 2em;
+	background: url('../img/head_bg.jpg');
+	background-repeat: repeat;
+	background-color: #000000;
+}
+#toc a {
+	background-color: #000000;
+	background-repeat: no-repeat;
+	display: block;
+	height: 80px;
+	overflow: hidden;
+	position: relative;
+	float: center;
+	text-align: center;
+	text-indent: -1000em;
+}
+
+#toc h2 {
+	position: absolute;
+	left: -1000em;
+}
+#toc ul {
+	margin: 0 auto;
+	padding:  0 auto;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+#toc li {
+	float: left;
+	margin-right: 0;
+	width: 80px;
+}
+/*#toc li#nav-contact {
+	margin-right: 0pt;
+} */
+#toc a:hover,
+#toc a:active,
+#toc a:focus {
+	background-color: #000000;
+	opacity: 1.0;
+}
+
+li#nav-logo a {
+	background-image: url("../img/aslogo.png");
+
+}
+li#nav-home a {
+	background-image: url("../img/nav-home.png");
+	margin-left: 1%;
+}
+li#nav-portfolio a {
+	background-image: url("../img/nav-portfolio.png");
+}
+li#nav-about a {
+	background-image: url("../img/nav-about.png");
+}
+
+li#nav-contact a {
+	background-image: url("../img/nav-contact.png");
+}
+/* Native features */
+#nf-demo {
+	margin-bottom: 2em;
+	background-color: #FFFFFF;
+}
+#nf-demo a {
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	display: block;
+	height: 80px;
+	overflow: hidden;
+	position: relative;
+	float: center;
+	text-align: center;
+	text-indent: -100em;
+}
+
+
+#nf-demo ul {
+	margin: 0 auto;
+	padding: 0 0 0 20px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+#nf-demo li {
+	float: left;
+	width: 80px;
+}
+
+li#nat-accel a {
+	background-image: url("../img/icons/accelerometer.gif");
+}
+li#nat-geo a {
+	background-image: url("../img/icons/geolocation.gif");
+}
+li#nat-notif a {
+	background-image: url("../img/icons/notifications.gif");
+}
+li#nat-camera a {
+	background-image: url("../img/icons/camera.gif");
+}
+
+li#nat-contacts a {
+	background-image: url("../img/icons/contacts.gif");
+}
+	/* ::::: subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+		.subNav {
+			margin: 0 0 0 0;
+			padding: 2px 5px 5px 5px;
+			color: rgb(0,0,0);
+
+		}
+		.subNav img {
+			width: 100;
+			height: auto;
+		}
+
+
+	/* ::::: End - subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::: END - Navigation ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::: Content ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.mod {
+	background-color: #FFFFFF;
+	padding-bottom: 3em;	/* 48px / 16px = 3em */
+	margin-bottom: 4em;	/* 60px / 16px = 3.75em */
+}
+
+.mod .main {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 0px 15px;
+	padding: 5px 5px 5px 5px;
+}
+
+.sub-mod {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+#contactInfo {
+	width: 85%;
+	text-align: left;
+
+}
+.page-title {
+	font-size:2.95em;
+	margin: 20px 0px 0px 0px;
+	padding: 2px 4px 5px 4px;
+}
+.page-subtitle {
+	font-size: 1.75em;
+	margin: 0;
+	padding: 2px 2px 20px 0px;
+}
+#crudApp-icon {
+	background-image: url("../img/icons/appiconblkplstc.png");
+	background-repeat: no-repeat;
+	text-align: center;
+	text-indent: -1000em;
+	height: 80px;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 0px 0px;
+}
+#crudApp-title {
+	font-size: 1.75em;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+}
+.sub-title {
+	font-size: 1.75em;
+	margin: 0;
+	padding: 5px 2px 5px 5px;
+}
+
+.mod-title {
+	font-size:1.35em;
+	margin: 0;
+	padding: 5px 2px 2px 2px;
+}
+.mod-subtitle {
+	font-size: 1.25em;
+	margin: 0;
+	padding: 2px 2px 5px 0px;
+}
+.mod-text {
+	font-size: 1.25em;
+	margin: 0;
+	padding: 2px 2px 7px 0px;
+}
+.mod-desc {
+	font-size:0.725em;
+	margin: 0;
+	padding: 2px 2px 15px 2px;
+}
+
+.mod-link {
+	font-size: 1.25em;
+	margin: 0;
+	padding: 2px 2px 7px 0px;
+	text-decoration: underline;
+}
+.mod-img {
+	font-size:0.725em;
+	border: 0;
+	margin: 0;
+	padding: 2px 2px 15px 2px;
+}
+.mod-form {
+	margin: 0;
+	padding: 2px 2px 15px 2px;
+
+}
+/* ::::: END - Content :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::: Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#footer {
+	background-color: #FFFFFF;
+	font-size: 0.725em;	/* 10px / 16px = 0.625 */
+	max-height: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	position: relative;
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+
+}
+#footer p,
+#footer ul {
+	font-size: 1.2em;	/* 12px / 10px = 1.2 */
+	opacity: 0.5;
+}
+#footer h1 {
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	margin-bottom: 0.25em;
+	padding: 1.6em 0 0.5em;
+}
+#footer h1 a {
+	display: block;
+	margin: 1em auto 0;
+}
+#footer h2 {
+	font-size: 1.1em;	/* 11px / 10px = 1.1 */
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+/* PIPED LINKS */
+.piped { display: block; zoom: 1; }
+.piped:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.piped li { float: center; display: inline; }
+.piped a { border-left: 1px solid #797c80; padding: 0 0 0 0.75em; margin-left: 0.75em; }
+.piped a.first { border-left: 0 !important; padding-left: 0; margin-left: 0 !important; }
+}
+/* ::::: End - Footer ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+
+
+
+
+	/* ::::: Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+		.button {
+				background: none repeat scroll 0 0 rgb(252, 133, 12);
+				color: rgb(255, 255, 255);
+				text-transform: uppercase;
+				text-align: center;
+				vertical-align: middle;
+				letter-spacing: 2px;
+				font-size: 9px;
+				font-weight: bold;
+				padding: 8px 12px 8px 12px;
+				display: inline-block;
+				border-radius: 4px 4px 4px 4px;
+				cursor: pointer;
+				font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+		}
+	/* ::::: End - Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::: End - Core Page Layout ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+/* ::::: Titles ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*
+	h1 {
+		color: rgb(241, 85, 0);
+		font: bold 56px "Helvetica Neue",Arial,Helvetica;
+		margin: 10 0 32px 0;
+		padding: 0 0 0 12px; text-transform: uppercase; letter-spacing: -2px; }
+	h2 {
+		margin: 10 0 15px 0;
+		padding: 0 12px 0 20;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	h3 {
+		margin: 10 0 15px 0;
+		padding: 0 0 0 20;
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	.contents {
+		padding-left: 40;
+		margin-bottom: 30;
+		font-size: 14px;
+		padding-right: 12px;
+	}
+	.contents span { color: rgb(241, 85, 0); }
+
+	.subtitle01 { float: left; margin-left: 12px; margin-top: 18px; }
+	.subtitle02 { margin-top: 18px; float: right; width: 80; text-align: center; font-weight: bold; color: rgb(241, 85, 0); font-size: 14px; }
+
+*/
+
+/* ::::: End - Titles ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+/* ::::: Form Elements :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* #addTaskForm  */
+
+.textbox {
+	margin: 0 0 0 30;
+	padding: 0 0 0 40;
+
+}
+
+.form-title {
+font-size:1.35em;
+margin: 0px 0px 0px 20px;
+padding: 5px 2px 2px 2px;
+}
+.form-subtitle {
+font-size: 1.25em;
+margin: 0px 0px 0px 0px;
+padding: 2px 2px 7px 0px;
+}
+.form-tbox {
+font-size: 1.25em;
+margin: 0px 0px 0px 0px;
+padding: 5px 0px 5px 0px;
+}
+.form-desc {
+font-size:0.725em;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 15px 2px;
+}
+
+.form-link {
+font-size: 1.25em;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 7px 0px;
+text-decoration: underline;
+}
+.form-img {
+font-size:0.725em;
+border: 0;
+margin: 0px 0px 0px 20px;
+padding: 2px 2px 15px 2px;
+}
+/* ::::: End - Form Elements :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+

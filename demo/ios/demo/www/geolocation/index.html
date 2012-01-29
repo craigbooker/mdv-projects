@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Appscient, LLC - Projects - Apps - Geolocation</title>
+
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no">
+
+<script charset="utf-8" src="../../../js/phonegap-1.3.0.js"></script>
+<script charset="utf-8" src="../../../js/libs/pgDebug.js"> </script>
+
+	<script src="../../../js/aslib.js"></script>
+	<script src="../../../js/jquery.min.js"></script>
+	<link rel="stylesheet" href="../../../js/flexslider/flexslider.css" type="text/css">
+	<script src="../../../js/flexslider/jquery.flexslider.js"></script>
+    <!-- script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script -->
+
+<script type="text/javascript" language="javascript">
+        var t = new createTable();
+       /* var ul = new createUL(); */
+        var geo;
+
+
+
+        function getGeoLocation() {
+            try {
+                if( !! navigator.geolocation ) return navigator.geolocation;
+                else return undefined;
+            } catch(e) {
+                return undefined;
+            }
+        }
+
+        function showCoordsOld(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            t.updateRow(0, [ lat.toString(), lon.toString() ] );
+			ul.updateLi(0, [ lat.toString(), lon.toString() ] );
+            dispResults();
+        }
+         function showCoords(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            lat = [ 'Latitude: ' + (lat.toString())];
+            lon = ['Longitude: ' + (lon.toString())];
+
+            element('latitude').innerHTML = lat;
+			element('longitude').innerHTML = lon;
+        }
+        function geoError(error) {
+            switch(error.code) {
+                case error.TIMEOUT:
+                    alert('Geolocation Timeout');
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert('Geolocation Position unavailable');
+                    break;
+                case error.PERMISSION_DENIED:
+                    alert('Geolocation Permission denied');
+                    break;
+                default:
+                    alert('Geolocation returned an unknown error code: ' + error.code);
+            }
+        }
+
+        function init() {
+            if((geo = getGeoLocation())) {
+                statusMessage('Using HTML5 Geolocation')
+
+            } else {
+                statusMessage('HTML5 Geolocation is not supported.')
+            }
+            geo.watchPosition(showCoords, geoError, {
+                maximumAge: 1000,   // 1 sec
+                timeout: 300000,    // 5 min
+                enableHighAccuracy: true
+            });
+        }
+
+        window.onload = function () {
+            init();
+        }
+    </script>
+
+<!-- ::::: CSS ::::: -->
+<link rel="stylesheet" type="text/css" href="../../../css/index.css" media="all">
+
+	<!--[if IE]>
+	<link rel="stylesheet" href="css/patches/win-ie-all.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="/css/patches/win-ie7.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" href="/css/patches/win-ie-old.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+
+	<!-- to help IE recognise the new HTML tags -->
+	<!--[if lte IE 8]>
+		<script src="/js/html5.js"></script>
+		<script src="/js/css3-mediaqueries.js"></script>
+	<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px) and (resolution: 163dpi)" href="css/mobile480.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 320px)" href="xss/mobile320.css" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print"  />
+<!-- ::::: sorcery ::::: -->
+
+</head>
+<body onorientationchange="updateOrientation();" class="sect-home">
+<div id="page">
+		<div id="toc">
+			<ul>
+				<li id="nav-logo"><a href="../../../index.html">Logo</a></li>
+				<li id="nav-home"><a href="../../../index.html">Home</a></li>
+				<li id="nav-portfolio"><a href="../../../portfolio.html">Portfolio</a></li>
+				<li id="nav-about"><a href="../../../about.html">About</a></li>
+				<li id="nav-contact"><a href="../../../contact.html">Contact</a></li>
+			</ul>
+		</div><!-- ::::: End - #toc :::::  -->
+<div id="content">
+
+	<div class="mod">
+		<div class="main">
+		<h1 class="page-title">Geolocation</h1>
+			<h3 class="mod-title"></h3>
+			<div class="mod-text"></div>
+<!-- Geolocation Demo -->
+					<p class="message" id="statusMessage"></p>
+						<div id="results">
+							<!-- Geolocation results show here -->
+                            <ul>
+                                <li id="latitude"></li>
+                                <li id="longitude"></li>
+
+                            </ul>
+						</div>
+				</div>
+
+		</div><!-- ::::: End - .main :::::  -->
+	</div><!-- ::::: End - .mod :::::  -->
+</div><!-- ::::: End - .content :::::  -->
+</div><!-- ::::: End - #page :::::  -->
+
+	<footer id="footer">
+        <div>
+            <ul class="piped">
+                <li><a class="first" href="index.html" target="_top">Home</a>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+        </div>
+        <div class="copywrite">
+            Copyright &copy; 2012 Appscient, LLC.  All rights reserved.</div>
+    </footer></div><!-- ::::: End - wrapper-site :::::  -->
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+#logo cite {
+	left: -50%;
+	top: -184px;
+}
+
+#toc {
+	height: 1%;
+}
+
+#toc ul {
+	position: relative;
+}
+
+body.sect-home li#nav-journal,
+body.sect-about li#nav-journal,
+body.sect-respect li#nav-about,
+body.sect-contact li#nav-about {
+	margin-right: 14.429%;
+}

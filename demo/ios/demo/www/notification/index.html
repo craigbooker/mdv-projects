@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Appscient, LLC - Projects - Apps - Notifications</title>
+
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no">
+
+<script charset="utf-8" src="../js/phonegap-1.3.0.js"></script>
+<!--script charset="utf-8" src="../../../js/libs/pgDebug.js"> </script-->
+<script type="text/javascript" charset="utf-8" src="../js/libs/LocalNotification.js"></script>
+	
+    <script type="text/javascript" charset="utf-8">
+        function onBodyLoad()
+        {
+            document.addEventListener("deviceready",onDeviceReady,false);
+        }
+        
+        /* When this function is called, PhoneGap has been initialized and is ready to roll */
+        function onDeviceReady()
+        {
+            statusMessage.innerHTML = "PhoneGap Is ready!";
+        }
+    </script>
+
+<!-- ::::: CSS ::::: -->
+<link rel="stylesheet" type="text/css" href="../../../css/index.css" media="all">
+
+	<!--[if IE]>
+	<link rel="stylesheet" href="css/patches/win-ie-all.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="/css/patches/win-ie7.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" href="/css/patches/win-ie-old.css" type="text/css" media="screen, projection" />
+	<![endif]-->
+
+	<!-- to help IE recognise the new HTML tags -->
+	<!--[if lte IE 8]>
+		<script src="/js/html5.js"></script>
+		<script src="/js/css3-mediaqueries.js"></script>
+	<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px) and (resolution: 163dpi)" href="css/480.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 320px) and (resolution: 163dpi)" href="css/320.css" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print"  />
+<!-- ::::: sorcery ::::: -->
+
+</head>
+<body onorientationchange="updateOrientation();" class="sect-home" onload="onBodyLoad()">
+<div id="page">
+		<div id="toc">
+			<ul>
+				<li id="nav-logo"><a href="../../../index.html">Logo</a></li>
+				<li id="nav-portfolio"><a href="../../../portfolio.html">Portfolio</a></li>
+				<li id="nav-about"><a href="../../../about.html">About</a></li>
+				<li id="nav-contact"><a href="../../../contact.html">Contact</a></li>
+			</ul>
+		</div><!-- ::::: End - #toc :::::  -->
+<div id="content">
+
+	<div class="mod">
+		<div class="main">
+		<h1 class="page-title">Notifications</h1>
+			<h3 class="mod-title"></h3>
+			<div class="mod-text">Test</div>
+<!-- Notification Demo -->
+					<p class="message" id="statusMessage">Waiting on PhoneGap to initialize...</p>
+					<div>
+						<p><button onclick="showAlert(); return false;">Show Alert</a></p>
+						<p><button onclick="playBeep(); return false;">Play Beep</a></p>
+						<p><button onclick="vibrate(); return false;">Vibrate</a></p>
+					</div>
+						</div>
+				</div>
+
+		</div><!-- ::::: End - .main :::::  -->
+	</div><!-- ::::: End - .mod :::::  -->
+</div><!-- ::::: End - .content :::::  -->
+</div><!-- ::::: End - #page :::::  -->
+
+	<footer id="footer">
+        <div>
+            <ul class="piped">
+                <li><a class="first" href="index.html" target="_top">Home</a>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+        </div>
+        <div class="copywrite">
+            Copyright &copy; 2012 Appscient, LLC.  All rights reserved.</div>
+            </footer>
+
+</div><!-- ::::: End - wrapper-site :::::  -->
+
+</body>
+</html>
