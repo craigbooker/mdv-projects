@@ -3,7 +3,7 @@
 //  demo
 //
 //  Created by Craig Booker on 1/18/12.
-//  Copyright __MyCompanyName__ 2012. All rights reserved.
+//  Copyright Appscient, LLC 2012. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

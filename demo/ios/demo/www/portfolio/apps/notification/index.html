@@ -9,6 +9,8 @@
 <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no">
 
 <script charset="utf-8" src="../../../js/phonegap-1.3.0.js"></script>
+<script charset="utf-8" src="../../../js/libs/pgDebug.js"> </script>
+
 	<script src="../../../js/aslib.js"></script>
 	<script src="../../../js/jquery.min.js"></script>
 	<link rel="stylesheet" href="../../../js/flexslider/flexslider.css" type="text/css">
@@ -16,38 +18,78 @@
     <!-- script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script -->
 
     <script type="text/javascript" charset="utf-8">
-    function onDeviceReady() {
-        // Empty
-    }
-    // Wait for PhoneGap to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
+var notif;
 
-    // PhoneGap is ready
-    //
+function onDeviceReady() {
+	// Empty
+}
+// Wait for PhoneGap to load
+//
+document.addEventListener("deviceready", onDeviceReady, false);
 
+// PhoneGap is ready
+//
 
-    // Show a custom alert
-    //
-    function showAlert() {
-        navigator.notification.alert(
-            'You are the winner!',  // message
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
-    }
+function getNotification() {
+	try {
+		if (!!navigator.notification) {
+			return navigator.notification;
+		} else {
+			return undefined;
+		}
+	} catch (e) {
+		return undefined;
+	}
+}
+function notifError(error) {
+	switch (error.code) {
+	case error.TIMEOUT:
+		alert('Notification Timeout');
+		break;
+	case error.POSITION_UNAVAILABLE:
+		alert('Notification unavailable');
+		break;
+	case error.PERMISSION_DENIED:
+		alert('Notification Permission denied');
+		break;
+	default:
+		alert('Notification returned an unknown error code: ' + error.code);
+	}
+}
+// Show a custom alert
+//
+function showAlert() {
+	navigator.notification.alert(
+		'You are the winner!',  // message
+		'Game Over',            // title
+		'Done'                  // buttonName
+	);
+}
 
-    // Beep three times
-    //
-    function playBeep() {
-        navigator.notification.beep(3);
-    }
+// Beep three times
+//
+function playBeep() {
+	navigator.notification.beep(3);
+}
 
-    // Vibrate for 2 seconds
-    //
-    function vibrate() {
-        navigator.notification.vibrate(2000);
-    }
+// Vibrate for 2 seconds
+//
+function vibrate() {
+	navigator.notification.vibrate(2000);
+}
+
+function init() {
+	if ((notif === getNotification())) {
+		statusMessage('Using Notifications');
+
+	} else {
+		statusMessage('Notifications are not supported.');
+	}
+}
+
+window.onload = function() {
+	init();
+}
 
     </script>
 
@@ -105,7 +147,7 @@
 						<div id="content">
 					<p class="message" id="statusMessage"></p>
 					<div>
-						<p><a href="#" id="btnAlert">Show Alert</a></p>
+						<p><a href="#" id="btnAlert" onClick="">Show Alert</a></p>
 						<p><a href="#" id="btnBeep">Play Beep</a></p>
 						<p><a href="#" id="btnVibrate">Vibrate</a></p>
 					</div>

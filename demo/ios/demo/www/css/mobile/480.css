@@ -82,7 +82,8 @@ a.sub:focus {
 	background: url('../img/aslogo.jpg');
 	background-repeat: no-repeat;
 	margin: 0 auto;
-	max-width: 743px;
+    padding: 0 auto;
+	max-width: 80px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -135,8 +136,8 @@ a.sub:focus {
 	width: 80px;
 }
 /*#toc li#nav-contact {
-	margin-right: 0pt;
-} */
+ margin-right: 0pt;
+ } */
 #toc a:hover,
 #toc a:active,
 #toc a:focus {
@@ -146,7 +147,7 @@ a.sub:focus {
 
 li#nav-logo a {
 	background-image: url("../img/aslogo.png");
-
+    
 }
 li#nav-home a {
 	background-image: url("../img/nav-home.png");
@@ -162,7 +163,8 @@ li#nav-about a {
 li#nav-contact a {
 	background-image: url("../img/nav-contact.png");
 }
-/* Native features */
+/* ::::: Native Features ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
 #nf-demo {
 	margin-bottom: 2em;
 	background-color: #FFFFFF;
@@ -182,7 +184,7 @@ li#nav-contact a {
 
 #nf-demo ul {
 	margin: 0 auto;
-	padding: 0 0 0 20px;
+	padding: 0 0 0 5px;
 	position: relative;
 	text-align: left;
 	width: 100%;
@@ -208,21 +210,23 @@ li#nat-camera a {
 li#nat-contacts a {
 	background-image: url("../img/icons/contacts.gif");
 }
-	/* ::::: subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::: END - Native Features ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-		.subNav {
-			margin: 0 0 0 0;
-			padding: 2px 5px 5px 5px;
-			color: rgb(0,0,0);
+/* ::::: subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-		}
-		.subNav img {
-			width: 100;
-			height: auto;
-		}
+.subNav {
+    margin: 0 0 0 0;
+    padding: 2px 5px 5px 5px;
+    color: rgb(0,0,0);
+    
+}
+.subNav img {
+    width: 100;
+    height: auto;
+}
 
 
-	/* ::::: End - subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::: End - subNav ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* ::::: END - Navigation ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* ::::: Content ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 .mod {
@@ -234,7 +238,7 @@ li#nat-contacts a {
 .mod .main {
 	float: left;
 	width: 100%;
-	margin: 0px 0px 0px 15px;
+	margin: 0px 0px 0px 0px;
 	padding: 5px 5px 5px 5px;
 }
 
@@ -248,17 +252,17 @@ li#nat-contacts a {
 #contactInfo {
 	width: 85%;
 	text-align: left;
-
+    
 }
 .page-title {
-	font-size:2.95em;
-	margin: 20px 0px 0px 0px;
+	font-size:2.55em;
+	margin: 5px 0px 0px 0px;
 	padding: 2px 4px 5px 4px;
 }
 .page-subtitle {
-	font-size: 1.75em;
+	font-size: 1.55em;
 	margin: 0;
-	padding: 2px 2px 20px 0px;
+	padding: 2px 2px 5px 0px;
 }
 #crudApp-icon {
 	background-image: url("../img/icons/appiconblkplstc.png");
@@ -267,7 +271,7 @@ li#nat-contacts a {
 	text-indent: -1000em;
 	height: 80px;
 	margin: 0px 0px 0px 0px;
-	padding: 5px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 #crudApp-title {
 	font-size: 1.75em;
@@ -304,19 +308,19 @@ li#nat-contacts a {
 .mod-link {
 	font-size: 1.25em;
 	margin: 0;
-	padding: 2px 2px 7px 0px;
+	padding: 2px 2px 5px 0px;
 	text-decoration: underline;
 }
 .mod-img {
 	font-size:0.725em;
 	border: 0;
 	margin: 0;
-	padding: 2px 2px 15px 2px;
+	padding: 2px 2px 5px 2px;
 }
 .mod-form {
 	margin: 0;
-	padding: 2px 2px 15px 2px;
-
+	padding: 2px 2px 5px 2px;
+    
 }
 /* ::::: END - Content :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -324,14 +328,14 @@ li#nat-contacts a {
 #footer {
 	background-color: #FFFFFF;
 	font-size: 0.725em;	/* 10px / 16px = 0.625 */
-	max-height: 100px;
+	max-height: 75px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
 	position: relative;
 	border-bottom: 1px solid #000000;
 	border-top: 1px solid #000000;
-
+    
 }
 #footer p,
 #footer ul {
@@ -369,63 +373,78 @@ li#nat-contacts a {
 
 
 
-	/* ::::: Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::: Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-		.button {
-				background: none repeat scroll 0 0 rgb(252, 133, 12);
-				color: rgb(255, 255, 255);
-				text-transform: uppercase;
-				text-align: center;
-				vertical-align: middle;
-				letter-spacing: 2px;
-				font-size: 9px;
-				font-weight: bold;
-				padding: 8px 12px 8px 12px;
-				display: inline-block;
-				border-radius: 4px 4px 4px 4px;
-				cursor: pointer;
-				font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
-		}
-	/* ::::: End - Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.button {
+    background: none repeat scroll 0 0 rgb(252, 133, 12);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 8px 12px 8px 12px;
+    display: inline-block;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+}
+/* ::::: End - Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 /* ::::: End - Core Page Layout ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 
 /* ::::: Titles ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /*
-	h1 {
-		color: rgb(241, 85, 0);
-		font: bold 56px "Helvetica Neue",Arial,Helvetica;
-		margin: 10 0 32px 0;
-		padding: 0 0 0 12px; text-transform: uppercase; letter-spacing: -2px; }
-	h2 {
-		margin: 10 0 15px 0;
-		padding: 0 12px 0 20;
-		font-weight: bold;
-		font-size: 18px;
-	}
-	h3 {
-		margin: 10 0 15px 0;
-		padding: 0 0 0 20;
-		font-weight: bold;
-		font-size: 18px;
-	}
-
-	.contents {
-		padding-left: 40;
-		margin-bottom: 30;
-		font-size: 14px;
-		padding-right: 12px;
-	}
-	.contents span { color: rgb(241, 85, 0); }
-
-	.subtitle01 { float: left; margin-left: 12px; margin-top: 18px; }
-	.subtitle02 { margin-top: 18px; float: right; width: 80; text-align: center; font-weight: bold; color: rgb(241, 85, 0); font-size: 14px; }
-
-*/
+ h1 {
+ color: rgb(241, 85, 0);
+ font: bold 56px "Helvetica Neue",Arial,Helvetica;
+ margin: 10 0 32px 0;
+ padding: 0 0 0 12px; text-transform: uppercase; letter-spacing: -2px; }
+ h2 {
+ margin: 10 0 15px 0;
+ padding: 0 12px 0 20;
+ font-weight: bold;
+ font-size: 18px;
+ }
+ h3 {
+ margin: 10 0 15px 0;
+ padding: 0 0 0 20;
+ font-weight: bold;
+ font-size: 18px;
+ }
+ 
+ .contents {
+ padding-left: 40;
+ margin-bottom: 30;
+ font-size: 14px;
+ padding-right: 12px;
+ }
+ .contents span { color: rgb(241, 85, 0); }
+ 
+ .subtitle01 { float: left; margin-left: 12px; margin-top: 18px; }
+ .subtitle02 { margin-top: 18px; float: right; width: 80; text-align: center; font-weight: bold; color: rgb(241, 85, 0); font-size: 14px; }
+ 
+ */
 
 /* ::::: End - Titles ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
+/* ::::: Table Elements :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#table-wrap { 
+    width: 300px; 
+    position: relative; 
+    float: left; 
+    margin: 0px auto; 
+}
+
+table                               { width: 100%; border-color: #ccc; }
+td, th                              { padding: 0px; text-align: center; }
+th                                  { border-bottom: 1px solid white; }
+.compare-col                        { width: 50px; }
+.info-cell                          { text-align: left; }
+/* ::::: End - Table Elements ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 /* ::::: Form Elements :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -434,41 +453,41 @@ li#nat-contacts a {
 .textbox {
 	margin: 0 0 0 30;
 	padding: 0 0 0 40;
-
+    
 }
 
 .form-title {
-font-size:1.35em;
-margin: 0px 0px 0px 20px;
-padding: 5px 2px 2px 2px;
+    font-size:1.35em;
+    margin: 0px 0px 0px 20px;
+    padding: 5px 2px 2px 2px;
 }
 .form-subtitle {
-font-size: 1.25em;
-margin: 0px 0px 0px 0px;
-padding: 2px 2px 7px 0px;
+    font-size: 1.25em;
+    margin: 0px 0px 0px 0px;
+    padding: 2px 2px 7px 0px;
 }
 .form-tbox {
-font-size: 1.25em;
-margin: 0px 0px 0px 0px;
-padding: 5px 0px 5px 0px;
+    font-size: 1.25em;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
 }
 .form-desc {
-font-size:0.725em;
-margin: 0px 0px 0px 20px;
-padding: 2px 2px 15px 2px;
+    font-size:0.725em;
+    margin: 0px 0px 0px 20px;
+    padding: 2px 2px 15px 2px;
 }
 
 .form-link {
-font-size: 1.25em;
-margin: 0px 0px 0px 20px;
-padding: 2px 2px 7px 0px;
-text-decoration: underline;
+    font-size: 1.25em;
+    margin: 0px 0px 0px 20px;
+    padding: 2px 2px 7px 0px;
+    text-decoration: underline;
 }
 .form-img {
-font-size:0.725em;
-border: 0;
-margin: 0px 0px 0px 20px;
-padding: 2px 2px 15px 2px;
+    font-size:0.725em;
+    border: 0;
+    margin: 0px 0px 0px 20px;
+    padding: 2px 2px 15px 2px;
 }
 /* ::::: End - Form Elements :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
