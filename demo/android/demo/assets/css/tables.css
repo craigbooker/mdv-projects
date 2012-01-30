@@ -1,0 +1,9 @@
+#table-wrap		                    { width: 600px; position: relative; float: left; margin: 0px auto; }
+
+table                               { width: 100%; border-color: #ccc; }
+td, th                              { padding: 0px; text-align: center; }
+th                                  { border-bottom: 1px solid white; }
+.compare-col                        { width: 90px; }
+.info-cell                          { text-align: left; }
+
+/*tr.hover td                         { background: red; } */

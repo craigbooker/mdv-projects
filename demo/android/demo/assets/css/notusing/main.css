@@ -1,0 +1,16 @@
+/*	Appscient: Theme 001
+	-----------------------------------------
+	Author:		Craig Booker (http://appscient.net)
+	Version:	20120124
+	Copyright:	(c) 2012 Craig Booker.
+			All rights reserved.
+*/
+
+/*-  CSS "libraries"
+----------------------------------------------------------------------*/
+@import url("reset.css");
+@import url("sifr.css");
+
+/*-  Core, patch-free design
+----------------------------------------------------------------------*/
+@import url("core.css");

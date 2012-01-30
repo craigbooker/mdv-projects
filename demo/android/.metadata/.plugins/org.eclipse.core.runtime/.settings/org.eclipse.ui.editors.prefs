@@ -1,3 +1,7 @@
-#Sat Jan 28 22:25:31 CST 2012
+#Sun Jan 29 19:57:05 CST 2012
 eclipse.preferences.version=1
+indexResultIndication=false
 overviewRuler_migration=migrated_3.1
+indexResultIndicationInVerticalRuler=false
+org.eclipse.ptp.rdt.ui.hasRun=true
+indexResultIndicationInOverviewRuler=false

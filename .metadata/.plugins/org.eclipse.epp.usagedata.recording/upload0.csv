@@ -1,0 +1,298 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.update.core,3.2.400.v20100512,"org.eclipse.update.core",1323325321138
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1323325321145
+started,bundle,org.eclipse.wst.jsdt.manipulation,1.0.200.v201004150600,"org.eclipse.wst.jsdt.manipulation",1323325321159
+started,bundle,com.android.ide.eclipse.adt,15.0.1.v201111031820-219398,"com.android.ide.eclipse.adt",1323325321159
+started,bundle,com.android.ide.eclipse.ddms,15.0.1.v201111031820-219398,"com.android.ide.eclipse.ddms",1323325321175
+started,bundle,org.eclipse.epp.usagedata.gathering,1.3.1.R201102081640,"org.eclipse.epp.usagedata.gathering",1323325321176
+started,bundle,org.eclipse.epp.usagedata.recording,1.3.1.R201102081640,"org.eclipse.epp.usagedata.recording",1323325321177
+started,bundle,org.eclipse.jdt.core,3.6.2.v_A76_R36x,"org.eclipse.jdt.core",1323325321187
+started,bundle,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui",1323325321200
+started,bundle,org.eclipse.wst.jsdt.core,1.1.8.v201109150205,"org.eclipse.wst.jsdt.core",1323325321208
+started,bundle,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui",1323325321208
+started,bundle,org.eclipse.wst.sse.core,1.1.506.v201110201853,"org.eclipse.wst.sse.core",1323325321210
+os,sysinfo,,,"macosx",1323325321212
+arch,sysinfo,,,"x86_64",1323325321212
+ws,sysinfo,,,"cocoa",1323325321212
+locale,sysinfo,,,"en_US",1323325321212
+processors,sysinfo,,,"4",1323325321212
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1323325321212
+java.runtime.version,sysinfo,,,"1.6.0_29-b11-402-11M3527",1323325321212
+java.specification.name,sysinfo,,,"Java Platform API Specification",1323325321212
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1323325321212
+java.specification.version,sysinfo,,,"1.6",1323325321212
+java.vendor,sysinfo,,,"Apple Inc.",1323325321212
+java.version,sysinfo,,,"1.6.0_29",1323325321212
+java.vm.info,sysinfo,,,"mixed mode",1323325321212
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1323325321212
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1323325321212
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1323325321212
+java.vm.specification.version,sysinfo,,,"1.0",1323325321212
+java.vm.vendor,sysinfo,,,"Apple Inc.",1323325321212
+java.vm.version,sysinfo,,,"20.4-b02-402",1323325321212
+started,bundle,org.eclipse.epp.usagedata.ui,1.3.1.R201102081640,"org.eclipse.epp.usagedata.ui",1323325322288
+started,bundle,org.eclipse.ui.forms,3.5.0.v20100427,"org.eclipse.ui.forms",1323325322302
+started,bundle,org.eclipse.wst.xml.core,1.1.505.v201109271810,"org.eclipse.wst.xml.core",1323325324742
+started,bundle,org.eclipse.wst.css.core,1.1.403.v201103021532,"org.eclipse.wst.css.core",1323325324759
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325342138
+error,log,,,"Core exception while retrieving the content description",1323325354160
+error,log,,,"Core exception while retrieving the content description",1323325354161
+error,log,,,"Core exception while retrieving the content description",1323325354173
+error,log,,,"Core exception while retrieving the content description",1323325354174
+error,log,,,"Core exception while retrieving the content description",1323325354175
+error,log,,,"Core exception while retrieving the content description",1323325354176
+error,log,,,"Core exception while retrieving the content description",1323325354177
+error,log,,,"Core exception while retrieving the content description",1323325354179
+error,log,,,"Core exception while retrieving the content description",1323325354182
+error,log,,,"Core exception while retrieving the content description",1323325354183
+error,log,,,"Core exception while retrieving the content description",1323325354184
+error,log,,,"Core exception while retrieving the content description",1323325354203
+error,log,,,"Core exception while retrieving the content description",1323325354212
+error,log,,,"Core exception while retrieving the content description",1323325354213
+error,log,,,"Core exception while retrieving the content description",1323325354214
+error,log,,,"Core exception while retrieving the content description",1323325354215
+error,log,,,"Core exception while retrieving the content description",1323325354215
+error,log,,,"Core exception while retrieving the content description",1323325354216
+error,log,,,"Core exception while retrieving the content description",1323325354217
+error,log,,,"Core exception while retrieving the content description",1323325354218
+error,log,,,"Core exception while retrieving the content description",1323325354220
+error,log,,,"Core exception while retrieving the content description",1323325354220
+error,log,,,"Core exception while retrieving the content description",1323325354221
+error,log,,,"Core exception while retrieving the content description",1323325354222
+error,log,,,"Core exception while retrieving the content description",1323325354223
+error,log,,,"Core exception while retrieving the content description",1323325354224
+error,log,,,"Core exception while retrieving the content description",1323325354224
+error,log,,,"Core exception while retrieving the content description",1323325354225
+error,log,,,"Core exception while retrieving the content description",1323325354226
+error,log,,,"Core exception while retrieving the content description",1323325354227
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325375562
+started,bundle,com.pittypanda.plugins.couch,1.0.0.201010261838,"com.pittypanda.plugins.couch",1323325439417
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325499132
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325521387
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325666934
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325673115
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325910228
+error,log,,,"Core exception while retrieving the content description",1323325913866
+error,log,,,"Core exception while retrieving the content description",1323325913867
+error,log,,,"Core exception while retrieving the content description",1323325913868
+error,log,,,"Core exception while retrieving the content description",1323325913869
+error,log,,,"Core exception while retrieving the content description",1323325913869
+error,log,,,"Core exception while retrieving the content description",1323325913870
+error,log,,,"Core exception while retrieving the content description",1323325913872
+error,log,,,"Core exception while retrieving the content description",1323325913872
+error,log,,,"Core exception while retrieving the content description",1323325913902
+error,log,,,"Core exception while retrieving the content description",1323325913902
+error,log,,,"Core exception while retrieving the content description",1323325913903
+error,log,,,"Core exception while retrieving the content description",1323325913904
+error,log,,,"Core exception while retrieving the content description",1323325913905
+error,log,,,"Core exception while retrieving the content description",1323325913905
+error,log,,,"Core exception while retrieving the content description",1323325913906
+error,log,,,"Core exception while retrieving the content description",1323325913907
+error,log,,,"Core exception while retrieving the content description",1323325913908
+error,log,,,"Core exception while retrieving the content description",1323325913909
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325930307
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325932738
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325942521
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325964824
+error,log,,,"Core exception while retrieving the content description",1323325965034
+error,log,,,"Core exception while retrieving the content description",1323325965035
+error,log,,,"Core exception while retrieving the content description",1323325965036
+error,log,,,"Core exception while retrieving the content description",1323325965037
+error,log,,,"Core exception while retrieving the content description",1323325965037
+error,log,,,"Core exception while retrieving the content description",1323325965038
+error,log,,,"Core exception while retrieving the content description",1323325965039
+error,log,,,"Core exception while retrieving the content description",1323325965040
+error,log,,,"Core exception while retrieving the content description",1323325965040
+error,log,,,"Core exception while retrieving the content description",1323325965041
+error,log,,,"Core exception while retrieving the content description",1323325965042
+error,log,,,"Core exception while retrieving the content description",1323325965042
+error,log,,,"Core exception while retrieving the content description",1323325965043
+error,log,,,"Core exception while retrieving the content description",1323325965045
+error,log,,,"Core exception while retrieving the content description",1323325965046
+error,log,,,"Core exception while retrieving the content description",1323325965047
+error,log,,,"Core exception while retrieving the content description",1323325965048
+error,log,,,"Core exception while retrieving the content description",1323325965048
+error,log,,,"Core exception while retrieving the content description",1323325965049
+error,log,,,"Core exception while retrieving the content description",1323325965050
+error,log,,,"Core exception while retrieving the content description",1323325965051
+error,log,,,"Core exception while retrieving the content description",1323325965052
+error,log,,,"Core exception while retrieving the content description",1323325965052
+error,log,,,"Core exception while retrieving the content description",1323325965053
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323325981906
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326049503
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326065530
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326147751
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326179177
+activated,view,org.eclipse.ui.ide,3.6.0.I20100601-0800,"org.eclipse.ui.views.ProblemView",1323326282655
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326282829
+activated,view,org.eclipse.ui.navigator.resources,3.4.200.I20100601-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323326282836
+activated,view,org.eclipse.ui.ide,3.6.0.I20100601-0800,"org.eclipse.ui.views.ProblemView",1323326287178
+activated,view,org.eclipse.ui.navigator.resources,3.4.200.I20100601-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323326287212
+opened,view,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.JavadocView",1323326287287
+closed,view,org.eclipse.ui.ide,3.6.0.I20100601-0800,"org.eclipse.ui.views.ProblemView",1323326287307
+activated,view,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.JavadocView",1323326288506
+activated,view,org.eclipse.ui.navigator.resources,3.4.200.I20100601-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323326288540
+opened,view,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.SourceView",1323326288692
+closed,view,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.JavadocView",1323326288694
+activated,view,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.SourceView",1323326289999
+activated,view,org.eclipse.ui.navigator.resources,3.4.200.I20100601-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323326290034
+closed,view,org.eclipse.wst.jsdt.ui,1.1.7.v201109150205,"org.eclipse.wst.jsdt.ui.SourceView",1323326290039
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326320748
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326542920
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326550449
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326557003
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.import",1323326557038
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326558407
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326568221
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326585943
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326616237
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326620615
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326726813
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326730481
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323326986458
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.import",1323326986490
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323327000350
+error,log,,,"Core exception while retrieving the content description",1323327228818
+error,log,,,"Core exception while retrieving the content description",1323327228819
+error,log,,,"Core exception while retrieving the content description",1323327228820
+error,log,,,"Core exception while retrieving the content description",1323327228825
+error,log,,,"Core exception while retrieving the content description",1323327228826
+error,log,,,"Core exception while retrieving the content description",1323327228827
+error,log,,,"Core exception while retrieving the content description",1323327228828
+error,log,,,"Core exception while retrieving the content description",1323327228829
+error,log,,,"Core exception while retrieving the content description",1323327228830
+error,log,,,"Core exception while retrieving the content description",1323327228831
+error,log,,,"Core exception while retrieving the content description",1323327228832
+error,log,,,"Core exception while retrieving the content description",1323327228833
+error,log,,,"Core exception while retrieving the content description",1323327228834
+error,log,,,"Core exception while retrieving the content description",1323327228835
+error,log,,,"Core exception while retrieving the content description",1323327228836
+error,log,,,"Core exception while retrieving the content description",1323327228836
+error,log,,,"Core exception while retrieving the content description",1323327228838
+error,log,,,"Core exception while retrieving the content description",1323327228839
+error,log,,,"Core exception while retrieving the content description",1323327228840
+error,log,,,"Core exception while retrieving the content description",1323327228841
+error,log,,,"Core exception while retrieving the content description",1323327228844
+error,log,,,"Core exception while retrieving the content description",1323327228845
+error,log,,,"Core exception while retrieving the content description",1323327228846
+error,log,,,"Core exception while retrieving the content description",1323327228847
+error,log,,,"Core exception while retrieving the content description",1323327228848
+error,log,,,"Core exception while retrieving the content description",1323327228849
+error,log,,,"Core exception while retrieving the content description",1323327228851
+error,log,,,"Core exception while retrieving the content description",1323327228854
+error,log,,,"Core exception while retrieving the content description",1323327228854
+error,log,,,"Core exception while retrieving the content description",1323327228855
+error,log,,,"Core exception while retrieving the content description",1323327228856
+error,log,,,"Core exception while retrieving the content description",1323327228857
+error,log,,,"Core exception while retrieving the content description",1323327228859
+error,log,,,"Core exception while retrieving the content description",1323327228860
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323327228916
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.import",1323327228951
+error,log,,,"Core exception while retrieving the content description",1323327229275
+error,log,,,"Core exception while retrieving the content description",1323327229275
+error,log,,,"Core exception while retrieving the content description",1323327229276
+error,log,,,"Core exception while retrieving the content description",1323327229277
+error,log,,,"Core exception while retrieving the content description",1323327229277
+error,log,,,"Core exception while retrieving the content description",1323327229278
+error,log,,,"Core exception while retrieving the content description",1323327229279
+error,log,,,"Core exception while retrieving the content description",1323327229279
+error,log,,,"Core exception while retrieving the content description",1323327229280
+error,log,,,"Core exception while retrieving the content description",1323327229280
+error,log,,,"Core exception while retrieving the content description",1323327229282
+error,log,,,"Core exception while retrieving the content description",1323327229282
+error,log,,,"Core exception while retrieving the content description",1323327229283
+error,log,,,"Core exception while retrieving the content description",1323327229284
+error,log,,,"Core exception while retrieving the content description",1323327229284
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323327230869
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323327441367
+closed,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1323327441469
+stopped,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20100513,"org.eclipse.equinox.p2.ui.sdk",1323327442173
+stopped,bundle,org.eclipse.wst.dtd.ui,1.0.500.v201004290328,"org.eclipse.wst.dtd.ui",1323327442207
+stopped,bundle,org.eclipse.wst.xsl.exslt.ui,1.0.0.v201006012005,"org.eclipse.wst.xsl.exslt.ui",1323327442221
+stopped,bundle,org.eclipse.wst.xsl.jaxp.debug.ui,1.0.100.v201004290328,"org.eclipse.wst.xsl.jaxp.debug.ui",1323327442312
+stopped,bundle,org.eclipse.wst.xsl.ui,1.1.0.v201004290328,"org.eclipse.wst.xsl.ui",1323327442390
+stopped,bundle,org.eclipse.wst.xml.xpath.ui,1.1.0.v201004290328,"org.eclipse.wst.xml.xpath.ui",1323327442487
+stopped,bundle,org.eclipse.wst.xsl.debug.ui,1.0.100.v201004290328,"org.eclipse.wst.xsl.debug.ui",1323327442583
+stopped,bundle,overlay.com.android.ide.eclipse.adt.overlay,15.0.1.v201111031820-219398,"overlay.com.android.ide.eclipse.adt.overlay",1323327442619
+stopped,bundle,com.android.ide.eclipse.adt,15.0.1.v201111031820-219398,"com.android.ide.eclipse.adt",1323327442619
+stopped,bundle,org.eclipse.wst.jsdt.web.ui,1.0.305.v201110211728,"org.eclipse.wst.jsdt.web.ui",1323327442733
+stopped,bundle,org.eclipse.wst.web.ui,1.1.401.v201109151600,"org.eclipse.wst.web.ui",1323327442733
+stopped,bundle,org.eclipse.wst.html.ui,1.0.505.v201106160200,"org.eclipse.wst.html.ui",1323327442831
+stopped,bundle,org.eclipse.wst.css.ui,1.0.502.v201101122002,"org.eclipse.wst.css.ui",1323327442928
+stopped,bundle,org.eclipse.wst.xsd.ui,1.2.305.v201104132127,"org.eclipse.wst.xsd.ui",1323327443034
+stopped,bundle,org.eclipse.wst.xml.ui,1.1.105.v201106142156,"org.eclipse.wst.xml.ui",1323327443034
+activated,perspective,org.eclipse.jdt.ui,,"org.eclipse.jdt.ui.JavaPerspective",1327890850626
+started,bundle,org.eclipse.osgi,3.7.1.R37x_v20110808-1106,"org.eclipse.osgi",1327890850627
+started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.200.v20110502-1955,"org.eclipse.equinox.simpleconfigurator",1327890850628
+started,bundle,com.ibm.icu,4.4.2.v20110208,"com.ibm.icu",1327890850628
+started,bundle,org.eclipse.core.contenttype,3.4.100.v20110423-0524,"org.eclipse.core.contenttype",1327890850629
+started,bundle,org.eclipse.core.databinding.observable,1.4.0.I20110222-0800,"org.eclipse.core.databinding.observable",1327890850629
+started,bundle,org.eclipse.core.expressions,3.4.300.v20110228,"org.eclipse.core.expressions",1327890850630
+started,bundle,org.eclipse.core.filebuffers,3.5.200.v20110505-0800,"org.eclipse.core.filebuffers",1327890850630
+started,bundle,org.eclipse.core.filesystem,1.3.100.v20110423-0524,"org.eclipse.core.filesystem",1327890850652
+started,bundle,org.eclipse.core.jobs,3.5.100.v20110404,"org.eclipse.core.jobs",1327890850653
+started,bundle,org.eclipse.core.net,1.2.100.I20110511-0800,"org.eclipse.core.net",1327890850657
+started,bundle,org.eclipse.core.resources,3.7.100.v20110510-0712,"org.eclipse.core.resources",1327890850657
+started,bundle,org.eclipse.core.runtime,3.7.0.v20110110,"org.eclipse.core.runtime",1327890850659
+started,bundle,org.eclipse.core.runtime.compatibility,3.2.100.v20100505,"org.eclipse.core.runtime.compatibility",1327890850661
+started,bundle,org.eclipse.core.runtime.compatibility.auth,3.2.200.v20110110,"org.eclipse.core.runtime.compatibility.auth",1327890850662
+started,bundle,org.eclipse.debug.core,3.7.0.v20110518,"org.eclipse.debug.core",1327890850662
+started,bundle,org.eclipse.equinox.app,1.3.100.v20110321,"org.eclipse.equinox.app",1327890850671
+started,bundle,org.eclipse.equinox.common,3.6.0.v20110523,"org.eclipse.equinox.common",1327890850672
+started,bundle,org.eclipse.equinox.ds,1.3.1.R37x_v20110701,"org.eclipse.equinox.ds",1327890850677
+started,bundle,org.eclipse.equinox.event,1.2.100.v20110502,"org.eclipse.equinox.event",1327890850677
+started,bundle,org.eclipse.equinox.p2.core,2.1.0.v20110502-1955,"org.eclipse.equinox.p2.core",1327890850681
+started,bundle,org.eclipse.equinox.p2.directorywatcher,1.0.300.v20110502-1955,"org.eclipse.equinox.p2.directorywatcher",1327890850684
+started,bundle,org.eclipse.equinox.p2.engine,2.1.0.v20110511,"org.eclipse.equinox.p2.engine",1327890850684
+started,bundle,org.eclipse.equinox.p2.metadata,2.1.0.v20110510,"org.eclipse.equinox.p2.metadata",1327890850685
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.2.0.v20110511-1359,"org.eclipse.equinox.p2.metadata.repository",1327890850685
+started,bundle,org.eclipse.equinox.p2.operations,2.1.0.v20110511-1821,"org.eclipse.equinox.p2.operations",1327890850686
+started,bundle,org.eclipse.equinox.p2.reconciler.dropins,1.1.100.v20110510,"org.eclipse.equinox.p2.reconciler.dropins",1327890850698
+started,bundle,org.eclipse.equinox.p2.repository,2.1.0.v20110601,"org.eclipse.equinox.p2.repository",1327890850698
+started,bundle,org.eclipse.equinox.p2.ui.sdk.scheduler,1.0.100.v20110502-1955,"org.eclipse.equinox.p2.ui.sdk.scheduler",1327890850699
+started,bundle,org.eclipse.equinox.p2.updatechecker,1.1.200.v20110502-1955,"org.eclipse.equinox.p2.updatechecker",1327890850699
+started,bundle,org.eclipse.equinox.preferences,3.4.1.R37x_v20110725,"org.eclipse.equinox.preferences",1327890850700
+started,bundle,org.eclipse.equinox.registry,3.5.101.R37x_v20110810-1611,"org.eclipse.equinox.registry",1327890850700
+started,bundle,org.eclipse.equinox.security,1.1.1.R37x_v20110822-1018,"org.eclipse.equinox.security",1327890850710
+started,bundle,org.eclipse.equinox.util,1.0.300.v20110502,"org.eclipse.equinox.util",1327890850711
+started,bundle,org.eclipse.help,3.5.100.v20110426,"org.eclipse.help",1327890850711
+started,bundle,org.eclipse.jdt.core,3.7.1.v_B76_R37x,"org.eclipse.jdt.core",1327890850712
+started,bundle,org.eclipse.jdt.core.manipulation,1.4.0.v20110505-0800,"org.eclipse.jdt.core.manipulation",1327890850712
+started,bundle,org.eclipse.jdt.launching,3.6.1.v20110803_r371,"org.eclipse.jdt.launching",1327890850725
+started,bundle,org.eclipse.jdt.ui,3.7.1.r371_v20110824-0800,"org.eclipse.jdt.ui",1327890850726
+started,bundle,org.eclipse.jface,3.7.0.I20110522-1430,"org.eclipse.jface",1327890850727
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.201.r371_v20110824-0800,"org.eclipse.ltk.core.refactoring",1327890850727
+started,bundle,org.eclipse.ltk.ui.refactoring,3.6.0.v20110505-0800,"org.eclipse.ltk.ui.refactoring",1327890850734
+started,bundle,org.eclipse.pde.launching,3.6.0.v20110506,"org.eclipse.pde.launching",1327890850744
+started,bundle,org.eclipse.pde.ui,3.6.100.v20110603,"org.eclipse.pde.ui",1327890850756
+started,bundle,org.eclipse.team.core,3.6.0.I20110525-0800,"org.eclipse.team.core",1327890850761
+started,bundle,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui",1327890850769
+started,bundle,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console",1327890850770
+started,bundle,org.eclipse.ui.editors,3.7.0.v20110517-0800,"org.eclipse.ui.editors",1327890850771
+started,bundle,org.eclipse.ui.ide,3.7.0.v20110809-1737,"org.eclipse.ui.ide",1327890850772
+started,bundle,org.eclipse.ui.navigator,3.5.100.v20110809-2227,"org.eclipse.ui.navigator",1327890850780
+started,bundle,org.eclipse.ui.net,1.2.100.I20110511-0800,"org.eclipse.ui.net",1327890850782
+started,bundle,org.eclipse.ui.views,3.6.0.I20110412-0800,"org.eclipse.ui.views",1327890850782
+started,bundle,org.eclipse.ui.views.log,1.0.200.v20110404,"org.eclipse.ui.views.log",1327890850785
+started,bundle,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"org.eclipse.ui.workbench",1327890850786
+started,bundle,org.eclipse.ui.workbench.texteditor,3.7.0.v20110505-0800,"org.eclipse.ui.workbench.texteditor",1327890850786
+started,bundle,org.eclipse.update.configurator,3.3.100.v20100512,"org.eclipse.update.configurator",1327890850787
+started,bundle,org.eclipse.update.core,3.2.500.v20110330,"org.eclipse.update.core",1327890850787
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1327890850789
+started,bundle,com.android.ide.eclipse.adt,16.0.1.v201112150204-238534,"com.android.ide.eclipse.adt",1327890850789
+started,bundle,com.android.ide.eclipse.ddms,16.0.1.v201112150204-238534,"com.android.ide.eclipse.ddms",1327890850789
+started,bundle,com.android.ide.eclipse.traceview,16.0.1.v201112150204-238534,"com.android.ide.eclipse.traceview",1327890850789
+started,bundle,org.eclipse.wst.sse.core,1.1.601.v201108151912,"org.eclipse.wst.sse.core",1327890850790
+started,bundle,org.eclipse.actf.model.ui,0.9.1.R201109141305,"org.eclipse.actf.model.ui",1327890850790
+started,bundle,org.eclipse.actf.ui,0.9.1.R201109141305,"org.eclipse.actf.ui",1327890850791
+started,bundle,org.eclipse.actf.visualization.blind,0.9.1.R201109141305,"org.eclipse.actf.visualization.blind",1327890850791
+started,bundle,org.eclipse.actf.visualization.gui,0.9.1.R201109141305,"org.eclipse.actf.visualization.gui",1327890850792
+started,bundle,org.eclipse.cdt.codan.checkers,1.0.0.201109151620,"org.eclipse.cdt.codan.checkers",1327890850792
+started,bundle,org.eclipse.cdt.codan.core,2.0.0.201109151620,"org.eclipse.cdt.codan.core",1327890850793
+started,bundle,org.eclipse.cdt.codan.core.cxx,1.0.0.201109151620,"org.eclipse.cdt.codan.core.cxx",1327890850793
+started,bundle,org.eclipse.cdt.codan.ui.cxx,2.0.0.201109151620,"org.eclipse.cdt.codan.ui.cxx",1327890850793
+started,bundle,org.eclipse.cdt.core,5.3.1.201109151620,"org.eclipse.cdt.core",1327890850794
+started,bundle,org.eclipse.cdt.make.core,7.1.1.201109151620,"org.eclipse.cdt.make.core",1327890850794
+started,bundle,org.eclipse.cdt.make.ui,7.1.1.201109151620,"org.eclipse.cdt.make.ui",1327890850795
+started,bundle,org.eclipse.cdt.managedbuilder.core,8.0.1.201109151620,"org.eclipse.cdt.managedbuilder.core",1327890850811
+started,bundle,org.eclipse.cdt.ui,5.3.1.201109151620,"org.eclipse.cdt.ui",1327890850812
