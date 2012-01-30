@@ -1,4 +1,5 @@
-#Sat Jan 07 19:17:16 CST 2012
+#Sun Jan 29 21:08:23 CST 2012
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
 >>>>>>>=origin/gh-pages
 eclipse.preferences.version=1
 //org.eclipse.ui.commands/state/org.eclipse.wst.xml.views.XPathView.processor.xpathprocessor/org.eclipse.ui.commands.radioState=xpath10

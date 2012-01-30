@@ -24,3 +24,43 @@ started,bundle,org.eclipse.wb.discovery.core,1.1.0.r37x201109091028,"org.eclipse
 os,sysinfo,,,"macosx",1327890850886
 arch,sysinfo,,,"x86_64",1327890850886
 ws,sysinfo,,,"cocoa",1327890850886
+locale,sysinfo,,,"en_US",1327890850886
+processors,sysinfo,,,"4",1327890850886
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1327890850886
+java.runtime.version,sysinfo,,,"1.6.0_29-b11-402-11M3527",1327890850886
+java.specification.name,sysinfo,,,"Java Platform API Specification",1327890850886
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1327890850886
+java.specification.version,sysinfo,,,"1.6",1327890850886
+java.vendor,sysinfo,,,"Apple Inc.",1327890850886
+java.version,sysinfo,,,"1.6.0_29",1327890850886
+java.vm.info,sysinfo,,,"mixed mode",1327890850886
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1327890850886
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1327890850886
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1327890850886
+java.vm.specification.version,sysinfo,,,"1.0",1327890850886
+java.vm.vendor,sysinfo,,,"Apple Inc.",1327890850886
+java.vm.version,sysinfo,,,"20.4-b02-402",1327890850886
+started,bundle,org.eclipse.m2e.usagedata,1.0.100.20110804-1717,"org.eclipse.m2e.usagedata",1327890850889
+started,bundle,org.eclipse.wb.discovery.ui,1.1.0.r37x201109091028,"org.eclipse.wb.discovery.ui",1327890851542
+started,bundle,org.eclipse.epp.usagedata.ui,1.3.1.R201106061540,"org.eclipse.epp.usagedata.ui",1327890851894
+started,bundle,org.eclipse.ui.forms,3.5.100.v20110425,"org.eclipse.ui.forms",1327890851950
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1327890852267
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1327891174540
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1327891212678
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1327892885388
+error,log,,,"The project description file (.project) for 'demo' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.",1327892889883
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1327892889977
+started,bundle,org.eclipse.wst.jsdt.core,1.1.101.v201108151912,"org.eclipse.wst.jsdt.core",1327892890547
+started,bundle,org.eclipse.pde.core,3.7.1.v20110822-2108,"org.eclipse.pde.core",1327892894883
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1327892894998
+closed,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1327892903346
+started,bundle,org.eclipse.equinox.p2.garbagecollector,1.0.200.v20110510,"org.eclipse.equinox.p2.garbagecollector",1327892903531
+stopped,bundle,org.eclipse.pde.api.tools.ui,1.0.301.v20110803_r371,"org.eclipse.pde.api.tools.ui",1327892904056
+stopped,bundle,org.eclipse.pde.ds.ui,1.0.100.v20110516,"org.eclipse.pde.ds.ui",1327892904085
+stopped,bundle,org.eclipse.pde.runtime,3.4.201.v20110819-0851,"org.eclipse.pde.runtime",1327892904086
+stopped,bundle,org.eclipse.pde.ua.ui,1.0.100.v20110516,"org.eclipse.pde.ua.ui",1327892904140
+stopped,bundle,org.eclipse.pde.ui.templates,3.4.400.v20110516,"org.eclipse.pde.ui.templates",1327892904228
+stopped,bundle,org.eclipse.wb.rcp.SWT_AWT,1.1.0.r37x201109091215,"org.eclipse.wb.rcp.SWT_AWT",1327892904228
+stopped,bundle,org.eclipse.wb.rcp.databinding.emf,1.1.0.r37x201109091152,"org.eclipse.wb.rcp.databinding.emf",1327892904284
+stopped,bundle,org.eclipse.wb.rcp.databinding.xwt,1.1.0.r37x201109091200,"org.eclipse.wb.rcp.databinding.xwt",1327892904291
+stopped,bundle,org.eclipse.wb.rcp.databinding,1.1.0.r37x201109091152,"org.eclipse.wb.rcp.databinding",1327892904291
