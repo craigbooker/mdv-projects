@@ -7,10 +7,14 @@
 
 <meta name="robots" content="index, follow">
 <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no">
-
-<script charset="utf-8" src="../js/phonegap-1.3.0.js"></script>
-<!--script charset="utf-8" src="../../../js/libs/pgDebug.js"> </script-->
-<script type="text/javascript" charset="utf-8" src="../js/libs/LocalNotification.js"></script>
+    <!-- ::::: CSS ::::: -->
+    <link rel="stylesheet" type="text/css" href="../css/index.css" media="all">
+        
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px) and (resolution: 163dpi)" href="../css/480.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 320px) and (resolution: 163dpi)" href="../css/320.css" />
+        <link rel="stylesheet" type="text/css" href="../css/print.css" media="print"  />
+        <!-- ::::: sorcery ::::: -->
+        <script charset="utf-8" src="../js/phonegap-1.3.0.js"></script>
 	
     <script type="text/javascript" charset="utf-8">
         function onBodyLoad()
@@ -47,16 +51,17 @@
                   'Restart, Exit'
                   );
         }
-        
+        function playBeep() {
+            playBeep();
+            alert('You made it to the playBeep function.');
+        }
+        function vibrate() {        
+            vibrate();
+            alert('Vibrate does not function on sim.'); 
+        }
     </script>
 
-<!-- ::::: CSS ::::: -->
-<link rel="stylesheet" type="text/css" href="../css/index.css" media="all">
 
-<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px) and (resolution: 163dpi)" href="../css/480.css" />
-<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 320px) and (resolution: 163dpi)" href="../css/320.css" />
-<link rel="stylesheet" type="text/css" href="../css/print.css" media="print"  />
-<!-- ::::: sorcery ::::: -->
 
 </head>
 <body onload="onBodyLoad()">
@@ -77,11 +82,12 @@
 			<h3 class="mod-title"></h3>
 			<div class="mod-text">Test</div>
 <!-- Notification Demo -->
-					<p id="statusMessage">Waiting on PhoneGap to initialize...</p>
+					<p id="statusMessage" class="statusMessage">Waiting on PhoneGap to initialize...</p>
 					<div>
-						<p><button onclick="showAlert(); return false;">Show Alert</a></p>
-						<p><button onclick="playBeep(); return false;">Play Beep</a></p>
-						<p><button onclick="vibrate(); return false;">Vibrate</a></p>
+						<p><button onclick="showAlert(); return false;">Show Alert</button></p>
+                        <p><button onclick="showConfirm();">Test Confirm</button></p>
+                        <p><button onclick="playBeep(); return false;">Play Beep</button></p>
+						<p><button onclick="vibrate(); return false;">Vibrate</button></p>
 					</div>
 						</div>
 				</div>
@@ -95,14 +101,13 @@
         <div>
             <ul class="piped">
                 <li><a class="first" href="index.html" target="_top">Home</a>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <div class="copywrite">
-            Copyright &copy; 2012 Appscient, LLC.  All rights reserved.</div>
-            </footer>
+        <div class="copywrite">Copyright &copy; 2012 Appscient, LLC.  All rights reserved.</div>
+    </footer>
 
 </div><!-- ::::: End - wrapper-site :::::  -->
 
