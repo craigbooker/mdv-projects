@@ -48,7 +48,7 @@
     
     //int minNumHoursNeeded = 18; /* Minimum hours needed incubation time */
     //int normCellCount = 1; /* Average White blood cell count for healthy human. Makes up about 1% of blood in an adult . */
-    float minCellCountNeeded = 0.89f; /* Cell count needed to reduce risk of flu */
+    //float minCellCountNeeded = 0.89f; /* Cell count needed to reduce risk of flu */
     float numHoursSinceExposure = 22.05f; /* Number of hours since Leonard was exposed. */
     //float avgHoursSleep = 5.5f; /* Leonard's avg hours of sleep. */
     //float leonardsAvgCellCount = 0.877f; /* Average White blood cell count for Leonard from three days time. */
@@ -67,7 +67,7 @@
     //int feverMaxVal = 106; /* High end range for fever. */
   
     /* Penny's way to check for flu. 
-     Penny explains how they check for flu in Nebraska.
+     Penny explains how they check for flu in Nebraska.  She explains that it's not very scientific, but it works well for her family.
      
      */
     bool hasHadFever = true;
@@ -83,58 +83,97 @@
     else {
         NSLog(@"Not sick, I wish Sheldon would quit!");
     }
-    /*float count = 0;
-    
-    while (count > minCellCountNeeded) {
-        NSLog(@"Say hello to count=%f", count);
-        count++;
-    }
-    */
-    bool isSick = false;
+
+    //bool isSick = false;
     int numHoursInTwoWeeks = 336;
     int hoursRemaining = numHoursInTwoWeeks;
     float rajCellCount = rajAvgCellCount;
     float howardCellCount = howardAvgCellCount;
     float sheldonCellCount = sheldonAvgCellCount;
     float pennyCellCount = pennyAvgCellCount; 
-    /* The Team Speaks of their containment */
+    
+    /* 
+     calcWhiteBloodCellCount
+     Calculates each of the individuals white blood cell count. And creates an average.  
+     
+     */
+    
+    calcWhiteBloodCellCount() {
+    
+    
+    }
+    
+    
+    outputGroupFeedback() {
+    
+    }
+    
+    /* The Team Speaks of their containment 
+     Sheldon insists that all of them be quarantined for 14 days to lower the risk of the flu spreading.  During this time, he will test their white blood cell count each day.
+     
+     */
     for (int x=1; x < 15; x++) {
+        int y = x+1 ;
         NSLog(@"Here we are at the end of day=%d", x);
         hoursRemaining = (hoursRemaining - 24);
-        NSLog(@"Howard: Common' we only have hours left=%d", hoursRemaining);
+        NSLog(@"Howard: Common' Sheldon we only have hours left=%d", hoursRemaining);
         NSLog(@"Raj whispers to Howard that he wants to go get comic books.");
         NSLog(@"Penny: And we are NOT sick Sheldon!");
-        int y = x+1;
-        if (isSick == false) {
-            sheldonCellCount = (((sheldonCellCount+sheldonCellCount)/y));
-            NSLog(@"Sheldon's Count =%f", sheldonCellCount);
-            howardCellCount = (((howardAvgCellCount+howardCellCount)/y));
-            NSLog(@"Howard's Count =%f", howardCellCount);
-            pennyCellCount = (((pennyAvgCellCount+pennyCellCount)/y));
-            NSLog(@"Penny's Count =%f", pennyCellCount);
-            rajCellCount = (((rajAvgCellCount+rajCellCount)/y));
-            NSLog(@"Raj's Count =%f", rajCellCount);
-            
-            if ((sheldonCellCount < minCellCountNeeded) || (howardCellCount < minCellCountNeeded))
-            {
-                isSick = true;
-                
-            }
-            else if ((pennyCellCount < minCellCountNeeded) || (rajCellCount < minCellCountNeeded))     
-            {           
-                isSick = true;
-            }
-            else {
-                NSLog(@"Keep on movin, no one appears to be sick.");
-            }       
-        
-        }
-        else if (isSick == true) {
-            break;
-        }
+        sheldonCellCount += sheldonCellCount;
+        sheldonAvgCellCount = (sheldonCellCount/y); 
+        NSLog(@"Sheldon's Average Cell Count =%f", sheldonAvgCellCount);
+        howardCellCount += howardCellCount;
+        howardAvgCellCount = (howardCellCount/y);
+        NSLog(@"Howard's Average Cell Count =%f", howardAvgCellCount);
+        pennyCellCount += pennyCellCount;
+        pennyAvgCellCount = (pennyCellCount/y);
+        NSLog(@"Penny's Average Cell Count =%f", pennyAvgCellCount);
+        rajCellCount += rajCellCount;
+        rajAvgCellCount = (rajCellCount/y);
+        NSLog(@"Raj's Average Cell Count =%f", rajAvgCellCount);
+        NSLog(@"Keep on movin, no one appears to be sick.");
+
     }
-        //for (int y=14; y > 0; y--) {
- /*       do {
+        
+    
+    
+ /*
+  if (isSick == false) {
+  sheldonCellCount = sheldonCellCount * x;
+  sheldonAvgCellCount = (sheldonCellCount/x);
+  NSLog(@"Sheldon's Average Cell Count =%f", sheldonAvgCellCount);
+  howardCellCount += howardCellCount;
+  howardAvgCellCount = (howardCellCount/x);
+  NSLog(@"Howard's Average Cell Count =%f", howardAvgCellCount);
+  pennyCellCount += pennyCellCount;
+  pennyAvgCellCount = (pennyCellCount/x);
+  NSLog(@"Penny's Average Cell Count =%f", pennyAvgCellCount);
+  rajCellCount += rajCellCount;
+  rajAvgCellCount = (rajCellCount/x);
+  NSLog(@"Raj's Average Cell Count =%f", rajAvgCellCount);
+  
+  if ((sheldonAvgCellCount < minCellCountNeeded) || (howardAvgCellCount < minCellCountNeeded))
+  {
+  isSick = true;
+  
+  }
+  else if ((pennyAvgCellCount < minCellCountNeeded) || (rajAvgCellCount < minCellCountNeeded))     
+  {           
+  isSick = true;
+  }
+  else {
+  NSLog(@"Keep on movin, no one appears to be sick.");
+  }       
+  
+  }
+  else if (isSick == true) {
+  break;
+  }
+
+    
+    
+    for (int y=14; y > 0; y--) {
+        do {
             sheldonCellCount = ((sheldonAvgCellCount+sheldonCellCount)/x);
             NSLog(@"Sheldon's Count =%f", sheldonCellCount);
             howardCellCount = ((howardAvgCellCount+howardCellCount)/x);
