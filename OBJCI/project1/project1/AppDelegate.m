@@ -29,8 +29,39 @@
          Sheldon is busy on the whtieboard drawing up equations to determine when he(Sheldon) will get sick.  He is looking at the different variables.
          A new person who works with Howard in the engineering department had been complaining about recovering from the flu two days earlier.  He is weary of the Thai restaurant because of the weird looking cook he ran into while picking up their order that night.  Figuring that none of the others became ill afterwards, he concludes that it must be Howard's coworker in engineering. Convinced that there must be a weakness in Leonard's immune system Sheldon insists on measuring everyone's white blood cell count over the next three days to rule anything out.  That day and over the next two days he measures everyone's white blood cell count.  Sheldon is reminded by Raj that T-cells and B-cells also play a role in the body's defense against disease.  Sheldon insists it is the white blood cell count.
      */
+    //int minNumHoursNeeded = 18; /* Minimum hours needed incubation time */
+    //int normCellCount = 1; /* Average White blood cell count for healthy human. Makes up about 1% of blood in an adult . */
+ 
+    //float minCellCountNeeded = 0.89f; /* Cell count needed to reduce risk of flu */
+    //float numHoursSinceExposure = 22.05f; /* Number of hours since Leonard was exposed. */
+    //float avgHoursSleep = 5.5f; /* Leonard's avg hours of sleep. */
+    //float leonardsAvgCellCount = 0.877f; /* Average White blood cell count for Leonard from three days time. */
+    //int feverMinVal = 100; /* Low end range for fever. */
+    //int feverMaxVal = 106; /* High end range for fever. */
+    //NSString *playerNames[4] = {@"Sheldon", @"Howard", @"Penny", @"Raj"}; 
+    /* Average White blood cell count vars */
+    /*float rajAvgCellCount = 1.01f;
+     float howardAvgCellCount = 0.98f;
+     float sheldonAvgCellCount = 0.95f;
+     float pennyAvgCellCount = 0.99f;
+     //NSString *playerNames[4] = {@"Sheldon", @"Howard", @"Penny", @"Raj"}; 
     // boolean logic operators
+     float rajCellCount = rajAvgCellCount;
+     float howardCellCount = howardAvgCellCount;
+     float sheldonCellCount = sheldonAvgCellCount;
+     float pennyCellCount = pennyAvgCellCount; 
+     /* 
+     calcWhiteBloodCellCount
+     Calculates each of the individuals white blood cell count. And creates an average.  
+     
+     */
     /*
+     calcWhiteBloodCellCount() {
+     
+     
+     }
+     */
+     /*
      == equals
      != not equal
      < less than
@@ -46,32 +77,46 @@
      }
      */
     
-    //int minNumHoursNeeded = 18; /* Minimum hours needed incubation time */
-    //int normCellCount = 1; /* Average White blood cell count for healthy human. Makes up about 1% of blood in an adult . */
-    //float minCellCountNeeded = 0.89f; /* Cell count needed to reduce risk of flu */
-    float numHoursSinceExposure = 22.05f; /* Number of hours since Leonard was exposed. */
-    //float avgHoursSleep = 5.5f; /* Leonard's avg hours of sleep. */
-    //float leonardsAvgCellCount = 0.877f; /* Average White blood cell count for Leonard from three days time. */
+/* ::::::::::::: Variable Declarations ::::::::::::: */
+    bool hasHadFever = true;
+    bool hadHeadache = false;
+    //bool isSick = false;
+    int numHoursInTwoWeeks = 336;
+    int hoursRemaining = numHoursInTwoWeeks;
     
-    float rajAvgCellCount = 1.01f; /* Average White blood cell count for Raj. */
-    float howardAvgCellCount = 0.98f; /* Average White blood cell count for Howard. */
-    float sheldonAvgCellCount = 0.95f; /* Average White blood cell count for Sheldon. */
-    float pennyAvgCellCount = 0.99f;  /* Average White blood cell count for Penny. */
+    /* The names of the players */
+    NSMutableArray *playersArray = [NSMutableArray arrayWithObjects:@"Sheldon", @"Howard", @"Penny", @"Raj", nil];
     
+    /* What Howard says during feedback */
+    NSMutableArray *sheldonSaysArray = [NSMutableArray arrayWithObjects:@"", @"", @"", @"", nil];
+    
+    /* What Howard says during feedback */
+    NSMutableArray *howardSaysArray = [NSMutableArray arrayWithObjects:@"Sheldon let us go!", @"Penny, since we are in here why don't we get to know each other.", @"I could be at home with Bernadette", @"When will this be over!", nil];
+    
+    /* What Penny says during feedback */
+    NSMutableArray *pennySaysArray = [NSMutableArray arrayWithObjects:@"Sheldon let us go!", @"Howard, give it up!", @"Raj, seriously?  You still can't talk?", @"Where is Leonard", nil];
+    
+    /* What Raj says during feedback */
+    NSMutableArray *rajSaysArray = [NSMutableArray arrayWithObjects:@"I want to go to the comicbook store.", @"I would like a grasshopper please.  With a straw", @"Someone hold Sheldon while the rest of us run.", @"Do we get Thai food tonight?", nil];
+    
+    /* What Howard says during feedback */
+    NSMutableArray *playerAvgCellCountArray = [NSMutableArray arrayWithObjects:@"200", @"185", @"277", @"250", nil];    
   
-    int baseMinimumSinceExposure = (int)numHoursSinceExposure; /* Cast the float var numbHoursSinceExposure to an int. */
+    /* Cast the float var numbHoursSinceExposure to an int. */
+    int baseMinimumSinceExposure = (int)numHoursSinceExposure; 
+    
+    /* Output both the float and the float var that was cast to an int to the console */
     NSLog(@"numHoursSinceExposure=%f, baseMinimumSinceExposure=%d",  numHoursSinceExposure, baseMinimumSinceExposure);
     
 
-    //int feverMinVal = 100; /* Low end range for fever. */
-    //int feverMaxVal = 106; /* High end range for fever. */
+
   
-    /* Penny's way to check for flu. 
-     Penny explains how they check for flu in Nebraska.  She explains that it's not very scientific, but it works well for her family.
-     
+    /* 
+     Title: The Nebraska Way to Check for Flu
+     Description: Penny explains how they check for flu in Nebraska.  She explains that it's not very scientific, but it works well for Nebraskans.
      */
-    bool hasHadFever = true;
-    bool hadHeadache = false;
+    
+
     if ((hasHadFever == true) || (hadHeadache == true)) 
     {
         NSLog(@"Might be getting the flu.");
@@ -84,28 +129,14 @@
         NSLog(@"Not sick, I wish Sheldon would quit!");
     }
 
-    //bool isSick = false;
-    int numHoursInTwoWeeks = 336;
-    int hoursRemaining = numHoursInTwoWeeks;
-    float rajCellCount = rajAvgCellCount;
-    float howardCellCount = howardAvgCellCount;
-    float sheldonCellCount = sheldonAvgCellCount;
-    float pennyCellCount = pennyAvgCellCount; 
+
     
-    /* 
-     calcWhiteBloodCellCount
-     Calculates each of the individuals white blood cell count. And creates an average.  
-     
-     */
-    
-    calcWhiteBloodCellCount() {
-    
-    
-    }
-    
-    
-    outputGroupFeedback() {
-    
+    for (int i=1; i<15; i++) {
+        NSLog (@"Sheldon: %@", [sheldonSaysArray objectAtIndex:i]);
+        NSLog (@"Howard: %@", [howardSaysArray objectAtIndex:i]);
+        NSLog (@"Penny: %@", [pennySaysArray objectAtIndex:i]);
+        NSLog (@"Raj whispers to Howard: %@", [rajSaysArray objectAtIndex:i]);
+       
     }
     
     /* The Team Speaks of their containment 
@@ -116,21 +147,21 @@
         int y = x+1 ;
         NSLog(@"Here we are at the end of day=%d", x);
         hoursRemaining = (hoursRemaining - 24);
-        NSLog(@"Howard: Common' Sheldon we only have hours left=%d", hoursRemaining);
+        NSLog(@"Howard: Common' Sheldon we only have %d hours left.", hoursRemaining);
         NSLog(@"Raj whispers to Howard that he wants to go get comic books.");
         NSLog(@"Penny: And we are NOT sick Sheldon!");
         sheldonCellCount += sheldonCellCount;
         sheldonAvgCellCount = (sheldonCellCount/y); 
-        NSLog(@"Sheldon's Average Cell Count =%f", sheldonAvgCellCount);
+        NSLog(@"Sheldon's Average Cell Count is %f", sheldonAvgCellCount);
         howardCellCount += howardCellCount;
         howardAvgCellCount = (howardCellCount/y);
-        NSLog(@"Howard's Average Cell Count =%f", howardAvgCellCount);
+        NSLog(@"Howard's Average Cell Count is %f", howardAvgCellCount);
         pennyCellCount += pennyCellCount;
         pennyAvgCellCount = (pennyCellCount/y);
-        NSLog(@"Penny's Average Cell Count =%f", pennyAvgCellCount);
+        NSLog(@"Penny's Average Cell Count is %f", pennyAvgCellCount);
         rajCellCount += rajCellCount;
         rajAvgCellCount = (rajCellCount/y);
-        NSLog(@"Raj's Average Cell Count =%f", rajAvgCellCount);
+        NSLog(@"Raj's Average Cell Count is %f", rajAvgCellCount);
         NSLog(@"Keep on movin, no one appears to be sick.");
 
     }
