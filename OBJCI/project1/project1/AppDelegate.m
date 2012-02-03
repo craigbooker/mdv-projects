@@ -56,7 +56,10 @@
     float numHoursSinceExposure = 22.05f; /* Number of hours since Leonard was exposed. */
     bool hasHadFever = true;
     bool hadHeadache = false;
-
+    int feverMinVal = 100;  /* Low end range for fever. */
+    //int feverMaxVal = 106;  /* High end range for fever. */
+    int feverTemp = 100;
+    float minNumIncubationsHours = 18.5f;  /* Minimum hours needed incubation time  */
     
     /* The names of the players */
     NSMutableArray *playersArray = [NSMutableArray arrayWithObjects:@"Sheldon", @"Howard", @"Penny", @"Raj", nil];
@@ -98,11 +101,11 @@
      */
     
 
-    if ((hasHadFever == true) || (hadHeadache == true)) 
+    if ((hasHadFever == true) || (hadHeadache == true)) /* Using bool var type */
     {
         NSLog(@"Sheldon: According to the Nebraskan method you might be getting the flu.");
     }
-    else if ((hasHadFever == true) && (hadHeadache == true))
+    else if ((hasHadFever == true) && (hadHeadache == true)) /* Using bool var type */
     {
         NSLog(@"Sheldon: According to the Nebraskan method you are definitely sick.  Stay away!");
     }
@@ -110,6 +113,17 @@
         NSLog(@"Penny: we are not sick, I wish Sheldon would quit!");
     }
 
+    if ((feverTemp > feverMinVal) && (numHoursSinceExposure >= minNumIncubationsHours)) /* Using Int and float var type */
+    {
+        NSLog(@"Penny: Go see a doctor quick!!");
+    } 
+    /*else if ((numHoursSinceExposure >= minNumIncubationsHours) || ()) Using float var type 
+    {
+        NSLog(@"Penny: Keep your eyes peeled. Symptoms could arise at any time!");
+    } */
+    else {
+        NSLog(@"Penny: Keep an eye out for symptoms, but not to worry.");    
+    }
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
  (5) Perform a single for loop printing out values to the console. 
  (6) Perform a nested loop printing out values to the console.
