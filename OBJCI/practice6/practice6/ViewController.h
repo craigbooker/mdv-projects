@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    int secondVariable;
+}
+
+-(int)firstFunction;
+-(int)addFunction:(int)secondVariable returnValue:(int)returnValue;
+-(void)printResults:(int)resultSum;
 
 @end
+
+

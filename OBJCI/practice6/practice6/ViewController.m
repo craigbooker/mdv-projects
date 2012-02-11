@@ -8,7 +8,29 @@
 
 #import "ViewController.h"
 
+
 @implementation ViewController
+
+
+-(int)firstFunction
+{
+        int someInt = 1;
+        return someInt;
+}   
+
+
+-(int)addFunction:(int)secondVariable returnValue:(int)returnValue
+{
+    int tempInt;
+    tempInt = (returnValue + secondVariable);
+    return tempInt;
+} 
+-(void)printResults:(int)resultSum
+{
+    NSLog(@"%d", resultSum);
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -38,6 +60,10 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    int returnValue = [self firstFunction];
+    secondVariable = 4;
+    int resultSum = [self addFunction:secondVariable returnValue:(int)returnValue];
+    [self printResults:(int)resultSum];
     [super viewDidAppear:animated];
 }
 
