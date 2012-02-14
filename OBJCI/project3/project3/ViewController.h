@@ -9,5 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+  //  int addReturnVal;
+    NSInteger *firstInteger;
+    NSInteger *secondInteger;
+}
+
+
+-(NSInteger)addFunction;
+
+
+-(void)printResults:(int)resultSum;
 
 @end

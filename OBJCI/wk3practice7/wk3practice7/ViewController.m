@@ -38,6 +38,11 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Something went horribly wrong" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    if (alertView != nil)
+    {
+        [alertView show];
+    }
     [super viewDidAppear:animated];
 }
 
