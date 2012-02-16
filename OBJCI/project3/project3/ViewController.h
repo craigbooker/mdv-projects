@@ -16,11 +16,10 @@ NSString *tmpTitle;
 }
 
 
--(BOOL)compareNum:(NSInteger)compIntOne compIntTwo:(NSInteger)compIntTwo;
-//-(int)addNum:(int)firstInt secondInteger:(int)secondInt;
--(NSInteger*)addNum:(NSInteger*)firstInt secondInt:(NSInteger*)secondInt;
--(NSString *)appendString:(NSString*)appendStrgOne appendStrgTwo:(NSString*)appendStrgTwo;
+-(bool)compareNum:(NSInteger)compIntOne compIntTwo:(NSInteger)compIntTwo;
+-(NSInteger)addNum:(NSInteger)firstInt secondInt:(NSInteger)secondInt;
+-(NSMutableString*)appendString:(NSString*)appendStrgOne appendStrgTwo:(NSString*)appendStrgTwo;
 -(void) displayAlertWithNSNumber:(NSNumber*)numberVar;
-
+-(void) displayAlertWithAppendResults:(NSMutableString *)appendResult;
 
 @end
