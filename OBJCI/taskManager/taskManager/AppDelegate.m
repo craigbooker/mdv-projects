@@ -1,24 +1,26 @@
 //
 //  AppDelegate.m
-//  project3
+//  taskManager
 //
-//  Created by Craig Booker on 2/10/12.
+//  Created by Craig Booker on 2/16/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "FirstViewController.h"
+
+#import "SecondViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
+@synthesize tabBarController = _tabBarController;
 
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
+    [_tabBarController release];
     [super dealloc];
 }
 
@@ -26,10 +28,15 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    UIViewController *viewController1 = [[[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil] autorelease];
+    UIViewController *viewController2 = [[[ListdViewController alloc] initWithNibName:@"ListViewController" bundle:nil] autorelease];
+    UIViewController *viewController3 = [[[SyncViewController alloc] initWithNibName:@"HomeViewController" bundle:nil] autorelease];
+    UIViewController *viewController4 = [[[AddToInboxViewController alloc] initWithNibName:@"AddToInboxViewController" bundle:nil] autorelease];
+    UIViewController *viewController5 = [[[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil] autorelease];
+    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, viewController4, viewController5, nil];
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
-
     return YES;
 }
 
@@ -59,5 +66,19 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+}
+*/
+
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+{
+}
+*/
 
 @end

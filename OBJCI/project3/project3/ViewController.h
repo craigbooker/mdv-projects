@@ -6,19 +6,21 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
 {
-  //  int addReturnVal;
-    NSInteger *firstInteger;
-    NSInteger *secondInteger;
+NSString *tempMsg;
+NSString *tmpTitle;
 }
 
 
--(NSInteger)addFunction;
+-(BOOL)compareNum:(NSInteger)compIntOne compIntTwo:(NSInteger)compIntTwo;
+//-(int)addNum:(int)firstInt secondInteger:(int)secondInt;
+-(NSInteger*)addNum:(NSInteger*)firstInt secondInt:(NSInteger*)secondInt;
+-(NSString *)appendString:(NSString*)appendStrgOne appendStrgTwo:(NSString*)appendStrgTwo;
+-(void) displayAlertWithNSNumber:(NSNumber*)numberVar;
 
-
--(void)printResults:(int)resultSum;
 
 @end
