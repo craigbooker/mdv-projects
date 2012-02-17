@@ -18,8 +18,8 @@ NSString *tmpTitle;
 
 -(bool)compareNum:(NSInteger)compIntOne compIntTwo:(NSInteger)compIntTwo;
 -(NSInteger)addNum:(NSInteger)firstInt secondInt:(NSInteger)secondInt;
--(NSMutableString*)appendString:(NSString*)appendStrgOne appendStrgTwo:(NSString*)appendStrgTwo;
+-(NSMutableString*)appendString:(NSString*)appendStringOne appendStringTwo:(NSString*)appendStringTwo;
 -(void) displayAlertWithNSNumber:(NSNumber*)numberVar;
 -(void) displayAlertWithAppendResults:(NSMutableString *)appendResult;
-
+-(void) displayAlertWithCompResults:(bool)appendResult;
 @end

@@ -238,6 +238,7 @@
 				GCC_PREFIX_HEADER = "project3/project3-Prefix.pch";
 				INFOPLIST_FILE = "project3/project3-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -249,6 +250,7 @@
 				GCC_PREFIX_HEADER = "project3/project3-Prefix.pch";
 				INFOPLIST_FILE = "project3/project3-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -272,6 +274,7 @@
 				44FB4FEB14E60496006BD7BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

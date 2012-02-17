@@ -41,19 +41,14 @@
     NSInteger result = [self addNum:5 secondInt:10];
     NSNumber *aNumber = [NSNumber numberWithInt:result];
     [self displayAlertWithNSNumber:aNumber];
-    bool compResult = [self compareNum:5 secondInt:10];
+    bool compResult = [self compareNum:5 compIntTwo:10];
     [self displayAlertWithCompResults:(bool)compResult];
-    
-    NSMutableString *appendResults = [self appendString:@"I am not sure if" appendStrgTwo:@"this is correct"];
-    
-    
+    NSMutableString *appendResult = [self appendString:@"I am not sure if" appendStringTwo:@"this is correct"];
     [super viewDidAppear:animated];
 }
-
-
-/* ::::::::: Add Function  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
- This function will take two NSInteger or int types and return the result of an addition between these two.
- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+//  ::::::::: Add Function  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+// This function will take two NSInteger or int types and return the result of an addition between these two.
+// ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 -(NSInteger)addNum:(NSInteger)firstInt secondInt:(NSInteger)secondInt
 {
     return (firstInt + secondInt);
@@ -70,11 +65,10 @@ Whatever calls this function needs to capture the return value.
 /* ::::::::: Append Function  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  
  This function will take two NSStrings and return a new NSString containing the appended strings.
  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
--(NSMutableString*)appendString:(NSString*)appendStrgOne appendStrgTwo:(NSString*)appendStrgTwo
+-(NSMutableString*)appendString:(NSString*)appendStringOne appendStringTwo:(NSString*)appendStringTwo
 {
-    NSMutableString* result = [[NSMutableString alloc] initWithString:appendStrgOne];
-    //result = [result stringByAppendingString:appendStrgOne];
-    result = [result stringByAppendingString:appendStrgTwo];
+    NSMutableString *result = [[NSMutableString alloc] initWithString:appendStringOne];
+    [result stringByAppendingString:(NSString*)appendStringTwo];
     return result;
 }  
 /* ::::::::: displayAlertWithAppendResults Function  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -115,10 +109,9 @@ Whatever calls this function needs to capture the return value.
     
 -(void) displayAlertWithNSNumber:(NSNumber*)numberVar
 {
-    NSInteger *aNumber = [numberVar integerValue];    
-    NSString tmpMsg = [[NSString alloc] initWithFormat:@"The number is %d" aNumber];
+    NSInteger aNumber = [numberVar integerValue];    
+    NSString *tmpMsg = [[NSString alloc] initWithFormat:@"The number is %d", aNumber];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Appended String" message:(NSString*)tmpMsg delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-NSAlertView *
     if (alertView != nil)
      {
      [alertView show];
