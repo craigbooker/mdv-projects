@@ -11,8 +11,7 @@
 
 @interface ViewController : UIViewController
 {
-NSString *tempMsg;
-NSString *tmpTitle;
+
 }
 
 
@@ -20,6 +19,7 @@ NSString *tmpTitle;
 -(NSInteger)addNum:(NSInteger)firstInt secondInt:(NSInteger)secondInt;
 -(NSMutableString*)appendString:(NSString*)appendStringOne appendStringTwo:(NSString*)appendStringTwo;
 -(void) displayAlertWithNSNumber:(NSNumber*)numberVar;
--(void) displayAlertWithAppendResults:(NSMutableString *)appendResult;
--(void) displayAlertWithCompResults:(bool)appendResult;
+
+/*-(void) displayAlertWithAppendResults:(NSMutableString *)appendResult;
+-(void) displayAlertWithCompResults:(bool)appendResult; */
 @end
