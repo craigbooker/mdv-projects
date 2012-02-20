@@ -22,13 +22,13 @@
 		44A3176414F21238000D1ABE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44A3176614F21238000D1ABE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44A3176814F21238000D1ABE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		44A3176C14F21238000D1ABE /* booker_craig_project4-Info.plist */ = {isa = PBXFileReference; path = "booker_craig_project4-Info.plist"; sourceTree = "<group>"; };
+		44A3176C14F21238000D1ABE /* booker_craig_project4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "booker_craig_project4-Info.plist"; sourceTree = "<group>"; };
 		44A3176E14F21238000D1ABE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44A3177014F21238000D1ABE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		44A3177214F21238000D1ABE /* booker_craig_project4-Prefix.pch */ = {isa = PBXFileReference; path = "booker_craig_project4-Prefix.pch"; sourceTree = "<group>"; };
-		44A3177314F21238000D1ABE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		44A3177214F21238000D1ABE /* booker_craig_project4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "booker_craig_project4-Prefix.pch"; sourceTree = "<group>"; };
+		44A3177314F21238000D1ABE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44A3177414F21238000D1ABE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		44A3177614F21238000D1ABE /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		44A3177614F21238000D1ABE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		44A3177714F21238000D1ABE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		44A3177A14F21238000D1ABE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */

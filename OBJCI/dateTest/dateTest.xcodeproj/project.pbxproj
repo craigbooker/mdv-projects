@@ -22,13 +22,13 @@
 		44A3172C14F202DE000D1ABE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44A3172E14F202DE000D1ABE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44A3173014F202DE000D1ABE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		44A3173414F202DE000D1ABE /* dateTest-Info.plist */ = {isa = PBXFileReference; path = "dateTest-Info.plist"; sourceTree = "<group>"; };
+		44A3173414F202DE000D1ABE /* dateTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dateTest-Info.plist"; sourceTree = "<group>"; };
 		44A3173614F202DE000D1ABE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44A3173814F202DE000D1ABE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		44A3173A14F202DE000D1ABE /* dateTest-Prefix.pch */ = {isa = PBXFileReference; path = "dateTest-Prefix.pch"; sourceTree = "<group>"; };
-		44A3173B14F202DE000D1ABE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		44A3173A14F202DE000D1ABE /* dateTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dateTest-Prefix.pch"; sourceTree = "<group>"; };
+		44A3173B14F202DE000D1ABE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44A3173C14F202DE000D1ABE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		44A3173E14F202DE000D1ABE /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		44A3173E14F202DE000D1ABE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		44A3173F14F202DE000D1ABE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		44A3174214F202DE000D1ABE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */

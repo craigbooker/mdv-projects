@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "HomeViewController.h"
 
-@interface FirstViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation HomeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +26,20 @@
 							
 - (void)viewDidLoad
 {
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 200.0f, 30.0f)];
+    if (textField != nil)
+    {
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+        [self.view addSubview:textField];
+    }
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (button != nil)
+    {
+        button.frame = CGRectMake(10.0f, 50.0f, 100.0f, 50.0f);
+        [self.view addSubview:button];
+    }
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

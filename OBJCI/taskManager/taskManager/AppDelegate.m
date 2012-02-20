@@ -8,9 +8,9 @@
 
 #import "AppDelegate.h"
 
-#import "FirstViewController.h"
+#import "HomeViewController.h"
 
-#import "SecondViewController.h"
+//#import "AddViewController.h"
 
 @implementation AppDelegate
 
@@ -28,13 +28,10 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil] autorelease];
-    UIViewController *viewController2 = [[[ListdViewController alloc] initWithNibName:@"ListViewController" bundle:nil] autorelease];
-    UIViewController *viewController3 = [[[SyncViewController alloc] initWithNibName:@"HomeViewController" bundle:nil] autorelease];
-    UIViewController *viewController4 = [[[AddToInboxViewController alloc] initWithNibName:@"AddToInboxViewController" bundle:nil] autorelease];
-    UIViewController *viewController5 = [[[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil] autorelease];
+    UIViewController *viewController1 = [[[UIViewController alloc] initWithNibName:@"HomeViewController" bundle:nil] autorelease];
+
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, viewController4, viewController5, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    UITextField *textField;
+    UILabel *infoLabel;
+    UILabel *textStatusLabel;
+}
 @end

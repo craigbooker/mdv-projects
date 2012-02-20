@@ -60,25 +60,26 @@
 				<bool key="IBUIDefinesPresentationContext">YES</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUIViewController" key="IBUISelectedViewController" id="65424606">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="823110356">
-						<string key="IBUITitle">List</string>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-					</object>
-					<reference key="IBUIParentViewController" ref="875995853"/>
-					<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
-						<int key="IBUIInterfaceOrientation">1</int>
-						<int key="interfaceOrientation">1</int>
-					</object>
-					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-					<bool key="IBUIHorizontal">NO</bool>
-				</object>
 				<array class="NSMutableArray" key="IBUIViewControllers">
-					<reference ref="65424606"/>
+					<object class="IBUIViewController" id="65424606">
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="823110356">
+							<string key="IBUITitle">List</string>
+							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							<reference key="IBUITabBar" ref="69415311"/>
+						</object>
+						<reference key="IBUIParentViewController" ref="875995853"/>
+						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
+							<int key="IBUIInterfaceOrientation">1</int>
+							<int key="interfaceOrientation">1</int>
+						</object>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<bool key="IBUIHorizontal">NO</bool>
+					</object>
 					<object class="IBUIViewController" id="1070241526">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="338972359">
 							<string key="IBUITitle">Sync</string>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							<reference key="IBUITabBar" ref="69415311"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="875995853"/>
 						<object class="IBUISimulatedTabBarMetrics" key="IBUISimulatedBottomBarMetrics"/>
@@ -116,6 +117,7 @@
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="82955816">
 							<string key="IBUITitle">Home</string>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							<reference key="IBUITabBar" ref="69415311"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="875995853"/>
 						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
@@ -129,6 +131,7 @@
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="753095532">
 							<string key="IBUITitle">Add Item</string>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							<reference key="IBUITabBar" ref="69415311"/>
 						</object>
 						<array key="IBUIToolbarItems" id="0"/>
 						<reference key="IBUIParentViewController" ref="875995853"/>
@@ -143,6 +146,7 @@
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="690911422">
 							<string key="IBUITitle">Settings</string>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							<reference key="IBUITabBar" ref="69415311"/>
 						</object>
 						<reference key="IBUIToolbarItems" ref="0"/>
 						<reference key="IBUIParentViewController" ref="875995853"/>
@@ -159,12 +163,20 @@
 					<int key="NSvFlags">266</int>
 					<string key="NSFrame">{{0, 431}, {320, 49}}</string>
 					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
 					<string key="NSReuseIdentifierKey">_NS:29</string>
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">3</int>
 						<bytes key="NSWhite">MCAwAA</bytes>
 					</object>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					<array class="NSMutableArray" key="IBUIItems">
+						<reference ref="823110356"/>
+						<reference ref="338972359"/>
+						<reference ref="82955816"/>
+						<reference ref="753095532"/>
+						<reference ref="690911422"/>
+					</array>
 				</object>
 			</object>
 		</array>

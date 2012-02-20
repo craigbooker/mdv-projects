@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44F2CD9814ECE4050049FA36 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F2CD9714ECE4050049FA36 /* SearchViewController.xib */; };
-		44F2CD9B14ECE5F50049FA36 /* AddItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F2CD9A14ECE5F50049FA36 /* AddItemViewController.xib */; };
-		44F2CD9E14ECE6A10049FA36 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F2CD9D14ECE6A10049FA36 /* AddItemViewController.m */; };
 		44F7D3B114ECD8170052586B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F7D3B014ECD8170052586B /* UIKit.framework */; };
 		44F7D3B314ECD8170052586B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F7D3B214ECD8170052586B /* Foundation.framework */; };
 		44F7D3B514ECD8170052586B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F7D3B414ECD8170052586B /* CoreGraphics.framework */; };
@@ -19,18 +16,12 @@
 		44F7D3C414ECD8170052586B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D3C314ECD8170052586B /* HomeViewController.m */; };
 		44F7D3C614ECD8170052586B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 44F7D3C514ECD8170052586B /* first.png */; };
 		44F7D3C814ECD8170052586B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44F7D3C714ECD8170052586B /* first@2x.png */; };
-		44F7D3CB14ECD8170052586B /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D3CA14ECD8170052586B /* ListViewController.m */; };
 		44F7D3CD14ECD8170052586B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 44F7D3CC14ECD8170052586B /* second.png */; };
 		44F7D3CF14ECD8170052586B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44F7D3CE14ECD8170052586B /* second@2x.png */; };
 		44F7D3D214ECD8170052586B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F7D3D014ECD8170052586B /* HomeViewController.xib */; };
-		44F7D3D514ECD8170052586B /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F7D3D314ECD8170052586B /* ListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		44F2CD9714ECE4050049FA36 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchViewController.xib; path = "../../../../../../Craig/github/mdv-projects/OBJCI/taskManager/taskManager/SearchViewController.xib"; sourceTree = "<group>"; };
-		44F2CD9A14ECE5F50049FA36 /* AddItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddItemViewController.xib; path = "../../../../../../Craig/github/mdv-projects/OBJCI/taskManager/taskManager/AddItemViewController.xib"; sourceTree = "<group>"; };
-		44F2CD9C14ECE6260049FA36 /* AddItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AddItemViewController.h; path = "../../../../../../Craig/github/mdv-projects/OBJCI/taskManager/taskManager/AddItemViewController.h"; sourceTree = "<group>"; };
-		44F2CD9D14ECE6A10049FA36 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddItemViewController.m; path = "../../../../../../Craig/github/mdv-projects/OBJCI/taskManager/taskManager/AddItemViewController.m"; sourceTree = "<group>"; };
 		44F7D3AC14ECD8170052586B /* taskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F7D3B014ECD8170052586B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44F7D3B214ECD8170052586B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,12 +36,9 @@
 		44F7D3C314ECD8170052586B /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		44F7D3C514ECD8170052586B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		44F7D3C714ECD8170052586B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		44F7D3C914ECD8170052586B /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		44F7D3CA14ECD8170052586B /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		44F7D3CC14ECD8170052586B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		44F7D3CE14ECD8170052586B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		44F7D3D114ECD8170052586B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HomeViewController.xib; sourceTree = "<group>"; };
-		44F7D3D414ECD8170052586B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,17 +91,10 @@
 				44F7D3C314ECD8170052586B /* HomeViewController.m */,
 				44F7D3C514ECD8170052586B /* first.png */,
 				44F7D3C714ECD8170052586B /* first@2x.png */,
-				44F7D3C914ECD8170052586B /* ListViewController.h */,
-				44F2CD9A14ECE5F50049FA36 /* AddItemViewController.xib */,
-				44F2CD9C14ECE6260049FA36 /* AddItemViewController.h */,
-				44F2CD9D14ECE6A10049FA36 /* AddItemViewController.m */,
-				44F7D3CA14ECD8170052586B /* ListViewController.m */,
 				44F7D3CC14ECD8170052586B /* second.png */,
 				44F7D3CE14ECD8170052586B /* second@2x.png */,
 				44F7D3D014ECD8170052586B /* HomeViewController.xib */,
-				44F7D3D314ECD8170052586B /* ListViewController.xib */,
 				44F7D3B714ECD8170052586B /* Supporting Files */,
-				44F2CD9714ECE4050049FA36 /* SearchViewController.xib */,
 			);
 			path = taskManager;
 			sourceTree = "<group>";
@@ -185,9 +166,6 @@
 				44F7D3CD14ECD8170052586B /* second.png in Resources */,
 				44F7D3CF14ECD8170052586B /* second@2x.png in Resources */,
 				44F7D3D214ECD8170052586B /* HomeViewController.xib in Resources */,
-				44F7D3D514ECD8170052586B /* ListViewController.xib in Resources */,
-				44F2CD9814ECE4050049FA36 /* SearchViewController.xib in Resources */,
-				44F2CD9B14ECE5F50049FA36 /* AddItemViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +179,6 @@
 				44F7D3BD14ECD8170052586B /* main.m in Sources */,
 				44F7D3C114ECD8170052586B /* AppDelegate.m in Sources */,
 				44F7D3C414ECD8170052586B /* HomeViewController.m in Sources */,
-				44F7D3CB14ECD8170052586B /* ListViewController.m in Sources */,
-				44F2CD9E14ECE6A10049FA36 /* AddItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +199,6 @@
 				44F7D3D114ECD8170052586B /* en */,
 			);
 			name = HomeViewController.xib;
-			sourceTree = "<group>";
-		};
-		44F7D3D314ECD8170052586B /* ListViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44F7D3D414ECD8170052586B /* en */,
-			);
-			name = ListViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

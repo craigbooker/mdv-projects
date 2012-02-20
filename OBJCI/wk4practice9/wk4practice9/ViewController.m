@@ -16,6 +16,18 @@
 
 - (void)viewDidLoad
 {
+    NSDate* date = [NSDate date];
+    
+    NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init]autorelease];
+    if (dateFormatter != nil)
+    {
+        //[dateFormatter setDateFormat:@"EEE yyyy.MM.dd ZZZ"];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+        NSString* str = [dateFormatter stringFromDate:date];
+        NSLog(str);
+        [dateLabel setText:str];
+    }
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
