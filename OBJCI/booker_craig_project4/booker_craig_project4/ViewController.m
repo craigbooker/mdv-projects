@@ -71,6 +71,7 @@
         infoLabel.backgroundColor = [UIColor whiteColor];
         infoLabel.textColor = [UIColor greenColor];
         infoLabel.textAlignment = UITextAlignmentCenter;
+        infoLabel.numberOfLines = 7;
         infoLabel.lineBreakMode = UILineBreakModeWordWrap;
         [self.view addSubview:infoLabel];
     }
