@@ -6,16 +6,34 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "TriangleClass.h"
 #import "ShapeClass.h"
+#import "TriangleClass.h"
+
 
 @implementation TriangleClass
 -(id)init
 {
     if (self = [super init])
     {
-        [self setAttributes:SHAPETYPE_TRIANGLE name:@"Triangle" shapeNumSides:3];
+        [self initWithDetails:1 numSides:3 name:@"Traingle" areaVal:0]; 
+        
     }
     return self;
 }
+-(int)GetArea
+{
+    _areaVal = 0.5f * (4 * 5);
+    //NSLog(@"Inside GetArea areaVal= %f", areaVal);
+    return _areaVal;
+}
+-(NSString*)getTextOutput
+{
+    textOutput = [NSString stringWithFormat:@"Shape %@ Area %i", _name, _areaVal];
+    if (textOutput != nil)
+    {
+        return textOutput;    
+    }
+    return nil;
+    
+} 
 @end

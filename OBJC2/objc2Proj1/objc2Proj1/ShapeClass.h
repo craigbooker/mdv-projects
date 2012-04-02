@@ -8,26 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum
-{
-    SHAPETYPE_SQUARE=0,
-    SHAPETYPE_TRIANGLE
-} EShapeType;
-
 @interface ShapeClass : NSObject
 {
 @protected 
-    EShapeType shapeType;
-    int numSides;
-    NSString* shapeName;
+    
+    int _type;
+    int _numSides;
+    int _areaVal;
+    NSString* _name;
+    NSString *textOutput;
 }
--(int)GetNumSlides;
--(NSString*)GetName;
 
-
--(void)setAttributes: (EShapeType)type name:(NSString*)name shapeNumSides:(int)shapeNumSides;
--(void)printInfo;
-
-
+-(id)initWithDetails:(int)type numSides:(int)numSides name:(NSString*)name areaVal:(int)areaVal;
+-(int)GetArea;
+-(NSString*)getTextOutput;
 @end
-

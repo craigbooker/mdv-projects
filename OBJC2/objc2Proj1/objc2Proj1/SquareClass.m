@@ -14,8 +14,24 @@
 {
     if (self = [super init])
     {
-        [self setAttributes:SHAPETYPE_SQUARE name:@"Square" shapeNumSides:4];
+        [self initWithDetails:0 numSides:4 name:@"Square" areaVal:0]; 
+        
     }
     return self;
 }
+-(int)GetArea
+{
+    _areaVal = (4 * 5);
+    return _areaVal;
+}
+-(NSString*)getTextOutput
+{
+    textOutput = [NSString stringWithFormat:@"Shape %@ Area %i", _name, _areaVal];
+    if (textOutput != nil)
+    {
+        return textOutput;    
+    }
+    return nil;
+    
+} 
 @end
