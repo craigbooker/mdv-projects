@@ -18,9 +18,11 @@
 }
 -(IBAction)onInfoClick:(id)sender;
 -(IBAction)onSwitch:(id)sender;
--(IBAction)onClearAll:(id)sender;
 
--(IBAction)onCalcClick:(id)sender;
+-(IBAction)onCancelInput:(id)sender;
+-(IBAction)onClearAll:(id)sender;
+-(IBAction)onDigitClick:(id)sender;
+-(IBAction)onOpClick:(id)sender;
 
 -(IBAction)onColorClick:(id)sender;
 

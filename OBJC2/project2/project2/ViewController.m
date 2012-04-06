@@ -50,10 +50,10 @@
     }
 }
 
--(IBAction)onClickDigit:(id)sender
+-(IBAction)onDigitClick:(id)sender
 {
     currentNum = currentNum*10 + (float)[sender tag];
-    calcScreen.text = ;
+    calcScreen.text = [NSString stringWithFormat:@"%2f", currentNum];
 }
 
 
@@ -64,31 +64,31 @@
     if (currentOp == 0)
     {
         endResult = currentNum;
-    }
-    else {
-        switch (currentOp) {
-            case 1:
-                endResult = endResult + currentNum;
-                break;
-            case 2:
-                endResult = endResult - currentNum;
-                break;
-            case 3:
-                endResult = endResult * currentNum;
-                break;
-            case 4:
-                endResult = endResult / currentNum;
-                break;
-            case 5:
-                currentOp = 0;
-                break;
-        }
+    } else {
+            switch (currentOp) {
+                case 1:
+                    endResult = endResult + currentNum;
+                    break;
+                case 2:
+                    endResult = endResult - currentNum;
+                    break;
+                case 3:
+                    endResult = endResult * currentNum;
+                    break;
+                case 4:
+                    endResult = endResult / currentNum;
+                    break;
+                case 5:
+                    currentOp = 0;
+                    break;
+            }
         
     }
     currentNum = 0;
     calcScreen.text = [NSString stringWithFormat:@"%2f", endResult];
-    if (sender tag == 0) endResult = 0;
-    currentOp = [];
+    if ([sender tag] == 0) 
+    endResult = 0;
+    currentOp = [sender tag];
 }
 -(IBAction)onCancelInput:(id)sender
 {}
