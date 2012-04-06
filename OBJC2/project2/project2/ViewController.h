@@ -12,7 +12,8 @@
 {
     IBOutlet UILabel *calcScreen;
     IBOutlet UISwitch *powerSwitch;
-    IBOutlet UISegmentedControl *colorSwitch;
+    IBOutlet UISegmentedControl *segmentControl;
+    IBOutlet UILabel *segmentTest;
     int currentOperator;
     int currentColor;
     float currentNum;
