@@ -28,6 +28,9 @@
 }
 -(void)viewDidAppear:(BOOL)animated
 {
+    //int colorTag = colorSwitch.selectedSegmentIndex;
+    self.view.backgroundColor = [UIColor whiteColor];
+
     powerSwitch.on = true;
     //bool isPowerOn = powerSwitch.on;
     
@@ -77,14 +80,14 @@ if (powerSwitch.on != false)
                         result = result - currentNum;
                         break;
                 case 3:
-                    result = result * currentNum;
-                    break;
+                        result = result * currentNum;
+                        break;
                 case 4:
-                    result = result / currentNum;
-                    break;
+                        result = result / currentNum;
+                        break;
                 case 5:
-                    currentOperator = 0;
-                    break;
+                        currentOperator = 0;
+                        break;
             }
         
     }
@@ -123,25 +126,27 @@ if (powerSwitch.on != false)
 
 -(IBAction)onColorClick:(id)sender
 {
-
-    UISegmentedControl *thisColorControl = (UISegmentedControl*)sender;
-    if (thisColorControl != nil)
+    UISegmentedControl *thisColorSwitch = (UISegmentedControl*)sender;
+    if (thisColorSwitch != nil)
     {
-        int colorTag = thisColorControl.tag;
- 
+        int colorTag = thisColorSwitch.selectedSegmentIndex;
+        NSLog(@"%i", colorTag);
     switch (colorTag) {
-            case 0:
-             self.view.backgroundColor = [UIColor greenColor];
+                case 0:
+                self.view.backgroundColor = [UIColor whiteColor];
+                    break;
+            
+                case 1:
+                self.view.backgroundColor = [UIColor blueColor];
+                    break;
+            
+                case 2:
+                self.view.backgroundColor = [UIColor greenColor];
+                    break;
+            
+                default:
+                self.view.backgroundColor = [UIColor whiteColor];
                 break;
-            case 1:
-            self.view.backgroundColor = [UIColor blueColor];
-                break;
-            case 2:
-            self.view.backgroundColor = [UIColor greenColor];
-                break;
-            default:
-            self.view.backgroundColor = [UIColor greenColor];
-            break;
         }
         
     }
