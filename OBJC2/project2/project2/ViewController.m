@@ -28,7 +28,7 @@
 }
 -(void)viewDidAppear:(BOOL)animated
 {
-    powerSwitch.on = false;
+    powerSwitch.on = true;
     //bool isPowerOn = powerSwitch.on;
     
     [super viewDidAppear:animated];
@@ -44,62 +44,72 @@
     {
         //int tag = thisSwitch.tag;
         int stateTemp = thisSwitch.state;
-        powerSwitch.on = true;
+        //powerSwitch.on = true;
         NSString *temp = [NSString stringWithFormat:@"You turned the calculator %d .", stateTemp];
         NSLog(@"%@", temp);
+    }
+    else {
+        NSLog(@"Hello");
+    
     }
 }
 
 -(IBAction)onDigitClick:(id)sender
 {
-    currentNum = currentNum*10 + (float)[sender tag];
-    calcScreen.text = [NSString stringWithFormat:@"%2f", currentNum];
-}
-
-
-
+if (powerSwitch.on != false)
+    {
+        currentNum = currentNum + (float)[sender tag];
+        calcScreen.text = [NSString stringWithFormat:@"%2f", currentNum];
+    } 
+}    
 /*  Operation Function  */
 -(IBAction)onOpClick:(id)sender
 {
-    if (currentOp == 0)
+    if (currentOperator == 0)
     {
-        endResult = currentNum;
+        result = currentNum;
     } else {
-            switch (currentOp) {
+            switch (currentOperator) {
                 case 1:
-                    endResult = endResult + currentNum;
-                    break;
+                        result = result + currentNum;
+                        break;
                 case 2:
-                    endResult = endResult - currentNum;
-                    break;
+                        result = result - currentNum;
+                        break;
                 case 3:
-                    endResult = endResult * currentNum;
+                    result = result * currentNum;
                     break;
                 case 4:
-                    endResult = endResult / currentNum;
+                    result = result / currentNum;
                     break;
                 case 5:
-                    currentOp = 0;
+                    currentOperator = 0;
                     break;
             }
         
     }
     currentNum = 0;
-    calcScreen.text = [NSString stringWithFormat:@"%2f", endResult];
+    calcScreen.text = [NSString stringWithFormat:@"%2f", result];
     if ([sender tag] == 0) 
-    endResult = 0;
-    currentOp = [sender tag];
+    result = 0;
+    currentOperator = [sender tag];
 }
+
 -(IBAction)onCancelInput:(id)sender
-{}
+{
+    currentNum = 0;
+    calcScreen.text = @"0";
+
+}
 
 -(IBAction)onClearAll:(id)sender
 {
     currentNum = 0;
     calcScreen.text = @"0";
-    currentOp = 0;
+    currentOperator = 0;
     
 }
+
 -(IBAction)onInfoClick:(id)sender
 {
     SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
@@ -109,8 +119,32 @@
     }
 
 }
+
+
 -(IBAction)onColorClick:(id)sender
 {
-    
+
+    UISegmentedControl *thisColorControl = (UISegmentedControl*)sender;
+    if (thisColorControl != nil)
+    {
+        int colorTag = thisColorControl.tag;
+ 
+    switch (colorTag) {
+            case 0:
+             self.view.backgroundColor = [UIColor greenColor];
+                break;
+            case 1:
+            self.view.backgroundColor = [UIColor blueColor];
+                break;
+            case 2:
+            self.view.backgroundColor = [UIColor greenColor];
+                break;
+            default:
+            self.view.backgroundColor = [UIColor greenColor];
+            break;
+        }
+        
+    }
+   
 }
 @end

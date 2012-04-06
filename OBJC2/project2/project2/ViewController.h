@@ -12,9 +12,11 @@
 {
     IBOutlet UILabel *calcScreen;
     IBOutlet UISwitch *powerSwitch;
-    int currentOp;
+    IBOutlet UISegmentedControl *colorSwitch;
+    int currentOperator;
+    int currentColor;
     float currentNum;
-    float endResult;
+    float result;
 }
 -(IBAction)onInfoClick:(id)sender;
 -(IBAction)onSwitch:(id)sender;
