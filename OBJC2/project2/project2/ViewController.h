@@ -13,7 +13,7 @@
     IBOutlet UILabel *calcScreen;
     IBOutlet UISwitch *powerSwitch;
     int currentOp;
-    float currentNumber;
+    float currentNum;
     float endResult;
 }
 -(IBAction)onInfoClick:(id)sender;
