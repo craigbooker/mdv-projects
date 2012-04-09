@@ -19,6 +19,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+-(IBAction)GetText:(id)sender
+{
+    NSString *tempString;
+    tempString = textView.text;
+    NSLog(@"%@", tempString);
+}
 
 - (void)viewDidUnload
 {

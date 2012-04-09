@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+{
+    IBOutlet UIPickerView *pickerView;
+}
+-(IBAction)onClick:(id)sender;
 
+-(IBAction)GetPickerText:(id)sender;
 @end

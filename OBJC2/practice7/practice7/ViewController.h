@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    IBOutlet UITextView *textView;
+}
+-(IBAction)GetText:(id)sender;
 
 @end
