@@ -62,8 +62,9 @@
 {
 if (powerSwitch.on != false)
     {
-        currentNum = currentNum + (float)[sender tag];
+        currentNum = currentNum*10 + (float)[sender tag];
         calcScreen.text = [NSString stringWithFormat:@"%2f", currentNum];
+        //NSLog(@"%2f", currentNum);
     } 
 }    
 /*  Operation Function  */
