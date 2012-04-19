@@ -7,12 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol MyDelegate <NSObject>
 
-@interface ViewController : UIViewController
-{
-    IBOutlet UITextView *textView;
-}
-
--(IBAction)onAddEvent:(id)sender;
+-(void)PassInfo:(NSString*)info;
 
 @end
+
+@interface ViewController : UIViewController <UITextFieldDelegate>
+{
+    IBOutlet UITextView *textView;
+     NSString *eventOutput;
+    id <MyDelegate> delegate;
+    IBOutlet UITextInputMode *textField;
+}
+
+-(IBAction)onClick:(id)sender;
+//-(IBAction)onAddEvent:(id)sender;
+//-(void) loadEvents:(NSString *)eventOutput;
+//-(IBAction)onSave:(id)sender;
+@property (nonatomic, assign) id<MyDelegate> delegate;
+
+@end
+
+

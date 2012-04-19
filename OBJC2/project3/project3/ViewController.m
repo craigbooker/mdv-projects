@@ -7,16 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "AddEventViewController.h"
+#import "TopViewController.h"
+//@synthesize delegate;
 
-@interface ViewController ()
-
-@end
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
+    //[ViewController loadEvents];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -37,7 +36,9 @@
 }
 -(void) keyboardWillShow: (NSNotification *)notification
 {
-
+    CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    CGRect newFrame = CGRectMake(0.0f, textView.frame.origin.y, 320.0f, textView.frame.size.height - keyboardSize.height);
+    [textView setFrame:newFrame];
 }
 
 -(void) keyboardWillHide: (NSNotification *)notification
@@ -45,17 +46,57 @@
 
 }
 
-
-
+/*
+-(void) loadEvents:(NSString *)eventOutput
+{
+    NSString *_eventOutput;
+    _eventOutput = eventOutput; 
+    if(_eventOutput != nil)
+    {
+        NSLog(@"New Event: %@", _eventOutput);
+    }
+    else 
+    {
+        NSLog(@"Add some events please!");    
+    
+    }
+}
+ */
+/*
 -(IBAction)onAddEvent:(id)sender
 {
-    AddEventViewController *addEventViewController = [[AddEventViewController alloc] initWithNibName:@"AddEventView" bundle:nil];
-    if (addEventViewController != nil)
+    TopViewController *TopViewController = [[TopViewController alloc] initWithNibName:@"topView" bundle:nil];
+    if (TopViewController != nil)
     {
-        [self presentModalViewController:addEventViewController animated:TRUE];
+        [self presentModalViewController:TopViewController animated:TRUE];
     }
     
 }
+*/
+-(IBAction)onClick:(id)sender
+{
+    
+    TopViewController *topView = [[TopViewController alloc] initWithNibName:@"topView" bundle:nil];
+    if (topView != nil)
+    {
+        [self presentModalViewController:topView animated:true];
+     }
+    
+    
+    [textView resignFirstResponder];
+}
+/*
+-(IBAction)onSave:(id)sender
+{
+    NSString *text = eventTextInput.text;
+    if (delegate != nil)
+    {
+        [delegate PassInfo:text];
+        
+    }
+    [self dismissModalViewControllerAnimated:true];
+}
+ */
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
