@@ -7,25 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
-@protocol MyDelegate <NSObject>
+#import "TopViewController.h"
 
--(void)PassInfo:(NSString*)info;
+@protocol TopViewDelegate <NSObject>
+
+-(void)DidSave:(NSString*)info;
 
 @end
 
-@interface ViewController : UIViewController <UITextFieldDelegate>
+@interface ViewController : UIViewController <TopViewDelegate>
 {
     IBOutlet UITextView *textView;
-     NSString *eventOutput;
-    id <MyDelegate> delegate;
-    IBOutlet UITextInputMode *textField;
 }
+@property (nonatomic, assign) id<TopViewDelegate> delegate;
 
 -(IBAction)onClick:(id)sender;
-//-(IBAction)onAddEvent:(id)sender;
-//-(void) loadEvents:(NSString *)eventOutput;
-//-(IBAction)onSave:(id)sender;
-@property (nonatomic, assign) id<MyDelegate> delegate;
+
+
 
 @end
 

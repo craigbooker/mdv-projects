@@ -39,6 +39,7 @@
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    [self dismissModalViewControllerAnimated:true];
     return true;
 }
 

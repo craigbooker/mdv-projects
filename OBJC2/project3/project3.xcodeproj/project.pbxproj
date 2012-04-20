@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4443976A153CC6B500922360 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44439769153CC6B500922360 /* TopViewController.m */; };
 		4463BDBF1534D01100883F3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4463BDBE1534D01100883F3A /* UIKit.framework */; };
 		4463BDC11534D01100883F3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4463BDC01534D01100883F3A /* Foundation.framework */; };
 		4463BDC31534D01100883F3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4463BDC21534D01100883F3A /* CoreGraphics.framework */; };
@@ -17,11 +16,10 @@
 		4463BDD21534D01100883F3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4463BDD11534D01100883F3A /* ViewController.m */; };
 		4463BDD51534D01100883F3A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4463BDD31534D01100883F3A /* ViewController.xib */; };
 		4463BDDC1534D0DC00883F3A /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4463BDDB1534D0DC00883F3A /* TopView.xib */; };
+		449F97111540C122007D727C /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 449F97101540C122007D727C /* TopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		44439768153CC6B500922360 /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopViewController.h; path = "../../../../../../Craig/github/mdv-projects/OBJC2/project3/project3/TopViewController.h"; sourceTree = "<group>"; };
-		44439769153CC6B500922360 /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopViewController.m; path = "../../../../../../Craig/github/mdv-projects/OBJC2/project3/project3/TopViewController.m"; sourceTree = "<group>"; };
 		4463BDBA1534D01100883F3A /* project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4463BDBE1534D01100883F3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4463BDC01534D01100883F3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,6 +34,8 @@
 		4463BDD11534D01100883F3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4463BDD41534D01100883F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		4463BDDB1534D0DC00883F3A /* TopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
+		449F97101540C122007D727C /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopViewController.m; path = ../../../../../../Craig/Desktop/TopViewController.m; sourceTree = "<group>"; };
+		449F97121540C140007D727C /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopViewController.h; path = ../../../../../../Craig/Desktop/TopViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 				4463BDD11534D01100883F3A /* ViewController.m */,
 				4463BDD31534D01100883F3A /* ViewController.xib */,
 				4463BDDB1534D0DC00883F3A /* TopView.xib */,
-				44439768153CC6B500922360 /* TopViewController.h */,
-				44439769153CC6B500922360 /* TopViewController.m */,
+				449F97121540C140007D727C /* TopViewController.h */,
+				449F97101540C122007D727C /* TopViewController.m */,
 				4463BDC51534D01100883F3A /* Supporting Files */,
 			);
 			path = project3;
@@ -172,7 +172,7 @@
 				4463BDCB1534D01100883F3A /* main.m in Sources */,
 				4463BDCF1534D01100883F3A /* AppDelegate.m in Sources */,
 				4463BDD21534D01100883F3A /* ViewController.m in Sources */,
-				4443976A153CC6B500922360 /* TopViewController.m in Sources */,
+				449F97111540C122007D727C /* TopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
