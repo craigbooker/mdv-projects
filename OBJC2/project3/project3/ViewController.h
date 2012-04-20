@@ -11,7 +11,7 @@
 
 @protocol TopViewDelegate <NSObject>
 
--(void)DidSave:(NSString*)info;
+-(void)DidClose:(NSString*)eventInfo;
 
 @end
 

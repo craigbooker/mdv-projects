@@ -24,9 +24,9 @@
     [textView resignFirstResponder];
 }
 
--(void)DidSave:(NSString*)info
+-(void)DidClose:(NSString*)eventInfo
 {
-    textView.text = info;
+    textView.text = eventInfo;
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
