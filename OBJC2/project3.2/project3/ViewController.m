@@ -5,6 +5,7 @@
 //  Created by Craig Booker on 4/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
+
 #import "ViewController.h"
 #import "TopViewController.h"
 
@@ -13,18 +14,23 @@
 
 -(IBAction)onClick:(id)sender
 {
-TopViewController *topView = [[TopViewController alloc] initWithNibName:@"TopView" bundle:nil];
-if (topView != nil)
-{
-    topView.delegate = self;
-    [self presentModalViewController:topView animated:true];
-}
-//[textView resignFirstResponder];
+    TopViewController *topView = [[TopViewController alloc] initWithNibName:@"TopView" bundle:nil];
+    if (topView != nil)
+    {
+        topView.delegate = self;
+        [self presentModalViewController:topView animated:true];
+    }
+    //[textView resignFirstResponder];
 }
 
 -(void)DidClose:(NSString*)eventInfo
 {
-textView.text = eventInfo;
+    textView.text = eventInfo;
+}
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    textField.text = [NSString stringWithString:@""];
 }
 
 - (void)viewDidLoad
