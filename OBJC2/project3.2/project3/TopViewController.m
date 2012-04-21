@@ -20,6 +20,17 @@
     }
     return self;
 }
+-(IBAction)DidSave:(id)sender
+{
+    if (delegate != nil)
+    {
+        [delegate DidClose:textField.text];
+    }
+    
+    [self dismissModalViewControllerAnimated:true];
+    
+
+}
 
 - (void)viewDidLoad
 {

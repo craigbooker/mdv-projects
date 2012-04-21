@@ -11,9 +11,9 @@
 
 @interface TopViewController : UIViewController
 {
- 
+    IBOutlet UITextField *textField; 
 }
-
+-(IBAction)DidSave:(id)sender;
 @property (strong) id<testDelegate> delegate;
 
 @end
