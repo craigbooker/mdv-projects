@@ -10,6 +10,10 @@
 #import "ViewController.h"
 
 @implementation TopViewController
+@synthesize closeKeyBoardButton;
+@synthesize saveDataButton;
+@synthesize myDatePicker;
+@synthesize myTextField;
 @synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -24,22 +28,19 @@
 {
     if (delegate != nil)
     {
-        UIDatePicker * picker = (UIDatePicker*)sender;
-        if (picker != nil)
+        if ((myDatePicker != nil) && (myTextField != nil))
         {
-            NSDate *date = picker.date;
+            NSDate *date = myDatePicker.date;
             NSLog(@"date=%@", [date description]);
             NSString *textFieldVar = textField.text;
             [delegate DidClose:textFieldVar];
-        }    
-
+        }
+        [self dismissModalViewControllerAnimated:true];
     }
-    
-    [self dismissModalViewControllerAnimated:true];
 }
--(IBAction)CloseKeyboard:(id)sender
-{
-    [closeKeyBoardButton resignFirstResponder];
+
+- (IBAction)dismissKeyboard:(id)sender {
+    [myTextField resignFirstResponder];
 }
 
 - (void)viewDidLoad
@@ -50,6 +51,12 @@
 
 - (void)viewDidUnload
 {
+    [myTextField release];
+    myTextField = nil;
+    [self setMyTextField:nil];
+    [self setCloseKeyBoardButton:nil];
+    [self setSaveDataButton:nil];
+    [self setMyDatePicker:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -67,6 +74,14 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+- (void)dealloc {
+    [myTextField release];
+    [myTextField release];
+    [closeKeyBoardButton release];
+    [saveDataButton release];
+    [myDatePicker release];
+    [super dealloc];
 }
 @end
 /*

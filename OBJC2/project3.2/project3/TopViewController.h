@@ -12,11 +12,15 @@
 @interface TopViewController : UIViewController
 {
     IBOutlet UITextField *textField;
-    UIButton *closeKeyBoardButton;
     
 }
+@property (retain, nonatomic) IBOutlet UIButton *closeKeyBoardButton;
+@property (retain, nonatomic) IBOutlet UIButton *saveDataButton;
+@property (retain, nonatomic) IBOutlet UIDatePicker *myDatePicker;
+@property (retain, nonatomic) IBOutlet UITextField *myTextField;
 -(IBAction)DidSave:(id)sender;
--(IBAction)CloseKeyboard:(id)sender;
+- (IBAction)dismissKeyboard:(id)sender;
+
 @property (strong) id<testDelegate> delegate;
 
 @end

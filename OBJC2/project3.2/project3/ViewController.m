@@ -20,12 +20,15 @@
         topView.delegate = self;
         [self presentModalViewController:topView animated:true];
     }
-    //[textView resignFirstResponder];
+    [textView resignFirstResponder];
 }
 
 -(void)DidClose:(NSString*)eventInfo
 {
-    textView.text = eventInfo;
+    NSLog(@"%@", eventInfo);
+        NSString *newEventLabelText = [[NSString alloc] initWithString:@"New Event: "]; 
+        NSString *tempString = [[NSString alloc] initWithFormat:@"%@ %@ \n",newEventLabelText, eventInfo];
+        textView.text = tempString; 
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
@@ -48,10 +51,11 @@
 }
 -(void)viewWillAppear:(BOOL)animated
 {
+    /*
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    
+    */
     [super viewWillAppear:animated];
     
 }
