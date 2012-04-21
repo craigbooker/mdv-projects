@@ -10,7 +10,10 @@
 #import "TopViewController.h"
 
 @implementation ViewController
+{
 
+
+}
 
 -(IBAction)onClick:(id)sender
 {
@@ -25,12 +28,24 @@
 
 -(void)DidClose:(NSString*)eventInfo
 {
-    NSLog(@"%@", eventInfo);
-        NSString *newEventLabelText = [[NSString alloc] initWithString:@"New Event: "]; 
-        NSString *tempString = [[NSString alloc] initWithFormat:@"%@ %@ \n",newEventLabelText, eventInfo];
-        textView.text = tempString; 
-}
+    NSString *newEventLabelText = [[NSString alloc] initWithString:@"New Event: "];
+    NSString *noEventText = [[NSString alloc] initWithString:@"No Events Added!"];
 
+    if([textView.text isEqualToString:noEventText])
+    {
+        NSLog(@"%@", eventInfo);
+        [outPutText appendString: eventInfo];
+        NSString *tempString = [[NSString alloc] initWithFormat:@"%@ %@ \n",newEventLabelText, outPutText];
+        textView.text = tempString; 
+    }
+    else{
+        NSLog(@"%@", eventInfo);
+        [outPutText appendString: eventInfo];
+        NSString *tempString = [[NSString alloc] initWithFormat:@"%@ %@ \n",newEventLabelText, outPutText];
+        textView.text = tempString;     
+    
+    }
+}
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
     textField.text = [NSString stringWithString:@""];
@@ -51,11 +66,7 @@
 }
 -(void)viewWillAppear:(BOOL)animated
 {
-    /*
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    */
+
     [super viewWillAppear:animated];
     
 }
