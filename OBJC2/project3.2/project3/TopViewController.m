@@ -24,12 +24,22 @@
 {
     if (delegate != nil)
     {
-        [delegate DidClose:textField.text];
+        UIDatePicker * picker = (UIDatePicker*)sender;
+        if (picker != nil)
+        {
+            NSDate *date = picker.date;
+            NSLog(@"date=%@", [date description]);
+            NSString *textFieldVar = textField.text;
+            [delegate DidClose:textFieldVar];
+        }    
+
     }
     
     [self dismissModalViewControllerAnimated:true];
-    
-
+}
+-(IBAction)CloseKeyboard:(id)sender
+{
+    [closeKeyBoardButton resignFirstResponder];
 }
 
 - (void)viewDidLoad
@@ -43,9 +53,9 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)eventTextField
 {
-    textField.text = [NSString stringWithString:@""];
+    eventTextField.text = [NSString stringWithString:@""];
     return true;
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField

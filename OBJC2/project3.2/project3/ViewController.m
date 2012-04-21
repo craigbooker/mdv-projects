@@ -31,6 +31,7 @@
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
     textField.text = [NSString stringWithString:@""];
+    return true;
 }
 
 - (void)viewDidLoad

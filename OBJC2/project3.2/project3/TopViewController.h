@@ -11,9 +11,12 @@
 
 @interface TopViewController : UIViewController
 {
-    IBOutlet UITextField *textField; 
+    IBOutlet UITextField *textField;
+    UIButton *closeKeyBoardButton;
+    
 }
 -(IBAction)DidSave:(id)sender;
+-(IBAction)CloseKeyboard:(id)sender;
 @property (strong) id<testDelegate> delegate;
 
 @end
