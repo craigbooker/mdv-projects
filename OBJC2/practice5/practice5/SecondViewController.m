@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SecondViewControllerViewController.h"
+#import "SecondViewController.h"
 
 @interface SecondViewControllerViewController ()
 

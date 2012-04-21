@@ -10,10 +10,6 @@
 #import "TopViewController.h"
 
 @implementation ViewController
-{
-
-
-}
 
 -(IBAction)onClick:(id)sender
 {
@@ -26,12 +22,12 @@
     [textView resignFirstResponder];
 }
 
--(void)DidClose:(NSString*)eventInfo
+-(void)DidClose:(NSString*)eventInfo eventDate:(NSDate *)dateField
 {
     NSString *newEventLabelText = [[NSString alloc] initWithString:@"New Event: "];
-    NSString *noEventText = [[NSString alloc] initWithString:@"No Events Added!"];
+    //NSString *noEventText = [[NSString alloc] initWithString:@""];
 
-    if([textView.text isEqualToString:noEventText])
+    if([textView.text isEqualToString:@"No events added!"])
     {
         NSLog(@"%@", eventInfo);
         [outPutText appendString: eventInfo];

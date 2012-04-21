@@ -33,7 +33,7 @@
             NSDate *date = myDatePicker.date;
             NSLog(@"date=%@", [date description]);
             NSString *textFieldVar = textField.text;
-            [delegate DidClose:textFieldVar];
+            [delegate DidClose:textFieldVar eventDate:date];
         }
         [self dismissModalViewControllerAnimated:true];
     }
