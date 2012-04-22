@@ -16,7 +16,7 @@
 		4463BDD21534D01100883F3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4463BDD11534D01100883F3A /* ViewController.m */; };
 		4463BDD51534D01100883F3A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4463BDD31534D01100883F3A /* ViewController.xib */; };
 		4463BDDC1534D0DC00883F3A /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4463BDDB1534D0DC00883F3A /* TopView.xib */; };
-		449F97111540C122007D727C /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 449F97101540C122007D727C /* TopViewController.m */; };
+		ED3BFCFB15421139005D75A2 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3BFCFA15421139005D75A2 /* TopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		4463BDD11534D01100883F3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4463BDD41534D01100883F3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		4463BDDB1534D0DC00883F3A /* TopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
-		449F97101540C122007D727C /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopViewController.m; path = ../../../../../../Craig/Desktop/TopViewController.m; sourceTree = "<group>"; };
-		449F97121540C140007D727C /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopViewController.h; path = ../../../../../../Craig/Desktop/TopViewController.h; sourceTree = "<group>"; };
+		ED3BFCF915421139005D75A2 /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		ED3BFCFA15421139005D75A2 /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 				4463BDD11534D01100883F3A /* ViewController.m */,
 				4463BDD31534D01100883F3A /* ViewController.xib */,
 				4463BDDB1534D0DC00883F3A /* TopView.xib */,
-				449F97121540C140007D727C /* TopViewController.h */,
-				449F97101540C122007D727C /* TopViewController.m */,
+				ED3BFCF915421139005D75A2 /* TopViewController.h */,
+				ED3BFCFA15421139005D75A2 /* TopViewController.m */,
 				4463BDC51534D01100883F3A /* Supporting Files */,
 			);
 			path = project3;
@@ -172,7 +172,7 @@
 				4463BDCB1534D01100883F3A /* main.m in Sources */,
 				4463BDCF1534D01100883F3A /* AppDelegate.m in Sources */,
 				4463BDD21534D01100883F3A /* ViewController.m in Sources */,
-				449F97111540C122007D727C /* TopViewController.m in Sources */,
+				ED3BFCFB15421139005D75A2 /* TopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +247,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "project3/project3-Prefix.pch";
 				INFOPLIST_FILE = "project3/project3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -258,6 +259,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "project3/project3-Prefix.pch";
 				INFOPLIST_FILE = "project3/project3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
