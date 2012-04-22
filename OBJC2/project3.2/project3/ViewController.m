@@ -22,23 +22,19 @@
     [textView resignFirstResponder];
 }
 
--(void)DidClose:(NSString*)eventInfo eventDate:(NSDate *)dateField
+-(void)DidClose:(NSString*)newString
 {
-    NSString *newEventLabelText = [[NSString alloc] initWithString:@"New Event: "];
-    //NSString *noEventText = [[NSString alloc] initWithString:@""];
-
     if([textView.text isEqualToString:@"No events added!"])
     {
-        NSLog(@"%@", eventInfo);
-        [outPutText appendString: eventInfo];
-        NSString *tempString = [[NSString alloc] initWithFormat:@"%@ %@ \n",newEventLabelText, outPutText];
-        textView.text = tempString; 
+        textView.text = @"";
+        outPutText = [NSMutableString stringWithString:textView.text];
+        [outPutText appendString:newString];
+        textView.text = outPutText;
     }
-    else{
-        NSLog(@"%@", eventInfo);
-        [outPutText appendString: eventInfo];
-        NSString *tempString = [[NSString alloc] initWithFormat:@"%@ %@ \n",newEventLabelText, outPutText];
-        textView.text = tempString;     
+    else {
+        outPutText = [NSMutableString stringWithString:textView.text];
+        [outPutText appendString:newString];
+        textView.text = outPutText;
     
     }
 }
@@ -62,12 +58,8 @@
 }
 -(void)viewWillAppear:(BOOL)animated
 {
-
     [super viewWillAppear:animated];
-    
 }
-
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @protocol testDelegate <NSObject>
--(void)DidClose:(NSString*)eventInfo;
+//-(void)DidClose:(NSString*)eventInfo;
+-(void)DidClose:(NSString*)newString;
 @end
 
 @interface ViewController : UIViewController <testDelegate>

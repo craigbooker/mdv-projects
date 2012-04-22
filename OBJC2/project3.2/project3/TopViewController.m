@@ -30,10 +30,17 @@
     {
         if ((myDatePicker != nil) && (myTextField != nil))
         {
-            NSDate *date = myDatePicker.date;
-            NSLog(@"date=%@", [date description]);
-            NSString *textFieldVar = textField.text;
-            [delegate DidClose:textFieldVar eventDate:date];
+            myDatePicker.minimumDate = [NSDate date];
+            NSDate *selected = myDatePicker.date;
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            [dateFormatter setDateFormat:@"MM-dd-yyyy HH:mm:SS a"];           
+            
+            NSString *newEventLabel = [[NSString alloc] initWithString:@"New Event: "];
+            NSString *textFieldVar = [[NSString alloc] initWithString: textField.text];
+            NSString *dateString = [dateFormatter stringFromDate:selected];  
+            NSString *newString = [[NSString alloc] initWithFormat:@"%@%@\n%@ \n\n",newEventLabel, textFieldVar, dateString];
+            [dateFormatter release];          
+            [delegate DidClose:newString];            
         }
         [self dismissModalViewControllerAnimated:true];
     }
