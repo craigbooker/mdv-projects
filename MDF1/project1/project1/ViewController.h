@@ -12,10 +12,11 @@
 @interface ViewController : UIViewController <UITableViewDelegate>
 {
     IBOutlet UITableView *tableView;
-    NSArray *sensorArray;
-    NSArray *pidArray;
     
 }
+@property (nonatomic, strong) NSArray *sensorNames;
+@property (nonatomic, strong) NSArray *pidValues;
+@property (nonatomic, strong) NSArray *sensorImages;
 //-(IBAction)onClick:(id)sender;
 
 @end

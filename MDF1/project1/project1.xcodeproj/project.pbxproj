@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44000B0215532A0700A04394 /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44000AFF15532A0700A04394 /* CustomCellView.xib */; };
-		44000B0315532A0700A04394 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44000B0115532A0700A04394 /* CustomTableCell.m */; };
+		44000B0215532A0700A04394 /* SensorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44000AFF15532A0700A04394 /* SensorTableViewCell.xib */; };
+		44000B0315532A0700A04394 /* SensorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44000B0115532A0700A04394 /* SensorTableViewCell.m */; };
 		44000B0615532A4500A04394 /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 44000B0515532A4500A04394 /* checkbox.png */; };
 		44000B0815532A5000A04394 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44000B0715532A5000A04394 /* ViewController.xib */; };
 		44000B1215535CB300A04394 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44000B1115535CB300A04394 /* SecondView.xib */; };
@@ -23,13 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		44000AFF15532A0700A04394 /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
-		44000B0015532A0700A04394 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
-		44000B0115532A0700A04394 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		44000AFF15532A0700A04394 /* SensorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SensorTableViewCell.xib; sourceTree = "<group>"; };
+		44000B0015532A0700A04394 /* SensorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorTableViewCell.h; sourceTree = "<group>"; };
+		44000B0115532A0700A04394 /* SensorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorTableViewCell.m; sourceTree = "<group>"; };
 		44000B0515532A4500A04394 /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox.png; sourceTree = "<group>"; };
 		44000B0715532A5000A04394 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		44000B1115535CB300A04394 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
-		44000B1315535D4D00A04394 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SecondViewController.h; sourceTree = "<group>"; };
+		44000B1315535D4D00A04394 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		44000B1415535D4D00A04394 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		44C692C315508A2500FA26E7 /* project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C692C715508A2500FA26E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -91,9 +91,9 @@
 			children = (
 				44000B0715532A5000A04394 /* ViewController.xib */,
 				44000B0515532A4500A04394 /* checkbox.png */,
-				44000AFF15532A0700A04394 /* CustomCellView.xib */,
-				44000B0015532A0700A04394 /* CustomTableCell.h */,
-				44000B0115532A0700A04394 /* CustomTableCell.m */,
+				44000AFF15532A0700A04394 /* SensorTableViewCell.xib */,
+				44000B0015532A0700A04394 /* SensorTableViewCell.h */,
+				44000B0115532A0700A04394 /* SensorTableViewCell.m */,
 				44C692D615508A2500FA26E7 /* AppDelegate.h */,
 				44C692D715508A2500FA26E7 /* AppDelegate.m */,
 				44C692D915508A2500FA26E7 /* ViewController.h */,
@@ -168,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C692D215508A2500FA26E7 /* InfoPlist.strings in Resources */,
-				44000B0215532A0700A04394 /* CustomCellView.xib in Resources */,
+				44000B0215532A0700A04394 /* SensorTableViewCell.xib in Resources */,
 				44000B0615532A4500A04394 /* checkbox.png in Resources */,
 				44000B0815532A5000A04394 /* ViewController.xib in Resources */,
 				44000B1215535CB300A04394 /* SecondView.xib in Resources */,
@@ -185,7 +185,7 @@
 				44C692D415508A2500FA26E7 /* main.m in Sources */,
 				44C692D815508A2500FA26E7 /* AppDelegate.m in Sources */,
 				44C692DB15508A2500FA26E7 /* ViewController.m in Sources */,
-				44000B0315532A0700A04394 /* CustomTableCell.m in Sources */,
+				44000B0315532A0700A04394 /* SensorTableViewCell.m in Sources */,
 				44000B1515535D4D00A04394 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

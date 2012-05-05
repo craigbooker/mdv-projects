@@ -6,11 +6,13 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CustomTableCell.h"
+#import "SensorTableViewCell.h"
 
-@implementation CustomTableCell
+@implementation SensorTableViewCell
+{}
 @synthesize sensorLabel;
 @synthesize pidLabel;
+@synthesize sensorImage;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -30,6 +32,8 @@
 
 - (void)dealloc {
     [sensorLabel release];
+    [sensorLabel release];
+    [pidLabel release];
     [super dealloc];
 }
 @end

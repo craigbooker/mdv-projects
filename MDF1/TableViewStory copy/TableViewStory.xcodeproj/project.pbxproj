@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44601C511554911200D29391 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44601C501554911200D29391 /* UIKit.framework */; };
+		44601C531554911200D29391 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44601C521554911200D29391 /* Foundation.framework */; };
+		44601C551554911200D29391 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44601C541554911200D29391 /* CoreGraphics.framework */; };
+		44601C5B1554911200D29391 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44601C591554911200D29391 /* InfoPlist.strings */; };
+		44601C5D1554911200D29391 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44601C5C1554911200D29391 /* main.m */; };
+		44601C611554911200D29391 /* TableViewStoryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44601C601554911200D29391 /* TableViewStoryAppDelegate.m */; };
+		44601C641554911200D29391 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44601C621554911200D29391 /* MainStoryboard.storyboard */; };
+		44601C6F1554926500D29391 /* CarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44601C6E1554926500D29391 /* CarTableViewController.m */; };
+		44601C721554944E00D29391 /* CarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44601C711554944E00D29391 /* CarTableViewCell.m */; };
+		44601C78155496E100D29391 /* chevy_volt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44601C73155496E100D29391 /* chevy_volt.jpg */; };
+		44601C79155496E100D29391 /* mini_clubman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44601C74155496E100D29391 /* mini_clubman.jpg */; };
+		44601C7A155496E100D29391 /* smart_fortwo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44601C75155496E100D29391 /* smart_fortwo.jpg */; };
+		44601C7B155496E100D29391 /* toyota_venza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44601C76155496E100D29391 /* toyota_venza.jpg */; };
+		44601C7C155496E100D29391 /* volvo_s60.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44601C77155496E100D29391 /* volvo_s60.jpg */; };
+		44601C7F1554987000D29391 /* CarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44601C7E1554987000D29391 /* CarDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44601C4C1554911200D29391 /* TableViewStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44601C501554911200D29391 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		44601C521554911200D29391 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44601C541554911200D29391 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		44601C581554911200D29391 /* TableViewStory-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewStory-Info.plist"; sourceTree = "<group>"; };
+		44601C5A1554911200D29391 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44601C5C1554911200D29391 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44601C5E1554911200D29391 /* TableViewStory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewStory-Prefix.pch"; sourceTree = "<group>"; };
+		44601C5F1554911200D29391 /* TableViewStoryAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewStoryAppDelegate.h; sourceTree = "<group>"; };
+		44601C601554911200D29391 /* TableViewStoryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewStoryAppDelegate.m; sourceTree = "<group>"; };
+		44601C631554911200D29391 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		44601C6D1554926500D29391 /* CarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarTableViewController.h; sourceTree = "<group>"; };
+		44601C6E1554926500D29391 /* CarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarTableViewController.m; sourceTree = "<group>"; };
+		44601C701554944E00D29391 /* CarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarTableViewCell.h; sourceTree = "<group>"; };
+		44601C711554944E00D29391 /* CarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarTableViewCell.m; sourceTree = "<group>"; };
+		44601C73155496E100D29391 /* chevy_volt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chevy_volt.jpg; sourceTree = "<group>"; };
+		44601C74155496E100D29391 /* mini_clubman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mini_clubman.jpg; sourceTree = "<group>"; };
+		44601C75155496E100D29391 /* smart_fortwo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smart_fortwo.jpg; sourceTree = "<group>"; };
+		44601C76155496E100D29391 /* toyota_venza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toyota_venza.jpg; sourceTree = "<group>"; };
+		44601C77155496E100D29391 /* volvo_s60.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = volvo_s60.jpg; sourceTree = "<group>"; };
+		44601C7D1554987000D29391 /* CarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDetailViewController.h; sourceTree = "<group>"; };
+		44601C7E1554987000D29391 /* CarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44601C491554911200D29391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44601C511554911200D29391 /* UIKit.framework in Frameworks */,
+				44601C531554911200D29391 /* Foundation.framework in Frameworks */,
+				44601C551554911200D29391 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44601C411554911200D29391 = {
+			isa = PBXGroup;
+			children = (
+				44601C561554911200D29391 /* TableViewStory */,
+				44601C4F1554911200D29391 /* Frameworks */,
+				44601C4D1554911200D29391 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44601C4D1554911200D29391 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44601C4C1554911200D29391 /* TableViewStory.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44601C4F1554911200D29391 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44601C501554911200D29391 /* UIKit.framework */,
+				44601C521554911200D29391 /* Foundation.framework */,
+				44601C541554911200D29391 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44601C561554911200D29391 /* TableViewStory */ = {
+			isa = PBXGroup;
+			children = (
+				44601C73155496E100D29391 /* chevy_volt.jpg */,
+				44601C74155496E100D29391 /* mini_clubman.jpg */,
+				44601C75155496E100D29391 /* smart_fortwo.jpg */,
+				44601C76155496E100D29391 /* toyota_venza.jpg */,
+				44601C77155496E100D29391 /* volvo_s60.jpg */,
+				44601C5F1554911200D29391 /* TableViewStoryAppDelegate.h */,
+				44601C601554911200D29391 /* TableViewStoryAppDelegate.m */,
+				44601C621554911200D29391 /* MainStoryboard.storyboard */,
+				44601C571554911200D29391 /* Supporting Files */,
+				44601C6D1554926500D29391 /* CarTableViewController.h */,
+				44601C6E1554926500D29391 /* CarTableViewController.m */,
+				44601C701554944E00D29391 /* CarTableViewCell.h */,
+				44601C711554944E00D29391 /* CarTableViewCell.m */,
+				44601C7D1554987000D29391 /* CarDetailViewController.h */,
+				44601C7E1554987000D29391 /* CarDetailViewController.m */,
+			);
+			path = TableViewStory;
+			sourceTree = "<group>";
+		};
+		44601C571554911200D29391 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44601C581554911200D29391 /* TableViewStory-Info.plist */,
+				44601C591554911200D29391 /* InfoPlist.strings */,
+				44601C5C1554911200D29391 /* main.m */,
+				44601C5E1554911200D29391 /* TableViewStory-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44601C4B1554911200D29391 /* TableViewStory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44601C6A1554911200D29391 /* Build configuration list for PBXNativeTarget "TableViewStory" */;
+			buildPhases = (
+				44601C481554911200D29391 /* Sources */,
+				44601C491554911200D29391 /* Frameworks */,
+				44601C4A1554911200D29391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewStory;
+			productName = TableViewStory;
+			productReference = 44601C4C1554911200D29391 /* TableViewStory.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44601C431554911200D29391 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TableViewStory;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 44601C461554911200D29391 /* Build configuration list for PBXProject "TableViewStory" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 44601C411554911200D29391;
+			productRefGroup = 44601C4D1554911200D29391 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44601C4B1554911200D29391 /* TableViewStory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44601C4A1554911200D29391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44601C5B1554911200D29391 /* InfoPlist.strings in Resources */,
+				44601C641554911200D29391 /* MainStoryboard.storyboard in Resources */,
+				44601C78155496E100D29391 /* chevy_volt.jpg in Resources */,
+				44601C79155496E100D29391 /* mini_clubman.jpg in Resources */,
+				44601C7A155496E100D29391 /* smart_fortwo.jpg in Resources */,
+				44601C7B155496E100D29391 /* toyota_venza.jpg in Resources */,
+				44601C7C155496E100D29391 /* volvo_s60.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44601C481554911200D29391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44601C5D1554911200D29391 /* main.m in Sources */,
+				44601C611554911200D29391 /* TableViewStoryAppDelegate.m in Sources */,
+				44601C6F1554926500D29391 /* CarTableViewController.m in Sources */,
+				44601C721554944E00D29391 /* CarTableViewCell.m in Sources */,
+				44601C7F1554987000D29391 /* CarDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44601C591554911200D29391 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44601C5A1554911200D29391 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		44601C621554911200D29391 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44601C631554911200D29391 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44601C681554911200D29391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		44601C691554911200D29391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44601C6B1554911200D29391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewStory/TableViewStory-Prefix.pch";
+				INFOPLIST_FILE = "TableViewStory/TableViewStory-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		44601C6C1554911200D29391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewStory/TableViewStory-Prefix.pch";
+				INFOPLIST_FILE = "TableViewStory/TableViewStory-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44601C461554911200D29391 /* Build configuration list for PBXProject "TableViewStory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44601C681554911200D29391 /* Debug */,
+				44601C691554911200D29391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44601C6A1554911200D29391 /* Build configuration list for PBXNativeTarget "TableViewStory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44601C6B1554911200D29391 /* Debug */,
+				44601C6C1554911200D29391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44601C431554911200D29391 /* Project object */;
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="dqh-wO-u7p">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Sensor Table View Controller - Sensors-->
+        <scene sceneID="Ydr-BK-uUG">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wO8-1g-9U3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="mP6-Pu-vjH" customClass="SensorTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yDc-jH-FSE">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carTableCell" id="uLn-BD-c2T" customClass="SensorTableViewCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="W53-HD-XpW">
+                                            <rect key="frame" x="60" y="2" width="240" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ucK-rR-QOd">
+                                            <rect key="frame" x="60" y="20" width="240" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="OF6-iR-OOK">
+                                            <rect key="frame" x="9" y="4" width="43" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="pidLabel" destination="ucK-rR-QOd" id="2EF-Wi-nOU"/>
+                                    <outlet property="sensorImage" destination="OF6-iR-OOK" id="TPN-av-swu"/>
+                                    <outlet property="sensorLabel" destination="W53-HD-XpW" id="3Ag-by-A00"/>
+                                    <segue destination="ZFT-jT-lzh" kind="push" identifier="ShowSensorDetails" id="bK1-LQ-jXh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mP6-Pu-vjH" id="OKg-Pg-La7"/>
+                            <outlet property="delegate" destination="mP6-Pu-vjH" id="xho-36-Jkc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Sensors" id="X4G-qS-z60"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="616" y="61"/>
+        </scene>
+        <!--Sensor Detail View Controller - Sensor Details-->
+        <scene sceneID="DZd-fF-Ci2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGL-bB-hUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ZFT-jT-lzh" customClass="SensorDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RRL-eF-kGk">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sensor Details" id="n5I-Uu-xUp"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="989" y="61"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tFT-GO-E8t">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GvU-Po-1xS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="dqh-wO-u7p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="t4e-C0-1kc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mP6-Pu-vjH" kind="relationship" relationship="rootViewController" id="aEq-Lf-0PA"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="90" y="61"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="SensorDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SensorDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="pidLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="sensorLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SensorTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SensorTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pidLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="sensorImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="sensorLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SensorTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SensorTableViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
