@@ -128,6 +128,7 @@ if (powerSwitch.on != false)
 
 -(IBAction)onColorClick:(id)sender
 {
+    if (powerSwitch.on != false) {
     UISegmentedControl *segControl = (UISegmentedControl*)sender;
     if (segControl != nil)
     {
@@ -152,6 +153,7 @@ if (powerSwitch.on != false)
          }
     }
    
+}
 }
 @end
 
