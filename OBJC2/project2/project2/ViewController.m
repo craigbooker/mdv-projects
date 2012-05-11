@@ -19,7 +19,7 @@
 {
     self.view.backgroundColor = [UIColor whiteColor];
     
-    powerSwitch.on = true;
+    powerSwitch.on = false;
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

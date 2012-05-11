@@ -12,12 +12,14 @@
 @synthesize sensorLabel = _sensorLabel;
 @synthesize pidLabel = _pidLabel;
 @synthesize imageView = _imageView;
+@synthesize sensorTextField = _sensorTextField;
+@synthesize pidTextField = _pidTextField;
 @synthesize sensorDetailName = _sensorDetailName;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    editMode = FALSE;    
     self.sensorLabel.text = [self.sensorDetailName objectAtIndex:0];
     self.pidLabel.text = [self.sensorDetailName objectAtIndex:1];
     self.imageView.image = [UIImage imageNamed:[self.sensorDetailName objectAtIndex:2]];
@@ -34,5 +36,8 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+-(void)onEdit
+{
+    int temp = 3;
+}
 @end

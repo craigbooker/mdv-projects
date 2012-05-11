@@ -118,10 +118,10 @@
 		445AB55F1554D04C0051C685 /* yahoo.png in Resources */ = {isa = PBXBuildFile; fileRef = 445AB4F01554D04C0051C685 /* yahoo.png */; };
 		445AB5601554D04C0051C685 /* yelp.png in Resources */ = {isa = PBXBuildFile; fileRef = 445AB4F11554D04C0051C685 /* yelp.png */; };
 		445AB5611554D04C0051C685 /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 445AB4F21554D04C0051C685 /* youtube.png */; };
-		445AB56F1554E5210051C685 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 445AB56D1554E5210051C685 /* default.png */; };
-		445AB5721554E5760051C685 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445AB5711554E5760051C685 /* default@2x.png */; };
 		445AB5741554E6AA0051C685 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 445AB5731554E6AA0051C685 /* appicon.png */; };
 		445AB5761554E6B60051C685 /* appicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445AB5751554E6B60051C685 /* appicon@2x.png */; };
+		445AB578155565F10051C685 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445AB577155565F10051C685 /* default@2x.png */; };
+		445AB57A155565F90051C685 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 445AB579155565F90051C685 /* default.png */; };
 		44601C511554911200D29391 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44601C501554911200D29391 /* UIKit.framework */; };
 		44601C531554911200D29391 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44601C521554911200D29391 /* Foundation.framework */; };
 		44601C551554911200D29391 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44601C541554911200D29391 /* CoreGraphics.framework */; };
@@ -137,6 +137,7 @@
 		44601C7B155496E100D29391 /* toyota_venza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44601C76155496E100D29391 /* toyota_venza.jpg */; };
 		44601C7C155496E100D29391 /* volvo_s60.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44601C77155496E100D29391 /* volvo_s60.jpg */; };
 		44601C7F1554987000D29391 /* CarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44601C7E1554987000D29391 /* CarDetailViewController.m */; };
+		44A2A69C155B525100DF37B6 /* SensorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A2A69B155B525100DF37B6 /* SensorDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -251,10 +252,10 @@
 		445AB4F01554D04C0051C685 /* yahoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yahoo.png; sourceTree = "<group>"; };
 		445AB4F11554D04C0051C685 /* yelp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yelp.png; sourceTree = "<group>"; };
 		445AB4F21554D04C0051C685 /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
-		445AB56D1554E5210051C685 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
-		445AB5711554E5760051C685 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
 		445AB5731554E6AA0051C685 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		445AB5751554E6B60051C685 /* appicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon@2x.png"; sourceTree = "<group>"; };
+		445AB577155565F10051C685 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+		445AB579155565F90051C685 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		44601C4C1554911200D29391 /* TableViewStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44601C501554911200D29391 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44601C521554911200D29391 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -277,6 +278,8 @@
 		44601C77155496E100D29391 /* volvo_s60.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = volvo_s60.jpg; sourceTree = "<group>"; };
 		44601C7D1554987000D29391 /* CarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDetailViewController.h; sourceTree = "<group>"; };
 		44601C7E1554987000D29391 /* CarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDetailViewController.m; sourceTree = "<group>"; };
+		44A2A69A155B525100DF37B6 /* SensorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorDetailViewController.h; sourceTree = "<group>"; };
+		44A2A69B155B525100DF37B6 /* SensorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,10 +299,10 @@
 		44601C411554911200D29391 = {
 			isa = PBXGroup;
 			children = (
+				445AB579155565F90051C685 /* default.png */,
+				445AB577155565F10051C685 /* default@2x.png */,
 				445AB5751554E6B60051C685 /* appicon@2x.png */,
 				445AB5731554E6AA0051C685 /* appicon.png */,
-				445AB5711554E5760051C685 /* default@2x.png */,
-				445AB56D1554E5210051C685 /* default.png */,
 				44601C561554911200D29391 /* TableViewStory */,
 				44601C4F1554911200D29391 /* Frameworks */,
 				44601C4D1554911200D29391 /* Products */,
@@ -453,6 +456,8 @@
 				44601C711554944E00D29391 /* CarTableViewCell.m */,
 				44601C7D1554987000D29391 /* CarDetailViewController.h */,
 				44601C7E1554987000D29391 /* CarDetailViewController.m */,
+				44A2A69A155B525100DF37B6 /* SensorDetailViewController.h */,
+				44A2A69B155B525100DF37B6 /* SensorDetailViewController.m */,
 			);
 			path = TableViewStory;
 			sourceTree = "<group>";
@@ -637,10 +642,10 @@
 				445AB55F1554D04C0051C685 /* yahoo.png in Resources */,
 				445AB5601554D04C0051C685 /* yelp.png in Resources */,
 				445AB5611554D04C0051C685 /* youtube.png in Resources */,
-				445AB56F1554E5210051C685 /* default.png in Resources */,
-				445AB5721554E5760051C685 /* default@2x.png in Resources */,
 				445AB5741554E6AA0051C685 /* appicon.png in Resources */,
 				445AB5761554E6B60051C685 /* appicon@2x.png in Resources */,
+				445AB578155565F10051C685 /* default@2x.png in Resources */,
+				445AB57A155565F90051C685 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,6 +661,7 @@
 				44601C6F1554926500D29391 /* CarTableViewController.m in Sources */,
 				44601C721554944E00D29391 /* CarTableViewCell.m in Sources */,
 				44601C7F1554987000D29391 /* CarDetailViewController.m in Sources */,
+				44A2A69C155B525100DF37B6 /* SensorDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

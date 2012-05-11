@@ -13,4 +13,5 @@
 @property (nonatomic, strong) NSArray *sensorImages;
 @property (nonatomic, strong) NSArray *sensorNames;
 @property (nonatomic, strong) NSArray *pidValues;
+@property (nonatomic, strong) UITableView *tableView;
 @end

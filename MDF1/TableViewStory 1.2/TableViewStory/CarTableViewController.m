@@ -14,10 +14,12 @@
 @synthesize sensorNames = _sensorNames; 
 @synthesize pidValues = _pidValues;
 @synthesize sensorImages = _sensorImages;
+@synthesize tableView = _tableView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     self.sensorNames = [[NSArray alloc]
                      initWithObjects:@"Absolute Throttle Position",
                      @"Engine RPM",
@@ -129,6 +131,16 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
+- (void)viewWillAppear:(BOOL)animated {
+
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [_tableView setEditing:true];
+    [super viewDidAppear:animated];
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"ShowCarDetails"])
@@ -136,8 +148,7 @@
         CarDetailViewController *detailViewController = 
         [segue destinationViewController];
         
-        NSIndexPath *myIndexPath = [self.tableView 
-                                    indexPathForSelectedRow];
+        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
         
         detailViewController.sensorDetailName = [[NSArray alloc]
                                                initWithObjects: [self.sensorNames objectAtIndex:[myIndexPath row]],
@@ -159,6 +170,22 @@
     // Return the number of sections.
     return 1;
 }
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView 
+                 editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewCellEditingStyleDelete;
+}
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSLog(@"We want to delete row=%d", indexPath.row);
+        [_sensorNames removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowAtIndexPaths: [NSArray arrayWithObject:indexPath] withRowAnimation:true];
+    }
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        [_sensorNames insertObject:@"testing" atIndex:indexPath.row];
+        [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
+    }
+    
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -170,8 +197,7 @@
 {
     static NSString *CellIdentifier = @"carTableCell";
     
-    CarTableViewCell *cell = [tableView
-                              dequeueReusableCellWithIdentifier:CellIdentifier];
+    CarTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[CarTableViewCell alloc]
                 initWithStyle:UITableViewCellStyleDefault 
