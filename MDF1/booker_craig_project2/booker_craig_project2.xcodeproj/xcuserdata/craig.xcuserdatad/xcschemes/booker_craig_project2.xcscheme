@@ -13,7 +13,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44A2A6E0155B730D00DF37B6"
+               BlueprintIdentifier = "445AB4F7155F3AAF007E325E"
                BuildableName = "booker_craig_project2.app"
                BlueprintName = "booker_craig_project2"
                ReferencedContainer = "container:booker_craig_project2.xcodeproj">
@@ -31,7 +31,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44A2A6E0155B730D00DF37B6"
+            BlueprintIdentifier = "445AB4F7155F3AAF007E325E"
             BuildableName = "booker_craig_project2.app"
             BlueprintName = "booker_craig_project2"
             ReferencedContainer = "container:booker_craig_project2.xcodeproj">
@@ -50,7 +50,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44A2A6E0155B730D00DF37B6"
+            BlueprintIdentifier = "445AB4F7155F3AAF007E325E"
             BuildableName = "booker_craig_project2.app"
             BlueprintName = "booker_craig_project2"
             ReferencedContainer = "container:booker_craig_project2.xcodeproj">
@@ -68,7 +68,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44A2A6E0155B730D00DF37B6"
+            BlueprintIdentifier = "445AB4F7155F3AAF007E325E"
             BuildableName = "booker_craig_project2.app"
             BlueprintName = "booker_craig_project2"
             ReferencedContainer = "container:booker_craig_project2.xcodeproj">
