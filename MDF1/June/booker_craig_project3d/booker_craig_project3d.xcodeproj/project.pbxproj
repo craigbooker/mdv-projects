@@ -12,9 +12,31 @@
 		445D8B98158C5EA300583668 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445D8B97158C5EA300583668 /* CoreGraphics.framework */; };
 		445D8B9E158C5EA300583668 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 445D8B9C158C5EA300583668 /* InfoPlist.strings */; };
 		445D8BA0158C5EA300583668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8B9F158C5EA300583668 /* main.m */; };
-		445D8BA4158C5EA300583668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8BA3158C5EA300583668 /* AppDelegate.m */; };
-		445D8BA7158C5EA300583668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8BA6158C5EA300583668 /* ViewController.m */; };
-		445D8BAA158C5EA300583668 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BA8158C5EA300583668 /* ViewController.xib */; };
+		445D8BB4158C5ED500583668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8BB1158C5ED500583668 /* AppDelegate.m */; };
+		445D8BC8158C5F0400583668 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8BB7158C5F0400583668 /* CustomTableViewCell.m */; };
+		445D8BC9158C5F0400583668 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BB8158C5F0400583668 /* CustomTableViewCell.xib */; };
+		445D8BCA158C5F0400583668 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BB9158C5F0400583668 /* DetailView.xib */; };
+		445D8BCB158C5F0400583668 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8BBB158C5F0400583668 /* DetailViewController.m */; };
+		445D8BCD158C5F0400583668 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BBE158C5F0400583668 /* LocationViewController.xib */; };
+		445D8BCE158C5F0400583668 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8BC0158C5F0400583668 /* RootViewController.m */; };
+		445D8BCF158C5F0400583668 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BC1158C5F0400583668 /* RootViewController.xib */; };
+		445D8BD2158C5F0400583668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8BC6158C5F0400583668 /* ViewController.m */; };
+		445D8BD3158C5F0400583668 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BC7158C5F0400583668 /* ViewController.xib */; };
+		445D8BDE158C5F6700583668 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BD4158C5F6700583668 /* appicon.png */; };
+		445D8BDF158C5F6700583668 /* appicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BD5158C5F6700583668 /* appicon@2x.png */; };
+		445D8BE0158C5F6700583668 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BD6158C5F6700583668 /* default.png */; };
+		445D8BE1158C5F6700583668 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BD7158C5F6700583668 /* default@2x.png */; };
+		445D8BE2158C5F6700583668 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BD8158C5F6700583668 /* first.png */; };
+		445D8BE3158C5F6700583668 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BD9158C5F6700583668 /* first@2x.png */; };
+		445D8BE4158C5F6700583668 /* gauge1.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BDA158C5F6700583668 /* gauge1.png */; };
+		445D8BE5158C5F6700583668 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BDB158C5F6700583668 /* second.png */; };
+		445D8BE6158C5F6700583668 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BDC158C5F6700583668 /* second@2x.png */; };
+		445D8BE9158C5F7900583668 /* add-this.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8BE8158C5F7900583668 /* add-this.png */; };
+		445D8BEB158C604500583668 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445D8BEA158C604500583668 /* MapKit.framework */; };
+		445D8BED158C604E00583668 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445D8BEC158C604E00583668 /* CoreLocation.framework */; };
+		445D8C05158CF97100583668 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8C04158CF97000583668 /* LocationViewController.m */; };
+		44F68F9B158D28DA00B868B6 /* MyMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F68F9A158D28DA00B868B6 /* MyMapAnnotation.m */; };
+		44F68FA1158D959700B868B6 /* BizLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F68FA0158D959700B868B6 /* BizLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +44,43 @@
 		445D8B93158C5EA300583668 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		445D8B95158C5EA300583668 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		445D8B97158C5EA300583668 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		445D8B9B158C5EA300583668 /* booker_craig_project3d-Info.plist */ = {isa = PBXFileReference; path = "booker_craig_project3d-Info.plist"; sourceTree = "<group>"; };
+		445D8B9B158C5EA300583668 /* booker_craig_project3d-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "booker_craig_project3d-Info.plist"; sourceTree = "<group>"; };
 		445D8B9D158C5EA300583668 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		445D8B9F158C5EA300583668 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		445D8BA1158C5EA300583668 /* booker_craig_project3d-Prefix.pch */ = {isa = PBXFileReference; path = "booker_craig_project3d-Prefix.pch"; sourceTree = "<group>"; };
-		445D8BA2158C5EA300583668 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
-		445D8BA3158C5EA300583668 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		445D8BA5158C5EA300583668 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		445D8BA6158C5EA300583668 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		445D8BA9158C5EA300583668 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		445D8BA1158C5EA300583668 /* booker_craig_project3d-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "booker_craig_project3d-Prefix.pch"; sourceTree = "<group>"; };
+		445D8BB0158C5ED500583668 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		445D8BB1158C5ED500583668 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		445D8BB6158C5F0400583668 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableViewCell.h; path = ../CustomTableViewCell.h; sourceTree = "<group>"; };
+		445D8BB7158C5F0400583668 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTableViewCell.m; path = ../CustomTableViewCell.m; sourceTree = "<group>"; };
+		445D8BB8158C5F0400583668 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomTableViewCell.xib; path = ../CustomTableViewCell.xib; sourceTree = "<group>"; };
+		445D8BB9158C5F0400583668 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailView.xib; path = ../DetailView.xib; sourceTree = "<group>"; };
+		445D8BBA158C5F0400583668 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		445D8BBB158C5F0400583668 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		445D8BBE158C5F0400583668 /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationViewController.xib; path = ../LocationViewController.xib; sourceTree = "<group>"; };
+		445D8BBF158C5F0400583668 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ../RootViewController.h; sourceTree = "<group>"; };
+		445D8BC0158C5F0400583668 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ../RootViewController.m; sourceTree = "<group>"; };
+		445D8BC1158C5F0400583668 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = ../RootViewController.xib; sourceTree = "<group>"; };
+		445D8BC5158C5F0400583668 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		445D8BC6158C5F0400583668 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		445D8BC7158C5F0400583668 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = ../ViewController.xib; sourceTree = "<group>"; };
+		445D8BD4158C5F6700583668 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon.png; path = ../appicon.png; sourceTree = "<group>"; };
+		445D8BD5158C5F6700583668 /* appicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon@2x.png"; path = "../appicon@2x.png"; sourceTree = "<group>"; };
+		445D8BD6158C5F6700583668 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default.png; path = ../default.png; sourceTree = "<group>"; };
+		445D8BD7158C5F6700583668 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default@2x.png"; path = "../default@2x.png"; sourceTree = "<group>"; };
+		445D8BD8158C5F6700583668 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = ../first.png; sourceTree = "<group>"; };
+		445D8BD9158C5F6700583668 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "../first@2x.png"; sourceTree = "<group>"; };
+		445D8BDA158C5F6700583668 /* gauge1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gauge1.png; path = ../gauge1.png; sourceTree = "<group>"; };
+		445D8BDB158C5F6700583668 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = ../second.png; sourceTree = "<group>"; };
+		445D8BDC158C5F6700583668 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "../second@2x.png"; sourceTree = "<group>"; };
+		445D8BE8158C5F7900583668 /* add-this.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-this.png"; path = "../add-this.png"; sourceTree = "<group>"; };
+		445D8BEA158C604500583668 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		445D8BEC158C604E00583668 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		445D8C03158CF96200583668 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		445D8C04158CF97000583668 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		44F68F99158D28DA00B868B6 /* MyMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyMapAnnotation.h; path = "../../../../../../../Craig/github/mdv-projects/MDF1/June/booker_craig_project3d/MyMapAnnotation.h"; sourceTree = "<group>"; };
+		44F68F9A158D28DA00B868B6 /* MyMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyMapAnnotation.m; path = "../../../../../../../Craig/github/mdv-projects/MDF1/June/booker_craig_project3d/MyMapAnnotation.m"; sourceTree = "<group>"; };
+		44F68F9F158D959700B868B6 /* BizLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BizLocation.h; path = "../../../../../../../Craig/github/mdv-projects/MDF1/June/booker_craig_project3d/BizLocation.h"; sourceTree = "<group>"; };
+		44F68FA0158D959700B868B6 /* BizLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BizLocation.m; path = "../../../../../../../Craig/github/mdv-projects/MDF1/June/booker_craig_project3d/BizLocation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445D8BED158C604E00583668 /* CoreLocation.framework in Frameworks */,
+				445D8BEB158C604500583668 /* MapKit.framework in Frameworks */,
 				445D8B94158C5EA300583668 /* UIKit.framework in Frameworks */,
 				445D8B96158C5EA300583668 /* Foundation.framework in Frameworks */,
 				445D8B98158C5EA300583668 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +102,8 @@
 		445D8B84158C5EA300583668 = {
 			isa = PBXGroup;
 			children = (
+				445D8BEC158C604E00583668 /* CoreLocation.framework */,
+				445D8BEA158C604500583668 /* MapKit.framework */,
 				445D8B99158C5EA300583668 /* booker_craig_project3d */,
 				445D8B92158C5EA300583668 /* Frameworks */,
 				445D8B90158C5EA300583668 /* Products */,
@@ -77,12 +131,38 @@
 		445D8B99158C5EA300583668 /* booker_craig_project3d */ = {
 			isa = PBXGroup;
 			children = (
-				445D8BA2158C5EA300583668 /* AppDelegate.h */,
-				445D8BA3158C5EA300583668 /* AppDelegate.m */,
-				445D8BA5158C5EA300583668 /* ViewController.h */,
-				445D8BA6158C5EA300583668 /* ViewController.m */,
-				445D8BA8158C5EA300583668 /* ViewController.xib */,
+				44F68F9F158D959700B868B6 /* BizLocation.h */,
+				44F68FA0158D959700B868B6 /* BizLocation.m */,
+				445D8BB0158C5ED500583668 /* AppDelegate.h */,
+				445D8BB1158C5ED500583668 /* AppDelegate.m */,
+				445D8BB6158C5F0400583668 /* CustomTableViewCell.h */,
+				445D8BB7158C5F0400583668 /* CustomTableViewCell.m */,
+				445D8BB8158C5F0400583668 /* CustomTableViewCell.xib */,
+				445D8BB9158C5F0400583668 /* DetailView.xib */,
+				445D8BBA158C5F0400583668 /* DetailViewController.h */,
+				445D8BBB158C5F0400583668 /* DetailViewController.m */,
+				445D8C03158CF96200583668 /* LocationViewController.h */,
+				445D8C04158CF97000583668 /* LocationViewController.m */,
+				445D8BBE158C5F0400583668 /* LocationViewController.xib */,
+				445D8BBF158C5F0400583668 /* RootViewController.h */,
+				445D8BC0158C5F0400583668 /* RootViewController.m */,
+				445D8BC1158C5F0400583668 /* RootViewController.xib */,
+				445D8BC5158C5F0400583668 /* ViewController.h */,
+				445D8BC6158C5F0400583668 /* ViewController.m */,
+				445D8BC7158C5F0400583668 /* ViewController.xib */,
+				445D8BE8158C5F7900583668 /* add-this.png */,
+				445D8BD4158C5F6700583668 /* appicon.png */,
+				445D8BD5158C5F6700583668 /* appicon@2x.png */,
+				445D8BD6158C5F6700583668 /* default.png */,
+				445D8BD7158C5F6700583668 /* default@2x.png */,
+				445D8BD8158C5F6700583668 /* first.png */,
+				445D8BD9158C5F6700583668 /* first@2x.png */,
+				445D8BDA158C5F6700583668 /* gauge1.png */,
+				445D8BDB158C5F6700583668 /* second.png */,
+				445D8BDC158C5F6700583668 /* second@2x.png */,
 				445D8B9A158C5EA300583668 /* Supporting Files */,
+				44F68F99158D28DA00B868B6 /* MyMapAnnotation.h */,
+				44F68F9A158D28DA00B868B6 /* MyMapAnnotation.m */,
 			);
 			path = booker_craig_project3d;
 			sourceTree = "<group>";
@@ -149,7 +229,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				445D8B9E158C5EA300583668 /* InfoPlist.strings in Resources */,
-				445D8BAA158C5EA300583668 /* ViewController.xib in Resources */,
+				445D8BC9158C5F0400583668 /* CustomTableViewCell.xib in Resources */,
+				445D8BCA158C5F0400583668 /* DetailView.xib in Resources */,
+				445D8BCD158C5F0400583668 /* LocationViewController.xib in Resources */,
+				445D8BCF158C5F0400583668 /* RootViewController.xib in Resources */,
+				445D8BD3158C5F0400583668 /* ViewController.xib in Resources */,
+				445D8BDE158C5F6700583668 /* appicon.png in Resources */,
+				445D8BDF158C5F6700583668 /* appicon@2x.png in Resources */,
+				445D8BE0158C5F6700583668 /* default.png in Resources */,
+				445D8BE1158C5F6700583668 /* default@2x.png in Resources */,
+				445D8BE2158C5F6700583668 /* first.png in Resources */,
+				445D8BE3158C5F6700583668 /* first@2x.png in Resources */,
+				445D8BE4158C5F6700583668 /* gauge1.png in Resources */,
+				445D8BE5158C5F6700583668 /* second.png in Resources */,
+				445D8BE6158C5F6700583668 /* second@2x.png in Resources */,
+				445D8BE9158C5F7900583668 /* add-this.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +255,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				445D8BA0158C5EA300583668 /* main.m in Sources */,
-				445D8BA4158C5EA300583668 /* AppDelegate.m in Sources */,
-				445D8BA7158C5EA300583668 /* ViewController.m in Sources */,
+				445D8BB4158C5ED500583668 /* AppDelegate.m in Sources */,
+				445D8BC8158C5F0400583668 /* CustomTableViewCell.m in Sources */,
+				445D8BCB158C5F0400583668 /* DetailViewController.m in Sources */,
+				445D8BCE158C5F0400583668 /* RootViewController.m in Sources */,
+				445D8BD2158C5F0400583668 /* ViewController.m in Sources */,
+				445D8C05158CF97100583668 /* LocationViewController.m in Sources */,
+				44F68F9B158D28DA00B868B6 /* MyMapAnnotation.m in Sources */,
+				44F68FA1158D959700B868B6 /* BizLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,14 +275,6 @@
 				445D8B9D158C5EA300583668 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		445D8BA8158C5EA300583668 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				445D8BA9158C5EA300583668 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,6 +364,7 @@
 				445D8BAF158C5EA300583668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

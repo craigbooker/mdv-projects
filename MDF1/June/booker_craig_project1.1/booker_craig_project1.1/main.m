@@ -1,8 +1,8 @@
 //
 //  main.m
-//  booker_craig_project1.1
+//  booker_craig_project1
 //
-//  Created by Craig Booker on 6/4/12.
+//  Created by Craig Booker on 5/28/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
@@ -16,3 +16,4 @@ int main(int argc, char *argv[])
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
+

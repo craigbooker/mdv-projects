@@ -1,0 +1,817 @@
+Tbooker_craig_project3
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/Info.plist booker_craig_project3/booker_craig_project3-Info.plist
+cProcessPCH /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch.pth booker_craig_project3/booker_craig_project3-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SecondViewController.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/CustomTableViewCell.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/RootViewController.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SensorViewController.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationViewController.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationCustomTableViewCell.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationDetailViewController.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyAnnotationView.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyAnnotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyMapAnnotation.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyMapAnnotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project3 normal i386
+cGenerateDSYMFile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app.dSYM /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project3
+cCpResource booker_craig_project3/../first.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png
+cCpResource booker_craig_project3/first.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png
+cCpResource booker_craig_project3/first@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png
+cCopyStringsFile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/en.lproj/InfoPlist.strings booker_craig_project3/en.lproj/InfoPlist.strings
+cCpResource booker_craig_project3/../first@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png
+cCpResource booker_craig_project3/second.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png
+cCpResource booker_craig_project3/../second.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png
+cCpResource booker_craig_project3/second@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png
+cCpResource booker_craig_project3/../second@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png
+cCpResource booker_craig_project3/../appicon.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon.png
+cCpResource booker_craig_project3/../appicon@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon@2x.png
+cCpResource booker_craig_project3/../button.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/button.png
+cCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.xib
+cCpResource booker_craig_project3/../default.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default.png
+cCpResource booker_craig_project3/../default@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default@2x.png
+cCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.xib
+cCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.xib
+cCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.xib
+cCpResource booker_craig_project3/add-this.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/add-this.png
+cCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.xib
+cCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.xib
+cTouch /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+c00000000509427310000000000000110
+t1351886641
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000506CBFF50000000000228FD0
+t1349304309
+s2265040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000506CBFF800000000003DCEF0
+t1349304312
+s4050672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c00000000506CC00300000000000F5690
+t1349304323
+s1005200
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000506CC0130000000000AB3D60
+t1349304339
+s11222368
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch.pth
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/CustomTableViewCell.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationCustomTableViewCell.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationDetailViewController.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationViewController.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyAnnotationView.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyMapAnnotation.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/RootViewController.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SecondViewController.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SensorViewController.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/booker_craig_project3.LinkFileList
+c0000000050A15DC90000000000000913
+t1352752585
+s2323
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app.dSYM
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/CustomTableViewCell.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/Info.plist
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/LocationCustomTableViewCell.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/LocationViewController.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/PkgInfo
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/RootViewController.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/SecondViewController.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/SensorViewController.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/add-this.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon@2x.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project3
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/button.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default@2x.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.m
+c000000004FB2E3790000000000000292
+t1337123705
+s658
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.xib
+c000000004FB5B0D20000000000003A05
+t1337307346
+s14853
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.m
+c000000004FB133320000000000000282
+t1337013042
+s642
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.xib
+c000000004FB2DA3B0000000000003626
+t1337121339
+s13862
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.m
+c000000004FB5B31C0000000000002EAD
+t1337307932
+s11949
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.xib
+c000000004FB5AF710000000000002617
+t1337306993
+s9751
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../appicon.png
+c000000004FA4AF18000000000000041E
+t1336192792
+s1054
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../appicon@2x.png
+c000000004FA4AEE000000000000007A9
+t1336192736
+s1961
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../button.png
+c000000004FB1B0CA0000000000000B96
+t1337045194
+s2966
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../default.png
+c000000004FA52E46000000000000218D
+t1336225350
+s8589
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../default@2x.png
+c000000004FA52E36000000000000442A
+t1336225334
+s17450
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../first.png
+c000000004F62C1B900000000000000FD
+t1331872185
+s253
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../first@2x.png
+c000000004F62C1B90000000000000192
+t1331872185
+s402
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../second.png
+c000000004F62C1B90000000000000080
+t1331872185
+s128
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../second@2x.png
+c000000004F62C1B90000000000000082
+t1331872185
+s130
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/AppDelegate.m
+c000000004FB5540F0000000000000DD8
+t1337283599
+s3544
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationDetailViewController.m
+c000000004FB5B5E70000000000000E61
+t1337308647
+s3681
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.m
+c000000004FB5B52D000000000000084E
+t1337308461
+s2126
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.xib
+c000000004FB5AF8400000000000018D0
+t1337307012
+s6352
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyAnnotationView.m
+c000000004FB5A17000000000000001EC
+t1337303408
+s492
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyMapAnnotation.m
+c000000004FB5A68600000000000001AD
+t1337304710
+s429
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.m
+c000000004FB5532D0000000000000401
+t1337283373
+s1025
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.xib
+c000000004FB554FB00000000000032FD
+t1337283835
+s13053
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.m
+c000000004FB131550000000000000826
+t1337012565
+s2086
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.xib
+c000000004FB1AEB600000000000018CA
+t1337044662
+s6346
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/add-this.png
+c000000004EA9C45100000000000003AA
+t1319748689
+s938
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/booker_craig_project3-Prefix.pch
+c000000004FB190F70000000000000159
+t1337037047
+s345
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/en.lproj/InfoPlist.strings
+c000000004FB190F7000000000000002D
+t1337037047
+s45
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/first.png
+c000000004F62C1B900000000000000FD
+t1331872185
+s253
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/first@2x.png
+c000000004F62C1B90000000000000192
+t1331872185
+s402
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/main.m
+c000000004FB190F70000000000000165
+t1337037047
+s357
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/second.png
+c000000004F62C1B90000000000000080
+t1331872185
+s128
+
+N/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/second@2x.png
+c000000004F62C1B90000000000000082
+t1331872185
+s130
+
+Nbooker_craig_project3/booker_craig_project3-Info.plist
+c000000004FB190F70000000000000492
+t1337037047
+s1170
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/AppDelegate.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationDetailViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyAnnotationView.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyMapAnnotation.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies2c65c9499551b641^5fefd6499551b641^-784"Warning: Multiple build commands for output file /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.pngWarning: Multiple build commands for output file /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.pngWarning: Multiple build commands for output file /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.pngWarning: Multiple build commands for output file /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png4(21%IDEActivityLogMessage2@193"Warning: Multiple build commands for output file /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png-374445385#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@196"Warning: Multiple build commands for output file /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png-374445385#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@194"Warning: Multiple build commands for output file /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png-374445385#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@197"Warning: Multiple build commands for output file /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png-374445385#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#0#--18"Check dependencies36"B2EA367D-6272-496E-BD90-B9C69DC9F944-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.156506
+e374445386.201822
+r0
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/AppDelegate.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/AppDelegate.mc328284a9551b641^8eb1334a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@111"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/AppDelegate.m0000000000000000^4472"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/AppDelegate.o booker_craig_project3/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/AppDelegate.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/AppDelegate.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/AppDelegate.o36"0301BC93-97C0-4477-84EE-C770261828EB-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/CustomTableViewCell.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.145554
+e374445386.188877
+r0
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/CustomTableViewCell.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.mde57254a9551b641^8960304a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@122"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.m0000000000000000^4526"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/CustomTableViewCell.o booker_craig_project3/../CustomTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/CustomTableViewCell.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/CustomTableViewCell.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/CustomTableViewCell.o36"7C88F8CC-0B52-4A41-BDF9-66C6DD8F1703-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationCustomTableViewCell.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.203807
+e374445386.238213
+r0
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationCustomTableViewCell.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.mc746344a9551b641^a7033d4a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@105"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.m0000000000000000^4524"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationCustomTableViewCell.o LocationCustomTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationCustomTableViewCell.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationCustomTableViewCell.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationCustomTableViewCell.o36"39C7979A-9EC6-46EC-8E1F-068CE5081F52-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationDetailViewController.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.225259
+e374445386.259127
+r0
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationDetailViewController.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationDetailViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationDetailViewController.m26c7394a9551b641^cc5e424a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@128"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationDetailViewController.m0000000000000000^4574"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationDetailViewController.o booker_craig_project3/LocationDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationDetailViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationDetailViewController.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationDetailViewController.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationDetailViewController.o36"D45554CB-B448-4192-ACDB-577B518F05CF-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationViewController.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.190606
+e374445386.226079
+r0
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationViewController.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.m7adf304a9551b641^9be6394a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@122"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.m0000000000000000^4538"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationViewController.o booker_craig_project3/LocationViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationViewController.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/LocationViewController.o36"14681730-4D73-467B-AC9C-B1B2758C5891-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyAnnotationView.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyAnnotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.227242
+e374445386.260600
+r0
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyAnnotationView.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyAnnotationView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyAnnotationView.mcc433a4a9551b641^90bd424a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@116"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyAnnotationView.m0000000000000000^4502"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyAnnotationView.o booker_craig_project3/MyAnnotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyAnnotationView.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyAnnotationView.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyAnnotationView.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyAnnotationView.o36"DD0EB187-A3E3-4817-B7A6-52F8A01E1ECE-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyMapAnnotation.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyMapAnnotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.239381
+e374445386.285013
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyMapAnnotation.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyMapAnnotation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyMapAnnotation.m4a623d4a9551b641^5af6484a9551b641^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyMapAnnotation.m0000000000000000^4496"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyMapAnnotation.o booker_craig_project3/MyMapAnnotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyMapAnnotation.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyMapAnnotation.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/MyMapAnnotation.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/MyMapAnnotation.o36"2937F76C-8998-4765-A3D9-057A9BA43F51-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/RootViewController.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.145852
+e374445386.189156
+r0
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/RootViewController.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.m986b254a9551b641^e771304a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@121"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.m0000000000000000^4520"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/RootViewController.o booker_craig_project3/../RootViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/RootViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/RootViewController.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/RootViewController.o36"7F2637C8-21EC-497B-B278-E53A591CCC91-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SecondViewController.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.145119
+e374445386.155133
+r0
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SecondViewController.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oclang: error: unable to execute command: posix_spawn failed: Resource temporarily unavailable
+oclang: error: clang frontend command failed due to signal (use -v to see invocation)
+oApple clang version 4.1 (tags/Apple/clang-421.11.66) (based on LLVM 3.1svn)
+oTarget: i386-apple-darwin12.2.0
+oThread model: posix
+oclang: note: diagnostic msg: PLEASE submit a bug report to http://developer.apple.com/bugreporter/ and include the crash backtrace, preprocessed source, and associated run script.
+oclang: error: unable to execute command: posix_spawn failed: Resource temporarily unavailable
+oclang: note: diagnostic msg: Error generating preprocessed source(s).
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.mef3c254a9551b641^61c3274a9551b641^-778"clang: error: unable to execute command: posix_spawn failed: Resource temporarily unavailableclang: error: clang frontend command failed due to signal (use -v to see invocation)Apple clang version 4.1 (tags/Apple/clang-421.11.66) (based on LLVM 3.1svn)Target: i386-apple-darwin12.2.0Thread model: posixclang: note: diagnostic msg: PLEASE submit a bug report to http://developer.apple.com/bugreporter/ and include the crash backtrace, preprocessed source, and associated run script.clang: error: unable to execute command: posix_spawn failed: Resource temporarily unavailableclang: note: diagnostic msg: Error generating preprocessed source(s).Command /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang failed with exit code 2551(21%IDEActivityLogMessage2@126"Command /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang failed with exit code 255-374445386#18446744073709551615#0#-2#--29"Apple LLVM compiler 4.1 Error--0#0#0#-19%DVTDocumentLocation3@120"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.m0000000000000000^4526"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SecondViewController.o booker_craig_project3/SecondViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SecondViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SecondViewController.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SecondViewController.o36"964398F2-CDB0-4C46-A413-F30672CD7FFD-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SensorViewController.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.190107
+e374445386.224029
+r0
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SensorViewController.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.m2bc3304a9551b641^aa63394a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@120"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.m0000000000000000^4526"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SensorViewController.o booker_craig_project3/SensorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SensorViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SensorViewController.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/SensorViewController.o36"A2410DF7-C3EF-4A5C-9F39-5DD359C77C41-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445386.144972
+e374445386.252150
+r0
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/main.o
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oclang: error: unable to execute command: posix_spawn failed: Resource temporarily unavailable
+oclang: error: clang frontend command failed due to signal (use -v to see invocation)
+oApple clang version 4.1 (tags/Apple/clang-421.11.66) (based on LLVM 3.1svn)
+oTarget: i386-apple-darwin12.2.0
+oThread model: posix
+oclang: note: diagnostic msg: PLEASE submit a bug report to http://developer.apple.com/bugreporter/ and include the crash backtrace, preprocessed source, and associated run script.
+oclang: note: diagnostic msg: 
+o********************
+o
+oPLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+oPreprocessed source(s) and associated run script(s) are located at:
+oclang: note: diagnostic msg: /var/folders/3q/ygzzbxh56js5__4_b2687zj00000gq/T/main-vsnoH8.mi
+oclang: note: diagnostic msg: /var/folders/3q/ygzzbxh56js5__4_b2687zj00000gq/T/main-vsnoH8.sh
+oclang: note: diagnostic msg: 
+o
+o********************
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/main.m2f36254a9551b641^8194404a9551b641^-1025"clang: error: unable to execute command: posix_spawn failed: Resource temporarily unavailableclang: error: clang frontend command failed due to signal (use -v to see invocation)Apple clang version 4.1 (tags/Apple/clang-421.11.66) (based on LLVM 3.1svn)Target: i386-apple-darwin12.2.0Thread model: posixclang: note: diagnostic msg: PLEASE submit a bug report to http://developer.apple.com/bugreporter/ and include the crash backtrace, preprocessed source, and associated run script.clang: note: diagnostic msg: ********************PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:Preprocessed source(s) and associated run script(s) are located at:clang: note: diagnostic msg: /var/folders/3q/ygzzbxh56js5__4_b2687zj00000gq/T/main-vsnoH8.miclang: note: diagnostic msg: /var/folders/3q/ygzzbxh56js5__4_b2687zj00000gq/T/main-vsnoH8.shclang: note: diagnostic msg: ********************Command /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang failed with exit code 2551(21%IDEActivityLogMessage2@126"Command /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang failed with exit code 255-374445386#18446744073709551615#0#-2#--29"Apple LLVM compiler 4.1 Error--0#0#0#-19%DVTDocumentLocation3@104"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/main.m0000000000000000^4430"CompileC DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/main.o booker_craig_project3/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/main.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/main.m -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/main.o36"AA674FEB-7E01-4DEC-BB9C-7D4ADE27E441-
+
+CCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.xib
+s374445386.495999
+e374445386.544525
+r0
+xCompileXIB
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compiling /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.xibea097f4a9551b641^3ab18b4a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@107"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.xib0000000000000000^1008"CompileXIB LocationCustomTableViewCell.xib    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/LocationCustomTableViewCell.nib /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/LocationCustomTableViewCell.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"D6AEDA75-66E9-4913-AC15-6BC4F51646C7-
+
+CCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.xib
+s374445386.456560
+e374445386.493411
+r0
+xCompileXIB
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compiling /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.xib03ef744a9551b641^74ea7e4a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@124"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.xib0000000000000000^1034"CompileXIB booker_craig_project3/../CustomTableViewCell.xib    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/CustomTableViewCell.nib /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../CustomTableViewCell.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"B7E9D14F-9A77-46D3-AF1C-8E210303A2AF-
+
+CCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.xib
+s374445386.482928
+e374445386.547062
+r0
+xCompileXIB
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Compiling /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.xibc7117f4a9551b641^d8819b4a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@123"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.xib0000000000000000^1031"CompileXIB booker_craig_project3/../RootViewController.xib    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/RootViewController.nib /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../RootViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"67F2BD12-0057-4D77-B0C7-26F981A1FF1B-
+
+CCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.xib
+s374445386.545771
+e374445386.607370
+r0
+xCompileXIB
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compiling /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.xib9aec8b4a9551b641^da909b4a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@124"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.xib0000000000000000^1037"CompileXIB booker_craig_project3/LocationViewController.xib    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/LocationViewController.nib /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/LocationViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"E575A050-2CF6-4E07-B647-9B49FBFCB2EB-
+
+CCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.xib
+s374445386.549031
+e374445386.607276
+r0
+xCompileXIB
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compiling /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.xibbda98c4a9551b641^ef8f9b4a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@122"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.xib0000000000000000^1031"CompileXIB booker_craig_project3/SecondViewController.xib    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/SecondViewController.nib /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SecondViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"4306F49A-0F4B-41D5-BEC1-D6EEFC7729DC-
+
+CCompileXIB /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.xib
+s374445386.484598
+e374445386.606874
+r0
+xCompileXIB
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compiling /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.xib0e157f4a9551b641^f48a9b4a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@122"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.xib0000000000000000^1031"CompileXIB booker_craig_project3/SensorViewController.xib    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/SensorViewController.nib /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/SensorViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"672F2055-CD78-4F04-AA44-80F60443E04A-
+
+CCopyStringsFile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/en.lproj/InfoPlist.strings booker_craig_project3/en.lproj/InfoPlist.strings
+s374445386.387543
+e374445386.427267
+r1
+xCopyStringsFile
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/en.lproj/InfoPlist.strings
+xbooker_craig_project3/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy booker_craig_project3/en.lproj/InfoPlist.strings2941634a9551b641^f9686d4a9551b641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/en.lproj/InfoPlist.strings0000000000000000^715"CopyStringsFile DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/en.lproj/InfoPlist.strings booker_craig_project3/en.lproj/InfoPlist.strings    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/en.lproj -- booker_craig_project3/en.lproj/InfoPlist.strings36"120EE7D7-9514-456F-97DC-329F404687B3-
+
+CCpResource booker_craig_project3/../appicon.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon.png
+s374445386.454920
+e374445386.463965
+r1
+xCpResource
+xbooker_craig_project3/../appicon.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon.png5a82744a9551b641^3c11784a9551b641^---0#0#0#-19%DVTDocumentLocation2@162"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon.png000000000080d041^741"CpResource booker_craig_project3/../appicon.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon.png    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../appicon.png /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"CA0A587C-95DC-466E-A2DF-D1E70ACA6DC4-
+
+CCpResource booker_craig_project3/../appicon@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon@2x.png
+s374445386.455221
+e374445386.480287
+r1
+xCpResource
+xbooker_craig_project3/../appicon@2x.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon@2x.png4f94744a9551b641^1c5f7b4a9551b641^---0#0#0#-19%DVTDocumentLocation2@165"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon@2x.png000000000080d041^756"CpResource "booker_craig_project3/../appicon@2x.png" "DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/appicon@2x.png"    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../appicon@2x.png" /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"19AD30CC-7677-4392-94A6-6D7D090EA45F-
+
+CCpResource booker_craig_project3/../button.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/button.png
+s374445386.455475
+e374445386.481761
+r1
+xCpResource
+xbooker_craig_project3/../button.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/button.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/button.pngf9a3744a9551b641^95627b4a9551b641^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/button.png000000000080d041^738"CpResource booker_craig_project3/../button.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/button.png    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../button.png /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"D008CFD5-D4E3-4297-9F30-5426F37968A6-
+
+CCpResource booker_craig_project3/../default.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default.png
+s374445386.470225
+e374445386.482226
+r1
+xCpResource
+xbooker_craig_project3/../default.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default.pngce6f784a9551b641^ab787b4a9551b641^---0#0#0#-19%DVTDocumentLocation2@162"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default.png000000000080d041^741"CpResource booker_craig_project3/../default.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default.png    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../default.png /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"04863982-E666-475E-93D7-3637574D854D-
+
+CCpResource booker_craig_project3/../default@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default@2x.png
+s374445386.481860
+e374445386.497805
+r1
+xCpResource
+xbooker_craig_project3/../default@2x.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default@2x.pnga56a7b4a9551b641^2b18814a9551b641^---0#0#0#-19%DVTDocumentLocation2@165"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default@2x.png000000000080d041^756"CpResource "booker_craig_project3/../default@2x.png" "DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/default@2x.png"    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../default@2x.png" /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"B79BF966-ABB2-48B7-A028-454D0A166C6C-
+
+CCpResource booker_craig_project3/../first.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png
+s374445386.387024
+e374445386.430463
+r1
+xCpResource
+xbooker_craig_project3/../first.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png2c29634a9551b641^93396e4a9551b641^---0#0#0#-19%DVTDocumentLocation2@160"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png000000000080d041^735"CpResource booker_craig_project3/../first.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../first.png /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"43088BD0-CB8D-4B29-B7DF-70C2E1B20D29-
+
+CCpResource booker_craig_project3/../first@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png
+s374445386.412791
+e374445386.430478
+r1
+xCpResource
+xbooker_craig_project3/../first@2x.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png28bb694a9551b641^bc3b6e4a9551b641^---0#0#0#-19%DVTDocumentLocation2@163"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png0000000000000000^750"CpResource "booker_craig_project3/../first@2x.png" "DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png"    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../first@2x.png" /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"C6A7317D-A00C-401F-A21B-9BAA03743C64-
+
+CCpResource booker_craig_project3/../second.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png
+s374445386.431619
+e374445386.454131
+r1
+xCpResource
+xbooker_craig_project3/../second.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png3b8b6e4a9551b641^ca51744a9551b641^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png0000000000000000^738"CpResource booker_craig_project3/../second.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../second.png /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"F75C87B9-1025-4890-9696-89D0E42DB535-
+
+CCpResource booker_craig_project3/../second@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png
+s374445386.446184
+e374445386.454563
+r1
+xCpResource
+xbooker_craig_project3/../second@2x.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png3d49724a9551b641^9d63744a9551b641^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png0000000000000000^753"CpResource "booker_craig_project3/../second@2x.png" "DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png"    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/../second@2x.png" /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"CB05E4BB-5A2E-460A-8C0D-116CA6F389E6-
+
+CCpResource booker_craig_project3/add-this.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/add-this.png
+s374445386.517678
+e374445386.607136
+r1
+xCpResource
+xbooker_craig_project3/add-this.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/add-this.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/add-this.png5b99844a9551b641^a48d9b4a9551b641^---0#0#0#-19%DVTDocumentLocation2@163"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/add-this.png000000000080d041^738"CpResource booker_craig_project3/add-this.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/add-this.png    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/add-this.png /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"171878C4-E96B-443F-A2A2-DD31DE9D3221-
+
+CCpResource booker_craig_project3/first.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png
+s374445386.387046
+e374445386.444847
+r1
+xCpResource
+xbooker_craig_project3/first.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png062e634a9551b641^42eb714a9551b641^---0#0#0#-19%DVTDocumentLocation2@160"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png000000000080d041^729"CpResource booker_craig_project3/first.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first.png    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/first.png /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"01F191C5-3869-4845-8A10-27E004F0CED7-
+
+CCpResource booker_craig_project3/first@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png
+s374445386.387249
+e374445386.411511
+r1
+xCpResource
+xbooker_craig_project3/first@2x.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png7b2e634a9551b641^1c61694a9551b641^---0#0#0#-19%DVTDocumentLocation2@163"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png000000000080d041^744"CpResource "booker_craig_project3/first@2x.png" "DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/first@2x.png"    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/first@2x.png" /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"94DF114B-A7C3-41A0-8A7B-1F56B2070EE6-
+
+CCpResource booker_craig_project3/second.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png
+s374445386.428476
+e374445386.453742
+r1
+xCpResource
+xbooker_craig_project3/second.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.pngdfbf6d4a9551b641^b746744a9551b641^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png000000000080d041^732"CpResource booker_craig_project3/second.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second.png    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/second.png /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"9CB0E431-932A-4B0A-871A-5466D6851EAA-
+
+CCpResource booker_craig_project3/second@2x.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png
+s374445386.431909
+e374445386.454010
+r1
+xCpResource
+xbooker_craig_project3/second@2x.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png349c6e4a9551b641^344d744a9551b641^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png000000000080d041^747"CpResource "booker_craig_project3/second@2x.png" "DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/second@2x.png"    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/second@2x.png" /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"13CFC587-9796-4235-8304-C4C396F1CFF5-
+
+CGenerateDSYMFile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app.dSYM /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project3
+s374445386.341358
+e374445386.379237
+r0
+xGenerateDSYMFile
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app.dSYM
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project3
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection150"Generating /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app.dSYM6072574a9551b641^c11c614a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@155"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app.dSYM000000000080d041^856"GenerateDSYMFile DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app.dSYM DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project3    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project3 -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app.dSYM36"859F28A1-905F-400E-B7CB-E7899FB128E7-
+
+CLd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project3 normal i386
+s374445386.291234
+e374445386.325037
+r0
+xLd
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project3
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection161"Link /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project323a04a4a9551b641^1cd3534a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#--1467"Ld DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project3 normal i386    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator -filelist /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/Objects-normal/i386/booker_craig_project3.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.1 -framework MapKit -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/booker_craig_project336"C9A55B06-E716-44CB-A419-C31C798D43A4-
+
+CProcessInfoPlistFile /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/Info.plist booker_craig_project3/booker_craig_project3-Info.plist
+s374445385.845081
+e374445385.847731
+r1
+xProcessInfoPlistFile
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/Info.plist
+xbooker_craig_project3/booker_craig_project3-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Process booker_craig_project3/booker_craig_project3-Info.plist1f65d8499551b641^5c20d9499551b641^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/booker_craig_project3-Info.plist0000000000000000^874"ProcessInfoPlistFile DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/Info.plist booker_craig_project3/booker_craig_project3-Info.plist    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility booker_craig_project3/booker_craig_project3-Info.plist -genpkginfo /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app/Info.plist36"C937862A-5AA1-4C1F-818C-9BD952BD81C7-
+
+CProcessPCH /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch.pth booker_craig_project3/booker_craig_project3-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445385.855718
+e374445386.138379
+r1
+xProcessPCH
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch.pth
+xbooker_craig_project3/booker_craig_project3-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Precompile booker_craig_project3/booker_craig_project3-Prefix.pch3d29db499551b641^ad6c234a9551b641^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/booker_craig_project3-Prefix.pch0000000000000000^4312"ProcessPCH DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch.pth booker_craig_project3/booker_craig_project3-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-generated-files.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-own-target-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/booker_craig_project3-project-headers.hmap -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/booker_craig_project3.build/Debug-iphonesimulator/booker_craig_project3.build/DerivedSources -F/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch.dia -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/booker_craig_project3/booker_craig_project3-Prefix.pch -o /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch.pth -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_project3-Prefix-bemjeqsvnnuigpdxhythngqizhkp/booker_craig_project3-Prefix.pch.d36"F854ED5D-BC95-4891-8494-DA55CB85DB29-
+
+CProcessPCH /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/booker_craig_project3/Index/PrecompiledHeaders/booker_craig_project3-Prefix-dvobsauqgmpgusfkhvycchqauoft_ast/booker_craig_project3-Prefix.pch.pth booker_craig_project3/booker_craig_project3-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app
+s374445386.615017
+e374445386.650340
+r0
+xTouch
+x/Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection140"Touch /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.appdc7e9d4a9551b641^59a3a64a9551b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374445386#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#--500"Touch DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app    cd /Users/craig/github/mdv-projects/MDF1/booker_craig_project3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/craig/github/mdv-projects/MDF1/booker_craig_project3/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_project3.app36"92716B35-B3EF-41D2-A738-492D3F5442CE-
+

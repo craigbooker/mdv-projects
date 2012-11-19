@@ -8,12 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+#import "FirstViewController.h"
+#import "SecondViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+{
+    FirstViewController *tableView;
+    SecondViewController *mainMapView;
+    
+    NSMutableArray *locArray;
+}
+
+@property (strong, nonatomic) NSMutableArray *locArray;
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
-@property (strong, nonatomic) ViewController *viewController;
-
+@property (strong, nonatomic) FirstViewController *tableView;
+@property (strong, nonatomic) SecondViewController *mainMapView;
 @end

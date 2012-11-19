@@ -64,7 +64,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     [cell.textLabel setText:@"--"];
@@ -146,9 +146,9 @@
 
 - (void)dealloc {
 	
-	[add release];
+	/* [add release]; ----removed due to deprecation in iOS 6 */
 	
-    [super dealloc];
+    /* [super dealloc]; ----removed due to deprecation in iOS 6 */
 }
 
 

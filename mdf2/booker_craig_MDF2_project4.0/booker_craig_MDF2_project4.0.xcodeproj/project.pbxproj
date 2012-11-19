@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4429F20615DFF7DF0067E811 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4429F20515DFF7DF0067E811 /* UIKit.framework */; };
+		4429F20815DFF7DF0067E811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4429F20715DFF7DF0067E811 /* Foundation.framework */; };
+		4429F20A15DFF7DF0067E811 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4429F20915DFF7DF0067E811 /* CoreGraphics.framework */; };
+		4429F21015DFF7DF0067E811 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4429F20E15DFF7DF0067E811 /* InfoPlist.strings */; };
+		4429F21215DFF7DF0067E811 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4429F21115DFF7DF0067E811 /* main.m */; };
+		4429F21615DFF7E00067E811 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4429F21515DFF7E00067E811 /* AppDelegate.m */; };
+		4429F21915DFF7E00067E811 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4429F21815DFF7E00067E811 /* MasterViewController.m */; };
+		4429F21C15DFF7E00067E811 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4429F21B15DFF7E00067E811 /* DetailViewController.m */; };
+		4429F21F15DFF7E00067E811 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4429F21D15DFF7E00067E811 /* MasterViewController.xib */; };
+		4429F22215DFF7E00067E811 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4429F22015DFF7E00067E811 /* DetailViewController.xib */; };
+		446D284D15E00519004E0967 /* MyTheatreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 446D284C15E00519004E0967 /* MyTheatreData.m */; };
+		446D285A15E1CDD5004E0967 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 446D285815E1CDD5004E0967 /* CustomTableCell.m */; };
+		446D285B15E1CDD5004E0967 /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 446D285915E1CDD5004E0967 /* CustomTableCell.xib */; };
+		446D285D15E28455004E0967 /* 80977_ab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446D285C15E28455004E0967 /* 80977_ab.jpg */; };
+		446D286115E28463004E0967 /* bourne717final.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446D285E15E28463004E0967 /* bourne717final.jpg */; };
+		446D286215E28463004E0967 /* darkknightrisesposter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446D285F15E28463004E0967 /* darkknightrisesposter.jpg */; };
+		446D286315E28463004E0967 /* iceage4-419final.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446D286015E28463004E0967 /* iceage4-419final.jpg */; };
+		446D286515E28470004E0967 /* spidey-419final.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446D286415E28470004E0967 /* spidey-419final.jpg */; };
+		44B4507B15E40D4500658C3C /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B4507A15E40D4500658C3C /* MovieViewController.xib */; };
+		44B4507F15E40D6000658C3C /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B4507E15E40D6000658C3C /* MovieViewController.m */; };
+		44B4508615E448C300658C3C /* TheAmazingSpiderMan3D_360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 44B4508115E448C300658C3C /* TheAmazingSpiderMan3D_360.mp4 */; };
+		44B4508715E448C300658C3C /* IceAgeContinentalDrift_360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 44B4508215E448C300658C3C /* IceAgeContinentalDrift_360.mp4 */; };
+		44B4508815E448C300658C3C /* TheBourneLegacy_360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 44B4508315E448C300658C3C /* TheBourneLegacy_360.mp4 */; };
+		44B4508915E448C300658C3C /* TheDarkKnightRises_360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 44B4508415E448C300658C3C /* TheDarkKnightRises_360.mp4 */; };
+		44B4508A15E448C300658C3C /* Madagascar3_360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 44B4508515E448C300658C3C /* Madagascar3_360.mp4 */; };
+		44B4508C15E4636C00658C3C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B4508B15E4636C00658C3C /* MediaPlayer.framework */; };
+		44B4508E15E53A1300658C3C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B4508D15E53A1300658C3C /* CoreFoundation.framework */; };
+		44B4509015E5783F00658C3C /* theatreLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B4508F15E5783E00658C3C /* theatreLocation.png */; };
+		44B4509215E57B7600658C3C /* vidCameraSml.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B4509115E57B7600658C3C /* vidCameraSml.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4429F20115DFF7DF0067E811 /* booker_craig_MDF2_project4.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = booker_craig_MDF2_project4.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4429F20515DFF7DF0067E811 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4429F20715DFF7DF0067E811 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4429F20915DFF7DF0067E811 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4429F20D15DFF7DF0067E811 /* booker_craig_MDF2_project4.0-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "booker_craig_MDF2_project4.0-Info.plist"; sourceTree = "<group>"; };
+		4429F20F15DFF7DF0067E811 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4429F21115DFF7DF0067E811 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4429F21315DFF7DF0067E811 /* booker_craig_MDF2_project4.0-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "booker_craig_MDF2_project4.0-Prefix.pch"; sourceTree = "<group>"; };
+		4429F21415DFF7E00067E811 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4429F21515DFF7E00067E811 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4429F21715DFF7E00067E811 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		4429F21815DFF7E00067E811 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		4429F21A15DFF7E00067E811 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		4429F21B15DFF7E00067E811 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		4429F21E15DFF7E00067E811 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		4429F22115DFF7E00067E811 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		446D284B15E00519004E0967 /* MyTheatreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTheatreData.h; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.h"; sourceTree = "<group>"; };
+		446D284C15E00519004E0967 /* MyTheatreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTheatreData.m; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.m"; sourceTree = "<group>"; };
+		446D285715E1CDD5004E0967 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
+		446D285815E1CDD5004E0967 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		446D285915E1CDD5004E0967 /* CustomTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
+		446D285C15E28455004E0967 /* 80977_ab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 80977_ab.jpg; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/80977_ab.jpg"; sourceTree = "<group>"; };
+		446D285E15E28463004E0967 /* bourne717final.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bourne717final.jpg; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/bourne717final.jpg"; sourceTree = "<group>"; };
+		446D285F15E28463004E0967 /* darkknightrisesposter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = darkknightrisesposter.jpg; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/darkknightrisesposter.jpg"; sourceTree = "<group>"; };
+		446D286015E28463004E0967 /* iceage4-419final.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iceage4-419final.jpg"; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/iceage4-419final.jpg"; sourceTree = "<group>"; };
+		446D286415E28470004E0967 /* spidey-419final.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "spidey-419final.jpg"; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/spidey-419final.jpg"; sourceTree = "<group>"; };
+		44B4507A15E40D4500658C3C /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovieViewController.xib; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.xib"; sourceTree = "<group>"; };
+		44B4507D15E40D6000658C3C /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieViewController.h; path = "/Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.h"; sourceTree = "<absolute>"; };
+		44B4507E15E40D6000658C3C /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieViewController.m; path = "/Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.m"; sourceTree = "<absolute>"; };
+		44B4508115E448C300658C3C /* TheAmazingSpiderMan3D_360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheAmazingSpiderMan3D_360.mp4; sourceTree = "<group>"; };
+		44B4508215E448C300658C3C /* IceAgeContinentalDrift_360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IceAgeContinentalDrift_360.mp4; sourceTree = "<group>"; };
+		44B4508315E448C300658C3C /* TheBourneLegacy_360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheBourneLegacy_360.mp4; sourceTree = "<group>"; };
+		44B4508415E448C300658C3C /* TheDarkKnightRises_360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheDarkKnightRises_360.mp4; sourceTree = "<group>"; };
+		44B4508515E448C300658C3C /* Madagascar3_360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Madagascar3_360.mp4; sourceTree = "<group>"; };
+		44B4508B15E4636C00658C3C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		44B4508D15E53A1300658C3C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		44B4508F15E5783E00658C3C /* theatreLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = theatreLocation.png; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/theatreLocation.png"; sourceTree = "<group>"; };
+		44B4509115E57B7600658C3C /* vidCameraSml.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vidCameraSml.png; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/vidCameraSml.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4429F1FE15DFF7DF0067E811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B4508E15E53A1300658C3C /* CoreFoundation.framework in Frameworks */,
+				44B4508C15E4636C00658C3C /* MediaPlayer.framework in Frameworks */,
+				4429F20615DFF7DF0067E811 /* UIKit.framework in Frameworks */,
+				4429F20815DFF7DF0067E811 /* Foundation.framework in Frameworks */,
+				4429F20A15DFF7DF0067E811 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4429F1F615DFF7DF0067E811 = {
+			isa = PBXGroup;
+			children = (
+				4429F20B15DFF7DF0067E811 /* booker_craig_MDF2_project4.0 */,
+				4429F20415DFF7DF0067E811 /* Frameworks */,
+				4429F20215DFF7DF0067E811 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4429F20215DFF7DF0067E811 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4429F20115DFF7DF0067E811 /* booker_craig_MDF2_project4.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4429F20415DFF7DF0067E811 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44B4508D15E53A1300658C3C /* CoreFoundation.framework */,
+				44B4508B15E4636C00658C3C /* MediaPlayer.framework */,
+				4429F20515DFF7DF0067E811 /* UIKit.framework */,
+				4429F20715DFF7DF0067E811 /* Foundation.framework */,
+				4429F20915DFF7DF0067E811 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4429F20B15DFF7DF0067E811 /* booker_craig_MDF2_project4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				44B4508115E448C300658C3C /* TheAmazingSpiderMan3D_360.mp4 */,
+				44B4508215E448C300658C3C /* IceAgeContinentalDrift_360.mp4 */,
+				44B4508315E448C300658C3C /* TheBourneLegacy_360.mp4 */,
+				44B4508415E448C300658C3C /* TheDarkKnightRises_360.mp4 */,
+				44B4508515E448C300658C3C /* Madagascar3_360.mp4 */,
+				44B4508015E448AC00658C3C /* Video */,
+				4429F21415DFF7E00067E811 /* AppDelegate.h */,
+				4429F21515DFF7E00067E811 /* AppDelegate.m */,
+				4429F21715DFF7E00067E811 /* MasterViewController.h */,
+				4429F21815DFF7E00067E811 /* MasterViewController.m */,
+				4429F21A15DFF7E00067E811 /* DetailViewController.h */,
+				4429F21B15DFF7E00067E811 /* DetailViewController.m */,
+				44B4507D15E40D6000658C3C /* MovieViewController.h */,
+				44B4507E15E40D6000658C3C /* MovieViewController.m */,
+				446D285715E1CDD5004E0967 /* CustomTableCell.h */,
+				446D285815E1CDD5004E0967 /* CustomTableCell.m */,
+				446D284B15E00519004E0967 /* MyTheatreData.h */,
+				446D284C15E00519004E0967 /* MyTheatreData.m */,
+				4429F20C15DFF7DF0067E811 /* Supporting Files */,
+			);
+			path = booker_craig_MDF2_project4.0;
+			sourceTree = "<group>";
+		};
+		4429F20C15DFF7DF0067E811 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44B4509115E57B7600658C3C /* vidCameraSml.png */,
+				44B4508F15E5783E00658C3C /* theatreLocation.png */,
+				446D286415E28470004E0967 /* spidey-419final.jpg */,
+				446D285E15E28463004E0967 /* bourne717final.jpg */,
+				446D285F15E28463004E0967 /* darkknightrisesposter.jpg */,
+				446D286015E28463004E0967 /* iceage4-419final.jpg */,
+				446D285C15E28455004E0967 /* 80977_ab.jpg */,
+				4429F21D15DFF7E00067E811 /* MasterViewController.xib */,
+				4429F22015DFF7E00067E811 /* DetailViewController.xib */,
+				44B4507A15E40D4500658C3C /* MovieViewController.xib */,
+				446D285915E1CDD5004E0967 /* CustomTableCell.xib */,
+				4429F20D15DFF7DF0067E811 /* booker_craig_MDF2_project4.0-Info.plist */,
+				4429F20E15DFF7DF0067E811 /* InfoPlist.strings */,
+				4429F21115DFF7DF0067E811 /* main.m */,
+				4429F21315DFF7DF0067E811 /* booker_craig_MDF2_project4.0-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44B4508015E448AC00658C3C /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4429F20015DFF7DF0067E811 /* booker_craig_MDF2_project4.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4429F22515DFF7E00067E811 /* Build configuration list for PBXNativeTarget "booker_craig_MDF2_project4.0" */;
+			buildPhases = (
+				4429F1FD15DFF7DF0067E811 /* Sources */,
+				4429F1FE15DFF7DF0067E811 /* Frameworks */,
+				4429F1FF15DFF7DF0067E811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = booker_craig_MDF2_project4.0;
+			productName = booker_craig_MDF2_project4.0;
+			productReference = 4429F20115DFF7DF0067E811 /* booker_craig_MDF2_project4.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4429F1F815DFF7DF0067E811 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Craig Booker";
+			};
+			buildConfigurationList = 4429F1FB15DFF7DF0067E811 /* Build configuration list for PBXProject "booker_craig_MDF2_project4.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4429F1F615DFF7DF0067E811;
+			productRefGroup = 4429F20215DFF7DF0067E811 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4429F20015DFF7DF0067E811 /* booker_craig_MDF2_project4.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4429F1FF15DFF7DF0067E811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4429F21015DFF7DF0067E811 /* InfoPlist.strings in Resources */,
+				4429F21F15DFF7E00067E811 /* MasterViewController.xib in Resources */,
+				4429F22215DFF7E00067E811 /* DetailViewController.xib in Resources */,
+				446D285B15E1CDD5004E0967 /* CustomTableCell.xib in Resources */,
+				446D285D15E28455004E0967 /* 80977_ab.jpg in Resources */,
+				446D286115E28463004E0967 /* bourne717final.jpg in Resources */,
+				446D286215E28463004E0967 /* darkknightrisesposter.jpg in Resources */,
+				446D286315E28463004E0967 /* iceage4-419final.jpg in Resources */,
+				446D286515E28470004E0967 /* spidey-419final.jpg in Resources */,
+				44B4507B15E40D4500658C3C /* MovieViewController.xib in Resources */,
+				44B4508615E448C300658C3C /* TheAmazingSpiderMan3D_360.mp4 in Resources */,
+				44B4508715E448C300658C3C /* IceAgeContinentalDrift_360.mp4 in Resources */,
+				44B4508815E448C300658C3C /* TheBourneLegacy_360.mp4 in Resources */,
+				44B4508915E448C300658C3C /* TheDarkKnightRises_360.mp4 in Resources */,
+				44B4508A15E448C300658C3C /* Madagascar3_360.mp4 in Resources */,
+				44B4509015E5783F00658C3C /* theatreLocation.png in Resources */,
+				44B4509215E57B7600658C3C /* vidCameraSml.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4429F1FD15DFF7DF0067E811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4429F21215DFF7DF0067E811 /* main.m in Sources */,
+				4429F21615DFF7E00067E811 /* AppDelegate.m in Sources */,
+				4429F21915DFF7E00067E811 /* MasterViewController.m in Sources */,
+				4429F21C15DFF7E00067E811 /* DetailViewController.m in Sources */,
+				446D284D15E00519004E0967 /* MyTheatreData.m in Sources */,
+				446D285A15E1CDD5004E0967 /* CustomTableCell.m in Sources */,
+				44B4507F15E40D6000658C3C /* MovieViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4429F20E15DFF7DF0067E811 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4429F20F15DFF7DF0067E811 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4429F21D15DFF7E00067E811 /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4429F21E15DFF7E00067E811 /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		4429F22015DFF7E00067E811 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4429F22115DFF7E00067E811 /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4429F22315DFF7E00067E811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4429F22415DFF7E00067E811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4429F22615DFF7E00067E811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch";
+				INFOPLIST_FILE = "booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4429F22715DFF7E00067E811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch";
+				INFOPLIST_FILE = "booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4429F1FB15DFF7DF0067E811 /* Build configuration list for PBXProject "booker_craig_MDF2_project4.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4429F22315DFF7E00067E811 /* Debug */,
+				4429F22415DFF7E00067E811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4429F22515DFF7E00067E811 /* Build configuration list for PBXNativeTarget "booker_craig_MDF2_project4.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4429F22615DFF7E00067E811 /* Debug */,
+				4429F22715DFF7E00067E811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4429F1F815DFF7DF0067E811 /* Project object */;
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440EEFED165192C400393A41 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 440EEFEC165192C400393A41 /* Default-568h@2x.png */; };
 		44F7D3B114ECD8170052586B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F7D3B014ECD8170052586B /* UIKit.framework */; };
 		44F7D3B314ECD8170052586B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F7D3B214ECD8170052586B /* Foundation.framework */; };
 		44F7D3B514ECD8170052586B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F7D3B414ECD8170052586B /* CoreGraphics.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440EEFEC165192C400393A41 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		44F7D3AC14ECD8170052586B /* taskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F7D3B014ECD8170052586B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44F7D3B214ECD8170052586B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +60,7 @@
 		44F7D3A114ECD8170052586B = {
 			isa = PBXGroup;
 			children = (
+				440EEFEC165192C400393A41 /* Default-568h@2x.png */,
 				44F7D3B614ECD8170052586B /* taskManager */,
 				44F7D3AF14ECD8170052586B /* Frameworks */,
 				44F7D3AD14ECD8170052586B /* Products */,
@@ -166,6 +169,7 @@
 				44F7D3CD14ECD8170052586B /* second.png in Resources */,
 				44F7D3CF14ECD8170052586B /* second@2x.png in Resources */,
 				44F7D3D214ECD8170052586B /* HomeViewController.xib in Resources */,
+				440EEFED165192C400393A41 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

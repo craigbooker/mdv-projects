@@ -6,8 +6,16 @@
 //  Copyright (c) 2012 Semantik Media, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <EventKit/EventKit.h>
+#import "MyEventData.h"
 
-@interface CalendarViewController : NSObject
-
+@interface CalendarViewController : UIViewController {
+    EKCalendar *xCalDataArray;
+    NSArray *xCalendars;
+    int calendarCount;
+}
+@property (nonatomic, retain) NSMutableArray *tableView1Data;
+@property (nonatomic, retain) EKCalendar *xCalDataArray;
+@property (nonatomic, retain) NSArray *xCalendars;
+//@property (nonatomic, strong) int calendarCount;
 @end

@@ -1,0 +1,316 @@
+TtaskManager
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/Info.plist taskManager/taskManager-Info.plist
+cProcessPCH /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch.pth taskManager/taskManager-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/HomeViewController.o /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/HomeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager normal i386
+cGenerateDSYMFile /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app.dSYM /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager
+cCopyStringsFile /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/en.lproj/InfoPlist.strings taskManager/en.lproj/InfoPlist.strings
+cCpResource taskManager/first@2x.png DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first@2x.png
+cCpResource taskManager/first.png DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first.png
+cCpResource taskManager/second.png DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second.png
+cCpResource taskManager/second@2x.png DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second@2x.png
+cCompileXIB /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/en.lproj/HomeViewController.xib
+cTouch /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+c00000000509427310000000000000110
+t1351886641
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000506CBFF50000000000228FD0
+t1349304309
+s2265040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000506CBFF800000000003DCEF0
+t1349304312
+s4050672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000506CC0130000000000AB3D60
+t1349304339
+s11222368
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch.pth
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/HomeViewController.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/taskManager.LinkFileList
+c0000000050A15B32000000000000020D
+t1352751922
+s525
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app.dSYM
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/Info.plist
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/PkgInfo
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/en.lproj/HomeViewController.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first@2x.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second@2x.png
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/AppDelegate.m
+c000000004F72363A0000000000000C40
+t1332885050
+s3136
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/HomeViewController.m
+c000000004F72363A00000000000005BD
+t1332885050
+s1469
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/en.lproj/HomeViewController.xib
+c000000004F72363A0000000000004B63
+t1332885050
+s19299
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/en.lproj/InfoPlist.strings
+c000000004F72363A000000000000002D
+t1332885050
+s45
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/first.png
+c000000004F72363A00000000000000FD
+t1332885050
+s253
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/first@2x.png
+c000000004F72363A0000000000000192
+t1332885050
+s402
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/main.m
+c000000004F72363A000000000000015B
+t1332885050
+s347
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/second.png
+c000000004F72363A0000000000000080
+t1332885050
+s128
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/second@2x.png
+c000000004F72363A0000000000000082
+t1332885050
+s130
+
+N/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/taskManager-Prefix.pch
+c000000004F72363A0000000000000145
+t1332885050
+s325
+
+NtaskManager/taskManager-Info.plist
+c000000004F72363A0000000000000492
+t1332885050
+s1170
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/AppDelegate.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/HomeViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies388258b29251b641^156fa4b29251b641^---0#1#0#--18"Check dependencies36"5E25E546-8A82-4CFC-83F8-3F65B9ABF02B-
+
+CCompileC DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374444722.781782
+e374444722.843845
+r0
+xCompileC
+xDerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/AppDelegate.o
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/AppDelegate.m923bc8b29251b641^fe0bd8b29251b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374444722#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@92"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/AppDelegate.m0000000000000000^4066"CompileC DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/AppDelegate.o taskManager/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/AppDelegate.dia -c /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/AppDelegate.m -o /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/AppDelegate.o36"2BF395B4-3A62-4ED0-95B5-C613BC5D0668-
+
+CCompileC DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/HomeViewController.o /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/HomeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374444722.781893
+e374444722.843849
+r0
+xCompileC
+xDerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/HomeViewController.o
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/HomeViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/HomeViewController.mc43fc8b29251b641^520cd8b29251b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374444722#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@99"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/HomeViewController.m0000000000000000^4108"CompileC DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/HomeViewController.o taskManager/HomeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/HomeViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/HomeViewController.dia -c /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/HomeViewController.m -o /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/HomeViewController.o36"DDB1B36B-3644-4664-AB4A-8900A62684C0-
+
+CCompileC DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374444722.781760
+e374444722.843714
+r0
+xCompileC
+xDerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/main.o
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/main.m6939c8b29251b641^130bd8b29251b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374444722#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@85"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/main.m0000000000000000^4024"CompileC DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/main.o taskManager/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/main.dia -c /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/main.m -o /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/main.o36"247CE0E2-1A58-4FE8-BAF5-A82E8B7046CF-
+
+CCompileXIB /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/en.lproj/HomeViewController.xib
+s374444723.093167
+e374444723.143943
+r0
+xCompileXIB
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/en.lproj/HomeViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compiling /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/en.lproj/HomeViewController.xib04e817b39251b641^b2da24b39251b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374444723#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@110"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/en.lproj/HomeViewController.xib0000000000000000^995"CompileXIB taskManager/en.lproj/HomeViewController.xib    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/en.lproj/HomeViewController.nib /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/en.lproj/HomeViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"077D1298-A6C5-4D99-A04D-6904F525B923-
+
+CCopyStringsFile /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/en.lproj/InfoPlist.strings taskManager/en.lproj/InfoPlist.strings
+s374444722.955426
+e374444723.091929
+r1
+xCopyStringsFile
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/en.lproj/InfoPlist.strings
+xtaskManager/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Copy taskManager/en.lproj/InfoPlist.strings0da7f4b29251b641^ab9717b39251b641^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/en.lproj/InfoPlist.strings0000000000000000^657"CopyStringsFile DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/en.lproj/InfoPlist.strings taskManager/en.lproj/InfoPlist.strings    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/en.lproj -- taskManager/en.lproj/InfoPlist.strings36"0E46ACC4-DD31-48FF-A970-4BB3929FB48C-
+
+CCpResource taskManager/first.png DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first.png
+s374444722.955432
+e374444723.092028
+r1
+xCpResource
+xtaskManager/first.png
+xDerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first.png55a6f4b29251b641^e99817b39251b641^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first.png000000000080d041^662"CpResource taskManager/first.png DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first.png    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/first.png /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app36"755AC278-7CE9-4CA6-B795-730DDC19769A-
+
+CCpResource taskManager/first@2x.png DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first@2x.png
+s374444722.955428
+e374444723.091882
+r1
+xCpResource
+xtaskManager/first@2x.png
+xDerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Copy DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first@2x.png98a6f4b29251b641^a79417b39251b641^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first@2x.png000000000080d041^677"CpResource "taskManager/first@2x.png" "DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/first@2x.png"    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/first@2x.png" /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app36"F9CAEDA5-1F8D-4DB0-B324-9DDF8AD7F721-
+
+CCpResource taskManager/second.png DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second.png
+s374444722.955677
+e374444723.092047
+r1
+xCpResource
+xtaskManager/second.png
+xDerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Copy DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second.pngd9b2f4b29251b641^179a17b39251b641^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second.png000000000080d041^665"CpResource taskManager/second.png DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second.png    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/second.png /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app36"F525F264-8F99-4FFE-A834-C7C9A9A86D76-
+
+CCpResource taskManager/second@2x.png DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second@2x.png
+s374444723.093157
+e374444723.232829
+r1
+xCpResource
+xtaskManager/second@2x.png
+xDerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Copy DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second@2x.pnge6e617b39251b641^baa33bb39251b641^---0#0#0#-19%DVTDocumentLocation2@145"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second@2x.png000000000080d041^680"CpResource "taskManager/second@2x.png" "DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/second@2x.png"    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/second@2x.png" /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app36"4CADB884-81B3-48AA-8870-48E80BCA780D-
+
+CGenerateDSYMFile /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app.dSYM /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager
+s374444722.914181
+e374444722.947659
+r0
+xGenerateDSYMFile
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app.dSYM
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Generating /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app.dSYM8715eab29251b641^c899f2b29251b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374444722#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@136"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app.dSYM000000000080d041^769"GenerateDSYMFile DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app.dSYM DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager -o /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app.dSYM36"EA7E0C9B-FA4D-48FB-B5B3-E0DFC5A168EF-
+
+CLd /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager normal i386
+s374444722.850674
+e374444722.907359
+r0
+xLd
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Link /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager39d6d9b29251b641^1349e8b29251b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374444722#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#--1334"Ld DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager normal i386    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator -filelist /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/Objects-normal/i386/taskManager.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.1 -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/taskManager36"17FB2922-ED4F-49D2-B85B-2C14F46E3DCC-
+
+CProcessInfoPlistFile /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/Info.plist taskManager/taskManager-Info.plist
+s374444722.610427
+e374444722.727027
+r1
+xProcessInfoPlistFile
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/Info.plist
+xtaskManager/taskManager-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Process taskManager/taskManager-Info.plist04549cb29251b641^c51ebab29251b641^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/taskManager-Info.plist0000000000000000^777"ProcessInfoPlistFile DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/Info.plist taskManager/taskManager-Info.plist    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility taskManager/taskManager-Info.plist -genpkginfo /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app/Info.plist36"E3AAA7D6-52F4-45B2-A912-FD8E3D2C2E11-
+
+CProcessPCH /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch.pth taskManager/taskManager-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374444722.735266
+e374444722.775021
+r0
+xProcessPCH
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch.pth
+xtaskManager/taskManager-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile taskManager/taskManager-Prefix.pch9b54bcb29251b641^1f67c6b29251b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374444722#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@101"file://localhost/Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/taskManager-Prefix.pch0000000000000000^3915"ProcessPCH DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch.pth taskManager/taskManager-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/taskManager-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/taskManager.build/Debug-iphonesimulator/taskManager.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch.dia -c /Users/craig/github/mdv-projects/OBJCI/taskManager/taskManager/taskManager-Prefix.pch -o /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch.pth -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Intermediates/PrecompiledHeaders/taskManager-Prefix-bgmqqvkibtfpedeebdpbbwagbnom/taskManager-Prefix.pch.d36"EFA7EAA8-2CCA-4510-802D-971974003EED-
+
+CProcessPCH /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/taskManager/Index/PrecompiledHeaders/taskManager-Prefix-gzddfektkcycsubmlouoygjldztt_ast/taskManager-Prefix.pch.pth taskManager/taskManager-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app
+s374444723.240807
+e374444723.275402
+r0
+xTouch
+x/Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Touch /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app81b23db39251b641^498046b39251b641^-213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)1(21%IDEActivityLogMessage2@213"error: couldn't run '/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/Frameworks/DevToolsCore.framework/Resources/xcexec' because an internal error occurred (Resource temporarily unavailable)-374444723#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#--462"Touch DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app    cd /Users/craig/github/mdv-projects/OBJCI/taskManager    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/craig/github/mdv-projects/OBJCI/taskManager/DerivedData/Build/Products/Debug-iphonesimulator/taskManager.app36"FA65F09B-CEFD-41AA-8698-19BA7A72F941-
+

@@ -1,0 +1,487 @@
+Tbooker_craig_mdf2_project3.1
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/Info.plist booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Info.plist
+cProcessPCH /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch.pth booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ImageCapViewController.o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ViewController.o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/MovieCapViewController.o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.1 normal i386
+cGenerateDSYMFile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app.dSYM /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.1
+cCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ViewController.xib
+cCopyStringsFile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/en.lproj/InfoPlist.strings booker_craig_mdf2_project3.1/en.lproj/InfoPlist.strings
+cCpResource booker_craig_mdf2_project3.1/camera.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/camera.png
+cCpResource booker_craig_mdf2_project3.1/info.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/info.png
+cCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapView.xib
+cCpResource booker_craig_mdf2_project3.1/videoCamera.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/videoCamera.png
+cCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.xib
+cTouch /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+c00000000509427310000000000000110
+t1351886641
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000506CBFF50000000000228FD0
+t1349304309
+s2265040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000506CBFF800000000003DCEF0
+t1349304312
+s4050672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c00000000506CC00F00000000000BCB50
+t1349304335
+s772944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000506CC0130000000000AB3D60
+t1349304339
+s11222368
+
+N/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
+c00000000509C4E180000000000000110
+t1352420888
+s272
+
+N/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000509C612A0000000000228FE0
+t1352425770
+s2265056
+
+N/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000509C613100000000003DCEF0
+t1352425777
+s4050672
+
+N/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c00000000509C614E00000000000BCBC0
+t1352425806
+s773056
+
+N/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000509C615C0000000000AB4FF0
+t1352425820
+s11227120
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch.pth
+t2
+s0
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-cfmwdrwitxgafadlgcaaaxqquwcx/booker_craig_mdf2_project3.1-Prefix.pch.pth
+t1352753482
+s4837776
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/AppDelegate.o
+t1352753482
+s91852
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ImageCapViewController.o
+t1352753482
+s73588
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/MovieCapViewController.o
+t1352753482
+s70500
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ViewController.o
+t1352753482
+s88920
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/booker_craig_mdf2_project3.1.LinkFileList
+c0000000050A161490000000000000477
+t1352753481
+s1143
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/main.o
+t1352753482
+s3424
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app
+t1352753483
+s374
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app.dSYM
+t1352753482
+s102
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/ImageCapView.nib
+t1352753483
+s1971
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/Info.plist
+t1352753481
+s888
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/MovieCapViewController.nib
+t1352753483
+s1877
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/PkgInfo
+t1352753481
+s8
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.1
+t1352753482
+s42356
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/camera.png
+t1352753482
+s833
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/en.lproj/InfoPlist.strings
+t1352753482
+s42
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/en.lproj/ViewController.nib
+t1352753483
+s3128
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/info.png
+t1352753482
+s974
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/videoCamera.png
+t1352753482
+s658
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.h
+c00000000502DB5C700000000000001B6
+t1345172935
+s438
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m
+c00000000502DB6650000000000000A22
+t1345173093
+s2594
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapView.xib
+c00000000502D7BCB0000000000002D0D
+t1345158091
+s11533
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m
+c00000000502DB5F70000000000000295
+t1345172983
+s661
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.h
+c00000000502DB5A0000000000000014E
+t1345172896
+s334
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.m
+c00000000502D66C40000000000000290
+t1345152708
+s656
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.xib
+c00000000502D9A450000000000002F00
+t1345165893
+s12032
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ViewController.h
+c00000000502DB5C70000000000000130
+t1345172935
+s304
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ViewController.m
+c00000000502DB75F000000000000109F
+t1345173343
+s4255
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch
+c00000000502D6A120000000000000167
+t1345153554
+s359
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/camera.png
+c00000000502A5ECD0000000000000341
+t1344954061
+s833
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h
+c00000000502DB5A000000000000001CE
+t1345172896
+s462
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/InfoPlist.strings
+c00000000502D6A12000000000000002D
+t1345153554
+s45
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ViewController.xib
+c00000000502DB5C4000000000000352D
+t1345172932
+s13613
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/info.png
+c00000000502A74A300000000000003CE
+t1344959651
+s974
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/main.m
+c00000000502D6A120000000000000167
+t1345153554
+s359
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/videoCamera.png
+c00000000502A5EE20000000000000292
+t1344954082
+s658
+
+Nbooker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Info.plist
+c00000000502D6A120000000000000496
+t1345153554
+s1174
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesc3f0f5132057b641^fed18f142057b641^---0#1#0#--18"Check dependencies36"864000A8-2B6A-4EB9-81F2-2D6D876D16BB-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374808601.740460
+e374808602.911018
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/AppDelegate.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m:13:1: warning: autosynthesized property 'mainViewController' will use synthesized instance variable '_mainViewController', not existing instance variable 'mainViewController' [-Wobjc-autosynthesis-property-ivar-name-match]
+o@implementation AppDelegate
+o^
+o/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.h:19:49: note: property declared here
+o@property (strong, nonatomic) UIViewController *mainViewController;
+o                                                ^
+o/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.h:16:23: note: instance variable is declared here
+o    UIViewController *mainViewController;
+o                      ^
+o/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m:23:29: warning: unused variable 'navigationController' [-Wunused-variable]
+o    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+o                            ^
+o2 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m19afbd192057b641^ed44e91a2057b641^-1216"/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m:13:1: warning: autosynthesized property 'mainViewController' will use synthesized instance variable '_mainViewController', not existing instance variable 'mainViewController' [-Wobjc-autosynthesis-property-ivar-name-match]@implementation AppDelegate^/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.h:19:49: note: property declared here@property (strong, nonatomic) UIViewController *mainViewController;                                                ^/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.h:16:23: note: instance variable is declared here    UIViewController *mainViewController;                      ^/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m:23:29: warning: unused variable 'navigationController' [-Wunused-variable]    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController1];                            ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@159"Autosynthesized property 'mainViewController' will use synthesized instance variable '_mainViewController', not existing instance variable 'mainViewController'-374808602#18446744073709551615#0#2(2@22"Property declared here-374808602#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@125"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.h0000000000000000^18#48#18#48#412#0#14"Semantic Issue--2@34"Instance variable is declared here-374808602#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@125"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.h0000000000000000^15#22#15#22#294#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@125"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m0000000000000000^12#0#12#0#212#0#14"Semantic Issue--2@38"Unused variable 'navigationController'-374808602#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@125"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m0000000000000000^22#28#22#28#770#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@125"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m0000000000000000^4744"CompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/AppDelegate.o booker_craig_mdf2_project3.1/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/AppDelegate.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/AppDelegate.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/AppDelegate.o36"B1310F0D-CBAC-4A34-B26E-F69FFB0B42CB-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ImageCapViewController.o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374808601.741187
+e374808602.910156
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ImageCapViewController.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m:12:1: warning: autosynthesized property 'photoImageView' will use synthesized instance variable '_photoImageView', not existing instance variable 'photoImageView' [-Wobjc-autosynthesis-property-ivar-name-match]
+o@implementation ImageCapViewController
+o^
+o/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h:17:53: note: property declared here
+o@property (nonatomic, strong) IBOutlet UIImageView *photoImageView;
+o                                                    ^
+o/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h:14:18: note: instance variable is declared here
+o    UIImageView *photoImageView;
+o                 ^
+o/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m:12:1: warning: autosynthesized property 'scaledImageView' will use synthesized instance variable '_scaledImageView', not existing instance variable 'scaledImageView' [-Wobjc-autosynthesis-property-ivar-name-match]
+o@implementation ImageCapViewController
+o^
+o/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h:18:53: note: property declared here
+o@property (nonatomic, strong) IBOutlet UIImageView *scaledImageView;
+o                                                    ^
+o/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h:13:18: note: instance variable is declared here
+o    UIImageView *scaledImageView;
+o                 ^
+o2 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.mddd3bd192057b641^3d10e91a2057b641^-1809"/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m:12:1: warning: autosynthesized property 'photoImageView' will use synthesized instance variable '_photoImageView', not existing instance variable 'photoImageView' [-Wobjc-autosynthesis-property-ivar-name-match]@implementation ImageCapViewController^/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h:17:53: note: property declared here@property (nonatomic, strong) IBOutlet UIImageView *photoImageView;                                                    ^/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h:14:18: note: instance variable is declared here    UIImageView *photoImageView;                 ^/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m:12:1: warning: autosynthesized property 'scaledImageView' will use synthesized instance variable '_scaledImageView', not existing instance variable 'scaledImageView' [-Wobjc-autosynthesis-property-ivar-name-match]@implementation ImageCapViewController^/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h:18:53: note: property declared here@property (nonatomic, strong) IBOutlet UIImageView *scaledImageView;                                                    ^/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h:13:18: note: instance variable is declared here    UIImageView *scaledImageView;                 ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@147"Autosynthesized property 'photoImageView' will use synthesized instance variable '_photoImageView', not existing instance variable 'photoImageView'-374808602#18446744073709551615#0#2(2@22"Property declared here-374808602#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@145"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h0000000000000000^16#52#16#52#372#0#14"Semantic Issue--2@34"Instance variable is declared here-374808602#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@145"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h0000000000000000^13#17#13#17#300#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@136"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m0000000000000000^11#0#11#0#205#0#14"Semantic Issue--2@150"Autosynthesized property 'scaledImageView' will use synthesized instance variable '_scaledImageView', not existing instance variable 'scaledImageView'-374808602#18446744073709551615#0#2(2@22"Property declared here-374808602#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@145"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h0000000000000000^17#52#17#52#440#0#14"Semantic Issue--2@34"Instance variable is declared here-374808602#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@145"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ImageCapViewController.h0000000000000000^12#17#12#17#266#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@136"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m0000000000000000^11#0#11#0#205#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@136"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m0000000000000000^4810"CompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ImageCapViewController.o booker_craig_mdf2_project3.1/ImageCapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ImageCapViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ImageCapViewController.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapViewController.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ImageCapViewController.o36"BF666DD9-35CA-4CBF-8A33-58EC6110F40E-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/MovieCapViewController.o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374808602.907842
+e374808602.992364
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/MovieCapViewController.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.m338be81a2057b641^2d0bfe1a2057b641^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.m0000000000000000^4810"CompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/MovieCapViewController.o booker_craig_mdf2_project3.1/MovieCapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/MovieCapViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/MovieCapViewController.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/MovieCapViewController.o36"774C7545-7E4F-492B-BA7E-9DD284998A64-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ViewController.o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374808601.741665
+e374808602.911727
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ViewController.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ViewController.m38f5bd192057b641^f166e91a2057b641^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ViewController.m0000000000000000^4762"CompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ViewController.o booker_craig_mdf2_project3.1/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ViewController.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ViewController.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/ViewController.o36"30856582-8266-4A39-82C5-F89392FE28F5-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374808601.741662
+e374808602.906536
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/main.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/main.mf5f4bd192057b641^1213e81a2057b641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/main.m0000000000000000^4702"CompileC DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/main.o booker_craig_mdf2_project3.1/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/main.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/main.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/main.o36"61B8C2D5-B864-471E-8A82-C2BC4C14EF3D-
+
+CCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapView.xib
+s374808604.473918
+e374808604.533869
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapView.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Compiling /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapView.xib376e791c2057b641^f3ac881c2057b641^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapView.xib0000000000000000^1079"CompileXIB booker_craig_mdf2_project3.1/ImageCapView.xib    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode46-DP2.app/Contents/Developer/usr/bin/..    /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/ImageCapView.nib /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/ImageCapView.xib --sdk /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"4ED83843-811C-4179-944D-ACA9BECCB985-
+
+CCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.xib
+s374808604.474146
+e374808605.196890
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Compiling /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.xib4772791c2057b641^8467321d2057b641^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.xib0000000000000000^1109"CompileXIB booker_craig_mdf2_project3.1/MovieCapViewController.xib    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode46-DP2.app/Contents/Developer/usr/bin/..    /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/MovieCapViewController.nib /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/MovieCapViewController.xib --sdk /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"A7500AF7-2B58-444C-BC81-25EECCCBD1C7-
+
+CCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ViewController.xib
+s374808604.472564
+e374808605.418969
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Compiling /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ViewController.xib9a0a791c2057b641^e2776b1d2057b641^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ViewController.xib0000000000000000^1112"CompileXIB booker_craig_mdf2_project3.1/en.lproj/ViewController.xib    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode46-DP2.app/Contents/Developer/usr/bin/..    /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/en.lproj/ViewController.nib /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/ViewController.xib --sdk /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"042133C3-EEE8-4747-902A-82BB3CA7A492-
+
+CCopyStringsFile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/en.lproj/InfoPlist.strings booker_craig_mdf2_project3.1/en.lproj/InfoPlist.strings
+s374446282.441297
+e374446282.533419
+r1
+xCopyStringsFile
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/en.lproj/InfoPlist.strings
+xbooker_craig_mdf2_project3.1/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy booker_craig_mdf2_project3.1/en.lproj/InfoPlist.strings488773ca9851b641^19e288ca9851b641^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/en.lproj/InfoPlist.strings0000000000000000^757"CopyStringsFile DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/en.lproj/InfoPlist.strings booker_craig_mdf2_project3.1/en.lproj/InfoPlist.strings    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/en.lproj -- booker_craig_mdf2_project3.1/en.lproj/InfoPlist.strings36"11CDB484-697F-4521-9946-D7B8BC76B8E2-
+
+CCpResource booker_craig_mdf2_project3.1/camera.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/camera.png
+s374446282.451721
+e374446282.532977
+r1
+xCpResource
+xbooker_craig_mdf2_project3.1/camera.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/camera.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/camera.png21af73ca9851b641^0aa088ca9851b641^---0#0#0#-19%DVTDocumentLocation2@175"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/camera.png000000000080d041^781"CpResource booker_craig_mdf2_project3.1/camera.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/camera.png    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/camera.png /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app36"4EEDB343-1715-499B-ACCF-E6C1FC30CE2C-
+
+CCpResource booker_craig_mdf2_project3.1/info.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/info.png
+s374446282.451301
+e374446282.533531
+r1
+xCpResource
+xbooker_craig_mdf2_project3.1/info.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/info.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/info.pngd19673ca9851b641^54e488ca9851b641^---0#0#0#-19%DVTDocumentLocation2@173"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/info.png000000000080d041^775"CpResource booker_craig_mdf2_project3.1/info.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/info.png    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/info.png /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app36"DA4CC7B1-36B7-47B8-8F1B-6BE7C32734A2-
+
+CCpResource booker_craig_mdf2_project3.1/videoCamera.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/videoCamera.png
+s374446282.534168
+e374446282.576094
+r1
+xCpResource
+xbooker_craig_mdf2_project3.1/videoCamera.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/videoCamera.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/videoCamera.png21cd88ca9851b641^028093ca9851b641^---0#0#0#-19%DVTDocumentLocation2@180"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/videoCamera.png000000000080d041^796"CpResource booker_craig_mdf2_project3.1/videoCamera.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/videoCamera.png    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/videoCamera.png /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app36"ECB5FFA0-9FBF-483D-A7EB-60301EEF7C20-
+
+CGenerateDSYMFile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app.dSYM /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.1
+s374808604.002007
+e374808604.464590
+r1
+xGenerateDSYMFile
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app.dSYM
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.1
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection162"Generate /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app.dSYMeecc001c2057b641^77f5761c2057b641^---0#0#0#-19%DVTDocumentLocation2@170"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app.dSYM/0000000000000000^937"GenerateDSYMFile DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app.dSYM DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.1    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.1 -o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app.dSYM36"D742BAD9-316A-4F2A-B8F7-1F9DDC532BFE-
+
+CLd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.1 normal i386
+s374808602.998709
+e374808603.960625
+r1
+xLd
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.1
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection182"Link /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.132c6ff1a2057b641^1139f91b2057b641^---0#0#0#--1598"Ld DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.1 normal i386    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator -filelist /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/Objects-normal/i386/booker_craig_mdf2_project3.1.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.1 -framework MobileCoreServices -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/booker_craig_mdf2_project3.136"478917E8-82E2-4DDD-AC26-C9BCDB727BE9-
+
+CProcessInfoPlistFile /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/Info.plist booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Info.plist
+s374808596.568153
+e374808596.648341
+r1
+xProcessInfoPlistFile
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/Info.plist
+xbooker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Process booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Info.plistdc8291142057b641^1900a6142057b641^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Info.plist0000000000000000^956"ProcessInfoPlistFile DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/Info.plist booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Info.plist    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Info.plist -genpkginfo /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app/Info.plist36"B083F30D-E7F6-4C91-A59D-47CA9FE144A1-
+
+CProcessPCH /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch.pth booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374808596.656433
+e374808601.733491
+r1
+xProcessPCH
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch.pth
+xbooker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Precompile booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch0326a8142057b641^cec5bb192057b641^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch0000000000000000^4577"ProcessPCH DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch.pth booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch -o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch.pth -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-aydmxmhkehjpysbuswajwqszufdm/booker_craig_mdf2_project3.1-Prefix.pch.d36"89B7AE0F-991D-41B3-BE4D-5E48B3951DE6-
+
+CProcessPCH /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-cfmwdrwitxgafadlgcaaaxqquwcx/booker_craig_mdf2_project3.1-Prefix.pch.pth booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374446281.837695
+e374446282.160195
+r1
+xProcessPCH
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-cfmwdrwitxgafadlgcaaaxqquwcx/booker_craig_mdf2_project3.1-Prefix.pch.pth
+xbooker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Precompile booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch438dd6c99851b641^690229ca9851b641^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch0000000000000000^4635"ProcessPCH DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-cfmwdrwitxgafadlgcaaaxqquwcx/booker_craig_mdf2_project3.1-Prefix.pch.pth booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/booker_craig_mdf2_project3.1-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/booker_craig_mdf2_project3.1.build/Debug-iphonesimulator/booker_craig_mdf2_project3.1.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-cfmwdrwitxgafadlgcaaaxqquwcx/booker_craig_mdf2_project3.1-Prefix.pch.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch -o /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-cfmwdrwitxgafadlgcaaaxqquwcx/booker_craig_mdf2_project3.1-Prefix.pch.pth -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-cfmwdrwitxgafadlgcaaaxqquwcx/booker_craig_mdf2_project3.1-Prefix.pch.d36"86ED99A9-B9A8-413B-AF65-293FDB5E6DA4-
+
+CProcessPCH /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/booker_craig_mdf2_project3.1/Index/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-acoxscdquednvzcrwzhkniehbzmb_ast/booker_craig_mdf2_project3.1-Prefix.pch.pth booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/booker_craig_mdf2_project3.1/Index/PrecompiledHeaders/booker_craig_mdf2_project3.1-Prefix-fibzgzctlttkkmcrzpmlwkxlfyon_ast/booker_craig_mdf2_project3.1-Prefix.pch.pth booker_craig_mdf2_project3.1/booker_craig_mdf2_project3.1-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app
+s374808605.429921
+e374808605.539479
+r1
+xTouch
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection154"Touch /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.appbc246e1d2057b641^4c1b8a1d2057b641^---0#0#0#--540"Touch DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1    setenv PATH "/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode46-DP2.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3.1/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_mdf2_project3.1.app36"2E1187C3-49B4-4E10-A5B0-E6FC65F3C896-
+

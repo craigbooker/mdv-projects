@@ -8,7 +8,7 @@
 
 #import "CarTableViewController.h"
 #import "CarTableViewCell.h"
-
+#import "CarDetailViewController.h"
 
 @implementation CarTableViewController
 @synthesize carMakes = _carMakes; 
@@ -140,11 +140,11 @@
 {
     // Navigation logic may go here. Create and push another view controller.
     /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     CarDetailViewController *carDetailViewController = [[CarDetailViewController alloc] initWithNibName:@"MainStoryBoard" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
+     [self.navigationController pushViewController:carDetailViewController animated:YES];
+     [carDetailViewController release];
      */
 }
 

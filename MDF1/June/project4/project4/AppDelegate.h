@@ -7,13 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Tweet.h"
+#import "ViewController.h"
+#import "WebViewController.h"
 
-@class ViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+{
+
+    ViewController *myListView;
+    WebViewController *myWebView;    
+
+
+}
+
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) ViewController *viewController;
+@property (strong, nonatomic) IBOutlet UITabBarController *tabBarController;
+@property (strong, nonatomic) ViewController *myListView;
+@property (strong, nonatomic) WebViewController *myWebView;
 
 @end

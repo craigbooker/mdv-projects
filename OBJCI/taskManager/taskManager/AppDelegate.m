@@ -17,18 +17,12 @@
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
 
-- (void)dealloc
-{
-    [_window release];
-    [_tabBarController release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[[UIViewController alloc] initWithNibName:@"HomeViewController" bundle:nil] autorelease];
+    UIViewController *viewController1 = [[UIViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
 
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, nil];

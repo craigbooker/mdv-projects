@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <NSURLConnectionDataDelegate>
+{
+    NSURLRequest *request;
+    NSURL *url;
+    NSURLConnection *connection;
+    
+    NSMutableData *requestData;
+}
+@property (weak, nonatomic) IBOutlet UITableView *tweets;
 @end

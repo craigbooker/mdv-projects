@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImageCapViewController : UIViewController <UIImagePickerControllerDelegate>
+@interface ImageCapViewController : UIViewController 
 {
-    IBOutlet UIImageView *scaledImageView;
-    IBOutlet UIImageView *photoImageView;
-    
+    UIImageView *scaledImageView;
+    UIImageView *photoImageView;
 }
--(IBAction)onClick:(id)sender;
+ 
+@property (nonatomic, strong) IBOutlet UIImageView *photoImageView;
+@property (nonatomic, strong) IBOutlet UIImageView *scaledImageView;
 @end

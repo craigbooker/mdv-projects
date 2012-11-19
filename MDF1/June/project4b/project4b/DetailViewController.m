@@ -8,7 +8,7 @@
 
 #import "DetailViewController.h"
 #import "MainViewController.h"
-#import "MyTweet.h"
+#import "Tweet.h"
 #import "AppDelegate.h"
 
 @interface DetailViewController ()
@@ -16,7 +16,8 @@
 @end
 
 @implementation DetailViewController
-@synthesize myMapView;
+@synthesize xTweet;
+//@synthesize myDetailView;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

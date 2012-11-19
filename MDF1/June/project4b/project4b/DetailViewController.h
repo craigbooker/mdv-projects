@@ -7,19 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MyTweet.h"
+#import "Tweet.h"
 
 
 @interface DetailViewController : UIViewController {
 	
-    IBOutlet MKMapView *myMapView;
-    MyTweet* passAnnoStorage;
-    IBOutlet UILabel *locName;
-    IBOutlet UILabel *locCoords;
+    IBOutlet UITextView *myDetailView;
+    Tweet *xTweet;
+
 
 }
 
-@property (assign) IBOutlet MKMapView *myMapView;
+//@property (assign) IBOutlet UIWebView *myDetailView;
 
-
+@property (nonatomic,retain) Tweet *xTweet;
 @end

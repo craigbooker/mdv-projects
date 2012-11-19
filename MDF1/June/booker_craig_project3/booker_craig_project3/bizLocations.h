@@ -8,6 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@interface locations : NSObject
+@interface BizLocations : NSObject
+{
+    NSString *xBizName;
+    NSString *xLatValue;
+    NSString *xLongValue;
+    NSString *xLocation;
+
+}
+
+@property (nonatomic,retain) NSString *xBizName;
+@property (nonatomic,retain) NSString *xLocation;
+@property (nonatomic,retain) NSString *xLatValue;
+@property (nonatomic,retain) NSString *xLongValue;
+ 
 
 @end

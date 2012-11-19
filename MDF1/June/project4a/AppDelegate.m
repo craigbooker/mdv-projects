@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-#import "LocationViewController.h"
+#import "WebViewController.h"
 
 
 @implementation AppDelegate
@@ -16,7 +16,7 @@
 @synthesize tabController = _tabController;
 @synthesize mainArray;
 @synthesize myMapView, myListView;
-@synthesize annotation1, annotation2, annotation3, annotation4, annotation5, annotation6, annotation7, annotation8, annotation9, annotation10;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -25,7 +25,7 @@
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
-    UIViewController *viewController2 = [[LocationViewController alloc] initWithNibName:@"LocationViewController" bundle:nil];
+    UIViewController *viewController2 = [[WebViewController alloc] initWithNibName:@"WebViewController" bundle:nil];
     
     self.tabController = [[UITabBarController alloc] init];
     self.tabController.viewControllers = [NSArray arrayWithObjects:navController, viewController2, nil];

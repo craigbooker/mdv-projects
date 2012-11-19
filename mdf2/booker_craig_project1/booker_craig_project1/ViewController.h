@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+NSMutableArray *eventTitleList;
+NSMutableArray *eventDateList;
+NSMutableArray *eventLocationList;
+NSMutableArray *xDataArray;    
+}
 
+@property (nonatomic, strong) NSMutableArray *tableView1Data;
+@property (nonatomic, retain) NSMutableArray *eventTitleList;  
+@property (nonatomic, retain) NSMutableArray *eventDateList;
+@property (nonatomic, retain) NSMutableArray *eventLocationList;
+@property (nonatomic, strong) NSMutableArray *xDataArray;
+
+-(IBAction)onClick:(id)sender;
 @end

@@ -7,17 +7,63 @@
 //
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
+#import "ImageCapViewController.h"
+#import "MovieCapViewController.h"
 
 @implementation AppDelegate
+@synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    //self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    
+    UIViewController *viewController1 = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    UIViewController *viewController2 = [[ImageCapViewController alloc] initWithNibName:@"ImageCapView" bundle:nil];
+    //self.tabBarController = [[UITabBarController alloc] init];
+    UIViewController *viewController3 = [[MovieCapViewController alloc] initWithNibName:@"MovieCapView" bundle:nil];
+    self.tabBarController = [[UITabBarController alloc] init];
+    // ----------------------------;
+    // UITabBar -> tabBar1;
+    // ----------------------------;
+    
+    UITabBar *tabBar1 = [[UITabBar alloc] initWithFrame:CGRectMake(0, 411, 320, 49)];
+    tabBar1.tag = 1;
+    tabBar1.delegate = (id<UITabBarDelegate>)self;
+    [_window addSubview:tabBar1];
+    tabBar1.alpha = 1.0;
+    tabBar1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    //[tabBar1 release];
+    
+    
+    // ----------------------------;
+    // Tab Bar Item -> tabBarItem1;
+    // ----------------------------;
+    
+    UITabBarItem *tabBarItem1 = [[UITabBarItem alloc] initWithTitle:@"Instructions" image:[UIImage imageNamed:@"List_TabIcon.png"] tag:1];
+    
+    // ----------------------------;
+    // Tab Bar Item -> tabBarItem2;
+    // ----------------------------;
+    
+    UITabBarItem *tabBarItem2 = [[UITabBarItem alloc] initWithTitle:@"Image Capture" image:[UIImage imageNamed:@"List_TabIcon.png"] tag:2];
+    // ----------------------------;
+    // Tab Bar Item -> tabBarItem3;
+    // ----------------------------;
+    
+    UITabBarItem *tabBarItem3 = [[UITabBarItem alloc] initWithTitle:@"Movie Capture" image:[UIImage imageNamed:@"List_TabIcon.png"] tag:3];
+    
+    
+    tabBar1.items = [NSArray arrayWithObjects:tabBarItem1, tabBarItem2, tabBarItem3, nil];
+    
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects: navController, viewController2, viewController3, nil];
+    
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }

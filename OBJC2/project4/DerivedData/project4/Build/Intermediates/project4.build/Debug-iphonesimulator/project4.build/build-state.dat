@@ -1,0 +1,382 @@
+Tproject4
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/Info.plist project4/project4-Info.plist
+cProcessPCH /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch.pth project4/project4-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/OBJC2/project4/project4/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.o /Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/OBJC2/project4/project4/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/ViewController.o /Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4 normal i386
+cGenerateDSYMFile /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app.dSYM /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4
+cCopyStringsFile /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/en.lproj/InfoPlist.strings project4/en.lproj/InfoPlist.strings
+cCompileXIB /Users/craig/github/mdv-projects/OBJC2/project4/project4/TopView.xib
+cCompileStoryboard /Users/craig/github/mdv-projects/OBJC2/project4/project4/en.lproj/MainStoryboard.storyboard
+cCompileXIB /Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.xib
+cTouch /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+c00000000504916AD0000000000000110
+t1346967213
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000506CBFF50000000000228FD0
+t1349304309
+s2265040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000506CBFF800000000003DCEF0
+t1349304312
+s4050672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000506CC0130000000000AB3D60
+t1349304339
+s11222368
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch.pth
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/ViewController.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/project4.LinkFileList
+c000000005074E74600000000000002BE
+t1349838662
+s702
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app.dSYM
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/Info.plist
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/PkgInfo
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/TopView.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/ViewController.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/en.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/project4/AppDelegate.m
+c000000004F95E86600000000000007FE
+t1335224422
+s2046
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopView.xib
+c000000004F97278400000000000053B2
+t1335306116
+s21426
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m
+c000000004F9727C70000000000000AF4
+t1335306183
+s2804
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m
+c000000004F972A60000000000000068E
+t1335306848
+s1678
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.xib
+c000000004F971FBE000000000000301A
+t1335304126
+s12314
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/project4/en.lproj/InfoPlist.strings
+c000000004F95E866000000000000002D
+t1335224422
+s45
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/project4/en.lproj/MainStoryboard.storyboard
+c000000004F95E866000000000000061C
+t1335224422
+s1564
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/project4/main.m
+c000000004F95E8660000000000000158
+t1335224422
+s344
+
+N/Users/craig/github/mdv-projects/OBJC2/project4/project4/project4-Prefix.pch
+c000000004F95E866000000000000013F
+t1335224422
+s319
+
+Nproject4/project4-Info.plist
+c000000004F95E86600000000000004D4
+t1335224422
+s1236
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJC2/project4/project4/AppDelegate.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJC2/project4/project4/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesd1947dc61e25b641^24b584c61e25b641^---0#1#0#--18"Check dependencies36"77B6C689-3910-4425-BBF2-659A6CFFA609-
+
+CCompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/OBJC2/project4/project4/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s371531462.778825
+e371531462.832506
+r1
+xCompileC
+xDerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/AppDelegate.o
+x/Users/craig/github/mdv-projects/OBJC2/project4/project4/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/craig/github/mdv-projects/OBJC2/project4/project4/AppDelegate.m0877c7c61e25b641^821fd5c61e25b641^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/AppDelegate.m0000000000000000^4068"CompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/AppDelegate.o project4/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/AppDelegate.dia -c /Users/craig/github/mdv-projects/OBJC2/project4/project4/AppDelegate.m -o /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/AppDelegate.o36"1FA29E9A-3543-41C5-92CB-156C10E25B8F-
+
+CCompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.o /Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s371531462.778648
+e371531462.810794
+r0
+xCompileC
+xDerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.o
+x/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:39:39: warning: using 'initWithString:' with a literal is redundant [-Wobjc-redundant-literal-use]
+o            NSString *newEventLabel = [[NSString alloc] initWithString:@"New Event: "];
+o                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:43:14: error: 'release' is unavailable: not available in automatic reference counting mode
+o            [dateFormatter release];          
+o             ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here
+o- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;
+o^
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:43:14: error: ARC forbids explicit message send of 'release'
+o            [dateFormatter release];          
+o             ^             ~~~~~~~
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:62:6: error: 'release' is unavailable: not available in automatic reference counting mode
+o    [myTextField release];
+o     ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here
+o- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;
+o^
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:62:6: error: ARC forbids explicit message send of 'release'
+o    [myTextField release];
+o     ^           ~~~~~~~
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:73:27: warning: using 'stringWithString:' with a literal is redundant [-Wobjc-redundant-literal-use]
+o    eventTextField.text = [NSString stringWithString:@""];
+o                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:87:6: error: 'release' is unavailable: not available in automatic reference counting mode
+o    [myTextField release];
+o     ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here
+o- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;
+o^
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:87:6: error: ARC forbids explicit message send of 'release'
+o    [myTextField release];
+o     ^           ~~~~~~~
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:88:6: error: 'release' is unavailable: not available in automatic reference counting mode
+o    [myTextField release];
+o     ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here
+o- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;
+o^
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:88:6: error: ARC forbids explicit message send of 'release'
+o    [myTextField release];
+o     ^           ~~~~~~~
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:89:6: error: 'release' is unavailable: not available in automatic reference counting mode
+o    [closeKeyBoardButton release];
+o     ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here
+o- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;
+o^
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:89:6: error: ARC forbids explicit message send of 'release'
+o    [closeKeyBoardButton release];
+o     ^                   ~~~~~~~
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:90:6: error: 'release' is unavailable: not available in automatic reference counting mode
+o    [saveDataButton release];
+o     ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here
+o- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;
+o^
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:90:6: error: ARC forbids explicit message send of 'release'
+o    [saveDataButton release];
+o     ^              ~~~~~~~
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:91:6: error: 'release' is unavailable: not available in automatic reference counting mode
+o    [myDatePicker release];
+o     ^
+o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here
+o- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;
+o^
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:91:6: error: ARC forbids explicit message send of 'release'
+o    [myDatePicker release];
+o     ^            ~~~~~~~
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:92:6: error: ARC forbids explicit message send of 'dealloc'
+o    [super dealloc];
+o     ^     ~~~~~~~
+o2 warnings and 15 errors generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.mca6dc7c61e25b641^ac8fcfc61e25b641^-5855"/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:39:39: warning: using 'initWithString:' with a literal is redundant [-Wobjc-redundant-literal-use]            NSString *newEventLabel = [[NSString alloc] initWithString:@"New Event: "];                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:43:14: error: 'release' is unavailable: not available in automatic reference counting mode            [dateFormatter release];                       ^/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;^/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:43:14: error: ARC forbids explicit message send of 'release'            [dateFormatter release];                       ^             ~~~~~~~/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:62:6: error: 'release' is unavailable: not available in automatic reference counting mode    [myTextField release];     ^/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;^/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:62:6: error: ARC forbids explicit message send of 'release'    [myTextField release];     ^           ~~~~~~~/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:73:27: warning: using 'stringWithString:' with a literal is redundant [-Wobjc-redundant-literal-use]    eventTextField.text = [NSString stringWithString:@""];                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:87:6: error: 'release' is unavailable: not available in automatic reference counting mode    [myTextField release];     ^/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;^/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:87:6: error: ARC forbids explicit message send of 'release'    [myTextField release];     ^           ~~~~~~~/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:88:6: error: 'release' is unavailable: not available in automatic reference counting mode    [myTextField release];     ^/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;^/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:88:6: error: ARC forbids explicit message send of 'release'    [myTextField release];     ^           ~~~~~~~/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:89:6: error: 'release' is unavailable: not available in automatic reference counting mode    [closeKeyBoardButton release];     ^/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;^/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:89:6: error: ARC forbids explicit message send of 'release'    [closeKeyBoardButton release];     ^                   ~~~~~~~/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:90:6: error: 'release' is unavailable: not available in automatic reference counting mode    [saveDataButton release];     ^/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;^/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:90:6: error: ARC forbids explicit message send of 'release'    [saveDataButton release];     ^              ~~~~~~~/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:91:6: error: 'release' is unavailable: not available in automatic reference counting mode    [myDatePicker release];     ^/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:36:1: note: declaration has been explicitly marked unavailable here- (oneway void)release NS_AUTOMATED_REFCOUNT_UNAVAILABLE;^/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:91:6: error: ARC forbids explicit message send of 'release'    [myDatePicker release];     ^            ~~~~~~~/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m:92:6: error: ARC forbids explicit message send of 'dealloc'    [super dealloc];     ^     ~~~~~~~2 warnings and 15 errors generated.17(36%IDEClangDiagnosticActivityLogMessage2@51"Using 'initWithString:' with a literal is redundant-371531462#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^38#38#38#38#1072#0#15"Cocoa API Issue3(3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^38#38#38#86#1072#47#3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^38#38#38#71#1072#33#3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^38#85#38#86#1119#1#-2@76"'release' is unavailable: not available in automatic reference counting mode-371531462#18446744073709551615#0#1(2@55"Declaration has been explicitly marked unavailable here-371531462#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@197"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h0000000000000000^35#0#35#0#878#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^42#13#42#13#1427#0#14"Semantic Issue--2@46"ARC forbids explicit message send of 'release'-371531462#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^42#13#42#13#1427#0#16"ARC Restrictions1(3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^42#27#42#34#1441#0#-2@76"'release' is unavailable: not available in automatic reference counting mode-371531462#18446744073709551615#0#1(2@55"Declaration has been explicitly marked unavailable here-371531462#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@197"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h0000000000000000^35#0#35#0#878#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^61#5#61#5#1806#0#14"Semantic Issue--2@46"ARC forbids explicit message send of 'release'-371531462#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^61#5#61#5#1806#0#16"ARC Restrictions1(3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^61#17#61#24#1818#0#-2@53"Using 'stringWithString:' with a literal is redundant-371531462#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^72#26#72#26#2165#0#15"Cocoa API Issue3(3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^72#26#72#57#2165#30#3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^72#26#72#53#2165#27#3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^72#56#72#57#2195#1#-2@76"'release' is unavailable: not available in automatic reference counting mode-371531462#18446744073709551615#0#1(2@55"Declaration has been explicitly marked unavailable here-371531462#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@197"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h0000000000000000^35#0#35#0#878#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^86#5#86#5#2534#0#14"Semantic Issue--2@46"ARC forbids explicit message send of 'release'-371531462#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^86#5#86#5#2534#0#16"ARC Restrictions1(3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^86#17#86#24#2546#0#-2@76"'release' is unavailable: not available in automatic reference counting mode-371531462#18446744073709551615#0#1(2@55"Declaration has been explicitly marked unavailable here-371531462#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@197"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h0000000000000000^35#0#35#0#878#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^87#5#87#5#2561#0#14"Semantic Issue--2@46"ARC forbids explicit message send of 'release'-371531462#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^87#5#87#5#2561#0#16"ARC Restrictions1(3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^87#17#87#24#2573#0#-2@76"'release' is unavailable: not available in automatic reference counting mode-371531462#18446744073709551615#0#1(2@55"Declaration has been explicitly marked unavailable here-371531462#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@197"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h0000000000000000^35#0#35#0#878#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^88#5#88#5#2588#0#14"Semantic Issue--2@46"ARC forbids explicit message send of 'release'-371531462#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^88#5#88#5#2588#0#16"ARC Restrictions1(3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^88#25#88#32#2608#0#-2@76"'release' is unavailable: not available in automatic reference counting mode-371531462#18446744073709551615#0#1(2@55"Declaration has been explicitly marked unavailable here-371531462#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@197"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h0000000000000000^35#0#35#0#878#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^89#5#89#5#2623#0#14"Semantic Issue--2@46"ARC forbids explicit message send of 'release'-371531462#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^89#5#89#5#2623#0#16"ARC Restrictions1(3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^89#20#89#27#2638#0#-2@76"'release' is unavailable: not available in automatic reference counting mode-371531462#18446744073709551615#0#1(2@55"Declaration has been explicitly marked unavailable here-371531462#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@197"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h0000000000000000^35#0#35#0#878#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^90#5#90#5#2653#0#14"Semantic Issue--2@46"ARC forbids explicit message send of 'release'-371531462#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^90#5#90#5#2653#0#16"ARC Restrictions1(3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^90#18#90#25#2666#0#-2@46"ARC forbids explicit message send of 'dealloc'-371531462#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^91#5#91#5#2681#0#16"ARC Restrictions1(3@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^91#11#91#18#2687#0#-0#0#0#-19%DVTDocumentLocation4@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m0000000000000000^4104"CompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.o project4/TopViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.dia -c /Users/craig/github/mdv-projects/OBJC2/project4/project4/TopViewController.m -o /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.o36"096749A6-58C4-4694-84DD-83A7D41D5ABE-
+
+CCompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/ViewController.o /Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s371531462.779144
+e371531462.839024
+r1
+xCompileC
+xDerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/ViewController.o
+x/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m:43:22: warning: using 'stringWithString:' with a literal is redundant [-Wobjc-redundant-literal-use]
+o    textField.text = [NSString stringWithString:@""];
+o                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o1 warning generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.mf48ac7c61e25b641^fbcbd6c61e25b641^-303"/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m:43:22: warning: using 'stringWithString:' with a literal is redundant [-Wobjc-redundant-literal-use]    textField.text = [NSString stringWithString:@""];                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@53"Using 'stringWithString:' with a literal is redundant-371531462#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@89"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m0000000000000000^42#21#42#21#1098#0#15"Cocoa API Issue3(3@89"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m0000000000000000^42#21#42#52#1098#30#3@89"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m0000000000000000^42#21#42#48#1098#27#3@89"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m0000000000000000^42#51#42#52#1128#1#-0#0#0#-19%DVTDocumentLocation4@89"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m0000000000000000^4086"CompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/ViewController.o project4/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/ViewController.dia -c /Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.m -o /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/ViewController.o36"7DE8C9CE-8E49-4F26-A2B2-6116D8A836D0-
+
+CCompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/OBJC2/project4/project4/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s371531462.778643
+e371531462.805780
+r1
+xCompileC
+xDerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/main.o
+x/Users/craig/github/mdv-projects/OBJC2/project4/project4/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/craig/github/mdv-projects/OBJC2/project4/project4/main.mdb6dc7c61e25b641^9548cec61e25b641^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/main.m0000000000000000^4026"CompileC DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/main.o project4/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/main.dia -c /Users/craig/github/mdv-projects/OBJC2/project4/project4/main.m -o /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/main.o36"878A657A-731A-42B2-ACE5-375F6F5DBCFF-
+
+CCompileStoryboard /Users/craig/github/mdv-projects/OBJC2/project4/project4/en.lproj/MainStoryboard.storyboard
+s371531462.885758
+e371531462.936926
+r1
+xCompileStoryboard
+x/Users/craig/github/mdv-projects/OBJC2/project4/project4/en.lproj/MainStoryboard.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"CompileStoryboard project4/en.lproj/MainStoryboard.storyboard70d0e2c61e25b641^3cdbefc61e25b641^---0#0#0#-19%DVTDocumentLocation2@107"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/en.lproj/MainStoryboard.storyboard0000000000000000^1004"CompileStoryboard project4/en.lproj/MainStoryboard.storyboard    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/en.lproj/MainStoryboard.storyboardc /Users/craig/github/mdv-projects/OBJC2/project4/project4/en.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"48581928-F3B2-4DF3-B69D-C41EE5003006-
+
+CCompileXIB /Users/craig/github/mdv-projects/OBJC2/project4/project4/TopView.xib
+s371531462.885756
+e371531463.045231
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopView.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compiling /Users/craig/github/mdv-projects/OBJC2/project4/project4/TopView.xibf6d0e2c61e25b641^2e3a0dc71e25b641^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/TopView.xib0000000000000000^926"CompileXIB project4/TopView.xib    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/TopView.nib /Users/craig/github/mdv-projects/OBJC2/project4/project4/TopView.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"4F9F2404-1D4B-429C-BEF9-7009F1252743-
+
+CCompileXIB /Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.xib
+s371531462.886087
+e371531462.924923
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compiling /Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.xibcae2e2c61e25b641^14d0ecc61e25b641^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.xib0000000000000000^947"CompileXIB project4/ViewController.xib    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/ViewController.nib /Users/craig/github/mdv-projects/OBJC2/project4/project4/ViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"DF3547E4-448C-4202-9DAC-8A9127FCBB74-
+
+CCopyStringsFile /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/en.lproj/InfoPlist.strings project4/en.lproj/InfoPlist.strings
+s371531462.885747
+e371531462.888010
+r1
+xCopyStringsFile
+x/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/en.lproj/InfoPlist.strings
+xproject4/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy project4/en.lproj/InfoPlist.stringsddcee2c61e25b641^2655e3c61e25b641^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/en.lproj/InfoPlist.strings0000000000000000^657"CopyStringsFile DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/en.lproj/InfoPlist.strings project4/en.lproj/InfoPlist.strings    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/en.lproj -- project4/en.lproj/InfoPlist.strings36"4020E0B2-5FCE-4D3E-B916-ACA2016D271E-
+
+CGenerateDSYMFile /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app.dSYM /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4
+s371531462.872320
+e371531462.877575
+r0
+xGenerateDSYMFile
+x/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app.dSYM
+x/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4
+oerror: unable to open executable '/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4'
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"Generating /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app.dSYM5b60dfc61e25b641^d2a8e0c61e25b641^--1(21%IDEActivityLogMessage2@162"error: unable to open executable '/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4'-371531462#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#14"Dsymutil Error--0#0#0#-19%DVTDocumentLocation4@139"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app.dSYM000000000080d041^778"GenerateDSYMFile DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app.dSYM DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4 -o /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app.dSYM36"DED96234-F604-405F-9542-E713336BA882-
+
+CLd /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4 normal i386
+s371531462.856187
+e371531462.865491
+r0
+xLd
+x/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4
+xnormal
+xi386
+old: file not found: /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.o
+oclang: error: linker command failed with exit code 1 (use -v to see invocation)
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Link /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project47d41dbc61e25b641^e290ddc61e25b641^-281"ld: file not found: /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.oclang: error: linker command failed with exit code 1 (use -v to see invocation)2(21%IDEActivityLogMessage2@196"File not found: /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/TopViewController.o-371531462#0#201#-0#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-371531462#201#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#0#--1354"Ld DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project4 normal i386    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator -F/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator -filelist /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/Objects-normal/i386/project4.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.1 -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/project436"6BA9D6A0-4B42-4E4D-A9F3-DC043517485B-
+
+CProcessInfoPlistFile /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/Info.plist project4/project4-Info.plist
+s371531462.522319
+e371531462.525074
+r1
+xProcessInfoPlistFile
+x/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/Info.plist
+xproject4/project4-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Process project4/project4-Info.plist87c485c61e25b641^567d86c61e25b641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/project4-Info.plist0000000000000000^774"ProcessInfoPlistFile DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/Info.plist project4/project4-Info.plist    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility project4/project4-Info.plist -genpkginfo /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app/Info.plist36"7A6696CA-F508-4575-A7DB-79F40FE93017-
+
+CProcessPCH /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch.pth project4/project4-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s371531462.532539
+e371531462.772274
+r1
+xProcessPCH
+x/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch.pth
+xproject4/project4-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile project4/project4-Prefix.pcha96c88c61e25b641^9eb3c5c61e25b641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project4/project4/project4-Prefix.pch0000000000000000^3911"ProcessPCH DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch.pth project4/project4-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/project4-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/project4.build/Debug-iphonesimulator/project4.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch.dia -c /Users/craig/github/mdv-projects/OBJC2/project4/project4/project4-Prefix.pch -o /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch.pth -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Intermediates/PrecompiledHeaders/project4-Prefix-dvgivcmwhexkrsffwsftavgikajj/project4-Prefix.pch.d36"D6C1D871-FDB5-49F6-A342-CE4E539FB848-
+
+CProcessPCH /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Index/PrecompiledHeaders/project4-Prefix-aqxnvzmzlxlqsgchxwepfftukkuq_ast/project4-Prefix.pch.pth project4/project4-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app
+s371531463.052608
+e371531463.057841
+r1
+xTouch
+x/Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Touch /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.appc2840dc71e25b641^98c223c71e25b641^---0#0#0#--468"Touch DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app    cd /Users/craig/github/mdv-projects/OBJC2/project4    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/craig/github/mdv-projects/OBJC2/project4/DerivedData/project4/Build/Products/Debug-iphonesimulator/project4.app36"FE187F7A-BC83-4552-A337-4239661398BF-
+

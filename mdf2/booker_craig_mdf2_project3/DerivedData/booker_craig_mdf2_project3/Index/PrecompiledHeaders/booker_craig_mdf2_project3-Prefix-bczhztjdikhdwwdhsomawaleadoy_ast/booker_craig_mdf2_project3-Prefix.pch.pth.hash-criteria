@@ -1,0 +1,34 @@
+Contents of /Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3/booker_craig_mdf2_project3/booker_craig_mdf2_project3-Prefix.pch
+4.2 (clang-425.0.9) (based on LLVM 3.2svn)
+i386-apple-darwin12.2.0
+-x
+objective-c
+-arch
+i386
+-fmessage-length=0
+-std=gnu99
+-fobjc-arc
+-fpascal-strings
+-O0
+-DDEBUG=1
+-isysroot
+/Applications/Xcode46-DP2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
+-fexceptions
+-fasm-blocks
+-fstrict-aliasing
+-g
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-mios-simulator-version-min=5.1
+-iquote
+-iquote
+-I/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3/DerivedData/Build/Products/Debug-iphonesimulator/include
+-I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+-I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+-I/Applications/Xcode46-DP2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+-F/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3/DerivedData/Build/Products/Debug-iphonesimulator
+-ferror-limit=10
+-working-directory=/Users/craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3
+-Xclang
+-detailed-preprocessing-record
+SDK_PRODUCT_BUILD_VERSION=10B5105c

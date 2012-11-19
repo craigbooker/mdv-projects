@@ -7,22 +7,35 @@
 //
 
 #import "AppDelegate.h"
-
-#import "ViewController.h"
+#import "MainViewController.h"
+#import "WebViewController.h"
 
 @implementation AppDelegate
-
 @synthesize window = _window;
-@synthesize viewController = _viewController;
+@synthesize tabController = _tabController;
+@synthesize mainArray;
+@synthesize myMapView, myListView;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    UIViewController *viewController1 = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    UIViewController *viewController2 = [[WebViewController alloc] initWithNibName:@"WebViewController" bundle:nil];
+    
+    self.tabController = [[UITabBarController alloc] init];
+    self.tabController.viewControllers = [NSArray arrayWithObjects:navController, viewController2, nil];
+    self.window.rootViewController = self.tabController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)dispLocArray
+{
+    mainArray = [[NSMutableArray alloc] initWithCapacity:mainArray.count];
+    NSLog(@"The length of the array is... %i", mainArray.count);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

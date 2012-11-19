@@ -22,7 +22,7 @@
 	
 }
 
-@property (nonatomic, assign) id delegate;
+@property (nonatomic, retain) id delegate;
 
 @property (nonatomic, retain) UITextField *nameField;
 @property (nonatomic, retain) UITextField *priceField;

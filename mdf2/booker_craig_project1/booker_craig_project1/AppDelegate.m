@@ -7,20 +7,29 @@
 //
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
+#import "CalendarViewController.h"
+#import <EventKit/EventKit.h>
 
 @implementation AppDelegate
-
 @synthesize window = _window;
-@synthesize viewController = _viewController;
+@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    //self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    
+    UIViewController *viewController1 = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    UIViewController *viewController2 = [[CalendarViewController alloc] initWithNibName:@"CalendarView" bundle:nil];
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects: navController, viewController2, nil];
+    self.
+    
+    self.window.rootViewController = self.tabBarController;
+
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -1,33 +1,49 @@
 //
 //  AppDelegate.m
-//  booker_craig_project3
+//  booker_craig_project2b
 //
-//  Created by Craig Booker on 6/10/12.
+//  Created by Craig Booker on 5/13/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
-#import "ViewController.h"
+//#import "RootViewController.h"
+#import "LocationViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
+@synthesize tabController = _tabController;
+@synthesize mainMapView, tableView, locArray;
 
-- (void)dealloc
-{
-    [_window release];
-    [_viewController release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    locArray = [[NSMutableArray alloc] init];
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    //UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
+ UIViewController *viewController1 = [[[RootViewController alloc] initWithNibName:@"rootViewController" bundle:nil] autorelease];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+    UIViewController *viewController3 = [[[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil] autorelease];
+    viewController1.title = @"Location List";
+    viewController2.title = @"Home";
+    viewController3.title = @"Map";
+    viewController1.tabBarItem.image = [UIImage imageNamed:@"first"];
+    viewController2.tabBarItem.image = [UIImage imageNamed:@"second"];
+    viewController3.tabBarItem.image = [UIImage imageNamed:@"second"];
+    self.tabController = [[UITabBarController alloc] init];
+    self.tabController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, nil];
+
+    // make a connection between the views
+    tableView = (FirstViewController*)viewController1;
+    mainMapView = (SecondViewController*)viewController2;    
+    
+    self.window.rootViewController = self.tabController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -6,8 +6,15 @@
 //  Copyright (c) 2012 Semantik Media, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface CustCalViewCell : NSObject
 
+@interface CustCalViewCell : UITableViewCell
+{
+    IBOutlet UILabel *calTitleLabel;
+    IBOutlet UIImageView *calImage;
+}
+
+@property (nonatomic, strong) IBOutlet UILabel *calTitleLabel;
+@property (nonatomic, strong) IBOutlet UIImageView *calImage;
 @end

@@ -1,0 +1,666 @@
+Tbooker_craig_MDF2_project4.0
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Info.plist booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Info.plist
+cProcessPCH /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch.pth booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/DetailViewController.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/DetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MasterViewController.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MasterViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MyTheatreData.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/CustomTableCell.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MovieViewController.o /Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.0 normal i386
+cGenerateDSYMFile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app.dSYM /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.0
+cCopyStringsFile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/en.lproj/InfoPlist.strings booker_craig_MDF2_project4.0/en.lproj/InfoPlist.strings
+cCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/DetailViewController.xib
+cCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/MasterViewController.xib
+cCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.xib
+cCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/bourne717final.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/bourne717final.jpg
+cCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/80977_ab.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/80977_ab.jpg
+cCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/iceage4-419final.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/iceage4-419final.jpg
+cCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/darkknightrisesposter.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/darkknightrisesposter.jpg
+cCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.xib
+cCpResource booker_craig_MDF2_project4.0/TheAmazingSpiderMan3D_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheAmazingSpiderMan3D_360.mp4
+cCpResource booker_craig_MDF2_project4.0/IceAgeContinentalDrift_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/IceAgeContinentalDrift_360.mp4
+cCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/spidey-419final.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/spidey-419final.jpg
+cCpResource booker_craig_MDF2_project4.0/TheBourneLegacy_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheBourneLegacy_360.mp4
+cCpResource booker_craig_MDF2_project4.0/TheDarkKnightRises_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheDarkKnightRises_360.mp4
+cCpResource booker_craig_MDF2_project4.0/Madagascar3_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Madagascar3_360.mp4
+cCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/theatreLocation.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/theatreLocation.png
+cCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/vidCameraSml.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/vidCameraSml.png
+cTouch /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+c00000000509427310000000000000110
+t1351886641
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000506CBFF500000000002B82F0
+t1349304309
+s2851568
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000506CBFF50000000000228FD0
+t1349304309
+s2265040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000506CBFF800000000003DCEF0
+t1349304312
+s4050672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c00000000506CC00400000000002C6C10
+t1349304324
+s2911248
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000506CC0130000000000AB3D60
+t1349304339
+s11222368
+
+N/Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.m
+c00000000503508F7000000000000099E
+t1345652983
+s2462
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch.pth
+t1352752236
+s4837776
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/AppDelegate.o
+t1352752236
+s95228
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/CustomTableCell.o
+t1352752236
+s71404
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/DetailViewController.o
+t1352752236
+s93960
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MasterViewController.o
+t1352752236
+s118688
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MovieViewController.o
+t1352752236
+s87228
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MyTheatreData.o
+t1352752236
+s13624
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/booker_craig_MDF2_project4.0.LinkFileList
+c0000000050A15C6C0000000000000640
+t1352752236
+s1600
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/main.o
+t1352752236
+s3424
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app
+t1352752237
+s680
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app.dSYM
+t1352752236
+s102
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/80977_ab.jpg
+t1352752236
+s46240
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/CustomTableCell.nib
+t1352752236
+s2211
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/IceAgeContinentalDrift_360.mp4
+t1352752237
+s10369662
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Info.plist
+t1352752236
+s888
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Madagascar3_360.mp4
+t1352752237
+s12563947
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/MovieViewController.nib
+t1352752237
+s2773
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/PkgInfo
+t1352752236
+s8
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheAmazingSpiderMan3D_360.mp4
+t1352752236
+s10416135
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheBourneLegacy_360.mp4
+t1352752237
+s5035759
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheDarkKnightRises_360.mp4
+t1352752237
+s8183111
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.0
+t1352752236
+s96572
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/bourne717final.jpg
+t1352752236
+s4354
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/darkknightrisesposter.jpg
+t1352752236
+s8057
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/en.lproj/DetailViewController.nib
+t1352752236
+s2609
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/en.lproj/InfoPlist.strings
+t1352752236
+s42
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/en.lproj/MasterViewController.nib
+t1352752236
+s1961
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/iceage4-419final.jpg
+t1352752236
+s6874
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/spidey-419final.jpg
+t1352752236
+s6414
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/theatreLocation.png
+t1352752237
+s435
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/vidCameraSml.png
+t1352752237
+s2281
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/80977_ab.jpg
+c0000000050324C9F000000000000B4A0
+t1345473695
+s46240
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.xib
+c0000000050350BE6000000000000433C
+t1345653734
+s17212
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.m
+c0000000050340B7A000000000000019C
+t1345588090
+s412
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/bourne717final.jpg
+c0000000050324C800000000000001102
+t1345473664
+s4354
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/darkknightrisesposter.jpg
+c0000000050324C8A0000000000001F79
+t1345473674
+s8057
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/iceage4-419final.jpg
+c0000000050324C950000000000001ADA
+t1345473685
+s6874
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/spidey-419final.jpg
+c0000000050324CAB000000000000190E
+t1345473707
+s6414
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/theatreLocation.png
+c000000005035301E00000000000001B3
+t1345663006
+s435
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/vidCameraSml.png
+c00000000503543D700000000000008E9
+t1345668055
+s2281
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/AppDelegate.h
+c00000000503561DF00000000000001B4
+t1345675743
+s436
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/AppDelegate.m
+c00000000503561C20000000000000A54
+t1345675714
+s2644
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.h
+c0000000050326A9E00000000000001B4
+t1345481374
+s436
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.m
+c0000000050326BD3000000000000017E
+t1345481683
+s382
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.xib
+c000000005033CCBC000000000000325D
+t1345572028
+s12893
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/DetailViewController.h
+c000000005033DAE60000000000000400
+t1345575654
+s1024
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/DetailViewController.m
+c0000000050342A2F0000000000000DBE
+t1345595951
+s3518
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/IceAgeContinentalDrift_360.mp4
+c0000000050340EFA00000000009E3A7E
+t1345588986
+s10369662
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/Madagascar3_360.mp4
+c0000000050340F880000000000BFB5EB
+t1345589128
+s12563947
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MasterViewController.h
+c0000000050353E91000000000000052A
+t1345666705
+s1322
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MasterViewController.m
+c0000000050366AB800000000000030FE
+t1345743544
+s12542
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.h
+c00000000503D2DC50000000000000376
+t1346186693
+s886
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.h
+c0000000050340BA7000000000000033E
+t1345588135
+s830
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/TheAmazingSpiderMan3D_360.mp4
+c00000000503410DC00000000009EF007
+t1345589468
+s10416135
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/TheBourneLegacy_360.mp4
+c0000000050340F3600000000004CD6EF
+t1345589046
+s5035759
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/TheDarkKnightRises_360.mp4
+c0000000050340F7000000000007CDD47
+t1345589104
+s8183111
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch
+c00000000502FC05F0000000000000167
+t1345306719
+s359
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/DetailViewController.xib
+c00000000503407030000000000003C4B
+t1345586947
+s15435
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/InfoPlist.strings
+c00000000502FC05F000000000000002D
+t1345306719
+s45
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/MasterViewController.xib
+c0000000050355E420000000000002C40
+t1345674818
+s11328
+
+N/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/main.m
+c00000000502FC05F0000000000000167
+t1345306719
+s359
+
+Nbooker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Info.plist
+c00000000502FC05F0000000000000496
+t1345306719
+s1174
+
+CBuild AST from /Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/AppDelegate.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/DetailViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MasterViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesd7341f619451b641^946a1f619451b641^---0#1#0#--18"Check dependencies36"E9380E42-1167-4D9D-A154-0BBC50A5AD87-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445036.432645
+e374445036.571472
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/AppDelegate.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/AppDelegate.maad66eec9351b641^3b5592ec9351b641^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/AppDelegate.m0000000000000000^4802"CompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/AppDelegate.o booker_craig_MDF2_project4.0/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/AppDelegate.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/AppDelegate.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/AppDelegate.o36"DE1BE6C5-BFA6-40E8-8551-03B94A75B24D-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/CustomTableCell.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445036.572698
+e374445036.680165
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/CustomTableCell.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.m80b592ec9351b641^4b1faeec9351b641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.m0000000000000000^4826"CompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/CustomTableCell.o booker_craig_MDF2_project4.0/CustomTableCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/CustomTableCell.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/CustomTableCell.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/CustomTableCell.o36"55E091F8-5C44-4115-92EB-34DA34E3E661-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/DetailViewController.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/DetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445036.433478
+e374445036.647050
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/DetailViewController.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/DetailViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/DetailViewController.m300d6fec9351b641^75ada5ec9351b641^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/DetailViewController.m0000000000000000^4856"CompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/DetailViewController.o booker_craig_MDF2_project4.0/DetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/DetailViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/DetailViewController.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/DetailViewController.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/DetailViewController.o36"54A822CC-223D-49E5-A763-10E470E53216-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MasterViewController.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MasterViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445036.433059
+e374445036.648620
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MasterViewController.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MasterViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MasterViewController.m88f16eec9351b641^9412a6ec9351b641^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MasterViewController.m0000000000000000^4856"CompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MasterViewController.o booker_craig_MDF2_project4.0/MasterViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MasterViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MasterViewController.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MasterViewController.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MasterViewController.o36"98A9A715-0E82-401C-AAA4-C1598057DDE2-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MovieViewController.o /Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445036.575842
+e374445036.734680
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MovieViewController.o
+x/Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection232"Compile /Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.m8fa593ec9351b641^431fbcec9351b641^---0#0#0#-19%DVTDocumentLocation2@240"file://localhost/Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.m0000000000000000^5131"CompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MovieViewController.o /Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MovieViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MovieViewController.dia -c /Users/Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MovieViewController.o36"149E2739-2780-4C59-9363-0D9EF9E59544-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MyTheatreData.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445036.501184
+e374445036.574637
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MyTheatreData.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection226"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.mcb6880ec9351b641^f12e93ec9351b641^---0#0#0#-19%DVTDocumentLocation2@234"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.m0000000000000000^5028"CompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MyTheatreData.o booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MyTheatreData.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MyTheatreData.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MyTheatreData.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/MyTheatreData.o36"7C4BB949-9EF8-4654-AF98-DDFD23B19B2D-
+
+CCompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445036.432122
+e374445036.499132
+r1
+xCompileC
+xDerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/main.o
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/main.m4eb96eec9351b641^fed17fec9351b641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/main.m0000000000000000^4760"CompileC DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/main.o booker_craig_MDF2_project4.0/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/main.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/main.m -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/main.o36"EFB2177A-094F-441A-ACE3-01AB066F49DE-
+
+CCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.xib
+s374445036.881990
+e374445037.312694
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection236"Compiling /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.xib49dae1ec9351b641^1b0d50ed9351b641^---0#0#0#-19%DVTDocumentLocation2@242"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.xib0000000000000000^1284"CompileXIB booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.xib    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/MovieViewController.nib /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/MovieViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"F9334948-10BC-45F7-ACA8-C4A0182D5F31-
+
+CCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.xib
+s374445036.836628
+e374445036.935535
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Compiling /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.xibd639d6ec9351b641^145bf1ec9351b641^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.xib0000000000000000^1058"CompileXIB booker_craig_MDF2_project4.0/CustomTableCell.xib    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/CustomTableCell.nib /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/CustomTableCell.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"9F786BC0-F908-4413-94C9-DA441FD9B530-
+
+CCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/DetailViewController.xib
+s374445036.836387
+e374445036.883228
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/DetailViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"Compiling /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/DetailViewController.xibdd28d6ec9351b641^c91de2ec9351b641^---0#0#0#-19%DVTDocumentLocation2@145"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/DetailViewController.xib0000000000000000^1100"CompileXIB booker_craig_MDF2_project4.0/en.lproj/DetailViewController.xib    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/en.lproj/DetailViewController.nib /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/DetailViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"5D1386FD-D59C-40B2-9664-B41515440491-
+
+CCompileXIB /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/MasterViewController.xib
+s374445036.836105
+e374445036.887159
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/MasterViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"Compiling /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/MasterViewController.xib4c17d6ec9351b641^a050e3ec9351b641^---0#0#0#-19%DVTDocumentLocation2@145"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/MasterViewController.xib0000000000000000^1100"CompileXIB booker_craig_MDF2_project4.0/en.lproj/MasterViewController.xib    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/en.lproj/MasterViewController.nib /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/MasterViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"0FC01205-D54E-4A77-B7BC-58E840C4EF69-
+
+CCopyStringsFile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/en.lproj/InfoPlist.strings booker_craig_MDF2_project4.0/en.lproj/InfoPlist.strings
+s374445036.835751
+e374445036.838759
+r1
+xCopyStringsFile
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/en.lproj/InfoPlist.strings
+xbooker_craig_MDF2_project4.0/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy booker_craig_MDF2_project4.0/en.lproj/InfoPlist.stringsb802d6ec9351b641^dbc3d6ec9351b641^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/en.lproj/InfoPlist.strings0000000000000000^757"CopyStringsFile DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/en.lproj/InfoPlist.strings booker_craig_MDF2_project4.0/en.lproj/InfoPlist.strings    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/en.lproj -- booker_craig_MDF2_project4.0/en.lproj/InfoPlist.strings36"74130EEA-C3ED-45DD-AEF4-5B537E19C48E-
+
+CCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/80977_ab.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/80977_ab.jpg
+s374445036.840773
+e374445036.848281
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/80977_ab.jpg
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/80977_ab.jpg
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/80977_ab.jpg5e4cd7ec9351b641^732ed9ec9351b641^---0#0#0#-19%DVTDocumentLocation2@177"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/80977_ab.jpg000000000080d041^1001"CpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/80977_ab.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/80977_ab.jpg    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/80977_ab.jpg /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"7F32506C-274B-4A74-B834-6BB5E4BA257C-
+
+CCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/bourne717final.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/bourne717final.jpg
+s374445036.850336
+e374445036.863569
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/bourne717final.jpg
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/bourne717final.jpg
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/bourne717final.jpg38bfd9ec9351b641^bc5bddec9351b641^---0#0#0#-19%DVTDocumentLocation2@183"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/bourne717final.jpg000000000080d041^1019"CpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/bourne717final.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/bourne717final.jpg    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/bourne717final.jpg /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"ABDB8A01-159F-4518-96EC-977C53F4FEB2-
+
+CCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/darkknightrisesposter.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/darkknightrisesposter.jpg
+s374445036.864928
+e374445036.868301
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/darkknightrisesposter.jpg
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/darkknightrisesposter.jpg
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/darkknightrisesposter.jpgff7addec9351b641^7253dfec9351b641^---0#0#0#-19%DVTDocumentLocation2@190"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/darkknightrisesposter.jpg000000000080d041^1040"CpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/darkknightrisesposter.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/darkknightrisesposter.jpg    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/darkknightrisesposter.jpg /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"B45E92A0-5654-4980-B5B1-53E6FCFB09CB-
+
+CCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/iceage4-419final.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/iceage4-419final.jpg
+s374445036.872439
+e374445036.874600
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/iceage4-419final.jpg
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/iceage4-419final.jpg
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/iceage4-419final.jpg3c67dfec9351b641^4626e0ec9351b641^---0#0#0#-19%DVTDocumentLocation2@185"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/iceage4-419final.jpg000000000080d041^1025"CpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/iceage4-419final.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/iceage4-419final.jpg    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/iceage4-419final.jpg /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"D62E1DEC-7DF0-48ED-82ED-35EF7D882D39-
+
+CCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/spidey-419final.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/spidey-419final.jpg
+s374445036.877655
+e374445036.880571
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/spidey-419final.jpg
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/spidey-419final.jpg
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/spidey-419final.jpg62bee0ec9351b641^9c6ee1ec9351b641^---0#0#0#-19%DVTDocumentLocation2@184"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/spidey-419final.jpg000000000080d041^1022"CpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/spidey-419final.jpg DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/spidey-419final.jpg    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/spidey-419final.jpg /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"93A3A27B-2455-4CA7-9097-2D2C8993C9B7-
+
+CCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/theatreLocation.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/theatreLocation.png
+s374445037.052153
+e374445037.058388
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/theatreLocation.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/theatreLocation.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/theatreLocation.png6e690ded9351b641^f5f70eed9351b641^---0#0#0#-19%DVTDocumentLocation2@184"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/theatreLocation.png000000000080d041^1022"CpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/theatreLocation.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/theatreLocation.png    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/theatreLocation.png /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"0F4BDBCA-EFFC-4268-921B-3FFA50F508AB-
+
+CCpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/vidCameraSml.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/vidCameraSml.png
+s374445037.058289
+e374445037.319840
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/vidCameraSml.png
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/vidCameraSml.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/vidCameraSml.png26fc0eed9351b641^3be151ed9351b641^---0#0#0#-19%DVTDocumentLocation2@181"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/vidCameraSml.png000000000080d041^1013"CpResource booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/vidCameraSml.png DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/vidCameraSml.png    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/vidCameraSml.png /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"BD5DC23E-54A1-4679-9640-8469BA84BA51-
+
+CCpResource booker_craig_MDF2_project4.0/IceAgeContinentalDrift_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/IceAgeContinentalDrift_360.mp4
+s374445036.897601
+e374445037.045857
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/IceAgeContinentalDrift_360.mp4
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/IceAgeContinentalDrift_360.mp4
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/IceAgeContinentalDrift_360.mp4e4d9e5ec9351b641^fcc20bed9351b641^---0#0#0#-19%DVTDocumentLocation2@195"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/IceAgeContinentalDrift_360.mp4000000000080d041^841"CpResource booker_craig_MDF2_project4.0/IceAgeContinentalDrift_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/IceAgeContinentalDrift_360.mp4    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/IceAgeContinentalDrift_360.mp4 /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"28953A03-AB8C-47AC-9F6E-8425299277C9-
+
+CCpResource booker_craig_MDF2_project4.0/Madagascar3_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Madagascar3_360.mp4
+s374445037.048710
+e374445037.320031
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/Madagascar3_360.mp4
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Madagascar3_360.mp4
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Madagascar3_360.mp4a3900ced9351b641^7bf551ed9351b641^---0#0#0#-19%DVTDocumentLocation2@184"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Madagascar3_360.mp4000000000080d041^808"CpResource booker_craig_MDF2_project4.0/Madagascar3_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Madagascar3_360.mp4    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/Madagascar3_360.mp4 /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"BE6C5B56-B323-4C8D-9436-84B5B78FAECF-
+
+CCpResource booker_craig_MDF2_project4.0/TheAmazingSpiderMan3D_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheAmazingSpiderMan3D_360.mp4
+s374445036.886758
+e374445036.942699
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/TheAmazingSpiderMan3D_360.mp4
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheAmazingSpiderMan3D_360.mp4
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheAmazingSpiderMan3D_360.mp4a511e3ec9351b641^c1abf5ec9351b641^---0#0#0#-19%DVTDocumentLocation2@194"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheAmazingSpiderMan3D_360.mp4000000000080d041^838"CpResource booker_craig_MDF2_project4.0/TheAmazingSpiderMan3D_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheAmazingSpiderMan3D_360.mp4    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/TheAmazingSpiderMan3D_360.mp4 /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"D56BBDC3-7074-4B76-A3B0-06C04AAD1E5E-
+
+CCpResource booker_craig_MDF2_project4.0/TheBourneLegacy_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheBourneLegacy_360.mp4
+s374445036.959927
+e374445037.048514
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/TheBourneLegacy_360.mp4
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheBourneLegacy_360.mp4
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheBourneLegacy_360.mp492cdf5ec9351b641^4b720ced9351b641^---0#0#0#-19%DVTDocumentLocation2@188"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheBourneLegacy_360.mp4000000000080d041^820"CpResource booker_craig_MDF2_project4.0/TheBourneLegacy_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheBourneLegacy_360.mp4    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/TheBourneLegacy_360.mp4 /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"82D62785-99D8-4670-A499-CD8456C00F89-
+
+CCpResource booker_craig_MDF2_project4.0/TheDarkKnightRises_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheDarkKnightRises_360.mp4
+s374445036.960962
+e374445037.056960
+r1
+xCpResource
+xbooker_craig_MDF2_project4.0/TheDarkKnightRises_360.mp4
+xDerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheDarkKnightRises_360.mp4
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Copy DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheDarkKnightRises_360.mp45e0ff6ec9351b641^7aa70eed9351b641^---0#0#0#-19%DVTDocumentLocation2@191"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheDarkKnightRises_360.mp4000000000080d041^829"CpResource booker_craig_MDF2_project4.0/TheDarkKnightRises_360.mp4 DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/TheDarkKnightRises_360.mp4    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/TheDarkKnightRises_360.mp4 /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"F2ACA166-19F0-4362-9EDE-A26628300D77-
+
+CGenerateDSYMFile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app.dSYM /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.0
+s374445036.782473
+e374445036.826453
+r1
+xGenerateDSYMFile
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app.dSYM
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection164"Generating /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app.dSYM295fc8ec9351b641^f701d4ec9351b641^---0#0#0#-19%DVTDocumentLocation2@169"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app.dSYM000000000080d041^919"GenerateDSYMFile DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app.dSYM DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.0    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.0 -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app.dSYM36"8AC6294B-769E-4D8B-B04A-0E2177D74514-
+
+CLd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.0 normal i386
+s374445036.741286
+e374445036.776118
+r1
+xLd
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.0
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection182"Link /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.06bd6bdec9351b641^67b7c6ec9351b641^---0#0#0#--1593"Ld DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.0 normal i386    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator -filelist /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/Objects-normal/i386/booker_craig_MDF2_project4.0.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.1 -framework CoreFoundation -framework MediaPlayer -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/booker_craig_MDF2_project4.036"F82ABA1C-76DC-4590-9947-A1F4C3DDFE07-
+
+CProcessInfoPlistFile /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Info.plist booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Info.plist
+s374445036.043587
+e374445036.048241
+r1
+xProcessInfoPlistFile
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Info.plist
+xbooker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Process booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Info.plist3b390bec9351b641^86590cec9351b641^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Info.plist0000000000000000^944"ProcessInfoPlistFile DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Info.plist booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Info.plist    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Info.plist -genpkginfo /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app/Info.plist36"3433E4E5-D816-4E25-A838-52A15ACD1A08-
+
+CProcessPCH /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch.pth booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374445036.057126
+e374445036.425347
+r1
+xProcessPCH
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch.pth
+xbooker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Precompile booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch62bc0eec9351b641^3f3a6dec9351b641^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch0000000000000000^4635"ProcessPCH DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch.pth booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-generated-files.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-own-target-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/booker_craig_MDF2_project4.0-project-headers.hmap -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/booker_craig_MDF2_project4.0.build/Debug-iphonesimulator/booker_craig_MDF2_project4.0.build/DerivedSources -F/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch.dia -c /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch -o /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch.pth -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Intermediates/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-eyrbiincexliuuhbnlcbezouwudf/booker_craig_MDF2_project4.0-Prefix.pch.d36"3D1933C4-4F72-4BCF-85E2-D873543C315E-
+
+CProcessPCH /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/booker_craig_MDF2_project4.0/Index/PrecompiledHeaders/booker_craig_MDF2_project4.0-Prefix-habndidjgptvxjdjvocjpkjeakgv_ast/booker_craig_MDF2_project4.0-Prefix.pch.pth booker_craig_MDF2_project4.0/booker_craig_MDF2_project4.0-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app
+s374445037.327730
+e374445037.393188
+r1
+xTouch
+x/Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection154"Touch /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.appf73b54ed9351b641^4ca864ed9351b641^---0#0#0#--528"Touch DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app    cd /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/craig/github/mdv-projects/mdf2/booker_craig_MDF2_project4.0/DerivedData/Build/Products/Debug-iphonesimulator/booker_craig_MDF2_project4.0.app36"9EA7F539-67B2-408E-8391-6920E31EC81D-
+

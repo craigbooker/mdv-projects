@@ -6,8 +6,13 @@
 //  Copyright (c) 2012 Craig Booker. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ImageCapViewController : NSObject
-
+@interface ImageCapViewController : UIViewController <UIImagePickerControllerDelegate>
+{
+    IBOutlet UIImageView *scaledImageView;
+    IBOutlet UIImageView *photoImageView;
+    
+}
+-(IBAction)onClick:(id)sender;
 @end

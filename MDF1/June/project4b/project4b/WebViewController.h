@@ -7,17 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MyTweet.h"
+#import <MapKit/MapKit.h>
+#import "Tweet.h"
 
 @interface WebViewController : UIViewController
 {
 
-    IBOutlet MKMapView *listViewMap;
+    IBOutlet UIWebView *myWebView;
     NSMutableArray *locationViewArray;    
 }
-
-
-@property (assign) IBOutlet MKMapView *listViewMap;
 @property (nonatomic, retain) NSMutableArray *locationViewArray;
 
 @end

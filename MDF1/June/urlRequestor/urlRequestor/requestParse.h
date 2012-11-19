@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Tweet.h"
 
-@interface requestParse : NSObject
+@interface requestParse : NSObject <NSURLConnectionDataDelegate, NSXMLParserDelegate>
+{
+    NSURLRequest *request;
+    NSURLConnection *connection;
+    NSMutableData *requestData;
+}
+
+@property (strong, readonly) NSMutableArray *tweets;
+
+-(id) loadXMLByURL:(NSString *)urlString;
 
 @end

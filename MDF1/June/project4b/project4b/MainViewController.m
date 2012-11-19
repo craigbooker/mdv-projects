@@ -9,9 +9,9 @@
 #import "MainViewController.h"
 #import "WebViewController.h"
 #import "DetailViewController.h"
-#import "RequestParse.h"
+//#import "RequestParse.h"
 #import "XMLParser.h"
-#import "MyTweet.h"
+#import "Tweet.h"
 #import "AppDelegate.h"
 
 @implementation MainViewController
@@ -19,7 +19,8 @@
 @synthesize customImage = _customImage;
 @synthesize tweetsTableView;
 
-RequestParse *xmlParser;
+//RequestParse *xmlParsera;
+XMLParser *xmlParser;
 UIImage	 *twitterLogo;
 CGRect dateFrame;
 UILabel *dateLabel;
@@ -64,8 +65,8 @@ UILabel *contentLabel;
     [appDelegate dispLocArray];
     mainViewArray = appDelegate.mainArray;
     
-    xmlParser = [[XMLParser alloc] loadXMLByURL:@"http://api.twitter.com/statuses/user_timeline/obd2.xml"];    
-    
+    //xmlParsera = [[RequestParse alloc] loadXMLByURL:@"http://api.twitter.com/statuses/user_timeline/obd2.xml"];    
+    xmlParser = [[XMLParser alloc] loadXMLByURL:@"http://api.twitter.com/statuses/user_timeline/obd2.xml"];     
     twitterLogo = [UIImage imageNamed:@"twitter-logo.png"];
     
     self.title = @"Tweets";
@@ -76,19 +77,7 @@ UILabel *contentLabel;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }    
-/*
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    
-    xmlParser = [[XMLParser alloc] loadXMLByURL:@"http://api.twitter.com/statuses/user_timeline/obd2.xml"];    
-    
-    twitterLogo = [UIImage imageNamed:@"twitter-logo.png"];
-    
-    self.title = @"Tweets";
-}    
- */
+
 -(void)toggleEditState
 {
     [myMapTableView setEditing:!myMapTableView.editing animated:YES];
@@ -106,6 +95,7 @@ UILabel *contentLabel;
 
 - (void)viewDidUnload
 {
+    [self setTweetsTableView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -208,53 +198,19 @@ UILabel *contentLabel;
 {
 	return 55;
 }
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-	if (cell == nil) { 
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    MyTweet *myLocation = [mainViewArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = myLocation.title;
-    return cell;
-}   
- */
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-	if (cell == nil) { 
-        cell = [[CustomTableViewCell alloc] initWithStyle:[UITableViewCellStyleDefault reuseIdentifier:CellIdentifier]];
-                NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomTableViewCell" owner:nil options:nil];
-                for (UIView *view in views)
-                {
-                    
-                    if([view isKindOfClass:[CustomTableViewCell class]])
-                    {
-                        cell = (CustomTableViewCell*)view;
-                    }
-                }    
-    }
-    MyTweet *myLocation = [self.xArray objectAtIndex:indexPath.row];
-    cell.locationNameLabel.text = myLocation.title;
-    cell.bizLocationLabel.text = myLocation.location;
-    return cell;
-}  
-*/
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DetailViewController *myDetailMap = [[DetailViewController alloc] initWithNibName:@"DetailView" bundle:nil];
+    DetailViewController *myDetailMap = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     if(myDetailMap != nil)
     {
+        Tweet *tweetDetails = [mainViewArray objectAtIndex:indexPath.row];
+        myDetailMap.xTweet = tweetDetails;
         [self.navigationController pushViewController:myDetailMap animated:YES];
-       // MyTweet *showCoordDetails = [mainViewArray objectAtIndex:indexPath.row];
-        //[myDetailMap showMyMap:showCoordDetails.coordinate title:showCoordDetails.title];
+
+
+        //[myDetailMap showMyMap:showTweetDetails.content title:showTweetDetails.dateCreated];
     }
 
 }

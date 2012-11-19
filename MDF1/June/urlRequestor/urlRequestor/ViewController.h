@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "URLRequestor.h"
+#import "XMLParser.h"
+#import "Tweet.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <NSURLConnectionDataDelegate>
+{
+NSURLRequest *request;
+NSURL *url;
+NSURLConnection *connection;
+NSMutableData *requestData;
+}
+@property (nonatomic, retain) UIImageView *customImage;
 
+@property (weak, nonatomic) IBOutlet UITableView *tweetsTableView;
 @end

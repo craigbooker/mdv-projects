@@ -7,30 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44CC7576159391A400ADA02D /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CC756E159391A400ADA02D /* appicon.png */; };
+		44CC7577159391A400ADA02D /* appicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CC756F159391A400ADA02D /* appicon@2x.png */; };
+		44CC7578159391A400ADA02D /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CC7570159391A400ADA02D /* default.png */; };
+		44CC7579159391A400ADA02D /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CC7571159391A400ADA02D /* default@2x.png */; };
+		44CC757A159391A400ADA02D /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44CC7572159391A400ADA02D /* DetailView.xib */; };
+		44CC757B159391A400ADA02D /* gauge1.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CC7573159391A400ADA02D /* gauge1.png */; };
+		44CC757C159391A400ADA02D /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44CC7574159391A400ADA02D /* WebViewController.xib */; };
+		44CC757D159391A400ADA02D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44CC7575159391A400ADA02D /* MainViewController.xib */; };
+		44CC7582159395C600ADA02D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CC7581159395C600ADA02D /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		44CC758C1593C1BC00ADA02D /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC758B1593C1BC00ADA02D /* Tweet.m */; };
+		44CC758F1593C28900ADA02D /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC758E1593C28900ADA02D /* XMLParser.m */; };
+		44CC759A1593D20200ADA02D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC75991593D20200ADA02D /* MainViewController.m */; };
+		44CC759D1593D2EF00ADA02D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC759C1593D2EF00ADA02D /* WebViewController.m */; };
+		44CC759F1593D4D800ADA02D /* twitter-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CC759E1593D4D800ADA02D /* twitter-logo.png */; };
 		44F68FC5158F88FA00B868B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F68FC4158F88FA00B868B6 /* UIKit.framework */; };
 		44F68FC7158F88FA00B868B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F68FC6158F88FA00B868B6 /* Foundation.framework */; };
 		44F68FC9158F88FA00B868B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F68FC8158F88FA00B868B6 /* CoreGraphics.framework */; };
 		44F68FCF158F88FA00B868B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44F68FCD158F88FA00B868B6 /* InfoPlist.strings */; };
 		44F68FD1158F88FA00B868B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F68FD0158F88FA00B868B6 /* main.m */; };
 		44F68FD5158F88FA00B868B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F68FD4158F88FA00B868B6 /* AppDelegate.m */; };
-		44F68FD8158F88FA00B868B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F68FD7158F88FA00B868B6 /* ViewController.m */; };
-		44F68FDB158F88FA00B868B6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F68FD9158F88FA00B868B6 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44CC756E159391A400ADA02D /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		44CC756F159391A400ADA02D /* appicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon@2x.png"; sourceTree = "<group>"; };
+		44CC7570159391A400ADA02D /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		44CC7571159391A400ADA02D /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+		44CC7572159391A400ADA02D /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		44CC7573159391A400ADA02D /* gauge1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gauge1.png; sourceTree = "<group>"; };
+		44CC7574159391A400ADA02D /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		44CC7575159391A400ADA02D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		44CC7581159395C600ADA02D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		44CC758A1593C1BC00ADA02D /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tweet.h; path = "../../../../../../../Craig/github/mdv-projects/MDF1/June/booker_craig_project4/booker_craig_project4/Tweet.h"; sourceTree = "<group>"; };
+		44CC758B1593C1BC00ADA02D /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tweet.m; path = "../../../../../../../Craig/github/mdv-projects/MDF1/June/booker_craig_project4/booker_craig_project4/Tweet.m"; sourceTree = "<group>"; };
+		44CC758D1593C28900ADA02D /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = "../../../../../../../Craig/github/mdv-projects/MDF1/June/booker_craig_project4/booker_craig_project4/XMLParser.h"; sourceTree = "<group>"; };
+		44CC758E1593C28900ADA02D /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = "../../../../../../../Craig/github/mdv-projects/MDF1/June/booker_craig_project4/booker_craig_project4/XMLParser.m"; sourceTree = "<group>"; };
+		44CC75981593D20200ADA02D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		44CC75991593D20200ADA02D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		44CC759B1593D2EF00ADA02D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		44CC759C1593D2EF00ADA02D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		44CC759E1593D4D800ADA02D /* twitter-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-logo.png"; sourceTree = "<group>"; };
+		44CC76151593EC8A00ADA02D /* booker_craig_project4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = booker_craig_project4.xcodeproj; sourceTree = SOURCE_ROOT; };
 		44F68FC0158F88FA00B868B6 /* booker_craig_project4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = booker_craig_project4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F68FC4158F88FA00B868B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44F68FC6158F88FA00B868B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44F68FC8158F88FA00B868B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		44F68FCC158F88FA00B868B6 /* booker_craig_project4-Info.plist */ = {isa = PBXFileReference; path = "booker_craig_project4-Info.plist"; sourceTree = "<group>"; };
+		44F68FCC158F88FA00B868B6 /* booker_craig_project4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "booker_craig_project4-Info.plist"; sourceTree = "<group>"; };
 		44F68FCE158F88FA00B868B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44F68FD0158F88FA00B868B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		44F68FD2158F88FA00B868B6 /* booker_craig_project4-Prefix.pch */ = {isa = PBXFileReference; path = "booker_craig_project4-Prefix.pch"; sourceTree = "<group>"; };
-		44F68FD3158F88FA00B868B6 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		44F68FD2158F88FA00B868B6 /* booker_craig_project4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "booker_craig_project4-Prefix.pch"; sourceTree = "<group>"; };
+		44F68FD3158F88FA00B868B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44F68FD4158F88FA00B868B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		44F68FD6158F88FA00B868B6 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		44F68FD7158F88FA00B868B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		44F68FDA158F88FA00B868B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44CC7582159395C600ADA02D /* Twitter.framework in Frameworks */,
 				44F68FC5158F88FA00B868B6 /* UIKit.framework in Frameworks */,
 				44F68FC7158F88FA00B868B6 /* Foundation.framework in Frameworks */,
 				44F68FC9158F88FA00B868B6 /* CoreGraphics.framework in Frameworks */,
@@ -47,9 +76,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44CC757F159391B600ADA02D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				44CC759E1593D4D800ADA02D /* twitter-logo.png */,
+				44CC756E159391A400ADA02D /* appicon.png */,
+				44CC756F159391A400ADA02D /* appicon@2x.png */,
+				44CC7570159391A400ADA02D /* default.png */,
+				44CC7571159391A400ADA02D /* default@2x.png */,
+				44CC7573159391A400ADA02D /* gauge1.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		44CC7580159391ED00ADA02D /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				44CC7572159391A400ADA02D /* DetailView.xib */,
+				44CC7574159391A400ADA02D /* WebViewController.xib */,
+				44CC7575159391A400ADA02D /* MainViewController.xib */,
+			);
+			name = xib;
+			sourceTree = "<group>";
+		};
+		44CC76161593EC8A00ADA02D /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		44F68FB5158F88FA00B868B6 = {
 			isa = PBXGroup;
 			children = (
+				44CC7581159395C600ADA02D /* Twitter.framework */,
 				44F68FCA158F88FA00B868B6 /* booker_craig_project4 */,
 				44F68FC3158F88FA00B868B6 /* Frameworks */,
 				44F68FC1158F88FA00B868B6 /* Products */,
@@ -77,12 +135,20 @@
 		44F68FCA158F88FA00B868B6 /* booker_craig_project4 */ = {
 			isa = PBXGroup;
 			children = (
+				44CC7580159391ED00ADA02D /* xib */,
+				44CC757F159391B600ADA02D /* images */,
 				44F68FD3158F88FA00B868B6 /* AppDelegate.h */,
 				44F68FD4158F88FA00B868B6 /* AppDelegate.m */,
-				44F68FD6158F88FA00B868B6 /* ViewController.h */,
-				44F68FD7158F88FA00B868B6 /* ViewController.m */,
-				44F68FD9158F88FA00B868B6 /* ViewController.xib */,
+				44CC75981593D20200ADA02D /* MainViewController.h */,
+				44CC75991593D20200ADA02D /* MainViewController.m */,
+				44CC759B1593D2EF00ADA02D /* WebViewController.h */,
+				44CC76151593EC8A00ADA02D /* booker_craig_project4.xcodeproj */,
+				44CC759C1593D2EF00ADA02D /* WebViewController.m */,
 				44F68FCB158F88FA00B868B6 /* Supporting Files */,
+				44CC758A1593C1BC00ADA02D /* Tweet.h */,
+				44CC758B1593C1BC00ADA02D /* Tweet.m */,
+				44CC758D1593C28900ADA02D /* XMLParser.h */,
+				44CC758E1593C28900ADA02D /* XMLParser.m */,
 			);
 			path = booker_craig_project4;
 			sourceTree = "<group>";
@@ -136,6 +202,12 @@
 			mainGroup = 44F68FB5158F88FA00B868B6;
 			productRefGroup = 44F68FC1158F88FA00B868B6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 44CC76161593EC8A00ADA02D /* Products */;
+					ProjectRef = 44CC76151593EC8A00ADA02D /* booker_craig_project4.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				44F68FBF158F88FA00B868B6 /* booker_craig_project4 */,
@@ -149,7 +221,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F68FCF158F88FA00B868B6 /* InfoPlist.strings in Resources */,
-				44F68FDB158F88FA00B868B6 /* ViewController.xib in Resources */,
+				44CC7576159391A400ADA02D /* appicon.png in Resources */,
+				44CC7577159391A400ADA02D /* appicon@2x.png in Resources */,
+				44CC7578159391A400ADA02D /* default.png in Resources */,
+				44CC7579159391A400ADA02D /* default@2x.png in Resources */,
+				44CC757A159391A400ADA02D /* DetailView.xib in Resources */,
+				44CC757B159391A400ADA02D /* gauge1.png in Resources */,
+				44CC757C159391A400ADA02D /* WebViewController.xib in Resources */,
+				44CC757D159391A400ADA02D /* MainViewController.xib in Resources */,
+				44CC759F1593D4D800ADA02D /* twitter-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +242,10 @@
 			files = (
 				44F68FD1158F88FA00B868B6 /* main.m in Sources */,
 				44F68FD5158F88FA00B868B6 /* AppDelegate.m in Sources */,
-				44F68FD8158F88FA00B868B6 /* ViewController.m in Sources */,
+				44CC758C1593C1BC00ADA02D /* Tweet.m in Sources */,
+				44CC758F1593C28900ADA02D /* XMLParser.m in Sources */,
+				44CC759A1593D20200ADA02D /* MainViewController.m in Sources */,
+				44CC759D1593D2EF00ADA02D /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,14 +258,6 @@
 				44F68FCE158F88FA00B868B6 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		44F68FD9158F88FA00B868B6 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44F68FDA158F88FA00B868B6 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -274,6 +349,7 @@
 				44F68FE0158F88FA00B868B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

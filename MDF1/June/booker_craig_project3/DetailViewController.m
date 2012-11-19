@@ -10,12 +10,12 @@
 
 
 @implementation DetailViewController
-@synthesize selectedSensor;
-@synthesize sensorLabel = _sensorLabel;
-@synthesize pidValueLabel = _pidValueLabel;
-@synthesize sensorImage = _sensorImage;
-@synthesize sensorDetails = _sensorDetails;
-@synthesize xSensor;
+@synthesize selectedLocation;
+@synthesize locationNameLabel = _locationNameLabel;
+@synthesize bizLocationNameLabel = _bizLocationNameLabel;
+@synthesize locationImage = _locationImage;
+@synthesize locationDetails = _locationDetails;
+@synthesize xBizLocation;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -30,33 +30,52 @@
 {
     [super viewDidLoad];
     //editMode = FALSE;    
-	self.title = @"Sensor Detail";
+	self.title = @"Location Detail";
     
-    UIImageView *sensorImage = [[UIImageView alloc] initWithFrame:CGRectMake(10,10,32,32)];
-	sensorImage.image = self.xSensor.xSensorImage;
-	[self.view addSubview:sensorImage];
-	[sensorImage release];
+    UIImageView *locationImage = [[UIImageView alloc] initWithFrame:CGRectMake(10,10,32,32)];
+	locationImage.image = self.xBizLocation.xLocationImage;
+	[self.view addSubview:locationImage];
+	[locationImage release];
 	
-	UILabel *sensorLabel = [[UILabel alloc] initWithFrame:CGRectMake(5,130,220,30)];
-	sensorLabel.text = @"Sensor Name:";
-	[self.view addSubview:sensorLabel];
-	[sensorLabel release];
+	UILabel *bizLocationLabel = [[UILabel alloc] initWithFrame:CGRectMake(5,130,220,30)];
+	bizLocationLabel.text = @"Business Location:";
+	[self.view addSubview:bizLocationLabel];
+	[bizLocationLabel release];
     
-	UILabel *sensorValueLabel = [[UILabel alloc] initWithFrame:CGRectMake(125,130,220,30)];
-	sensorValueLabel.text = self.xSensor.xSensorName;
-	[self.view addSubview:sensorValueLabel];
-	[sensorValueLabel release];
+	UILabel *bizLocationValue = [[UILabel alloc] initWithFrame:CGRectMake(125,130,220,30)];
+	bizLocationValue.text = self.xBizLocation.xLocation;
+	[self.view addSubview:bizLocationValue];
+	[bizLocationValue release];
     
-	UILabel *pidLabel = [[UILabel alloc] initWithFrame:CGRectMake(5,170,220,30)];
-	pidLabel.text = @"PID Value:";
-	[self.view addSubview:pidLabel];
-	[pidLabel release];  
+	UILabel *bizLocationNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(5,170,220,30)];
+	bizLocationNameLabel.text = @"Business Location Name:";
+	[self.view addSubview:bizLocationNameLabel];
+	[bizLocationNameLabel release];  
     
-    UILabel *pidValueLabel = [[UILabel alloc] initWithFrame:CGRectMake(125,170,220,30)];
-	pidValueLabel.text = self.xSensor.xPIDValue;
-	[self.view addSubview:pidValueLabel];
-	[pidValueLabel release];
+    UILabel *bizLocationNameValue = [[UILabel alloc] initWithFrame:CGRectMake(125,170,220,30)];
+	bizLocationNameValue.text = self.xBizLocation.xLocationName;
+	[self.view addSubview:bizLocationNameValue];
+	[bizLocationNameValue release];
+
+	UILabel *bizLocationLatLabel = [[UILabel alloc] initWithFrame:CGRectMake(5,170,220,30)];
+	bizLocationLatLabel.text = @"Latitude Value:";
+	[self.view addSubview:bizLocationLatLabel];
+	[bizLocationLatLabel release];  
     
+    UILabel *bizLocationLatValue = [[UILabel alloc] initWithFrame:CGRectMake(125,170,220,30)];
+	bizLocationLatValue.text = self.xBizLocation.xLatValue;
+	[self.view addSubview:bizLocationLatValue];
+	[bizLocationLatValue release];
+    
+	UILabel *bizLocationLongLabel = [[UILabel alloc] initWithFrame:CGRectMake(5,170,220,30)];
+	bizLocationLongLabel.text = @"Longitude Value:";
+	[self.view addSubview:bizLocationLongLabel];
+	[bizLocationLongLabel release];  
+    
+    UILabel *bizLocationLongValue = [[UILabel alloc] initWithFrame:CGRectMake(125,170,220,30)];
+	bizLocationLongValue.text = self.xBizLocation.xLongValue;
+	[self.view addSubview:bizLocationLongValue];
+	[bizLocationLongValue release];    
     /*
     self.sensorLabel.text = [self.sensorDetails objectAtIndex:0];
     self.pidValueLabel.text = [self.sensorDetails objectAtIndex:1];
@@ -97,7 +116,7 @@
 
 
 - (void)dealloc {
-    [selectedSensor release];
+    [selectedLocation release];
 	[displayText release];
     [super dealloc];
 }

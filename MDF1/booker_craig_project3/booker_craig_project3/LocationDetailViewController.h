@@ -10,4 +10,6 @@
 
 @interface LocationDetailViewController : UITableViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *locationNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *locationData;
 @end

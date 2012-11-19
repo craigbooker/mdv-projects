@@ -9,7 +9,7 @@
 #import "LocationViewController.h"
 #import <MapKit/MapKit.h>
 #import "MainViewController.h"
-#import "MyAnnotation.h"
+#import "MyTweet.h"
 #import "AppDelegate.h"
 
 @interface LocationViewController ()
@@ -37,7 +37,7 @@
     if ([annotation isKindOfClass:[MKUserLocation class]])
         return nil;
     
-    MKPinAnnotationView* myPinView = (MKPinAnnotationView*)[self.listViewMap dequeueReusableAnnotationViewWithIdentifier:@"MyAnnotation"];
+    MKPinAnnotationView* myPinView = (MKPinAnnotationView*)[self.listViewMap dequeueReusableAnnotationViewWithIdentifier:@"MyTweet"];
     if (!myPinView)
     {
         myPinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"MyCustomPinAnnotation"];
@@ -79,7 +79,7 @@
     [listViewMap removeAnnotations:listViewMap.annotations]; //Removes all Annotations
     for (int i = 0; locationViewArray.count > i; i++) 
     {
-        MyAnnotation *theLoc = [locationViewArray objectAtIndex:i]; //Loops through and re-adds locations in array
+        MyTweet *theLoc = [locationViewArray objectAtIndex:i]; //Loops through and re-adds locations in array
         [listViewMap addAnnotation:theLoc];
     }
     

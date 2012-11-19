@@ -8,35 +8,35 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import "MyAnnotation.h"
+#import "MyTweet.h"
 
 @interface LocationViewController : UIViewController <MKMapViewDelegate>
 {
-    MyAnnotation *annoStorage;
-    MyAnnotation *location1;
-    MyAnnotation *location2;
-    MyAnnotation *location3;
-    MyAnnotation *location4;    
-    MyAnnotation *location5;
-    MyAnnotation *location6;
-    MyAnnotation *location7;
-    MyAnnotation *location8;
-    MyAnnotation *location9;
-    MyAnnotation *location10;
+    MyTweet *annoStorage;
+    MyTweet *location1;
+    MyTweet *location2;
+    MyTweet *location3;
+    MyTweet *location4;    
+    MyTweet *location5;
+    MyTweet *location6;
+    MyTweet *location7;
+    MyTweet *location8;
+    MyTweet *location9;
+    MyTweet *location10;
     IBOutlet MKMapView *listViewMap;
     NSMutableArray *locationViewArray;    
 }
 
-@property (nonatomic, retain) MyAnnotation *location1;
-@property (nonatomic, retain) MyAnnotation *location2;
-@property (nonatomic, retain) MyAnnotation *location3;
-@property (nonatomic, retain) MyAnnotation *location4;    
-@property (nonatomic, retain) MyAnnotation *location5;
-@property (nonatomic, retain) MyAnnotation *location6;
-@property (nonatomic, retain) MyAnnotation *location7;
-@property (nonatomic, retain) MyAnnotation *location8;
-@property (nonatomic, retain) MyAnnotation *location9;
-@property (nonatomic, retain) MyAnnotation *location10;
+@property (nonatomic, retain) MyTweet *location1;
+@property (nonatomic, retain) MyTweet *location2;
+@property (nonatomic, retain) MyTweet *location3;
+@property (nonatomic, retain) MyTweet *location4;    
+@property (nonatomic, retain) MyTweet *location5;
+@property (nonatomic, retain) MyTweet *location6;
+@property (nonatomic, retain) MyTweet *location7;
+@property (nonatomic, retain) MyTweet *location8;
+@property (nonatomic, retain) MyTweet *location9;
+@property (nonatomic, retain) MyTweet *location10;
 @property (assign) IBOutlet MKMapView *listViewMap;
 @property (nonatomic, retain) NSMutableArray *locationViewArray;
 

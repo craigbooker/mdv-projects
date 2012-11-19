@@ -10,7 +10,6 @@
 
 
 @implementation AppProductModalController
-
 @synthesize newRecord, navBar, cancel, done, nameField, priceField, delegate;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -55,7 +54,7 @@
 	navItem.rightBarButtonItem = done;
 	navItem.leftBarButtonItem = cancel;
 	[navBar setItems:[NSArray arrayWithObject: navItem]];
-	[navItem release];
+	/* [navItem release]; ----removed due to deprecation in iOS 6 */
 	
 	[self.view setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
 	
@@ -73,12 +72,12 @@
 
 	NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
 	NSNumber *priceNumber = [numberFormatter numberFromString:[priceField text]];
-	[numberFormatter release];
+	/* [numberFormatter release]; ----removed due to deprecation in iOS 6 */
 	
 	if ([[nameField text] isEqualToString:@""] || [[priceField text] isEqualToString:@""] || !priceNumber) {
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Required fields" message:@"Please fill out both fields" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
 		[alert show];
-		[alert release];
+		/* [alert release]; ----removed due to deprecation in iOS 6 */
 		return NO;
 	}
 	
@@ -94,7 +93,7 @@
 	
 	NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
 	NSNumber *priceNumber = [numberFormatter numberFromString:[priceField text]];
-	[numberFormatter release];
+	/* [numberFormatter release]; ----removed due to deprecation in iOS 6 */
 	
 	if (newRecord) {
 		if (self.delegate && [self.delegate respondsToSelector:@selector(createNewRecordWithName:andPrice:)]) {
@@ -117,13 +116,13 @@
 
 - (void)dealloc {
 	
-	[navBar release];
-	[cancel release];
-	[done release];
+	/* [navBar release]; ----removed due to deprecation in iOS 6 */
+	/*[cancel release]; ----removed due to deprecation in iOS 6 */
+	/* [done release]; ----removed due to deprecation in iOS 6 */
 	
 	self.newRecord = nil;
 	
-    [super dealloc];
+    /* [super dealloc]; ----removed due to deprecation in iOS 6 */
 }
 
 

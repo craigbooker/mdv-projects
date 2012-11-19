@@ -8,24 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
-@class SensorViewController;
+@class LocationViewController;
 
 @interface RootViewController : UITableViewController
 {
-    SensorViewController *sensorController;
-    NSMutableArray *sensorNameList;   
-    NSMutableArray *pidValueList;  
-    NSMutableArray *sensorImages;
-    NSMutableArray *sensorDetails; 
+    LocationViewController *sensorController;
+    NSMutableArray *sensorNameList;  
+    NSMutableArray *bizNameList;
+    NSMutableArray *locationList;
+    NSMutableArray *longCoordList;
+    NSMutableArray *latCoordList;     
+    NSMutableArray *locationImages;
+    NSMutableArray *locationDetails; 
     NSMutableArray *xArray;
 
 }
 
-@property (nonatomic, strong) IBOutlet SensorViewController *sensorController;
-@property (nonatomic, strong) NSMutableArray *sensorDetails;
-@property (nonatomic, strong) NSMutableArray *sensorNameList;
-@property (nonatomic, strong) NSMutableArray *pidValueList;
-@property (nonatomic, strong) NSMutableArray *sensorImages;
+@property (nonatomic, strong) IBOutlet LocationViewController *locationController;
+
+@property (nonatomic, strong) NSMutableArray *locationNameList;
+@property (nonatomic, strong) NSMutableArray *bizNameList;
+@property (nonatomic, strong) NSMutableArray *locationList;
+@property (nonatomic, strong) NSMutableArray *longCoordList;
+@property (nonatomic, strong) NSMutableArray *latCoordList;
+@property (nonatomic, strong) NSMutableArray *locationDetails;
+@property (nonatomic, strong) NSMutableArray *locationImages;
 @property (nonatomic, strong) NSMutableArray *xArray;
 
 

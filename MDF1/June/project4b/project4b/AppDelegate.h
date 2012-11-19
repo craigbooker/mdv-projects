@@ -7,13 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebViewController.h"
+#import "MainViewController.h"
 
-@class ViewController;
+@class MainViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+{
+    
+    MainViewController *myListView;
+    WebViewController *myMapView;
+    
+    
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+@property (strong, nonatomic) IBOutlet UITabBarController *tabController;
+@property (nonatomic, retain) NSMutableArray *mainArray;
+@property (nonatomic, strong) MainViewController *myListView;
+@property (nonatomic, strong) WebViewController *myMapView;
+
+-(void)dispLocArray;
 
 @end

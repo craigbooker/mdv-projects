@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface URLRequestor : NSObject
-
+@interface URLRequestor : NSObject<NSURLConnectionDataDelegate>
+{
+    NSURLRequest *request;
+    NSURL *url;
+    NSURLConnection *connection;
+    NSMutableData *requestData;
+}
+-(id) getDataByURL:(NSString *)urlString;
 @end

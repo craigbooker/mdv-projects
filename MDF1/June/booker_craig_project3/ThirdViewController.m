@@ -7,6 +7,9 @@
 //
 
 #import "ThirdViewController.h"
+#import <MapKit/MapKit.h>
+#import "AppDelegate.h"
+#import "BizLocations.h"
 
 @interface ThirdViewController ()
 
@@ -36,7 +39,31 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
-
+-(void)viewDidAppear:(BOOL)animated
+{
+    if (theMapView != nil)
+    {
+        [theMapView removeAnnotations:theMapView.annotations];
+        
+        AppDelegate *delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+        if (delegate != nil)
+        {
+            NSArray *locArray = delegate.locArray;
+            for (int i=0; i<[locArray count]; i++)
+            {
+                MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+                if (annotation != nil)
+                {
+                    BizLocations *info = [locArray objectAtIndex:i];
+                    annotation.title = info.locName;
+                    annotation.coordinate = info.loc;
+                    
+                    [theMapView addAnnotation:annotation];
+                }
+            }
+        }
+    }
+}
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);

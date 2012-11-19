@@ -19,5 +19,5 @@
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *location;
-@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 @end

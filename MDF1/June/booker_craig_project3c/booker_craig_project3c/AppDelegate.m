@@ -8,26 +8,36 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "LocationViewController.h"
+#import "SecondViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
-
-- (void)dealloc
-{
-    [_window release];
-    [_viewController release];
-    [super dealloc];
-}
+@synthesize tabBarController = _tabBarController;
+@synthesize mainMapView, tableView, locArray;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    locArray = [[NSMutableArray alloc] init];
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    UIViewController *viewController1 = [[LocationViewController alloc] initWithNibName:@"LocationViewController" bundle:nil];
+    UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+     viewController1.title = @"Location List";
+        viewController2.title = @"Map";
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    
+    // make a connection between the views
+    tableView = (LocationViewController*)viewController1;
+    mainMapView = (SecondViewController*)viewController2;
+    
+    self.window.rootViewController = self.tabBarController;
+    
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -58,5 +68,19 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+/*
+ // Optional UITabBarControllerDelegate method.
+ - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+ {
+ }
+ */
+
+/*
+ // Optional UITabBarControllerDelegate method.
+ - (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+ {
+ }
+ */
 
 @end

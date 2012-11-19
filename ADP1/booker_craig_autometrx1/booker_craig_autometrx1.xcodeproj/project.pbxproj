@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442541421615FD1C00250735 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 442541411615FD1C00250735 /* libsqlite3.dylib */; };
+		442541461618AEC200250735 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 442541451618AEC200250735 /* Vehicle.m */; };
+		44254166161B975100250735 /* UserDefaultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44254165161B975100250735 /* UserDefaultsController.m */; };
+		44254169161B97A500250735 /* PropertyListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44254168161B97A500250735 /* PropertyListController.m */; };
+		4448319A161109B500EAB794 /* VehicleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44483199161109B500EAB794 /* VehicleTableViewController.m */; };
+		4448319D161109DB00EAB794 /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4448319C161109DB00EAB794 /* DisplayViewController.m */; };
+		444831A316111D1F00EAB794 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444831A216111D1F00EAB794 /* ProfileViewController.m */; };
 		449110B11610C4540048B5C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449110B01610C4540048B5C2 /* UIKit.framework */; };
 		449110B31610C4540048B5C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449110B21610C4540048B5C2 /* Foundation.framework */; };
 		449110B51610C4540048B5C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449110B41610C4540048B5C2 /* CoreGraphics.framework */; };
@@ -21,6 +28,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		442541411615FD1C00250735 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		442541441618AEC200250735 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vehicle.h; path = booker_craig_autometrx1/Vehicle.h; sourceTree = "<group>"; };
+		442541451618AEC200250735 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vehicle.m; path = booker_craig_autometrx1/Vehicle.m; sourceTree = "<group>"; };
+		44254164161B975100250735 /* UserDefaultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsController.h; sourceTree = "<group>"; };
+		44254165161B975100250735 /* UserDefaultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsController.m; sourceTree = "<group>"; };
+		44254167161B97A500250735 /* PropertyListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyListController.h; sourceTree = "<group>"; };
+		44254168161B97A500250735 /* PropertyListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyListController.m; sourceTree = "<group>"; };
+		44483198161109B500EAB794 /* VehicleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VehicleTableViewController.h; path = "../../../../../../Craig/github/mdv-projects/ADP1/booker_craig_autometrx1/booker_craig_autometrx1/VehicleTableViewController.h"; sourceTree = "<group>"; };
+		44483199161109B500EAB794 /* VehicleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VehicleTableViewController.m; path = "../../../../../../Craig/github/mdv-projects/ADP1/booker_craig_autometrx1/booker_craig_autometrx1/VehicleTableViewController.m"; sourceTree = "<group>"; };
+		4448319B161109DB00EAB794 /* DisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayViewController.h; path = "../../../../../../Craig/github/mdv-projects/ADP1/booker_craig_autometrx1/booker_craig_autometrx1/DisplayViewController.h"; sourceTree = "<group>"; };
+		4448319C161109DB00EAB794 /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplayViewController.m; path = "../../../../../../Craig/github/mdv-projects/ADP1/booker_craig_autometrx1/booker_craig_autometrx1/DisplayViewController.m"; sourceTree = "<group>"; };
+		444831A116111D1F00EAB794 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = "../../../../../../Craig/github/mdv-projects/ADP1/booker_craig_autometrx1/booker_craig_autometrx1/ProfileViewController.h"; sourceTree = "<group>"; };
+		444831A216111D1F00EAB794 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = "../../../../../../Craig/github/mdv-projects/ADP1/booker_craig_autometrx1/booker_craig_autometrx1/ProfileViewController.m"; sourceTree = "<group>"; };
+		444831AA161121DF00EAB794 /* VehicleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VehicleTableViewCell.h; path = "../../../../../../Craig/github/mdv-projects/ADP1/booker_craig_autometrx1/booker_craig_autometrx1/VehicleTableViewCell.h"; sourceTree = "<group>"; };
 		449110AC1610C4540048B5C2 /* booker_craig_autometrx1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = booker_craig_autometrx1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		449110B01610C4540048B5C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		449110B21610C4540048B5C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442541421615FD1C00250735 /* libsqlite3.dylib in Frameworks */,
 				449110B11610C4540048B5C2 /* UIKit.framework in Frameworks */,
 				449110B31610C4540048B5C2 /* Foundation.framework in Frameworks */,
 				449110B51610C4540048B5C2 /* CoreGraphics.framework in Frameworks */,
@@ -53,9 +75,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44254163161B972100250735 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44254167161B97A500250735 /* PropertyListController.h */,
+				44254168161B97A500250735 /* PropertyListController.m */,
+				44254164161B975100250735 /* UserDefaultsController.h */,
+				44254165161B975100250735 /* UserDefaultsController.m */,
+				442541441618AEC200250735 /* Vehicle.h */,
+				442541451618AEC200250735 /* Vehicle.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		449110A11610C4540048B5C2 = {
 			isa = PBXGroup;
 			children = (
+				44254163161B972100250735 /* Classes */,
 				449110B61610C4540048B5C2 /* booker_craig_autometrx1 */,
 				449110AF1610C4540048B5C2 /* Frameworks */,
 				449110AD1610C4540048B5C2 /* Products */,
@@ -73,6 +109,7 @@
 		449110AF1610C4540048B5C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				442541411615FD1C00250735 /* libsqlite3.dylib */,
 				449110B01610C4540048B5C2 /* UIKit.framework */,
 				449110B21610C4540048B5C2 /* Foundation.framework */,
 				449110B41610C4540048B5C2 /* CoreGraphics.framework */,
@@ -86,6 +123,13 @@
 				449110BF1610C4540048B5C2 /* AppDelegate.h */,
 				449110C01610C4540048B5C2 /* AppDelegate.m */,
 				449110C81610C4540048B5C2 /* MainStoryboard.storyboard */,
+				444831A116111D1F00EAB794 /* ProfileViewController.h */,
+				444831A216111D1F00EAB794 /* ProfileViewController.m */,
+				44483198161109B500EAB794 /* VehicleTableViewController.h */,
+				44483199161109B500EAB794 /* VehicleTableViewController.m */,
+				4448319B161109DB00EAB794 /* DisplayViewController.h */,
+				4448319C161109DB00EAB794 /* DisplayViewController.m */,
+				444831AA161121DF00EAB794 /* VehicleTableViewCell.h */,
 				449110CB1610C4540048B5C2 /* ViewController.h */,
 				449110CC1610C4540048B5C2 /* ViewController.m */,
 				449110B71610C4540048B5C2 /* Supporting Files */,
@@ -176,6 +220,12 @@
 				449110BD1610C4540048B5C2 /* main.m in Sources */,
 				449110C11610C4540048B5C2 /* AppDelegate.m in Sources */,
 				449110CD1610C4540048B5C2 /* ViewController.m in Sources */,
+				4448319A161109B500EAB794 /* VehicleTableViewController.m in Sources */,
+				4448319D161109DB00EAB794 /* DisplayViewController.m in Sources */,
+				444831A316111D1F00EAB794 /* ProfileViewController.m in Sources */,
+				442541461618AEC200250735 /* Vehicle.m in Sources */,
+				44254166161B975100250735 /* UserDefaultsController.m in Sources */,
+				44254169161B97A500250735 /* PropertyListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +341,7 @@
 				449110D21610C4540048B5C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

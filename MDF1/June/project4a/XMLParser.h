@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Tweet.h"
+#import "MyTweet.h"
 
 @interface XMLParser : NSObject <NSXMLParserDelegate>
 

@@ -8,8 +8,7 @@
 
 #import "MainViewController.h"
 #import <MapKit/MapKit.h>
-#import "locationViewController.h"
-//#import "CustomTableViewCell.h"
+#import "LocationViewController.h"
 #import "DetailViewController.h"
 
 #import "MyAnnotation.h"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="dqh-wO-u7p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="dqh-wO-u7p">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
@@ -48,7 +48,7 @@
                                     <outlet property="carImage" destination="OF6-iR-OOK" id="1G8-t9-nk8"/>
                                     <outlet property="makeLabel" destination="W53-HD-XpW" id="erF-J1-TvL"/>
                                     <outlet property="modelLabel" destination="ucK-rR-QOd" id="yVZ-if-DTJ"/>
-                                    <segue destination="ZFT-jT-lzh" kind="push" identifier="ShowCarDetails" id="bK1-LQ-jXh"/>
+                                    <segue destination="ZFT-jT-lzh" kind="push" id="Cmg-6y-vHa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -70,9 +70,34 @@
                     <view key="view" contentMode="scaleToFill" id="RRL-eF-kGk">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ifR-1l-bMX">
+                                <rect key="frame" x="41" y="73" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="3uU-6w-xEX">
+                                <rect key="frame" x="35" y="165" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Kxs-q6-9EN">
+                                <rect key="frame" x="41" y="44" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Car Details" id="n5I-Uu-xUp"/>
+                    <connections>
+                        <outlet property="imageView" destination="3uU-6w-xEX" id="xsp-LO-Kx3"/>
+                        <outlet property="makeLabel" destination="Kxs-q6-9EN" id="ylL-jH-eUE"/>
+                        <outlet property="modelLabel" destination="ifR-1l-bMX" id="fhN-x5-OLP"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="989" y="61"/>
@@ -99,6 +124,11 @@
     <classes>
         <class className="CarDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CarDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="makeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="modelLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="CarTableViewCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CarTableViewCell.h"/>

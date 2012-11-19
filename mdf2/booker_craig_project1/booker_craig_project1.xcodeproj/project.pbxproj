@@ -15,6 +15,19 @@
 		44B7947D15CB64AD003F0C46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B7947C15CB64AD003F0C46 /* AppDelegate.m */; };
 		44B7948015CB64AD003F0C46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B7947F15CB64AD003F0C46 /* ViewController.m */; };
 		44B7948315CB64AD003F0C46 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B7948115CB64AD003F0C46 /* ViewController.xib */; };
+		44B7948B15CB65C1003F0C46 /* MyEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B7948A15CB65C1003F0C46 /* MyEventData.m */; };
+		44B7948F15CB66BA003F0C46 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B7948C15CB66BA003F0C46 /* CustomTableViewCell.xib */; };
+		44B7949015CB66BA003F0C46 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B7948D15CB66BA003F0C46 /* CustomTableViewCell.m */; };
+		44B7949315CB6842003F0C46 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B7949215CB6842003F0C46 /* DetailViewController.m */; };
+		44B7949515CB6A47003F0C46 /* Calendar_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B7949415CB6A47003F0C46 /* Calendar_Image.png */; };
+		44B7949815CB6CCA003F0C46 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B7949715CB6CCA003F0C46 /* CalendarViewController.m */; };
+		44B7949B15CB7268003F0C46 /* ViewControllerbckup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B7949915CB7268003F0C46 /* ViewControllerbckup.xib */; };
+		44B794A015CB75B3003F0C46 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B7949C15CB75B3003F0C46 /* CalendarView.xib */; };
+		44B794A415CB7B7C003F0C46 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B794A315CB7B7C003F0C46 /* DetailView.xib */; };
+		44B794AA15CB81DA003F0C46 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B794A915CB81DA003F0C46 /* EventKit.framework */; };
+		44B794AC15CB86F1003F0C46 /* List_TabIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B794AB15CB86F0003F0C46 /* List_TabIcon.png */; };
+		44B794AF15CBA880003F0C46 /* CustCalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B794AE15CBA880003F0C46 /* CustCalViewCell.m */; };
+		44B794B115CBA9CF003F0C46 /* CustCalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B794B015CBA9CF003F0C46 /* CustCalViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +35,33 @@
 		44B7946C15CB64AC003F0C46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44B7946E15CB64AC003F0C46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44B7947015CB64AC003F0C46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		44B7947415CB64AD003F0C46 /* booker_craig_project1-Info.plist */ = {isa = PBXFileReference; path = "booker_craig_project1-Info.plist"; sourceTree = "<group>"; };
+		44B7947415CB64AD003F0C46 /* booker_craig_project1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "booker_craig_project1-Info.plist"; sourceTree = "<group>"; };
 		44B7947615CB64AD003F0C46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44B7947815CB64AD003F0C46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		44B7947A15CB64AD003F0C46 /* booker_craig_project1-Prefix.pch */ = {isa = PBXFileReference; path = "booker_craig_project1-Prefix.pch"; sourceTree = "<group>"; };
-		44B7947B15CB64AD003F0C46 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		44B7947A15CB64AD003F0C46 /* booker_craig_project1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "booker_craig_project1-Prefix.pch"; sourceTree = "<group>"; };
+		44B7947B15CB64AD003F0C46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44B7947C15CB64AD003F0C46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		44B7947E15CB64AD003F0C46 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		44B7947E15CB64AD003F0C46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		44B7947F15CB64AD003F0C46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		44B7948215CB64AD003F0C46 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		44B7948915CB65C1003F0C46 /* MyEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyEventData.h; sourceTree = "<group>"; };
+		44B7948A15CB65C1003F0C46 /* MyEventData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyEventData.m; sourceTree = "<group>"; };
+		44B7948C15CB66BA003F0C46 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		44B7948D15CB66BA003F0C46 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		44B7948E15CB66BA003F0C46 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		44B7949115CB6842003F0C46 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		44B7949215CB6842003F0C46 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		44B7949415CB6A47003F0C46 /* Calendar_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar_Image.png; sourceTree = "<group>"; };
+		44B7949615CB6CC9003F0C46 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		44B7949715CB6CCA003F0C46 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		44B7949A15CB7268003F0C46 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewControllerbckup.xib; sourceTree = "<group>"; };
+		44B7949C15CB75B3003F0C46 /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
+		44B794A315CB7B7C003F0C46 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		44B794A915CB81DA003F0C46 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		44B794AB15CB86F0003F0C46 /* List_TabIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = List_TabIcon.png; sourceTree = "<group>"; };
+		44B794AD15CBA87F003F0C46 /* CustCalViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustCalViewCell.h; sourceTree = "<group>"; };
+		44B794AE15CBA880003F0C46 /* CustCalViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustCalViewCell.m; sourceTree = "<group>"; };
+		44B794B015CBA9CF003F0C46 /* CustCalViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustCalViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B794AA15CB81DA003F0C46 /* EventKit.framework in Frameworks */,
 				44B7946D15CB64AC003F0C46 /* UIKit.framework in Frameworks */,
 				44B7946F15CB64AC003F0C46 /* Foundation.framework in Frameworks */,
 				44B7947115CB64AC003F0C46 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +99,7 @@
 		44B7946B15CB64AC003F0C46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44B794A915CB81DA003F0C46 /* EventKit.framework */,
 				44B7946C15CB64AC003F0C46 /* UIKit.framework */,
 				44B7946E15CB64AC003F0C46 /* Foundation.framework */,
 				44B7947015CB64AC003F0C46 /* CoreGraphics.framework */,
@@ -81,7 +114,16 @@
 				44B7947C15CB64AD003F0C46 /* AppDelegate.m */,
 				44B7947E15CB64AD003F0C46 /* ViewController.h */,
 				44B7947F15CB64AD003F0C46 /* ViewController.m */,
-				44B7948115CB64AD003F0C46 /* ViewController.xib */,
+				44B7949115CB6842003F0C46 /* DetailViewController.h */,
+				44B7949215CB6842003F0C46 /* DetailViewController.m */,
+				44B7949615CB6CC9003F0C46 /* CalendarViewController.h */,
+				44B7949715CB6CCA003F0C46 /* CalendarViewController.m */,
+				44B7948E15CB66BA003F0C46 /* CustomTableViewCell.h */,
+				44B7948D15CB66BA003F0C46 /* CustomTableViewCell.m */,
+				44B794AD15CBA87F003F0C46 /* CustCalViewCell.h */,
+				44B794AE15CBA880003F0C46 /* CustCalViewCell.m */,
+				44B7948915CB65C1003F0C46 /* MyEventData.h */,
+				44B7948A15CB65C1003F0C46 /* MyEventData.m */,
 				44B7947315CB64AD003F0C46 /* Supporting Files */,
 			);
 			path = booker_craig_project1;
@@ -90,6 +132,14 @@
 		44B7947315CB64AD003F0C46 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				44B794B015CBA9CF003F0C46 /* CustCalViewCell.xib */,
+				44B794A315CB7B7C003F0C46 /* DetailView.xib */,
+				44B7949C15CB75B3003F0C46 /* CalendarView.xib */,
+				44B794AB15CB86F0003F0C46 /* List_TabIcon.png */,
+				44B7949415CB6A47003F0C46 /* Calendar_Image.png */,
+				44B7948115CB64AD003F0C46 /* ViewController.xib */,
+				44B7949915CB7268003F0C46 /* ViewControllerbckup.xib */,
+				44B7948C15CB66BA003F0C46 /* CustomTableViewCell.xib */,
 				44B7947415CB64AD003F0C46 /* booker_craig_project1-Info.plist */,
 				44B7947515CB64AD003F0C46 /* InfoPlist.strings */,
 				44B7947815CB64AD003F0C46 /* main.m */,
@@ -151,6 +201,13 @@
 			files = (
 				44B7947715CB64AD003F0C46 /* InfoPlist.strings in Resources */,
 				44B7948315CB64AD003F0C46 /* ViewController.xib in Resources */,
+				44B7948F15CB66BA003F0C46 /* CustomTableViewCell.xib in Resources */,
+				44B7949515CB6A47003F0C46 /* Calendar_Image.png in Resources */,
+				44B7949B15CB7268003F0C46 /* ViewControllerbckup.xib in Resources */,
+				44B794A015CB75B3003F0C46 /* CalendarView.xib in Resources */,
+				44B794A415CB7B7C003F0C46 /* DetailView.xib in Resources */,
+				44B794AC15CB86F1003F0C46 /* List_TabIcon.png in Resources */,
+				44B794B115CBA9CF003F0C46 /* CustCalViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +221,11 @@
 				44B7947915CB64AD003F0C46 /* main.m in Sources */,
 				44B7947D15CB64AD003F0C46 /* AppDelegate.m in Sources */,
 				44B7948015CB64AD003F0C46 /* ViewController.m in Sources */,
+				44B7948B15CB65C1003F0C46 /* MyEventData.m in Sources */,
+				44B7949015CB66BA003F0C46 /* CustomTableViewCell.m in Sources */,
+				44B7949315CB6842003F0C46 /* DetailViewController.m in Sources */,
+				44B7949815CB6CCA003F0C46 /* CalendarViewController.m in Sources */,
+				44B794AF15CBA880003F0C46 /* CustCalViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +246,14 @@
 				44B7948215CB64AD003F0C46 /* en */,
 			);
 			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		44B7949915CB7268003F0C46 /* ViewControllerbckup.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44B7949A15CB7268003F0C46 /* en */,
+			);
+			name = ViewControllerbckup.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

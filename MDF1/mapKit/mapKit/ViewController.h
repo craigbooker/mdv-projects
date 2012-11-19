@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/Mapkit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MKMapViewDelegate>
+{
+    IBOutlet MKMapView *mapView;
+    NSArray *myMapAnnotations;
+}
 
+-(IBAction)onClick:(id)sender;
 @end

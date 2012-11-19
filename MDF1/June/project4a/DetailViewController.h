@@ -7,20 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
-#import "MyAnnotation.h"
+#import "MyTweet.h"
 
 
 @interface DetailViewController : UIViewController {
 	
     IBOutlet MKMapView *myMapView;
-    MyAnnotation* passAnnoStorage;
+    MyTweet* passAnnoStorage;
     IBOutlet UILabel *locName;
     IBOutlet UILabel *locCoords;
 
 }
 
 @property (assign) IBOutlet MKMapView *myMapView;
-- (IBAction)showMyMap:(CLLocationCoordinate2D)coord title:(NSString *)title;
+
 
 @end

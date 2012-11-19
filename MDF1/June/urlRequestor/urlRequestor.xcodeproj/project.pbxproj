@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		448F80C815951BD700B1A444 /* twitter-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F80C715951BD700B1A444 /* twitter-logo.png */; };
 		44CC76BC1595003300ADA02D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CC76BB1595003300ADA02D /* UIKit.framework */; };
 		44CC76BE1595003300ADA02D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CC76BD1595003300ADA02D /* Foundation.framework */; };
 		44CC76C01595003300ADA02D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CC76BF1595003300ADA02D /* CoreGraphics.framework */; };
@@ -15,22 +16,35 @@
 		44CC76CC1595003300ADA02D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC76CB1595003300ADA02D /* AppDelegate.m */; };
 		44CC76CF1595003300ADA02D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC76CE1595003300ADA02D /* ViewController.m */; };
 		44CC76D21595003300ADA02D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44CC76D01595003300ADA02D /* ViewController.xib */; };
+		44CC76DA159504B100ADA02D /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC76D9159504B100ADA02D /* XMLParser.m */; };
+		44CC76DD159505B700ADA02D /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC76DC159505B700ADA02D /* Tweet.m */; };
+		44CC76E31595075500ADA02D /* URLRequestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC76E21595075500ADA02D /* URLRequestor.m */; };
+		44CC76E615950F9700ADA02D /* requestParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CC76E515950F9700ADA02D /* requestParse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		448F80C715951BD700B1A444 /* twitter-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-logo.png"; sourceTree = "<group>"; };
 		44CC76B71595003300ADA02D /* urlRequestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = urlRequestor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CC76BB1595003300ADA02D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44CC76BD1595003300ADA02D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44CC76BF1595003300ADA02D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		44CC76C31595003300ADA02D /* urlRequestor-Info.plist */ = {isa = PBXFileReference; path = "urlRequestor-Info.plist"; sourceTree = "<group>"; };
+		44CC76C31595003300ADA02D /* urlRequestor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "urlRequestor-Info.plist"; sourceTree = "<group>"; };
 		44CC76C51595003300ADA02D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44CC76C71595003300ADA02D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		44CC76C91595003300ADA02D /* urlRequestor-Prefix.pch */ = {isa = PBXFileReference; path = "urlRequestor-Prefix.pch"; sourceTree = "<group>"; };
-		44CC76CA1595003300ADA02D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		44CC76C91595003300ADA02D /* urlRequestor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "urlRequestor-Prefix.pch"; sourceTree = "<group>"; };
+		44CC76CA1595003300ADA02D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44CC76CB1595003300ADA02D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		44CC76CD1595003300ADA02D /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		44CC76CD1595003300ADA02D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		44CC76CE1595003300ADA02D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		44CC76D11595003300ADA02D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		44CC76D8159504B100ADA02D /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		44CC76D9159504B100ADA02D /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		44CC76DB159505B700ADA02D /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		44CC76DC159505B700ADA02D /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		44CC76E11595075500ADA02D /* URLRequestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLRequestor.h; sourceTree = "<group>"; };
+		44CC76E21595075500ADA02D /* URLRequestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLRequestor.m; sourceTree = "<group>"; };
+		44CC76E415950F9700ADA02D /* requestParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requestParse.h; sourceTree = "<group>"; };
+		44CC76E515950F9700ADA02D /* requestParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = requestParse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +91,21 @@
 		44CC76C11595003300ADA02D /* urlRequestor */ = {
 			isa = PBXGroup;
 			children = (
+				448F80C715951BD700B1A444 /* twitter-logo.png */,
 				44CC76CA1595003300ADA02D /* AppDelegate.h */,
 				44CC76CB1595003300ADA02D /* AppDelegate.m */,
 				44CC76CD1595003300ADA02D /* ViewController.h */,
 				44CC76CE1595003300ADA02D /* ViewController.m */,
+				44CC76DB159505B700ADA02D /* Tweet.h */,
+				44CC76DC159505B700ADA02D /* Tweet.m */,
+				44CC76E11595075500ADA02D /* URLRequestor.h */,
+				44CC76E21595075500ADA02D /* URLRequestor.m */,
+				44CC76D8159504B100ADA02D /* XMLParser.h */,
+				44CC76D9159504B100ADA02D /* XMLParser.m */,
 				44CC76D01595003300ADA02D /* ViewController.xib */,
 				44CC76C21595003300ADA02D /* Supporting Files */,
+				44CC76E415950F9700ADA02D /* requestParse.h */,
+				44CC76E515950F9700ADA02D /* requestParse.m */,
 			);
 			path = urlRequestor;
 			sourceTree = "<group>";
@@ -150,6 +173,7 @@
 			files = (
 				44CC76C61595003300ADA02D /* InfoPlist.strings in Resources */,
 				44CC76D21595003300ADA02D /* ViewController.xib in Resources */,
+				448F80C815951BD700B1A444 /* twitter-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +187,10 @@
 				44CC76C81595003300ADA02D /* main.m in Sources */,
 				44CC76CC1595003300ADA02D /* AppDelegate.m in Sources */,
 				44CC76CF1595003300ADA02D /* ViewController.m in Sources */,
+				44CC76DA159504B100ADA02D /* XMLParser.m in Sources */,
+				44CC76DD159505B700ADA02D /* Tweet.m in Sources */,
+				44CC76E31595075500ADA02D /* URLRequestor.m in Sources */,
+				44CC76E615950F9700ADA02D /* requestParse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +302,7 @@
 				44CC76D71595003300ADA02D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

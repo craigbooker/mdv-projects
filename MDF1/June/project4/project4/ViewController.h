@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMLParser.h"
+#import "Tweet.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+{
+    NSMutableArray *mainArray;
+}
+@property (nonatomic, retain) UIImageView *customImage;
+@property (weak, nonatomic) IBOutlet UITableView *tweetsTableView;
+@property (nonatomic, retain) NSMutableArray *mainArray;
 @end
+

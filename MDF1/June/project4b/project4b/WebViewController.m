@@ -8,7 +8,7 @@
 
 #import "WebViewController.h"
 #import "MainViewController.h"
-#import "MyTweet.h"
+#import "Tweet.h"
 #import "AppDelegate.h"
 
 @interface WebViewController ()
@@ -16,7 +16,7 @@
 @end
 
 @implementation WebViewController
-@synthesize listViewMap;
+//@synthesize webView;
 @synthesize locationViewArray;
 
 
@@ -37,6 +37,15 @@
 {
     [super viewDidLoad];
     self.navigationController.navigationBar.tintColor=[UIColor blackColor];
+    NSURL *url = [[NSURL alloc] initWithString:@"http://api.twitter.com/statuses/user_timeline/obd2.xml"];
+    if (url != nil)
+    {
+        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+        if (request != nil)
+        {
+            [myWebView loadRequest:request];
+        }
+    }
 }
 
 -(void) viewWillAppear: (BOOL)animated

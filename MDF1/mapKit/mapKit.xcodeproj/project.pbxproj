@@ -15,6 +15,10 @@
 		44116BC21561CF2000E28791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44116BC11561CF2000E28791 /* AppDelegate.m */; };
 		44116BC51561CF2000E28791 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44116BC41561CF2000E28791 /* ViewController.m */; };
 		44116BC81561CF2000E28791 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44116BC61561CF2000E28791 /* ViewController.xib */; };
+		44116BCF1561CF3200E28791 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44116BCE1561CF3200E28791 /* MapKit.framework */; };
+		4415E73615659DD4002C12B1 /* MyMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4415E73515659DD4002C12B1 /* MyMapAnnotation.m */; };
+		4415E7391565C5AD002C12B1 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4415E7381565C5AD002C12B1 /* appicon.png */; };
+		4415E73C1565D1D4002C12B1 /* MyAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4415E73B1565D1D4002C12B1 /* MyAnnotationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +26,21 @@
 		44116BB11561CF2000E28791 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44116BB31561CF2000E28791 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44116BB51561CF2000E28791 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		44116BB91561CF2000E28791 /* mapKit-Info.plist */ = {isa = PBXFileReference; path = "mapKit-Info.plist"; sourceTree = "<group>"; };
+		44116BB91561CF2000E28791 /* mapKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mapKit-Info.plist"; sourceTree = "<group>"; };
 		44116BBB1561CF2000E28791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44116BBD1561CF2000E28791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		44116BBF1561CF2000E28791 /* mapKit-Prefix.pch */ = {isa = PBXFileReference; path = "mapKit-Prefix.pch"; sourceTree = "<group>"; };
-		44116BC01561CF2000E28791 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		44116BBF1561CF2000E28791 /* mapKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mapKit-Prefix.pch"; sourceTree = "<group>"; };
+		44116BC01561CF2000E28791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44116BC11561CF2000E28791 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		44116BC31561CF2000E28791 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		44116BC31561CF2000E28791 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		44116BC41561CF2000E28791 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		44116BC71561CF2000E28791 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		44116BCE1561CF3200E28791 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4415E73415659DD4002C12B1 /* MyMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyMapAnnotation.h; path = "../../../../../../Craig/github/mdv-projects/MDF1/mapKit/mapKit/MyMapAnnotation.h"; sourceTree = "<group>"; };
+		4415E73515659DD4002C12B1 /* MyMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyMapAnnotation.m; path = "../../../../../../Craig/github/mdv-projects/MDF1/mapKit/mapKit/MyMapAnnotation.m"; sourceTree = "<group>"; };
+		4415E7381565C5AD002C12B1 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		4415E73A1565D1D4002C12B1 /* MyAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAnnotationView.h; path = "../../../../../../Craig/github/mdv-projects/MDF1/mapKit/mapKit/MyAnnotationView.h"; sourceTree = "<group>"; };
+		4415E73B1565D1D4002C12B1 /* MyAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAnnotationView.m; path = "../../../../../../Craig/github/mdv-projects/MDF1/mapKit/mapKit/MyAnnotationView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44116BCF1561CF3200E28791 /* MapKit.framework in Frameworks */,
 				44116BB21561CF2000E28791 /* UIKit.framework in Frameworks */,
 				44116BB41561CF2000E28791 /* Foundation.framework in Frameworks */,
 				44116BB61561CF2000E28791 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +61,7 @@
 		44116BA21561CF1F00E28791 = {
 			isa = PBXGroup;
 			children = (
+				44116BCE1561CF3200E28791 /* MapKit.framework */,
 				44116BB71561CF2000E28791 /* mapKit */,
 				44116BB01561CF2000E28791 /* Frameworks */,
 				44116BAE1561CF2000E28791 /* Products */,
@@ -77,12 +89,17 @@
 		44116BB71561CF2000E28791 /* mapKit */ = {
 			isa = PBXGroup;
 			children = (
+				4415E7381565C5AD002C12B1 /* appicon.png */,
 				44116BC01561CF2000E28791 /* AppDelegate.h */,
 				44116BC11561CF2000E28791 /* AppDelegate.m */,
 				44116BC31561CF2000E28791 /* ViewController.h */,
 				44116BC41561CF2000E28791 /* ViewController.m */,
 				44116BC61561CF2000E28791 /* ViewController.xib */,
 				44116BB81561CF2000E28791 /* Supporting Files */,
+				4415E73415659DD4002C12B1 /* MyMapAnnotation.h */,
+				4415E73515659DD4002C12B1 /* MyMapAnnotation.m */,
+				4415E73A1565D1D4002C12B1 /* MyAnnotationView.h */,
+				4415E73B1565D1D4002C12B1 /* MyAnnotationView.m */,
 			);
 			path = mapKit;
 			sourceTree = "<group>";
@@ -150,6 +167,7 @@
 			files = (
 				44116BBC1561CF2000E28791 /* InfoPlist.strings in Resources */,
 				44116BC81561CF2000E28791 /* ViewController.xib in Resources */,
+				4415E7391565C5AD002C12B1 /* appicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +181,8 @@
 				44116BBE1561CF2000E28791 /* main.m in Sources */,
 				44116BC21561CF2000E28791 /* AppDelegate.m in Sources */,
 				44116BC51561CF2000E28791 /* ViewController.m in Sources */,
+				4415E73615659DD4002C12B1 /* MyMapAnnotation.m in Sources */,
+				4415E73C1565D1D4002C12B1 /* MyAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +292,7 @@
 				44116BCD1561CF2000E28791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

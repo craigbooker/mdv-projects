@@ -6,8 +6,19 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "locations.h"
+#import "BizLocations.h"
 
-@implementation locations
-
+@implementation BizLocations
+@synthesize xBizName;
+@synthesize xLocation;
+@synthesize xLatValue;
+@synthesize xLongValue;
+-(void)dealloc
+{
+    [xBizName release]; 
+    [xLocation release]; 
+    [xLatValue release];
+    [xLongValue release];
+	[super dealloc];
+}
 @end

@@ -13,8 +13,27 @@
 		448F80F41595206E00B1A444 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 448F80F21595206E00B1A444 /* InfoPlist.strings */; };
 		448F80F61595206E00B1A444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F80F51595206E00B1A444 /* main.m */; };
 		448F80FA1595206E00B1A444 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F80F91595206E00B1A444 /* AppDelegate.m */; };
-		448F80FD1595206E00B1A444 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F80FC1595206E00B1A444 /* ViewController.m */; };
-		448F81001595206E00B1A444 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448F80FE1595206E00B1A444 /* ViewController.xib */; };
+		448F810D159520DB00B1A444 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F8107159520DB00B1A444 /* DetailViewController.m */; };
+		448F810E159520DB00B1A444 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F8109159520DB00B1A444 /* MainViewController.m */; };
+		448F810F159520DB00B1A444 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448F810A159520DB00B1A444 /* MainViewController.xib */; };
+		448F8110159520DB00B1A444 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F810C159520DB00B1A444 /* XMLParser.m */; };
+		448F8118159520F400B1A444 /* RequestParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F8112159520F400B1A444 /* RequestParse.m */; };
+		448F8119159520F400B1A444 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F8114159520F400B1A444 /* Tweet.m */; };
+		448F811A159520F400B1A444 /* twitter-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F8115159520F400B1A444 /* twitter-logo.png */; };
+		448F811B159520F400B1A444 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F8117159520F400B1A444 /* WebViewController.m */; };
+		448F81261595211A00B1A444 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F811D1595211A00B1A444 /* appicon.png */; };
+		448F81271595211A00B1A444 /* appicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F811E1595211A00B1A444 /* appicon@2x.png */; };
+		448F81281595211A00B1A444 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F811F1595211A00B1A444 /* default.png */; };
+		448F81291595211A00B1A444 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F81201595211A00B1A444 /* default@2x.png */; };
+		448F812A1595211A00B1A444 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F81211595211A00B1A444 /* first.png */; };
+		448F812B1595211A00B1A444 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F81221595211A00B1A444 /* first@2x.png */; };
+		448F812C1595211A00B1A444 /* gauge1.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F81231595211A00B1A444 /* gauge1.png */; };
+		448F812D1595211A00B1A444 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F81241595211A00B1A444 /* second.png */; };
+		448F812E1595211A00B1A444 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448F81251595211A00B1A444 /* second@2x.png */; };
+		448F81321595215200B1A444 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448F81301595215200B1A444 /* DetailViewController.xib */; };
+		448F81331595215200B1A444 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448F81311595215200B1A444 /* WebViewController.xib */; };
+		448F81351595235000B1A444 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448F81341595235000B1A444 /* CoreLocation.framework */; };
+		448F81371595235900B1A444 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448F81361595235900B1A444 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +41,39 @@
 		448F80E91595206E00B1A444 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		448F80EB1595206E00B1A444 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		448F80ED1595206E00B1A444 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		448F80F11595206E00B1A444 /* project4b-Info.plist */ = {isa = PBXFileReference; path = "project4b-Info.plist"; sourceTree = "<group>"; };
+		448F80F11595206E00B1A444 /* project4b-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "project4b-Info.plist"; sourceTree = "<group>"; };
 		448F80F31595206E00B1A444 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		448F80F51595206E00B1A444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		448F80F71595206E00B1A444 /* project4b-Prefix.pch */ = {isa = PBXFileReference; path = "project4b-Prefix.pch"; sourceTree = "<group>"; };
-		448F80F81595206E00B1A444 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		448F80F71595206E00B1A444 /* project4b-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "project4b-Prefix.pch"; sourceTree = "<group>"; };
+		448F80F81595206E00B1A444 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		448F80F91595206E00B1A444 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		448F80FB1595206E00B1A444 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		448F80FC1595206E00B1A444 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		448F80FF1595206E00B1A444 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		448F8106159520DB00B1A444 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		448F8107159520DB00B1A444 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		448F8108159520DB00B1A444 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		448F8109159520DB00B1A444 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		448F810A159520DB00B1A444 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		448F810B159520DB00B1A444 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		448F810C159520DB00B1A444 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		448F8111159520F400B1A444 /* RequestParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestParse.h; sourceTree = "<group>"; };
+		448F8112159520F400B1A444 /* RequestParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestParse.m; sourceTree = "<group>"; };
+		448F8113159520F400B1A444 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		448F8114159520F400B1A444 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		448F8115159520F400B1A444 /* twitter-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-logo.png"; sourceTree = "<group>"; };
+		448F8116159520F400B1A444 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		448F8117159520F400B1A444 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		448F811D1595211A00B1A444 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		448F811E1595211A00B1A444 /* appicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon@2x.png"; sourceTree = "<group>"; };
+		448F811F1595211A00B1A444 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		448F81201595211A00B1A444 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+		448F81211595211A00B1A444 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		448F81221595211A00B1A444 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		448F81231595211A00B1A444 /* gauge1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gauge1.png; sourceTree = "<group>"; };
+		448F81241595211A00B1A444 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		448F81251595211A00B1A444 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		448F81301595215200B1A444 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		448F81311595215200B1A444 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		448F81341595235000B1A444 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		448F81361595235900B1A444 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448F81371595235900B1A444 /* MapKit.framework in Frameworks */,
+				448F81351595235000B1A444 /* CoreLocation.framework in Frameworks */,
 				448F80EA1595206E00B1A444 /* UIKit.framework in Frameworks */,
 				448F80EC1595206E00B1A444 /* Foundation.framework in Frameworks */,
 				448F80EE1595206E00B1A444 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +95,8 @@
 		448F80DA1595206E00B1A444 = {
 			isa = PBXGroup;
 			children = (
+				448F81361595235900B1A444 /* MapKit.framework */,
+				448F81341595235000B1A444 /* CoreLocation.framework */,
 				448F80EF1595206E00B1A444 /* project4b */,
 				448F80E81595206E00B1A444 /* Frameworks */,
 				448F80E61595206E00B1A444 /* Products */,
@@ -77,11 +124,22 @@
 		448F80EF1595206E00B1A444 /* project4b */ = {
 			isa = PBXGroup;
 			children = (
+				448F812F1595213200B1A444 /* xib */,
+				448F811C159520FE00B1A444 /* images */,
 				448F80F81595206E00B1A444 /* AppDelegate.h */,
 				448F80F91595206E00B1A444 /* AppDelegate.m */,
-				448F80FB1595206E00B1A444 /* ViewController.h */,
-				448F80FC1595206E00B1A444 /* ViewController.m */,
-				448F80FE1595206E00B1A444 /* ViewController.xib */,
+				448F8108159520DB00B1A444 /* MainViewController.h */,
+				448F8109159520DB00B1A444 /* MainViewController.m */,
+				448F8106159520DB00B1A444 /* DetailViewController.h */,
+				448F8107159520DB00B1A444 /* DetailViewController.m */,
+				448F8116159520F400B1A444 /* WebViewController.h */,
+				448F8117159520F400B1A444 /* WebViewController.m */,
+				448F8111159520F400B1A444 /* RequestParse.h */,
+				448F8112159520F400B1A444 /* RequestParse.m */,
+				448F8113159520F400B1A444 /* Tweet.h */,
+				448F8114159520F400B1A444 /* Tweet.m */,
+				448F810B159520DB00B1A444 /* XMLParser.h */,
+				448F810C159520DB00B1A444 /* XMLParser.m */,
 				448F80F01595206E00B1A444 /* Supporting Files */,
 			);
 			path = project4b;
@@ -96,6 +154,33 @@
 				448F80F71595206E00B1A444 /* project4b-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		448F811C159520FE00B1A444 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				448F811D1595211A00B1A444 /* appicon.png */,
+				448F8115159520F400B1A444 /* twitter-logo.png */,
+				448F811E1595211A00B1A444 /* appicon@2x.png */,
+				448F811F1595211A00B1A444 /* default.png */,
+				448F81201595211A00B1A444 /* default@2x.png */,
+				448F81211595211A00B1A444 /* first.png */,
+				448F81221595211A00B1A444 /* first@2x.png */,
+				448F81231595211A00B1A444 /* gauge1.png */,
+				448F81241595211A00B1A444 /* second.png */,
+				448F81251595211A00B1A444 /* second@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		448F812F1595213200B1A444 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				448F81301595215200B1A444 /* DetailViewController.xib */,
+				448F81311595215200B1A444 /* WebViewController.xib */,
+				448F810A159520DB00B1A444 /* MainViewController.xib */,
+			);
+			name = xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +234,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				448F80F41595206E00B1A444 /* InfoPlist.strings in Resources */,
-				448F81001595206E00B1A444 /* ViewController.xib in Resources */,
+				448F810F159520DB00B1A444 /* MainViewController.xib in Resources */,
+				448F811A159520F400B1A444 /* twitter-logo.png in Resources */,
+				448F81261595211A00B1A444 /* appicon.png in Resources */,
+				448F81271595211A00B1A444 /* appicon@2x.png in Resources */,
+				448F81281595211A00B1A444 /* default.png in Resources */,
+				448F81291595211A00B1A444 /* default@2x.png in Resources */,
+				448F812A1595211A00B1A444 /* first.png in Resources */,
+				448F812B1595211A00B1A444 /* first@2x.png in Resources */,
+				448F812C1595211A00B1A444 /* gauge1.png in Resources */,
+				448F812D1595211A00B1A444 /* second.png in Resources */,
+				448F812E1595211A00B1A444 /* second@2x.png in Resources */,
+				448F81321595215200B1A444 /* DetailViewController.xib in Resources */,
+				448F81331595215200B1A444 /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +259,12 @@
 			files = (
 				448F80F61595206E00B1A444 /* main.m in Sources */,
 				448F80FA1595206E00B1A444 /* AppDelegate.m in Sources */,
-				448F80FD1595206E00B1A444 /* ViewController.m in Sources */,
+				448F810D159520DB00B1A444 /* DetailViewController.m in Sources */,
+				448F810E159520DB00B1A444 /* MainViewController.m in Sources */,
+				448F8110159520DB00B1A444 /* XMLParser.m in Sources */,
+				448F8118159520F400B1A444 /* RequestParse.m in Sources */,
+				448F8119159520F400B1A444 /* Tweet.m in Sources */,
+				448F811B159520F400B1A444 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,14 +277,6 @@
 				448F80F31595206E00B1A444 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		448F80FE1595206E00B1A444 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				448F80FF1595206E00B1A444 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

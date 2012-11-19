@@ -135,7 +135,7 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [sensorArray count];
+    return [sensorNames count];
 }
 -(NSInteger)numberofSectionsInTableView:(UITableView *)tableView
 {

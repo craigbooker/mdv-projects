@@ -8,14 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomTableViewCell : UITableViewCell
-{
-    IBOutlet UILabel *eventTitleLabel;
-    IBOutlet UILabel *eventDateLabel;
-    IBOutlet UIImageView *eventImage;
-}
+@interface CustomTableCell : UITableViewCell
 
-@property (nonatomic, strong) IBOutlet UILabel *eventTitleLabel;
-@property (nonatomic, strong) IBOutlet UILabel *eventDateLabel;
-@property (nonatomic, strong) IBOutlet UIImageView *eventImage;
+
+@property (nonatomic, weak) IBOutlet UILabel *movieNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *movieTimesLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *thumbnailImageView;
 @end

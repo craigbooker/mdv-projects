@@ -14,8 +14,20 @@
 
 @implementation ViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.tabBarItem.image = [UIImage imageNamed:@"List_TabIcon.png"];
+        self.tabBarItem.title = NSLocalizedString(@"Instructions", @"Instructions");
+        // Custom initialization
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
+     self.navigationController.navigationBar.tintColor=[UIColor blackColor];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "XMLParser.h"
-#import "MyTweet.h"
+#import "WebViewController.h"
+#import "Tweet.h"
 
 @implementation XMLParser 
 @synthesize tweets = _tweets;
@@ -16,7 +17,7 @@
 
 NSMutableString	*currentNodeContent;
 NSXMLParser		*parser;
-MyTweet			*currentTweet;
+Tweet			*currentTweet;
 bool            isStatus;
 
 -(id) loadXMLByURL:(NSString *)urlString
@@ -39,7 +40,7 @@ bool            isStatus;
 {
 	if ([elementname isEqualToString:@"status"]) 
 	{
-		currentTweet = [MyTweet alloc];
+		currentTweet = [Tweet alloc];
         isStatus = YES;
 	}
 	if ([elementname isEqualToString:@"user"]) 

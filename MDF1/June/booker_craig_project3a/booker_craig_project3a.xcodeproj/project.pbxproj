@@ -13,8 +13,23 @@
 		445D8AE6158ADCC800583668 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 445D8AE4158ADCC800583668 /* InfoPlist.strings */; };
 		445D8AE8158ADCC800583668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8AE7158ADCC800583668 /* main.m */; };
 		445D8AEC158ADCC900583668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8AEB158ADCC900583668 /* AppDelegate.m */; };
-		445D8AEF158ADCC900583668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8AEE158ADCC900583668 /* ViewController.m */; };
 		445D8AF2158ADCC900583668 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8AF0158ADCC900583668 /* ViewController.xib */; };
+		445D8AF9158ADCE000583668 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445D8AF8158ADCE000583668 /* MapKit.framework */; };
+		445D8AFC158ADD3C00583668 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8AFB158ADD3C00583668 /* FirstViewController.m */; };
+		445D8AFF158ADD7700583668 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8AFE158ADD7700583668 /* CustomTableViewCell.m */; };
+		445D8B08158AE08C00583668 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8B04158AE08C00583668 /* first.png */; };
+		445D8B09158AE08C00583668 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8B05158AE08C00583668 /* first@2x.png */; };
+		445D8B0A158AE08C00583668 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8B06158AE08C00583668 /* second.png */; };
+		445D8B0B158AE08C00583668 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8B07158AE08C00583668 /* second@2x.png */; };
+		445D8B10158AE0A200583668 /* LocInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8B0D158AE0A200583668 /* LocInfo.m */; };
+		445D8B11158AE0A200583668 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8B0F158AE0A200583668 /* SecondViewController.m */; };
+		445D8B14158AE0CD00583668 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8B12158AE0CD00583668 /* FirstViewController.xib */; };
+		445D8B15158AE0CD00583668 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8B13158AE0CD00583668 /* SecondViewController.xib */; };
+		445D8B17158AE16500583668 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445D8B16158AE16500583668 /* CoreLocation.framework */; };
+		445D8B25158BF53B00583668 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8B24158BF53B00583668 /* CustomTableViewCell.xib */; };
+		445D8B27158BF6E300583668 /* add-this.png in Resources */ = {isa = PBXBuildFile; fileRef = 445D8B26158BF6E300583668 /* add-this.png */; };
+		445D8B2A158BF8C300583668 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445D8B29158BF8C300583668 /* DetailViewController.m */; };
+		445D8B2C158BF91000583668 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D8B2B158BF91000583668 /* DetailView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +37,34 @@
 		445D8ADB158ADCC800583668 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		445D8ADD158ADCC800583668 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		445D8ADF158ADCC800583668 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		445D8AE3158ADCC800583668 /* booker_craig_project3a-Info.plist */ = {isa = PBXFileReference; path = "booker_craig_project3a-Info.plist"; sourceTree = "<group>"; };
+		445D8AE3158ADCC800583668 /* booker_craig_project3a-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "booker_craig_project3a-Info.plist"; sourceTree = "<group>"; };
 		445D8AE5158ADCC800583668 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		445D8AE7158ADCC800583668 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		445D8AE9158ADCC900583668 /* booker_craig_project3a-Prefix.pch */ = {isa = PBXFileReference; path = "booker_craig_project3a-Prefix.pch"; sourceTree = "<group>"; };
-		445D8AEA158ADCC900583668 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		445D8AE9158ADCC900583668 /* booker_craig_project3a-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "booker_craig_project3a-Prefix.pch"; sourceTree = "<group>"; };
+		445D8AEA158ADCC900583668 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		445D8AEB158ADCC900583668 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		445D8AED158ADCC900583668 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		445D8AEE158ADCC900583668 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		445D8AF1158ADCC900583668 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		445D8AF8158ADCE000583668 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		445D8AFA158ADD3C00583668 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		445D8AFB158ADD3C00583668 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		445D8AFD158ADD7700583668 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		445D8AFE158ADD7700583668 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		445D8B04158AE08C00583668 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		445D8B05158AE08C00583668 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		445D8B06158AE08C00583668 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		445D8B07158AE08C00583668 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		445D8B0C158AE0A200583668 /* LocInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocInfo.h; path = ../LocInfo.h; sourceTree = "<group>"; };
+		445D8B0D158AE0A200583668 /* LocInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocInfo.m; path = ../LocInfo.m; sourceTree = "<group>"; };
+		445D8B0E158AE0A200583668 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ../SecondViewController.h; sourceTree = "<group>"; };
+		445D8B0F158AE0A200583668 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../SecondViewController.m; sourceTree = "<group>"; };
+		445D8B12158AE0CD00583668 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FirstViewController.xib; path = ../FirstViewController.xib; sourceTree = "<group>"; };
+		445D8B13158AE0CD00583668 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SecondViewController.xib; path = ../SecondViewController.xib; sourceTree = "<group>"; };
+		445D8B16158AE16500583668 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		445D8B24158BF53B00583668 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomTableViewCell.xib; path = ../CustomTableViewCell.xib; sourceTree = "<group>"; };
+		445D8B26158BF6E300583668 /* add-this.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-this.png"; path = "../add-this.png"; sourceTree = "<group>"; };
+		445D8B28158BF8C300583668 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		445D8B29158BF8C300583668 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		445D8B2B158BF91000583668 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailView.xib; path = ../DetailView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445D8B17158AE16500583668 /* CoreLocation.framework in Frameworks */,
+				445D8AF9158ADCE000583668 /* MapKit.framework in Frameworks */,
 				445D8ADC158ADCC800583668 /* UIKit.framework in Frameworks */,
 				445D8ADE158ADCC800583668 /* Foundation.framework in Frameworks */,
 				445D8AE0158ADCC800583668 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +86,8 @@
 		445D8ACC158ADCC800583668 = {
 			isa = PBXGroup;
 			children = (
+				445D8B16158AE16500583668 /* CoreLocation.framework */,
+				445D8AF8158ADCE000583668 /* MapKit.framework */,
 				445D8AE1158ADCC800583668 /* booker_craig_project3a */,
 				445D8ADA158ADCC800583668 /* Frameworks */,
 				445D8AD8158ADCC800583668 /* Products */,
@@ -77,11 +115,28 @@
 		445D8AE1158ADCC800583668 /* booker_craig_project3a */ = {
 			isa = PBXGroup;
 			children = (
+				445D8B0C158AE0A200583668 /* LocInfo.h */,
+				445D8B0D158AE0A200583668 /* LocInfo.m */,
+				445D8AFA158ADD3C00583668 /* FirstViewController.h */,
+				445D8AFB158ADD3C00583668 /* FirstViewController.m */,
+				445D8B0E158AE0A200583668 /* SecondViewController.h */,
+				445D8B0F158AE0A200583668 /* SecondViewController.m */,
+				445D8B28158BF8C300583668 /* DetailViewController.h */,
+				445D8B29158BF8C300583668 /* DetailViewController.m */,
+				445D8B26158BF6E300583668 /* add-this.png */,
+				445D8B04158AE08C00583668 /* first.png */,
+				445D8B05158AE08C00583668 /* first@2x.png */,
+				445D8B06158AE08C00583668 /* second.png */,
+				445D8B07158AE08C00583668 /* second@2x.png */,
+				445D8AFD158ADD7700583668 /* CustomTableViewCell.h */,
+				445D8AFE158ADD7700583668 /* CustomTableViewCell.m */,
 				445D8AEA158ADCC900583668 /* AppDelegate.h */,
 				445D8AEB158ADCC900583668 /* AppDelegate.m */,
-				445D8AED158ADCC900583668 /* ViewController.h */,
-				445D8AEE158ADCC900583668 /* ViewController.m */,
+				445D8B2B158BF91000583668 /* DetailView.xib */,
+				445D8B24158BF53B00583668 /* CustomTableViewCell.xib */,
 				445D8AF0158ADCC900583668 /* ViewController.xib */,
+				445D8B12158AE0CD00583668 /* FirstViewController.xib */,
+				445D8B13158AE0CD00583668 /* SecondViewController.xib */,
 				445D8AE2158ADCC800583668 /* Supporting Files */,
 			);
 			path = booker_craig_project3a;
@@ -150,6 +205,15 @@
 			files = (
 				445D8AE6158ADCC800583668 /* InfoPlist.strings in Resources */,
 				445D8AF2158ADCC900583668 /* ViewController.xib in Resources */,
+				445D8B08158AE08C00583668 /* first.png in Resources */,
+				445D8B09158AE08C00583668 /* first@2x.png in Resources */,
+				445D8B0A158AE08C00583668 /* second.png in Resources */,
+				445D8B0B158AE08C00583668 /* second@2x.png in Resources */,
+				445D8B14158AE0CD00583668 /* FirstViewController.xib in Resources */,
+				445D8B15158AE0CD00583668 /* SecondViewController.xib in Resources */,
+				445D8B25158BF53B00583668 /* CustomTableViewCell.xib in Resources */,
+				445D8B27158BF6E300583668 /* add-this.png in Resources */,
+				445D8B2C158BF91000583668 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +226,11 @@
 			files = (
 				445D8AE8158ADCC800583668 /* main.m in Sources */,
 				445D8AEC158ADCC900583668 /* AppDelegate.m in Sources */,
-				445D8AEF158ADCC900583668 /* ViewController.m in Sources */,
+				445D8AFC158ADD3C00583668 /* FirstViewController.m in Sources */,
+				445D8AFF158ADD7700583668 /* CustomTableViewCell.m in Sources */,
+				445D8B10158AE0A200583668 /* LocInfo.m in Sources */,
+				445D8B11158AE0A200583668 /* SecondViewController.m in Sources */,
+				445D8B2A158BF8C300583668 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 #import <Foundation/Foundation.h>
 #import "RequestParse.h"
+#import "WebViewController.h"
 
 @implementation RequestParse 
 @synthesize tweets = _tweets;
@@ -31,6 +32,7 @@ bool            isStatus;
 	//NSData	*data   = [[NSData alloc] initWithContentsOfURL:url];
 	//NSData	*data   = [[NSData alloc] initWithContentsOfURL:requestData];    
 	//parser			= [[NSXMLParser alloc] initWithData:data];
+    
     parser = [[NSXMLParser alloc] initWithData:requestData];
 	parser.delegate = self;
 	[parser parse];

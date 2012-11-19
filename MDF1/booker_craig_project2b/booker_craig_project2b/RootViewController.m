@@ -30,42 +30,26 @@
     
     [super viewDidLoad]; 
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.sensorNameList = [[NSMutableArray alloc] initWithObjects:@"Absolute Throttle Position",
-                           @"Engine RPM", @"Vehicle Speed", @"Calculated Load Value", @"Timing Advance (Cyl#1)",
-                           @"Intake Manifold Pressure",
-                           @"Air Flow Rate (MAF Sensor)", 
-                           @"Fuel System Status", 
-                           @"Short Term Fuel Trim (Bank 1)", 
-                           @"Long Term Fuel Trim (Bank 1)", 
-                           @"Short Term Fuel Trim (Bank 2)", 
-                           @"Long Term Fuel Trim (Bank 2)", 
-                           @"Intake Air Temperature", 
-                           @"Coolant Temperature", 
-                           @"Fuel Pressure (guage)", 
-                           @"O2 Sensor 1, Bank 1", 
-                           @"O2 Sensor 2, Bank 1", 
-                           @"O2 Sensor 3, Bank 1", 
-                           @"O2 Sensor 4, Bank 1", 
-                           @"O2 Sensor 1, Bank 2", 
-                           @"O2 Sensor 2, Bank 2", 
-                           @"O2 Sensor 3, Bank 2", 
-                           @"O2 Sensor 4, Bank 2", 
-                           @"Time Since Engine Start", 
-                           @"Fuel Level Input",
-                           @"Barometric Pressure (Absolute)",
-                           @"Catalytic Converter Temp B1S1",
-                           @"Catalytic Converter Temp B2S1",
-                           @"Catalytic Converter Temp B1S2",
-                           @"Catalytic Converter Temp B2S2",
-                           @"ECU Voltage",
-                           @"Absolute Engine Load",
-                           @"Ambient Air Temperature", nil];
+    self.sensorNameList = [[NSMutableArray alloc] initWithObjects:
+    @"Absolute Throttle Position", @"Engine RPM", @"Vehicle Speed", @"Calculated Load Value", 
+    @"Timing Advance (Cyl#1)", @"Intake Manifold Pressure", @"Air Flow Rate (MAF Sensor)", @"Fuel System Status", 
+    @"Short Term Fuel Trim (Bank 1)", @"Long Term Fuel Trim (Bank 1)", @"Short Term Fuel Trim (Bank 2)", @"Long Term Fuel Trim (Bank 2)", 
+    @"Intake Air Temperature", @"Coolant Temperature", @"Fuel Pressure (guage)", 
+    @"O2 Sensor 1, Bank 1", @"O2 Sensor 2, Bank 1", @"O2 Sensor 3, Bank 1", @"O2 Sensor 4, Bank 1", 
+    @"O2 Sensor 1, Bank 2", @"O2 Sensor 2, Bank 2", @"O2 Sensor 3, Bank 2", @"O2 Sensor 4, Bank 2", 
+    @"Time Since Engine Start", @"Fuel Level Input", @"Barometric Pressure (Absolute)",
+    @"Catalytic Converter Temp B1S1", @"Catalytic Converter Temp B2S1", @"Catalytic Converter Temp B1S2", @"Catalytic Converter Temp B2S2",
+    @"ECU Voltage", @"Absolute Engine Load", @"Ambient Air Temperature", nil];
     
     self.title = @"Sensor List";
     
-    
- 	
-	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	
+	[super viewWillAppear:animated];
+	[self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+	
 }
 
 - (void)viewDidUnload
@@ -101,7 +85,7 @@
     CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
 	if (cell == nil) { 
-        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[[CustomTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
         NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomTableViewCell" owner:nil options:nil];
         for (UIView *view in views)
         {
@@ -113,7 +97,7 @@
         }    
     }
     
-    cell.textLabel.text = [self.sensorNameList objectAtIndex:[indexPath.row]];
+    cell.textLabel.text = [self.sensorNameList objectAtIndex:[indexPath row]];
     return cell;
 }
 /*
@@ -160,10 +144,12 @@
 {
 if (editingStyle == UITableViewCellEditingStyleDelete)
     {
-    
+        NSLog(@"I would like to delete row %d", indexPath.row);
+        [sensorNameList removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:true];
     } else if (editingStyle == UITableViewCellEditingStyleInsert)
     {
-        
+        // This is where I would add something...
     }
 }
 
@@ -177,7 +163,7 @@ if (editingStyle == UITableViewCellEditingStyleDelete)
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
-    [self.navigationController pushViewController:sensorController animated:true];
+    [self.navigationController pushViewController:sensorController animated:YES];
 }
 
 @end

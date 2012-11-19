@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440EF0121651977D00393A41 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 440EF0111651977D00393A41 /* Default-568h@2x.png */; };
+		44116BD71561E92500E28791 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 44116BD61561E92500E28791 /* button.png */; };
+		44116BD91561ECA400E28791 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 44116BD81561ECA400E28791 /* appicon.png */; };
+		44116BDD1561ECBF00E28791 /* appicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44116BDA1561ECBE00E28791 /* appicon@2x.png */; };
+		44116BDE1561ECBF00E28791 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 44116BDB1561ECBF00E28791 /* default.png */; };
+		44116BDF1561ECBF00E28791 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44116BDC1561ECBF00E28791 /* default@2x.png */; };
 		44600CC4156064DF0070D85F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44600CC3156064DF0070D85F /* UIKit.framework */; };
 		44600CC6156064DF0070D85F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44600CC5156064DF0070D85F /* Foundation.framework */; };
 		44600CC8156064DF0070D85F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44600CC7156064DF0070D85F /* CoreGraphics.framework */; };
@@ -28,9 +34,16 @@
 		44600D1A156071730070D85F /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44600D19156071730070D85F /* CustomTableViewCell.m */; };
 		44600D2115609A490070D85F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44600D2015609A490070D85F /* RootViewController.m */; };
 		44600D2315609A6F0070D85F /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44600D2215609A6F0070D85F /* RootViewController.xib */; };
+		44D71DD11576C625001EDC65 /* SensorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D71DD01576C625001EDC65 /* SensorDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440EF0111651977D00393A41 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		44116BD61561E92500E28791 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		44116BD81561ECA400E28791 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon.png; path = ../appicon.png; sourceTree = "<group>"; };
+		44116BDA1561ECBE00E28791 /* appicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon@2x.png"; sourceTree = "<group>"; };
+		44116BDB1561ECBF00E28791 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		44116BDC1561ECBF00E28791 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
 		44600CBF156064DF0070D85F /* booker_craig_project2b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = booker_craig_project2b.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44600CC3156064DF0070D85F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44600CC5156064DF0070D85F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +74,8 @@
 		44600D1F15609A490070D85F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		44600D2015609A490070D85F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		44600D2215609A6F0070D85F /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		44D71DCF1576C625001EDC65 /* SensorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorDetailViewController.h; sourceTree = "<group>"; };
+		44D71DD01576C625001EDC65 /* SensorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +95,7 @@
 		44600CB4156064DF0070D85F = {
 			isa = PBXGroup;
 			children = (
+				440EF0111651977D00393A41 /* Default-568h@2x.png */,
 				44600CC9156064DF0070D85F /* booker_craig_project2b */,
 				44600CC2156064DF0070D85F /* Frameworks */,
 				44600CC0156064DF0070D85F /* Products */,
@@ -107,16 +123,18 @@
 		44600CC9156064DF0070D85F /* booker_craig_project2b */ = {
 			isa = PBXGroup;
 			children = (
-				44600CD2156064DF0070D85F /* AppDelegate.h */,
-				44600CD3156064DF0070D85F /* AppDelegate.m */,
+				44D71DCF1576C625001EDC65 /* SensorDetailViewController.h */,
+				44D71DD01576C625001EDC65 /* SensorDetailViewController.m */,
 				44600CD5156064DF0070D85F /* SensorViewController.h */,
 				44600CD6156064DF0070D85F /* SensorViewController.m */,
-				44600CDC156064DF0070D85F /* SecondViewController.h */,
-				44600CDD156064DF0070D85F /* SecondViewController.m */,
 				44600D1F15609A490070D85F /* RootViewController.h */,
 				44600D2015609A490070D85F /* RootViewController.m */,
+				44600CDC156064DF0070D85F /* SecondViewController.h */,
+				44600CDD156064DF0070D85F /* SecondViewController.m */,
 				44600CF0156065D20070D85F /* ThirdViewController.h */,
 				44600CF1156065D20070D85F /* ThirdViewController.m */,
+				44600CD2156064DF0070D85F /* AppDelegate.h */,
+				44600CD3156064DF0070D85F /* AppDelegate.m */,
 				44600D18156071730070D85F /* CustomTableViewCell.h */,
 				44600D19156071730070D85F /* CustomTableViewCell.m */,
 				44600CCA156064DF0070D85F /* Supporting Files */,
@@ -127,6 +145,11 @@
 		44600CCA156064DF0070D85F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				44116BDA1561ECBE00E28791 /* appicon@2x.png */,
+				44116BDB1561ECBF00E28791 /* default.png */,
+				44116BDC1561ECBF00E28791 /* default@2x.png */,
+				44116BD81561ECA400E28791 /* appicon.png */,
+				44116BD61561E92500E28791 /* button.png */,
 				44600CD8156064DF0070D85F /* first.png */,
 				44600CDA156064DF0070D85F /* first@2x.png */,
 				44600CDF156064DF0070D85F /* second.png */,
@@ -206,6 +229,12 @@
 				44600D1415606FDD0070D85F /* CustomTableViewCell.xib in Resources */,
 				44600D171560707A0070D85F /* add-this.png in Resources */,
 				44600D2315609A6F0070D85F /* RootViewController.xib in Resources */,
+				44116BD71561E92500E28791 /* button.png in Resources */,
+				44116BD91561ECA400E28791 /* appicon.png in Resources */,
+				44116BDD1561ECBF00E28791 /* appicon@2x.png in Resources */,
+				44116BDE1561ECBF00E28791 /* default.png in Resources */,
+				44116BDF1561ECBF00E28791 /* default@2x.png in Resources */,
+				440EF0121651977D00393A41 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +252,7 @@
 				44600CF2156065D20070D85F /* ThirdViewController.m in Sources */,
 				44600D1A156071730070D85F /* CustomTableViewCell.m in Sources */,
 				44600D2115609A490070D85F /* RootViewController.m in Sources */,
+				44D71DD11576C625001EDC65 /* SensorDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

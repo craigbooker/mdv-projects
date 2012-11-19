@@ -10,7 +10,7 @@
 #import "RootViewController.h"
 //#import "SensorViewController.h"
 #import "SecondViewController.h"
-//#import "ThirdViewController.h"
+#import "ThirdViewController.h"
 
 @implementation AppDelegate
 
@@ -30,15 +30,15 @@
     UIViewController *viewController1 = [[[RootViewController alloc] initWithNibName:@"rootViewController" bundle:nil] autorelease];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
     UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
-    //UIViewController *viewController3 = [[[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil] autorelease];
+    UIViewController *viewController3 = [[[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil] autorelease];
     viewController1.title = @"Sensor List";
     viewController2.title = @"Intro";
-    //viewController3.title = @"Info";
+    viewController3.title = @"Info";
     viewController1.tabBarItem.image = [UIImage imageNamed:@"first"];
     viewController2.tabBarItem.image = [UIImage imageNamed:@"second"];
-    //viewController3.tabBarItem.image = [UIImage imageNamed:@"second"];
+    viewController3.tabBarItem.image = [UIImage imageNamed:@"second"];
     self.tabController = [[[UITabBarController alloc] init] autorelease];
-    self.tabController.viewControllers = [NSArray arrayWithObjects:viewController2, navController, nil];
+    self.tabController.viewControllers = [NSArray arrayWithObjects:viewController2, navController, viewController3, nil];
     self.window.rootViewController = self.tabController;
     [self.window makeKeyAndVisible];
     return YES;

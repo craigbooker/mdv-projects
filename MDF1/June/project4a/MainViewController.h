@@ -7,15 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
-#import "MyAnnotation.h"
+#import "MyTweet.h"
 
-@interface MainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface MainViewController : UIViewController <NSURLConnectionDataDelegate, UITableViewDataSource, UITableViewDelegate>
 {
     IBOutlet UITableView *myMapTableView;
     NSMutableArray *mainViewArray;
-    MyAnnotation* annoStorage;
+    MyTweet* annoStorage;
+    NSURLRequest *request;
+    NSURL *url;
+    NSURLConnection *connection;
+    NSMutableData *requestData;
 }
 @property (nonatomic, retain) NSMutableArray *mainViewArray;
+@property (nonatomic, retain) UIImageView *customImage;
 
+@property (weak, nonatomic) IBOutlet UITableView *tweetsTableView;
 @end

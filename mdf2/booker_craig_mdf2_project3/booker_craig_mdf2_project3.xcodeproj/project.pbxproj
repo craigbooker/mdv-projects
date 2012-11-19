@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442BC0CA15DD95BF009CC43D /* MovieCapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442BC0C915DD95BF009CC43D /* MovieCapView.xib */; };
+		442BC0CD15DD9623009CC43D /* MovieCapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442BC0CC15DD9623009CC43D /* MovieCapViewController.m */; };
+		442BC0D115DD9D04009CC43D /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 442BC0CE15DD9D04009CC43D /* camera.png */; };
+		442BC0D215DD9D04009CC43D /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 442BC0CF15DD9D04009CC43D /* info.png */; };
+		442BC0D315DD9D04009CC43D /* videoCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 442BC0D015DD9D04009CC43D /* videoCamera.png */; };
+		44A751F915DD953300D2499F /* ImageCapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A751F815DD953300D2499F /* ImageCapViewController.m */; };
+		44A751FC15DD956C00D2499F /* ImageCapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A751FB15DD956C00D2499F /* ImageCapView.xib */; };
 		44AA3D9015D87D1B002F5C97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AA3D8F15D87D1B002F5C97 /* UIKit.framework */; };
 		44AA3D9215D87D1B002F5C97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AA3D9115D87D1B002F5C97 /* Foundation.framework */; };
 		44AA3D9415D87D1B002F5C97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AA3D9315D87D1B002F5C97 /* CoreGraphics.framework */; };
@@ -18,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		442BC0C915DD95BF009CC43D /* MovieCapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovieCapView.xib; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3/booker_craig_mdf2_project3/MovieCapView.xib"; sourceTree = "<group>"; };
+		442BC0CB15DD9614009CC43D /* MovieCapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieCapViewController.h; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3/booker_craig_mdf2_project3/MovieCapViewController.h"; sourceTree = "<group>"; };
+		442BC0CC15DD9623009CC43D /* MovieCapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieCapViewController.m; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3/booker_craig_mdf2_project3/MovieCapViewController.m"; sourceTree = "<group>"; };
+		442BC0CE15DD9D04009CC43D /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		442BC0CF15DD9D04009CC43D /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		442BC0D015DD9D04009CC43D /* videoCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoCamera.png; sourceTree = "<group>"; };
+		44A751F715DD953300D2499F /* ImageCapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageCapViewController.h; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3/ImageCapViewController.h"; sourceTree = "<group>"; };
+		44A751F815DD953300D2499F /* ImageCapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageCapViewController.m; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3/ImageCapViewController.m"; sourceTree = "<group>"; };
+		44A751FB15DD956C00D2499F /* ImageCapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageCapView.xib; path = "../../../../../../Craig/github/mdv-projects/mdf2/booker_craig_mdf2_project3/booker_craig_mdf2_project3/ImageCapView.xib"; sourceTree = "<group>"; };
 		44AA3D8B15D87D1B002F5C97 /* booker_craig_mdf2_project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = booker_craig_mdf2_project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44AA3D8F15D87D1B002F5C97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44AA3D9115D87D1B002F5C97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,7 +97,10 @@
 				44AA3D9F15D87D1B002F5C97 /* AppDelegate.m */,
 				44AA3DA115D87D1B002F5C97 /* ViewController.h */,
 				44AA3DA215D87D1B002F5C97 /* ViewController.m */,
-				44AA3DA415D87D1C002F5C97 /* ViewController.xib */,
+				44A751F715DD953300D2499F /* ImageCapViewController.h */,
+				44A751F815DD953300D2499F /* ImageCapViewController.m */,
+				442BC0CB15DD9614009CC43D /* MovieCapViewController.h */,
+				442BC0CC15DD9623009CC43D /* MovieCapViewController.m */,
 				44AA3D9615D87D1B002F5C97 /* Supporting Files */,
 			);
 			path = booker_craig_mdf2_project3;
@@ -90,6 +109,12 @@
 		44AA3D9615D87D1B002F5C97 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				442BC0CE15DD9D04009CC43D /* camera.png */,
+				442BC0CF15DD9D04009CC43D /* info.png */,
+				442BC0D015DD9D04009CC43D /* videoCamera.png */,
+				44AA3DA415D87D1C002F5C97 /* ViewController.xib */,
+				44A751FB15DD956C00D2499F /* ImageCapView.xib */,
+				442BC0C915DD95BF009CC43D /* MovieCapView.xib */,
 				44AA3D9715D87D1B002F5C97 /* booker_craig_mdf2_project3-Info.plist */,
 				44AA3D9815D87D1B002F5C97 /* InfoPlist.strings */,
 				44AA3D9B15D87D1B002F5C97 /* main.m */,
@@ -151,6 +176,11 @@
 			files = (
 				44AA3D9A15D87D1B002F5C97 /* InfoPlist.strings in Resources */,
 				44AA3DA615D87D1C002F5C97 /* ViewController.xib in Resources */,
+				44A751FC15DD956C00D2499F /* ImageCapView.xib in Resources */,
+				442BC0CA15DD95BF009CC43D /* MovieCapView.xib in Resources */,
+				442BC0D115DD9D04009CC43D /* camera.png in Resources */,
+				442BC0D215DD9D04009CC43D /* info.png in Resources */,
+				442BC0D315DD9D04009CC43D /* videoCamera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +194,8 @@
 				44AA3D9C15D87D1B002F5C97 /* main.m in Sources */,
 				44AA3DA015D87D1B002F5C97 /* AppDelegate.m in Sources */,
 				44AA3DA315D87D1B002F5C97 /* ViewController.m in Sources */,
+				44A751F915DD953300D2499F /* ImageCapViewController.m in Sources */,
+				442BC0CD15DD9623009CC43D /* MovieCapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +311,7 @@
 				44AA3DAB15D87D1C002F5C97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

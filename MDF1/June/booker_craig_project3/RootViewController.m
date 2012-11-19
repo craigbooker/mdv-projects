@@ -7,17 +7,20 @@
 //
 
 #import "RootViewController.h"
-#import "SensorViewController.h"
+#import "LocationViewController.h"
 #import "CustomTableViewCell.h"
 #import "DetailViewController.h"
-#import "Sensors.h"
+#import "BizLocations.h"
 
 @implementation RootViewController
-@synthesize sensorController;
-@synthesize sensorNameList; 
-@synthesize pidValueList; 
-@synthesize sensorImages;
-@synthesize sensorDetails;
+@synthesize locationController;
+@synthesize locationNameList; 
+@synthesize bizNameList;
+@synthesize locationList;
+@synthesize longCoordList;
+@synthesize latCoordList;
+@synthesize locationImages;
+@synthesize locationDetails;
 @synthesize xArray;
 
 
@@ -34,96 +37,100 @@
 {
     [super viewDidLoad]; 
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.sensorNameList = [[NSMutableArray alloc] initWithObjects:
-                           @"Absolute Throttle Position", 
-                           @"Engine RPM", 
-                           @"Vehicle Speed", 
-                           @"Calculated Load Value", 
-                           @"Timing Advance (Cyl#1)", 
-                           @"Intake Manifold Pressure", 
-                           @"Air Flow Rate (MAF Sensor)", 
-                           @"Fuel System Status", 
-                           @"Short Term Fuel Trim (Bank 1)", 
-                           @"Long Term Fuel Trim (Bank 1)", 
-                           @"Short Term Fuel Trim (Bank 2)", 
-                           @"Long Term Fuel Trim (Bank 2)", 
-                           @"Intake Air Temperature", 
-                           @"Coolant Temperature", 
-                           @"Fuel Pressure (guage)", 
-                           @"O2 Sensor 1, Bank 1", 
-                           @"O2 Sensor 2, Bank 1", 
-                           @"O2 Sensor 3, Bank 1", 
-                           @"O2 Sensor 4, Bank 1", 
-                           @"O2 Sensor 1, Bank 2", 
-                           @"O2 Sensor 2, Bank 2", 
-                           @"O2 Sensor 3, Bank 2", 
-                           @"O2 Sensor 4, Bank 2", 
-                           @"Time Since Engine Start", 
-                           @"Fuel Level Input", 
-                           @"Barometric Pressure (Absolute)",
-                           @"Catalytic Converter Temp B1S1", 
-                           @"Catalytic Converter Temp B2S1", 
-                           @"Catalytic Converter Temp B1S2", 
-                           @"Catalytic Converter Temp B2S2",
-                           @"ECU Voltage", 
-                           @"Absolute Engine Load", 
-                           @"Ambient Air Temperature", nil];
+
     
-    self.pidValueList = [[NSMutableArray alloc] initWithObjects:
-                         @"11",@"0C",@"0D",@"04",@"0E",
-                         @"0B",@"10",@"03",@"06",@"07", 
-                         @"08",@"09", 
-                         @"0F", 
-                         @"05", 
-                         @"0A", 
-                         @"14", 
-                         @"15", 
-                         @"16", 
-                         @"17", 
-                         @"18", 
-                         @"19", 
-                         @"1A", 
-                         @"1B", 
-                         @"1F", 
-                         @"2F", 
-                         @"33", 
-                         @"3C", 
-                         @"3D", 
-                         @"3E",
-                         @"3F",
-                         @"42",
-                         @"43",@"46", nil];
+    self.locationImages = [[NSMutableArray alloc] initWithObjects:
+                         @"500px.png", @"aboutme.png", @"add-this.png", @"amazon.png", @"aol.png",
+                         @"500px.png", @"aboutme.png", @"add-this.png", @"amazon.png", @"aol.png",
+                         @"500px.png", @"aboutme.png", @"add-this.png", @"amazon.png", @"aol.png",
+                         @"500px.png", @"aboutme.png", @"add-this.png", @"amazon.png", @"aol.png",
+                         @"500px.png", @"aboutme.png", @"add-this.png", @"amazon.png", @"aol.png",
+                         @"500px.png", @"aboutme.png", @"add-this.png", @"amazon.png", @"aol.png",
+                        @"500px.png", @"aboutme.png", @"add-this.png", @"amazon.png", @"aol.png",                          
+                        @"500px.png", @"aboutme.png", @"add-this.png", @"amazon.png", @"aol.png",
+                        @"500px.png", @"aboutme.png", @"add-this.png", @"amazon.png", @"aol.png",
+                        @"500px.png", @"aboutme.png", @"add-this.png", @"amazon.png", @"aol.png", nil];  
+
     
-    self.sensorImages = [[NSMutableArray alloc] initWithObjects:
-                         @"500px.png",@"aboutme.png",@"add-this.png",@"amazon.png",@"aol.png",
-                         @"500px.png",@"aboutme.png",@"add-this.png",@"amazon.png",@"aol.png",
-                         @"500px.png",@"aboutme.png",@"add-this.png",@"amazon.png",@"aol.png",
-                         @"500px.png",@"aboutme.png",@"add-this.png",@"amazon.png",@"aol.png",
-                         @"500px.png",@"aboutme.png",@"add-this.png",@"amazon.png",@"aol.png",
-                         @"500px.png",@"aboutme.png",@"add-this.png",@"amazon.png",@"aol.png",
-                         @"500px.png",@"aboutme.png", @"add-this.png",@"amazon.png", nil];  
+    
+    self.locationNameList = [[NSMutableArray alloc] initWithObjects:
+                        @"Shorty's Car Care", @"Fine Touch Repair", @"180 Degrees Automotive", @"Foster Garage, Inc.", @"DRJ Performance Automotive", 
+                        @"Strictly Automotive", @"Reliable Auto Tire Co Inc", @"Still's Body Shop", @"Rising Sun Imported Auto Repairs", @"Professional Automotive Repair",
+                        @"Sum's General Auto Repair", @"Rudy's Auto Service", @"Dick Taylor Automotive Service", @"Tyler Automotive", @"Beckley Automotive Services",
+                        @"Shorey Automotive Repair Service", @"David Toles Auto Pro", @"Gordon & Sandifer Auto Collision Center", @"A Ms Automotive Machine Shop Services Inc", @"A. Arundel Auto Service Center",
+                        @"Glenville Terrace Auto Body", @"Auto-Lab Diagnostic & Tune Up Centers", @"Tuan Auto Repair", @"Robinson Auto Repair Shop", @"Kemna Collision Repair",
+                        @"Capital Collision Center", @"George Witt Service, Inc", @"Performance Auto Care", @"J B Automotive Service Center Inc", @"Dave J's German Car Service",
+                        @"Santa Fe Auto Repair", @"Capitol Tech Auto Repair", @"Raleigh Car Care", @"Johnnies Service & Speed Shop", @"Alternative Auto Care", 
+                        @"Momentum Toyota Northwest", @"P & M Automotive", @"Dale's Automotive", @"Wayne's Service Plus", @"Rushing Automotive",
+                        @"Beck Chevrolet Cadillac", @"Autotech Import Car Repairs", @"Go Greene Automotive", @"Autograff Motor Works Inc", @"Majestic Auto Body",
+                        @"Paradise Garage", @"Makoviney Automotive", @"A-1 Body Shop", @"Chet's Car Care", @" King's Auto Center", nil]; 
+
+
+    
+    self.locationList = [[NSMutableArray alloc] initWithObjects:
+                             @"Montgomery, AL", @"Juneau, AK", @"Phoenix, AZ", @"Little Rock, AR",@"Sacramento, CA",
+                             @"Denver, CO", @"Hartford, CT", @"Dover, DE", @"Tallahassee, FL", @"Atlanta, GA",
+                             @"Honolulu, HI", @"Boise, ID", @"Springfield, IL", @"Indianapolis, IN", @"Des Moines, IA",
+                             @"Topeka, KS", @"Frankfort, KY", @"Baton Rouge, LA", @"Augusta, ME", @"Annapolis, MD",
+                             @"Boston, MA", @"Lansing, MI", @"Saint Paul, MN", @"Jackson, MS", @"Jefforson City, MO",
+                             @"Helena, MT", @"Lincoln, NE", @"Carson City, NV", @"Concord, NH", @"Trenton, NJ", 
+                             @"Santa Fe, NM", @"Albany, NY", @"Raleigh, NC", @"Bismarck, ND", @"Columbus, OH",
+                             @"Oklahoma City, OK", @"Salem, OR", @"Harrisburg, PA", @"Providence, RI", @"Columbia, SC",
+                             @"Pierre, SD", @"Nashville, TN", @"Austin, TX", @"Salt Lake City, UT", @"Montpelier, VT", 
+                             @"Richmond, VA", @"Olympia, WA", @"Charleston, WV", @"Madison, WI", @"Cheyenne, WY", nil];
+
+    self.latCoordList = [[NSMutableArray alloc] initWithObjects:
+                         @"32.35", @"58.30", @"33.54", @"34.72", @"38.57", 
+                         @"39.77", @"41.77", @"39.13", @"30.46", @"33.76",
+                         @"21.32", @"43.61", @"39.78", @"39.78", @"41.58",
+                         @"39.04", @"38.18", @"30.45", @"44.31", @"38.94",
+                         @"42.34", @"42.78", @"44.95", @"32.32", @"38.57",
+                         @"46.61", @"40.82", @"39.15", @"43.23", @"40.22",
+                         @"35.68", @"42.67", @"35.82", @"46.81", @"39.99",
+                         @"35.47", @"44.92", @"40.28", @"41.82", @"34.04",
+                         @"44.38", @"36.17", @"30.31", @"40.78", @"44.20",
+                         @"37.53", @"47.04", @"38.35", @"35.11", @"41.15", nil]; 
+    
+    self.longCoordList = [[NSMutableArray alloc] initWithObjects:
+                          @"86.28", @"134.42", @"112.07", @"92.35", @"121.47", 
+                          @"104.87", @"72.68", @"-75.47", @"84.28", @"84.42",
+                          @"157.80", @"116.23", @"89.64", @"86.15", @"93.62",
+                          @"95.69", @"-84.91", @"91.13", @"69.78", @"-76.57",
+                          @"71.02", @"-84.59", @"93.10", @"90.21", @"92.19",
+                          @"-111.98", @"96.69", @"119.74", @"71.56", @"74.76",
+                          @"105.95", @"73.80", @"78.66", @"100.77", @"82.99",
+                          @"97.51", @"123.02", @"76.88", @"71.42", @"80.89",
+                          @"-100.29", @"86.78°", @"97.75", @"111.93", @"-72.56",
+                          @"77.47", @"122.89", @"81.63", @"90.01", @"104.79", nil];
+ 
+    
+    
+    
+    
+   
     
     self.xArray = [NSMutableArray array];
-    self.title = @"Sensor List";    
-    int displayCount = [self.sensorNameList count];                           
+    self.title = @"Location List";    
+    int displayCount = [self.locationNameList count];                           
                          
 	for( int i=0; i<displayCount; i++ )
 	{
-		Sensors *sensor = [[Sensors alloc] init];
-		sensor.xSensorName = [self.sensorNameList objectAtIndex:i ];
-        sensor.xPIDValue = [self.pidValueList objectAtIndex:i]; //@"PID Value Here";
-		sensor.xSensorImage = [UIImage imageNamed:[NSString stringWithFormat:@"%d.png",i]];
+		BizLocations *bizLocation = [[BizLocations alloc] init];
+		bizLocation.xLocationName = [self.locationNameList objectAtIndex:i ];
+        bizLocation.xLocation = [self.locationList objectAtIndex:i]; 
+		bizLocation.xLocationImage = [UIImage imageNamed:[NSString stringWithFormat:@"%d.png",i]];
 
-		[self.xArray addObject:sensor];
-		[sensor release];
+		[self.xArray addObject:bizLocation];
+		[bizLocation release];
 	}    
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    self.sensorNameList = nil;
-    self.pidValueList = nil;
+    self.locationNameList = nil;
+    self.latCoordList = nil;
+    self.longCoordList = nil;
 
 }
 - (void)viewWillAppear:(BOOL)animated {
@@ -168,15 +175,15 @@
             }
         }    
     }
-    Sensors *sensor = [self.xArray objectAtIndex:indexPath.row];
-    cell.sensorLabel.text = sensor.xSensorName;
-    cell.pidValueLabel.text = sensor.xPIDValue;
-    cell.sensorImage.image = sensor.xSensorImage;
+    BizLocations *bizLocation = [self.xArray objectAtIndex:indexPath.row];
+    cell.locationNameLabel.text = bizLocation.xLocationName;
+    cell.bizLocationLabel.text = bizLocation.xLocation;
+    //cell.locationImage.image = [UIImage imageNamed: [bizLocation.xLocationImage]];
     return cell;
 }    
 
 
-#pragma mark - Table view delegate
+#pragma mark - Table view delegate 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
@@ -193,8 +200,8 @@
     DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:nil bundle:nil];
    // DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailView" bundle:[NSBundle mainBundle]];
     
-    Sensors *sensor = [self.xArray objectAtIndex:indexPath.row];
-    detailViewController.xSensor = sensor;
+    BizLocations *bizLocation = [self.xArray objectAtIndex:indexPath.row];
+    detailViewController.xBizLocation = bizLocation;
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
 

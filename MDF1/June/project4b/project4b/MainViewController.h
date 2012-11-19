@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MyTweet.h"
+#import "Tweet.h"
 
 @interface MainViewController : UIViewController <NSURLConnectionDataDelegate, UITableViewDataSource, UITableViewDelegate>
 {
     IBOutlet UITableView *myMapTableView;
     NSMutableArray *mainViewArray;
-    MyTweet* annoStorage;
+    Tweet* annoStorage;
     NSURLRequest *request;
     NSURL *url;
     NSURLConnection *connection;

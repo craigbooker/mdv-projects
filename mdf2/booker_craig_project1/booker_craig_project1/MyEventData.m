@@ -9,5 +9,9 @@
 #import "MyEventData.h"
 
 @implementation MyEventData
+@synthesize xEventTitle;
+@synthesize xEventLocation;
+@synthesize xEventDate;
+@synthesize xEventTime;
 
 @end

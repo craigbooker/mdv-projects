@@ -330,6 +330,37 @@
 		44601C561554911200D29391 /* TableViewStory */ = {
 			isa = PBXGroup;
 			children = (
+				44D71EC8157BFE9C001EDC65 /* images */,
+				44601C5F1554911200D29391 /* TableViewStoryAppDelegate.h */,
+				44601C601554911200D29391 /* TableViewStoryAppDelegate.m */,
+				44601C621554911200D29391 /* MainStoryboard.storyboard */,
+				44601C571554911200D29391 /* Supporting Files */,
+				44601C6D1554926500D29391 /* CarTableViewController.h */,
+				44601C6E1554926500D29391 /* CarTableViewController.m */,
+				44601C701554944E00D29391 /* CarTableViewCell.h */,
+				44601C711554944E00D29391 /* CarTableViewCell.m */,
+				44601C7D1554987000D29391 /* CarDetailViewController.h */,
+				44601C7E1554987000D29391 /* CarDetailViewController.m */,
+				44A2A69A155B525100DF37B6 /* SensorDetailViewController.h */,
+				44A2A69B155B525100DF37B6 /* SensorDetailViewController.m */,
+			);
+			path = TableViewStory;
+			sourceTree = "<group>";
+		};
+		44601C571554911200D29391 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44601C581554911200D29391 /* TableViewStory-Info.plist */,
+				44601C591554911200D29391 /* InfoPlist.strings */,
+				44601C5C1554911200D29391 /* main.m */,
+				44601C5E1554911200D29391 /* TableViewStory-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44D71EC8157BFE9C001EDC65 /* images */ = {
+			isa = PBXGroup;
+			children = (
 				445AB4841554D04A0051C685 /* 500px.png */,
 				445AB4851554D04B0051C685 /* aboutme.png */,
 				445AB4861554D04B0051C685 /* add-this.png */,
@@ -446,31 +477,8 @@
 				44601C75155496E100D29391 /* smart_fortwo.jpg */,
 				44601C76155496E100D29391 /* toyota_venza.jpg */,
 				44601C77155496E100D29391 /* volvo_s60.jpg */,
-				44601C5F1554911200D29391 /* TableViewStoryAppDelegate.h */,
-				44601C601554911200D29391 /* TableViewStoryAppDelegate.m */,
-				44601C621554911200D29391 /* MainStoryboard.storyboard */,
-				44601C571554911200D29391 /* Supporting Files */,
-				44601C6D1554926500D29391 /* CarTableViewController.h */,
-				44601C6E1554926500D29391 /* CarTableViewController.m */,
-				44601C701554944E00D29391 /* CarTableViewCell.h */,
-				44601C711554944E00D29391 /* CarTableViewCell.m */,
-				44601C7D1554987000D29391 /* CarDetailViewController.h */,
-				44601C7E1554987000D29391 /* CarDetailViewController.m */,
-				44A2A69A155B525100DF37B6 /* SensorDetailViewController.h */,
-				44A2A69B155B525100DF37B6 /* SensorDetailViewController.m */,
 			);
-			path = TableViewStory;
-			sourceTree = "<group>";
-		};
-		44601C571554911200D29391 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				44601C581554911200D29391 /* TableViewStory-Info.plist */,
-				44601C591554911200D29391 /* InfoPlist.strings */,
-				44601C5C1554911200D29391 /* main.m */,
-				44601C5E1554911200D29391 /* TableViewStory-Prefix.pch */,
-			);
-			name = "Supporting Files";
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -9,5 +9,11 @@
 #import "MyTweet.h"
 
 @implementation MyTweet
+@synthesize content;
+@synthesize dateCreated;
+@synthesize title;
+@synthesize location;
+@synthesize coordinate;
+
 
 @end

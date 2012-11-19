@@ -9,5 +9,15 @@
 #import <Foundation/Foundation.h>
 
 @interface MyEventData : NSObject
+{
+    NSString *xEventTitle;
+    NSString *xEventLocation;
+    NSDate *xEventDate;
+    NSDate *xEventTime;
+}
 
+@property (nonatomic, strong)NSString *xEventTitle;
+@property (nonatomic, strong)NSString *xEventLocation;
+@property (nonatomic, strong)NSDate *xEventDate;
+@property (nonatomic, strong)NSDate *xEventTime;
 @end

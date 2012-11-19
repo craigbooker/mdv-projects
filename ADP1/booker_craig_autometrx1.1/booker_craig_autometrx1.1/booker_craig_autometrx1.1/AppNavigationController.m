@@ -35,7 +35,7 @@
 	[modal.navBar.topItem setTitle: @"New Product"];
 	
 	[self presentModalViewController:modal animated:YES];
-	[modal release];
+	/* [modal release]; ----removed due to deprecation in iOS 6 */
 	
 }
 
@@ -49,7 +49,7 @@
 	[modal.priceField setText: [NSString stringWithFormat:@"%0.2f", [arg_price floatValue]]];
 	
 	[self presentModalViewController:modal animated:YES];
-	[modal release];
+	/* [modal release]; ----removed due to deprecation in iOS 6 */
 	
 }
 
@@ -62,14 +62,14 @@
 	[modal setDelegate: self.topViewController];
 	
 	[self presentModalViewController:modal animated:YES];
-	[modal release];
+	/* [modal release]; ----removed due to deprecation in iOS 6 */
 	
 }
 
 
 - (void)dealloc {
 	
-    [super dealloc];
+   /* [super dealloc];----removed due to ARC restriction */
 }
 
 

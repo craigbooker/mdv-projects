@@ -1,0 +1,284 @@
+Tproject2
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/Info.plist project2/project2-Info.plist
+cProcessPCH /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch.pth project2/project2-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/OBJC2/project2/project2/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/OBJC2/project2/project2/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/ViewController.o /Users/craig/github/mdv-projects/OBJC2/project2/project2/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/SecondViewController.o /Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project2 normal i386
+cGenerateDSYMFile /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app.dSYM /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project2
+cCompileXIB /Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondView.xib
+cCopyStringsFile /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/en.lproj/InfoPlist.strings project2/en.lproj/InfoPlist.strings
+cCompileXIB /Users/craig/github/mdv-projects/OBJC2/project2/project2/en.lproj/ViewController.xib
+cTouch /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+c00000000504916AD0000000000000110
+t1346967213
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000506CBFF50000000000228FD0
+t1349304309
+s2265040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000506CBFF800000000003DCEF0
+t1349304312
+s4050672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000506CC0130000000000AB3D60
+t1349304339
+s11222368
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch.pth
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/SecondViewController.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/ViewController.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/project2.LinkFileList
+c000000005074E78600000000000002C1
+t1349838726
+s705
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app.dSYM
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/Info.plist
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/PkgInfo
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/SecondView.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/en.lproj/ViewController.nib
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project2
+t2
+s0
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/project2/AppDelegate.m
+c000000004F7BB82600000000000009CF
+t1333508134
+s2511
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondView.xib
+c000000004F7E2999000000000000253E
+t1333668249
+s9534
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondViewController.m
+c000000004F7E294E00000000000003CA
+t1333668174
+s970
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/project2/ViewController.m
+c000000004FAB2D600000000000000E78
+t1336618336
+s3704
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/project2/en.lproj/InfoPlist.strings
+c000000004F7BB826000000000000002D
+t1333508134
+s45
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/project2/en.lproj/ViewController.xib
+c000000004F7F7E94000000000000CA68
+t1333755540
+s51816
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/project2/main.m
+c000000004F7BB8260000000000000157
+t1333508134
+s343
+
+N/Users/craig/github/mdv-projects/OBJC2/project2/project2/project2-Prefix.pch
+c000000004F7BB826000000000000013F
+t1333508134
+s319
+
+Nproject2/project2-Info.plist
+c000000004F7BB8260000000000000492
+t1333508134
+s1170
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJC2/project2/project2/AppDelegate.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJC2/project2/project2/ViewController.m
+r0
+
+CBuild AST from /Users/craig/github/mdv-projects/OBJC2/project2/project2/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies768cab061f25b641^f99db2061f25b641^---0#1#0#--18"Check dependencies36"C9FC8389-F043-443F-95C8-5E6C7CB88BAE-
+
+CCompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/AppDelegate.o /Users/craig/github/mdv-projects/OBJC2/project2/project2/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s371531526.983743
+e371531527.050079
+r1
+xCompileC
+xDerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/AppDelegate.o
+x/Users/craig/github/mdv-projects/OBJC2/project2/project2/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/craig/github/mdv-projects/OBJC2/project2/project2/AppDelegate.mabecfb061f25b641^d9d10c071f25b641^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/craig/github/mdv-projects/OBJC2/project2/project2/AppDelegate.m0000000000000000^4057"CompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/AppDelegate.o project2/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/AppDelegate.dia -c /Users/craig/github/mdv-projects/OBJC2/project2/project2/AppDelegate.m -o /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/AppDelegate.o36"F8B7D194-9D10-4615-AE22-41A229CA8FF4-
+
+CCompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/SecondViewController.o /Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s371531526.984262
+e371531527.042741
+r1
+xCompileC
+xDerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/SecondViewController.o
+x/Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondViewController.mb70cfc061f25b641^4cfb0a071f25b641^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondViewController.m0000000000000000^4111"CompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/SecondViewController.o project2/SecondViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/SecondViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/SecondViewController.dia -c /Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondViewController.m -o /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/SecondViewController.o36"B272D505-FFF3-4B9E-8095-2E15DD9CBD03-
+
+CCompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/ViewController.o /Users/craig/github/mdv-projects/OBJC2/project2/project2/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s371531526.983826
+e371531527.052242
+r1
+xCompileC
+xDerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/ViewController.o
+x/Users/craig/github/mdv-projects/OBJC2/project2/project2/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/craig/github/mdv-projects/OBJC2/project2/project2/ViewController.m84f1fb061f25b641^d4610d071f25b641^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/craig/github/mdv-projects/OBJC2/project2/project2/ViewController.m0000000000000000^4075"CompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/ViewController.o project2/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/ViewController.dia -c /Users/craig/github/mdv-projects/OBJC2/project2/project2/ViewController.m -o /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/ViewController.o36"B06D5848-DC1E-4F0E-958B-98661095DBE5-
+
+CCompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/main.o /Users/craig/github/mdv-projects/OBJC2/project2/project2/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s371531526.983349
+e371531527.021166
+r1
+xCompileC
+xDerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/main.o
+x/Users/craig/github/mdv-projects/OBJC2/project2/project2/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/craig/github/mdv-projects/OBJC2/project2/project2/main.m4ad4fb061f25b641^077d05071f25b641^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/craig/github/mdv-projects/OBJC2/project2/project2/main.m0000000000000000^4015"CompileC DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/main.o project2/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator -include /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/main.dia -c /Users/craig/github/mdv-projects/OBJC2/project2/project2/main.m -o /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/main.o36"15768D6A-079E-40C6-99F7-82527049DF9B-
+
+CCompileXIB /Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondView.xib
+s371531527.125318
+e371531527.141967
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondView.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compiling /Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondView.xibb32420071f25b641^6b6324071f25b641^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondView.xib0000000000000000^935"CompileXIB project2/SecondView.xib    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/SecondView.nib /Users/craig/github/mdv-projects/OBJC2/project2/project2/SecondView.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"55CD800F-CD11-4E59-9B85-4932841583BD-
+
+CCompileXIB /Users/craig/github/mdv-projects/OBJC2/project2/project2/en.lproj/ViewController.xib
+s371531527.125321
+e371531527.211267
+r1
+xCompileXIB
+x/Users/craig/github/mdv-projects/OBJC2/project2/project2/en.lproj/ViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compiling /Users/craig/github/mdv-projects/OBJC2/project2/project2/en.lproj/ViewController.xib8d2520071f25b641^fd1536071f25b641^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/craig/github/mdv-projects/OBJC2/project2/project2/en.lproj/ViewController.xib0000000000000000^974"CompileXIB project2/en.lproj/ViewController.xib    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/en.lproj/ViewController.nib /Users/craig/github/mdv-projects/OBJC2/project2/project2/en.lproj/ViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"439CB4B7-33DB-47E6-83CE-73BC5A3A32A9-
+
+CCopyStringsFile /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/en.lproj/InfoPlist.strings project2/en.lproj/InfoPlist.strings
+s371531527.125316
+e371531527.128801
+r1
+xCopyStringsFile
+x/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/en.lproj/InfoPlist.strings
+xproject2/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy project2/en.lproj/InfoPlist.stringsfb2320071f25b641^5df920071f25b641^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/craig/github/mdv-projects/OBJC2/project2/project2/en.lproj/InfoPlist.strings0000000000000000^657"CopyStringsFile DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/en.lproj/InfoPlist.strings project2/en.lproj/InfoPlist.strings    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/en.lproj -- project2/en.lproj/InfoPlist.strings36"16A145AA-AAED-488A-8E51-280B27F3C70F-
+
+CGenerateDSYMFile /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app.dSYM /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project2
+s371531527.098984
+e371531527.117920
+r1
+xGenerateDSYMFile
+x/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app.dSYM
+x/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project2
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"Generating /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app.dSYM0e6819071f25b641^34301e071f25b641^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app.dSYM000000000080d041^778"GenerateDSYMFile DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app.dSYM DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project2    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project2 -o /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app.dSYM36"53F9B6A9-E25F-47C4-9DDB-29B82C898388-
+
+CLd /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project2 normal i386
+s371531527.059278
+e371531527.092580
+r1
+xLd
+x/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project2
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Link /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project27d3d0f071f25b641^fab317071f25b641^---0#0#0#--1343"Ld DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project2 normal i386    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator -F/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator -filelist /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/Objects-normal/i386/project2.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.1 -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/project236"E208326F-9953-4651-AC63-3C81446C6927-
+
+CProcessInfoPlistFile /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/Info.plist project2/project2-Info.plist
+s371531526.700523
+e371531526.704852
+r1
+xProcessInfoPlistFile
+x/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/Info.plist
+xproject2/project2-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Process project2/project2-Info.plist2c63b3061f25b641^187ab4061f25b641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project2/project2/project2-Info.plist0000000000000000^774"ProcessInfoPlistFile DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/Info.plist project2/project2-Info.plist    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility project2/project2-Info.plist -genpkginfo /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app/Info.plist36"1B9BE817-D512-47C8-BD7C-30AFB801F175-
+
+CProcessPCH /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch.pth project2/project2-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s371531526.712850
+e371531526.977062
+r1
+xProcessPCH
+x/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch.pth
+xproject2/project2-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile project2/project2-Prefix.pch9a94b6061f25b641^8e1ffa061f25b641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/craig/github/mdv-projects/OBJC2/project2/project2/project2-Prefix.pch0000000000000000^3900"ProcessPCH DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch.pth project2/project2-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.1 -iquote /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-generated-files.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-own-target-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-all-target-headers.hmap -iquote /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/project2-project-headers.hmap -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/DerivedSources/i386 -I/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/project2.build/Debug-iphonesimulator/project2.build/DerivedSources -F/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch.dia -c /Users/craig/github/mdv-projects/OBJC2/project2/project2/project2-Prefix.pch -o /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch.pth -MMD -MT dependencies -MF /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Intermediates/PrecompiledHeaders/project2-Prefix-gkntogmxcsfjitckkhtbesbloekw/project2-Prefix.pch.d36"412AB940-ABD3-48B0-B287-1AC8418D4ABA-
+
+CProcessPCH /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Index/PrecompiledHeaders/project2-Prefix-dsyzmyxwqzjlkuesagceovnsiomc_ast/project2-Prefix.pch.pth project2/project2-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app
+s371531527.219302
+e371531527.224391
+r1
+xTouch
+x/Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Touch /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.appbe3138071f25b641^367239071f25b641^---0#0#0#--468"Touch DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app    cd /Users/craig/github/mdv-projects/OBJC2/project2    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/craig/github/mdv-projects/OBJC2/project2/DerivedData/project2/Build/Products/Debug-iphonesimulator/project2.app36"9E1BF6CE-EAFA-4B63-A1A9-D6B4601B2F68-
+

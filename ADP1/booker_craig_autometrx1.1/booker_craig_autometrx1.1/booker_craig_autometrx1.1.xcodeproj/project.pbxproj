@@ -12,12 +12,21 @@
 		4425417E161B991E00250735 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4425417D161B991E00250735 /* CoreGraphics.framework */; };
 		44254184161B991E00250735 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44254182161B991E00250735 /* InfoPlist.strings */; };
 		44254186161B991E00250735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44254185161B991E00250735 /* main.m */; };
-		4425418A161B991E00250735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44254189161B991E00250735 /* AppDelegate.m */; };
 		4425418C161B991F00250735 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4425418B161B991F00250735 /* Default.png */; };
 		4425418E161B991F00250735 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4425418D161B991F00250735 /* Default@2x.png */; };
 		44254190161B991F00250735 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4425418F161B991F00250735 /* Default-568h@2x.png */; };
-		44254193161B992000250735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44254192161B992000250735 /* ViewController.m */; };
-		44254196161B992000250735 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44254194161B992000250735 /* ViewController.xib */; };
+		442541A0161BA50C00250735 /* AppProductModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425419F161BA50C00250735 /* AppProductModalController.m */; };
+		442541B1161BA62B00250735 /* AppNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442541A2161BA62A00250735 /* AppNavigationController.m */; };
+		442541B2161BA62B00250735 /* AppTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442541A4161BA62A00250735 /* AppTableViewController.m */; };
+		442541B3161BA62B00250735 /* AppUserSettingsModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442541A6161BA62B00250735 /* AppUserSettingsModalController.m */; };
+		442541B4161BA62B00250735 /* CoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442541A8161BA62B00250735 /* CoreDataController.m */; };
+		442541B5161BA62B00250735 /* DataStorageAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 442541AA161BA62B00250735 /* DataStorageAppDelegate.m */; };
+		442541B6161BA62B00250735 /* PropertyListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442541AC161BA62B00250735 /* PropertyListController.m */; };
+		442541B7161BA62B00250735 /* SQLiteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442541AE161BA62B00250735 /* SQLiteController.m */; };
+		442541B8161BA62B00250735 /* UserDefaultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442541B0161BA62B00250735 /* UserDefaultsController.m */; };
+		442541BD161BA76600250735 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 442541BC161BA76600250735 /* libsqlite3.dylib */; };
+		442541BF161BA79B00250735 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442541BE161BA79B00250735 /* CoreData.framework */; };
+		442541C2161BA81000250735 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 442541C1161BA81000250735 /* Product.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,14 +38,31 @@
 		44254183161B991E00250735 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44254185161B991E00250735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44254187161B991E00250735 /* booker_craig_autometrx1.1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "booker_craig_autometrx1.1-Prefix.pch"; sourceTree = "<group>"; };
-		44254188161B991E00250735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		44254189161B991E00250735 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4425418B161B991F00250735 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4425418D161B991F00250735 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4425418F161B991F00250735 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		44254191161B992000250735 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		44254192161B992000250735 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		44254195161B992000250735 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		4425419E161BA50C00250735 /* AppProductModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppProductModalController.h; sourceTree = "<group>"; };
+		4425419F161BA50C00250735 /* AppProductModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppProductModalController.m; sourceTree = "<group>"; };
+		442541A1161BA62A00250735 /* AppNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavigationController.h; sourceTree = "<group>"; };
+		442541A2161BA62A00250735 /* AppNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavigationController.m; sourceTree = "<group>"; };
+		442541A3161BA62A00250735 /* AppTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTableViewController.h; sourceTree = "<group>"; };
+		442541A4161BA62A00250735 /* AppTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTableViewController.m; sourceTree = "<group>"; };
+		442541A5161BA62B00250735 /* AppUserSettingsModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUserSettingsModalController.h; sourceTree = "<group>"; };
+		442541A6161BA62B00250735 /* AppUserSettingsModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUserSettingsModalController.m; sourceTree = "<group>"; };
+		442541A7161BA62B00250735 /* CoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataController.h; sourceTree = "<group>"; };
+		442541A8161BA62B00250735 /* CoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataController.m; sourceTree = "<group>"; };
+		442541A9161BA62B00250735 /* DataStorageAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStorageAppDelegate.h; sourceTree = "<group>"; };
+		442541AA161BA62B00250735 /* DataStorageAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStorageAppDelegate.m; sourceTree = "<group>"; };
+		442541AB161BA62B00250735 /* PropertyListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyListController.h; sourceTree = "<group>"; };
+		442541AC161BA62B00250735 /* PropertyListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyListController.m; sourceTree = "<group>"; };
+		442541AD161BA62B00250735 /* SQLiteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteController.h; sourceTree = "<group>"; };
+		442541AE161BA62B00250735 /* SQLiteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteController.m; sourceTree = "<group>"; };
+		442541AF161BA62B00250735 /* UserDefaultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsController.h; sourceTree = "<group>"; };
+		442541B0161BA62B00250735 /* UserDefaultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsController.m; sourceTree = "<group>"; };
+		442541BC161BA76600250735 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		442541BE161BA79B00250735 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		442541C0161BA81000250735 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		442541C1161BA81000250735 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442541BF161BA79B00250735 /* CoreData.framework in Frameworks */,
+				442541BD161BA76600250735 /* libsqlite3.dylib in Frameworks */,
 				4425417A161B991E00250735 /* UIKit.framework in Frameworks */,
 				4425417C161B991E00250735 /* Foundation.framework in Frameworks */,
 				4425417E161B991E00250735 /* CoreGraphics.framework in Frameworks */,
@@ -56,7 +84,7 @@
 		4425416A161B991E00250735 = {
 			isa = PBXGroup;
 			children = (
-				4425417F161B991E00250735 /* booker_craig_autometrx1.1 */,
+				4425417F161B991E00250735 /* Classes */,
 				44254178161B991E00250735 /* Frameworks */,
 				44254176161B991E00250735 /* Products */,
 			);
@@ -75,21 +103,23 @@
 			children = (
 				44254179161B991E00250735 /* UIKit.framework */,
 				4425417B161B991E00250735 /* Foundation.framework */,
+				442541BE161BA79B00250735 /* CoreData.framework */,
 				4425417D161B991E00250735 /* CoreGraphics.framework */,
+				442541BC161BA76600250735 /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4425417F161B991E00250735 /* booker_craig_autometrx1.1 */ = {
+		4425417F161B991E00250735 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				44254188161B991E00250735 /* AppDelegate.h */,
-				44254189161B991E00250735 /* AppDelegate.m */,
-				44254191161B992000250735 /* ViewController.h */,
-				44254192161B992000250735 /* ViewController.m */,
-				44254194161B992000250735 /* ViewController.xib */,
+				442541B9161BA63F00250735 /* Controllers */,
+				442541BA161BA67100250735 /* Templates */,
+				442541A9161BA62B00250735 /* DataStorageAppDelegate.h */,
+				442541AA161BA62B00250735 /* DataStorageAppDelegate.m */,
 				44254180161B991E00250735 /* Supporting Files */,
 			);
+			name = Classes;
 			path = booker_craig_autometrx1.1;
 			sourceTree = "<group>";
 		};
@@ -105,6 +135,46 @@
 				4425418F161B991F00250735 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		442541B9161BA63F00250735 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				442541AB161BA62B00250735 /* PropertyListController.h */,
+				442541AC161BA62B00250735 /* PropertyListController.m */,
+				442541AD161BA62B00250735 /* SQLiteController.h */,
+				442541AE161BA62B00250735 /* SQLiteController.m */,
+				442541A7161BA62B00250735 /* CoreDataController.h */,
+				442541A8161BA62B00250735 /* CoreDataController.m */,
+				442541BB161BA6DA00250735 /* Core Data Models */,
+				442541AF161BA62B00250735 /* UserDefaultsController.h */,
+				442541B0161BA62B00250735 /* UserDefaultsController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		442541BA161BA67100250735 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				442541A3161BA62A00250735 /* AppTableViewController.h */,
+				442541A4161BA62A00250735 /* AppTableViewController.m */,
+				442541A1161BA62A00250735 /* AppNavigationController.h */,
+				442541A2161BA62A00250735 /* AppNavigationController.m */,
+				4425419E161BA50C00250735 /* AppProductModalController.h */,
+				4425419F161BA50C00250735 /* AppProductModalController.m */,
+				442541A5161BA62B00250735 /* AppUserSettingsModalController.h */,
+				442541A6161BA62B00250735 /* AppUserSettingsModalController.m */,
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
+		442541BB161BA6DA00250735 /* Core Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				442541C0161BA81000250735 /* Product.h */,
+				442541C1161BA81000250735 /* Product.m */,
+			);
+			name = "Core Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +232,6 @@
 				4425418C161B991F00250735 /* Default.png in Resources */,
 				4425418E161B991F00250735 /* Default@2x.png in Resources */,
 				44254190161B991F00250735 /* Default-568h@2x.png in Resources */,
-				44254196161B992000250735 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,8 +243,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				44254186161B991E00250735 /* main.m in Sources */,
-				4425418A161B991E00250735 /* AppDelegate.m in Sources */,
-				44254193161B992000250735 /* ViewController.m in Sources */,
+				442541A0161BA50C00250735 /* AppProductModalController.m in Sources */,
+				442541B1161BA62B00250735 /* AppNavigationController.m in Sources */,
+				442541B2161BA62B00250735 /* AppTableViewController.m in Sources */,
+				442541B3161BA62B00250735 /* AppUserSettingsModalController.m in Sources */,
+				442541B4161BA62B00250735 /* CoreDataController.m in Sources */,
+				442541B5161BA62B00250735 /* DataStorageAppDelegate.m in Sources */,
+				442541B6161BA62B00250735 /* PropertyListController.m in Sources */,
+				442541B7161BA62B00250735 /* SQLiteController.m in Sources */,
+				442541B8161BA62B00250735 /* UserDefaultsController.m in Sources */,
+				442541C2161BA81000250735 /* Product.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +265,6 @@
 				44254183161B991E00250735 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		44254194161B992000250735 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44254195161B992000250735 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -223,7 +292,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -243,7 +312,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

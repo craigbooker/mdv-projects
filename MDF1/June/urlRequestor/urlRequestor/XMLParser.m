@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "XMLParser.h"
+#import "URLRequestor.h"
 
 @implementation XMLParser 
 @synthesize tweets = _tweets;
