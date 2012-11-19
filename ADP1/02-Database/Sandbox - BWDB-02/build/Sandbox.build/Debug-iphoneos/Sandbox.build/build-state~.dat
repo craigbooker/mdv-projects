@@ -1,0 +1,585 @@
+TSandbox
+v7
+r0
+t309969962.844072
+cCheck dependencies
+cCpResource build/Debug-iphoneos/Sandbox.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Info.plist Sandbox-Info.plist
+cCompileXIB /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/MainWindow.xib
+cCompileXIB /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/SandboxViewController.xib
+cProcessPCH /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-cvqdqessmlesingjzdmizbcphvtn/Sandbox_Prefix.pch.gch Sandbox_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-enaajilelmgajhajiyoirtqufjie/Sandbox_Prefix.pch.gch Sandbox_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-bfmcumxarpdqkmbpwmjjaxqoiqwu/Sandbox_Prefix.pch.pth Sandbox_Prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+cProcessPCH /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-abebryqcitgxhwdqcnvaknkyobhr/Sandbox_Prefix.pch.pth Sandbox_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+cCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/main.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/SandboxAppDelegate.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/SandboxViewController.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/BWUtilities.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/main.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/SandboxAppDelegate.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/SandboxViewController.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/BWUtilities.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m
+cAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m
+cAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m
+cAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m
+cAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m
+cLd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/Sandbox normal armv6
+cLd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/Sandbox normal armv7
+cAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m
+cAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m
+cAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m
+cCreateUniversalBinary /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Sandbox normal "armv6 armv7"
+cGenerateDSYMFile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app.dSYM /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Sandbox
+cProcessProductPackaging "/Users/billw/Library/MobileDevice/Provisioning Profiles/8230D9A1-3254-4412-9EE7-E253820C0092.mobileprovision" /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/embedded.mobileprovision
+cTouch /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox.xcent
+cCodeSign /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004CB05A750000000000000110
+t1286625909
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+c000000004CABEFF700000000000001A7
+t1286336503
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CABEFF700000000000001E5
+t1286336503
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CAC027A00000000003532B0
+t1286341242
+s3486384
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CAC039400000000003E1F20
+t1286341524
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CAC037B0000000000001466
+t1286341499
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CAC135C0000000000000AA1
+t1286345564
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CAC160A0000000000C743B0
+t1286346250
+s13058992
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.h
+c000000004CC3113F00000000000001DC
+t1287852351
+s476
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m
+c000000004CC3118700000000000008C7
+t1287852423
+s2247
+i"BWutilities.h"
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.h
+c000000004CC98B0000000000000001E9
+t1288276736
+s489
+i<UIKit/UIKit.h>
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m
+c000000004CC98B000000000000000A9F
+t1288276736
+s2719
+i"SandboxAppDelegate.h"
+i"SandboxViewController.h"
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.h
+c000000004CC98C0C000000000000017A
+t1288277004
+s378
+i<UIKit/UIKit.h>
+i"BWUtilities.h"
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m
+c000000004CC98C790000000000000683
+t1288277113
+s1667
+i"SandboxViewController.h"
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/MainWindow.xib
+c000000004CC98B000000000000004E29
+t1288276736
+s20009
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/SandboxViewController.xib
+c000000004CC98BB200000000000046DB
+t1288276914
+s18139
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Sandbox_Prefix.pch
+c000000004CC98B0000000000000000B7
+t1288276736
+s183
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app
+t1288277162
+s374
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app.dSYM
+t1288277162
+s102
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Info.plist
+t1288277158
+s783
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/MainWindow.nib
+t1288277159
+s1123
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/PkgInfo
+t1288277158
+s8
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/ResourceRules.plist
+t1288277158
+s485
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Sandbox
+t1288277162
+s43112
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/SandboxViewController.nib
+t1288277159
+s1253
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/embedded.mobileprovision
+t1288277162
+s7422
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/BWUtilities.o
+t1288277161
+s46908
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/Sandbox
+t1288277162
+s18536
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/Sandbox.LinkFileList
+c000000004CC98CA6000000000000026A
+t1288277158
+s618
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/SandboxAppDelegate.o
+t1288277161
+s51508
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/SandboxViewController.o
+t1288277161
+s41564
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/main.o
+t1288277161
+s6504
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/BWUtilities.o
+t1288277161
+s46840
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/Sandbox
+t1288277162
+s18536
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/Sandbox.LinkFileList
+c000000004CC98CA6000000000000026A
+t1288277158
+s618
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/SandboxAppDelegate.o
+t1288277161
+s51428
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/SandboxViewController.o
+t1288277161
+s41500
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/main.o
+t1288277161
+s6488
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox.xcent
+t1288277162
+s420
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv6/BWUtilities.plist
+t1288277161
+s276
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv6/SandboxAppDelegate.plist
+t1288277161
+s276
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv6/SandboxViewController.plist
+t1288277161
+s276
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv6/main.plist
+t1288277161
+s276
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv7/BWUtilities.plist
+t1288277161
+s276
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv7/SandboxAppDelegate.plist
+t1288277161
+s276
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv7/SandboxViewController.plist
+t1288277161
+s276
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv7/main.plist
+t1288277161
+s276
+
+N/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m
+c000000004CC98B000000000000000173
+t1288276736
+s371
+i<UIKit/UIKit.h>
+
+N/Users/billw/Library/MobileDevice/Provisioning Profiles/8230D9A1-3254-4412-9EE7-E253820C0092.mobileprovision
+c000000004C93F2900000000000001CFE
+t1284764304
+s7422
+
+N/var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-abebryqcitgxhwdqcnvaknkyobhr/Sandbox_Prefix.pch.pth
+t1288277161
+s2752444
+
+N/var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-bfmcumxarpdqkmbpwmjjaxqoiqwu/Sandbox_Prefix.pch.pth
+t1288277161
+s2752288
+
+N/var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-cvqdqessmlesingjzdmizbcphvtn/Sandbox_Prefix.pch.gch
+t1288277161
+s9979608
+
+N/var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-enaajilelmgajhajiyoirtqufjie/Sandbox_Prefix.pch.gch
+t1288277161
+s10442456
+
+NSandbox-Info.plist
+c000000004CC98B00000000000000038D
+t1288276736
+s909
+
+CAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m
+s309969961.796236
+e309969961.888072
+r1
+xAnalyze
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m
+lSLF07#2@97"Analyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m309969961#309969961#0(0"0(0#0#89"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m8614261216#2094"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv7 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-abebryqcitgxhwdqcnvaknkyobhr/Sandbox_Prefix.pch --analyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv7/BWUtilities.plist0#
+
+CAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m
+s309969961.728548
+e309969961.799129
+r1
+xAnalyze
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m
+lSLF07#2@104"Analyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m309969961#309969961#0(0"0(0#0#96"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m8604920000#2108"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv7 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-abebryqcitgxhwdqcnvaknkyobhr/Sandbox_Prefix.pch --analyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv7/SandboxAppDelegate.plist0#
+
+CAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m
+s309969961.794102
+e309969961.887632
+r1
+xAnalyze
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m
+lSLF07#2@107"Analyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m309969961#309969961#0(0"0(0#0#99"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m8614776832#2114"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv7 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-abebryqcitgxhwdqcnvaknkyobhr/Sandbox_Prefix.pch --analyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv7/SandboxViewController.plist0#
+
+CAnalyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m
+s309969961.724996
+e309969961.798648
+r1
+xAnalyze
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m
+lSLF07#2@82"Analyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m309969961#309969961#0(0"0(0#0#74"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m8614339808#2072"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv7 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-abebryqcitgxhwdqcnvaknkyobhr/Sandbox_Prefix.pch --analyze /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/StaticAnalyzer/normal/armv7/main.plist0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies309969958#309969958#0(0"0(0#1#0"8247620834010738688#0"0#
+
+CCodeSign /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app
+s309969962.471711
+e309969962.844022
+r1
+xCodeSign
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app
+lSLF07#2@41"CodeSign build/Debug-iphoneos/Sandbox.app309969962#309969962#0(0"0(0#0#100"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app8615266496#767"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: William Weinman (S3TQPP448H)" --resource-rules=/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/ResourceRules.plist --entitlements /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox.xcent /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app0#
+
+CCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/BWUtilities.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309969961.503836
+e309969961.726255
+r1
+xCompileC
+xbuild/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/BWUtilities.o
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m309969961#309969961#0(0"0(0#0#89"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m8590288256#2065"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv6 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-cvqdqessmlesingjzdmizbcphvtn/Sandbox_Prefix.pch -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/BWUtilities.o0#
+
+CCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/SandboxAppDelegate.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309969961.501646
+e309969961.657477
+r1
+xCompileC
+xbuild/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/SandboxAppDelegate.o
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m309969961#309969961#0(0"0(0#0#96"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m8614429120#2079"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv6 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-cvqdqessmlesingjzdmizbcphvtn/Sandbox_Prefix.pch -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/SandboxAppDelegate.o0#
+
+CCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/SandboxViewController.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309969961.502759
+e309969961.723428
+r1
+xCompileC
+xbuild/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/SandboxViewController.o
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@107"Compile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m309969961#309969961#0(0"0(0#0#99"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m8614117440#2085"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv6 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-cvqdqessmlesingjzdmizbcphvtn/Sandbox_Prefix.pch -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/SandboxViewController.o0#
+
+CCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/main.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309969961.500462
+e309969961.645520
+r1
+xCompileC
+xbuild/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/main.o
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m309969961#309969961#0(0"0(0#0#74"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m8614626720#2043"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv6 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-cvqdqessmlesingjzdmizbcphvtn/Sandbox_Prefix.pch -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/BWUtilities.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309969961.508099
+e309969961.726780
+r1
+xCompileC
+xbuild/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/BWUtilities.o
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m309969961#309969961#0(0"0(0#0#89"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m8590272352#2065"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv7 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-enaajilelmgajhajiyoirtqufjie/Sandbox_Prefix.pch -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/BWUtilities.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/BWUtilities.o0#
+
+CCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/SandboxAppDelegate.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309969961.505957
+e309969961.726524
+r1
+xCompileC
+xbuild/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/SandboxAppDelegate.o
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m309969961#309969961#0(0"0(0#0#96"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m8606979296#2079"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv7 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-enaajilelmgajhajiyoirtqufjie/Sandbox_Prefix.pch -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxAppDelegate.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/SandboxAppDelegate.o0#
+
+CCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/SandboxViewController.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309969961.507034
+e309969961.723737
+r1
+xCompileC
+xbuild/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/SandboxViewController.o
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@107"Compile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m309969961#309969961#0(0"0(0#0#99"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m8614403712#2085"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv7 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-enaajilelmgajhajiyoirtqufjie/Sandbox_Prefix.pch -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Classes/SandboxViewController.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/SandboxViewController.o0#
+
+CCompileC build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/main.o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309969961.504903
+e309969961.650540
+r1
+xCompileC
+xbuild/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/main.o
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m309969961#309969961#0(0"0(0#0#74"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m8615325600#2043"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv7 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -include /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-enaajilelmgajhajiyoirtqufjie/Sandbox_Prefix.pch -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/main.m -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/main.o0#
+
+CCompileXIB /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/MainWindow.xib
+s309969958.973651
+e309969960.007195
+r1
+xCompileXIB
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib309969958#309969960#0(0"0(0#0#82"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/MainWindow.xib8613069920#629"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/MainWindow.nib /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCompileXIB /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/SandboxViewController.xib
+s309969958.974493
+e309969960.388820
+r1
+xCompileXIB
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/SandboxViewController.xib
+lSLF07#2@36"CompileXIB SandboxViewController.xib309969958#309969960#0(0"0(0#0#93"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/SandboxViewController.xib8605071424#651"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/SandboxViewController.nib /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/SandboxViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCpResource build/Debug-iphoneos/Sandbox.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+s309969958.838776
+e309969958.949570
+r1
+xCpResource
+xbuild/Debug-iphoneos/Sandbox.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist309969958#309969958#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist5922070114188801024#552"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app0#
+
+CCreateUniversalBinary /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Sandbox normal "armv6 armv7"
+s309969962.291267
+e309969962.326694
+r1
+xCreateUniversalBinary
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Sandbox
+xnormal
+xarmv6 armv7
+lSLF07#2@83"CreateUniversalBinary build/Debug-iphoneos/Sandbox.app/Sandbox normal "armv6 armv7"309969962#309969962#0(0"0(0#0#79"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/armv6 armv78612484768#634"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/Sandbox /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/Sandbox -output /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Sandbox0#
+
+CGenerateDSYMFile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app.dSYM /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Sandbox
+s309969962.326773
+e309969962.427074
+r1
+xGenerateDSYMFile
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app.dSYM
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Sandbox
+lSLF07#2@95"GenerateDSYMFile build/Debug-iphoneos/Sandbox.app.dSYM build/Debug-iphoneos/Sandbox.app/Sandbox309969962#309969962#0(0"0(0#0#108"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Sandbox8605107392#449"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Sandbox -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app.dSYM0#
+
+CLd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/Sandbox normal armv6
+s309969961.726868
+e309969962.291186
+r1
+xLd
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/Sandbox
+xnormal
+xarmv6
+lSLF07#2@150"Link /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/Sandbox309969961#309969962#0(0"0(0#0#0"8605536000#1004"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -filelist /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/Sandbox.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv6/Sandbox0#
+
+CLd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/Sandbox normal armv7
+s309969961.727706
+e309969962.284754
+r1
+xLd
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/Sandbox
+xnormal
+xarmv7
+lSLF07#2@150"Link /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/Sandbox309969961#309969962#0(0"0(0#0#0"8605167712#1004"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -filelist /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/Sandbox.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Objects-normal/armv7/Sandbox0#
+
+CProcessInfoPlistFile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Info.plist Sandbox-Info.plist
+s309969958.871277
+e309969958.973540
+r1
+xProcessInfoPlistFile
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Info.plist
+xSandbox-Info.plist
+lSLF07#2@26"Process Sandbox-Info.plist309969958#309969958#0(0"0(0#0#86"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Sandbox-Info.plist8612586400#678"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Sandbox-Info.plist -genpkginfo /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/ResourceRules.plist -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/Info.plist0#
+
+CProcessPCH /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-abebryqcitgxhwdqcnvaknkyobhr/Sandbox_Prefix.pch.pth Sandbox_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s309969960.392857
+e309969961.155272
+r1
+xProcessPCH
+x/var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-abebryqcitgxhwdqcnvaknkyobhr/Sandbox_Prefix.pch.pth
+xSandbox_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@29"Precompile Sandbox_Prefix.pch309969960#309969961#0(0"0(0#0#86"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Sandbox_Prefix.pch8615529984#1923"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv7 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Sandbox_Prefix.pch -o /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-abebryqcitgxhwdqcnvaknkyobhr/Sandbox_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-bfmcumxarpdqkmbpwmjjaxqoiqwu/Sandbox_Prefix.pch.pth Sandbox_Prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s309969960.391742
+e309969961.155915
+r1
+xProcessPCH
+x/var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-bfmcumxarpdqkmbpwmjjaxqoiqwu/Sandbox_Prefix.pch.pth
+xSandbox_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@29"Precompile Sandbox_Prefix.pch309969960#309969961#0(0"0(0#0#86"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Sandbox_Prefix.pch8615730656#1923"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv6 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Sandbox_Prefix.pch -o /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-bfmcumxarpdqkmbpwmjjaxqoiqwu/Sandbox_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-cvqdqessmlesingjzdmizbcphvtn/Sandbox_Prefix.pch.gch Sandbox_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s309969960.389255
+e309969961.500361
+r1
+xProcessPCH
+x/var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-cvqdqessmlesingjzdmizbcphvtn/Sandbox_Prefix.pch.gch
+xSandbox_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Sandbox_Prefix.pch309969960#309969961#0(0"0(0#0#86"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Sandbox_Prefix.pch8616113280#1912"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv6 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Sandbox_Prefix.pch -o /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-cvqdqessmlesingjzdmizbcphvtn/Sandbox_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-enaajilelmgajhajiyoirtqufjie/Sandbox_Prefix.pch.gch Sandbox_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s309969960.390673
+e309969961.473065
+r1
+xProcessPCH
+x/var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-enaajilelmgajhajiyoirtqufjie/Sandbox_Prefix.pch.gch
+xSandbox_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Sandbox_Prefix.pch309969960#309969961#0(0"0(0#0#86"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Sandbox_Prefix.pch8615770880#1912"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-generated-files.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-own-target-headers.hmap -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-all-target-headers.hmap -iquote /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox-project-headers.hmap -F/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/include -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources/armv7 -I/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/DerivedSources -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/Sandbox_Prefix.pch -o /var/folders/EL/ELWQD9yPGNO5qoao-TDmTU+++TQ/-Caches-/com.apple.Xcode.503/SharedPrecompiledHeaders/Sandbox_Prefix-enaajilelmgajhajiyoirtqufjie/Sandbox_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/billw/Library/MobileDevice/Provisioning Profiles/8230D9A1-3254-4412-9EE7-E253820C0092.mobileprovision" /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/embedded.mobileprovision
+s309969962.427167
+e309969962.428541
+r1
+xProcessProductPackaging
+x/Users/billw/Library/MobileDevice/Provisioning Profiles/8230D9A1-3254-4412-9EE7-E253820C0092.mobileprovision
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/embedded.mobileprovision
+lSLF07#2@192"ProcessProductPackaging "/Users/billw/Library/MobileDevice/Provisioning Profiles/8230D9A1-3254-4412-9EE7-E253820C0092.mobileprovision" build/Debug-iphoneos/Sandbox.app/embedded.mobileprovision309969962#309969962#0(0"0(0#0#125"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/embedded.mobileprovision8614582304#481"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/billw/Library/MobileDevice/Provisioning Profiles/8230D9A1-3254-4412-9EE7-E253820C0092.mobileprovision" -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox.xcent
+s309969962.451454
+e309969962.471641
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox.xcent
+lSLF07#2@175"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox.xcent309969962#309969962#0(0"0(0#0#130"/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox.xcent8615755328#490"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Sandbox.build/Debug-iphoneos/Sandbox.build/Sandbox.xcent0#
+
+CTouch /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app
+s309969962.428604
+e309969962.451353
+r1
+xTouch
+x/Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app
+lSLF07#2@106"Touch /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app309969962#309969962#0(0"0(0#0#0"8613520928#322"    cd /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/billw/Dropbox/Projects/iOS4/ExerciseFiles/01-Sandbox/Sandbox/build/Debug-iphoneos/Sandbox.app0#
+

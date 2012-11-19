@@ -1,0 +1,27 @@
+- (void) sandbox {
+    message(@"%@ version %@", @"Sandbox", kBWDBVersion);
+    [self testDatabase];
+}
+
+-(void) dispRow:(NSDictionary *) row {
+    message(@"row %@ [%@]",
+            [row objectForKey:@"title"],
+            [row objectForKey:@"url"]
+            );
+}
+
+-(void) testDatabase {
+    RSSDB *db;
+    NSString * dbfn = @"bwrss.db";
+
+    db = [[RSSDB alloc] initWithRSSDBFilename:dbfn];
+    message(@"RSSDB version %@", [db getVersion]);
+    NSArray * feedIDs = [[NSArray alloc] initWithArray:[db getFeedIDs]];
+
+    for (NSNumber *n in feedIDs) {
+        NSDictionary *feed = [db getFeedRow:n];
+        [self dispRow:feed];
+    }
+    [db release];
+}
+
